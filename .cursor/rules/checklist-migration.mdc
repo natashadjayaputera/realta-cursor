@@ -91,85 +91,114 @@ alwaysApply: true
 
 ### Common Project .csproj
 ```xml
-
-  netstandard2.1
-  10.0
-  enable
-  disable
-
+<PropertyGroup>
+  <TargetFramework>netstandard2.1</TargetFramework>
+  <LangVersion>10.0</LangVersion>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>disable</ImplicitUsings>
+</PropertyGroup>
 ```
 Status: [ ] ✓ VERIFIED
 
 ### Back Project .csproj
 ```xml
-
-  net6.0
-  10.0
-  enable
-  disable
-
+<PropertyGroup>
+  <TargetFramework>net6.0</TargetFramework>
+  <LangVersion>10.0</LangVersion>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>disable</ImplicitUsings>
+</PropertyGroup>
 ```
 Status: [ ] ✓ VERIFIED
 
 ### BackResources Project .csproj
 ```xml
-
-  net6.0
-  10.0
-  enable
-  disable
-
+<PropertyGroup>
+  <TargetFramework>net6.0</TargetFramework>
+  <LangVersion>10.0</LangVersion>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>disable</ImplicitUsings>
+</PropertyGroup>
 ```
 Status: [ ] ✓ VERIFIED
 
 ### Service Project .csproj
 ```xml
+<PropertyGroup>
+  <TargetFramework>net6.0</TargetFramework>
+  <LangVersion>10.0</LangVersion>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>disable</ImplicitUsings>
+</PropertyGroup>
 
-  net6.0
-  10.0
-  enable
-  disable
-
-
-  
-
+<ItemGroup>
+  <FrameworkReference Include="Microsoft.AspNetCore.App" />
+</ItemGroup>
 ```
 Status: [ ] ✓ VERIFIED
 
 ### Model Project .csproj
 ```xml
-
-  netstandard2.1
-  10.0
-  enable
-  disable
-
+<PropertyGroup>
+  <TargetFramework>netstandard2.1</TargetFramework>
+  <LangVersion>10.0</LangVersion>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>disable</ImplicitUsings>
+</PropertyGroup>
 ```
 Status: [ ] ✓ VERIFIED
 
 ### FrontResources Project .csproj
 ```xml
-
-  net6.0
-  10.0
-  enable
-  disable
-
+<PropertyGroup>
+  <TargetFramework>net6.0</TargetFramework>
+  <LangVersion>10.0</LangVersion>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>disable</ImplicitUsings>
+</PropertyGroup>
 ```
 Status: [ ] ✓ VERIFIED
 
 ### Front Project .csproj (Blazor)
 ```xml
-
-  net6.0
-  10.0
-  enable
-  disable
-
+<PropertyGroup>
+  <TargetFramework>net6.0</TargetFramework>
+  <LangVersion>10.0</LangVersion>
+  <Nullable>enable</Nullable>
+  <ImplicitUsings>disable</ImplicitUsings>
+</PropertyGroup>
 ```
 Status: [ ] ✓ VERIFIED
 
 **ALL .csproj files must be verified BEFORE attempting build.**
+
+## UI/Data Binding Patterns (Critical - October 2025)
+
+### Date Field Handling
+- [ ] All string date fields from service (C*_DATE) mapped to nullable DateTime in DTOs (D*_DATE)
+- [ ] UI bound to R_DatePicker using D*_DATE properties
+- [ ] R_GetEntity uses `R_FrontUtility.R_ConvertToDateTime()` to populate D*_DATE from C*_DATE
+- [ ] Date format passed to R_ConvertToDateTime matches "yyyyMMdd" unless stated otherwise
+
+### Conductor
+- [ ] Must fill R_ViewModel parameter in R_Conductor
+- [ ] No manual state management for conductor-driven fields
+- [ ] R_Init_From_Master get entity with R_GetEntity (not fetching data directly)
+- [ ] R_GetEntity called in R_Conductor to populate fields
+
+### Grid
+- [ ] Grid data fetched in grid's R_ServiceGetListRecord method
+- [ ] R_Init_From_Master captures parameters only
+- [ ] R_Init_From_Master refreshes grid (not fetching data directly)
+
+### Layout Spacing
+- [ ] In R_StackLayout rows, last R_ItemLayout has `auto="false"`
+- [ ] Prevents overflow issues due to automatic spacing
+
+### Grid Column Type Safety
+- [ ] Numeric grid columns use explicit TValue (e.g., `TValue="decimal"`)
+- [ ] Correct component namespaces imported (R_BlazorFrontEnd.Controls)
+- [ ] Editor component types match column data types
 
 ## Final Checks
 - [ ] All projects reference correct DLLs from `.cursor/docs/net6/`
