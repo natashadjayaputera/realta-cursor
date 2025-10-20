@@ -1,0 +1,1851 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.SAM_COMPANIES
+  commentId: T:BackExtension.Models.SAM_COMPANIES
+  id: SAM_COMPANIES
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.SAM_COMPANIES.CADDRESS
+  - BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
+  - BackExtension.Models.SAM_COMPANIES.CCITY
+  - BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
+  - BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
+  - BackExtension.Models.SAM_COMPANIES.CCOUNTRY
+  - BackExtension.Models.SAM_COMPANIES.CCREATE_BY
+  - BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
+  - BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
+  - BackExtension.Models.SAM_COMPANIES.CFAX_NO
+  - BackExtension.Models.SAM_COMPANIES.CLOB_CODE
+  - BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
+  - BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
+  - BackExtension.Models.SAM_COMPANIES.CPHONE_1
+  - BackExtension.Models.SAM_COMPANIES.CPHONE_2
+  - BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
+  - BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
+  - BackExtension.Models.SAM_COMPANIES.CSMTP_ID
+  - BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
+  - BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  - BackExtension.Models.SAM_COMPANIES.CTAX_NAME
+  - BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
+  - BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
+  - BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
+  - BackExtension.Models.SAM_COMPANIES.CTKU
+  - BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
+  - BackExtension.Models.SAM_COMPANIES.CWEB_SITE
+  - BackExtension.Models.SAM_COMPANIES.CZIP_CODE
+  - BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
+  - BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
+  - BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
+  - BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
+  - BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
+  - BackExtension.Models.SAM_COMPANIES.ITIMEZONE
+  - BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  - BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
+  langs:
+  - csharp
+  - vb
+  name: SAM_COMPANIES
+  nameWithType: SAM_COMPANIES
+  fullName: BackExtension.Models.SAM_COMPANIES
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SAM_COMPANIES
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class SAM_COMPANIES : object'
+    content.vb: >-
+      Public Class SAM_COMPANIES
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: SAM_COMPANIES.CCOMPANY_ID
+  fullName: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
+  id: CCOMPANY_NAME
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_NAME
+  nameWithType: SAM_COMPANIES.CCOMPANY_NAME
+  fullName: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_NAME
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CCOMPANY_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_NAME As String
+  overload: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CSMTP_ID
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CSMTP_ID
+  id: CSMTP_ID
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CSMTP_ID
+  nameWithType: SAM_COMPANIES.CSMTP_ID
+  fullName: BackExtension.Models.SAM_COMPANIES.CSMTP_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSMTP_ID
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CSMTP_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSMTP_ID As String
+  overload: BackExtension.Models.SAM_COMPANIES.CSMTP_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CADDRESS
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CADDRESS
+  id: CADDRESS
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CADDRESS
+  nameWithType: SAM_COMPANIES.CADDRESS
+  fullName: BackExtension.Models.SAM_COMPANIES.CADDRESS
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CADDRESS
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CADDRESS { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CADDRESS As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CADDRESS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CZIP_CODE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CZIP_CODE
+  id: CZIP_CODE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CZIP_CODE
+  nameWithType: SAM_COMPANIES.CZIP_CODE
+  fullName: BackExtension.Models.SAM_COMPANIES.CZIP_CODE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CZIP_CODE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 10
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CZIP_CODE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CZIP_CODE As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CZIP_CODE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CCITY
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CCITY
+  id: CCITY
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CCITY
+  nameWithType: SAM_COMPANIES.CCITY
+  fullName: BackExtension.Models.SAM_COMPANIES.CCITY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCITY
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 11
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CCITY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CCITY As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CCITY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CCOUNTRY
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CCOUNTRY
+  id: CCOUNTRY
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CCOUNTRY
+  nameWithType: SAM_COMPANIES.CCOUNTRY
+  fullName: BackExtension.Models.SAM_COMPANIES.CCOUNTRY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOUNTRY
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 12
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CCOUNTRY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CCOUNTRY As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CCOUNTRY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CPHONE_1
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CPHONE_1
+  id: CPHONE_1
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CPHONE_1
+  nameWithType: SAM_COMPANIES.CPHONE_1
+  fullName: BackExtension.Models.SAM_COMPANIES.CPHONE_1
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CPHONE_1
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 13
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CPHONE_1 { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CPHONE_1 As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CPHONE_1*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CPHONE_2
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CPHONE_2
+  id: CPHONE_2
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CPHONE_2
+  nameWithType: SAM_COMPANIES.CPHONE_2
+  fullName: BackExtension.Models.SAM_COMPANIES.CPHONE_2
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CPHONE_2
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 14
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CPHONE_2 { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CPHONE_2 As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CPHONE_2*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CFAX_NO
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CFAX_NO
+  id: CFAX_NO
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CFAX_NO
+  nameWithType: SAM_COMPANIES.CFAX_NO
+  fullName: BackExtension.Models.SAM_COMPANIES.CFAX_NO
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CFAX_NO
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 15
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CFAX_NO { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CFAX_NO As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CFAX_NO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CLOB_CODE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CLOB_CODE
+  id: CLOB_CODE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CLOB_CODE
+  nameWithType: SAM_COMPANIES.CLOB_CODE
+  fullName: BackExtension.Models.SAM_COMPANIES.CLOB_CODE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CLOB_CODE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 16
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CLOB_CODE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CLOB_CODE As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CLOB_CODE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CWEB_SITE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CWEB_SITE
+  id: CWEB_SITE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CWEB_SITE
+  nameWithType: SAM_COMPANIES.CWEB_SITE
+  fullName: BackExtension.Models.SAM_COMPANIES.CWEB_SITE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CWEB_SITE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 17
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CWEB_SITE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CWEB_SITE As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CWEB_SITE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_NAME
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_NAME
+  id: CTAX_NAME
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CTAX_NAME
+  nameWithType: SAM_COMPANIES.CTAX_NAME
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_NAME
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTAX_NAME
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 18
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CTAX_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CTAX_NAME As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CTAX_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
+  id: CTAX_REGISTER_ID
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CTAX_REGISTER_ID
+  nameWithType: SAM_COMPANIES.CTAX_REGISTER_ID
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTAX_REGISTER_ID
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 19
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CTAX_REGISTER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CTAX_REGISTER_ID As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
+  id: DTAX_REGISTER_DATE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: DTAX_REGISTER_DATE
+  nameWithType: SAM_COMPANIES.DTAX_REGISTER_DATE
+  fullName: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DTAX_REGISTER_DATE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 20
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DTAX_REGISTER_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DTAX_REGISTER_DATE As DateTime?
+  overload: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  id: CTAX_BUSINESS_TYPE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CTAX_BUSINESS_TYPE
+  nameWithType: SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTAX_BUSINESS_TYPE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 21
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CTAX_BUSINESS_TYPE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CTAX_BUSINESS_TYPE As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
+  id: CTAX_BUSINESS_NAME
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CTAX_BUSINESS_NAME
+  nameWithType: SAM_COMPANIES.CTAX_BUSINESS_NAME
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTAX_BUSINESS_NAME
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 22
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CTAX_BUSINESS_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CTAX_BUSINESS_NAME As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
+  id: CLOCAL_CURRENCY
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CLOCAL_CURRENCY
+  nameWithType: SAM_COMPANIES.CLOCAL_CURRENCY
+  fullName: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CLOCAL_CURRENCY
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 23
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CLOCAL_CURRENCY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CLOCAL_CURRENCY As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
+  id: CBASE_CURRENCY
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CBASE_CURRENCY
+  nameWithType: SAM_COMPANIES.CBASE_CURRENCY
+  fullName: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CBASE_CURRENCY
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 24
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CBASE_CURRENCY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CBASE_CURRENCY As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
+  commentId: P:BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
+  id: OCOMPANY_LOGO
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: OCOMPANY_LOGO
+  nameWithType: SAM_COMPANIES.OCOMPANY_LOGO
+  fullName: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OCOMPANY_LOGO
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 25
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public byte[] OCOMPANY_LOGO { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property OCOMPANY_LOGO As Byte()
+  overload: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
+  id: CREPORT_CULTURE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CREPORT_CULTURE
+  nameWithType: SAM_COMPANIES.CREPORT_CULTURE
+  fullName: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CREPORT_CULTURE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 26
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CREPORT_CULTURE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CREPORT_CULTURE As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
+  id: CNUMBER_FORMAT
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CNUMBER_FORMAT
+  nameWithType: SAM_COMPANIES.CNUMBER_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CNUMBER_FORMAT
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 27
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CNUMBER_FORMAT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CNUMBER_FORMAT As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
+  id: CDATE_LONG_FORMAT
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CDATE_LONG_FORMAT
+  nameWithType: SAM_COMPANIES.CDATE_LONG_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CDATE_LONG_FORMAT
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 28
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CDATE_LONG_FORMAT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CDATE_LONG_FORMAT As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
+  id: CDATE_SHORT_FORMAT
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CDATE_SHORT_FORMAT
+  nameWithType: SAM_COMPANIES.CDATE_SHORT_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CDATE_SHORT_FORMAT
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 29
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CDATE_SHORT_FORMAT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CDATE_SHORT_FORMAT As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
+  id: CTIME_LONG_FORMAT
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CTIME_LONG_FORMAT
+  nameWithType: SAM_COMPANIES.CTIME_LONG_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTIME_LONG_FORMAT
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 30
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CTIME_LONG_FORMAT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CTIME_LONG_FORMAT As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
+  id: CTIME_SHORT_FORMAT
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CTIME_SHORT_FORMAT
+  nameWithType: SAM_COMPANIES.CTIME_SHORT_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTIME_SHORT_FORMAT
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 31
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CTIME_SHORT_FORMAT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CTIME_SHORT_FORMAT As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
+  commentId: P:BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
+  id: IDECIMAL_PLACES
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: IDECIMAL_PLACES
+  nameWithType: SAM_COMPANIES.IDECIMAL_PLACES
+  fullName: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IDECIMAL_PLACES
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 32
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? IDECIMAL_PLACES { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property IDECIMAL_PLACES As Integer?
+  overload: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
+  commentId: P:BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
+  id: IROUNDING_PLACES
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: IROUNDING_PLACES
+  nameWithType: SAM_COMPANIES.IROUNDING_PLACES
+  fullName: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IROUNDING_PLACES
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 33
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? IROUNDING_PLACES { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property IROUNDING_PLACES As Integer?
+  overload: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
+  id: CROUNDING_METHOD
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CROUNDING_METHOD
+  nameWithType: SAM_COMPANIES.CROUNDING_METHOD
+  fullName: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CROUNDING_METHOD
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 34
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CROUNDING_METHOD { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CROUNDING_METHOD As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  commentId: P:BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  id: LENABLE_SAVE_CONFIRMATION
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: LENABLE_SAVE_CONFIRMATION
+  nameWithType: SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  fullName: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LENABLE_SAVE_CONFIRMATION
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 35
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool? LENABLE_SAVE_CONFIRMATION { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property LENABLE_SAVE_CONFIRMATION As Boolean?
+  overload: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
+  id: CUPDATE_BY
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CUPDATE_BY
+  nameWithType: SAM_COMPANIES.CUPDATE_BY
+  fullName: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUPDATE_BY
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 36
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CUPDATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CUPDATE_BY As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
+  id: DUPDATE_DATE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: DUPDATE_DATE
+  nameWithType: SAM_COMPANIES.DUPDATE_DATE
+  fullName: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DUPDATE_DATE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 37
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DUPDATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DUPDATE_DATE As DateTime?
+  overload: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CCREATE_BY
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CCREATE_BY
+  id: CCREATE_BY
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CCREATE_BY
+  nameWithType: SAM_COMPANIES.CCREATE_BY
+  fullName: BackExtension.Models.SAM_COMPANIES.CCREATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCREATE_BY
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 38
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CCREATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CCREATE_BY As String?
+  overload: BackExtension.Models.SAM_COMPANIES.CCREATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
+  id: DCREATE_DATE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: DCREATE_DATE
+  nameWithType: SAM_COMPANIES.DCREATE_DATE
+  fullName: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DCREATE_DATE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 39
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DCREATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DCREATE_DATE As DateTime?
+  overload: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.ITIMEZONE
+  commentId: P:BackExtension.Models.SAM_COMPANIES.ITIMEZONE
+  id: ITIMEZONE
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: ITIMEZONE
+  nameWithType: SAM_COMPANIES.ITIMEZONE
+  fullName: BackExtension.Models.SAM_COMPANIES.ITIMEZONE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ITIMEZONE
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 40
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int ITIMEZONE { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ITIMEZONE As Integer
+  overload: BackExtension.Models.SAM_COMPANIES.ITIMEZONE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_COMPANIES.CTKU
+  commentId: P:BackExtension.Models.SAM_COMPANIES.CTKU
+  id: CTKU
+  parent: BackExtension.Models.SAM_COMPANIES
+  langs:
+  - csharp
+  - vb
+  name: CTKU
+  nameWithType: SAM_COMPANIES.CTKU
+  fullName: BackExtension.Models.SAM_COMPANIES.CTKU
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTKU
+    path: Library Back/BackExtension/Models/SAM_COMPANIES.cs
+    startLine: 41
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CTKU { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CTKU As String
+  overload: BackExtension.Models.SAM_COMPANIES.CTKU*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: SAM_COMPANIES.CCOMPANY_ID
+  fullName: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
+  name: CCOMPANY_NAME
+  nameWithType: SAM_COMPANIES.CCOMPANY_NAME
+  fullName: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
+- uid: BackExtension.Models.SAM_COMPANIES.CSMTP_ID*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CSMTP_ID
+  name: CSMTP_ID
+  nameWithType: SAM_COMPANIES.CSMTP_ID
+  fullName: BackExtension.Models.SAM_COMPANIES.CSMTP_ID
+- uid: BackExtension.Models.SAM_COMPANIES.CADDRESS*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CADDRESS
+  name: CADDRESS
+  nameWithType: SAM_COMPANIES.CADDRESS
+  fullName: BackExtension.Models.SAM_COMPANIES.CADDRESS
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_COMPANIES.CZIP_CODE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CZIP_CODE
+  name: CZIP_CODE
+  nameWithType: SAM_COMPANIES.CZIP_CODE
+  fullName: BackExtension.Models.SAM_COMPANIES.CZIP_CODE
+- uid: BackExtension.Models.SAM_COMPANIES.CCITY*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCITY
+  name: CCITY
+  nameWithType: SAM_COMPANIES.CCITY
+  fullName: BackExtension.Models.SAM_COMPANIES.CCITY
+- uid: BackExtension.Models.SAM_COMPANIES.CCOUNTRY*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCOUNTRY
+  name: CCOUNTRY
+  nameWithType: SAM_COMPANIES.CCOUNTRY
+  fullName: BackExtension.Models.SAM_COMPANIES.CCOUNTRY
+- uid: BackExtension.Models.SAM_COMPANIES.CPHONE_1*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CPHONE_1
+  name: CPHONE_1
+  nameWithType: SAM_COMPANIES.CPHONE_1
+  fullName: BackExtension.Models.SAM_COMPANIES.CPHONE_1
+- uid: BackExtension.Models.SAM_COMPANIES.CPHONE_2*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CPHONE_2
+  name: CPHONE_2
+  nameWithType: SAM_COMPANIES.CPHONE_2
+  fullName: BackExtension.Models.SAM_COMPANIES.CPHONE_2
+- uid: BackExtension.Models.SAM_COMPANIES.CFAX_NO*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CFAX_NO
+  name: CFAX_NO
+  nameWithType: SAM_COMPANIES.CFAX_NO
+  fullName: BackExtension.Models.SAM_COMPANIES.CFAX_NO
+- uid: BackExtension.Models.SAM_COMPANIES.CLOB_CODE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CLOB_CODE
+  name: CLOB_CODE
+  nameWithType: SAM_COMPANIES.CLOB_CODE
+  fullName: BackExtension.Models.SAM_COMPANIES.CLOB_CODE
+- uid: BackExtension.Models.SAM_COMPANIES.CWEB_SITE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CWEB_SITE
+  name: CWEB_SITE
+  nameWithType: SAM_COMPANIES.CWEB_SITE
+  fullName: BackExtension.Models.SAM_COMPANIES.CWEB_SITE
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_NAME*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_NAME
+  name: CTAX_NAME
+  nameWithType: SAM_COMPANIES.CTAX_NAME
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_NAME
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
+  name: CTAX_REGISTER_ID
+  nameWithType: SAM_COMPANIES.CTAX_REGISTER_ID
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
+- uid: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
+  name: DTAX_REGISTER_DATE
+  nameWithType: SAM_COMPANIES.DTAX_REGISTER_DATE
+  fullName: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
+- uid: System.Nullable{DateTime}
+  commentId: '!:System.Nullable{DateTime}'
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  name: CTAX_BUSINESS_TYPE
+  nameWithType: SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
+- uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
+  name: CTAX_BUSINESS_NAME
+  nameWithType: SAM_COMPANIES.CTAX_BUSINESS_NAME
+  fullName: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
+- uid: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
+  name: CLOCAL_CURRENCY
+  nameWithType: SAM_COMPANIES.CLOCAL_CURRENCY
+  fullName: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
+- uid: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
+  name: CBASE_CURRENCY
+  nameWithType: SAM_COMPANIES.CBASE_CURRENCY
+  fullName: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
+- uid: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
+  name: OCOMPANY_LOGO
+  nameWithType: SAM_COMPANIES.OCOMPANY_LOGO
+  fullName: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
+  name: CREPORT_CULTURE
+  nameWithType: SAM_COMPANIES.CREPORT_CULTURE
+  fullName: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
+- uid: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
+  name: CNUMBER_FORMAT
+  nameWithType: SAM_COMPANIES.CNUMBER_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
+- uid: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
+  name: CDATE_LONG_FORMAT
+  nameWithType: SAM_COMPANIES.CDATE_LONG_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
+- uid: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
+  name: CDATE_SHORT_FORMAT
+  nameWithType: SAM_COMPANIES.CDATE_SHORT_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
+- uid: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
+  name: CTIME_LONG_FORMAT
+  nameWithType: SAM_COMPANIES.CTIME_LONG_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
+- uid: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
+  name: CTIME_SHORT_FORMAT
+  nameWithType: SAM_COMPANIES.CTIME_SHORT_FORMAT
+  fullName: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
+- uid: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
+  name: IDECIMAL_PLACES
+  nameWithType: SAM_COMPANIES.IDECIMAL_PLACES
+  fullName: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
+- uid: System.Nullable{System.Int32}
+  commentId: '!:System.Nullable{System.Int32}'
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
+  name: IROUNDING_PLACES
+  nameWithType: SAM_COMPANIES.IROUNDING_PLACES
+  fullName: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
+- uid: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
+  name: CROUNDING_METHOD
+  nameWithType: SAM_COMPANIES.CROUNDING_METHOD
+  fullName: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
+- uid: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  name: LENABLE_SAVE_CONFIRMATION
+  nameWithType: SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  fullName: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+- uid: System.Nullable{System.Boolean}
+  commentId: '!:System.Nullable{System.Boolean}'
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
+  name: CUPDATE_BY
+  nameWithType: SAM_COMPANIES.CUPDATE_BY
+  fullName: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
+- uid: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
+  name: DUPDATE_DATE
+  nameWithType: SAM_COMPANIES.DUPDATE_DATE
+  fullName: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
+- uid: BackExtension.Models.SAM_COMPANIES.CCREATE_BY*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCREATE_BY
+  name: CCREATE_BY
+  nameWithType: SAM_COMPANIES.CCREATE_BY
+  fullName: BackExtension.Models.SAM_COMPANIES.CCREATE_BY
+- uid: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
+  name: DCREATE_DATE
+  nameWithType: SAM_COMPANIES.DCREATE_DATE
+  fullName: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
+- uid: BackExtension.Models.SAM_COMPANIES.ITIMEZONE*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.ITIMEZONE
+  name: ITIMEZONE
+  nameWithType: SAM_COMPANIES.ITIMEZONE
+  fullName: BackExtension.Models.SAM_COMPANIES.ITIMEZONE
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BackExtension.Models.SAM_COMPANIES.CTKU*
+  commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTKU
+  name: CTKU
+  nameWithType: SAM_COMPANIES.CTKU
+  fullName: BackExtension.Models.SAM_COMPANIES.CTKU

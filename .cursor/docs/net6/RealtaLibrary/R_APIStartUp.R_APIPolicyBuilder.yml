@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIStartUp.R_APIPolicyBuilder
+  commentId: T:R_APIStartUp.R_APIPolicyBuilder
+  id: R_APIPolicyBuilder
+  parent: R_APIStartUp
+  children:
+  - R_APIStartUp.R_APIPolicyBuilder.Build
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableCache
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableContext
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient
+  - R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger
+  langs:
+  - csharp
+  - vb
+  name: R_APIPolicyBuilder
+  nameWithType: R_APIPolicyBuilder
+  fullName: R_APIStartUp.R_APIPolicyBuilder
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIPolicyBuilder
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 4
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: 'public class R_APIPolicyBuilder : object'
+    content.vb: >-
+      Public Class R_APIPolicyBuilder
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger
+  id: R_DisableSwagger
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableSwagger()
+  nameWithType: R_APIPolicyBuilder.R_DisableSwagger()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableSwagger
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 8
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableSwagger()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableSwagger As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS
+  id: R_DisableDefaultCORS
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableDefaultCORS()
+  nameWithType: R_APIPolicyBuilder.R_DisableDefaultCORS()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableDefaultCORS
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 14
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableDefaultCORS()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableDefaultCORS As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException
+  id: R_DisableGlobalException
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableGlobalException()
+  nameWithType: R_APIPolicyBuilder.R_DisableGlobalException()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableGlobalException
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 20
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableGlobalException()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableGlobalException As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableContext
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableContext
+  id: R_DisableContext
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableContext()
+  nameWithType: R_APIPolicyBuilder.R_DisableContext()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableContext()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableContext
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 26
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableContext()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableContext As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase
+  id: R_DisableDatabase
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableDatabase()
+  nameWithType: R_APIPolicyBuilder.R_DisableDatabase()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableDatabase
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 32
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableDatabase()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableDatabase As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication
+  id: R_DisableAuthentication
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableAuthentication()
+  nameWithType: R_APIPolicyBuilder.R_DisableAuthentication()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableAuthentication
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 38
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableAuthentication()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableAuthentication As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableCache
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableCache
+  id: R_DisableCache
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableCache()
+  nameWithType: R_APIPolicyBuilder.R_DisableCache()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableCache()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableCache
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 44
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableCache()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableCache As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableCache*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport
+  id: R_DisableFastReport
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableFastReport()
+  nameWithType: R_APIPolicyBuilder.R_DisableFastReport()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableFastReport
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 50
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableFastReport()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableFastReport As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry
+  id: R_DisableOpenTelemetry
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableOpenTelemetry()
+  nameWithType: R_APIPolicyBuilder.R_DisableOpenTelemetry()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableOpenTelemetry
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 56
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableOpenTelemetry()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableOpenTelemetry As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization
+  id: R_DisableAuthorization
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableAuthorization()
+  nameWithType: R_APIPolicyBuilder.R_DisableAuthorization()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableAuthorization
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 62
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableAuthorization()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableAuthorization As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient
+  id: R_DisableReportServerClient
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: R_DisableReportServerClient()
+  nameWithType: R_APIPolicyBuilder.R_DisableReportServerClient()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DisableReportServerClient
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 67
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicyBuilder R_DisableReportServerClient()
+    return:
+      type: R_APIStartUp.R_APIPolicyBuilder
+    content.vb: Public Function R_DisableReportServerClient As R_APIPolicyBuilder
+  overload: R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicyBuilder.Build
+  commentId: M:R_APIStartUp.R_APIPolicyBuilder.Build
+  id: Build
+  parent: R_APIStartUp.R_APIPolicyBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: R_APIPolicyBuilder.Build()
+  fullName: R_APIStartUp.R_APIPolicyBuilder.Build()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Build
+    path: Microservices/R_APIStartUp/R_APIPolicyBuilder.cs
+    startLine: 81
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public R_APIPolicy Build()
+    return:
+      type: R_APIStartUp.R_APIPolicy
+    content.vb: Public Function Build As R_APIPolicy
+  overload: R_APIStartUp.R_APIPolicyBuilder.Build*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_APIStartUp
+  commentId: N:R_APIStartUp
+  name: R_APIStartUp
+  nameWithType: R_APIStartUp
+  fullName: R_APIStartUp
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger
+  name: R_DisableSwagger
+  nameWithType: R_APIPolicyBuilder.R_DisableSwagger
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableSwagger
+- uid: R_APIStartUp.R_APIPolicyBuilder
+  commentId: T:R_APIStartUp.R_APIPolicyBuilder
+  parent: R_APIStartUp
+  name: R_APIPolicyBuilder
+  nameWithType: R_APIPolicyBuilder
+  fullName: R_APIStartUp.R_APIPolicyBuilder
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS
+  name: R_DisableDefaultCORS
+  nameWithType: R_APIPolicyBuilder.R_DisableDefaultCORS
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableDefaultCORS
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException
+  name: R_DisableGlobalException
+  nameWithType: R_APIPolicyBuilder.R_DisableGlobalException
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableGlobalException
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableContext*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableContext
+  name: R_DisableContext
+  nameWithType: R_APIPolicyBuilder.R_DisableContext
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableContext
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase
+  name: R_DisableDatabase
+  nameWithType: R_APIPolicyBuilder.R_DisableDatabase
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableDatabase
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication
+  name: R_DisableAuthentication
+  nameWithType: R_APIPolicyBuilder.R_DisableAuthentication
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthentication
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableCache*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableCache
+  name: R_DisableCache
+  nameWithType: R_APIPolicyBuilder.R_DisableCache
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableCache
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport
+  name: R_DisableFastReport
+  nameWithType: R_APIPolicyBuilder.R_DisableFastReport
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableFastReport
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry
+  name: R_DisableOpenTelemetry
+  nameWithType: R_APIPolicyBuilder.R_DisableOpenTelemetry
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableOpenTelemetry
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization
+  name: R_DisableAuthorization
+  nameWithType: R_APIPolicyBuilder.R_DisableAuthorization
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableAuthorization
+- uid: R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient
+  name: R_DisableReportServerClient
+  nameWithType: R_APIPolicyBuilder.R_DisableReportServerClient
+  fullName: R_APIStartUp.R_APIPolicyBuilder.R_DisableReportServerClient
+- uid: R_APIStartUp.R_APIPolicyBuilder.Build*
+  commentId: Overload:R_APIStartUp.R_APIPolicyBuilder.Build
+  name: Build
+  nameWithType: R_APIPolicyBuilder.Build
+  fullName: R_APIStartUp.R_APIPolicyBuilder.Build
+- uid: R_APIStartUp.R_APIPolicy
+  commentId: T:R_APIStartUp.R_APIPolicy
+  parent: R_APIStartUp
+  name: R_APIPolicy
+  nameWithType: R_APIPolicy
+  fullName: R_APIStartUp.R_APIPolicy

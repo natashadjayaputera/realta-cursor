@@ -1,0 +1,395 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  commentId: T:R_BlazorFrontEnd.Format.R_DateTimeFormat
+  id: R_DateTimeFormat
+  parent: R_BlazorFrontEnd.Format
+  children:
+  - R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol
+  - R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat
+  - R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat
+  - R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod
+  - R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat
+  - R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: R_DateTimeFormat
+  nameWithType: R_DateTimeFormat
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_DateTimeFormat
+    path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Format
+  syntax:
+    content: 'public class R_DateTimeFormat : object'
+    content.vb: >-
+      Public Class R_DateTimeFormat
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat
+  commentId: M:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat
+  id: R_GetAvailableShortDateFormat
+  parent: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: R_GetAvailableShortDateFormat()
+  nameWithType: R_DateTimeFormat.R_GetAvailableShortDateFormat()
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetAvailableShortDateFormat
+    path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Format
+  syntax:
+    content: public static string[] R_GetAvailableShortDateFormat()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function R_GetAvailableShortDateFormat As String()
+  overload: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat
+  commentId: M:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat
+  id: R_GetAvailableLongDateFormat
+  parent: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: R_GetAvailableLongDateFormat()
+  nameWithType: R_DateTimeFormat.R_GetAvailableLongDateFormat()
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetAvailableLongDateFormat
+    path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+    startLine: 48
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Format
+  syntax:
+    content: public static string[] R_GetAvailableLongDateFormat()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function R_GetAvailableLongDateFormat As String()
+  overload: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat
+  commentId: M:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat
+  id: R_GetAvailableShortTimeFormat
+  parent: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: R_GetAvailableShortTimeFormat()
+  nameWithType: R_DateTimeFormat.R_GetAvailableShortTimeFormat()
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetAvailableShortTimeFormat
+    path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+    startLine: 65
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Format
+  syntax:
+    content: public static string[] R_GetAvailableShortTimeFormat()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function R_GetAvailableShortTimeFormat As String()
+  overload: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat
+  commentId: M:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat
+  id: R_GetAvailableLongTimeFormat
+  parent: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: R_GetAvailableLongTimeFormat()
+  nameWithType: R_DateTimeFormat.R_GetAvailableLongTimeFormat()
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetAvailableLongTimeFormat
+    path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+    startLine: 76
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Format
+  syntax:
+    content: public static string[] R_GetAvailableLongTimeFormat()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function R_GetAvailableLongTimeFormat As String()
+  overload: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol
+  commentId: M:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol
+  id: R_GetAvailableDecimalSymbol
+  parent: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: R_GetAvailableDecimalSymbol()
+  nameWithType: R_DateTimeFormat.R_GetAvailableDecimalSymbol()
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetAvailableDecimalSymbol
+    path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+    startLine: 89
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Format
+  syntax:
+    content: public static string[] R_GetAvailableDecimalSymbol()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function R_GetAvailableDecimalSymbol As String()
+  overload: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod
+  commentId: M:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod
+  id: R_GetAvailableRoundingMethod
+  parent: R_BlazorFrontEnd.Format.R_DateTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: R_GetAvailableRoundingMethod()
+  nameWithType: R_DateTimeFormat.R_GetAvailableRoundingMethod()
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetAvailableRoundingMethod
+    path: Library/R_BlazorFrontEnd/Format/R_DateTimeFormat.cs
+    startLine: 98
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Format
+  syntax:
+    content: public static string[] R_GetAvailableRoundingMethod()
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function R_GetAvailableRoundingMethod As String()
+  overload: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorFrontEnd.Format
+  commentId: N:R_BlazorFrontEnd.Format
+  name: R_BlazorFrontEnd.Format
+  nameWithType: R_BlazorFrontEnd.Format
+  fullName: R_BlazorFrontEnd.Format
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat*
+  commentId: Overload:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat
+  name: R_GetAvailableShortDateFormat
+  nameWithType: R_DateTimeFormat.R_GetAvailableShortDateFormat
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortDateFormat
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat*
+  commentId: Overload:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat
+  name: R_GetAvailableLongDateFormat
+  nameWithType: R_DateTimeFormat.R_GetAvailableLongDateFormat
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongDateFormat
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat*
+  commentId: Overload:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat
+  name: R_GetAvailableShortTimeFormat
+  nameWithType: R_DateTimeFormat.R_GetAvailableShortTimeFormat
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableShortTimeFormat
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat*
+  commentId: Overload:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat
+  name: R_GetAvailableLongTimeFormat
+  nameWithType: R_DateTimeFormat.R_GetAvailableLongTimeFormat
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableLongTimeFormat
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol*
+  commentId: Overload:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol
+  name: R_GetAvailableDecimalSymbol
+  nameWithType: R_DateTimeFormat.R_GetAvailableDecimalSymbol
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableDecimalSymbol
+- uid: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod*
+  commentId: Overload:R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod
+  name: R_GetAvailableRoundingMethod
+  nameWithType: R_DateTimeFormat.R_GetAvailableRoundingMethod
+  fullName: R_BlazorFrontEnd.Format.R_DateTimeFormat.R_GetAvailableRoundingMethod

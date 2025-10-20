@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.eProcessResultMode
+  commentId: T:R_CommonFrontBackAPI.eProcessResultMode
+  id: eProcessResultMode
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.eProcessResultMode.Fail
+  - R_CommonFrontBackAPI.eProcessResultMode.Success
+  langs:
+  - csharp
+  - vb
+  name: eProcessResultMode
+  nameWithType: eProcessResultMode
+  fullName: R_CommonFrontBackAPI.eProcessResultMode
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: eProcessResultMode
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public enum eProcessResultMode : int'
+    content.vb: Public Enum eProcessResultMode As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_CommonFrontBackAPI.eProcessResultMode.Success
+  commentId: F:R_CommonFrontBackAPI.eProcessResultMode.Success
+  id: Success
+  parent: R_CommonFrontBackAPI.eProcessResultMode
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: eProcessResultMode.Success
+  fullName: R_CommonFrontBackAPI.eProcessResultMode.Success
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Success
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: Success = 0
+    return:
+      type: R_CommonFrontBackAPI.eProcessResultMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.eProcessResultMode.Fail
+  commentId: F:R_CommonFrontBackAPI.eProcessResultMode.Fail
+  id: Fail
+  parent: R_CommonFrontBackAPI.eProcessResultMode
+  langs:
+  - csharp
+  - vb
+  name: Fail
+  nameWithType: eProcessResultMode.Fail
+  fullName: R_CommonFrontBackAPI.eProcessResultMode.Fail
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Fail
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+    startLine: 13
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: Fail = 1
+    return:
+      type: R_CommonFrontBackAPI.eProcessResultMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_CommonFrontBackAPI.eProcessResultMode
+  commentId: T:R_CommonFrontBackAPI.eProcessResultMode
+  parent: R_CommonFrontBackAPI
+  name: eProcessResultMode
+  nameWithType: eProcessResultMode
+  fullName: R_CommonFrontBackAPI.eProcessResultMode

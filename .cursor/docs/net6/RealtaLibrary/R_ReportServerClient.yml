@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ReportServerClient
+  commentId: N:R_ReportServerClient
+  id: R_ReportServerClient
+  children:
+  - R_ReportServerClient.R_ReportServerClientService
+  - R_ReportServerClient.R_ReportServerUtility
+  - R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+  - R_ReportServerClient.ServiceReportServerExtension
+  langs:
+  - csharp
+  - vb
+  name: R_ReportServerClient
+  nameWithType: R_ReportServerClient
+  fullName: R_ReportServerClient
+  type: Namespace
+  assemblies:
+  - R_ReportServerClient
+references:
+- uid: R_ReportServerClient.ServiceReportServerExtension
+  commentId: T:R_ReportServerClient.ServiceReportServerExtension
+  name: ServiceReportServerExtension
+  nameWithType: ServiceReportServerExtension
+  fullName: R_ReportServerClient.ServiceReportServerExtension
+- uid: R_ReportServerClient.R_ReportServerClientService
+  commentId: T:R_ReportServerClient.R_ReportServerClientService
+  name: R_ReportServerClientService
+  nameWithType: R_ReportServerClientService
+  fullName: R_ReportServerClient.R_ReportServerClientService
+- uid: R_ReportServerClient.R_ReportServerUtility
+  commentId: T:R_ReportServerClient.R_ReportServerUtility
+  name: R_ReportServerUtility
+  nameWithType: R_ReportServerUtility
+  fullName: R_ReportServerClient.R_ReportServerUtility
+- uid: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+  commentId: T:R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+  name: R_ReportServerUtility.R_ReportServerException
+  nameWithType: R_ReportServerUtility.R_ReportServerException
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException

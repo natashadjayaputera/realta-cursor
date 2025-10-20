@@ -1,0 +1,727 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.R_IViewModel
+  commentId: T:R_BlazorFrontEnd.R_IViewModel
+  id: R_IViewModel
+  parent: R_BlazorFrontEnd
+  children:
+  - R_BlazorFrontEnd.R_IViewModel.DataHasChanged
+  - R_BlazorFrontEnd.R_IViewModel.HasData
+  - R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
+  - R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
+  - R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
+  - R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
+  - R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
+  - R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
+  - R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
+  - R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_IViewModel
+  nameWithType: R_IViewModel
+  fullName: R_BlazorFrontEnd.R_IViewModel
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IViewModel
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public interface R_IViewModel
+    content.vb: Public Interface R_IViewModel
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.R_IViewModel.HasData
+  commentId: P:R_BlazorFrontEnd.R_IViewModel.HasData
+  id: HasData
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: HasData
+  nameWithType: R_IViewModel.HasData
+  fullName: R_BlazorFrontEnd.R_IViewModel.HasData
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HasData
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: bool HasData { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasData As Boolean
+  overload: R_BlazorFrontEnd.R_IViewModel.HasData*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R_BlazorFrontEnd.R_IViewModel.DataHasChanged
+  commentId: E:R_BlazorFrontEnd.R_IViewModel.DataHasChanged
+  id: DataHasChanged
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: DataHasChanged
+  nameWithType: R_IViewModel.DataHasChanged
+  fullName: R_BlazorFrontEnd.R_IViewModel.DataHasChanged
+  type: Event
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DataHasChanged
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: event EventHandler<R_ViewModelDataHasChangedEventArgs> DataHasChanged
+    return:
+      type: EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}
+    content.vb: Event DataHasChanged As EventHandler(Of R_ViewModelDataHasChangedEventArgs)
+- uid: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
+  id: R_GetCurrentData
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: R_GetCurrentData()
+  nameWithType: R_IViewModel.R_GetCurrentData()
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetCurrentData
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: object R_GetCurrentData()
+    return:
+      type: System.Object
+    content.vb: Function R_GetCurrentData As Object
+  overload: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData*
+- uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
+  id: R_SetCurrentData(System.Nullable{System.Object})
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: R_SetCurrentData(Nullable<Object>)
+  nameWithType: R_IViewModel.R_SetCurrentData(Nullable<Object>)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable<System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetCurrentData
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: void R_SetCurrentData(object? poEntity)
+    parameters:
+    - id: poEntity
+      type: System.Nullable{System.Object}
+    content.vb: Sub R_SetCurrentData(poEntity As Object?)
+  overload: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData*
+  nameWithType.vb: R_IViewModel.R_SetCurrentData(Nullable(Of Object))
+  fullName.vb: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable(Of System.Object))
+  name.vb: R_SetCurrentData(Nullable(Of Object))
+- uid: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
+  id: R_GetEmptyData
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: R_GetEmptyData()
+  nameWithType: R_IViewModel.R_GetEmptyData()
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetEmptyData
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: object R_GetEmptyData()
+    return:
+      type: System.Object
+    content.vb: Function R_GetEmptyData As Object
+  overload: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData*
+- uid: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
+  id: R_ConvertToCurrentEntity(System.Object)
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertToCurrentEntity(Object)
+  nameWithType: R_IViewModel.R_ConvertToCurrentEntity(Object)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertToCurrentEntity
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: object? R_ConvertToCurrentEntity(object poEntity)
+    parameters:
+    - id: poEntity
+      type: System.Object
+    return:
+      type: System.Nullable{System.Object}
+    content.vb: Function R_ConvertToCurrentEntity(poEntity As Object) As Object?
+  overload: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity*
+- uid: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
+  id: R_GetValidationMessage(System.String)
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: R_GetValidationMessage(String)
+  nameWithType: R_IViewModel.R_GetValidationMessage(String)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetValidationMessage
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: List<string> R_GetValidationMessage(string pcPropertyName)
+    parameters:
+    - id: pcPropertyName
+      type: System.String
+    return:
+      type: List{System.String}
+    content.vb: Function R_GetValidationMessage(pcPropertyName As String) As List(Of String)
+  overload: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage*
+- uid: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
+  id: R_ResetValidationMessage
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: R_ResetValidationMessage()
+  nameWithType: R_IViewModel.R_ResetValidationMessage()
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ResetValidationMessage
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 16
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: void R_ResetValidationMessage()
+    content.vb: Sub R_ResetValidationMessage
+  overload: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage*
+- uid: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String,System.String)
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String,System.String)
+  id: R_SetValidationMessage(System.String,System.String)
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: R_SetValidationMessage(String, String)
+  nameWithType: R_IViewModel.R_SetValidationMessage(String, String)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetValidationMessage
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 17
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: void R_SetValidationMessage(string pcPropertyName, string pcMessage)
+    parameters:
+    - id: pcPropertyName
+      type: System.String
+    - id: pcMessage
+      type: System.String
+    content.vb: Sub R_SetValidationMessage(pcPropertyName As String, pcMessage As String)
+  overload: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage*
+- uid: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
+  id: HasValidationMessage
+  parent: R_BlazorFrontEnd.R_IViewModel
+  langs:
+  - csharp
+  - vb
+  name: HasValidationMessage()
+  nameWithType: R_IViewModel.HasValidationMessage()
+  fullName: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HasValidationMessage
+    path: Library/R_BlazorFrontEnd/ViewModels/R_IViewModel.cs
+    startLine: 18
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: bool HasValidationMessage()
+    return:
+      type: System.Boolean
+    content.vb: Function HasValidationMessage As Boolean
+  overload: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage*
+references:
+- uid: R_BlazorFrontEnd
+  commentId: N:R_BlazorFrontEnd
+  name: R_BlazorFrontEnd
+  nameWithType: R_BlazorFrontEnd
+  fullName: R_BlazorFrontEnd
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.R_IViewModel.HasData*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.HasData
+  name: HasData
+  nameWithType: R_IViewModel.HasData
+  fullName: R_BlazorFrontEnd.R_IViewModel.HasData
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}
+  commentId: '!:EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}'
+  definition: EventHandler`1
+  name: EventHandler<R_ViewModelDataHasChangedEventArgs>
+  nameWithType: EventHandler<R_ViewModelDataHasChangedEventArgs>
+  fullName: EventHandler<R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs>
+  nameWithType.vb: EventHandler(Of R_ViewModelDataHasChangedEventArgs)
+  fullName.vb: EventHandler(Of R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs)
+  name.vb: EventHandler(Of R_ViewModelDataHasChangedEventArgs)
+  spec.csharp:
+  - uid: EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+    name: R_ViewModelDataHasChangedEventArgs
+    nameWithType: R_ViewModelDataHasChangedEventArgs
+    fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+    name: R_ViewModelDataHasChangedEventArgs
+    nameWithType: R_ViewModelDataHasChangedEventArgs
+    fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EventHandler`1
+  commentId: '!:EventHandler`1'
+  isExternal: true
+  name: EventHandler<>
+  nameWithType: EventHandler<>
+  fullName: EventHandler<>
+  nameWithType.vb: EventHandler(Of )
+  fullName.vb: EventHandler(Of )
+  name.vb: EventHandler(Of )
+  spec.csharp:
+  - uid: EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
+  name: R_GetCurrentData
+  nameWithType: R_IViewModel.R_GetCurrentData
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData
+  name: R_SetCurrentData
+  nameWithType: R_IViewModel.R_SetCurrentData
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData
+- uid: System.Nullable{System.Object}
+  commentId: '!:System.Nullable{System.Object}'
+  definition: System.Nullable`1
+  name: Nullable<Object>
+  nameWithType: Nullable<Object>
+  fullName: System.Nullable<System.Object>
+  nameWithType.vb: Nullable(Of Object)
+  fullName.vb: System.Nullable(Of System.Object)
+  name.vb: Nullable(Of Object)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
+  name: R_GetEmptyData
+  nameWithType: R_IViewModel.R_GetEmptyData
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
+- uid: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity
+  name: R_ConvertToCurrentEntity
+  nameWithType: R_IViewModel.R_ConvertToCurrentEntity
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity
+- uid: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage
+  name: R_GetValidationMessage
+  nameWithType: R_IViewModel.R_GetValidationMessage
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: List{System.String}
+  commentId: '!:List{System.String}'
+  definition: List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
+  name: R_ResetValidationMessage
+  nameWithType: R_IViewModel.R_ResetValidationMessage
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
+- uid: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage
+  name: R_SetValidationMessage
+  nameWithType: R_IViewModel.R_SetValidationMessage
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage
+- uid: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage*
+  commentId: Overload:R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
+  name: HasValidationMessage
+  nameWithType: R_IViewModel.HasValidationMessage
+  fullName: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage

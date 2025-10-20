@@ -1,0 +1,506 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  commentId: T:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  id: SerilogIngestionOptions
+  parent: Serilog.AspNetCore.Ingestion
+  children:
+  - Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch
+  - Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath
+  - Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes
+  - Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger
+  - Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName
+  langs:
+  - csharp
+  - vb
+  name: SerilogIngestionOptions
+  nameWithType: SerilogIngestionOptions
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  type: Class
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SerilogIngestionOptions
+    path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+    startLine: 4
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog.AspNetCore.Ingestion
+  syntax:
+    content: 'public class SerilogIngestionOptions : object'
+    content.vb: >-
+      Public Class SerilogIngestionOptions
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath
+  commentId: P:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath
+  id: EndpointPath
+  parent: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  langs:
+  - csharp
+  - vb
+  name: EndpointPath
+  nameWithType: SerilogIngestionOptions.EndpointPath
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath
+  type: Property
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: EndpointPath
+    path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+    startLine: 6
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog.AspNetCore.Ingestion
+  syntax:
+    content: public string EndpointPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EndpointPath As String
+  overload: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName
+  commentId: P:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName
+  id: OriginPropertyName
+  parent: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  langs:
+  - csharp
+  - vb
+  name: OriginPropertyName
+  nameWithType: SerilogIngestionOptions.OriginPropertyName
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName
+  type: Property
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OriginPropertyName
+    path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+    startLine: 7
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog.AspNetCore.Ingestion
+  syntax:
+    content: public string OriginPropertyName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OriginPropertyName As String
+  overload: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger
+  commentId: P:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger
+  id: Logger
+  parent: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: SerilogIngestionOptions.Logger
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger
+  type: Property
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Logger
+    path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+    startLine: 8
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog.AspNetCore.Ingestion
+  syntax:
+    content: public ILogger? Logger { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{ILogger}
+    content.vb: Public Property Logger As ILogger?
+  overload: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes
+  commentId: P:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes
+  id: EventBodyLimitBytes
+  parent: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  langs:
+  - csharp
+  - vb
+  name: EventBodyLimitBytes
+  nameWithType: SerilogIngestionOptions.EventBodyLimitBytes
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes
+  type: Property
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: EventBodyLimitBytes
+    path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+    startLine: 9
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog.AspNetCore.Ingestion
+  syntax:
+    content: public long? EventBodyLimitBytes { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property EventBodyLimitBytes As Long?
+  overload: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch
+  commentId: P:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch
+  id: ClientLevelSwitch
+  parent: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  langs:
+  - csharp
+  - vb
+  name: ClientLevelSwitch
+  nameWithType: SerilogIngestionOptions.ClientLevelSwitch
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch
+  type: Property
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ClientLevelSwitch
+    path: Library Back/Serilog.AspNetCore.Ingestion/AspNetCore/Ingestion/SerilogIngestionOptions.cs
+    startLine: 10
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog.AspNetCore.Ingestion
+  syntax:
+    content: public LoggingLevelSwitch? ClientLevelSwitch { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{LoggingLevelSwitch}
+    content.vb: Public Property ClientLevelSwitch As LoggingLevelSwitch?
+  overload: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Serilog.AspNetCore.Ingestion
+  commentId: N:Serilog.AspNetCore.Ingestion
+  name: Serilog.AspNetCore.Ingestion
+  nameWithType: Serilog.AspNetCore.Ingestion
+  fullName: Serilog.AspNetCore.Ingestion
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath*
+  commentId: Overload:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath
+  name: EndpointPath
+  nameWithType: SerilogIngestionOptions.EndpointPath
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EndpointPath
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName*
+  commentId: Overload:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName
+  name: OriginPropertyName
+  nameWithType: SerilogIngestionOptions.OriginPropertyName
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.OriginPropertyName
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger*
+  commentId: Overload:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger
+  name: Logger
+  nameWithType: SerilogIngestionOptions.Logger
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.Logger
+- uid: System.Nullable{ILogger}
+  commentId: '!:System.Nullable{ILogger}'
+  definition: System.Nullable`1
+  name: Nullable<ILogger>
+  nameWithType: Nullable<ILogger>
+  fullName: System.Nullable<ILogger>
+  nameWithType.vb: Nullable(Of ILogger)
+  fullName.vb: System.Nullable(Of ILogger)
+  name.vb: Nullable(Of ILogger)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes*
+  commentId: Overload:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes
+  name: EventBodyLimitBytes
+  nameWithType: SerilogIngestionOptions.EventBodyLimitBytes
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.EventBodyLimitBytes
+- uid: System.Nullable{System.Int64}
+  commentId: '!:System.Nullable{System.Int64}'
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  nameWithType: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  nameWithType.vb: Nullable(Of Int64)
+  fullName.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch*
+  commentId: Overload:Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch
+  name: ClientLevelSwitch
+  nameWithType: SerilogIngestionOptions.ClientLevelSwitch
+  fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions.ClientLevelSwitch
+- uid: System.Nullable{LoggingLevelSwitch}
+  commentId: '!:System.Nullable{LoggingLevelSwitch}'
+  definition: System.Nullable`1
+  name: Nullable<LoggingLevelSwitch>
+  nameWithType: Nullable<LoggingLevelSwitch>
+  fullName: System.Nullable<LoggingLevelSwitch>
+  nameWithType.vb: Nullable(Of LoggingLevelSwitch)
+  fullName.vb: System.Nullable(Of LoggingLevelSwitch)
+  name.vb: Nullable(Of LoggingLevelSwitch)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: LoggingLevelSwitch
+    name: LoggingLevelSwitch
+    nameWithType: LoggingLevelSwitch
+    fullName: LoggingLevelSwitch
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: LoggingLevelSwitch
+    name: LoggingLevelSwitch
+    nameWithType: LoggingLevelSwitch
+    fullName: LoggingLevelSwitch
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

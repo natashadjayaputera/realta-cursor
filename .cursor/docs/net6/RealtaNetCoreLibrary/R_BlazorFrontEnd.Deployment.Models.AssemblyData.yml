@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  commentId: T:R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  id: AssemblyData
+  parent: R_BlazorFrontEnd.Deployment.Models
+  children:
+  - R_BlazorFrontEnd.Deployment.Models.AssemblyData.#ctor(System.String,System.Byte[])
+  - R_BlazorFrontEnd.Deployment.Models.AssemblyData.AssemblyName
+  - R_BlazorFrontEnd.Deployment.Models.AssemblyData.DllBytes
+  langs:
+  - csharp
+  - vb
+  name: AssemblyData
+  nameWithType: AssemblyData
+  fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AssemblyData
+    path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Models
+  syntax:
+    content: 'public sealed class AssemblyData : object'
+    content.vb: >-
+      Public NotInheritable Class AssemblyData
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData.DllBytes
+  commentId: F:R_BlazorFrontEnd.Deployment.Models.AssemblyData.DllBytes
+  id: DllBytes
+  parent: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  langs:
+  - csharp
+  - vb
+  name: DllBytes
+  nameWithType: AssemblyData.DllBytes
+  fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData.DllBytes
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DllBytes
+    path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Models
+  syntax:
+    content: public readonly byte[] DllBytes
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly DllBytes As Byte()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData.AssemblyName
+  commentId: F:R_BlazorFrontEnd.Deployment.Models.AssemblyData.AssemblyName
+  id: AssemblyName
+  parent: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  langs:
+  - csharp
+  - vb
+  name: AssemblyName
+  nameWithType: AssemblyData.AssemblyName
+  fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData.AssemblyName
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AssemblyName
+    path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Models
+  syntax:
+    content: public readonly string AssemblyName
+    return:
+      type: System.String
+    content.vb: Public ReadOnly AssemblyName As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData.#ctor(System.String,System.Byte[])
+  commentId: M:R_BlazorFrontEnd.Deployment.Models.AssemblyData.#ctor(System.String,System.Byte[])
+  id: '#ctor(System.String,System.Byte[])'
+  parent: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  langs:
+  - csharp
+  - vb
+  name: AssemblyData(String, Byte[])
+  nameWithType: AssemblyData.AssemblyData(String, Byte[])
+  fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData.AssemblyData(System.String, System.Byte[])
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd/Deployment/Models/AssemblyData.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Models
+  syntax:
+    content: public AssemblyData(string assemblyFileName, byte[] dllBytes)
+    parameters:
+    - id: assemblyFileName
+      type: System.String
+    - id: dllBytes
+      type: System.Byte[]
+    content.vb: Public Sub New(assemblyFileName As String, dllBytes As Byte())
+  overload: R_BlazorFrontEnd.Deployment.Models.AssemblyData.#ctor*
+  nameWithType.vb: AssemblyData.AssemblyData(String, Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Deployment.Models.AssemblyData.AssemblyData(System.String, System.Byte())
+  name.vb: AssemblyData(String, Byte())
+references:
+- uid: R_BlazorFrontEnd.Deployment.Models
+  commentId: N:R_BlazorFrontEnd.Deployment.Models
+  name: R_BlazorFrontEnd.Deployment.Models
+  nameWithType: R_BlazorFrontEnd.Deployment.Models
+  fullName: R_BlazorFrontEnd.Deployment.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Models.AssemblyData.#ctor
+  name: AssemblyData
+  nameWithType: AssemblyData.AssemblyData
+  fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData.AssemblyData

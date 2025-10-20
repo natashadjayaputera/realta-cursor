@@ -1,0 +1,281 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension
+  commentId: T:R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension
+  id: R_APIRegisterServiceAndMiddlewareExtension
+  parent: R_APIStartUp
+  children:
+  - R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder)
+  - R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder,Action{R_APIStartUp.R_APIPolicyBuilder})
+  - R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware(WebApplication)
+  langs:
+  - csharp
+  - vb
+  name: R_APIRegisterServiceAndMiddlewareExtension
+  nameWithType: R_APIRegisterServiceAndMiddlewareExtension
+  fullName: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRegisterServiceAndMiddlewareExtension
+    path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+    startLine: 39
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: 'public static class R_APIRegisterServiceAndMiddlewareExtension : object'
+    content.vb: >-
+      Public Module R_APIRegisterServiceAndMiddlewareExtension
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder,Action{R_APIStartUp.R_APIPolicyBuilder})
+  commentId: M:R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder,Action{R_APIStartUp.R_APIPolicyBuilder})
+  id: R_RegisterServices(WebApplicationBuilder,Action{R_APIStartUp.R_APIPolicyBuilder})
+  isExtensionMethod: true
+  parent: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension
+  langs:
+  - csharp
+  - vb
+  name: R_RegisterServices(WebApplicationBuilder, Action<R_APIPolicyBuilder>)
+  nameWithType: R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder, Action<R_APIPolicyBuilder>)
+  fullName: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder, Action<R_APIStartUp.R_APIPolicyBuilder>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_RegisterServices
+    path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+    startLine: 47
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public static WebApplicationBuilder R_RegisterServices(this WebApplicationBuilder builder, Action<R_APIPolicyBuilder> configurePolicy)
+    parameters:
+    - id: builder
+      type: WebApplicationBuilder
+    - id: configurePolicy
+      type: Action{R_APIStartUp.R_APIPolicyBuilder}
+    return:
+      type: WebApplicationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function R_RegisterServices(builder As WebApplicationBuilder, configurePolicy As Action(Of R_APIPolicyBuilder)) As WebApplicationBuilder
+  overload: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices*
+  nameWithType.vb: R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder, Action(Of R_APIPolicyBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder, Action(Of R_APIStartUp.R_APIPolicyBuilder))
+  name.vb: R_RegisterServices(WebApplicationBuilder, Action(Of R_APIPolicyBuilder))
+- uid: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder)
+  commentId: M:R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder)
+  id: R_RegisterServices(WebApplicationBuilder)
+  isExtensionMethod: true
+  parent: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension
+  langs:
+  - csharp
+  - vb
+  name: R_RegisterServices(WebApplicationBuilder)
+  nameWithType: R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder)
+  fullName: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices(WebApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_RegisterServices
+    path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+    startLine: 59
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public static WebApplicationBuilder R_RegisterServices(this WebApplicationBuilder builder)
+    parameters:
+    - id: builder
+      type: WebApplicationBuilder
+    return:
+      type: WebApplicationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function R_RegisterServices(builder As WebApplicationBuilder) As WebApplicationBuilder
+  overload: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware(WebApplication)
+  commentId: M:R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware(WebApplication)
+  id: R_SetupMiddleware(WebApplication)
+  isExtensionMethod: true
+  parent: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension
+  langs:
+  - csharp
+  - vb
+  name: R_SetupMiddleware(WebApplication)
+  nameWithType: R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware(WebApplication)
+  fullName: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware(WebApplication)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetupMiddleware
+    path: Microservices/R_APIStartUp/R_APIRegisterServiceAndMiddlewareExtension.cs
+    startLine: 464
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public static WebApplication R_SetupMiddleware(this WebApplication app)
+    parameters:
+    - id: app
+      type: WebApplication
+    return:
+      type: WebApplication
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function R_SetupMiddleware(app As WebApplication) As WebApplication
+  overload: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_APIStartUp
+  commentId: N:R_APIStartUp
+  name: R_APIStartUp
+  nameWithType: R_APIStartUp
+  fullName: R_APIStartUp
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices*
+  commentId: Overload:R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices
+  name: R_RegisterServices
+  nameWithType: R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices
+  fullName: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_RegisterServices
+- uid: WebApplicationBuilder
+  isExternal: true
+  name: WebApplicationBuilder
+  nameWithType: WebApplicationBuilder
+  fullName: WebApplicationBuilder
+- uid: Action{R_APIStartUp.R_APIPolicyBuilder}
+  commentId: '!:Action{R_APIStartUp.R_APIPolicyBuilder}'
+  definition: Action`1
+  name: Action<R_APIPolicyBuilder>
+  nameWithType: Action<R_APIPolicyBuilder>
+  fullName: Action<R_APIStartUp.R_APIPolicyBuilder>
+  nameWithType.vb: Action(Of R_APIPolicyBuilder)
+  fullName.vb: Action(Of R_APIStartUp.R_APIPolicyBuilder)
+  name.vb: Action(Of R_APIPolicyBuilder)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_APIStartUp.R_APIPolicyBuilder
+    name: R_APIPolicyBuilder
+    nameWithType: R_APIPolicyBuilder
+    fullName: R_APIStartUp.R_APIPolicyBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_APIStartUp.R_APIPolicyBuilder
+    name: R_APIPolicyBuilder
+    nameWithType: R_APIPolicyBuilder
+    fullName: R_APIStartUp.R_APIPolicyBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  commentId: '!:Action`1'
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware*
+  commentId: Overload:R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware
+  name: R_SetupMiddleware
+  nameWithType: R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware
+  fullName: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension.R_SetupMiddleware
+- uid: WebApplication
+  isExternal: true
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: WebApplication

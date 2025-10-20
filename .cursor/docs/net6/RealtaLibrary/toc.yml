@@ -1,0 +1,457 @@
+### YamlMime:TableOfContent
+- uid: CloudStorageJob
+  name: CloudStorageJob
+  items:
+  - uid: CloudStorageJob.CloudStorageJobCls
+    name: CloudStorageJobCls
+  - uid: CloudStorageJob.CloudStorageJobConst
+    name: CloudStorageJobConst
+  - uid: CloudStorageJob.CloudStorageJobLogger
+    name: CloudStorageJobLogger
+  - uid: CloudStorageJob.CloudStorageJobLogKeyDTO
+    name: CloudStorageJobLogKeyDTO
+  - uid: CloudStorageJob.CloudStorageJobRawSetting
+    name: CloudStorageJobRawSetting
+  - uid: CloudStorageJob.CloudStorageJobSetting
+    name: CloudStorageJobSetting
+  - uid: CloudStorageJob.CloudStorageJobSettings
+    name: CloudStorageJobSettings
+  - uid: CloudStorageJob.CompanyDBDTO
+    name: CompanyDBDTO
+  - uid: CloudStorageJob.StorageDBDTO
+    name: StorageDBDTO
+- uid: EmailEngineJob
+  name: EmailEngineJob
+  items:
+  - uid: EmailEngineJob.EmailDbDTO
+    name: EmailDbDTO
+  - uid: EmailEngineJob.EmailEngineJobCls
+    name: EmailEngineJobCls
+  - uid: EmailEngineJob.EmailEngineJobConst
+    name: EmailEngineJobConst
+  - uid: EmailEngineJob.EmailEngineJobLogger
+    name: EmailEngineJobLogger
+  - uid: EmailEngineJob.EmailEngineJobLogKeyDTO
+    name: EmailEngineJobLogKeyDTO
+  - uid: EmailEngineJob.EmailEngineJobSetting
+    name: EmailEngineJobSetting
+  - uid: EmailEngineJob.EmailEngineJobSettings
+    name: EmailEngineJobSettings
+- uid: MultiTenantDbSynchronizerJob
+  name: MultiTenantDbSynchronizerJob
+  items:
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+    name: MultiTenantDbSynchronizerJobCls
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst
+    name: MultiTenantDbSynchronizerJobConst
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+    name: MultiTenantDbSynchronizerJobLogger
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO
+    name: MultiTenantDbSynchronizerJobLogKeyDTO
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+    name: MultiTenantDbSynchronizerJobSetting
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings
+    name: MultiTenantDbSynchronizerJobSettings
+- uid: PrintMessage
+  name: PrintMessage
+  items:
+  - uid: PrintMessage.PrintMessageCls
+    name: PrintMessageCls
+  - uid: PrintMessage.PrintMessageConst
+    name: PrintMessageConst
+  - uid: PrintMessage.PrintMessageSetting
+    name: PrintMessageSetting
+  - uid: PrintMessage.PrintMessageSettings
+    name: PrintMessageSettings
+- uid: R_APIClient
+  name: R_APIClient
+  items:
+  - uid: R_APIClient.R_HTTPClient
+    name: R_HTTPClient
+  - uid: R_APIClient.R_HTTPClient.E_APIMethod
+    name: R_HTTPClient.E_APIMethod
+  - uid: R_APIClient.R_HTTPClientWrapper
+    name: R_HTTPClientWrapper
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify<E>
+    name.vb: R_INotify(Of E)
+  - uid: R_APIClient.R_MultiPartFileParameter
+    name: R_MultiPartFileParameter
+- uid: R_APIClientWebAssemblyExtension
+  name: R_APIClientWebAssemblyExtension
+  items:
+  - uid: R_APIClientWebAssemblyExtension.ExtensionMethods
+    name: ExtensionMethods
+- uid: R_APIStartUp
+  name: R_APIStartUp
+  items:
+  - uid: R_APIStartUp.R_APIPolicy
+    name: R_APIPolicy
+  - uid: R_APIStartUp.R_APIPolicyBuilder
+    name: R_APIPolicyBuilder
+  - uid: R_APIStartUp.R_APIRegisterServiceAndMiddlewareExtension
+    name: R_APIRegisterServiceAndMiddlewareExtension
+- uid: R_AuthenticationFront
+  name: R_AuthenticationFront
+  items:
+  - uid: R_AuthenticationFront.R_TokenRepository
+    name: R_TokenRepository
+- uid: R_BusinessObjectFront
+  name: R_BusinessObjectFront
+  items:
+  - uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+    name: R_BusinessObjectServiceClientBase<EntityDTO>
+    name.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)
+- uid: R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  items:
+  - uid: R_CloudStorageCommon.AzureStorageLogger
+    name: AzureStorageLogger
+  - uid: R_CloudStorageCommon.CloudReadOptional
+    name: CloudReadOptional
+  - uid: R_CloudStorageCommon.CloudSaveOptional
+    name: CloudSaveOptional
+  - uid: R_CloudStorageCommon.GoogleStorageLogger
+    name: GoogleStorageLogger
+  - uid: R_CloudStorageCommon.R_CloudAsynchDeleteResult
+    name: R_CloudAsynchDeleteResult
+  - uid: R_CloudStorageCommon.R_CloudDeleteParameter
+    name: R_CloudDeleteParameter
+  - uid: R_CloudStorageCommon.R_CloudReadParameter
+    name: R_CloudReadParameter
+  - uid: R_CloudStorageCommon.R_CloudReadResult
+    name: R_CloudReadResult
+  - uid: R_CloudStorageCommon.R_CloudSaveDataParameter
+    name: R_CloudSaveDataParameter
+  - uid: R_CloudStorageCommon.R_CloudSaveFileParameter
+    name: R_CloudSaveFileParameter
+  - uid: R_CloudStorageCommon.R_CloudSaveParameter
+    name: R_CloudSaveParameter
+  - uid: R_CloudStorageCommon.R_CloudSaveParameterBase
+    name: R_CloudSaveParameterBase
+  - uid: R_CloudStorageCommon.R_CloudSaveResult
+    name: R_CloudSaveResult
+  - uid: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+    name: R_ECloudStorageDirectoryAccess
+  - uid: R_CloudStorageCommon.R_ECloudStorageProvider
+    name: R_ECloudStorageProvider
+  - uid: R_CloudStorageCommon.R_IBatchCoudStorage
+    name: R_IBatchCoudStorage
+  - uid: R_CloudStorageCommon.R_ICloudStorage
+    name: R_ICloudStorage
+- uid: R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  items:
+  - uid: R_CommonFrontBackAPI.eCRUDMode
+    name: eCRUDMode
+  - uid: R_CommonFrontBackAPI.eCulture
+    name: eCulture
+  - uid: R_CommonFrontBackAPI.eProcessResultMode
+    name: eProcessResultMode
+  - uid: R_CommonFrontBackAPI.eUploadType
+    name: eUploadType
+  - uid: R_CommonFrontBackAPI.R_CommonConstant
+    name: R_CommonConstant
+  - uid: R_CommonFrontBackAPI.R_ConfigurationUtility
+    name: R_ConfigurationUtility
+  - uid: R_CommonFrontBackAPI.R_Culture
+    name: R_Culture
+  - uid: R_CommonFrontBackAPI.R_DownloadFileResultDTO
+    name: R_DownloadFileResultDTO
+  - uid: R_CommonFrontBackAPI.R_EmailEngineBackFile
+    name: R_EmailEngineBackFile
+  - uid: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+    name: R_EmailEngineCommandPar
+  - uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+    name: R_EmailEngineDataPar
+  - uid: R_CommonFrontBackAPI.R_EmailEngineKey
+    name: R_EmailEngineKey
+  - uid: R_CommonFrontBackAPI.R_EmailEngineMessage
+    name: R_EmailEngineMessage
+  - uid: R_CommonFrontBackAPI.R_ErrorStatusReturn
+    name: R_ErrorStatusReturn
+  - uid: R_CommonFrontBackAPI.R_File
+    name: R_File
+  - uid: R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+    name: R_GetErrorWithMultiLanguageParameter
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+    name: R_IServiceCRUDAsyncBase<EntityDTO>
+    name.vb: R_IServiceCRUDAsyncBase(Of EntityDTO)
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+    name: R_IServiceCRUDBase<EntityDTO>
+    name.vb: R_IServiceCRUDBase(Of EntityDTO)
+  - uid: R_CommonFrontBackAPI.R_IServiceEmailEngine
+    name: R_IServiceEmailEngine
+  - uid: R_CommonFrontBackAPI.R_IServiceLocking
+    name: R_IServiceLocking
+  - uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+    name: R_IServiceProcessAndUpload
+  - uid: R_CommonFrontBackAPI.R_KeyValue
+    name: R_KeyValue
+  - uid: R_CommonFrontBackAPI.R_MonitoringReturn
+    name: R_MonitoringReturn
+  - uid: R_CommonFrontBackAPI.R_NameValue
+    name: R_NameValue
+  - uid: R_CommonFrontBackAPI.R_NetCoreUtility
+    name: R_NetCoreUtility
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO<E>
+    name.vb: R_ServiceDeleteParameterDTO(Of E)
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+    name: R_ServiceDeleteResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+    name: R_ServiceDeleteUploadResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+    name: R_ServiceEmailEngineLoadDataResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+    name: R_ServiceEmailEngineProcessDataData
+  - uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+    name: R_ServiceEmailEngineProcessDataResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+    name: R_ServiceGetErrorProcessResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO<E>
+    name.vb: R_ServiceGetRecordParameterDTO(Of E)
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO<E>
+    name.vb: R_ServiceGetRecordResultDTO(Of E)
+  - uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+    name: R_ServiceLockingGeneralResultData
+  - uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+    name: R_ServiceLockingGeneralResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+    name: R_ServiceLockingLockParameterDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+    name: R_ServiceLockingUnLockParameterDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+    name: R_ServiceMonitoringProcessResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+    name: R_ServiceProcessDataResultDTO
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO<E>
+    name.vb: R_ServiceSaveParameterDTO(Of E)
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO<E>
+    name.vb: R_ServiceSaveResultDTO(Of E)
+  - uid: R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+    name: R_ServiceUploadDataResultDTO
+  - uid: R_CommonFrontBackAPI.R_UploadAndProcessKey
+    name: R_UploadAndProcessKey
+  - uid: R_CommonFrontBackAPI.R_UploadCommand
+    name: R_UploadCommand
+  - uid: R_CommonFrontBackAPI.R_UploadData
+    name: R_UploadData
+- uid: R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  items:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage
+    name: R_NetCoreLogAsyncStorage
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+    name: R_NetCoreLogConstant
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase<T>
+    name.vb: R_NetCoreLoggerBase(Of T)
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerDefault
+    name: R_NetCoreLoggerDefault
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+    name: R_NetCoreLoggerFactory
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+    name: R_NetCoreLogKeyDTO
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLogUtility
+    name: R_NetCoreLogUtility
+- uid: R_ContextFrontEnd
+  name: R_ContextFrontEnd
+  items:
+  - uid: R_ContextFrontEnd.R_Context
+    name: R_Context
+  - uid: R_ContextFrontEnd.R_ContextHeader
+    name: R_ContextHeader
+- uid: R_CrossPlatformSecurity
+  name: R_CrossPlatformSecurity
+  items:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider
+    name: R_ISymmetricJSProvider
+  - uid: R_CrossPlatformSecurity.R_ISymmetricProvider
+    name: R_ISymmetricProvider
+  - uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+    name: R_SymmetricAesJsProvider
+  - uid: R_CrossPlatformSecurity.R_SymmetricAESProvider
+    name: R_SymmetricAESProvider
+  - uid: R_CrossPlatformSecurity.R_SymmetricEnumeration
+    name: R_SymmetricEnumeration
+- uid: R_EmailEngine
+  name: R_EmailEngine
+  items:
+  - uid: R_EmailEngine.R_EmailEngineFactory
+    name: R_EmailEngineFactory
+  - uid: R_EmailEngine.R_IEmail
+    name: R_IEmail
+  - uid: R_EmailEngine.R_Sender
+    name: R_Sender
+- uid: R_EmailEngine.DTOs
+  name: R_EmailEngine.DTOs
+  items:
+  - uid: R_EmailEngine.DTOs.EmailAttachmentDTO
+    name: EmailAttachmentDTO
+  - uid: R_EmailEngine.DTOs.EmailConfigDTO
+    name: EmailConfigDTO
+  - uid: R_EmailEngine.DTOs.EmailDTO
+    name: EmailDTO
+  - uid: R_EmailEngine.DTOs.EmailEmbeddedDTO
+    name: EmailEmbeddedDTO
+- uid: R_EmailEngine.Enums
+  name: R_EmailEngine.Enums
+  items:
+  - uid: R_EmailEngine.Enums.eEmailProvider
+    name: eEmailProvider
+- uid: R_EmailEngine.Providers
+  name: R_EmailEngine.Providers
+  items:
+  - uid: R_EmailEngine.Providers.EmailSendGrid
+    name: EmailSendGrid
+  - uid: R_EmailEngine.Providers.EmailSmtp
+    name: EmailSmtp
+- uid: R_EmailEngineCommon
+  name: R_EmailEngineCommon
+  items:
+  - uid: R_EmailEngineCommon.EmailEngineLogger
+    name: EmailEngineLogger
+- uid: R_EmailEngineFront
+  name: R_EmailEngineFront
+  items:
+  - uid: R_EmailEngineFront.R_EmailEngineFrontFile
+    name: R_EmailEngineFrontFile
+  - uid: R_EmailEngineFront.R_EmailEngineFrontPar
+    name: R_EmailEngineFrontPar
+  - uid: R_EmailEngineFront.R_EmailEngineServiceClient
+    name: R_EmailEngineServiceClient
+- uid: R_HelperController.Controllers
+  name: R_HelperController.Controllers
+  items:
+  - uid: R_HelperController.Controllers.R_EmailEngineController
+    name: R_EmailEngineController
+  - uid: R_HelperController.Controllers.R_LockingController
+    name: R_LockingController
+  - uid: R_HelperController.Controllers.R_ProcessAndUploadController
+    name: R_ProcessAndUploadController
+- uid: R_LockingFront
+  name: R_LockingFront
+  items:
+  - uid: R_LockingFront.R_LockingFrontResult
+    name: R_LockingFrontResult
+  - uid: R_LockingFront.R_LockingServiceClient
+    name: R_LockingServiceClient
+- uid: R_LockingServiceFront
+  name: R_LockingServiceFront
+  items:
+  - uid: R_LockingServiceFront.R_LockingFrontResult
+    name: R_LockingFrontResult
+  - uid: R_LockingServiceFront.R_LockingServiceClient
+    name: R_LockingServiceClient
+- uid: R_OpenTelemetry
+  name: R_OpenTelemetry
+  items:
+  - uid: R_OpenTelemetry.R_ActivitySourceBase
+    name: R_ActivitySourceBase
+  - uid: R_OpenTelemetry.R_LibraryActivity
+    name: R_LibraryActivity
+  - uid: R_OpenTelemetry.R_OpenTelemetryConstant
+    name: R_OpenTelemetryConstant
+- uid: R_ProcessAndUploadFront
+  name: R_ProcessAndUploadFront
+  items:
+  - uid: R_ProcessAndUploadFront.R_BatchParameter
+    name: R_BatchParameter
+  - uid: R_ProcessAndUploadFront.R_IProcessProgressStatus
+    name: R_IProcessProgressStatus
+  - uid: R_ProcessAndUploadFront.R_ProcessAndUploadClient
+    name: R_ProcessAndUploadClient
+  - uid: R_ProcessAndUploadFront.R_UploadPar
+    name: R_UploadPar
+- uid: R_Processor
+  name: R_Processor
+  items:
+  - uid: R_Processor.R_ProcessorClass`2
+    name: R_ProcessorClass<T, E>
+    name.vb: R_ProcessorClass(Of T, E)
+- uid: R_ProcessorJob
+  name: R_ProcessorJob
+  items:
+  - uid: R_ProcessorJob.R_IProcessJob`2
+    name: R_IProcessJob<T, E>
+    name.vb: R_IProcessJob(Of T, E)
+  - uid: R_ProcessorJob.R_IProcessJobAsync`2
+    name: R_IProcessJobAsync<T, E>
+    name.vb: R_IProcessJobAsync(Of T, E)
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase<T, E>
+    name.vb: R_IProcessJobBase(Of T, E)
+- uid: R_ReportServerClient
+  name: R_ReportServerClient
+  items:
+  - uid: R_ReportServerClient.R_ReportServerClientService
+    name: R_ReportServerClientService
+  - uid: R_ReportServerClient.R_ReportServerUtility
+    name: R_ReportServerUtility
+  - uid: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+    name: R_ReportServerUtility.R_ReportServerException
+  - uid: R_ReportServerClient.ServiceReportServerExtension
+    name: ServiceReportServerExtension
+- uid: R_ReportServerClient.Constant
+  name: R_ReportServerClient.Constant
+  items:
+  - uid: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant
+    name: R_ReportServerClientConfigurationConstant
+- uid: R_ReportServerClient.DTO
+  name: R_ReportServerClient.DTO
+  items:
+  - uid: R_ReportServerClient.DTO.R_ReportServerClientConfiguration
+    name: R_ReportServerClientConfiguration
+- uid: R_Scheduler.MultiTenantDb
+  name: R_Scheduler.MultiTenantDb
+  items:
+  - uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+    name: MultiTenantDbDTO
+  - uid: R_Scheduler.MultiTenantDb.MultiTenantHelper
+    name: MultiTenantHelper
+- uid: RolesSynchronizerJob
+  name: RolesSynchronizerJob
+  items:
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobCls
+    name: RolesSynchronizerJobCls
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobConst
+    name: RolesSynchronizerJobConst
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobLogger
+    name: RolesSynchronizerJobLogger
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobLogKeyDTO
+    name: RolesSynchronizerJobLogKeyDTO
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobSetting
+    name: RolesSynchronizerJobSetting
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobSettings
+    name: RolesSynchronizerJobSettings
+- uid: SampleStandardJob
+  name: SampleStandardJob
+  items:
+  - uid: SampleStandardJob.SampleProcessTableKeyDTO
+    name: SampleProcessTableKeyDTO
+  - uid: SampleStandardJob.SampleStandardJobCls
+    name: SampleStandardJobCls
+  - uid: SampleStandardJob.SampleStandardJobConst
+    name: SampleStandardJobConst
+  - uid: SampleStandardJob.SampleStandardJobLogger
+    name: SampleStandardJobLogger
+  - uid: SampleStandardJob.SampleStandardJobLogKeyDTO
+    name: SampleStandardJobLogKeyDTO
+  - uid: SampleStandardJob.SampleStandardJobSetting
+    name: SampleStandardJobSetting
+  - uid: SampleStandardJob.SampleStandardJobSettings
+    name: SampleStandardJobSettings
+- uid: SampleStandardJob.DTO
+  name: SampleStandardJob.DTO
+  items:
+  - uid: SampleStandardJob.DTO.CompanyDTO
+    name: CompanyDTO
+  - uid: SampleStandardJob.DTO.ProcessDataDTO
+    name: ProcessDataDTO
+  - uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO
+    name: SampleProcessTableStatusDTO

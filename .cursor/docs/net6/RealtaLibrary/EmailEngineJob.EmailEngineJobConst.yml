@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmailEngineJob.EmailEngineJobConst
+  commentId: T:EmailEngineJob.EmailEngineJobConst
+  id: EmailEngineJobConst
+  parent: EmailEngineJob
+  children:
+  - EmailEngineJob.EmailEngineJobConst.SETTING_NAME
+  langs:
+  - csharp
+  - vb
+  name: EmailEngineJobConst
+  nameWithType: EmailEngineJobConst
+  fullName: EmailEngineJob.EmailEngineJobConst
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailEngineJobConst
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobConst.cs
+    startLine: 9
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: 'public class EmailEngineJobConst : R_SchedulerSettingConstant'
+    content.vb: >-
+      Public Class EmailEngineJobConst
+          Inherits R_SchedulerSettingConstant
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EmailEngineJob.EmailEngineJobConst.SETTING_NAME
+  commentId: F:EmailEngineJob.EmailEngineJobConst.SETTING_NAME
+  id: SETTING_NAME
+  parent: EmailEngineJob.EmailEngineJobConst
+  langs:
+  - csharp
+  - vb
+  name: SETTING_NAME
+  nameWithType: EmailEngineJobConst.SETTING_NAME
+  fullName: EmailEngineJob.EmailEngineJobConst.SETTING_NAME
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SETTING_NAME
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobConst.cs
+    startLine: 11
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: public const string SETTING_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const SETTING_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: EmailEngineJob
+  commentId: N:EmailEngineJob
+  name: EmailEngineJob
+  nameWithType: EmailEngineJob
+  fullName: EmailEngineJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst
+  commentId: T:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst
+  id: MultiTenantDbSynchronizerJobConst
+  parent: MultiTenantDbSynchronizerJob
+  children:
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.FOR_APPLICATION_ID
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.SETTING_NAME
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbSynchronizerJobConst
+  nameWithType: MultiTenantDbSynchronizerJobConst
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantDbSynchronizerJobConst
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobConst.cs
+    startLine: 4
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: 'public class MultiTenantDbSynchronizerJobConst : R_SchedulerSettingConstant'
+    content.vb: >-
+      Public Class MultiTenantDbSynchronizerJobConst
+          Inherits R_SchedulerSettingConstant
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.SETTING_NAME
+  commentId: F:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.SETTING_NAME
+  id: SETTING_NAME
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst
+  langs:
+  - csharp
+  - vb
+  name: SETTING_NAME
+  nameWithType: MultiTenantDbSynchronizerJobConst.SETTING_NAME
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.SETTING_NAME
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SETTING_NAME
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobConst.cs
+    startLine: 6
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public const string SETTING_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const SETTING_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.FOR_APPLICATION_ID
+  commentId: F:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.FOR_APPLICATION_ID
+  id: FOR_APPLICATION_ID
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst
+  langs:
+  - csharp
+  - vb
+  name: FOR_APPLICATION_ID
+  nameWithType: MultiTenantDbSynchronizerJobConst.FOR_APPLICATION_ID
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobConst.FOR_APPLICATION_ID
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FOR_APPLICATION_ID
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobConst.cs
+    startLine: 7
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public const string FOR_APPLICATION_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const FOR_APPLICATION_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: MultiTenantDbSynchronizerJob
+  commentId: N:MultiTenantDbSynchronizerJob
+  name: MultiTenantDbSynchronizerJob
+  nameWithType: MultiTenantDbSynchronizerJob
+  fullName: MultiTenantDbSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

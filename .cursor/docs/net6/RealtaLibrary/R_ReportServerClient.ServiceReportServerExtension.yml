@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ReportServerClient.ServiceReportServerExtension
+  commentId: T:R_ReportServerClient.ServiceReportServerExtension
+  id: ServiceReportServerExtension
+  parent: R_ReportServerClient
+  children:
+  - R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService(IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: ServiceReportServerExtension
+  nameWithType: ServiceReportServerExtension
+  fullName: R_ReportServerClient.ServiceReportServerExtension
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/Extension/ServiceReportServerExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ServiceReportServerExtension
+    path: Microservices/R_ReportServerClient/Extension/ServiceReportServerExtension.cs
+    startLine: 12
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: 'public static class ServiceReportServerExtension : object'
+    content.vb: >-
+      Public Module ServiceReportServerExtension
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService(IServiceCollection)
+  commentId: M:R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService(IServiceCollection)
+  id: R_LoadReportClientService(IServiceCollection)
+  isExtensionMethod: true
+  parent: R_ReportServerClient.ServiceReportServerExtension
+  langs:
+  - csharp
+  - vb
+  name: R_LoadReportClientService(IServiceCollection)
+  nameWithType: ServiceReportServerExtension.R_LoadReportClientService(IServiceCollection)
+  fullName: R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService(IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/Extension/ServiceReportServerExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_LoadReportClientService
+    path: Microservices/R_ReportServerClient/Extension/ServiceReportServerExtension.cs
+    startLine: 14
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public static IServiceCollection R_LoadReportClientService(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function R_LoadReportClientService(services As IServiceCollection) As IServiceCollection
+  overload: R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_ReportServerClient
+  commentId: N:R_ReportServerClient
+  name: R_ReportServerClient
+  nameWithType: R_ReportServerClient
+  fullName: R_ReportServerClient
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService*
+  commentId: Overload:R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService
+  name: R_LoadReportClientService
+  nameWithType: ServiceReportServerExtension.R_LoadReportClientService
+  fullName: R_ReportServerClient.ServiceReportServerExtension.R_LoadReportClientService
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection

@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.EnumExtension
+  commentId: T:BackExtension.EnumExtension
+  id: EnumExtension
+  parent: BackExtension
+  children:
+  - BackExtension.EnumExtension.ConvertToEnum``1(System.String)
+  - BackExtension.EnumExtension.ConvertToString(Enum)
+  langs:
+  - csharp
+  - vb
+  name: EnumExtension
+  nameWithType: EnumExtension
+  fullName: BackExtension.EnumExtension
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/EnumExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: EnumExtension
+    path: Library Back/BackExtension/EnumExtension.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: 'public static class EnumExtension : object'
+    content.vb: >-
+      Public Module EnumExtension
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: BackExtension.EnumExtension.ConvertToEnum``1(System.String)
+  commentId: M:BackExtension.EnumExtension.ConvertToEnum``1(System.String)
+  id: ConvertToEnum``1(System.String)
+  isExtensionMethod: true
+  parent: BackExtension.EnumExtension
+  langs:
+  - csharp
+  - vb
+  name: ConvertToEnum<T>(String)
+  nameWithType: EnumExtension.ConvertToEnum<T>(String)
+  fullName: BackExtension.EnumExtension.ConvertToEnum<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/EnumExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertToEnum
+    path: Library Back/BackExtension/EnumExtension.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: >-
+      public static T ConvertToEnum<T>(this string value)
+          where T : Enum
+    parameters:
+    - id: value
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ConvertToEnum(Of T As  Enum)(value As String) As T
+  overload: BackExtension.EnumExtension.ConvertToEnum*
+  nameWithType.vb: EnumExtension.ConvertToEnum(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BackExtension.EnumExtension.ConvertToEnum(Of T)(System.String)
+  name.vb: ConvertToEnum(Of T)(String)
+- uid: BackExtension.EnumExtension.ConvertToString(Enum)
+  commentId: M:BackExtension.EnumExtension.ConvertToString(Enum)
+  id: ConvertToString(Enum)
+  isExtensionMethod: true
+  parent: BackExtension.EnumExtension
+  langs:
+  - csharp
+  - vb
+  name: ConvertToString(Enum)
+  nameWithType: EnumExtension.ConvertToString(Enum)
+  fullName: BackExtension.EnumExtension.ConvertToString(Enum)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/EnumExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertToString
+    path: Library Back/BackExtension/EnumExtension.cs
+    startLine: 12
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: public static string ConvertToString(this Enum value)
+    parameters:
+    - id: value
+      type: Enum
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ConvertToString(value As  Enum) As String
+  overload: BackExtension.EnumExtension.ConvertToString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: BackExtension
+  commentId: N:BackExtension
+  name: BackExtension
+  nameWithType: BackExtension
+  fullName: BackExtension
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BackExtension.EnumExtension.ConvertToEnum*
+  commentId: Overload:BackExtension.EnumExtension.ConvertToEnum
+  name: ConvertToEnum
+  nameWithType: EnumExtension.ConvertToEnum
+  fullName: BackExtension.EnumExtension.ConvertToEnum
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: BackExtension.EnumExtension.ConvertToString*
+  commentId: Overload:BackExtension.EnumExtension.ConvertToString
+  name: ConvertToString
+  nameWithType: EnumExtension.ConvertToString
+  fullName: BackExtension.EnumExtension.ConvertToString
+- uid: Enum
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: Enum

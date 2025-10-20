@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+  commentId: T:R_BlazorFrontEnd.Enums.R_eDocumentType
+  id: R_eDocumentType
+  parent: R_BlazorFrontEnd.Enums
+  children:
+  - R_BlazorFrontEnd.Enums.R_eDocumentType.Docx
+  - R_BlazorFrontEnd.Enums.R_eDocumentType.Html
+  - R_BlazorFrontEnd.Enums.R_eDocumentType.Pdf
+  - R_BlazorFrontEnd.Enums.R_eDocumentType.Rtf
+  - R_BlazorFrontEnd.Enums.R_eDocumentType.Txt
+  langs:
+  - csharp
+  - vb
+  name: R_eDocumentType
+  nameWithType: R_eDocumentType
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eDocumentType
+    path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: 'public enum R_eDocumentType : int'
+    content.vb: Public Enum R_eDocumentType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType.Pdf
+  commentId: F:R_BlazorFrontEnd.Enums.R_eDocumentType.Pdf
+  id: Pdf
+  parent: R_BlazorFrontEnd.Enums.R_eDocumentType
+  langs:
+  - csharp
+  - vb
+  name: Pdf
+  nameWithType: R_eDocumentType.Pdf
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType.Pdf
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Pdf
+    path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Pdf = 0
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eDocumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType.Html
+  commentId: F:R_BlazorFrontEnd.Enums.R_eDocumentType.Html
+  id: Html
+  parent: R_BlazorFrontEnd.Enums.R_eDocumentType
+  langs:
+  - csharp
+  - vb
+  name: Html
+  nameWithType: R_eDocumentType.Html
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType.Html
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Html
+    path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Html = 1
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eDocumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType.Docx
+  commentId: F:R_BlazorFrontEnd.Enums.R_eDocumentType.Docx
+  id: Docx
+  parent: R_BlazorFrontEnd.Enums.R_eDocumentType
+  langs:
+  - csharp
+  - vb
+  name: Docx
+  nameWithType: R_eDocumentType.Docx
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType.Docx
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Docx
+    path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Docx = 2
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eDocumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType.Txt
+  commentId: F:R_BlazorFrontEnd.Enums.R_eDocumentType.Txt
+  id: Txt
+  parent: R_BlazorFrontEnd.Enums.R_eDocumentType
+  langs:
+  - csharp
+  - vb
+  name: Txt
+  nameWithType: R_eDocumentType.Txt
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType.Txt
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Txt
+    path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Txt = 3
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eDocumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType.Rtf
+  commentId: F:R_BlazorFrontEnd.Enums.R_eDocumentType.Rtf
+  id: Rtf
+  parent: R_BlazorFrontEnd.Enums.R_eDocumentType
+  langs:
+  - csharp
+  - vb
+  name: Rtf
+  nameWithType: R_eDocumentType.Rtf
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType.Rtf
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Rtf
+    path: Library/R_BlazorFrontEnd/Enums/R_eDocumentType.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Rtf = 4
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eDocumentType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_BlazorFrontEnd.Enums
+  commentId: N:R_BlazorFrontEnd.Enums
+  name: R_BlazorFrontEnd.Enums
+  nameWithType: R_BlazorFrontEnd.Enums
+  fullName: R_BlazorFrontEnd.Enums
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+  commentId: T:R_BlazorFrontEnd.Enums.R_eDocumentType
+  parent: R_BlazorFrontEnd.Enums
+  name: R_eDocumentType
+  nameWithType: R_eDocumentType
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType

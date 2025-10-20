@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+  commentId: T:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+  id: MultiTenantDbSynchronizerJobSetting
+  parent: MultiTenantDbSynchronizerJob
+  children:
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbSynchronizerJobSetting
+  nameWithType: MultiTenantDbSynchronizerJobSetting
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantDbSynchronizerJobSetting
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSetting.cs
+    startLine: 4
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: 'public class MultiTenantDbSynchronizerJobSetting : R_SchedulerSettingDTO'
+    content.vb: >-
+      Public Class MultiTenantDbSynchronizerJobSetting
+          Inherits R_SchedulerSettingDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId
+  commentId: P:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId
+  id: ForApplicationId
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+  langs:
+  - csharp
+  - vb
+  name: ForApplicationId
+  nameWithType: MultiTenantDbSynchronizerJobSetting.ForApplicationId
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ForApplicationId
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSetting.cs
+    startLine: 6
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public string ForApplicationId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ForApplicationId As String
+  overload: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: MultiTenantDbSynchronizerJob
+  commentId: N:MultiTenantDbSynchronizerJob
+  name: MultiTenantDbSynchronizerJob
+  nameWithType: MultiTenantDbSynchronizerJob
+  fullName: MultiTenantDbSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId*
+  commentId: Overload:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId
+  name: ForApplicationId
+  nameWithType: MultiTenantDbSynchronizerJobSetting.ForApplicationId
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting.ForApplicationId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

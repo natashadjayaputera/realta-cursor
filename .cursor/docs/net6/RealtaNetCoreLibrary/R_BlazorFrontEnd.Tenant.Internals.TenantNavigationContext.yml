@@ -1,0 +1,231 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+  commentId: T:R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+  id: TenantNavigationContext
+  parent: R_BlazorFrontEnd.Tenant.Internals
+  children:
+  - R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+  - R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path
+  langs:
+  - csharp
+  - vb
+  name: TenantNavigationContext
+  nameWithType: TenantNavigationContext
+  fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/Internals/TenantNavigationContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: TenantNavigationContext
+    path: Library/R_BlazorFrontEnd.Tenant/Internals/TenantNavigationContext.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant.Internals
+  summary: "\nProvides information about the current asynchronous navigation event\nincluding the target path and the cancellation token.\n"
+  example: []
+  syntax:
+    content: 'public class TenantNavigationContext : object'
+    content.vb: >-
+      Public Class TenantNavigationContext
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path
+  commentId: P:R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path
+  id: Path
+  parent: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: TenantNavigationContext.Path
+  fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/Internals/TenantNavigationContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Path
+    path: Library/R_BlazorFrontEnd.Tenant/Internals/TenantNavigationContext.cs
+    startLine: 19
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant.Internals
+  summary: "\nThe target path for the navigation.\n"
+  example: []
+  syntax:
+    content: public string Path { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Path As String
+  overload: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+  commentId: P:R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+  id: CancellationToken
+  parent: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+  langs:
+  - csharp
+  - vb
+  name: CancellationToken
+  nameWithType: TenantNavigationContext.CancellationToken
+  fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/Internals/TenantNavigationContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CancellationToken
+    path: Library/R_BlazorFrontEnd.Tenant/Internals/TenantNavigationContext.cs
+    startLine: 24
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant.Internals
+  summary: "\nThe <xref href=\"R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> to use to cancel navigation.\n"
+  example: []
+  syntax:
+    content: public CancellationToken CancellationToken { get; }
+    parameters: []
+    return:
+      type: CancellationToken
+    content.vb: Public ReadOnly Property CancellationToken As CancellationToken
+  overload: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: R_BlazorFrontEnd.Tenant.Internals
+  commentId: N:R_BlazorFrontEnd.Tenant.Internals
+  name: R_BlazorFrontEnd.Tenant.Internals
+  nameWithType: R_BlazorFrontEnd.Tenant.Internals
+  fullName: R_BlazorFrontEnd.Tenant.Internals
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path
+  name: Path
+  nameWithType: TenantNavigationContext.Path
+  fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.Path
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+  commentId: P:R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+  isExternal: true
+- uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+  name: CancellationToken
+  nameWithType: TenantNavigationContext.CancellationToken
+  fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.CancellationToken
+- uid: CancellationToken
+  commentId: '!:CancellationToken'
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken

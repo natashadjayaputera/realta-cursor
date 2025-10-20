@@ -1,0 +1,1312 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIClient.R_HTTPClient
+  commentId: T:R_APIClient.R_HTTPClient
+  id: R_HTTPClient
+  parent: R_APIClient
+  children:
+  - R_APIClient.R_HTTPClient.R_APIPostMultiPart(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_APIPostMultiPartBody(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_APIPostMultiPartObject``1(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_APIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_APIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_APIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_APIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,R_APIClient.R_INotify{``0})
+  - R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  - R_APIClient.R_HTTPClient.R_CreateInstanceWithName(System.String,HttpClient,R_IContextHeader,R_ITokenRepository)
+  - R_APIClient.R_HTTPClient.R_GetHttpClient
+  - R_APIClient.R_HTTPClient.R_GetInstanceWithName(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_HTTPClient
+  nameWithType: R_HTTPClient
+  fullName: R_APIClient.R_HTTPClient
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_HTTPClient
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 17
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: 'public class R_HTTPClient : object'
+    content.vb: >-
+      Public Class R_HTTPClient
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_APIClient.R_HTTPClient.R_CreateInstanceWithName(System.String,HttpClient,R_IContextHeader,R_ITokenRepository)
+  commentId: M:R_APIClient.R_HTTPClient.R_CreateInstanceWithName(System.String,HttpClient,R_IContextHeader,R_ITokenRepository)
+  id: R_CreateInstanceWithName(System.String,HttpClient,R_IContextHeader,R_ITokenRepository)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_CreateInstanceWithName(String, HttpClient, R_IContextHeader, R_ITokenRepository)
+  nameWithType: R_HTTPClient.R_CreateInstanceWithName(String, HttpClient, R_IContextHeader, R_ITokenRepository)
+  fullName: R_APIClient.R_HTTPClient.R_CreateInstanceWithName(System.String, HttpClient, R_IContextHeader, R_ITokenRepository)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CreateInstanceWithName
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 53
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public static R_HTTPClient R_CreateInstanceWithName(string pcName, HttpClient poHttpClient, R_IContextHeader poContextHeader = null, R_ITokenRepository poTokenRepository = null)
+    parameters:
+    - id: pcName
+      type: System.String
+    - id: poHttpClient
+      type: HttpClient
+    - id: poContextHeader
+      type: R_IContextHeader
+    - id: poTokenRepository
+      type: R_ITokenRepository
+    return:
+      type: R_APIClient.R_HTTPClient
+    content.vb: Public Shared Function R_CreateInstanceWithName(pcName As String, poHttpClient As HttpClient, poContextHeader As R_IContextHeader = Nothing, poTokenRepository As R_ITokenRepository = Nothing) As R_HTTPClient
+  overload: R_APIClient.R_HTTPClient.R_CreateInstanceWithName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_APIClient.R_HTTPClient.R_GetInstanceWithName(System.String)
+  commentId: M:R_APIClient.R_HTTPClient.R_GetInstanceWithName(System.String)
+  id: R_GetInstanceWithName(System.String)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_GetInstanceWithName(String)
+  nameWithType: R_HTTPClient.R_GetInstanceWithName(String)
+  fullName: R_APIClient.R_HTTPClient.R_GetInstanceWithName(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetInstanceWithName
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 58
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public static R_HTTPClient R_GetInstanceWithName(string pcName)
+    parameters:
+    - id: pcName
+      type: System.String
+    return:
+      type: R_APIClient.R_HTTPClient
+    content.vb: Public Shared Function R_GetInstanceWithName(pcName As String) As R_HTTPClient
+  overload: R_APIClient.R_HTTPClient.R_GetInstanceWithName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_APIClient.R_HTTPClient.R_GetHttpClient
+  commentId: M:R_APIClient.R_HTTPClient.R_GetHttpClient
+  id: R_GetHttpClient
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_GetHttpClient()
+  nameWithType: R_HTTPClient.R_GetHttpClient()
+  fullName: R_APIClient.R_HTTPClient.R_GetHttpClient()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetHttpClient
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 68
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public HttpClient R_GetHttpClient()
+    return:
+      type: HttpClient
+    content.vb: Public Function R_GetHttpClient As HttpClient
+  overload: R_APIClient.R_HTTPClient.R_GetHttpClient*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  id: R_AuthenticatedAPIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_AuthenticatedAPIRequestObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequestObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject<E>(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_AuthenticatedAPIRequestObject
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 75
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<E> R_AuthenticatedAPIRequestObject<E>(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, bool plErrorOnBody = true, bool plWithRefreshToken = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    - id: plWithRefreshToken
+      type: System.Boolean
+    typeParameters:
+    - id: E
+    return:
+      type: Task{{E}}
+    content.vb: Public Function R_AuthenticatedAPIRequestObject(Of E)(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, plErrorOnBody As Boolean = True, plWithRefreshToken As Boolean = True) As Task(Of E)
+  overload: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject*
+  nameWithType.vb: R_HTTPClient.R_AuthenticatedAPIRequestObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject(Of E)(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, System.Boolean, System.Boolean)
+  name.vb: R_AuthenticatedAPIRequestObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  id: R_AuthenticatedAPIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_AuthenticatedAPIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_AuthenticatedAPIRequestBody
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 95
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<string> R_AuthenticatedAPIRequestBody(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, bool plErrorOnBody = true, bool plWithRefreshToken = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    - id: plWithRefreshToken
+      type: System.Boolean
+    return:
+      type: Task{System.String}
+    content.vb: Public Function R_AuthenticatedAPIRequestBody(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, plErrorOnBody As Boolean = True, plWithRefreshToken As Boolean = True) As Task(Of String)
+  overload: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody*
+  nameWithType.vb: R_HTTPClient.R_AuthenticatedAPIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, System.Boolean, System.Boolean)
+  name.vb: R_AuthenticatedAPIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  id: R_AuthenticatedAPIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_AuthenticatedAPIRequest(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequest(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_AuthenticatedAPIRequest
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 115
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<HttpResponseMessage> R_AuthenticatedAPIRequest(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, bool plErrorOnBody = true, bool plWithRefreshToken = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    - id: plWithRefreshToken
+      type: System.Boolean
+    return:
+      type: Task{HttpResponseMessage}
+    content.vb: Public Function R_AuthenticatedAPIRequest(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, plErrorOnBody As Boolean = True, plWithRefreshToken As Boolean = True) As Task(Of HttpResponseMessage)
+  overload: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest*
+  nameWithType.vb: R_HTTPClient.R_AuthenticatedAPIRequest(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, System.Boolean, System.Boolean)
+  name.vb: R_AuthenticatedAPIRequest(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_APIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_APIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  id: R_APIRequestObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_APIRequestObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_APIRequestObject<E>(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestObject
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 325
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<E> R_APIRequestObject<E>(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, bool plErrorOnBody = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    typeParameters:
+    - id: E
+    return:
+      type: Task{{E}}
+    content.vb: Public Function R_APIRequestObject(Of E)(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, plErrorOnBody As Boolean = True) As Task(Of E)
+  overload: R_APIClient.R_HTTPClient.R_APIRequestObject*
+  nameWithType.vb: R_HTTPClient.R_APIRequestObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_APIRequestObject(Of E)(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, System.Boolean)
+  name.vb: R_APIRequestObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_APIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_APIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  id: R_APIRequestBody(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_APIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_APIRequestBody(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestBody
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 345
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<string> R_APIRequestBody(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, bool plErrorOnBody = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    return:
+      type: Task{System.String}
+    content.vb: Public Function R_APIRequestBody(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, plErrorOnBody As Boolean = True) As Task(Of String)
+  overload: R_APIClient.R_HTTPClient.R_APIRequestBody*
+  nameWithType.vb: R_HTTPClient.R_APIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_APIRequestBody(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, System.Boolean)
+  name.vb: R_APIRequestBody(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_APIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_APIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  id: R_APIRequest(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequest(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_APIRequest(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_APIRequest(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequest
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 365
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<HttpResponseMessage> R_APIRequest(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, bool plErrorOnBody = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    return:
+      type: Task{HttpResponseMessage}
+    content.vb: Public Function R_APIRequest(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, plErrorOnBody As Boolean = True) As Task(Of HttpResponseMessage)
+  overload: R_APIClient.R_HTTPClient.R_APIRequest*
+  nameWithType.vb: R_HTTPClient.R_APIRequest(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_APIRequest(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, System.Boolean)
+  name.vb: R_APIRequest(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  commentId: M:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  id: R_AuthenticatedAPIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_AuthenticatedAPIRequestStreamingObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, R_INotify<E>)
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, Boolean, R_INotify<E>)
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject<E>(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, System.Boolean, R_APIClient.R_INotify<E>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_AuthenticatedAPIRequestStreamingObject
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 388
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<List<E>> R_AuthenticatedAPIRequestStreamingObject<E>(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, bool plWithRefreshToken = true, R_INotify<E> poNotify = null)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plWithRefreshToken
+      type: System.Boolean
+    - id: poNotify
+      type: R_APIClient.R_INotify{{E}}
+    typeParameters:
+    - id: E
+    return:
+      type: Task{List{{E}}}
+    content.vb: Public Function R_AuthenticatedAPIRequestStreamingObject(Of E)(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, plWithRefreshToken As Boolean = True, poNotify As R_INotify(Of E) = Nothing) As Task(Of List(Of E))
+  overload: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject*
+  nameWithType.vb: R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, R_INotify(Of E))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject(Of E)(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, System.Boolean, R_APIClient.R_INotify(Of E))
+  name.vb: R_AuthenticatedAPIRequestStreamingObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, Boolean, R_INotify(Of E))
+- uid: R_APIClient.R_HTTPClient.R_APIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,R_APIClient.R_INotify{``0})
+  commentId: M:R_APIClient.R_HTTPClient.R_APIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,R_APIClient.R_INotify{``0})
+  id: R_APIRequestStreamingObject``1(System.String,R_APIClient.R_HTTPClient.E_APIMethod,Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.String,System.Boolean,R_APIClient.R_INotify{``0})
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestStreamingObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, R_INotify<E>)
+  nameWithType: R_HTTPClient.R_APIRequestStreamingObject<E>(String, R_HTTPClient.E_APIMethod, Dictionary<String, String>, Dictionary<String, String>, String, Boolean, R_INotify<E>)
+  fullName: R_APIClient.R_HTTPClient.R_APIRequestStreamingObject<E>(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.String, System.Boolean, R_APIClient.R_INotify<E>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestStreamingObject
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 441
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<List<E>> R_APIRequestStreamingObject<E>(string pcRequest, R_HTTPClient.E_APIMethod peAPIMethod = R_HTTPClient.E_APIMethod.POST_MODE, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, string pcBody = "", bool plSendWithContext = true, R_INotify<E> poNotify = null)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: peAPIMethod
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: pcBody
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: poNotify
+      type: R_APIClient.R_INotify{{E}}
+    typeParameters:
+    - id: E
+    return:
+      type: Task{List{{E}}}
+    content.vb: Public Function R_APIRequestStreamingObject(Of E)(pcRequest As String, peAPIMethod As R_HTTPClient.E_APIMethod = R_HTTPClient.E_APIMethod.POST_MODE, poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, pcBody As String = "", plSendWithContext As Boolean = True, poNotify As R_INotify(Of E) = Nothing) As Task(Of List(Of E))
+  overload: R_APIClient.R_HTTPClient.R_APIRequestStreamingObject*
+  nameWithType.vb: R_HTTPClient.R_APIRequestStreamingObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, R_INotify(Of E))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_APIRequestStreamingObject(Of E)(System.String, R_APIClient.R_HTTPClient.E_APIMethod, Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.String, System.Boolean, R_APIClient.R_INotify(Of E))
+  name.vb: R_APIRequestStreamingObject(Of E)(String, R_HTTPClient.E_APIMethod, Dictionary(Of String, String), Dictionary(Of String, String), String, Boolean, R_INotify(Of E))
+- uid: R_APIClient.R_HTTPClient.R_APIPostMultiPartObject``1(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_APIPostMultiPartObject``1(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  id: R_APIPostMultiPartObject``1(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_APIPostMultiPartObject<E>(String, Dictionary<String, Object>, Dictionary<String, String>, Dictionary<String, String>, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_APIPostMultiPartObject<E>(String, Dictionary<String, Object>, Dictionary<String, String>, Dictionary<String, String>, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_APIPostMultiPartObject<E>(System.String, Dictionary<System.String, System.Object>, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIPostMultiPartObject
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 588
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<E> R_APIPostMultiPartObject<E>(string pcRequest, Dictionary<string, object> poPostParameters, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, bool plSendWithContext = false, bool plErrorOnBody = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: poPostParameters
+      type: Dictionary{System.String,System.Object}
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    typeParameters:
+    - id: E
+    return:
+      type: Task{{E}}
+    content.vb: Public Function R_APIPostMultiPartObject(Of E)(pcRequest As String, poPostParameters As Dictionary(Of String, Object), poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, plSendWithContext As Boolean = False, plErrorOnBody As Boolean = True) As Task(Of E)
+  overload: R_APIClient.R_HTTPClient.R_APIPostMultiPartObject*
+  nameWithType.vb: R_HTTPClient.R_APIPostMultiPartObject(Of E)(String, Dictionary(Of String, Object), Dictionary(Of String, String), Dictionary(Of String, String), Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_APIPostMultiPartObject(Of E)(System.String, Dictionary(Of System.String, System.Object), Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.Boolean, System.Boolean)
+  name.vb: R_APIPostMultiPartObject(Of E)(String, Dictionary(Of String, Object), Dictionary(Of String, String), Dictionary(Of String, String), Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_APIPostMultiPartBody(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_APIPostMultiPartBody(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  id: R_APIPostMultiPartBody(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_APIPostMultiPartBody(String, Dictionary<String, Object>, Dictionary<String, String>, Dictionary<String, String>, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_APIPostMultiPartBody(String, Dictionary<String, Object>, Dictionary<String, String>, Dictionary<String, String>, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_APIPostMultiPartBody(System.String, Dictionary<System.String, System.Object>, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIPostMultiPartBody
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 609
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<string> R_APIPostMultiPartBody(string pcRequest, Dictionary<string, object> poPostParameters, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, bool plSendWithContext = false, bool plErrorOnBody = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: poPostParameters
+      type: Dictionary{System.String,System.Object}
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    return:
+      type: Task{System.String}
+    content.vb: Public Function R_APIPostMultiPartBody(pcRequest As String, poPostParameters As Dictionary(Of String, Object), poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, plSendWithContext As Boolean = False, plErrorOnBody As Boolean = True) As Task(Of String)
+  overload: R_APIClient.R_HTTPClient.R_APIPostMultiPartBody*
+  nameWithType.vb: R_HTTPClient.R_APIPostMultiPartBody(String, Dictionary(Of String, Object), Dictionary(Of String, String), Dictionary(Of String, String), Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_APIPostMultiPartBody(System.String, Dictionary(Of System.String, System.Object), Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.Boolean, System.Boolean)
+  name.vb: R_APIPostMultiPartBody(String, Dictionary(Of String, Object), Dictionary(Of String, String), Dictionary(Of String, String), Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClient.R_APIPostMultiPart(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClient.R_APIPostMultiPart(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  id: R_APIPostMultiPart(System.String,Dictionary{System.String,System.Object},Dictionary{System.String,System.String},Dictionary{System.String,System.String},System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClient
+  langs:
+  - csharp
+  - vb
+  name: R_APIPostMultiPart(String, Dictionary<String, Object>, Dictionary<String, String>, Dictionary<String, String>, Boolean, Boolean)
+  nameWithType: R_HTTPClient.R_APIPostMultiPart(String, Dictionary<String, Object>, Dictionary<String, String>, Dictionary<String, String>, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClient.R_APIPostMultiPart(System.String, Dictionary<System.String, System.Object>, Dictionary<System.String, System.String>, Dictionary<System.String, System.String>, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIPostMultiPart
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 629
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public Task<HttpResponseMessage> R_APIPostMultiPart(string pcRequest, Dictionary<string, object> poPostParameters, Dictionary<string, string> poQueryString = null, Dictionary<string, string> poHeader = null, bool plSendWithContext = false, bool plErrorOnBody = true)
+    parameters:
+    - id: pcRequest
+      type: System.String
+    - id: poPostParameters
+      type: Dictionary{System.String,System.Object}
+    - id: poQueryString
+      type: Dictionary{System.String,System.String}
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plErrorOnBody
+      type: System.Boolean
+    return:
+      type: Task{HttpResponseMessage}
+    content.vb: Public Function R_APIPostMultiPart(pcRequest As String, poPostParameters As Dictionary(Of String, Object), poQueryString As Dictionary(Of String, String) = Nothing, poHeader As Dictionary(Of String, String) = Nothing, plSendWithContext As Boolean = False, plErrorOnBody As Boolean = True) As Task(Of HttpResponseMessage)
+  overload: R_APIClient.R_HTTPClient.R_APIPostMultiPart*
+  nameWithType.vb: R_HTTPClient.R_APIPostMultiPart(String, Dictionary(Of String, Object), Dictionary(Of String, String), Dictionary(Of String, String), Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_HTTPClient.R_APIPostMultiPart(System.String, Dictionary(Of System.String, System.Object), Dictionary(Of System.String, System.String), Dictionary(Of System.String, System.String), System.Boolean, System.Boolean)
+  name.vb: R_APIPostMultiPart(String, Dictionary(Of String, Object), Dictionary(Of String, String), Dictionary(Of String, String), Boolean, Boolean)
+references:
+- uid: R_APIClient
+  commentId: N:R_APIClient
+  name: R_APIClient
+  nameWithType: R_APIClient
+  fullName: R_APIClient
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_APIClient.R_HTTPClient.R_CreateInstanceWithName*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_CreateInstanceWithName
+  name: R_CreateInstanceWithName
+  nameWithType: R_HTTPClient.R_CreateInstanceWithName
+  fullName: R_APIClient.R_HTTPClient.R_CreateInstanceWithName
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HttpClient
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient
+- uid: R_IContextHeader
+  commentId: '!:R_IContextHeader'
+  isExternal: true
+  name: R_IContextHeader
+  nameWithType: R_IContextHeader
+  fullName: R_IContextHeader
+- uid: R_ITokenRepository
+  commentId: '!:R_ITokenRepository'
+  isExternal: true
+  name: R_ITokenRepository
+  nameWithType: R_ITokenRepository
+  fullName: R_ITokenRepository
+- uid: R_APIClient.R_HTTPClient
+  commentId: T:R_APIClient.R_HTTPClient
+  parent: R_APIClient
+  name: R_HTTPClient
+  nameWithType: R_HTTPClient
+  fullName: R_APIClient.R_HTTPClient
+- uid: R_APIClient.R_HTTPClient.R_GetInstanceWithName*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_GetInstanceWithName
+  name: R_GetInstanceWithName
+  nameWithType: R_HTTPClient.R_GetInstanceWithName
+  fullName: R_APIClient.R_HTTPClient.R_GetInstanceWithName
+- uid: R_APIClient.R_HTTPClient.R_GetHttpClient*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_GetHttpClient
+  name: R_GetHttpClient
+  nameWithType: R_HTTPClient.R_GetHttpClient
+  fullName: R_APIClient.R_HTTPClient.R_GetHttpClient
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject
+  name: R_AuthenticatedAPIRequestObject
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequestObject
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestObject
+- uid: R_APIClient.R_HTTPClient.E_APIMethod
+  commentId: T:R_APIClient.R_HTTPClient.E_APIMethod
+  parent: R_APIClient
+  name: R_HTTPClient.E_APIMethod
+  nameWithType: R_HTTPClient.E_APIMethod
+  fullName: R_APIClient.R_HTTPClient.E_APIMethod
+- uid: Dictionary{System.String,System.String}
+  commentId: '!:Dictionary{System.String,System.String}'
+  definition: Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Task{{E}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<E>
+  nameWithType: Task<E>
+  fullName: Task<E>
+  nameWithType.vb: Task(Of E)
+  fullName.vb: Task(Of E)
+  name.vb: Task(Of E)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody
+  name: R_AuthenticatedAPIRequestBody
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequestBody
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestBody
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest
+  name: R_AuthenticatedAPIRequest
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequest
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequest
+- uid: Task{HttpResponseMessage}
+  commentId: '!:Task{HttpResponseMessage}'
+  definition: Task`1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: Task<HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: Task(Of HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_HTTPClient.R_APIRequestObject*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_APIRequestObject
+  name: R_APIRequestObject
+  nameWithType: R_HTTPClient.R_APIRequestObject
+  fullName: R_APIClient.R_HTTPClient.R_APIRequestObject
+- uid: R_APIClient.R_HTTPClient.R_APIRequestBody*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_APIRequestBody
+  name: R_APIRequestBody
+  nameWithType: R_HTTPClient.R_APIRequestBody
+  fullName: R_APIClient.R_HTTPClient.R_APIRequestBody
+- uid: R_APIClient.R_HTTPClient.R_APIRequest*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_APIRequest
+  name: R_APIRequest
+  nameWithType: R_HTTPClient.R_APIRequest
+  fullName: R_APIClient.R_HTTPClient.R_APIRequest
+- uid: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject
+  name: R_AuthenticatedAPIRequestStreamingObject
+  nameWithType: R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject
+  fullName: R_APIClient.R_HTTPClient.R_AuthenticatedAPIRequestStreamingObject
+- uid: R_APIClient.R_INotify{{E}}
+  commentId: T:R_APIClient.R_INotify{``0}
+  parent: R_APIClient
+  definition: R_APIClient.R_INotify`1
+  name: R_INotify<E>
+  nameWithType: R_INotify<E>
+  fullName: R_APIClient.R_INotify<E>
+  nameWithType.vb: R_INotify(Of E)
+  fullName.vb: R_APIClient.R_INotify(Of E)
+  name.vb: R_INotify(Of E)
+  spec.csharp:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{List{{E}}}
+  commentId: '!:Task{List{``0}}'
+  definition: Task`1
+  name: Task<List<E>>
+  nameWithType: Task<List<E>>
+  fullName: Task<List<E>>
+  nameWithType.vb: Task(Of List(Of E))
+  fullName.vb: Task(Of List(Of E))
+  name.vb: Task(Of List(Of E))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_INotify`1
+  commentId: T:R_APIClient.R_INotify`1
+  name: R_INotify<E>
+  nameWithType: R_INotify<E>
+  fullName: R_APIClient.R_INotify<E>
+  nameWithType.vb: R_INotify(Of E)
+  fullName.vb: R_APIClient.R_INotify(Of E)
+  name.vb: R_INotify(Of E)
+  spec.csharp:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_HTTPClient.R_APIRequestStreamingObject*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_APIRequestStreamingObject
+  name: R_APIRequestStreamingObject
+  nameWithType: R_HTTPClient.R_APIRequestStreamingObject
+  fullName: R_APIClient.R_HTTPClient.R_APIRequestStreamingObject
+- uid: R_APIClient.R_HTTPClient.R_APIPostMultiPartObject*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_APIPostMultiPartObject
+  name: R_APIPostMultiPartObject
+  nameWithType: R_HTTPClient.R_APIPostMultiPartObject
+  fullName: R_APIClient.R_HTTPClient.R_APIPostMultiPartObject
+- uid: Dictionary{System.String,System.Object}
+  commentId: '!:Dictionary{System.String,System.Object}'
+  definition: Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_HTTPClient.R_APIPostMultiPartBody*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_APIPostMultiPartBody
+  name: R_APIPostMultiPartBody
+  nameWithType: R_HTTPClient.R_APIPostMultiPartBody
+  fullName: R_APIClient.R_HTTPClient.R_APIPostMultiPartBody
+- uid: R_APIClient.R_HTTPClient.R_APIPostMultiPart*
+  commentId: Overload:R_APIClient.R_HTTPClient.R_APIPostMultiPart
+  name: R_APIPostMultiPart
+  nameWithType: R_HTTPClient.R_APIPostMultiPart
+  fullName: R_APIClient.R_HTTPClient.R_APIPostMultiPart

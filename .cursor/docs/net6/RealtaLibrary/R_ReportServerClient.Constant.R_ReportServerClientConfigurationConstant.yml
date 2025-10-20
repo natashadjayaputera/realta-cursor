@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant
+  commentId: T:R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant
+  id: R_ReportServerClientConfigurationConstant
+  parent: R_ReportServerClient.Constant
+  children:
+  - R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_HTTP_NAME
+  - R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_SECTION_NAME
+  langs:
+  - csharp
+  - vb
+  name: R_ReportServerClientConfigurationConstant
+  nameWithType: R_ReportServerClientConfigurationConstant
+  fullName: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/Constant/R_ReportServerClientConfigurationConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ReportServerClientConfigurationConstant
+    path: Microservices/R_ReportServerClient/Constant/R_ReportServerClientConfigurationConstant.cs
+    startLine: 8
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient.Constant
+  syntax:
+    content: 'public class R_ReportServerClientConfigurationConstant : object'
+    content.vb: >-
+      Public Class R_ReportServerClientConfigurationConstant
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_SECTION_NAME
+  commentId: F:R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_SECTION_NAME
+  id: REPORT_SERVER_SECTION_NAME
+  parent: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant
+  langs:
+  - csharp
+  - vb
+  name: REPORT_SERVER_SECTION_NAME
+  nameWithType: R_ReportServerClientConfigurationConstant.REPORT_SERVER_SECTION_NAME
+  fullName: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_SECTION_NAME
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/Constant/R_ReportServerClientConfigurationConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: REPORT_SERVER_SECTION_NAME
+    path: Microservices/R_ReportServerClient/Constant/R_ReportServerClientConfigurationConstant.cs
+    startLine: 10
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient.Constant
+  syntax:
+    content: public const string REPORT_SERVER_SECTION_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const REPORT_SERVER_SECTION_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_HTTP_NAME
+  commentId: F:R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_HTTP_NAME
+  id: REPORT_SERVER_HTTP_NAME
+  parent: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant
+  langs:
+  - csharp
+  - vb
+  name: REPORT_SERVER_HTTP_NAME
+  nameWithType: R_ReportServerClientConfigurationConstant.REPORT_SERVER_HTTP_NAME
+  fullName: R_ReportServerClient.Constant.R_ReportServerClientConfigurationConstant.REPORT_SERVER_HTTP_NAME
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/Constant/R_ReportServerClientConfigurationConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: REPORT_SERVER_HTTP_NAME
+    path: Microservices/R_ReportServerClient/Constant/R_ReportServerClientConfigurationConstant.cs
+    startLine: 11
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient.Constant
+  syntax:
+    content: public const string REPORT_SERVER_HTTP_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const REPORT_SERVER_HTTP_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_ReportServerClient.Constant
+  commentId: N:R_ReportServerClient.Constant
+  name: R_ReportServerClient.Constant
+  nameWithType: R_ReportServerClient.Constant
+  fullName: R_ReportServerClient.Constant
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

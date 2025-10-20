@@ -1,0 +1,303 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO
+  commentId: T:R_SecurityTokenCommon.DTOs.TokenDTO
+  id: TokenDTO
+  parent: R_SecurityTokenCommon.DTOs
+  children:
+  - R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID
+  - R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS
+  - R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID
+  - R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+  langs:
+  - csharp
+  - vb
+  name: TokenDTO
+  nameWithType: TokenDTO
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO
+  type: Class
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: TokenDTO
+    path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityTokenCommon
+  namespace: R_SecurityTokenCommon.DTOs
+  syntax:
+    content: 'public class TokenDTO : object'
+    content.vb: >-
+      Public Class TokenDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID
+  commentId: P:R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID
+  id: CUSER_ID
+  parent: R_SecurityTokenCommon.DTOs.TokenDTO
+  langs:
+  - csharp
+  - vb
+  name: CUSER_ID
+  nameWithType: TokenDTO.CUSER_ID
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_ID
+    path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+    startLine: 6
+  assemblies:
+  - R_SecurityTokenCommon
+  namespace: R_SecurityTokenCommon.DTOs
+  syntax:
+    content: public string CUSER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CUSER_ID As String
+  overload: R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID
+  commentId: P:R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: R_SecurityTokenCommon.DTOs.TokenDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: TokenDTO.CCOMPANY_ID
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+    startLine: 7
+  assemblies:
+  - R_SecurityTokenCommon
+  namespace: R_SecurityTokenCommon.DTOs
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+  commentId: P:R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+  id: DREFRESH_TOKEN_UTC_EXPIRES
+  parent: R_SecurityTokenCommon.DTOs.TokenDTO
+  langs:
+  - csharp
+  - vb
+  name: DREFRESH_TOKEN_UTC_EXPIRES
+  nameWithType: TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+  type: Property
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DREFRESH_TOKEN_UTC_EXPIRES
+    path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+    startLine: 8
+  assemblies:
+  - R_SecurityTokenCommon
+  namespace: R_SecurityTokenCommon.DTOs
+  syntax:
+    content: public DateTime DREFRESH_TOKEN_UTC_EXPIRES { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property DREFRESH_TOKEN_UTC_EXPIRES As DateTime
+  overload: R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS
+  commentId: P:R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS
+  id: CTOKEN_IP_ADDRESS
+  parent: R_SecurityTokenCommon.DTOs.TokenDTO
+  langs:
+  - csharp
+  - vb
+  name: CTOKEN_IP_ADDRESS
+  nameWithType: TokenDTO.CTOKEN_IP_ADDRESS
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS
+  type: Property
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTOKEN_IP_ADDRESS
+    path: R_SecurityToken/R_SecurityTokenCommon/DTOs/TokenDTO.cs
+    startLine: 9
+  assemblies:
+  - R_SecurityTokenCommon
+  namespace: R_SecurityTokenCommon.DTOs
+  syntax:
+    content: public string CTOKEN_IP_ADDRESS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CTOKEN_IP_ADDRESS As String
+  overload: R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_SecurityTokenCommon.DTOs
+  commentId: N:R_SecurityTokenCommon.DTOs
+  name: R_SecurityTokenCommon.DTOs
+  nameWithType: R_SecurityTokenCommon.DTOs
+  fullName: R_SecurityTokenCommon.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID*
+  commentId: Overload:R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID
+  name: CUSER_ID
+  nameWithType: TokenDTO.CUSER_ID
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.CUSER_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID*
+  commentId: Overload:R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: TokenDTO.CCOMPANY_ID
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.CCOMPANY_ID
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES*
+  commentId: Overload:R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+  name: DREFRESH_TOKEN_UTC_EXPIRES
+  nameWithType: TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.DREFRESH_TOKEN_UTC_EXPIRES
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS*
+  commentId: Overload:R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS
+  name: CTOKEN_IP_ADDRESS
+  nameWithType: TokenDTO.CTOKEN_IP_ADDRESS
+  fullName: R_SecurityTokenCommon.DTOs.TokenDTO.CTOKEN_IP_ADDRESS

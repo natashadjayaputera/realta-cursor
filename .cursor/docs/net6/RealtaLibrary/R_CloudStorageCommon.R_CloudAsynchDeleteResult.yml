@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.R_CloudAsynchDeleteResult
+  commentId: T:R_CloudStorageCommon.R_CloudAsynchDeleteResult
+  id: R_CloudAsynchDeleteResult
+  parent: R_CloudStorageCommon
+  children:
+  - R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error
+  - R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result
+  langs:
+  - csharp
+  - vb
+  name: R_CloudAsynchDeleteResult
+  nameWithType: R_CloudAsynchDeleteResult
+  fullName: R_CloudStorageCommon.R_CloudAsynchDeleteResult
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudAsynchDeleteResult.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CloudAsynchDeleteResult
+    path: Microservices/R_CloudStorageCommon/R_CloudAsynchDeleteResult.cs
+    startLine: 7
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public class R_CloudAsynchDeleteResult : object'
+    content.vb: >-
+      Public Class R_CloudAsynchDeleteResult
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error
+  commentId: P:R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error
+  id: Error
+  parent: R_CloudStorageCommon.R_CloudAsynchDeleteResult
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: R_CloudAsynchDeleteResult.Error
+  fullName: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudAsynchDeleteResult.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Error
+    path: Microservices/R_CloudStorageCommon/R_CloudAsynchDeleteResult.cs
+    startLine: 9
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public R_Exception Error { get; set; }
+    parameters: []
+    return:
+      type: R_Exception
+    content.vb: Public Property Error As R_Exception
+  overload: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result
+  commentId: P:R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result
+  id: Result
+  parent: R_CloudStorageCommon.R_CloudAsynchDeleteResult
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: R_CloudAsynchDeleteResult.Result
+  fullName: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudAsynchDeleteResult.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Result
+    path: Microservices/R_CloudStorageCommon/R_CloudAsynchDeleteResult.cs
+    startLine: 10
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public bool Result { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Result As Boolean
+  overload: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error*
+  commentId: Overload:R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error
+  name: Error
+  nameWithType: R_CloudAsynchDeleteResult.Error
+  fullName: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Error
+- uid: R_Exception
+  isExternal: true
+  name: R_Exception
+  nameWithType: R_Exception
+  fullName: R_Exception
+- uid: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result*
+  commentId: Overload:R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result
+  name: Result
+  nameWithType: R_CloudAsynchDeleteResult.Result
+  fullName: R_CloudStorageCommon.R_CloudAsynchDeleteResult.Result
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

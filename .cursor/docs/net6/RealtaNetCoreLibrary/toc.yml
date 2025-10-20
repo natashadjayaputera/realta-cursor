@@ -1,0 +1,374 @@
+### YamlMime:TableOfContent
+- uid: BackExtension
+  name: BackExtension
+  items:
+  - uid: BackExtension.BackConstants
+    name: BackConstants
+  - uid: BackExtension.DateInterval
+    name: DateInterval
+  - uid: BackExtension.DateTimeUtility
+    name: DateTimeUtility
+  - uid: BackExtension.DbExtension
+    name: DbExtension
+  - uid: BackExtension.EnumExtension
+    name: EnumExtension
+- uid: BackExtension.Constants
+  name: BackExtension.Constants
+  items:
+  - uid: BackExtension.Constants.MaximumAgePasswordConstants
+    name: MaximumAgePasswordConstants
+  - uid: BackExtension.Constants.SecurityAndAccountPolicyConstants
+    name: SecurityAndAccountPolicyConstants
+  - uid: BackExtension.Constants.SecurityParameterConstants
+    name: SecurityParameterConstants
+- uid: BackExtension.DTOs
+  name: BackExtension.DTOs
+  items:
+  - uid: BackExtension.DTOs.GetUploadErrorStatusDTO
+    name: GetUploadErrorStatusDTO
+  - uid: BackExtension.DTOs.WriteErrorStatusDTO
+    name: WriteErrorStatusDTO
+  - uid: BackExtension.DTOs.WriteUploadStatusDTO
+    name: WriteUploadStatusDTO
+- uid: BackExtension.Models
+  name: BackExtension.Models
+  items:
+  - uid: BackExtension.Models.GST_ACTIVATION
+    name: GST_ACTIVATION
+  - uid: BackExtension.Models.GST_COMPANY_SECURITY_HISTORY
+    name: GST_COMPANY_SECURITY_HISTORY
+  - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+    name: GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  - uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY
+    name: GST_GENERAL_SECURITY_HISTORY
+  - uid: BackExtension.Models.GST_GENERAL_SECURITY_POLICY
+    name: GST_GENERAL_SECURITY_POLICY
+  - uid: BackExtension.Models.GST_LICENSE
+    name: GST_LICENSE
+  - uid: BackExtension.Models.GST_PARAMETER
+    name: GST_PARAMETER
+  - uid: BackExtension.Models.GST_USER_SECURITY_POLICY_EXCEPTION
+    name: GST_USER_SECURITY_POLICY_EXCEPTION
+  - uid: BackExtension.Models.SAB_APP_VERSION
+    name: SAB_APP_VERSION
+  - uid: BackExtension.Models.SAM_COMPANIES
+    name: SAM_COMPANIES
+  - uid: BackExtension.Models.SAM_TOKEN
+    name: SAM_TOKEN
+  - uid: BackExtension.Models.SAM_USER
+    name: SAM_USER
+  - uid: BackExtension.Models.SAM_USER_COMPANY
+    name: SAM_USER_COMPANY
+  - uid: BackExtension.Models.SAM_USER_MENU
+    name: SAM_USER_MENU
+  - uid: BackExtension.Models.SAM_USER_PROGRAM
+    name: SAM_USER_PROGRAM
+- uid: BlazorClientHelper
+  name: BlazorClientHelper
+  items:
+  - uid: BlazorClientHelper.IClientHelper
+    name: IClientHelper
+  - uid: BlazorClientHelper.U_GlobalVar
+    name: U_GlobalVar
+- uid: R_BlazorCommon.Constants
+  name: R_BlazorCommon.Constants
+  items:
+  - uid: R_BlazorCommon.Constants.BlazorMenuConstants
+    name: BlazorMenuConstants
+  - uid: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+    name: BlazorMenuConstants.SignalR
+- uid: R_BlazorCommon.Models
+  name: R_BlazorCommon.Models
+  items:
+  - uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+    name: BlazorMenuNotificationDTO
+- uid: R_BlazorDeployment
+  name: R_BlazorDeployment
+  items:
+  - uid: R_BlazorDeployment.R_IFileUtility
+    name: R_IFileUtility
+  - uid: R_BlazorDeployment.R_IResult
+    name: R_IResult
+  - uid: R_BlazorDeployment.R_IResult`1
+    name: R_IResult<T>
+    name.vb: R_IResult(Of T)
+  - uid: R_BlazorDeployment.R_Result
+    name: R_Result
+  - uid: R_BlazorDeployment.R_Result`1
+    name: R_Result<T>
+    name.vb: R_Result(Of T)
+- uid: R_BlazorFrontEnd
+  name: R_BlazorFrontEnd
+  items:
+  - uid: R_BlazorFrontEnd.R_FrontContext
+    name: R_FrontContext
+  - uid: R_BlazorFrontEnd.R_IExcel
+    name: R_IExcel
+  - uid: R_BlazorFrontEnd.R_IFileConverter
+    name: R_IFileConverter
+  - uid: R_BlazorFrontEnd.R_IViewModel
+    name: R_IViewModel
+  - uid: R_BlazorFrontEnd.R_ViewModel`1
+    name: R_ViewModel<TModel>
+    name.vb: R_ViewModel(Of TModel)
+  - uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+    name: R_ViewModelDataHasChangedEventArgs
+- uid: R_BlazorFrontEnd.Authentication
+  name: R_BlazorFrontEnd.Authentication
+  items:
+  - uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+    name: R_BlazorTokenRepository
+  - uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepositoryTenant
+    name: R_BlazorTokenRepositoryTenant
+- uid: R_BlazorFrontEnd.Configurations
+  name: R_BlazorFrontEnd.Configurations
+  items:
+  - uid: R_BlazorFrontEnd.Configurations.R_FrontConfig
+    name: R_FrontConfig
+  - uid: R_BlazorFrontEnd.Configurations.R_ServiceUrlSection
+    name: R_ServiceUrlSection
+- uid: R_BlazorFrontEnd.Deployment.Interfaces
+  name: R_BlazorFrontEnd.Deployment.Interfaces
+  items:
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider
+    name: R_IAssemblyDataProvider
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+    name: R_IAssemblyLoadContext
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService
+    name: R_IDynamicAssetProviderService
+- uid: R_BlazorFrontEnd.Deployment.Models
+  name: R_BlazorFrontEnd.Deployment.Models
+  items:
+  - uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+    name: AssemblyData
+  - uid: R_BlazorFrontEnd.Deployment.Models.Package
+    name: Package
+- uid: R_BlazorFrontEnd.Enums
+  name: R_BlazorFrontEnd.Enums
+  items:
+  - uid: R_BlazorFrontEnd.Enums.R_eConductorMode
+    name: R_eConductorMode
+  - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+    name: R_eDocumentType
+  - uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+    name: R_eReportFileOutputType
+  - uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+    name: R_eRoundingMethod
+- uid: R_BlazorFrontEnd.Excel
+  name: R_BlazorFrontEnd.Excel
+  items:
+  - uid: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
+    name: R_DelimiterFieldParameter
+  - uid: R_BlazorFrontEnd.Excel.R_Excel
+    name: R_Excel
+  - uid: R_BlazorFrontEnd.Excel.R_Text
+    name: R_Text
+  - uid: R_BlazorFrontEnd.Excel.R_TextConfiguration
+    name: R_TextConfiguration
+- uid: R_BlazorFrontEnd.Excel.Mappings
+  name: R_BlazorFrontEnd.Excel.Mappings
+  items:
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+    name: R_DataColumnMapping
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+    name: R_ReadFromExcelOption
+- uid: R_BlazorFrontEnd.Exceptions
+  name: R_BlazorFrontEnd.Exceptions
+  items:
+  - uid: R_BlazorFrontEnd.Exceptions.R_Error
+    name: R_Error
+  - uid: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+    name: R_ErrorDetail
+  - uid: R_BlazorFrontEnd.Exceptions.R_Exception
+    name: R_Exception
+- uid: R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  items:
+  - uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions
+    name: R_EnumExtensions
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+    name: R_FrontExtensions
+- uid: R_BlazorFrontEnd.FileConverter
+  name: R_BlazorFrontEnd.FileConverter
+  items:
+  - uid: R_BlazorFrontEnd.FileConverter.R_FileConverter
+    name: R_FileConverter
+- uid: R_BlazorFrontEnd.Format
+  name: R_BlazorFrontEnd.Format
+  items:
+  - uid: R_BlazorFrontEnd.Format.R_DateTimeFormat
+    name: R_DateTimeFormat
+- uid: R_BlazorFrontEnd.Helpers
+  name: R_BlazorFrontEnd.Helpers
+  items:
+  - uid: R_BlazorFrontEnd.Helpers.R_AsyncHelper
+    name: R_AsyncHelper
+  - uid: R_BlazorFrontEnd.Helpers.R_DeployUtility
+    name: R_DeployUtility
+  - uid: R_BlazorFrontEnd.Helpers.R_FileDownloader
+    name: R_FileDownloader
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+    name: R_FrontUtility
+  - uid: R_BlazorFrontEnd.Helpers.R_GlobalVar
+    name: R_GlobalVar
+  - uid: R_BlazorFrontEnd.Helpers.R_HtmlUtility
+    name: R_HtmlUtility
+- uid: R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  items:
+  - uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+    name: R_IEnvironment
+  - uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+    name: R_IFileDownloader
+  - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+    name: R_IGlobalVarInitiator
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer
+    name: R_ILocalizer
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer`1
+    name: R_ILocalizer<T>
+    name.vb: R_ILocalizer(Of T)
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+    name: R_ILocalStorage
+  - uid: R_BlazorFrontEnd.Interfaces.R_IReport
+    name: R_IReport
+  - uid: R_BlazorFrontEnd.Interfaces.R_IResourceLanguage
+    name: R_IResourceLanguage
+  - uid: R_BlazorFrontEnd.Interfaces.R_ITenant
+    name: R_ITenant
+- uid: R_BlazorFrontEnd.Report
+  name: R_BlazorFrontEnd.Report
+  items:
+  - uid: R_BlazorFrontEnd.Report.R_ReportService
+    name: R_ReportService
+  - uid: R_BlazorFrontEnd.Report.R_TenantReportService
+    name: R_TenantReportService
+- uid: R_BlazorFrontEnd.Spreadsheet
+  name: R_BlazorFrontEnd.Spreadsheet
+  items:
+  - uid: R_BlazorFrontEnd.Spreadsheet.R_Excel
+    name: R_Excel
+- uid: R_BlazorFrontEnd.State
+  name: R_BlazorFrontEnd.State
+  items:
+  - uid: R_BlazorFrontEnd.State.R_StateContainer`1
+    name: R_StateContainer<T>
+    name.vb: R_StateContainer(Of T)
+- uid: R_BlazorFrontEnd.Tenant
+  name: R_BlazorFrontEnd.Tenant
+  items:
+  - uid: R_BlazorFrontEnd.Tenant.R_Tenant
+    name: R_Tenant
+  - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter
+    name: R_TenantRouter
+- uid: R_BlazorFrontEnd.Tenant.Extensions
+  name: R_BlazorFrontEnd.Tenant.Extensions
+  items:
+  - uid: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+- uid: R_BlazorFrontEnd.Tenant.Internals
+  name: R_BlazorFrontEnd.Tenant.Internals
+  items:
+  - uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+    name: TenantNavigationContext
+- uid: R_BlazorStartup
+  name: R_BlazorStartup
+  items:
+  - uid: R_BlazorStartup.R_BlazorPolicy
+    name: R_BlazorPolicy
+  - uid: R_BlazorStartup.R_BlazorPolicyBuilder
+    name: R_BlazorPolicyBuilder
+  - uid: R_BlazorStartup.R_RegisterServiceExtension
+    name: R_RegisterServiceExtension
+- uid: R_SecurityPolicyBack
+  name: R_SecurityPolicyBack
+  items:
+  - uid: R_SecurityPolicyBack.R_LicenseActivationCls
+    name: R_LicenseActivationCls
+  - uid: R_SecurityPolicyBack.R_SecurityPolicyCls
+    name: R_SecurityPolicyCls
+- uid: R_SecurityPolicyBack.Resources
+  name: R_SecurityPolicyBack.Resources
+  items:
+  - uid: R_SecurityPolicyBack.Resources.R_SecurityPolicyBackResources_msgrsc
+    name: R_SecurityPolicyBackResources_msgrsc
+- uid: R_SecurityPolicyCommon
+  name: R_SecurityPolicyCommon
+  items:
+  - uid: R_SecurityPolicyCommon.IR_SecurityPolicy
+    name: IR_SecurityPolicy
+  - uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync
+    name: IR_SecurityPolicyAsync
+- uid: R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  items:
+  - uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+    name: CheckActivationParameterDTO
+  - uid: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
+    name: CheckLicenseParameterDTO
+  - uid: R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO
+    name: CheckPasswordHistoryParameterDTO
+  - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+    name: GetSecurityPolicyDTO
+  - uid: R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO
+    name: R_SecurityPolicyParameterDTO
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+    name: SecurityPolicyGenericResultDTO
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO`1
+    name: SecurityPolicyGenericResultDTO<T>
+    name.vb: SecurityPolicyGenericResultDTO(Of T)
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+    name: SecurityPolicyLogonParameterDTO
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+    name: SecurityPolicyLogoutParameterDTO
+  - uid: R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO
+    name: UpdatePasswordParameterDTO
+- uid: R_SecurityPolicyCommon.Enums
+  name: R_SecurityPolicyCommon.Enums
+  items:
+  - uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+    name: R_eActivationResultType
+  - uid: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+    name: R_eSecurityAndAccountPolicy
+- uid: R_SecurityPolicyCommon.Responses
+  name: R_SecurityPolicyCommon.Responses
+  items:
+  - uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+    name: R_GetSecurityPolicyParameterResponse
+  - uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+    name: R_LicenseActivationResponse
+  - uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+    name: R_SecurityPolicyLogonResponse
+- uid: R_SecurityPolicyModel
+  name: R_SecurityPolicyModel
+  items:
+  - uid: R_SecurityPolicyModel.R_SecurityModel
+    name: R_SecurityModel
+- uid: R_SecurityPolicyService
+  name: R_SecurityPolicyService
+  items:
+  - uid: R_SecurityPolicyService.R_SecurityPolicyController
+    name: R_SecurityPolicyController
+- uid: R_SecurityTokenBack
+  name: R_SecurityTokenBack
+  items:
+  - uid: R_SecurityTokenBack.R_SecurityTokenCls
+    name: R_SecurityTokenCls
+- uid: R_SecurityTokenCommon.DTOs
+  name: R_SecurityTokenCommon.DTOs
+  items:
+  - uid: R_SecurityTokenCommon.DTOs.TokenDTO
+    name: TokenDTO
+  - uid: R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
+    name: UpdateRefreshTokenParameterDTO
+- uid: Serilog
+  name: Serilog
+  items:
+  - uid: Serilog.ApplicationBuilderSerilogClientExtensions
+    name: ApplicationBuilderSerilogClientExtensions
+  - uid: Serilog.LoggerConfigurationBrowserHttpExtensions
+    name: LoggerConfigurationBrowserHttpExtensions
+- uid: Serilog.AspNetCore.Ingestion
+  name: Serilog.AspNetCore.Ingestion
+  items:
+  - uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+    name: SerilogIngestionOptions

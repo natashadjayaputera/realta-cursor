@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  id: R_IFileDownloader
+  parent: R_BlazorFrontEnd.Interfaces
+  children:
+  - R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  langs:
+  - csharp
+  - vb
+  name: R_IFileDownloader
+  nameWithType: R_IFileDownloader
+  fullName: R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_IFileDownloader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IFileDownloader
+    path: Library/R_BlazorFrontEnd/Interfaces/R_IFileDownloader.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: public interface R_IFileDownloader
+    content.vb: Public Interface R_IFileDownloader
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  id: R_GetByteFromFileUrlAsync(Uri)
+  parent: R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  langs:
+  - csharp
+  - vb
+  name: R_GetByteFromFileUrlAsync(Uri)
+  nameWithType: R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_IFileDownloader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetByteFromFileUrlAsync
+    path: Library/R_BlazorFrontEnd/Interfaces/R_IFileDownloader.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: Task<byte[]> R_GetByteFromFileUrlAsync(Uri uri)
+    parameters:
+    - id: uri
+      type: Uri
+    return:
+      type: Task{System.Byte[]}
+    content.vb: Function R_GetByteFromFileUrlAsync(uri As Uri) As Task(Of Byte())
+  overload: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync*
+references:
+- uid: R_BlazorFrontEnd.Interfaces
+  commentId: N:R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  nameWithType: R_BlazorFrontEnd.Interfaces
+  fullName: R_BlazorFrontEnd.Interfaces
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync
+  name: R_GetByteFromFileUrlAsync
+  nameWithType: R_IFileDownloader.R_GetByteFromFileUrlAsync
+  fullName: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri
+- uid: Task{System.Byte[]}
+  commentId: '!:Task{System.Byte[]}'
+  definition: Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Configurations.R_FrontConfig
+  commentId: T:R_BlazorFrontEnd.Configurations.R_FrontConfig
+  id: R_FrontConfig
+  parent: R_BlazorFrontEnd.Configurations
+  children:
+  - R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString(System.String)
+  - R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection
+  langs:
+  - csharp
+  - vb
+  name: R_FrontConfig
+  nameWithType: R_FrontConfig
+  fullName: R_BlazorFrontEnd.Configurations.R_FrontConfig
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Configurations/R_FrontConfig.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FrontConfig
+    path: Library/R_BlazorFrontEnd/Configurations/R_FrontConfig.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Configurations
+  syntax:
+    content: 'public static class R_FrontConfig : object'
+    content.vb: >-
+      Public Module R_FrontConfig
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection
+  commentId: M:R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection
+  id: R_GetServiceUrlSection
+  parent: R_BlazorFrontEnd.Configurations.R_FrontConfig
+  langs:
+  - csharp
+  - vb
+  name: R_GetServiceUrlSection()
+  nameWithType: R_FrontConfig.R_GetServiceUrlSection()
+  fullName: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Configurations/R_FrontConfig.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetServiceUrlSection
+    path: Library/R_BlazorFrontEnd/Configurations/R_FrontConfig.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Configurations
+  syntax:
+    content: public static IList<R_ServiceUrlSection> R_GetServiceUrlSection()
+    return:
+      type: IList{R_BlazorFrontEnd.Configurations.R_ServiceUrlSection}
+    content.vb: Public Shared Function R_GetServiceUrlSection As IList(Of R_ServiceUrlSection)
+  overload: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString(System.String)
+  commentId: M:R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString(System.String)
+  id: R_GetConfigAsString(System.String)
+  parent: R_BlazorFrontEnd.Configurations.R_FrontConfig
+  langs:
+  - csharp
+  - vb
+  name: R_GetConfigAsString(String)
+  nameWithType: R_FrontConfig.R_GetConfigAsString(String)
+  fullName: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Configurations/R_FrontConfig.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetConfigAsString
+    path: Library/R_BlazorFrontEnd/Configurations/R_FrontConfig.cs
+    startLine: 20
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Configurations
+  syntax:
+    content: public static string R_GetConfigAsString(string pcName)
+    parameters:
+    - id: pcName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function R_GetConfigAsString(pcName As String) As String
+  overload: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorFrontEnd.Configurations
+  commentId: N:R_BlazorFrontEnd.Configurations
+  name: R_BlazorFrontEnd.Configurations
+  nameWithType: R_BlazorFrontEnd.Configurations
+  fullName: R_BlazorFrontEnd.Configurations
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection*
+  commentId: Overload:R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection
+  name: R_GetServiceUrlSection
+  nameWithType: R_FrontConfig.R_GetServiceUrlSection
+  fullName: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetServiceUrlSection
+- uid: IList{R_BlazorFrontEnd.Configurations.R_ServiceUrlSection}
+  commentId: '!:IList{R_BlazorFrontEnd.Configurations.R_ServiceUrlSection}'
+  definition: IList`1
+  name: IList<R_ServiceUrlSection>
+  nameWithType: IList<R_ServiceUrlSection>
+  fullName: IList<R_BlazorFrontEnd.Configurations.R_ServiceUrlSection>
+  nameWithType.vb: IList(Of R_ServiceUrlSection)
+  fullName.vb: IList(Of R_BlazorFrontEnd.Configurations.R_ServiceUrlSection)
+  name.vb: IList(Of R_ServiceUrlSection)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Configurations.R_ServiceUrlSection
+    name: R_ServiceUrlSection
+    nameWithType: R_ServiceUrlSection
+    fullName: R_BlazorFrontEnd.Configurations.R_ServiceUrlSection
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Configurations.R_ServiceUrlSection
+    name: R_ServiceUrlSection
+    nameWithType: R_ServiceUrlSection
+    fullName: R_BlazorFrontEnd.Configurations.R_ServiceUrlSection
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString*
+  commentId: Overload:R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString
+  name: R_GetConfigAsString
+  nameWithType: R_FrontConfig.R_GetConfigAsString
+  fullName: R_BlazorFrontEnd.Configurations.R_FrontConfig.R_GetConfigAsString
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

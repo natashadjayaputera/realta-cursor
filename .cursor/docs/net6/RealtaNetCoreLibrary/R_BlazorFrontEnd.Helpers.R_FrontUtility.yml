@@ -1,0 +1,2191 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  id: R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  children:
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Nullable{System.Object},System.Nullable{System.Object})
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection(IList,Type)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection``1(IList)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject(System.Nullable{System.Object},Type)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject``1(System.Nullable{System.Object})
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject``2(``0)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync(Stream)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte``1(System.Byte[])
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump(System.Object)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType(System.Byte[])
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail(System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException(R_APICommonDTO.R_APIException)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(DataTable)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(IList{``0},System.Boolean,System.Nullable{Dictionary{System.String,System.String}})
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(IList{DataRow})
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException(R_BlazorFrontEnd.Exceptions.R_Exception)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime(System.String,System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(DateTime,System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(System.Nullable{DateTime},System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable``1(System.Nullable{Dictionary{System.String,System.String}})
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(System.String,System.String,System.Nullable{CultureInfo},System.String,System.Boolean)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML``1(``0)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString``1(``0)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject``1(System.String)
+  - R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FrontUtility
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 22
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: 'public static class R_FrontUtility : object'
+    content.vb: >-
+      Public Module R_FrontUtility
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(System.String,System.String,System.Nullable{CultureInfo},System.String,System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(System.String,System.String,System.Nullable{CultureInfo},System.String,System.Boolean)
+  id: R_GetMessage(System.String,System.String,System.Nullable{CultureInfo},System.String,System.Boolean)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetMessage(String, String, Nullable<CultureInfo>, String, Boolean)
+  nameWithType: R_FrontUtility.R_GetMessage(String, String, Nullable<CultureInfo>, String, Boolean)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(System.String, System.String, System.Nullable<CultureInfo>, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetMessage
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 25
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string R_GetMessage(string pcDllName, string pcResourceId, CultureInfo? poCulture = null, string pcResourceName = "", bool plWithFolderPath = false)
+    parameters:
+    - id: pcDllName
+      type: System.String
+    - id: pcResourceId
+      type: System.String
+    - id: poCulture
+      type: System.Nullable{CultureInfo}
+    - id: pcResourceName
+      type: System.String
+    - id: plWithFolderPath
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Shared Function R_GetMessage(pcDllName As String, pcResourceId As String, poCulture As CultureInfo? = Nothing, pcResourceName As String = "", plWithFolderPath As Boolean = False) As String
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage*
+  nameWithType.vb: R_FrontUtility.R_GetMessage(String, String, Nullable(Of CultureInfo), String, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(System.String, System.String, System.Nullable(Of CultureInfo), System.String, System.Boolean)
+  name.vb: R_GetMessage(String, String, Nullable(Of CultureInfo), String, Boolean)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(Type,System.String,System.Nullable{CultureInfo},System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(Type,System.String,System.Nullable{CultureInfo},System.String)
+  id: R_GetMessage(Type,System.String,System.Nullable{CultureInfo},System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetMessage(Type, String, Nullable<CultureInfo>, String)
+  nameWithType: R_FrontUtility.R_GetMessage(Type, String, Nullable<CultureInfo>, String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(Type, System.String, System.Nullable<CultureInfo>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetMessage
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 79
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string R_GetMessage(Type poType, string pcResourceId, CultureInfo? poCulture = null, string pcResourceName = "")
+    parameters:
+    - id: poType
+      type: Type
+    - id: pcResourceId
+      type: System.String
+    - id: poCulture
+      type: System.Nullable{CultureInfo}
+    - id: pcResourceName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function R_GetMessage(poType As Type, pcResourceId As String, poCulture As CultureInfo? = Nothing, pcResourceName As String = "") As String
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage*
+  nameWithType.vb: R_FrontUtility.R_GetMessage(Type, String, Nullable(Of CultureInfo), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage(Type, System.String, System.Nullable(Of CultureInfo), System.String)
+  name.vb: R_GetMessage(Type, String, Nullable(Of CultureInfo), String)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  id: R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetError(Type, String, Nullable<CultureInfo>, String)
+  nameWithType: R_FrontUtility.R_GetError(Type, String, Nullable<CultureInfo>, String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError(Type, System.String, System.Nullable<CultureInfo>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetError
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 126
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static R_Error R_GetError(Type poType, string pcResourceId, CultureInfo? poCulture = null, string pcResourceName = "")
+    parameters:
+    - id: poType
+      type: Type
+    - id: pcResourceId
+      type: System.String
+    - id: poCulture
+      type: System.Nullable{CultureInfo}
+    - id: pcResourceName
+      type: System.String
+    return:
+      type: R_BlazorFrontEnd.Exceptions.R_Error
+    content.vb: Public Shared Function R_GetError(poType As Type, pcResourceId As String, poCulture As CultureInfo? = Nothing, pcResourceName As String = "") As R_Error
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError*
+  nameWithType.vb: R_FrontUtility.R_GetError(Type, String, Nullable(Of CultureInfo), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError(Type, System.String, System.Nullable(Of CultureInfo), System.String)
+  name.vb: R_GetError(Type, String, Nullable(Of CultureInfo), String)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  id: R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetErrorDetail(Type, String, Nullable<CultureInfo>, String)
+  nameWithType: R_FrontUtility.R_GetErrorDetail(Type, String, Nullable<CultureInfo>, String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail(Type, System.String, System.Nullable<CultureInfo>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetErrorDetail
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 143
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static R_ErrorDetail R_GetErrorDetail(Type poType, string pcResourceId, CultureInfo? poCulture = null, string pcResourceName = "")
+    parameters:
+    - id: poType
+      type: Type
+    - id: pcResourceId
+      type: System.String
+    - id: poCulture
+      type: System.Nullable{CultureInfo}
+    - id: pcResourceName
+      type: System.String
+    return:
+      type: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+    content.vb: Public Shared Function R_GetErrorDetail(poType As Type, pcResourceId As String, poCulture As CultureInfo? = Nothing, pcResourceName As String = "") As R_ErrorDetail
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail*
+  nameWithType.vb: R_FrontUtility.R_GetErrorDetail(Type, String, Nullable(Of CultureInfo), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail(Type, System.String, System.Nullable(Of CultureInfo), System.String)
+  name.vb: R_GetErrorDetail(Type, String, Nullable(Of CultureInfo), String)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject(System.Nullable{System.Object},Type)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject(System.Nullable{System.Object},Type)
+  id: ConvertObjectToObject(System.Nullable{System.Object},Type)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: ConvertObjectToObject(Nullable<Object>, Type)
+  nameWithType: R_FrontUtility.ConvertObjectToObject(Nullable<Object>, Type)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject(System.Nullable<System.Object>, Type)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertObjectToObject
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 162
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static object? ConvertObjectToObject(object? poSource, Type poTargetType)
+    parameters:
+    - id: poSource
+      type: System.Nullable{System.Object}
+    - id: poTargetType
+      type: Type
+    return:
+      type: System.Nullable{System.Object}
+    content.vb: Public Shared Function ConvertObjectToObject(poSource As Object?, poTargetType As Type) As Object?
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject*
+  nameWithType.vb: R_FrontUtility.ConvertObjectToObject(Nullable(Of Object), Type)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject(System.Nullable(Of System.Object), Type)
+  name.vb: ConvertObjectToObject(Nullable(Of Object), Type)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject``1(System.Nullable{System.Object})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject``1(System.Nullable{System.Object})
+  id: ConvertObjectToObject``1(System.Nullable{System.Object})
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: ConvertObjectToObject<TResult>(Nullable<Object>)
+  nameWithType: R_FrontUtility.ConvertObjectToObject<TResult>(Nullable<Object>)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject<TResult>(System.Nullable<System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertObjectToObject
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 169
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static TResult ConvertObjectToObject<TResult>(object? poSource)
+    parameters:
+    - id: poSource
+      type: System.Nullable{System.Object}
+    typeParameters:
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: Public Shared Function ConvertObjectToObject(Of TResult)(poSource As Object?) As TResult
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject*
+  nameWithType.vb: R_FrontUtility.ConvertObjectToObject(Of TResult)(Nullable(Of Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject(Of TResult)(System.Nullable(Of System.Object))
+  name.vb: ConvertObjectToObject(Of TResult)(Nullable(Of Object))
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject``2(``0)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject``2(``0)
+  id: ConvertObjectToObject``2(``0)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: ConvertObjectToObject<TFrom, TResult>(TFrom)
+  nameWithType: R_FrontUtility.ConvertObjectToObject<TFrom, TResult>(TFrom)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject<TFrom, TResult>(TFrom)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertObjectToObject
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 176
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static TResult ConvertObjectToObject<TFrom, TResult>(TFrom poSource)
+    parameters:
+    - id: poSource
+      type: '{TFrom}'
+    typeParameters:
+    - id: TFrom
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: Public Shared Function ConvertObjectToObject(Of TFrom, TResult)(poSource As TFrom) As TResult
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject*
+  nameWithType.vb: R_FrontUtility.ConvertObjectToObject(Of TFrom, TResult)(TFrom)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject(Of TFrom, TResult)(TFrom)
+  name.vb: ConvertObjectToObject(Of TFrom, TResult)(TFrom)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection(IList,Type)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection(IList,Type)
+  id: ConvertCollectionToCollection(IList,Type)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: ConvertCollectionToCollection(IList, Type)
+  nameWithType: R_FrontUtility.ConvertCollectionToCollection(IList, Type)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection(IList, Type)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertCollectionToCollection
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 181
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static IList ConvertCollectionToCollection(IList poObjectList, Type poTargetType)
+    parameters:
+    - id: poObjectList
+      type: IList
+    - id: poTargetType
+      type: Type
+    return:
+      type: IList
+    content.vb: Public Shared Function ConvertCollectionToCollection(poObjectList As IList, poTargetType As Type) As IList
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection``1(IList)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection``1(IList)
+  id: ConvertCollectionToCollection``1(IList)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: ConvertCollectionToCollection<TResult>(IList)
+  nameWithType: R_FrontUtility.ConvertCollectionToCollection<TResult>(IList)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection<TResult>(IList)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertCollectionToCollection
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 195
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static IList<TResult> ConvertCollectionToCollection<TResult>(IList poObjectList)
+    parameters:
+    - id: poObjectList
+      type: IList
+    typeParameters:
+    - id: TResult
+    return:
+      type: IList{{TResult}}
+    content.vb: Public Shared Function ConvertCollectionToCollection(Of TResult)(poObjectList As IList) As IList(Of TResult)
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection*
+  nameWithType.vb: R_FrontUtility.ConvertCollectionToCollection(Of TResult)(IList)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection(Of TResult)(IList)
+  name.vb: ConvertCollectionToCollection(Of TResult)(IList)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Nullable{System.Object},System.Nullable{System.Object})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Nullable{System.Object},System.Nullable{System.Object})
+  id: CompareObject(System.Nullable{System.Object},System.Nullable{System.Object})
+  isExtensionMethod: true
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: CompareObject(Nullable<Object>, Nullable<Object>)
+  nameWithType: R_FrontUtility.CompareObject(Nullable<Object>, Nullable<Object>)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Nullable<System.Object>, System.Nullable<System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CompareObject
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 209
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static bool CompareObject(this object? poObj, object? poAnotherObj)
+    parameters:
+    - id: poObj
+      type: System.Nullable{System.Object}
+    - id: poAnotherObj
+      type: System.Nullable{System.Object}
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CompareObject(poObj As Object?, poAnotherObj As Object?) As Boolean
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject*
+  nameWithType.vb: R_FrontUtility.CompareObject(Nullable(Of Object), Nullable(Of Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Nullable(Of System.Object), System.Nullable(Of System.Object))
+  name.vb: CompareObject(Nullable(Of Object), Nullable(Of Object))
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte``1(``0)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte``1(``0)
+  id: SerializeObjectToByte``1(``0)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: SerializeObjectToByte<T>(T)
+  nameWithType: R_FrontUtility.SerializeObjectToByte<T>(T)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SerializeObjectToByte
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 223
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: >-
+      public static byte[] SerializeObjectToByte<T>(T poObject)
+          where T : class
+    parameters:
+    - id: poObject
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function SerializeObjectToByte(Of T As Class)(poObject As T) As Byte()
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte*
+  nameWithType.vb: R_FrontUtility.SerializeObjectToByte(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte(Of T)(T)
+  name.vb: SerializeObjectToByte(Of T)(T)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte``1(System.Byte[])
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte``1(System.Byte[])
+  id: DeserializeObjectFromByte``1(System.Byte[])
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: DeserializeObjectFromByte<T>(Byte[])
+  nameWithType: R_FrontUtility.DeserializeObjectFromByte<T>(Byte[])
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte<T>(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DeserializeObjectFromByte
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 234
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: >-
+      public static T DeserializeObjectFromByte<T>(byte[] poData)
+          where T : class
+    parameters:
+    - id: poData
+      type: System.Byte[]
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function DeserializeObjectFromByte(Of T As Class)(poData As Byte()) As T
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte*
+  nameWithType.vb: R_FrontUtility.DeserializeObjectFromByte(Of T)(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte(Of T)(System.Byte())
+  name.vb: DeserializeObjectFromByte(Of T)(Byte())
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(DataTable)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(DataTable)
+  id: R_ConvertTo``1(DataTable)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertTo<T>(DataTable)
+  nameWithType: R_FrontUtility.R_ConvertTo<T>(DataTable)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo<T>(DataTable)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertTo
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 247
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: >-
+      public static IList<T>? R_ConvertTo<T>(DataTable poTable)
+          where T : class
+    parameters:
+    - id: poTable
+      type: DataTable
+    typeParameters:
+    - id: T
+    return:
+      type: System.Nullable{IList{{T}}}
+    content.vb: Public Shared Function R_ConvertTo(Of T As Class)(poTable As DataTable) As IList(Of T)?
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo*
+  nameWithType.vb: R_FrontUtility.R_ConvertTo(Of T)(DataTable)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo(Of T)(DataTable)
+  name.vb: R_ConvertTo(Of T)(DataTable)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(IList{DataRow})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(IList{DataRow})
+  id: R_ConvertTo``1(IList{DataRow})
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertTo<T>(IList<DataRow>)
+  nameWithType: R_FrontUtility.R_ConvertTo<T>(IList<DataRow>)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo<T>(IList<DataRow>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertTo
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 259
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: >-
+      public static IList<T>? R_ConvertTo<T>(IList<DataRow> poRows)
+          where T : class
+    parameters:
+    - id: poRows
+      type: IList{DataRow}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Nullable{IList{{T}}}
+    content.vb: Public Shared Function R_ConvertTo(Of T As Class)(poRows As IList(Of DataRow)) As IList(Of T)?
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo*
+  nameWithType.vb: R_FrontUtility.R_ConvertTo(Of T)(IList(Of DataRow))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo(Of T)(IList(Of DataRow))
+  name.vb: R_ConvertTo(Of T)(IList(Of DataRow))
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(IList{``0},System.Boolean,System.Nullable{Dictionary{System.String,System.String}})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo``1(IList{``0},System.Boolean,System.Nullable{Dictionary{System.String,System.String}})
+  id: R_ConvertTo``1(IList{``0},System.Boolean,System.Nullable{Dictionary{System.String,System.String}})
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertTo<T>(IList<T>, Boolean, Nullable<Dictionary<String, String>>)
+  nameWithType: R_FrontUtility.R_ConvertTo<T>(IList<T>, Boolean, Nullable<Dictionary<String, String>>)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo<T>(IList<T>, System.Boolean, System.Nullable<Dictionary<System.String, System.String>>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertTo
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 276
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static DataTable R_ConvertTo<T>(IList<T> poList, bool plAcceptChanges = true, Dictionary<string, string>? poMapping = null)
+    parameters:
+    - id: poList
+      type: IList{{T}}
+    - id: plAcceptChanges
+      type: System.Boolean
+    - id: poMapping
+      type: System.Nullable{Dictionary{System.String,System.String}}
+    typeParameters:
+    - id: T
+    return:
+      type: DataTable
+    content.vb: Public Shared Function R_ConvertTo(Of T)(poList As IList(Of T), plAcceptChanges As Boolean = True, poMapping As Dictionary(Of String, String)? = Nothing) As DataTable
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo*
+  nameWithType.vb: R_FrontUtility.R_ConvertTo(Of T)(IList(Of T), Boolean, Nullable(Of Dictionary(Of String, String)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo(Of T)(IList(Of T), System.Boolean, System.Nullable(Of Dictionary(Of System.String, System.String)))
+  name.vb: R_ConvertTo(Of T)(IList(Of T), Boolean, Nullable(Of Dictionary(Of String, String)))
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable``1(System.Nullable{Dictionary{System.String,System.String}})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable``1(System.Nullable{Dictionary{System.String,System.String}})
+  id: R_Createtable``1(System.Nullable{Dictionary{System.String,System.String}})
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_Createtable<T>(Nullable<Dictionary<String, String>>)
+  nameWithType: R_FrontUtility.R_Createtable<T>(Nullable<Dictionary<String, String>>)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable<T>(System.Nullable<Dictionary<System.String, System.String>>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_Createtable
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 344
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static DataTable R_Createtable<T>(Dictionary<string, string>? poMapping = null)
+    parameters:
+    - id: poMapping
+      type: System.Nullable{Dictionary{System.String,System.String}}
+    typeParameters:
+    - id: T
+    return:
+      type: DataTable
+    content.vb: Public Shared Function R_Createtable(Of T)(poMapping As Dictionary(Of String, String)? = Nothing) As DataTable
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable*
+  nameWithType.vb: R_FrontUtility.R_Createtable(Of T)(Nullable(Of Dictionary(Of String, String)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable(Of T)(System.Nullable(Of Dictionary(Of System.String, System.String)))
+  name.vb: R_Createtable(Of T)(Nullable(Of Dictionary(Of String, String)))
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync(Stream)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync(Stream)
+  id: ConvertStreamToByteAsync(Stream)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: ConvertStreamToByteAsync(Stream)
+  nameWithType: R_FrontUtility.ConvertStreamToByteAsync(Stream)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync(Stream)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConvertStreamToByteAsync
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 371
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static Task<byte[]> ConvertStreamToByteAsync(Stream poStream)
+    parameters:
+    - id: poStream
+      type: Stream
+    return:
+      type: Task{System.Byte[]}
+    content.vb: Public Shared Function ConvertStreamToByteAsync(poStream As Stream) As Task(Of Byte())
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType(System.Byte[])
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType(System.Byte[])
+  id: GetImageMimeType(System.Byte[])
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: GetImageMimeType(Byte[])
+  nameWithType: R_FrontUtility.GetImageMimeType(Byte[])
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetImageMimeType
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 392
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string GetImageMimeType(byte[] imageData)
+    parameters:
+    - id: imageData
+      type: System.Byte[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetImageMimeType(imageData As Byte()) As String
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType*
+  nameWithType.vb: R_FrontUtility.GetImageMimeType(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType(System.Byte())
+  name.vb: GetImageMimeType(Byte())
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail(System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail(System.String)
+  id: IsValidEmail(System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: IsValidEmail(String)
+  nameWithType: R_FrontUtility.IsValidEmail(String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsValidEmail
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 419
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static bool IsValidEmail(string pcEmail)
+    parameters:
+    - id: pcEmail
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsValidEmail(pcEmail As String) As Boolean
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump(System.Object)
+  id: Dump(System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: Dump(Object)
+  nameWithType: R_FrontUtility.Dump(Object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Dump
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 469
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string Dump(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function Dump(obj As Object) As String
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime(System.String,System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime(System.String,System.String)
+  id: R_ConvertToDateTime(System.String,System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertToDateTime(String, String)
+  nameWithType: R_FrontUtility.R_ConvertToDateTime(String, String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertToDateTime
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 476
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static DateTime? R_ConvertToDateTime(string pcDateString = "", string pcDateFormat = "")
+    parameters:
+    - id: pcDateString
+      type: System.String
+    - id: pcDateFormat
+      type: System.String
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Shared Function R_ConvertToDateTime(pcDateString As String = "", pcDateFormat As String = "") As DateTime?
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(DateTime,System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(DateTime,System.String)
+  id: R_ConvertToDateTimeString(DateTime,System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertToDateTimeString(DateTime, String)
+  nameWithType: R_FrontUtility.R_ConvertToDateTimeString(DateTime, String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(DateTime, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertToDateTimeString
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 500
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string R_ConvertToDateTimeString(DateTime pdDateTime, string pcDateFormat = "")
+    parameters:
+    - id: pdDateTime
+      type: DateTime
+    - id: pcDateFormat
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function R_ConvertToDateTimeString(pdDateTime As DateTime, pcDateFormat As String = "") As String
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(System.Nullable{DateTime},System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(System.Nullable{DateTime},System.String)
+  id: R_ConvertToDateTimeString(System.Nullable{DateTime},System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertToDateTimeString(Nullable<DateTime>, String)
+  nameWithType: R_FrontUtility.R_ConvertToDateTimeString(Nullable<DateTime>, String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(System.Nullable<DateTime>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertToDateTimeString
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 507
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string R_ConvertToDateTimeString(DateTime? pdDateTime, string pcDateFormat = "")
+    parameters:
+    - id: pdDateTime
+      type: System.Nullable{DateTime}
+    - id: pcDateFormat
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function R_ConvertToDateTimeString(pdDateTime As DateTime?, pcDateFormat As String = "") As String
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString*
+  nameWithType.vb: R_FrontUtility.R_ConvertToDateTimeString(Nullable(Of DateTime), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString(System.Nullable(Of DateTime), System.String)
+  name.vb: R_ConvertToDateTimeString(Nullable(Of DateTime), String)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType
+  id: R_GetReportFileOutputType
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetReportFileOutputType()
+  nameWithType: R_FrontUtility.R_GetReportFileOutputType()
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetReportFileOutputType
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 516
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static Dictionary<int, string> R_GetReportFileOutputType()
+    return:
+      type: Dictionary{System.Int32,System.String}
+    content.vb: Public Shared Function R_GetReportFileOutputType As Dictionary(Of Integer, String)
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException(R_APICommonDTO.R_APIException)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException(R_APICommonDTO.R_APIException)
+  id: R_ConvertFromAPIException(R_APICommonDTO.R_APIException)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertFromAPIException(R_APIException)
+  nameWithType: R_FrontUtility.R_ConvertFromAPIException(R_APIException)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException(R_APICommonDTO.R_APIException)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertFromAPIException
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 523
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static R_Exception R_ConvertFromAPIException(R_APIException apiException)
+    parameters:
+    - id: apiException
+      type: R_APICommonDTO.R_APIException
+    return:
+      type: R_BlazorFrontEnd.Exceptions.R_Exception
+    content.vb: Public Shared Function R_ConvertFromAPIException(apiException As R_APIException) As R_Exception
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException(R_BlazorFrontEnd.Exceptions.R_Exception)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException(R_BlazorFrontEnd.Exceptions.R_Exception)
+  id: R_ConvertToAPIException(R_BlazorFrontEnd.Exceptions.R_Exception)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ConvertToAPIException(R_Exception)
+  nameWithType: R_FrontUtility.R_ConvertToAPIException(R_Exception)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException(R_BlazorFrontEnd.Exceptions.R_Exception)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConvertToAPIException
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 528
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static R_APIException R_ConvertToAPIException(R_Exception exception)
+    parameters:
+    - id: exception
+      type: R_BlazorFrontEnd.Exceptions.R_Exception
+    return:
+      type: R_APICommonDTO.R_APIException
+    content.vb: Public Shared Function R_ConvertToAPIException(exception As R_Exception) As R_APIException
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString``1(``0)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString``1(``0)
+  id: R_ObjectToXMLString``1(``0)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ObjectToXMLString<T>(T)
+  nameWithType: R_FrontUtility.R_ObjectToXMLString<T>(T)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ObjectToXMLString
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 540
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string R_ObjectToXMLString<T>(T poObject)
+    parameters:
+    - id: poObject
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Public Shared Function R_ObjectToXMLString(Of T)(poObject As T) As String
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString*
+  nameWithType.vb: R_FrontUtility.R_ObjectToXMLString(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString(Of T)(T)
+  name.vb: R_ObjectToXMLString(Of T)(T)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML``1(``0)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML``1(``0)
+  id: R_ObjectToXML``1(``0)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ObjectToXML<T>(T)
+  nameWithType: R_FrontUtility.R_ObjectToXML<T>(T)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ObjectToXML
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 558
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static byte[] R_ObjectToXML<T>(T poObject)
+    parameters:
+    - id: poObject
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function R_ObjectToXML(Of T)(poObject As T) As Byte()
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML*
+  nameWithType.vb: R_FrontUtility.R_ObjectToXML(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML(Of T)(T)
+  name.vb: R_ObjectToXML(Of T)(T)
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject``1(System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject``1(System.String)
+  id: R_XMLToObject``1(System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  langs:
+  - csharp
+  - vb
+  name: R_XMLToObject<T>(String)
+  nameWithType: R_FrontUtility.R_XMLToObject<T>(String)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_XMLToObject
+    path: Library/R_BlazorFrontEnd/Helpers/R_FrontUtility.cs
+    startLine: 574
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static T R_XMLToObject<T>(string xmlText)
+    parameters:
+    - id: xmlText
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function R_XMLToObject(Of T)(xmlText As String) As T
+  overload: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject*
+  nameWithType.vb: R_FrontUtility.R_XMLToObject(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject(Of T)(System.String)
+  name.vb: R_XMLToObject(Of T)(String)
+references:
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage
+  name: R_GetMessage
+  nameWithType: R_FrontUtility.R_GetMessage
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetMessage
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable{CultureInfo}
+  commentId: '!:System.Nullable{CultureInfo}'
+  definition: System.Nullable`1
+  name: Nullable<CultureInfo>
+  nameWithType: Nullable<CultureInfo>
+  fullName: System.Nullable<CultureInfo>
+  nameWithType.vb: Nullable(Of CultureInfo)
+  fullName.vb: System.Nullable(Of CultureInfo)
+  name.vb: Nullable(Of CultureInfo)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CultureInfo
+    name: CultureInfo
+    nameWithType: CultureInfo
+    fullName: CultureInfo
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CultureInfo
+    name: CultureInfo
+    nameWithType: CultureInfo
+    fullName: CultureInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError
+  name: R_GetError
+  nameWithType: R_FrontUtility.R_GetError
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetError
+- uid: R_BlazorFrontEnd.Exceptions.R_Error
+  commentId: T:R_BlazorFrontEnd.Exceptions.R_Error
+  parent: R_BlazorFrontEnd.Exceptions
+  name: R_Error
+  nameWithType: R_Error
+  fullName: R_BlazorFrontEnd.Exceptions.R_Error
+- uid: R_BlazorFrontEnd.Exceptions
+  commentId: N:R_BlazorFrontEnd.Exceptions
+  name: R_BlazorFrontEnd.Exceptions
+  nameWithType: R_BlazorFrontEnd.Exceptions
+  fullName: R_BlazorFrontEnd.Exceptions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail
+  name: R_GetErrorDetail
+  nameWithType: R_FrontUtility.R_GetErrorDetail
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetErrorDetail
+- uid: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+  commentId: T:R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+  parent: R_BlazorFrontEnd.Exceptions
+  name: R_ErrorDetail
+  nameWithType: R_ErrorDetail
+  fullName: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject
+  name: ConvertObjectToObject
+  nameWithType: R_FrontUtility.ConvertObjectToObject
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertObjectToObject
+- uid: System.Nullable{System.Object}
+  commentId: '!:System.Nullable{System.Object}'
+  definition: System.Nullable`1
+  name: Nullable<Object>
+  nameWithType: Nullable<Object>
+  fullName: System.Nullable<System.Object>
+  nameWithType.vb: Nullable(Of Object)
+  fullName.vb: System.Nullable(Of System.Object)
+  name.vb: Nullable(Of Object)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: '{TFrom}'
+  commentId: '!:TFrom'
+  definition: TFrom
+  name: TFrom
+  nameWithType: TFrom
+  fullName: TFrom
+- uid: TFrom
+  commentId: '!:TFrom'
+  name: TFrom
+  nameWithType: TFrom
+  fullName: TFrom
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection
+  name: ConvertCollectionToCollection
+  nameWithType: R_FrontUtility.ConvertCollectionToCollection
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertCollectionToCollection
+- uid: IList
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: IList
+- uid: IList{{TResult}}
+  commentId: '!:IList{``0}'
+  definition: IList`1
+  name: IList<TResult>
+  nameWithType: IList<TResult>
+  fullName: IList<TResult>
+  nameWithType.vb: IList(Of TResult)
+  fullName.vb: IList(Of TResult)
+  name.vb: IList(Of TResult)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject
+  name: CompareObject
+  nameWithType: R_FrontUtility.CompareObject
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte
+  name: SerializeObjectToByte
+  nameWithType: R_FrontUtility.SerializeObjectToByte
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.SerializeObjectToByte
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte
+  name: DeserializeObjectFromByte
+  nameWithType: R_FrontUtility.DeserializeObjectFromByte
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.DeserializeObjectFromByte
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo
+  name: R_ConvertTo
+  nameWithType: R_FrontUtility.R_ConvertTo
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertTo
+- uid: DataTable
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: DataTable
+- uid: System.Nullable{IList{{T}}}
+  commentId: '!:System.Nullable{IList{``0}}'
+  definition: System.Nullable`1
+  name: Nullable<IList<T>>
+  nameWithType: Nullable<IList<T>>
+  fullName: System.Nullable<IList<T>>
+  nameWithType.vb: Nullable(Of IList(Of T))
+  fullName.vb: System.Nullable(Of IList(Of T))
+  name.vb: Nullable(Of IList(Of T))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList{DataRow}
+  commentId: '!:IList{DataRow}'
+  definition: IList`1
+  name: IList<DataRow>
+  nameWithType: IList<DataRow>
+  fullName: IList<DataRow>
+  nameWithType.vb: IList(Of DataRow)
+  fullName.vb: IList(Of DataRow)
+  name.vb: IList(Of DataRow)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DataRow
+    name: DataRow
+    nameWithType: DataRow
+    fullName: DataRow
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DataRow
+    name: DataRow
+    nameWithType: DataRow
+    fullName: DataRow
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList{{T}}
+  commentId: '!:IList{``0}'
+  definition: IList`1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{Dictionary{System.String,System.String}}
+  commentId: '!:System.Nullable{Dictionary{System.String,System.String}}'
+  definition: System.Nullable`1
+  name: Nullable<Dictionary<String, String>>
+  nameWithType: Nullable<Dictionary<String, String>>
+  fullName: System.Nullable<Dictionary<System.String, System.String>>
+  nameWithType.vb: Nullable(Of Dictionary(Of String, String))
+  fullName.vb: System.Nullable(Of Dictionary(Of System.String, System.String))
+  name.vb: Nullable(Of Dictionary(Of String, String))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable
+  name: R_Createtable
+  nameWithType: R_FrontUtility.R_Createtable
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_Createtable
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync
+  name: ConvertStreamToByteAsync
+  nameWithType: R_FrontUtility.ConvertStreamToByteAsync
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.ConvertStreamToByteAsync
+- uid: Stream
+  commentId: '!:Stream'
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: Task{System.Byte[]}
+  commentId: '!:Task{System.Byte[]}'
+  definition: Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType
+  name: GetImageMimeType
+  nameWithType: R_FrontUtility.GetImageMimeType
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.GetImageMimeType
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail
+  name: IsValidEmail
+  nameWithType: R_FrontUtility.IsValidEmail
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.IsValidEmail
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump
+  name: Dump
+  nameWithType: R_FrontUtility.Dump
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.Dump
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime
+  name: R_ConvertToDateTime
+  nameWithType: R_FrontUtility.R_ConvertToDateTime
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTime
+- uid: System.Nullable{DateTime}
+  commentId: '!:System.Nullable{DateTime}'
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString
+  name: R_ConvertToDateTimeString
+  nameWithType: R_FrontUtility.R_ConvertToDateTimeString
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToDateTimeString
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType
+  name: R_GetReportFileOutputType
+  nameWithType: R_FrontUtility.R_GetReportFileOutputType
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_GetReportFileOutputType
+- uid: Dictionary{System.Int32,System.String}
+  commentId: '!:Dictionary{System.Int32,System.String}'
+  definition: Dictionary`2
+  name: Dictionary<Int32, String>
+  nameWithType: Dictionary<Int32, String>
+  fullName: Dictionary<System.Int32, System.String>
+  nameWithType.vb: Dictionary(Of Int32, String)
+  fullName.vb: Dictionary(Of System.Int32, System.String)
+  name.vb: Dictionary(Of Int32, String)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException
+  name: R_ConvertFromAPIException
+  nameWithType: R_FrontUtility.R_ConvertFromAPIException
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertFromAPIException
+- uid: R_APICommonDTO.R_APIException
+  commentId: T:R_APICommonDTO.R_APIException
+  parent: R_APICommonDTO
+  isExternal: true
+  name: R_APIException
+  nameWithType: R_APIException
+  fullName: R_APICommonDTO.R_APIException
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception
+  commentId: T:R_BlazorFrontEnd.Exceptions.R_Exception
+  parent: R_BlazorFrontEnd.Exceptions
+  name: R_Exception
+  nameWithType: R_Exception
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception
+- uid: R_APICommonDTO
+  commentId: N:R_APICommonDTO
+  isExternal: true
+  name: R_APICommonDTO
+  nameWithType: R_APICommonDTO
+  fullName: R_APICommonDTO
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException
+  name: R_ConvertToAPIException
+  nameWithType: R_FrontUtility.R_ConvertToAPIException
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ConvertToAPIException
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString
+  name: R_ObjectToXMLString
+  nameWithType: R_FrontUtility.R_ObjectToXMLString
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXMLString
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML
+  name: R_ObjectToXML
+  nameWithType: R_FrontUtility.R_ObjectToXML
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_ObjectToXML
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject
+  name: R_XMLToObject
+  nameWithType: R_FrontUtility.R_XMLToObject
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.R_XMLToObject

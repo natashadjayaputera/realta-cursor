@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  commentId: T:R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  id: R_LicenseActivationResponse
+  parent: R_SecurityPolicyCommon.Responses
+  children:
+  - R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception
+  - R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess
+  - R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType
+  langs:
+  - csharp
+  - vb
+  name: R_LicenseActivationResponse
+  nameWithType: R_LicenseActivationResponse
+  fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_LicenseActivationResponse
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: 'public class R_LicenseActivationResponse : object'
+    content.vb: >-
+      Public Class R_LicenseActivationResponse
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess
+  commentId: P:R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess
+  id: IsSuccess
+  parent: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  langs:
+  - csharp
+  - vb
+  name: IsSuccess
+  nameWithType: R_LicenseActivationResponse.IsSuccess
+  fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsSuccess
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+    startLine: 6
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public bool IsSuccess { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSuccess As Boolean
+  overload: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception
+  commentId: P:R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception
+  id: Exception
+  parent: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: R_LicenseActivationResponse.Exception
+  fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Exception
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+    startLine: 7
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public string Exception { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Exception As String
+  overload: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType
+  commentId: P:R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType
+  id: ResultType
+  parent: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  langs:
+  - csharp
+  - vb
+  name: ResultType
+  nameWithType: R_LicenseActivationResponse.ResultType
+  fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ResultType
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_LicenseActivationResponse.cs
+    startLine: 8
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public R_eActivationResultType ResultType { get; set; }
+    parameters: []
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+    content.vb: Public Property ResultType As R_eActivationResultType
+  overload: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_SecurityPolicyCommon.Responses
+  commentId: N:R_SecurityPolicyCommon.Responses
+  name: R_SecurityPolicyCommon.Responses
+  nameWithType: R_SecurityPolicyCommon.Responses
+  fullName: R_SecurityPolicyCommon.Responses
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess
+  name: IsSuccess
+  nameWithType: R_LicenseActivationResponse.IsSuccess
+  fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.IsSuccess
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception
+  name: Exception
+  nameWithType: R_LicenseActivationResponse.Exception
+  fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.Exception
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType
+  name: ResultType
+  nameWithType: R_LicenseActivationResponse.ResultType
+  fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse.ResultType
+- uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  commentId: T:R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  parent: R_SecurityPolicyCommon.Enums
+  name: R_eActivationResultType
+  nameWithType: R_eActivationResultType
+  fullName: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+- uid: R_SecurityPolicyCommon.Enums
+  commentId: N:R_SecurityPolicyCommon.Enums
+  name: R_SecurityPolicyCommon.Enums
+  nameWithType: R_SecurityPolicyCommon.Enums
+  fullName: R_SecurityPolicyCommon.Enums

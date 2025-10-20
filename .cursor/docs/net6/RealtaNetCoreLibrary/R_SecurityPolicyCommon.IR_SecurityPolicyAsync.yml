@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync
+  commentId: T:R_SecurityPolicyCommon.IR_SecurityPolicyAsync
+  id: IR_SecurityPolicyAsync
+  parent: R_SecurityPolicyCommon
+  children:
+  - R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync
+  - R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  - R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  langs:
+  - csharp
+  - vb
+  name: IR_SecurityPolicyAsync
+  nameWithType: IR_SecurityPolicyAsync
+  fullName: R_SecurityPolicyCommon.IR_SecurityPolicyAsync
+  type: Interface
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IR_SecurityPolicyAsync
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+    startLine: 6
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon
+  syntax:
+    content: public interface IR_SecurityPolicyAsync
+    content.vb: Public Interface IR_SecurityPolicyAsync
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync
+  commentId: M:R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync
+  id: R_GetSecurityPolicyParameterAsync
+  parent: R_SecurityPolicyCommon.IR_SecurityPolicyAsync
+  langs:
+  - csharp
+  - vb
+  name: R_GetSecurityPolicyParameterAsync()
+  nameWithType: IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync()
+  fullName: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync()
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetSecurityPolicyParameterAsync
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+    startLine: 8
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon
+  syntax:
+    content: Task<SecurityPolicyGenericResultDTO<R_GetSecurityPolicyParameterResponse>> R_GetSecurityPolicyParameterAsync()
+    return:
+      type: Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO{R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse}}
+    content.vb: Function R_GetSecurityPolicyParameterAsync As Task(Of SecurityPolicyGenericResultDTO(Of R_GetSecurityPolicyParameterResponse))
+  overload: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync*
+- uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  commentId: M:R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  id: R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  parent: R_SecurityPolicyCommon.IR_SecurityPolicyAsync
+  langs:
+  - csharp
+  - vb
+  name: R_SecurityPolicyLogonAsync(SecurityPolicyLogonParameterDTO)
+  nameWithType: IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync(SecurityPolicyLogonParameterDTO)
+  fullName: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SecurityPolicyLogonAsync
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+    startLine: 9
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon
+  syntax:
+    content: Task<SecurityPolicyGenericResultDTO<R_SecurityPolicyLogonResponse>> R_SecurityPolicyLogonAsync(SecurityPolicyLogonParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+    return:
+      type: Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO{R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse}}
+    content.vb: Function R_SecurityPolicyLogonAsync(poParameter As SecurityPolicyLogonParameterDTO) As Task(Of SecurityPolicyGenericResultDTO(Of R_SecurityPolicyLogonResponse))
+  overload: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync*
+- uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  commentId: M:R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  id: R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  parent: R_SecurityPolicyCommon.IR_SecurityPolicyAsync
+  langs:
+  - csharp
+  - vb
+  name: R_SecurityPolicyLogoutAsync(SecurityPolicyLogoutParameterDTO)
+  nameWithType: IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync(SecurityPolicyLogoutParameterDTO)
+  fullName: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SecurityPolicyLogoutAsync
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/IR_SecurityPolicyAsync.cs
+    startLine: 10
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon
+  syntax:
+    content: Task<SecurityPolicyGenericResultDTO> R_SecurityPolicyLogoutAsync(SecurityPolicyLogoutParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+    return:
+      type: Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO}
+    content.vb: Function R_SecurityPolicyLogoutAsync(poParameter As SecurityPolicyLogoutParameterDTO) As Task(Of SecurityPolicyGenericResultDTO)
+  overload: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync*
+references:
+- uid: R_SecurityPolicyCommon
+  commentId: N:R_SecurityPolicyCommon
+  name: R_SecurityPolicyCommon
+  nameWithType: R_SecurityPolicyCommon
+  fullName: R_SecurityPolicyCommon
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync*
+  commentId: Overload:R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync
+  name: R_GetSecurityPolicyParameterAsync
+  nameWithType: IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync
+  fullName: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_GetSecurityPolicyParameterAsync
+- uid: Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO{R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse}}
+  commentId: '!:Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO{R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse}}'
+  definition: Task`1
+  name: Task<SecurityPolicyGenericResultDTO<R_GetSecurityPolicyParameterResponse>>
+  nameWithType: Task<SecurityPolicyGenericResultDTO<R_GetSecurityPolicyParameterResponse>>
+  fullName: Task<R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO<R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse>>
+  nameWithType.vb: Task(Of SecurityPolicyGenericResultDTO(Of R_GetSecurityPolicyParameterResponse))
+  fullName.vb: Task(Of R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO(Of R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse))
+  name.vb: Task(Of SecurityPolicyGenericResultDTO(Of R_GetSecurityPolicyParameterResponse))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO`1
+    name: SecurityPolicyGenericResultDTO
+    nameWithType: SecurityPolicyGenericResultDTO
+    fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+    name: R_GetSecurityPolicyParameterResponse
+    nameWithType: R_GetSecurityPolicyParameterResponse
+    fullName: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO`1
+    name: SecurityPolicyGenericResultDTO
+    nameWithType: SecurityPolicyGenericResultDTO
+    fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+    name: R_GetSecurityPolicyParameterResponse
+    nameWithType: R_GetSecurityPolicyParameterResponse
+    fullName: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync*
+  commentId: Overload:R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync
+  name: R_SecurityPolicyLogonAsync
+  nameWithType: IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync
+  fullName: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogonAsync
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: SecurityPolicyLogonParameterDTO
+  nameWithType: SecurityPolicyLogonParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+- uid: Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO{R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse}}
+  commentId: '!:Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO{R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse}}'
+  definition: Task`1
+  name: Task<SecurityPolicyGenericResultDTO<R_SecurityPolicyLogonResponse>>
+  nameWithType: Task<SecurityPolicyGenericResultDTO<R_SecurityPolicyLogonResponse>>
+  fullName: Task<R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO<R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse>>
+  nameWithType.vb: Task(Of SecurityPolicyGenericResultDTO(Of R_SecurityPolicyLogonResponse))
+  fullName.vb: Task(Of R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO(Of R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse))
+  name.vb: Task(Of SecurityPolicyGenericResultDTO(Of R_SecurityPolicyLogonResponse))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO`1
+    name: SecurityPolicyGenericResultDTO
+    nameWithType: SecurityPolicyGenericResultDTO
+    fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+    name: R_SecurityPolicyLogonResponse
+    nameWithType: R_SecurityPolicyLogonResponse
+    fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO`1
+    name: SecurityPolicyGenericResultDTO
+    nameWithType: SecurityPolicyGenericResultDTO
+    fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+    name: R_SecurityPolicyLogonResponse
+    nameWithType: R_SecurityPolicyLogonResponse
+    fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyCommon.DTOs
+  commentId: N:R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  nameWithType: R_SecurityPolicyCommon.DTOs
+  fullName: R_SecurityPolicyCommon.DTOs
+- uid: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync*
+  commentId: Overload:R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync
+  name: R_SecurityPolicyLogoutAsync
+  nameWithType: IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync
+  fullName: R_SecurityPolicyCommon.IR_SecurityPolicyAsync.R_SecurityPolicyLogoutAsync
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: SecurityPolicyLogoutParameterDTO
+  nameWithType: SecurityPolicyLogoutParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+- uid: Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO}
+  commentId: '!:Task{R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO}'
+  definition: Task`1
+  name: Task<SecurityPolicyGenericResultDTO>
+  nameWithType: Task<SecurityPolicyGenericResultDTO>
+  fullName: Task<R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO>
+  nameWithType.vb: Task(Of SecurityPolicyGenericResultDTO)
+  fullName.vb: Task(Of R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO)
+  name.vb: Task(Of SecurityPolicyGenericResultDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+    name: SecurityPolicyGenericResultDTO
+    nameWithType: SecurityPolicyGenericResultDTO
+    fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+    name: SecurityPolicyGenericResultDTO
+    nameWithType: SecurityPolicyGenericResultDTO
+    fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  - name: )
+    nameWithType: )
+    fullName: )

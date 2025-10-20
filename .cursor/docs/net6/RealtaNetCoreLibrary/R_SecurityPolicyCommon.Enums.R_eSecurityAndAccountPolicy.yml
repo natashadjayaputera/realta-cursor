@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  commentId: T:R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  id: R_eSecurityAndAccountPolicy
+  parent: R_SecurityPolicyCommon.Enums
+  children:
+  - R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByCompany
+  - R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByUser
+  - R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.None
+  langs:
+  - csharp
+  - vb
+  name: R_eSecurityAndAccountPolicy
+  nameWithType: R_eSecurityAndAccountPolicy
+  fullName: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  type: Enum
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eSecurityAndAccountPolicy
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+    startLine: 2
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: 'public enum R_eSecurityAndAccountPolicy : int'
+    content.vb: Public Enum R_eSecurityAndAccountPolicy As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.None
+  commentId: F:R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.None
+  id: None
+  parent: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: R_eSecurityAndAccountPolicy.None
+  fullName: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.None
+  type: Field
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: None
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: None = null
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+    content.vb: None = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByCompany
+  commentId: F:R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByCompany
+  id: ByCompany
+  parent: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  langs:
+  - csharp
+  - vb
+  name: ByCompany
+  nameWithType: R_eSecurityAndAccountPolicy.ByCompany
+  fullName: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByCompany
+  type: Field
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ByCompany
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+    startLine: 5
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: ByCompany = null
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+    content.vb: ByCompany = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByUser
+  commentId: F:R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByUser
+  id: ByUser
+  parent: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  langs:
+  - csharp
+  - vb
+  name: ByUser
+  nameWithType: R_eSecurityAndAccountPolicy.ByUser
+  fullName: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy.ByUser
+  type: Field
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ByUser
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eSecurityAndAccountPolicy.cs
+    startLine: 6
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: ByUser = null
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+    content.vb: ByUser = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_SecurityPolicyCommon.Enums
+  commentId: N:R_SecurityPolicyCommon.Enums
+  name: R_SecurityPolicyCommon.Enums
+  nameWithType: R_SecurityPolicyCommon.Enums
+  fullName: R_SecurityPolicyCommon.Enums
+- uid: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  commentId: T:R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy
+  parent: R_SecurityPolicyCommon.Enums
+  name: R_eSecurityAndAccountPolicy
+  nameWithType: R_eSecurityAndAccountPolicy
+  fullName: R_SecurityPolicyCommon.Enums.R_eSecurityAndAccountPolicy

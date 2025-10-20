@@ -1,0 +1,789 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  commentId: T:R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  id: R_SymmetricAesJsProvider
+  parent: R_CrossPlatformSecurity
+  children:
+  - R_CrossPlatformSecurity.R_SymmetricAesJsProvider.#ctor(IJSRuntime)
+  - R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt``1(System.String,System.String)
+  - R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt``1(``0,System.String)
+  - R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod
+  - R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod
+  - R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt(System.String,System.String)
+  - R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_SymmetricAesJsProvider
+  nameWithType: R_SymmetricAesJsProvider
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SymmetricAesJsProvider
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 8
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: 'public class R_SymmetricAesJsProvider : object, R_ISymmetricJSProvider'
+    content.vb: >-
+      Public Class R_SymmetricAesJsProvider
+          Inherits Object
+          Implements R_ISymmetricJSProvider
+  inheritance:
+  - System.Object
+  implements:
+  - R_CrossPlatformSecurity.R_ISymmetricJSProvider
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod
+  commentId: P:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod
+  id: JsEncryptMethod
+  parent: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  langs:
+  - csharp
+  - vb
+  name: JsEncryptMethod
+  nameWithType: R_SymmetricAesJsProvider.JsEncryptMethod
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: JsEncryptMethod
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 11
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public static string JsEncryptMethod { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property JsEncryptMethod As String
+  overload: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod
+  commentId: P:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod
+  id: JsDecryptMethod
+  parent: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  langs:
+  - csharp
+  - vb
+  name: JsDecryptMethod
+  nameWithType: R_SymmetricAesJsProvider.JsDecryptMethod
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: JsDecryptMethod
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 12
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public static string JsDecryptMethod { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property JsDecryptMethod As String
+  overload: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.#ctor(IJSRuntime)
+  commentId: M:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.#ctor(IJSRuntime)
+  id: '#ctor(IJSRuntime)'
+  parent: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  langs:
+  - csharp
+  - vb
+  name: R_SymmetricAesJsProvider(IJSRuntime)
+  nameWithType: R_SymmetricAesJsProvider.R_SymmetricAesJsProvider(IJSRuntime)
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.R_SymmetricAesJsProvider(IJSRuntime)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 14
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public R_SymmetricAesJsProvider(IJSRuntime jSRuntime)
+    parameters:
+    - id: jSRuntime
+      type: IJSRuntime
+    content.vb: Public Sub New(jSRuntime As IJSRuntime)
+  overload: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt(System.String,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt(System.String,System.String)
+  id: TextEncrypt(System.String,System.String)
+  parent: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  langs:
+  - csharp
+  - vb
+  name: TextEncrypt(String, String)
+  nameWithType: R_SymmetricAesJsProvider.TextEncrypt(String, String)
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: TextEncrypt
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 19
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public Task<string> TextEncrypt(string pcNormalText, string pcKey)
+    parameters:
+    - id: pcNormalText
+      type: System.String
+    - id: pcKey
+      type: System.String
+    return:
+      type: Task{System.String}
+    content.vb: Public Function TextEncrypt(pcNormalText As String, pcKey As String) As Task(Of String)
+  overload: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt*
+  implements:
+  - R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt``1(``0,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt``1(``0,System.String)
+  id: Encrypt``1(``0,System.String)
+  parent: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  langs:
+  - csharp
+  - vb
+  name: Encrypt<T>(T, String)
+  nameWithType: R_SymmetricAesJsProvider.Encrypt<T>(T, String)
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt<T>(T, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Encrypt
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 40
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public Task<string> Encrypt<T>(T poEntity, string pcKey)
+    parameters:
+    - id: poEntity
+      type: '{T}'
+    - id: pcKey
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: Task{System.String}
+    content.vb: Public Function Encrypt(Of T)(poEntity As T, pcKey As String) As Task(Of String)
+  overload: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt*
+  implements:
+  - R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1({T},System.String)
+  nameWithType.vb: R_SymmetricAesJsProvider.Encrypt(Of T)(T, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt(Of T)(T, System.String)
+  name.vb: Encrypt(Of T)(T, String)
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt(System.String,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt(System.String,System.String)
+  id: TextDecrypt(System.String,System.String)
+  parent: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  langs:
+  - csharp
+  - vb
+  name: TextDecrypt(String, String)
+  nameWithType: R_SymmetricAesJsProvider.TextDecrypt(String, String)
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: TextDecrypt
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 59
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public Task<string> TextDecrypt(string pcEncryptedText, string pcKey)
+    parameters:
+    - id: pcEncryptedText
+      type: System.String
+    - id: pcKey
+      type: System.String
+    return:
+      type: Task{System.String}
+    content.vb: Public Function TextDecrypt(pcEncryptedText As String, pcKey As String) As Task(Of String)
+  overload: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt*
+  implements:
+  - R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt``1(System.String,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt``1(System.String,System.String)
+  id: Decrypt``1(System.String,System.String)
+  parent: R_CrossPlatformSecurity.R_SymmetricAesJsProvider
+  langs:
+  - csharp
+  - vb
+  name: Decrypt<T>(String, String)
+  nameWithType: R_SymmetricAesJsProvider.Decrypt<T>(String, String)
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt<T>(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Decrypt
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricAesJsProvider.cs
+    startLine: 80
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public Task<T> Decrypt<T>(string pcEncryptedText, string pcKey)
+    parameters:
+    - id: pcEncryptedText
+      type: System.String
+    - id: pcKey
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: Task{{T}}
+    content.vb: Public Function Decrypt(Of T)(pcEncryptedText As String, pcKey As String) As Task(Of T)
+  overload: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt*
+  implements:
+  - R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt``1(System.String,System.String)
+  nameWithType.vb: R_SymmetricAesJsProvider.Decrypt(Of T)(String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt(Of T)(System.String, System.String)
+  name.vb: Decrypt(Of T)(String, String)
+references:
+- uid: R_CrossPlatformSecurity
+  commentId: N:R_CrossPlatformSecurity
+  name: R_CrossPlatformSecurity
+  nameWithType: R_CrossPlatformSecurity
+  fullName: R_CrossPlatformSecurity
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider
+  commentId: T:R_CrossPlatformSecurity.R_ISymmetricJSProvider
+  parent: R_CrossPlatformSecurity
+  name: R_ISymmetricJSProvider
+  nameWithType: R_ISymmetricJSProvider
+  fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod*
+  commentId: Overload:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod
+  name: JsEncryptMethod
+  nameWithType: R_SymmetricAesJsProvider.JsEncryptMethod
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsEncryptMethod
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod*
+  commentId: Overload:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod
+  name: JsDecryptMethod
+  nameWithType: R_SymmetricAesJsProvider.JsDecryptMethod
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.JsDecryptMethod
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.#ctor*
+  commentId: Overload:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.#ctor
+  name: R_SymmetricAesJsProvider
+  nameWithType: R_SymmetricAesJsProvider.R_SymmetricAesJsProvider
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.R_SymmetricAesJsProvider
+- uid: IJSRuntime
+  commentId: '!:IJSRuntime'
+  isExternal: true
+  name: IJSRuntime
+  nameWithType: IJSRuntime
+  fullName: IJSRuntime
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt*
+  commentId: Overload:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt
+  name: TextEncrypt
+  nameWithType: R_SymmetricAesJsProvider.TextEncrypt
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextEncrypt
+- uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt(System.String,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt(System.String,System.String)
+  parent: R_CrossPlatformSecurity.R_ISymmetricJSProvider
+  isExternal: true
+  name: TextEncrypt(String, String)
+  nameWithType: R_ISymmetricJSProvider.TextEncrypt(String, String)
+  fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt(System.String, System.String)
+  spec.csharp:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt(System.String,System.String)
+    name: TextEncrypt
+    nameWithType: R_ISymmetricJSProvider.TextEncrypt
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt(System.String,System.String)
+    name: TextEncrypt
+    nameWithType: R_ISymmetricJSProvider.TextEncrypt
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextEncrypt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt*
+  commentId: Overload:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt
+  name: Encrypt
+  nameWithType: R_SymmetricAesJsProvider.Encrypt
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Encrypt
+- uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1({T},System.String)
+  commentId: M:R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+  parent: R_CrossPlatformSecurity.R_ISymmetricJSProvider
+  definition: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+  name: Encrypt<T>(T, String)
+  nameWithType: R_ISymmetricJSProvider.Encrypt<T>(T, String)
+  fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt<T>(T, System.String)
+  nameWithType.vb: R_ISymmetricJSProvider.Encrypt(Of T)(T, String)
+  fullName.vb: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt(Of T)(T, System.String)
+  name.vb: Encrypt(Of T)(T, String)
+  spec.csharp:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+    name: Encrypt<T>
+    nameWithType: R_ISymmetricJSProvider.Encrypt<T>
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+    name: Encrypt(Of T)
+    nameWithType: R_ISymmetricJSProvider.Encrypt(Of T)
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+  isExternal: true
+  name: Encrypt<T>(T, String)
+  nameWithType: R_ISymmetricJSProvider.Encrypt<T>(T, String)
+  fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt<T>(T, System.String)
+  nameWithType.vb: R_ISymmetricJSProvider.Encrypt(Of T)(T, String)
+  fullName.vb: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt(Of T)(T, System.String)
+  name.vb: Encrypt(Of T)(T, String)
+  spec.csharp:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+    name: Encrypt<T>
+    nameWithType: R_ISymmetricJSProvider.Encrypt<T>
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt``1(``0,System.String)
+    name: Encrypt(Of T)
+    nameWithType: R_ISymmetricJSProvider.Encrypt(Of T)
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Encrypt(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt*
+  commentId: Overload:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt
+  name: TextDecrypt
+  nameWithType: R_SymmetricAesJsProvider.TextDecrypt
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.TextDecrypt
+- uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt(System.String,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt(System.String,System.String)
+  parent: R_CrossPlatformSecurity.R_ISymmetricJSProvider
+  isExternal: true
+  name: TextDecrypt(String, String)
+  nameWithType: R_ISymmetricJSProvider.TextDecrypt(String, String)
+  fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt(System.String, System.String)
+  spec.csharp:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt(System.String,System.String)
+    name: TextDecrypt
+    nameWithType: R_ISymmetricJSProvider.TextDecrypt
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt(System.String,System.String)
+    name: TextDecrypt
+    nameWithType: R_ISymmetricJSProvider.TextDecrypt
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.TextDecrypt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt*
+  commentId: Overload:R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt
+  name: Decrypt
+  nameWithType: R_SymmetricAesJsProvider.Decrypt
+  fullName: R_CrossPlatformSecurity.R_SymmetricAesJsProvider.Decrypt
+- uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt``1(System.String,System.String)
+  commentId: M:R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt``1(System.String,System.String)
+  parent: R_CrossPlatformSecurity.R_ISymmetricJSProvider
+  isExternal: true
+  name: Decrypt<T>(String, String)
+  nameWithType: R_ISymmetricJSProvider.Decrypt<T>(String, String)
+  fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt<T>(System.String, System.String)
+  nameWithType.vb: R_ISymmetricJSProvider.Decrypt(Of T)(String, String)
+  fullName.vb: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt(Of T)(System.String, System.String)
+  name.vb: Decrypt(Of T)(String, String)
+  spec.csharp:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt``1(System.String,System.String)
+    name: Decrypt<T>
+    nameWithType: R_ISymmetricJSProvider.Decrypt<T>
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt``1(System.String,System.String)
+    name: Decrypt(Of T)
+    nameWithType: R_ISymmetricJSProvider.Decrypt(Of T)
+    fullName: R_CrossPlatformSecurity.R_ISymmetricJSProvider.Decrypt(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{{T}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

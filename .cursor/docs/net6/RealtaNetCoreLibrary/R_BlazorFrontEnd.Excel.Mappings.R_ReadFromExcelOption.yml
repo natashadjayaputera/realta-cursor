@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  commentId: T:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  id: R_ReadFromExcelOption
+  parent: R_BlazorFrontEnd.Excel.Mappings
+  children:
+  - R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings
+  - R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default
+  - R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range
+  - R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames
+  - R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader
+  langs:
+  - csharp
+  - vb
+  name: R_ReadFromExcelOption
+  nameWithType: R_ReadFromExcelOption
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadFromExcelOption
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: 'public class R_ReadFromExcelOption : object'
+    content.vb: >-
+      Public Class R_ReadFromExcelOption
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames
+  commentId: P:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames
+  id: TableNames
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  langs:
+  - csharp
+  - vb
+  name: TableNames
+  nameWithType: R_ReadFromExcelOption.TableNames
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: TableNames
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public string[] TableNames { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property TableNames As String()
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader
+  commentId: P:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader
+  id: WithHeader
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  langs:
+  - csharp
+  - vb
+  name: WithHeader
+  nameWithType: R_ReadFromExcelOption.WithHeader
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: WithHeader
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public bool WithHeader { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property WithHeader As Boolean
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range
+  commentId: P:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range
+  id: Range
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: R_ReadFromExcelOption.Range
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Range
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public string? Range { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property Range As String?
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings
+  commentId: P:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings
+  id: ColumnMappings
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  langs:
+  - csharp
+  - vb
+  name: ColumnMappings
+  nameWithType: R_ReadFromExcelOption.ColumnMappings
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ColumnMappings
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public List<R_DataColumnMapping>? ColumnMappings { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}}
+    content.vb: Public Property ColumnMappings As List(Of R_DataColumnMapping)?
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default
+  commentId: P:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default
+  id: Default
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: R_ReadFromExcelOption.Default
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Default
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_ReadFromExcelOption.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public static R_ReadFromExcelOption Default { get; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+    content.vb: Public Shared ReadOnly Property Default As R_ReadFromExcelOption
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: R_BlazorFrontEnd.Excel.Mappings
+  commentId: N:R_BlazorFrontEnd.Excel.Mappings
+  name: R_BlazorFrontEnd.Excel.Mappings
+  nameWithType: R_BlazorFrontEnd.Excel.Mappings
+  fullName: R_BlazorFrontEnd.Excel.Mappings
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames
+  name: TableNames
+  nameWithType: R_ReadFromExcelOption.TableNames
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.TableNames
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader
+  name: WithHeader
+  nameWithType: R_ReadFromExcelOption.WithHeader
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.WithHeader
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range
+  name: Range
+  nameWithType: R_ReadFromExcelOption.Range
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Range
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings
+  name: ColumnMappings
+  nameWithType: R_ReadFromExcelOption.ColumnMappings
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.ColumnMappings
+- uid: System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}}
+  commentId: '!:System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}}'
+  definition: System.Nullable`1
+  name: Nullable<List<R_DataColumnMapping>>
+  nameWithType: Nullable<List<R_DataColumnMapping>>
+  fullName: System.Nullable<List<R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping>>
+  nameWithType.vb: Nullable(Of List(Of R_DataColumnMapping))
+  fullName.vb: System.Nullable(Of List(Of R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping))
+  name.vb: Nullable(Of List(Of R_DataColumnMapping))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+    name: R_DataColumnMapping
+    nameWithType: R_DataColumnMapping
+    fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+    name: R_DataColumnMapping
+    nameWithType: R_DataColumnMapping
+    fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default
+  name: Default
+  nameWithType: R_ReadFromExcelOption.Default
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption.Default
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  commentId: T:R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  parent: R_BlazorFrontEnd.Excel.Mappings
+  name: R_ReadFromExcelOption
+  nameWithType: R_ReadFromExcelOption
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption

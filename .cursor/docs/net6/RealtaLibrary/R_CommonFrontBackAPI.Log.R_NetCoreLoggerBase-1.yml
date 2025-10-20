@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  id: R_NetCoreLoggerBase`1
+  parent: R_CommonFrontBackAPI.Log
+  children:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  langs:
+  - csharp
+  - vb
+  name: R_NetCoreLoggerBase<T>
+  nameWithType: R_NetCoreLoggerBase<T>
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NetCoreLoggerBase
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: 'public class R_NetCoreLoggerBase<T> : R_NetCoreLoggerFactory where T : class, new()'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class R_NetCoreLoggerBase(Of T As {Class, New})
+          Inherits R_NetCoreLoggerFactory
+  inheritance:
+  - System.Object
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  derivedClasses:
+  - CloudStorageJob.CloudStorageJobLogger
+  - EmailEngineJob.EmailEngineJobLogger
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+  - R_EmailEngineCommon.EmailEngineLogger
+  - RolesSynchronizerJob.RolesSynchronizerJobLogger
+  - SampleStandardJob.SampleStandardJobLogger
+  inheritedMembers:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)
+  name.vb: R_NetCoreLoggerBase(Of T)
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  id: _Logger
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: _Logger
+  nameWithType: R_NetCoreLoggerBase<T>._Logger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>._Logger
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _Logger
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 11
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: protected static ILogger _Logger
+    return:
+      type: ILogger
+    content.vb: Protected Shared _Logger As ILogger
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)._Logger
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)._Logger
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  id: _Instance
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: _Instance
+  nameWithType: R_NetCoreLoggerBase<T>._Instance
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>._Instance
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _Instance
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: protected static T _Instance
+    return:
+      type: '{T}'
+    content.vb: Protected Shared _Instance As T
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)._Instance
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)._Instance
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  id: R_InitializeLogger(ILogger)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_InitializeLogger(ILogger)
+  nameWithType: R_NetCoreLoggerBase<T>.R_InitializeLogger(ILogger)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_InitializeLogger(ILogger)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InitializeLogger
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 14
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public static void R_InitializeLogger(ILogger poLogger)
+    parameters:
+    - id: poLogger
+      type: ILogger
+    content.vb: Public Shared Sub R_InitializeLogger(poLogger As ILogger)
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger*
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_InitializeLogger(ILogger)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_InitializeLogger(ILogger)
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  id: R_GetInstanceLogger
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_GetInstanceLogger()
+  nameWithType: R_NetCoreLoggerBase<T>.R_GetInstanceLogger()
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_GetInstanceLogger()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetInstanceLogger
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 22
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public static T R_GetInstanceLogger()
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function R_GetInstanceLogger As T
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger*
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_GetInstanceLogger()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_GetInstanceLogger()
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  id: LogError(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: LogError(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LogError
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 45
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public void LogError(string pcMessage, params object[] poArg)
+    parameters:
+    - id: pcMessage
+      type: System.String
+    - id: poArg
+      type: System.Object[]
+    content.vb: Public Sub LogError(pcMessage As String, ParamArray poArg As Object())
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError*
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(System.String, System.Object())
+  name.vb: LogError(String, Object())
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  id: LogError(Exception)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: LogError(Exception)
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(Exception)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(Exception)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LogError
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 50
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public void LogError(Exception poException)
+    parameters:
+    - id: poException
+      type: Exception
+    content.vb: Public Sub LogError(poException As Exception)
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError*
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(Exception)
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  id: LogError(Exception,System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: LogError(Exception, String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(Exception, String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(Exception, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LogError
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 67
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public void LogError(Exception poException, string pcMessage, params object[] poArg)
+    parameters:
+    - id: poException
+      type: Exception
+    - id: pcMessage
+      type: System.String
+    - id: poArg
+      type: System.Object[]
+    content.vb: Public Sub LogError(poException As Exception, pcMessage As String, ParamArray poArg As Object())
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError*
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(Exception, String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(Exception, System.String, System.Object())
+  name.vb: LogError(Exception, String, Object())
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  id: LogInfo(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: LogInfo(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogInfo(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogInfo(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LogInfo
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 83
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public void LogInfo(string pcMessage, params object[] poArg)
+    parameters:
+    - id: pcMessage
+      type: System.String
+    - id: poArg
+      type: System.Object[]
+    content.vb: Public Sub LogInfo(pcMessage As String, ParamArray poArg As Object())
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo*
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogInfo(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogInfo(System.String, System.Object())
+  name.vb: LogInfo(String, Object())
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  id: LogDebug(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  langs:
+  - csharp
+  - vb
+  name: LogDebug(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogDebug(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogDebug(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LogDebug
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerBase.cs
+    startLine: 88
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public void LogDebug(string pcMessage, params object[] poArg)
+    parameters:
+    - id: pcMessage
+      type: System.String
+    - id: poArg
+      type: System.Object[]
+    content.vb: Public Sub LogDebug(pcMessage As String, ParamArray poArg As Object())
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug*
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogDebug(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogDebug(System.String, System.Object())
+  name.vb: LogDebug(String, Object())
+references:
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  parent: R_CommonFrontBackAPI.Log
+  name: R_NetCoreLoggerFactory
+  nameWithType: R_NetCoreLoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  name: _LoggerFactory
+  nameWithType: R_NetCoreLoggerFactory._LoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  isExternal: true
+  name: ConfigureFactoryLogger(ILoggerFactory)
+  nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+    name: ConfigureFactoryLogger
+    nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+    name: ConfigureFactoryLogger
+    nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger
+  name: R_InitializeLogger
+  nameWithType: R_NetCoreLoggerBase<T>.R_InitializeLogger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_InitializeLogger
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_InitializeLogger
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_InitializeLogger
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  name: R_GetInstanceLogger
+  nameWithType: R_NetCoreLoggerBase<T>.R_GetInstanceLogger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_GetInstanceLogger
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_GetInstanceLogger
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_GetInstanceLogger
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError
+  name: LogError
+  nameWithType: R_NetCoreLoggerBase<T>.LogError
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo
+  name: LogInfo
+  nameWithType: R_NetCoreLoggerBase<T>.LogInfo
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogInfo
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogInfo
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogInfo
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug
+  name: LogDebug
+  nameWithType: R_NetCoreLoggerBase<T>.LogDebug
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogDebug
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogDebug
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogDebug

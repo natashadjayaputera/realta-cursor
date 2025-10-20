@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Excel.R_Text
+  commentId: T:R_BlazorFrontEnd.Excel.R_Text
+  id: R_Text
+  parent: R_BlazorFrontEnd.Excel
+  children:
+  - R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  - R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  - R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  langs:
+  - csharp
+  - vb
+  name: R_Text
+  nameWithType: R_Text
+  fullName: R_BlazorFrontEnd.Excel.R_Text
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_Text
+    path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: 'public class R_Text : object'
+    content.vb: >-
+      Public Class R_Text
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  id: R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  parent: R_BlazorFrontEnd.Excel.R_Text
+  langs:
+  - csharp
+  - vb
+  name: R_ReadFromCSV<T>(Byte[], R_TextConfiguration)
+  nameWithType: R_Text.R_ReadFromCSV<T>(Byte[], R_TextConfiguration)
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV<T>(System.Byte[], R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadFromCSV
+    path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public static List<T> R_ReadFromCSV<T>(byte[] poFileByte, R_TextConfiguration config = null)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: config
+      type: R_BlazorFrontEnd.Excel.R_TextConfiguration
+    typeParameters:
+    - id: T
+    return:
+      type: List{{T}}
+    content.vb: Public Shared Function R_ReadFromCSV(Of T)(poFileByte As Byte(), config As R_TextConfiguration = Nothing) As List(Of T)
+  overload: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV*
+  nameWithType.vb: R_Text.R_ReadFromCSV(Of T)(Byte(), R_TextConfiguration)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV(Of T)(System.Byte(), R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  name.vb: R_ReadFromCSV(Of T)(Byte(), R_TextConfiguration)
+- uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  id: R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  parent: R_BlazorFrontEnd.Excel.R_Text
+  langs:
+  - csharp
+  - vb
+  name: R_WriteToCSV<T>(List<T>, R_TextConfiguration)
+  nameWithType: R_Text.R_WriteToCSV<T>(List<T>, R_TextConfiguration)
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV<T>(List<T>, R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_WriteToCSV
+    path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+    startLine: 42
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public static byte[] R_WriteToCSV<T>(List<T> poList, R_TextConfiguration config = null)
+    parameters:
+    - id: poList
+      type: List{{T}}
+    - id: config
+      type: R_BlazorFrontEnd.Excel.R_TextConfiguration
+    typeParameters:
+    - id: T
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function R_WriteToCSV(Of T)(poList As List(Of T), config As R_TextConfiguration = Nothing) As Byte()
+  overload: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV*
+  nameWithType.vb: R_Text.R_WriteToCSV(Of T)(List(Of T), R_TextConfiguration)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV(Of T)(List(Of T), R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  name.vb: R_WriteToCSV(Of T)(List(Of T), R_TextConfiguration)
+- uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  id: R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  parent: R_BlazorFrontEnd.Excel.R_Text
+  langs:
+  - csharp
+  - vb
+  name: R_WriteToCSV<T>(List<T>, List<R_DelimiterFieldParameter>, R_TextConfiguration)
+  nameWithType: R_Text.R_WriteToCSV<T>(List<T>, List<R_DelimiterFieldParameter>, R_TextConfiguration)
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV<T>(List<T>, List<R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter>, R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_WriteToCSV
+    path: Library/R_BlazorFrontEnd.Excel/Text/R_Text.cs
+    startLine: 72
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public static byte[] R_WriteToCSV<T>(List<T> poList, List<R_DelimiterFieldParameter> fieldParameters, R_TextConfiguration config = null)
+    parameters:
+    - id: poList
+      type: List{{T}}
+    - id: fieldParameters
+      type: List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}
+    - id: config
+      type: R_BlazorFrontEnd.Excel.R_TextConfiguration
+    typeParameters:
+    - id: T
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function R_WriteToCSV(Of T)(poList As List(Of T), fieldParameters As List(Of R_DelimiterFieldParameter), config As R_TextConfiguration = Nothing) As Byte()
+  overload: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV*
+  nameWithType.vb: R_Text.R_WriteToCSV(Of T)(List(Of T), List(Of R_DelimiterFieldParameter), R_TextConfiguration)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV(Of T)(List(Of T), List(Of R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter), R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  name.vb: R_WriteToCSV(Of T)(List(Of T), List(Of R_DelimiterFieldParameter), R_TextConfiguration)
+references:
+- uid: R_BlazorFrontEnd.Excel
+  commentId: N:R_BlazorFrontEnd.Excel
+  name: R_BlazorFrontEnd.Excel
+  nameWithType: R_BlazorFrontEnd.Excel
+  fullName: R_BlazorFrontEnd.Excel
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV*
+  commentId: Overload:R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV
+  name: R_ReadFromCSV
+  nameWithType: R_Text.R_ReadFromCSV
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_BlazorFrontEnd.Excel.R_TextConfiguration
+  commentId: T:R_BlazorFrontEnd.Excel.R_TextConfiguration
+  parent: R_BlazorFrontEnd.Excel
+  name: R_TextConfiguration
+  nameWithType: R_TextConfiguration
+  fullName: R_BlazorFrontEnd.Excel.R_TextConfiguration
+- uid: List{{T}}
+  commentId: '!:List{``0}'
+  definition: List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV*
+  commentId: Overload:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV
+  name: R_WriteToCSV
+  nameWithType: R_Text.R_WriteToCSV
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV
+- uid: List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}
+  commentId: '!:List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}'
+  definition: List`1
+  name: List<R_DelimiterFieldParameter>
+  nameWithType: List<R_DelimiterFieldParameter>
+  fullName: List<R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter>
+  nameWithType.vb: List(Of R_DelimiterFieldParameter)
+  fullName.vb: List(Of R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter)
+  name.vb: List(Of R_DelimiterFieldParameter)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
+    name: R_DelimiterFieldParameter
+    nameWithType: R_DelimiterFieldParameter
+    fullName: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
+    name: R_DelimiterFieldParameter
+    nameWithType: R_DelimiterFieldParameter
+    fullName: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
+  - name: )
+    nameWithType: )
+    fullName: )

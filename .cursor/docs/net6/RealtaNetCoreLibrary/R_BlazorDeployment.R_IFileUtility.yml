@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorDeployment.R_IFileUtility
+  commentId: T:R_BlazorDeployment.R_IFileUtility
+  id: R_IFileUtility
+  parent: R_BlazorDeployment
+  children:
+  - R_BlazorDeployment.R_IFileUtility.GetFile(System.String)
+  - R_BlazorDeployment.R_IFileUtility.SaveFile(System.String,System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: R_IFileUtility
+  nameWithType: R_IFileUtility
+  fullName: R_BlazorDeployment.R_IFileUtility
+  type: Interface
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_IFileUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IFileUtility
+    path: Library Back/R_BlazorDeployment/R_IFileUtility.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public interface R_IFileUtility
+    content.vb: Public Interface R_IFileUtility
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorDeployment.R_IFileUtility.SaveFile(System.String,System.Byte[])
+  commentId: M:R_BlazorDeployment.R_IFileUtility.SaveFile(System.String,System.Byte[])
+  id: SaveFile(System.String,System.Byte[])
+  parent: R_BlazorDeployment.R_IFileUtility
+  langs:
+  - csharp
+  - vb
+  name: SaveFile(String, Byte[])
+  nameWithType: R_IFileUtility.SaveFile(String, Byte[])
+  fullName: R_BlazorDeployment.R_IFileUtility.SaveFile(System.String, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_IFileUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SaveFile
+    path: Library Back/R_BlazorDeployment/R_IFileUtility.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: R_IResult SaveFile(string pcFileName, byte[] poByteFile)
+    parameters:
+    - id: pcFileName
+      type: System.String
+    - id: poByteFile
+      type: System.Byte[]
+    return:
+      type: R_BlazorDeployment.R_IResult
+    content.vb: Function SaveFile(pcFileName As String, poByteFile As Byte()) As R_IResult
+  overload: R_BlazorDeployment.R_IFileUtility.SaveFile*
+  nameWithType.vb: R_IFileUtility.SaveFile(String, Byte())
+  fullName.vb: R_BlazorDeployment.R_IFileUtility.SaveFile(System.String, System.Byte())
+  name.vb: SaveFile(String, Byte())
+- uid: R_BlazorDeployment.R_IFileUtility.GetFile(System.String)
+  commentId: M:R_BlazorDeployment.R_IFileUtility.GetFile(System.String)
+  id: GetFile(System.String)
+  parent: R_BlazorDeployment.R_IFileUtility
+  langs:
+  - csharp
+  - vb
+  name: GetFile(String)
+  nameWithType: R_IFileUtility.GetFile(String)
+  fullName: R_BlazorDeployment.R_IFileUtility.GetFile(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_IFileUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetFile
+    path: Library Back/R_BlazorDeployment/R_IFileUtility.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: R_IResult<byte[]> GetFile(string pcFileName)
+    parameters:
+    - id: pcFileName
+      type: System.String
+    return:
+      type: R_BlazorDeployment.R_IResult{System.Byte[]}
+    content.vb: Function GetFile(pcFileName As String) As R_IResult(Of Byte())
+  overload: R_BlazorDeployment.R_IFileUtility.GetFile*
+references:
+- uid: R_BlazorDeployment
+  commentId: N:R_BlazorDeployment
+  name: R_BlazorDeployment
+  nameWithType: R_BlazorDeployment
+  fullName: R_BlazorDeployment
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorDeployment.R_IFileUtility.SaveFile*
+  commentId: Overload:R_BlazorDeployment.R_IFileUtility.SaveFile
+  name: SaveFile
+  nameWithType: R_IFileUtility.SaveFile
+  fullName: R_BlazorDeployment.R_IFileUtility.SaveFile
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_BlazorDeployment.R_IResult
+  commentId: T:R_BlazorDeployment.R_IResult
+  parent: R_BlazorDeployment
+  name: R_IResult
+  nameWithType: R_IResult
+  fullName: R_BlazorDeployment.R_IResult
+- uid: R_BlazorDeployment.R_IFileUtility.GetFile*
+  commentId: Overload:R_BlazorDeployment.R_IFileUtility.GetFile
+  name: GetFile
+  nameWithType: R_IFileUtility.GetFile
+  fullName: R_BlazorDeployment.R_IFileUtility.GetFile
+- uid: R_BlazorDeployment.R_IResult{System.Byte[]}
+  commentId: T:R_BlazorDeployment.R_IResult{System.Byte[]}
+  parent: R_BlazorDeployment
+  definition: R_BlazorDeployment.R_IResult`1
+  name: R_IResult<Byte[]>
+  nameWithType: R_IResult<Byte[]>
+  fullName: R_BlazorDeployment.R_IResult<System.Byte[]>
+  nameWithType.vb: R_IResult(Of Byte())
+  fullName.vb: R_BlazorDeployment.R_IResult(Of System.Byte())
+  name.vb: R_IResult(Of Byte())
+  spec.csharp:
+  - uid: R_BlazorDeployment.R_IResult`1
+    name: R_IResult
+    nameWithType: R_IResult
+    fullName: R_BlazorDeployment.R_IResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_BlazorDeployment.R_IResult`1
+    name: R_IResult
+    nameWithType: R_IResult
+    fullName: R_BlazorDeployment.R_IResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorDeployment.R_IResult`1
+  commentId: T:R_BlazorDeployment.R_IResult`1
+  name: R_IResult<T>
+  nameWithType: R_IResult<T>
+  fullName: R_BlazorDeployment.R_IResult<T>
+  nameWithType.vb: R_IResult(Of T)
+  fullName.vb: R_BlazorDeployment.R_IResult(Of T)
+  name.vb: R_IResult(Of T)
+  spec.csharp:
+  - uid: R_BlazorDeployment.R_IResult`1
+    name: R_IResult
+    nameWithType: R_IResult
+    fullName: R_BlazorDeployment.R_IResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_BlazorDeployment.R_IResult`1
+    name: R_IResult
+    nameWithType: R_IResult
+    fullName: R_BlazorDeployment.R_IResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

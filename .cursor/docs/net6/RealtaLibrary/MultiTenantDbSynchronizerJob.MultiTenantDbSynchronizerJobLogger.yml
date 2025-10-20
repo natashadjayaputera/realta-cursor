@@ -1,0 +1,989 @@
+### YamlMime:ManagedReference
+items:
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+  commentId: T:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+  id: MultiTenantDbSynchronizerJobLogger
+  parent: MultiTenantDbSynchronizerJob
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbSynchronizerJobLogger
+  nameWithType: MultiTenantDbSynchronizerJobLogger
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobLogger.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantDbSynchronizerJobLogger
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobLogger.cs
+    startLine: 4
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: 'public class MultiTenantDbSynchronizerJobLogger : R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>'
+    content.vb: >-
+      Public Class MultiTenantDbSynchronizerJobLogger
+          Inherits R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger)
+  inheritance:
+  - System.Object
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  inheritedMembers:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}._Logger
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}._Instance
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.R_InitializeLogger(ILogger)
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.R_GetInstanceLogger
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(Exception)
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(Exception,System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogInfo(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogDebug(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: MultiTenantDbSynchronizerJob
+  commentId: N:MultiTenantDbSynchronizerJob
+  name: MultiTenantDbSynchronizerJob
+  nameWithType: MultiTenantDbSynchronizerJob
+  fullName: MultiTenantDbSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  parent: R_CommonFrontBackAPI.Log
+  name: R_NetCoreLoggerFactory
+  nameWithType: R_NetCoreLoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  parent: R_CommonFrontBackAPI.Log
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  name: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger)
+  name.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+    name: MultiTenantDbSynchronizerJobLogger
+    nameWithType: MultiTenantDbSynchronizerJobLogger
+    fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+    name: MultiTenantDbSynchronizerJobLogger
+    nameWithType: MultiTenantDbSynchronizerJobLogger
+    fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}._Logger
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}._Logger
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  name: _Logger
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>._Logger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>._Logger
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger)._Logger
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger)._Logger
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}._Instance
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}._Instance
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  name: _Instance
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>._Instance
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>._Instance
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger)._Instance
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger)._Instance
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.R_InitializeLogger(ILogger)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.R_InitializeLogger(ILogger)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  name: R_InitializeLogger(ILogger)
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.R_InitializeLogger(ILogger)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.R_InitializeLogger(ILogger)
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).R_InitializeLogger(ILogger)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).R_InitializeLogger(ILogger)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.R_GetInstanceLogger
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.R_GetInstanceLogger
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  name: R_GetInstanceLogger()
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.R_GetInstanceLogger()
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.R_GetInstanceLogger()
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).R_GetInstanceLogger()
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).R_GetInstanceLogger()
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  name: LogError(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogError(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogError(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogError(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogError(System.String, System.Object())
+  name.vb: LogError(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(Exception)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(Exception)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  name: LogError(Exception)
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogError(Exception)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogError(Exception)
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogError(Exception)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogError(Exception)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(Exception,System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogError(Exception,System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  name: LogError(Exception, String, Object[])
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogError(Exception, String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogError(Exception, System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogError(Exception, String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogError(Exception, System.String, System.Object())
+  name.vb: LogError(Exception, String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogInfo(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogInfo(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  name: LogInfo(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogInfo(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogInfo(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogInfo(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogInfo(System.String, System.Object())
+  name.vb: LogInfo(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogDebug(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}.LogDebug(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  name: LogDebug(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogDebug(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogDebug(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogDebug(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogDebug(System.String, System.Object())
+  name.vb: LogDebug(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase<MultiTenantDbSynchronizerJobLogger>.LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger>.LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJobLogger).LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogger).LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  name: _LoggerFactory
+  nameWithType: R_NetCoreLoggerFactory._LoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  isExternal: true
+  name: ConfigureFactoryLogger(ILoggerFactory)
+  nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+    name: ConfigureFactoryLogger
+    nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+    name: ConfigureFactoryLogger
+    nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  name: R_NetCoreLoggerBase<T>
+  nameWithType: R_NetCoreLoggerBase<T>
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)
+  name.vb: R_NetCoreLoggerBase(Of T)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  name: _Logger
+  nameWithType: R_NetCoreLoggerBase<T>._Logger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>._Logger
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)._Logger
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)._Logger
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  name: _Instance
+  nameWithType: R_NetCoreLoggerBase<T>._Instance
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>._Instance
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)._Instance
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)._Instance
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  isExternal: true
+  name: R_InitializeLogger(ILogger)
+  nameWithType: R_NetCoreLoggerBase<T>.R_InitializeLogger(ILogger)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_InitializeLogger(ILogger)
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_InitializeLogger(ILogger)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_InitializeLogger(ILogger)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase<T>.R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase(Of T).R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  name: R_GetInstanceLogger()
+  nameWithType: R_NetCoreLoggerBase<T>.R_GetInstanceLogger()
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_GetInstanceLogger()
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_GetInstanceLogger()
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_GetInstanceLogger()
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase<T>.R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase(Of T).R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  isExternal: true
+  name: LogError(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(System.String, System.Object())
+  name.vb: LogError(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<T>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of T).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  isExternal: true
+  name: LogError(Exception)
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(Exception)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(Exception)
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(Exception)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(Exception)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<T>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of T).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  isExternal: true
+  name: LogError(Exception, String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(Exception, String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(Exception, System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(Exception, String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(Exception, System.String, System.Object())
+  name.vb: LogError(Exception, String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<T>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of T).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  isExternal: true
+  name: LogInfo(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogInfo(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogInfo(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogInfo(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogInfo(System.String, System.Object())
+  name.vb: LogInfo(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase<T>.LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase(Of T).LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  isExternal: true
+  name: LogDebug(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogDebug(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogDebug(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogDebug(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogDebug(System.String, System.Object())
+  name.vb: LogDebug(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase<T>.LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase(Of T).LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )

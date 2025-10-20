@@ -1,0 +1,490 @@
+### YamlMime:ManagedReference
+items:
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls
+  commentId: T:RolesSynchronizerJob.RolesSynchronizerJobCls
+  id: RolesSynchronizerJobCls
+  parent: RolesSynchronizerJob
+  children:
+  - RolesSynchronizerJob.RolesSynchronizerJobCls.#ctor(ILogger{RolesSynchronizerJob.RolesSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)
+  - RolesSynchronizerJob.RolesSynchronizerJobCls.Execute(IJobExecutionContext)
+  - RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO)
+  - RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO)
+  langs:
+  - csharp
+  - vb
+  name: RolesSynchronizerJobCls
+  nameWithType: RolesSynchronizerJobCls
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: RolesSynchronizerJobCls
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+    startLine: 14
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: 'public class RolesSynchronizerJobCls : IJob'
+    content.vb: >-
+      Public Class RolesSynchronizerJobCls
+          Inherits IJob
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.#ctor(ILogger{RolesSynchronizerJob.RolesSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)
+  commentId: M:RolesSynchronizerJob.RolesSynchronizerJobCls.#ctor(ILogger{RolesSynchronizerJob.RolesSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)
+  id: '#ctor(ILogger{RolesSynchronizerJob.RolesSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)'
+  parent: RolesSynchronizerJob.RolesSynchronizerJobCls
+  langs:
+  - csharp
+  - vb
+  name: RolesSynchronizerJobCls(ILogger<RolesSynchronizerJobCls>, R_ILocalCacheMultiTenantFromDb)
+  nameWithType: RolesSynchronizerJobCls.RolesSynchronizerJobCls(ILogger<RolesSynchronizerJobCls>, R_ILocalCacheMultiTenantFromDb)
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.RolesSynchronizerJobCls(ILogger<RolesSynchronizerJob.RolesSynchronizerJobCls>, R_ILocalCacheMultiTenantFromDb)
+  type: Constructor
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+    startLine: 20
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public RolesSynchronizerJobCls(ILogger<RolesSynchronizerJobCls> poLogger, R_ILocalCacheMultiTenantFromDb poHelperCacheFromDb)
+    parameters:
+    - id: poLogger
+      type: ILogger{RolesSynchronizerJob.RolesSynchronizerJobCls}
+    - id: poHelperCacheFromDb
+      type: R_ILocalCacheMultiTenantFromDb
+    content.vb: Public Sub New(poLogger As ILogger(Of RolesSynchronizerJobCls), poHelperCacheFromDb As R_ILocalCacheMultiTenantFromDb)
+  overload: RolesSynchronizerJob.RolesSynchronizerJobCls.#ctor*
+  nameWithType.vb: RolesSynchronizerJobCls.RolesSynchronizerJobCls(ILogger(Of RolesSynchronizerJobCls), R_ILocalCacheMultiTenantFromDb)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RolesSynchronizerJob.RolesSynchronizerJobCls.RolesSynchronizerJobCls(ILogger(Of RolesSynchronizerJob.RolesSynchronizerJobCls), R_ILocalCacheMultiTenantFromDb)
+  name.vb: RolesSynchronizerJobCls(ILogger(Of RolesSynchronizerJobCls), R_ILocalCacheMultiTenantFromDb)
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.Execute(IJobExecutionContext)
+  commentId: M:RolesSynchronizerJob.RolesSynchronizerJobCls.Execute(IJobExecutionContext)
+  id: Execute(IJobExecutionContext)
+  parent: RolesSynchronizerJob.RolesSynchronizerJobCls
+  langs:
+  - csharp
+  - vb
+  name: Execute(IJobExecutionContext)
+  nameWithType: RolesSynchronizerJobCls.Execute(IJobExecutionContext)
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.Execute(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Execute
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+    startLine: 27
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public Task Execute(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: Task
+    content.vb: Public Function Execute(context As IJobExecutionContext) As Task
+  overload: RolesSynchronizerJob.RolesSynchronizerJobCls.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO)
+  commentId: M:RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO)
+  id: R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO)
+  parent: RolesSynchronizerJob.RolesSynchronizerJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO)
+  nameWithType: RolesSynchronizerJobCls.R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO)
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetAuthenticationRoleKey
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+    startLine: 172
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public Task<List<R_AuthenticationRoleKeyDTO>> R_GetAuthenticationRoleKey(R_GetAuthenticationRoleKeyParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_GetAuthenticationRoleKeyParameterDTO
+    return:
+      type: Task{List{R_AuthenticationRoleKeyDTO}}
+    content.vb: Public Function R_GetAuthenticationRoleKey(poParameter As R_GetAuthenticationRoleKeyParameterDTO) As Task(Of List(Of R_AuthenticationRoleKeyDTO))
+  overload: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO)
+  commentId: M:RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO)
+  id: R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO)
+  parent: RolesSynchronizerJob.RolesSynchronizerJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO)
+  nameWithType: RolesSynchronizerJobCls.R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO)
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetAuthenticationRoles
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobCls.cs
+    startLine: 193
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public Task<List<R_ActionRoleDTO>> R_GetAuthenticationRoles(R_GetAuthenticationRolesParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_GetAuthenticationRolesParameterDTO
+    return:
+      type: Task{List{R_ActionRoleDTO}}
+    content.vb: Public Function R_GetAuthenticationRoles(poParameter As R_GetAuthenticationRolesParameterDTO) As Task(Of List(Of R_ActionRoleDTO))
+  overload: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: RolesSynchronizerJob
+  commentId: N:RolesSynchronizerJob
+  name: RolesSynchronizerJob
+  nameWithType: RolesSynchronizerJob
+  fullName: RolesSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.#ctor*
+  commentId: Overload:RolesSynchronizerJob.RolesSynchronizerJobCls.#ctor
+  name: RolesSynchronizerJobCls
+  nameWithType: RolesSynchronizerJobCls.RolesSynchronizerJobCls
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.RolesSynchronizerJobCls
+- uid: ILogger{RolesSynchronizerJob.RolesSynchronizerJobCls}
+  commentId: '!:ILogger{RolesSynchronizerJob.RolesSynchronizerJobCls}'
+  definition: ILogger`1
+  name: ILogger<RolesSynchronizerJobCls>
+  nameWithType: ILogger<RolesSynchronizerJobCls>
+  fullName: ILogger<RolesSynchronizerJob.RolesSynchronizerJobCls>
+  nameWithType.vb: ILogger(Of RolesSynchronizerJobCls)
+  fullName.vb: ILogger(Of RolesSynchronizerJob.RolesSynchronizerJobCls)
+  name.vb: ILogger(Of RolesSynchronizerJobCls)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobCls
+    name: RolesSynchronizerJobCls
+    nameWithType: RolesSynchronizerJobCls
+    fullName: RolesSynchronizerJob.RolesSynchronizerJobCls
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobCls
+    name: RolesSynchronizerJobCls
+    nameWithType: RolesSynchronizerJobCls
+    fullName: RolesSynchronizerJob.RolesSynchronizerJobCls
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ILocalCacheMultiTenantFromDb
+  isExternal: true
+  name: R_ILocalCacheMultiTenantFromDb
+  nameWithType: R_ILocalCacheMultiTenantFromDb
+  fullName: R_ILocalCacheMultiTenantFromDb
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.Execute*
+  commentId: Overload:RolesSynchronizerJob.RolesSynchronizerJobCls.Execute
+  name: Execute
+  nameWithType: RolesSynchronizerJobCls.Execute
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.Execute
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey*
+  commentId: Overload:RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey
+  name: R_GetAuthenticationRoleKey
+  nameWithType: RolesSynchronizerJobCls.R_GetAuthenticationRoleKey
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoleKey
+- uid: R_GetAuthenticationRoleKeyParameterDTO
+  commentId: '!:R_GetAuthenticationRoleKeyParameterDTO'
+  isExternal: true
+  name: R_GetAuthenticationRoleKeyParameterDTO
+  nameWithType: R_GetAuthenticationRoleKeyParameterDTO
+  fullName: R_GetAuthenticationRoleKeyParameterDTO
+- uid: Task{List{R_AuthenticationRoleKeyDTO}}
+  commentId: '!:Task{List{R_AuthenticationRoleKeyDTO}}'
+  definition: Task`1
+  name: Task<List<R_AuthenticationRoleKeyDTO>>
+  nameWithType: Task<List<R_AuthenticationRoleKeyDTO>>
+  fullName: Task<List<R_AuthenticationRoleKeyDTO>>
+  nameWithType.vb: Task(Of List(Of R_AuthenticationRoleKeyDTO))
+  fullName.vb: Task(Of List(Of R_AuthenticationRoleKeyDTO))
+  name.vb: Task(Of List(Of R_AuthenticationRoleKeyDTO))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_AuthenticationRoleKeyDTO
+    name: R_AuthenticationRoleKeyDTO
+    nameWithType: R_AuthenticationRoleKeyDTO
+    fullName: R_AuthenticationRoleKeyDTO
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_AuthenticationRoleKeyDTO
+    name: R_AuthenticationRoleKeyDTO
+    nameWithType: R_AuthenticationRoleKeyDTO
+    fullName: R_AuthenticationRoleKeyDTO
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles*
+  commentId: Overload:RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles
+  name: R_GetAuthenticationRoles
+  nameWithType: RolesSynchronizerJobCls.R_GetAuthenticationRoles
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobCls.R_GetAuthenticationRoles
+- uid: R_GetAuthenticationRolesParameterDTO
+  commentId: '!:R_GetAuthenticationRolesParameterDTO'
+  isExternal: true
+  name: R_GetAuthenticationRolesParameterDTO
+  nameWithType: R_GetAuthenticationRolesParameterDTO
+  fullName: R_GetAuthenticationRolesParameterDTO
+- uid: Task{List{R_ActionRoleDTO}}
+  commentId: '!:Task{List{R_ActionRoleDTO}}'
+  definition: Task`1
+  name: Task<List<R_ActionRoleDTO>>
+  nameWithType: Task<List<R_ActionRoleDTO>>
+  fullName: Task<List<R_ActionRoleDTO>>
+  nameWithType.vb: Task(Of List(Of R_ActionRoleDTO))
+  fullName.vb: Task(Of List(Of R_ActionRoleDTO))
+  name.vb: Task(Of List(Of R_ActionRoleDTO))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_ActionRoleDTO
+    name: R_ActionRoleDTO
+    nameWithType: R_ActionRoleDTO
+    fullName: R_ActionRoleDTO
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_ActionRoleDTO
+    name: R_ActionRoleDTO
+    nameWithType: R_ActionRoleDTO
+    fullName: R_ActionRoleDTO
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

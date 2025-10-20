@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.SampleStandardJobSetting
+  commentId: T:SampleStandardJob.SampleStandardJobSetting
+  id: SampleStandardJobSetting
+  parent: SampleStandardJob
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: SampleStandardJobSetting
+  nameWithType: SampleStandardJobSetting
+  fullName: SampleStandardJob.SampleStandardJobSetting
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SampleStandardJobSetting
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSetting.cs
+    startLine: 9
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: 'public class SampleStandardJobSetting : R_SchedulerSettingDTO'
+    content.vb: >-
+      Public Class SampleStandardJobSetting
+          Inherits R_SchedulerSettingDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: SampleStandardJob
+  commentId: N:SampleStandardJob
+  name: SampleStandardJob
+  nameWithType: SampleStandardJob
+  fullName: SampleStandardJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

@@ -1,0 +1,154 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.R_IBatchCoudStorage
+  commentId: T:R_CloudStorageCommon.R_IBatchCoudStorage
+  id: R_IBatchCoudStorage
+  parent: R_CloudStorageCommon
+  children:
+  - R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket(System.String,R_CloudStorageCommon.R_ECloudStorageDirectoryAccess)
+  - R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: R_IBatchCoudStorage
+  nameWithType: R_IBatchCoudStorage
+  fullName: R_CloudStorageCommon.R_IBatchCoudStorage
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_IBatchCoudStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IBatchCoudStorage
+    path: Microservices/R_CloudStorageCommon/R_IBatchCoudStorage.cs
+    startLine: 5
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public interface R_IBatchCoudStorage : IDisposable'
+    content.vb: >-
+      Public Interface R_IBatchCoudStorage
+          Inherits IDisposable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient(System.Byte[])
+  commentId: M:R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient(System.Byte[])
+  id: R_InitialStorageClient(System.Byte[])
+  parent: R_CloudStorageCommon.R_IBatchCoudStorage
+  langs:
+  - csharp
+  - vb
+  name: R_InitialStorageClient(Byte[])
+  nameWithType: R_IBatchCoudStorage.R_InitialStorageClient(Byte[])
+  fullName: R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_IBatchCoudStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InitialStorageClient
+    path: Microservices/R_CloudStorageCommon/R_IBatchCoudStorage.cs
+    startLine: 7
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: void R_InitialStorageClient(byte[] poCredentialFile)
+    parameters:
+    - id: poCredentialFile
+      type: System.Byte[]
+    content.vb: Sub R_InitialStorageClient(poCredentialFile As Byte())
+  overload: R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient*
+  nameWithType.vb: R_IBatchCoudStorage.R_InitialStorageClient(Byte())
+  fullName.vb: R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient(System.Byte())
+  name.vb: R_InitialStorageClient(Byte())
+- uid: R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket(System.String,R_CloudStorageCommon.R_ECloudStorageDirectoryAccess)
+  commentId: M:R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket(System.String,R_CloudStorageCommon.R_ECloudStorageDirectoryAccess)
+  id: R_CreateBucket(System.String,R_CloudStorageCommon.R_ECloudStorageDirectoryAccess)
+  parent: R_CloudStorageCommon.R_IBatchCoudStorage
+  langs:
+  - csharp
+  - vb
+  name: R_CreateBucket(String, R_ECloudStorageDirectoryAccess)
+  nameWithType: R_IBatchCoudStorage.R_CreateBucket(String, R_ECloudStorageDirectoryAccess)
+  fullName: R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket(System.String, R_CloudStorageCommon.R_ECloudStorageDirectoryAccess)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_IBatchCoudStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CreateBucket
+    path: Microservices/R_CloudStorageCommon/R_IBatchCoudStorage.cs
+    startLine: 8
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: void R_CreateBucket(string pcContainerName, R_ECloudStorageDirectoryAccess poDirectoryAccess)
+    parameters:
+    - id: pcContainerName
+      type: System.String
+    - id: poDirectoryAccess
+      type: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+    content.vb: Sub R_CreateBucket(pcContainerName As String, poDirectoryAccess As R_ECloudStorageDirectoryAccess)
+  overload: R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket*
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient*
+  commentId: Overload:R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient
+  name: R_InitialStorageClient
+  nameWithType: R_IBatchCoudStorage.R_InitialStorageClient
+  fullName: R_CloudStorageCommon.R_IBatchCoudStorage.R_InitialStorageClient
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket*
+  commentId: Overload:R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket
+  name: R_CreateBucket
+  nameWithType: R_IBatchCoudStorage.R_CreateBucket
+  fullName: R_CloudStorageCommon.R_IBatchCoudStorage.R_CreateBucket
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  commentId: T:R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  parent: R_CloudStorageCommon
+  name: R_ECloudStorageDirectoryAccess
+  nameWithType: R_ECloudStorageDirectoryAccess
+  fullName: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess

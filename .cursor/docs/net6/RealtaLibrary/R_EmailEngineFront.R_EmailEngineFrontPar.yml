@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar
+  commentId: T:R_EmailEngineFront.R_EmailEngineFrontPar
+  id: R_EmailEngineFrontPar
+  parent: R_EmailEngineFront
+  children:
+  - R_EmailEngineFront.R_EmailEngineFrontPar.Attachments
+  - R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID
+  - R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds
+  - R_EmailEngineFront.R_EmailEngineFrontPar.Message
+  - R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID
+  - R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineFrontPar
+  nameWithType: R_EmailEngineFrontPar
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineFrontPar
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+    startLine: 7
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: 'public class R_EmailEngineFrontPar : object'
+    content.vb: >-
+      Public Class R_EmailEngineFrontPar
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID
+  id: COMPANY_ID
+  parent: R_EmailEngineFront.R_EmailEngineFrontPar
+  langs:
+  - csharp
+  - vb
+  name: COMPANY_ID
+  nameWithType: R_EmailEngineFrontPar.COMPANY_ID
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: COMPANY_ID
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+    startLine: 9
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public string COMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property COMPANY_ID As String
+  overload: R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID
+  id: USER_ID
+  parent: R_EmailEngineFront.R_EmailEngineFrontPar
+  langs:
+  - csharp
+  - vb
+  name: USER_ID
+  nameWithType: R_EmailEngineFrontPar.USER_ID
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: USER_ID
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+    startLine: 10
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public string USER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property USER_ID As String
+  overload: R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID
+  id: PROGRAM_ID
+  parent: R_EmailEngineFront.R_EmailEngineFrontPar
+  langs:
+  - csharp
+  - vb
+  name: PROGRAM_ID
+  nameWithType: R_EmailEngineFrontPar.PROGRAM_ID
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PROGRAM_ID
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+    startLine: 11
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public string PROGRAM_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PROGRAM_ID As String
+  overload: R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.Message
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontPar.Message
+  id: Message
+  parent: R_EmailEngineFront.R_EmailEngineFrontPar
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: R_EmailEngineFrontPar.Message
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.Message
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Message
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+    startLine: 12
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public R_EmailEngineMessage Message { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_EmailEngineMessage
+    content.vb: Public Property Message As R_EmailEngineMessage
+  overload: R_EmailEngineFront.R_EmailEngineFrontPar.Message*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.Attachments
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontPar.Attachments
+  id: Attachments
+  parent: R_EmailEngineFront.R_EmailEngineFrontPar
+  langs:
+  - csharp
+  - vb
+  name: Attachments
+  nameWithType: R_EmailEngineFrontPar.Attachments
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.Attachments
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Attachments
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+    startLine: 13
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public List<R_EmailEngineFrontFile> Attachments { get; set; }
+    parameters: []
+    return:
+      type: List{R_EmailEngineFront.R_EmailEngineFrontFile}
+    content.vb: Public Property Attachments As List(Of R_EmailEngineFrontFile)
+  overload: R_EmailEngineFront.R_EmailEngineFrontPar.Attachments*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds
+  id: Embeddeds
+  parent: R_EmailEngineFront.R_EmailEngineFrontPar
+  langs:
+  - csharp
+  - vb
+  name: Embeddeds
+  nameWithType: R_EmailEngineFrontPar.Embeddeds
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Embeddeds
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontPar.cs
+    startLine: 14
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public List<R_EmailEngineFrontFile> Embeddeds { get; set; }
+    parameters: []
+    return:
+      type: List{R_EmailEngineFront.R_EmailEngineFrontFile}
+    content.vb: Public Property Embeddeds As List(Of R_EmailEngineFrontFile)
+  overload: R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngineFront
+  commentId: N:R_EmailEngineFront
+  name: R_EmailEngineFront
+  nameWithType: R_EmailEngineFront
+  fullName: R_EmailEngineFront
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID
+  name: COMPANY_ID
+  nameWithType: R_EmailEngineFrontPar.COMPANY_ID
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.COMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID
+  name: USER_ID
+  nameWithType: R_EmailEngineFrontPar.USER_ID
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.USER_ID
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID
+  name: PROGRAM_ID
+  nameWithType: R_EmailEngineFrontPar.PROGRAM_ID
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.PROGRAM_ID
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.Message*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontPar.Message
+  name: Message
+  nameWithType: R_EmailEngineFrontPar.Message
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.Message
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineMessage
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineMessage
+  nameWithType: R_EmailEngineMessage
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.Attachments*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontPar.Attachments
+  name: Attachments
+  nameWithType: R_EmailEngineFrontPar.Attachments
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.Attachments
+- uid: List{R_EmailEngineFront.R_EmailEngineFrontFile}
+  commentId: '!:List{R_EmailEngineFront.R_EmailEngineFrontFile}'
+  definition: List`1
+  name: List<R_EmailEngineFrontFile>
+  nameWithType: List<R_EmailEngineFrontFile>
+  fullName: List<R_EmailEngineFront.R_EmailEngineFrontFile>
+  nameWithType.vb: List(Of R_EmailEngineFrontFile)
+  fullName.vb: List(Of R_EmailEngineFront.R_EmailEngineFrontFile)
+  name.vb: List(Of R_EmailEngineFrontFile)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_EmailEngineFront.R_EmailEngineFrontFile
+    name: R_EmailEngineFrontFile
+    nameWithType: R_EmailEngineFrontFile
+    fullName: R_EmailEngineFront.R_EmailEngineFrontFile
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_EmailEngineFront.R_EmailEngineFrontFile
+    name: R_EmailEngineFrontFile
+    nameWithType: R_EmailEngineFrontFile
+    fullName: R_EmailEngineFront.R_EmailEngineFrontFile
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds
+  name: Embeddeds
+  nameWithType: R_EmailEngineFrontPar.Embeddeds
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar.Embeddeds

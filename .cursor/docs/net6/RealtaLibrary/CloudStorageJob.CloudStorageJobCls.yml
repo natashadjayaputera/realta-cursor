@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.CloudStorageJobCls
+  commentId: T:CloudStorageJob.CloudStorageJobCls
+  id: CloudStorageJobCls
+  parent: CloudStorageJob
+  children:
+  - CloudStorageJob.CloudStorageJobCls.#ctor(ILogger{CloudStorageJob.CloudStorageJobCls},R_ILocalCacheMultiTenantFromDb)
+  - CloudStorageJob.CloudStorageJobCls.Execute(IJobExecutionContext)
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageJobCls
+  nameWithType: CloudStorageJobCls
+  fullName: CloudStorageJob.CloudStorageJobCls
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageJobCls
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobCls.cs
+    startLine: 18
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class CloudStorageJobCls : IJob'
+    content.vb: >-
+      Public Class CloudStorageJobCls
+          Inherits IJob
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CloudStorageJob.CloudStorageJobCls.#ctor(ILogger{CloudStorageJob.CloudStorageJobCls},R_ILocalCacheMultiTenantFromDb)
+  commentId: M:CloudStorageJob.CloudStorageJobCls.#ctor(ILogger{CloudStorageJob.CloudStorageJobCls},R_ILocalCacheMultiTenantFromDb)
+  id: '#ctor(ILogger{CloudStorageJob.CloudStorageJobCls},R_ILocalCacheMultiTenantFromDb)'
+  parent: CloudStorageJob.CloudStorageJobCls
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageJobCls(ILogger<CloudStorageJobCls>, R_ILocalCacheMultiTenantFromDb)
+  nameWithType: CloudStorageJobCls.CloudStorageJobCls(ILogger<CloudStorageJobCls>, R_ILocalCacheMultiTenantFromDb)
+  fullName: CloudStorageJob.CloudStorageJobCls.CloudStorageJobCls(ILogger<CloudStorageJob.CloudStorageJobCls>, R_ILocalCacheMultiTenantFromDb)
+  type: Constructor
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobCls.cs
+    startLine: 28
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public CloudStorageJobCls(ILogger<CloudStorageJobCls> poLogger, R_ILocalCacheMultiTenantFromDb poHelperCacheFromDb)
+    parameters:
+    - id: poLogger
+      type: ILogger{CloudStorageJob.CloudStorageJobCls}
+    - id: poHelperCacheFromDb
+      type: R_ILocalCacheMultiTenantFromDb
+    content.vb: Public Sub New(poLogger As ILogger(Of CloudStorageJobCls), poHelperCacheFromDb As R_ILocalCacheMultiTenantFromDb)
+  overload: CloudStorageJob.CloudStorageJobCls.#ctor*
+  nameWithType.vb: CloudStorageJobCls.CloudStorageJobCls(ILogger(Of CloudStorageJobCls), R_ILocalCacheMultiTenantFromDb)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CloudStorageJob.CloudStorageJobCls.CloudStorageJobCls(ILogger(Of CloudStorageJob.CloudStorageJobCls), R_ILocalCacheMultiTenantFromDb)
+  name.vb: CloudStorageJobCls(ILogger(Of CloudStorageJobCls), R_ILocalCacheMultiTenantFromDb)
+- uid: CloudStorageJob.CloudStorageJobCls.Execute(IJobExecutionContext)
+  commentId: M:CloudStorageJob.CloudStorageJobCls.Execute(IJobExecutionContext)
+  id: Execute(IJobExecutionContext)
+  parent: CloudStorageJob.CloudStorageJobCls
+  langs:
+  - csharp
+  - vb
+  name: Execute(IJobExecutionContext)
+  nameWithType: CloudStorageJobCls.Execute(IJobExecutionContext)
+  fullName: CloudStorageJob.CloudStorageJobCls.Execute(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Execute
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobCls.cs
+    startLine: 36
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public Task Execute(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: Task
+    content.vb: Public Function Execute(context As IJobExecutionContext) As Task
+  overload: CloudStorageJob.CloudStorageJobCls.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CloudStorageJob.CloudStorageJobCls.#ctor*
+  commentId: Overload:CloudStorageJob.CloudStorageJobCls.#ctor
+  name: CloudStorageJobCls
+  nameWithType: CloudStorageJobCls.CloudStorageJobCls
+  fullName: CloudStorageJob.CloudStorageJobCls.CloudStorageJobCls
+- uid: ILogger{CloudStorageJob.CloudStorageJobCls}
+  commentId: '!:ILogger{CloudStorageJob.CloudStorageJobCls}'
+  definition: ILogger`1
+  name: ILogger<CloudStorageJobCls>
+  nameWithType: ILogger<CloudStorageJobCls>
+  fullName: ILogger<CloudStorageJob.CloudStorageJobCls>
+  nameWithType.vb: ILogger(Of CloudStorageJobCls)
+  fullName.vb: ILogger(Of CloudStorageJob.CloudStorageJobCls)
+  name.vb: ILogger(Of CloudStorageJobCls)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CloudStorageJob.CloudStorageJobCls
+    name: CloudStorageJobCls
+    nameWithType: CloudStorageJobCls
+    fullName: CloudStorageJob.CloudStorageJobCls
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CloudStorageJob.CloudStorageJobCls
+    name: CloudStorageJobCls
+    nameWithType: CloudStorageJobCls
+    fullName: CloudStorageJob.CloudStorageJobCls
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ILocalCacheMultiTenantFromDb
+  isExternal: true
+  name: R_ILocalCacheMultiTenantFromDb
+  nameWithType: R_ILocalCacheMultiTenantFromDb
+  fullName: R_ILocalCacheMultiTenantFromDb
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CloudStorageJob.CloudStorageJobCls.Execute*
+  commentId: Overload:CloudStorageJob.CloudStorageJobCls.Execute
+  name: Execute
+  nameWithType: CloudStorageJobCls.Execute
+  fullName: CloudStorageJob.CloudStorageJobCls.Execute
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

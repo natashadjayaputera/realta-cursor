@@ -1,0 +1,326 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  id: R_NetCoreLogConstant
+  parent: R_CommonFrontBackAPI.Log
+  children:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.APPLICATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.COMPANY_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.CORRELATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.LOG_KEY
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.PROGRAM_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.TENANT_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_NAME
+  langs:
+  - csharp
+  - vb
+  name: R_NetCoreLogConstant
+  nameWithType: R_NetCoreLogConstant
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NetCoreLogConstant
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: 'public class R_NetCoreLogConstant : object'
+    content.vb: >-
+      Public Class R_NetCoreLogConstant
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.CORRELATION_ID
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.CORRELATION_ID
+  id: CORRELATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: CORRELATION_ID
+  nameWithType: R_NetCoreLogConstant.CORRELATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.CORRELATION_ID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CORRELATION_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string CORRELATION_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const CORRELATION_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.APPLICATION_ID
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.APPLICATION_ID
+  id: APPLICATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: APPLICATION_ID
+  nameWithType: R_NetCoreLogConstant.APPLICATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.APPLICATION_ID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: APPLICATION_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string APPLICATION_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const APPLICATION_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.TENANT_ID
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.TENANT_ID
+  id: TENANT_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: TENANT_ID
+  nameWithType: R_NetCoreLogConstant.TENANT_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.TENANT_ID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: TENANT_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string TENANT_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const TENANT_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.COMPANY_ID
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.COMPANY_ID
+  id: COMPANY_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: COMPANY_ID
+  nameWithType: R_NetCoreLogConstant.COMPANY_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.COMPANY_ID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: COMPANY_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 11
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string COMPANY_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const COMPANY_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.PROGRAM_ID
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.PROGRAM_ID
+  id: PROGRAM_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: PROGRAM_ID
+  nameWithType: R_NetCoreLogConstant.PROGRAM_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.PROGRAM_ID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PROGRAM_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string PROGRAM_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const PROGRAM_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_ID
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_ID
+  id: USER_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: USER_ID
+  nameWithType: R_NetCoreLogConstant.USER_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_ID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: USER_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 13
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string USER_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const USER_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_NAME
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_NAME
+  id: USER_NAME
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: USER_NAME
+  nameWithType: R_NetCoreLogConstant.USER_NAME
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.USER_NAME
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: USER_NAME
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 14
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string USER_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const USER_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.LOG_KEY
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.LOG_KEY
+  id: LOG_KEY
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant
+  langs:
+  - csharp
+  - vb
+  name: LOG_KEY
+  nameWithType: R_NetCoreLogConstant.LOG_KEY
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogConstant.LOG_KEY
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LOG_KEY
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogConstant.cs
+    startLine: 16
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public const string LOG_KEY = null
+    return:
+      type: System.String
+    content.vb: Public Const LOG_KEY As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

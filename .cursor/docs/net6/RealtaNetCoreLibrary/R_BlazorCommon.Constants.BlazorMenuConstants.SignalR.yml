@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  commentId: T:R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  id: BlazorMenuConstants.SignalR
+  parent: R_BlazorCommon.Constants
+  children:
+  - R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.DisconnectUser
+  - R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.HubUrl
+  - R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnConnect
+  - R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnDisconnect
+  - R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.ReceiveNotification
+  langs:
+  - csharp
+  - vb
+  name: BlazorMenuConstants.SignalR
+  nameWithType: BlazorMenuConstants.SignalR
+  fullName: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  type: Class
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SignalR
+    path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Constants
+  syntax:
+    content: 'public static class SignalR : object'
+    content.vb: >-
+      Public Module SignalR
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.HubUrl
+  commentId: F:R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.HubUrl
+  id: HubUrl
+  parent: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  langs:
+  - csharp
+  - vb
+  name: HubUrl
+  nameWithType: BlazorMenuConstants.SignalR.HubUrl
+  fullName: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.HubUrl
+  type: Field
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HubUrl
+    path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Constants
+  syntax:
+    content: public const string HubUrl = null
+    return:
+      type: System.String
+    content.vb: Public Const HubUrl As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnConnect
+  commentId: F:R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnConnect
+  id: OnConnect
+  parent: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  langs:
+  - csharp
+  - vb
+  name: OnConnect
+  nameWithType: BlazorMenuConstants.SignalR.OnConnect
+  fullName: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnConnect
+  type: Field
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OnConnect
+    path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Constants
+  syntax:
+    content: public const string OnConnect = null
+    return:
+      type: System.String
+    content.vb: Public Const OnConnect As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnDisconnect
+  commentId: F:R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnDisconnect
+  id: OnDisconnect
+  parent: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  langs:
+  - csharp
+  - vb
+  name: OnDisconnect
+  nameWithType: BlazorMenuConstants.SignalR.OnDisconnect
+  fullName: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.OnDisconnect
+  type: Field
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OnDisconnect
+    path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Constants
+  syntax:
+    content: public const string OnDisconnect = null
+    return:
+      type: System.String
+    content.vb: Public Const OnDisconnect As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.DisconnectUser
+  commentId: F:R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.DisconnectUser
+  id: DisconnectUser
+  parent: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  langs:
+  - csharp
+  - vb
+  name: DisconnectUser
+  nameWithType: BlazorMenuConstants.SignalR.DisconnectUser
+  fullName: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.DisconnectUser
+  type: Field
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DisconnectUser
+    path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Constants
+  syntax:
+    content: public const string DisconnectUser = null
+    return:
+      type: System.String
+    content.vb: Public Const DisconnectUser As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.ReceiveNotification
+  commentId: F:R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.ReceiveNotification
+  id: ReceiveNotification
+  parent: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR
+  langs:
+  - csharp
+  - vb
+  name: ReceiveNotification
+  nameWithType: BlazorMenuConstants.SignalR.ReceiveNotification
+  fullName: R_BlazorCommon.Constants.BlazorMenuConstants.SignalR.ReceiveNotification
+  type: Field
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ReceiveNotification
+    path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+    startLine: 16
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Constants
+  syntax:
+    content: public const string ReceiveNotification = null
+    return:
+      type: System.String
+    content.vb: Public Const ReceiveNotification As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_BlazorCommon.Constants
+  commentId: N:R_BlazorCommon.Constants
+  name: R_BlazorCommon.Constants
+  nameWithType: R_BlazorCommon.Constants
+  fullName: R_BlazorCommon.Constants
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

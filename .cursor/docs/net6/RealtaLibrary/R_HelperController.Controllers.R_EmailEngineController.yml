@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_HelperController.Controllers.R_EmailEngineController
+  commentId: T:R_HelperController.Controllers.R_EmailEngineController
+  id: R_EmailEngineController
+  parent: R_HelperController.Controllers
+  children:
+  - R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  - R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineController
+  nameWithType: R_EmailEngineController
+  fullName: R_HelperController.Controllers.R_EmailEngineController
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_HelperController/Controllers/R_EmailEngineController.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineController
+    path: Microservices/R_HelperController/Controllers/R_EmailEngineController.cs
+    startLine: 10
+  assemblies:
+  - R_HelperController
+  namespace: R_HelperController.Controllers
+  syntax:
+    content: 'public class R_EmailEngineController : ControllerBase, R_IServiceEmailEngineAsync'
+    content.vb: >-
+      Public Class R_EmailEngineController
+          Inherits ControllerBase
+          Implements R_IServiceEmailEngineAsync
+  inheritance:
+  - System.Object
+  implements:
+  - R_IServiceEmailEngineAsync
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  commentId: M:R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  id: R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  parent: R_HelperController.Controllers.R_EmailEngineController
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  nameWithType: R_EmailEngineController.R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  fullName: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_HelperController/Controllers/R_EmailEngineController.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceEmailEngineLoadData
+    path: Microservices/R_HelperController/Controllers/R_EmailEngineController.cs
+    startLine: 14
+  assemblies:
+  - R_HelperController
+  namespace: R_HelperController.Controllers
+  syntax:
+    content: public Task<R_ServiceEmailEngineLoadDataResultDTO> R_ServiceEmailEngineLoadData(R_EmailEngineDataPar poData)
+    parameters:
+    - id: poData
+      type: R_CommonFrontBackAPI.R_EmailEngineDataPar
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO}
+    content.vb: Public Function R_ServiceEmailEngineLoadData(poData As R_EmailEngineDataPar) As Task(Of R_ServiceEmailEngineLoadDataResultDTO)
+  overload: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  commentId: M:R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  id: R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  parent: R_HelperController.Controllers.R_EmailEngineController
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  nameWithType: R_EmailEngineController.R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  fullName: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_HelperController/Controllers/R_EmailEngineController.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceEmailEngineProcessData
+    path: Microservices/R_HelperController/Controllers/R_EmailEngineController.cs
+    startLine: 37
+  assemblies:
+  - R_HelperController
+  namespace: R_HelperController.Controllers
+  syntax:
+    content: public Task<R_ServiceEmailEngineProcessDataResultDTO> R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar poData)
+    parameters:
+    - id: poData
+      type: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO}
+    content.vb: Public Function R_ServiceEmailEngineProcessData(poData As R_EmailEngineCommandPar) As Task(Of R_ServiceEmailEngineProcessDataResultDTO)
+  overload: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_HelperController.Controllers
+  commentId: N:R_HelperController.Controllers
+  name: R_HelperController.Controllers
+  nameWithType: R_HelperController.Controllers
+  fullName: R_HelperController.Controllers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_IServiceEmailEngineAsync
+  commentId: '!:R_IServiceEmailEngineAsync'
+  isExternal: true
+  name: R_IServiceEmailEngineAsync
+  nameWithType: R_IServiceEmailEngineAsync
+  fullName: R_IServiceEmailEngineAsync
+- uid: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData*
+  commentId: Overload:R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData
+  name: R_ServiceEmailEngineLoadData
+  nameWithType: R_EmailEngineController.R_ServiceEmailEngineLoadData
+  fullName: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineLoadData
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineDataPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineDataPar
+  nameWithType: R_EmailEngineDataPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar
+- uid: Task{R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO}
+  commentId: '!:Task{R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO}'
+  definition: Task`1
+  name: Task<R_ServiceEmailEngineLoadDataResultDTO>
+  nameWithType: Task<R_ServiceEmailEngineLoadDataResultDTO>
+  fullName: Task<R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO>
+  nameWithType.vb: Task(Of R_ServiceEmailEngineLoadDataResultDTO)
+  fullName.vb: Task(Of R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO)
+  name.vb: Task(Of R_ServiceEmailEngineLoadDataResultDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+    name: R_ServiceEmailEngineLoadDataResultDTO
+    nameWithType: R_ServiceEmailEngineLoadDataResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+    name: R_ServiceEmailEngineLoadDataResultDTO
+    nameWithType: R_ServiceEmailEngineLoadDataResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData*
+  commentId: Overload:R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData
+  name: R_ServiceEmailEngineProcessData
+  nameWithType: R_EmailEngineController.R_ServiceEmailEngineProcessData
+  fullName: R_HelperController.Controllers.R_EmailEngineController.R_ServiceEmailEngineProcessData
+- uid: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineCommandPar
+  nameWithType: R_EmailEngineCommandPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+- uid: Task{R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO}
+  commentId: '!:Task{R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO}'
+  definition: Task`1
+  name: Task<R_ServiceEmailEngineProcessDataResultDTO>
+  nameWithType: Task<R_ServiceEmailEngineProcessDataResultDTO>
+  fullName: Task<R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO>
+  nameWithType.vb: Task(Of R_ServiceEmailEngineProcessDataResultDTO)
+  fullName.vb: Task(Of R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO)
+  name.vb: Task(Of R_ServiceEmailEngineProcessDataResultDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+    name: R_ServiceEmailEngineProcessDataResultDTO
+    nameWithType: R_ServiceEmailEngineProcessDataResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+    name: R_ServiceEmailEngineProcessDataResultDTO
+    nameWithType: R_ServiceEmailEngineProcessDataResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  - name: )
+    nameWithType: )
+    fullName: )

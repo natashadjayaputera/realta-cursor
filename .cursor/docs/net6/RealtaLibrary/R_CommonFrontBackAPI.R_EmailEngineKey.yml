@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineKey
+  id: R_EmailEngineKey
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID
+  - R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID
+  - R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineKey
+  nameWithType: R_EmailEngineKey
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineKey
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+    startLine: 2
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_EmailEngineKey : object'
+    content.vb: >-
+      Public Class R_EmailEngineKey
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID
+  id: COMPANY_ID
+  parent: R_CommonFrontBackAPI.R_EmailEngineKey
+  langs:
+  - csharp
+  - vb
+  name: COMPANY_ID
+  nameWithType: R_EmailEngineKey.COMPANY_ID
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: COMPANY_ID
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string COMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property COMPANY_ID As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID
+  id: USER_ID
+  parent: R_CommonFrontBackAPI.R_EmailEngineKey
+  langs:
+  - csharp
+  - vb
+  name: USER_ID
+  nameWithType: R_EmailEngineKey.USER_ID
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: USER_ID
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string USER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property USER_ID As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID
+  id: KEY_GUID
+  parent: R_CommonFrontBackAPI.R_EmailEngineKey
+  langs:
+  - csharp
+  - vb
+  name: KEY_GUID
+  nameWithType: R_EmailEngineKey.KEY_GUID
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: KEY_GUID
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineKey.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string KEY_GUID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property KEY_GUID As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID
+  name: COMPANY_ID
+  nameWithType: R_EmailEngineKey.COMPANY_ID
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey.COMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID
+  name: USER_ID
+  nameWithType: R_EmailEngineKey.USER_ID
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey.USER_ID
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID
+  name: KEY_GUID
+  nameWithType: R_EmailEngineKey.KEY_GUID
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey.KEY_GUID

@@ -1,0 +1,368 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Helpers.R_AsyncHelper
+  commentId: T:R_BlazorFrontEnd.Helpers.R_AsyncHelper
+  id: R_AsyncHelper
+  parent: R_BlazorFrontEnd.Helpers
+  children:
+  - R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync(Func{Task})
+  - R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync``1(Func{Task{``0}})
+  langs:
+  - csharp
+  - vb
+  name: R_AsyncHelper
+  nameWithType: R_AsyncHelper
+  fullName: R_BlazorFrontEnd.Helpers.R_AsyncHelper
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_AsyncHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_AsyncHelper
+    path: Library/R_BlazorFrontEnd/Helpers/R_AsyncHelper.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: 'public class R_AsyncHelper : object'
+    content.vb: >-
+      Public Class R_AsyncHelper
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync``1(Func{Task{``0}})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync``1(Func{Task{``0}})
+  id: RunSync``1(Func{Task{``0}})
+  parent: R_BlazorFrontEnd.Helpers.R_AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: RunSync<TResult>(Func<Task<TResult>>)
+  nameWithType: R_AsyncHelper.RunSync<TResult>(Func<Task<TResult>>)
+  fullName: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync<TResult>(Func<Task<TResult>>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_AsyncHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: RunSync
+    path: Library/R_BlazorFrontEnd/Helpers/R_AsyncHelper.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static TResult RunSync<TResult>(Func<Task<TResult>> func)
+    parameters:
+    - id: func
+      type: Func{Task{{TResult}}}
+    typeParameters:
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: Public Shared Function RunSync(Of TResult)(func As Func(Of Task(Of TResult))) As TResult
+  overload: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync*
+  nameWithType.vb: R_AsyncHelper.RunSync(Of TResult)(Func(Of Task(Of TResult)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync(Of TResult)(Func(Of Task(Of TResult)))
+  name.vb: RunSync(Of TResult)(Func(Of Task(Of TResult)))
+- uid: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync(Func{Task})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync(Func{Task})
+  id: RunSync(Func{Task})
+  parent: R_BlazorFrontEnd.Helpers.R_AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: RunSync(Func<Task>)
+  nameWithType: R_AsyncHelper.RunSync(Func<Task>)
+  fullName: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync(Func<Task>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_AsyncHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: RunSync
+    path: Library/R_BlazorFrontEnd/Helpers/R_AsyncHelper.cs
+    startLine: 23
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static void RunSync(Func<Task> func)
+    parameters:
+    - id: func
+      type: Func{Task}
+    content.vb: Public Shared Sub RunSync(func As Func(Of Task))
+  overload: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync*
+  nameWithType.vb: R_AsyncHelper.RunSync(Func(Of Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync(Func(Of Task))
+  name.vb: RunSync(Func(Of Task))
+references:
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync
+  name: RunSync
+  nameWithType: R_AsyncHelper.RunSync
+  fullName: R_BlazorFrontEnd.Helpers.R_AsyncHelper.RunSync
+- uid: Func{Task{{TResult}}}
+  commentId: '!:Func{Task{``0}}'
+  definition: Func`1
+  name: Func<Task<TResult>>
+  nameWithType: Func<Task<TResult>>
+  fullName: Func<Task<TResult>>
+  nameWithType.vb: Func(Of Task(Of TResult))
+  fullName.vb: Func(Of Task(Of TResult))
+  name.vb: Func(Of Task(Of TResult))
+  spec.csharp:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Func`1
+  isExternal: true
+  name: Func<>
+  nameWithType: Func<>
+  fullName: Func<>
+  nameWithType.vb: Func(Of )
+  fullName.vb: Func(Of )
+  name.vb: Func(Of )
+  spec.csharp:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Func{Task}
+  commentId: '!:Func{Task}'
+  definition: Func`1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: Func<Task>
+  nameWithType.vb: Func(Of Task)
+  fullName.vb: Func(Of Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Task
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

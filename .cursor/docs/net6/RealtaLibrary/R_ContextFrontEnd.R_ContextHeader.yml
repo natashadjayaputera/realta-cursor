@@ -1,0 +1,321 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ContextFrontEnd.R_ContextHeader
+  commentId: T:R_ContextFrontEnd.R_ContextHeader
+  id: R_ContextHeader
+  parent: R_ContextFrontEnd
+  children:
+  - R_ContextFrontEnd.R_ContextHeader.#ctor
+  - R_ContextFrontEnd.R_ContextHeader.R_Context
+  - R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader
+  - R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader(Dictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: R_ContextHeader
+  nameWithType: R_ContextHeader
+  fullName: R_ContextFrontEnd.R_ContextHeader
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ContextHeader
+    path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+    startLine: 8
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: 'public class R_ContextHeader : R_IContextHeader'
+    content.vb: >-
+      Public Class R_ContextHeader
+          Inherits R_IContextHeader
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_ContextFrontEnd.R_ContextHeader.#ctor
+  commentId: M:R_ContextFrontEnd.R_ContextHeader.#ctor
+  id: '#ctor'
+  parent: R_ContextFrontEnd.R_ContextHeader
+  langs:
+  - csharp
+  - vb
+  name: R_ContextHeader()
+  nameWithType: R_ContextHeader.R_ContextHeader()
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_ContextHeader()
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+    startLine: 12
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public R_ContextHeader()
+    content.vb: Public Sub New
+  overload: R_ContextFrontEnd.R_ContextHeader.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_ContextHeader.R_Context
+  commentId: P:R_ContextFrontEnd.R_ContextHeader.R_Context
+  id: R_Context
+  parent: R_ContextFrontEnd.R_ContextHeader
+  langs:
+  - csharp
+  - vb
+  name: R_Context
+  nameWithType: R_ContextHeader.R_Context
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_Context
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_Context
+    path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+    startLine: 17
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public R_Context R_Context { get; }
+    parameters: []
+    return:
+      type: R_ContextFrontEnd.R_Context
+    content.vb: Public ReadOnly Property R_Context As R_Context
+  overload: R_ContextFrontEnd.R_ContextHeader.R_Context*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader(Dictionary{System.String,System.String})
+  commentId: M:R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader(Dictionary{System.String,System.String})
+  id: R_SetContextFromHeader(Dictionary{System.String,System.String})
+  parent: R_ContextFrontEnd.R_ContextHeader
+  langs:
+  - csharp
+  - vb
+  name: R_SetContextFromHeader(Dictionary<String, String>)
+  nameWithType: R_ContextHeader.R_SetContextFromHeader(Dictionary<String, String>)
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader(Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetContextFromHeader
+    path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+    startLine: 25
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public void R_SetContextFromHeader(Dictionary<string, string> poHeaders)
+    parameters:
+    - id: poHeaders
+      type: Dictionary{System.String,System.String}
+    content.vb: Public Sub R_SetContextFromHeader(poHeaders As Dictionary(Of String, String))
+  overload: R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader*
+  nameWithType.vb: R_ContextHeader.R_SetContextFromHeader(Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader(Dictionary(Of System.String, System.String))
+  name.vb: R_SetContextFromHeader(Dictionary(Of String, String))
+- uid: R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader
+  commentId: M:R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader
+  id: R_GetContextHeader
+  parent: R_ContextFrontEnd.R_ContextHeader
+  langs:
+  - csharp
+  - vb
+  name: R_GetContextHeader()
+  nameWithType: R_ContextHeader.R_GetContextHeader()
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetContextHeader
+    path: Microservices/R_ContextFrontEnd/R_ContextHeader.cs
+    startLine: 30
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public Dictionary<string, string> R_GetContextHeader()
+    return:
+      type: Dictionary{System.String,System.String}
+    content.vb: Public Function R_GetContextHeader As Dictionary(Of String, String)
+  overload: R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_ContextFrontEnd
+  commentId: N:R_ContextFrontEnd
+  name: R_ContextFrontEnd
+  nameWithType: R_ContextFrontEnd
+  fullName: R_ContextFrontEnd
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ContextFrontEnd.R_ContextHeader.#ctor*
+  commentId: Overload:R_ContextFrontEnd.R_ContextHeader.#ctor
+  name: R_ContextHeader
+  nameWithType: R_ContextHeader.R_ContextHeader
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_ContextHeader
+- uid: R_ContextFrontEnd.R_ContextHeader.R_Context*
+  commentId: Overload:R_ContextFrontEnd.R_ContextHeader.R_Context
+  name: R_Context
+  nameWithType: R_ContextHeader.R_Context
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_Context
+- uid: R_ContextFrontEnd.R_Context
+  commentId: T:R_ContextFrontEnd.R_Context
+  parent: R_ContextFrontEnd
+  name: R_Context
+  nameWithType: R_Context
+  fullName: R_ContextFrontEnd.R_Context
+- uid: R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader*
+  commentId: Overload:R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader
+  name: R_SetContextFromHeader
+  nameWithType: R_ContextHeader.R_SetContextFromHeader
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_SetContextFromHeader
+- uid: Dictionary{System.String,System.String}
+  commentId: '!:Dictionary{System.String,System.String}'
+  definition: Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader*
+  commentId: Overload:R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader
+  name: R_GetContextHeader
+  nameWithType: R_ContextHeader.R_GetContextHeader
+  fullName: R_ContextFrontEnd.R_ContextHeader.R_GetContextHeader

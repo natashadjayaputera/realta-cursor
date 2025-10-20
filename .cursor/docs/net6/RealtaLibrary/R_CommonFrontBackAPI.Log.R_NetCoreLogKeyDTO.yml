@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  id: R_NetCoreLogKeyDTO
+  parent: R_CommonFrontBackAPI.Log
+  children:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  langs:
+  - csharp
+  - vb
+  name: R_NetCoreLogKeyDTO
+  nameWithType: R_NetCoreLogKeyDTO
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NetCoreLogKeyDTO
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: 'public class R_NetCoreLogKeyDTO : object'
+    content.vb: >-
+      Public Class R_NetCoreLogKeyDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - CloudStorageJob.CloudStorageJobLogKeyDTO
+  - EmailEngineJob.EmailEngineJobLogKeyDTO
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO
+  - RolesSynchronizerJob.RolesSynchronizerJobLogKeyDTO
+  - SampleStandardJob.SampleStandardJobLogKeyDTO
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  id: CORRELATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: CORRELATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.CORRELATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CORRELATION_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public string CORRELATION_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CORRELATION_ID As String
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  id: APPLICATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: APPLICATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.APPLICATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: APPLICATION_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public string APPLICATION_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property APPLICATION_ID As String
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  id: TENANT_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: TENANT_ID
+  nameWithType: R_NetCoreLogKeyDTO.TENANT_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: TENANT_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public string TENANT_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TENANT_ID As String
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  id: COMPANY_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: COMPANY_ID
+  nameWithType: R_NetCoreLogKeyDTO.COMPANY_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: COMPANY_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 11
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public string COMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property COMPANY_ID As String
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  id: PROGRAM_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: PROGRAM_ID
+  nameWithType: R_NetCoreLogKeyDTO.PROGRAM_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PROGRAM_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public string PROGRAM_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PROGRAM_ID As String
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  id: USER_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: USER_ID
+  nameWithType: R_NetCoreLogKeyDTO.USER_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: USER_ID
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 13
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public string USER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property USER_ID As String
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  id: USER_NAME
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: USER_NAME
+  nameWithType: R_NetCoreLogKeyDTO.USER_NAME
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: USER_NAME
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogKeyDTO.cs
+    startLine: 14
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public string USER_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property USER_NAME As String
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  name: CORRELATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.CORRELATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  name: APPLICATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.APPLICATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  name: TENANT_ID
+  nameWithType: R_NetCoreLogKeyDTO.TENANT_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  name: COMPANY_ID
+  nameWithType: R_NetCoreLogKeyDTO.COMPANY_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  name: PROGRAM_ID
+  nameWithType: R_NetCoreLogKeyDTO.PROGRAM_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  name: USER_ID
+  nameWithType: R_NetCoreLogKeyDTO.USER_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  name: USER_NAME
+  nameWithType: R_NetCoreLogKeyDTO.USER_NAME
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME

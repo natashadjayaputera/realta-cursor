@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.ApplicationBuilderSerilogClientExtensions
+  commentId: T:Serilog.ApplicationBuilderSerilogClientExtensions
+  id: ApplicationBuilderSerilogClientExtensions
+  parent: Serilog
+  children:
+  - Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion(IApplicationBuilder,System.Nullable{Action{Serilog.AspNetCore.Ingestion.SerilogIngestionOptions}})
+  langs:
+  - csharp
+  - vb
+  name: ApplicationBuilderSerilogClientExtensions
+  nameWithType: ApplicationBuilderSerilogClientExtensions
+  fullName: Serilog.ApplicationBuilderSerilogClientExtensions
+  type: Class
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/ApplicationBuilderSerilogClientExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ApplicationBuilderSerilogClientExtensions
+    path: Library Back/Serilog.AspNetCore.Ingestion/ApplicationBuilderSerilogClientExtensions.cs
+    startLine: 5
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog
+  syntax:
+    content: 'public static class ApplicationBuilderSerilogClientExtensions : object'
+    content.vb: >-
+      Public Module ApplicationBuilderSerilogClientExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion(IApplicationBuilder,System.Nullable{Action{Serilog.AspNetCore.Ingestion.SerilogIngestionOptions}})
+  commentId: M:Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion(IApplicationBuilder,System.Nullable{Action{Serilog.AspNetCore.Ingestion.SerilogIngestionOptions}})
+  id: UseSerilogIngestion(IApplicationBuilder,System.Nullable{Action{Serilog.AspNetCore.Ingestion.SerilogIngestionOptions}})
+  isExtensionMethod: true
+  parent: Serilog.ApplicationBuilderSerilogClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseSerilogIngestion(IApplicationBuilder, Nullable<Action<SerilogIngestionOptions>>)
+  nameWithType: ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion(IApplicationBuilder, Nullable<Action<SerilogIngestionOptions>>)
+  fullName: Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion(IApplicationBuilder, System.Nullable<Action<Serilog.AspNetCore.Ingestion.SerilogIngestionOptions>>)
+  type: Method
+  source:
+    remote:
+      path: Library Back/Serilog.AspNetCore.Ingestion/ApplicationBuilderSerilogClientExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: UseSerilogIngestion
+    path: Library Back/Serilog.AspNetCore.Ingestion/ApplicationBuilderSerilogClientExtensions.cs
+    startLine: 7
+  assemblies:
+  - Serilog.AspNetCore.Ingestion
+  namespace: Serilog
+  syntax:
+    content: public static IApplicationBuilder UseSerilogIngestion(this IApplicationBuilder app, Action<SerilogIngestionOptions>? configureOptions = null)
+    parameters:
+    - id: app
+      type: IApplicationBuilder
+    - id: configureOptions
+      type: System.Nullable{Action{Serilog.AspNetCore.Ingestion.SerilogIngestionOptions}}
+    return:
+      type: IApplicationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseSerilogIngestion(app As IApplicationBuilder, configureOptions As Action(Of SerilogIngestionOptions)? = Nothing) As IApplicationBuilder
+  overload: Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion*
+  nameWithType.vb: ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion(IApplicationBuilder, Nullable(Of Action(Of SerilogIngestionOptions)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion(IApplicationBuilder, System.Nullable(Of Action(Of Serilog.AspNetCore.Ingestion.SerilogIngestionOptions)))
+  name.vb: UseSerilogIngestion(IApplicationBuilder, Nullable(Of Action(Of SerilogIngestionOptions)))
+references:
+- uid: Serilog
+  commentId: N:Serilog
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion*
+  commentId: Overload:Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion
+  name: UseSerilogIngestion
+  nameWithType: ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion
+  fullName: Serilog.ApplicationBuilderSerilogClientExtensions.UseSerilogIngestion
+- uid: IApplicationBuilder
+  isExternal: true
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: IApplicationBuilder
+- uid: System.Nullable{Action{Serilog.AspNetCore.Ingestion.SerilogIngestionOptions}}
+  commentId: '!:System.Nullable{Action{Serilog.AspNetCore.Ingestion.SerilogIngestionOptions}}'
+  definition: System.Nullable`1
+  name: Nullable<Action<SerilogIngestionOptions>>
+  nameWithType: Nullable<Action<SerilogIngestionOptions>>
+  fullName: System.Nullable<Action<Serilog.AspNetCore.Ingestion.SerilogIngestionOptions>>
+  nameWithType.vb: Nullable(Of Action(Of SerilogIngestionOptions))
+  fullName.vb: System.Nullable(Of Action(Of Serilog.AspNetCore.Ingestion.SerilogIngestionOptions))
+  name.vb: Nullable(Of Action(Of SerilogIngestionOptions))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+    name: SerilogIngestionOptions
+    nameWithType: SerilogIngestionOptions
+    fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+    name: SerilogIngestionOptions
+    nameWithType: SerilogIngestionOptions
+    fullName: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

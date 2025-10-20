@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.R_CloudReadParameter
+  commentId: T:R_CloudStorageCommon.R_CloudReadParameter
+  id: R_CloudReadParameter
+  parent: R_CloudStorageCommon
+  children:
+  - R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory
+  - R_CloudStorageCommon.R_CloudReadParameter.CredentialFile
+  - R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter
+  langs:
+  - csharp
+  - vb
+  name: R_CloudReadParameter
+  nameWithType: R_CloudReadParameter
+  fullName: R_CloudStorageCommon.R_CloudReadParameter
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CloudReadParameter
+    path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+    startLine: 7
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public class R_CloudReadParameter : object'
+    content.vb: >-
+      Public Class R_CloudReadParameter
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory
+  commentId: P:R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory
+  id: CloudStorageDirectory
+  parent: R_CloudStorageCommon.R_CloudReadParameter
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageDirectory
+  nameWithType: R_CloudReadParameter.CloudStorageDirectory
+  fullName: R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageDirectory
+    path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+    startLine: 9
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public string CloudStorageDirectory { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CloudStorageDirectory As String
+  overload: R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CloudStorageCommon.R_CloudReadParameter.CredentialFile
+  commentId: P:R_CloudStorageCommon.R_CloudReadParameter.CredentialFile
+  id: CredentialFile
+  parent: R_CloudStorageCommon.R_CloudReadParameter
+  langs:
+  - csharp
+  - vb
+  name: CredentialFile
+  nameWithType: R_CloudReadParameter.CredentialFile
+  fullName: R_CloudStorageCommon.R_CloudReadParameter.CredentialFile
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CredentialFile
+    path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+    startLine: 10
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public byte[] CredentialFile { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property CredentialFile As Byte()
+  overload: R_CloudStorageCommon.R_CloudReadParameter.CredentialFile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter
+  commentId: P:R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter
+  id: OptionalParameter
+  parent: R_CloudStorageCommon.R_CloudReadParameter
+  langs:
+  - csharp
+  - vb
+  name: OptionalParameter
+  nameWithType: R_CloudReadParameter.OptionalParameter
+  fullName: R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: OptionalParameter
+    path: Microservices/R_CloudStorageCommon/R_CloudReadParameter.cs
+    startLine: 11
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public CloudReadOptional OptionalParameter { get; set; }
+    parameters: []
+    return:
+      type: R_CloudStorageCommon.CloudReadOptional
+    content.vb: Public Property OptionalParameter As CloudReadOptional
+  overload: R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory*
+  commentId: Overload:R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory
+  name: CloudStorageDirectory
+  nameWithType: R_CloudReadParameter.CloudStorageDirectory
+  fullName: R_CloudStorageCommon.R_CloudReadParameter.CloudStorageDirectory
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CloudStorageCommon.R_CloudReadParameter.CredentialFile*
+  commentId: Overload:R_CloudStorageCommon.R_CloudReadParameter.CredentialFile
+  name: CredentialFile
+  nameWithType: R_CloudReadParameter.CredentialFile
+  fullName: R_CloudStorageCommon.R_CloudReadParameter.CredentialFile
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter*
+  commentId: Overload:R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter
+  name: OptionalParameter
+  nameWithType: R_CloudReadParameter.OptionalParameter
+  fullName: R_CloudStorageCommon.R_CloudReadParameter.OptionalParameter
+- uid: R_CloudStorageCommon.CloudReadOptional
+  commentId: T:R_CloudStorageCommon.CloudReadOptional
+  parent: R_CloudStorageCommon
+  name: CloudReadOptional
+  nameWithType: CloudReadOptional
+  fullName: R_CloudStorageCommon.CloudReadOptional

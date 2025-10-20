@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmailEngineJob.EmailEngineJobSetting
+  commentId: T:EmailEngineJob.EmailEngineJobSetting
+  id: EmailEngineJobSetting
+  parent: EmailEngineJob
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: EmailEngineJobSetting
+  nameWithType: EmailEngineJobSetting
+  fullName: EmailEngineJob.EmailEngineJobSetting
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailEngineJobSetting
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobSetting.cs
+    startLine: 4
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: 'public class EmailEngineJobSetting : R_SchedulerSettingDTO'
+    content.vb: >-
+      Public Class EmailEngineJobSetting
+          Inherits R_SchedulerSettingDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: EmailEngineJob
+  commentId: N:EmailEngineJob
+  name: EmailEngineJob
+  nameWithType: EmailEngineJob
+  fullName: EmailEngineJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

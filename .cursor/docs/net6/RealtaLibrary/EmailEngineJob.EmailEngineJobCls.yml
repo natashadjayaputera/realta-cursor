@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmailEngineJob.EmailEngineJobCls
+  commentId: T:EmailEngineJob.EmailEngineJobCls
+  id: EmailEngineJobCls
+  parent: EmailEngineJob
+  children:
+  - EmailEngineJob.EmailEngineJobCls.#ctor(ILogger{EmailEngineJob.EmailEngineJobCls},R_ILocalCacheMultiTenantFromDb)
+  - EmailEngineJob.EmailEngineJobCls.Execute(IJobExecutionContext)
+  langs:
+  - csharp
+  - vb
+  name: EmailEngineJobCls
+  nameWithType: EmailEngineJobCls
+  fullName: EmailEngineJob.EmailEngineJobCls
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailEngineJobCls
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobCls.cs
+    startLine: 20
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: 'public class EmailEngineJobCls : IJob'
+    content.vb: >-
+      Public Class EmailEngineJobCls
+          Inherits IJob
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EmailEngineJob.EmailEngineJobCls.#ctor(ILogger{EmailEngineJob.EmailEngineJobCls},R_ILocalCacheMultiTenantFromDb)
+  commentId: M:EmailEngineJob.EmailEngineJobCls.#ctor(ILogger{EmailEngineJob.EmailEngineJobCls},R_ILocalCacheMultiTenantFromDb)
+  id: '#ctor(ILogger{EmailEngineJob.EmailEngineJobCls},R_ILocalCacheMultiTenantFromDb)'
+  parent: EmailEngineJob.EmailEngineJobCls
+  langs:
+  - csharp
+  - vb
+  name: EmailEngineJobCls(ILogger<EmailEngineJobCls>, R_ILocalCacheMultiTenantFromDb)
+  nameWithType: EmailEngineJobCls.EmailEngineJobCls(ILogger<EmailEngineJobCls>, R_ILocalCacheMultiTenantFromDb)
+  fullName: EmailEngineJob.EmailEngineJobCls.EmailEngineJobCls(ILogger<EmailEngineJob.EmailEngineJobCls>, R_ILocalCacheMultiTenantFromDb)
+  type: Constructor
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobCls.cs
+    startLine: 27
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: public EmailEngineJobCls(ILogger<EmailEngineJobCls> poLogger, R_ILocalCacheMultiTenantFromDb poHelperCacheFromDb)
+    parameters:
+    - id: poLogger
+      type: ILogger{EmailEngineJob.EmailEngineJobCls}
+    - id: poHelperCacheFromDb
+      type: R_ILocalCacheMultiTenantFromDb
+    content.vb: Public Sub New(poLogger As ILogger(Of EmailEngineJobCls), poHelperCacheFromDb As R_ILocalCacheMultiTenantFromDb)
+  overload: EmailEngineJob.EmailEngineJobCls.#ctor*
+  nameWithType.vb: EmailEngineJobCls.EmailEngineJobCls(ILogger(Of EmailEngineJobCls), R_ILocalCacheMultiTenantFromDb)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: EmailEngineJob.EmailEngineJobCls.EmailEngineJobCls(ILogger(Of EmailEngineJob.EmailEngineJobCls), R_ILocalCacheMultiTenantFromDb)
+  name.vb: EmailEngineJobCls(ILogger(Of EmailEngineJobCls), R_ILocalCacheMultiTenantFromDb)
+- uid: EmailEngineJob.EmailEngineJobCls.Execute(IJobExecutionContext)
+  commentId: M:EmailEngineJob.EmailEngineJobCls.Execute(IJobExecutionContext)
+  id: Execute(IJobExecutionContext)
+  parent: EmailEngineJob.EmailEngineJobCls
+  langs:
+  - csharp
+  - vb
+  name: Execute(IJobExecutionContext)
+  nameWithType: EmailEngineJobCls.Execute(IJobExecutionContext)
+  fullName: EmailEngineJob.EmailEngineJobCls.Execute(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Execute
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobCls.cs
+    startLine: 36
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: public Task Execute(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: Task
+    content.vb: Public Function Execute(context As IJobExecutionContext) As Task
+  overload: EmailEngineJob.EmailEngineJobCls.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: EmailEngineJob
+  commentId: N:EmailEngineJob
+  name: EmailEngineJob
+  nameWithType: EmailEngineJob
+  fullName: EmailEngineJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: EmailEngineJob.EmailEngineJobCls.#ctor*
+  commentId: Overload:EmailEngineJob.EmailEngineJobCls.#ctor
+  name: EmailEngineJobCls
+  nameWithType: EmailEngineJobCls.EmailEngineJobCls
+  fullName: EmailEngineJob.EmailEngineJobCls.EmailEngineJobCls
+- uid: ILogger{EmailEngineJob.EmailEngineJobCls}
+  commentId: '!:ILogger{EmailEngineJob.EmailEngineJobCls}'
+  definition: ILogger`1
+  name: ILogger<EmailEngineJobCls>
+  nameWithType: ILogger<EmailEngineJobCls>
+  fullName: ILogger<EmailEngineJob.EmailEngineJobCls>
+  nameWithType.vb: ILogger(Of EmailEngineJobCls)
+  fullName.vb: ILogger(Of EmailEngineJob.EmailEngineJobCls)
+  name.vb: ILogger(Of EmailEngineJobCls)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EmailEngineJob.EmailEngineJobCls
+    name: EmailEngineJobCls
+    nameWithType: EmailEngineJobCls
+    fullName: EmailEngineJob.EmailEngineJobCls
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EmailEngineJob.EmailEngineJobCls
+    name: EmailEngineJobCls
+    nameWithType: EmailEngineJobCls
+    fullName: EmailEngineJob.EmailEngineJobCls
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ILocalCacheMultiTenantFromDb
+  isExternal: true
+  name: R_ILocalCacheMultiTenantFromDb
+  nameWithType: R_ILocalCacheMultiTenantFromDb
+  fullName: R_ILocalCacheMultiTenantFromDb
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EmailEngineJob.EmailEngineJobCls.Execute*
+  commentId: Overload:EmailEngineJob.EmailEngineJobCls.Execute
+  name: Execute
+  nameWithType: EmailEngineJobCls.Execute
+  fullName: EmailEngineJob.EmailEngineJobCls.Execute
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

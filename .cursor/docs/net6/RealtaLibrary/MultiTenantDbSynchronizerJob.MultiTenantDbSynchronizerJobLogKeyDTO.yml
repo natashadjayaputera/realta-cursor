@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO
+  commentId: T:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO
+  id: MultiTenantDbSynchronizerJobLogKeyDTO
+  parent: MultiTenantDbSynchronizerJob
+  children:
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbSynchronizerJobLogKeyDTO
+  nameWithType: MultiTenantDbSynchronizerJobLogKeyDTO
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantDbSynchronizerJobLogKeyDTO
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobLogKeyDTO.cs
+    startLine: 4
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: 'public class MultiTenantDbSynchronizerJobLogKeyDTO : R_NetCoreLogKeyDTO'
+    content.vb: >-
+      Public Class MultiTenantDbSynchronizerJobLogKeyDTO
+          Inherits R_NetCoreLogKeyDTO
+  inheritance:
+  - System.Object
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  inheritedMembers:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+  commentId: P:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+  id: JobName
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: JobName
+  nameWithType: MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: JobName
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobLogKeyDTO.cs
+    startLine: 6
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public string JobName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property JobName As String
+  overload: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: MultiTenantDbSynchronizerJob
+  commentId: N:MultiTenantDbSynchronizerJob
+  name: MultiTenantDbSynchronizerJob
+  nameWithType: MultiTenantDbSynchronizerJob
+  fullName: MultiTenantDbSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  parent: R_CommonFrontBackAPI.Log
+  name: R_NetCoreLogKeyDTO
+  nameWithType: R_NetCoreLogKeyDTO
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: CORRELATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.CORRELATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: APPLICATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.APPLICATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: TENANT_ID
+  nameWithType: R_NetCoreLogKeyDTO.TENANT_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: COMPANY_ID
+  nameWithType: R_NetCoreLogKeyDTO.COMPANY_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: PROGRAM_ID
+  nameWithType: R_NetCoreLogKeyDTO.PROGRAM_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: USER_ID
+  nameWithType: R_NetCoreLogKeyDTO.USER_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: USER_NAME
+  nameWithType: R_NetCoreLogKeyDTO.USER_NAME
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName*
+  commentId: Overload:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+  name: JobName
+  nameWithType: MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobLogKeyDTO.JobName
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

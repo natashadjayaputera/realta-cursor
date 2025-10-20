@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  id: R_ServiceDeleteResultDTO
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceDeleteResultDTO
+  nameWithType: R_ServiceDeleteResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceDeleteResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceDeleteResultDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceDeleteResultDTO.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceDeleteResultDTO : R_APIResultBaseDTO'
+    content.vb: >-
+      Public Class R_ServiceDeleteResultDTO
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data
+  commentId: P:R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data
+  id: data
+  parent: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: R_ServiceDeleteResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceDeleteResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: data
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceDeleteResultDTO.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public Object data { get; set; }
+    parameters: []
+    return:
+      type: Object
+    content.vb: Public Property data As Object
+  overload: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data
+  name: data
+  nameWithType: R_ServiceDeleteResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO.data
+- uid: Object
+  commentId: '!:Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: Object

@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.R_EmailEngineFactory
+  commentId: T:R_EmailEngine.R_EmailEngineFactory
+  id: R_EmailEngineFactory
+  parent: R_EmailEngine
+  children:
+  - R_EmailEngine.R_EmailEngineFactory.GetEmailProvider(R_EmailEngine.Enums.eEmailProvider)
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineFactory
+  nameWithType: R_EmailEngineFactory
+  fullName: R_EmailEngine.R_EmailEngineFactory
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_EmailEngineFactory.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineFactory
+    path: Microservices/R_EmailEngine/R_EmailEngineFactory.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: 'public class R_EmailEngineFactory : object'
+    content.vb: >-
+      Public Class R_EmailEngineFactory
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngine.R_EmailEngineFactory.GetEmailProvider(R_EmailEngine.Enums.eEmailProvider)
+  commentId: M:R_EmailEngine.R_EmailEngineFactory.GetEmailProvider(R_EmailEngine.Enums.eEmailProvider)
+  id: GetEmailProvider(R_EmailEngine.Enums.eEmailProvider)
+  parent: R_EmailEngine.R_EmailEngineFactory
+  langs:
+  - csharp
+  - vb
+  name: GetEmailProvider(eEmailProvider)
+  nameWithType: R_EmailEngineFactory.GetEmailProvider(eEmailProvider)
+  fullName: R_EmailEngine.R_EmailEngineFactory.GetEmailProvider(R_EmailEngine.Enums.eEmailProvider)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_EmailEngineFactory.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetEmailProvider
+    path: Microservices/R_EmailEngine/R_EmailEngineFactory.cs
+    startLine: 8
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: public static R_IEmail GetEmailProvider(eEmailProvider poProvider)
+    parameters:
+    - id: poProvider
+      type: R_EmailEngine.Enums.eEmailProvider
+    return:
+      type: R_EmailEngine.R_IEmail
+    content.vb: Public Shared Function GetEmailProvider(poProvider As eEmailProvider) As R_IEmail
+  overload: R_EmailEngine.R_EmailEngineFactory.GetEmailProvider*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_EmailEngine
+  commentId: N:R_EmailEngine
+  name: R_EmailEngine
+  nameWithType: R_EmailEngine
+  fullName: R_EmailEngine
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngine.R_EmailEngineFactory.GetEmailProvider*
+  commentId: Overload:R_EmailEngine.R_EmailEngineFactory.GetEmailProvider
+  name: GetEmailProvider
+  nameWithType: R_EmailEngineFactory.GetEmailProvider
+  fullName: R_EmailEngine.R_EmailEngineFactory.GetEmailProvider
+- uid: R_EmailEngine.Enums.eEmailProvider
+  commentId: T:R_EmailEngine.Enums.eEmailProvider
+  parent: R_EmailEngine.Enums
+  name: eEmailProvider
+  nameWithType: eEmailProvider
+  fullName: R_EmailEngine.Enums.eEmailProvider
+- uid: R_EmailEngine.R_IEmail
+  commentId: T:R_EmailEngine.R_IEmail
+  parent: R_EmailEngine
+  name: R_IEmail
+  nameWithType: R_IEmail
+  fullName: R_EmailEngine.R_IEmail
+- uid: R_EmailEngine.Enums
+  commentId: N:R_EmailEngine.Enums
+  name: R_EmailEngine.Enums
+  nameWithType: R_EmailEngine.Enums
+  fullName: R_EmailEngine.Enums

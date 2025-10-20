@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIClient.R_INotify`1
+  commentId: T:R_APIClient.R_INotify`1
+  id: R_INotify`1
+  parent: R_APIClient
+  children:
+  - R_APIClient.R_INotify`1.Notify(`0)
+  langs:
+  - csharp
+  - vb
+  name: R_INotify<E>
+  nameWithType: R_INotify<E>
+  fullName: R_APIClient.R_INotify<E>
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_INotify.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_INotify
+    path: Microservices/R_APIClient/R_INotify.cs
+    startLine: 6
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public interface R_INotify<E>
+    typeParameters:
+    - id: E
+    content.vb: Public Interface R_INotify(Of E)
+  nameWithType.vb: R_INotify(Of E)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: R_APIClient.R_INotify(Of E)
+  name.vb: R_INotify(Of E)
+- uid: R_APIClient.R_INotify`1.Notify(`0)
+  commentId: M:R_APIClient.R_INotify`1.Notify(`0)
+  id: Notify(`0)
+  parent: R_APIClient.R_INotify`1
+  langs:
+  - csharp
+  - vb
+  name: Notify(E)
+  nameWithType: R_INotify<E>.Notify(E)
+  fullName: R_APIClient.R_INotify<E>.Notify(E)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_INotify.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Notify
+    path: Microservices/R_APIClient/R_INotify.cs
+    startLine: 8
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: void Notify(E poEntity)
+    parameters:
+    - id: poEntity
+      type: '{E}'
+    content.vb: Sub Notify(poEntity As E)
+  overload: R_APIClient.R_INotify`1.Notify*
+  nameWithType.vb: R_INotify(Of E).Notify(E)
+  fullName.vb: R_APIClient.R_INotify(Of E).Notify(E)
+references:
+- uid: R_APIClient
+  commentId: N:R_APIClient
+  name: R_APIClient
+  nameWithType: R_APIClient
+  fullName: R_APIClient
+- uid: R_APIClient.R_INotify`1.Notify*
+  commentId: Overload:R_APIClient.R_INotify`1.Notify
+  name: Notify
+  nameWithType: R_INotify<E>.Notify
+  fullName: R_APIClient.R_INotify<E>.Notify
+  nameWithType.vb: R_INotify(Of E).Notify
+  fullName.vb: R_APIClient.R_INotify(Of E).Notify
+- uid: '{E}'
+  commentId: '!:E'
+  definition: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: E
+  name: E
+  nameWithType: E
+  fullName: E

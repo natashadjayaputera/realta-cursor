@@ -1,0 +1,370 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_ILocalizer
+  id: R_ILocalizer
+  parent: R_BlazorFrontEnd.Interfaces
+  children:
+  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_ILocalizer
+  nameWithType: R_ILocalizer
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ILocalizer
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: public interface R_ILocalizer
+    content.vb: Public Interface R_ILocalizer
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
+  id: Item(Type,System.String,System.Nullable{CultureInfo},System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalizer
+  langs:
+  - csharp
+  - vb
+  name: Item[Type, String, Nullable<CultureInfo>, String]
+  nameWithType: R_ILocalizer.Item[Type, String, Nullable<CultureInfo>, String]
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item[Type, System.String, System.Nullable<CultureInfo>, System.String]
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: this[]
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: string this[Type poType, string pcResourceId, CultureInfo? poCulture = null, string pcResourceName = ""] { get; }
+    parameters:
+    - id: poType
+      type: Type
+    - id: pcResourceId
+      type: System.String
+    - id: poCulture
+      type: System.Nullable{CultureInfo}
+    - id: pcResourceName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Item(poType As Type, pcResourceId As String, poCulture As CultureInfo? = Nothing, pcResourceName As String = "") As String
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item*
+  nameWithType.vb: R_ILocalizer.Item(Type, String, Nullable(Of CultureInfo), String)
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type, System.String, System.Nullable(Of CultureInfo), System.String)
+  name.vb: Item(Type, String, Nullable(Of CultureInfo), String)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  id: R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalizer
+  langs:
+  - csharp
+  - vb
+  name: R_GetError(Type, String, Nullable<CultureInfo>, String)
+  nameWithType: R_ILocalizer.R_GetError(Type, String, Nullable<CultureInfo>, String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type, System.String, System.Nullable<CultureInfo>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetError
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: R_Error R_GetError(Type poType, string pcResourceId, CultureInfo? poCulture = null, string pcResourceName = "")
+    parameters:
+    - id: poType
+      type: Type
+    - id: pcResourceId
+      type: System.String
+    - id: poCulture
+      type: System.Nullable{CultureInfo}
+    - id: pcResourceName
+      type: System.String
+    return:
+      type: R_BlazorFrontEnd.Exceptions.R_Error
+    content.vb: Function R_GetError(poType As Type, pcResourceId As String, poCulture As CultureInfo? = Nothing, pcResourceName As String = "") As R_Error
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError*
+  nameWithType.vb: R_ILocalizer.R_GetError(Type, String, Nullable(Of CultureInfo), String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type, System.String, System.Nullable(Of CultureInfo), System.String)
+  name.vb: R_GetError(Type, String, Nullable(Of CultureInfo), String)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  id: R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalizer
+  langs:
+  - csharp
+  - vb
+  name: R_GetErrorDetail(Type, String, Nullable<CultureInfo>, String)
+  nameWithType: R_ILocalizer.R_GetErrorDetail(Type, String, Nullable<CultureInfo>, String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type, System.String, System.Nullable<CultureInfo>, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetErrorDetail
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalizer.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: R_ErrorDetail R_GetErrorDetail(Type poType, string pcResourceId, CultureInfo? poCulture = null, string pcResourceName = "")
+    parameters:
+    - id: poType
+      type: Type
+    - id: pcResourceId
+      type: System.String
+    - id: poCulture
+      type: System.Nullable{CultureInfo}
+    - id: pcResourceName
+      type: System.String
+    return:
+      type: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+    content.vb: Function R_GetErrorDetail(poType As Type, pcResourceId As String, poCulture As CultureInfo? = Nothing, pcResourceName As String = "") As R_ErrorDetail
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail*
+  nameWithType.vb: R_ILocalizer.R_GetErrorDetail(Type, String, Nullable(Of CultureInfo), String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type, System.String, System.Nullable(Of CultureInfo), System.String)
+  name.vb: R_GetErrorDetail(Type, String, Nullable(Of CultureInfo), String)
+references:
+- uid: R_BlazorFrontEnd.Interfaces
+  commentId: N:R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  nameWithType: R_BlazorFrontEnd.Interfaces
+  fullName: R_BlazorFrontEnd.Interfaces
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item
+  name: Item
+  nameWithType: R_ILocalizer.Item
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item
+- uid: Type
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable{CultureInfo}
+  commentId: '!:System.Nullable{CultureInfo}'
+  definition: System.Nullable`1
+  name: Nullable<CultureInfo>
+  nameWithType: Nullable<CultureInfo>
+  fullName: System.Nullable<CultureInfo>
+  nameWithType.vb: Nullable(Of CultureInfo)
+  fullName.vb: System.Nullable(Of CultureInfo)
+  name.vb: Nullable(Of CultureInfo)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CultureInfo
+    name: CultureInfo
+    nameWithType: CultureInfo
+    fullName: CultureInfo
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CultureInfo
+    name: CultureInfo
+    nameWithType: CultureInfo
+    fullName: CultureInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError
+  name: R_GetError
+  nameWithType: R_ILocalizer.R_GetError
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError
+- uid: R_BlazorFrontEnd.Exceptions.R_Error
+  commentId: T:R_BlazorFrontEnd.Exceptions.R_Error
+  parent: R_BlazorFrontEnd.Exceptions
+  name: R_Error
+  nameWithType: R_Error
+  fullName: R_BlazorFrontEnd.Exceptions.R_Error
+- uid: R_BlazorFrontEnd.Exceptions
+  commentId: N:R_BlazorFrontEnd.Exceptions
+  name: R_BlazorFrontEnd.Exceptions
+  nameWithType: R_BlazorFrontEnd.Exceptions
+  fullName: R_BlazorFrontEnd.Exceptions
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail
+  name: R_GetErrorDetail
+  nameWithType: R_ILocalizer.R_GetErrorDetail
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail
+- uid: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+  commentId: T:R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+  parent: R_BlazorFrontEnd.Exceptions
+  name: R_ErrorDetail
+  nameWithType: R_ErrorDetail
+  fullName: R_BlazorFrontEnd.Exceptions.R_ErrorDetail

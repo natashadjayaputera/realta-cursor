@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+  commentId: T:R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+  id: R_ViewModelDataHasChangedEventArgs
+  parent: R_BlazorFrontEnd
+  children:
+  - R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.#ctor(System.Boolean)
+  - R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData
+  langs:
+  - csharp
+  - vb
+  name: R_ViewModelDataHasChangedEventArgs
+  nameWithType: R_ViewModelDataHasChangedEventArgs
+  fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_ViewModelDataHasChangedEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ViewModelDataHasChangedEventArgs
+    path: Library/R_BlazorFrontEnd/ViewModels/R_ViewModelDataHasChangedEventArgs.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: 'public class R_ViewModelDataHasChangedEventArgs : EventArgs'
+    content.vb: >-
+      Public Class R_ViewModelDataHasChangedEventArgs
+          Inherits EventArgs
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData
+  commentId: P:R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData
+  id: HasData
+  parent: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: HasData
+  nameWithType: R_ViewModelDataHasChangedEventArgs.HasData
+  fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_ViewModelDataHasChangedEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HasData
+    path: Library/R_BlazorFrontEnd/ViewModels/R_ViewModelDataHasChangedEventArgs.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public bool HasData { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasData As Boolean
+  overload: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.#ctor(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: R_ViewModelDataHasChangedEventArgs(Boolean)
+  nameWithType: R_ViewModelDataHasChangedEventArgs.R_ViewModelDataHasChangedEventArgs(Boolean)
+  fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.R_ViewModelDataHasChangedEventArgs(System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/ViewModels/R_ViewModelDataHasChangedEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd/ViewModels/R_ViewModelDataHasChangedEventArgs.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public R_ViewModelDataHasChangedEventArgs(bool hasData)
+    parameters:
+    - id: hasData
+      type: System.Boolean
+    content.vb: Public Sub New(hasData As Boolean)
+  overload: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorFrontEnd
+  commentId: N:R_BlazorFrontEnd
+  name: R_BlazorFrontEnd
+  nameWithType: R_BlazorFrontEnd
+  fullName: R_BlazorFrontEnd
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData*
+  commentId: Overload:R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData
+  name: HasData
+  nameWithType: R_ViewModelDataHasChangedEventArgs.HasData
+  fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.HasData
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.#ctor
+  name: R_ViewModelDataHasChangedEventArgs
+  nameWithType: R_ViewModelDataHasChangedEventArgs.R_ViewModelDataHasChangedEventArgs
+  fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.R_ViewModelDataHasChangedEventArgs

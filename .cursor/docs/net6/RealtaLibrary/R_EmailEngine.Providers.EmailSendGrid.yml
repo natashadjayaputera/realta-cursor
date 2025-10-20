@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.Providers.EmailSendGrid
+  commentId: T:R_EmailEngine.Providers.EmailSendGrid
+  id: EmailSendGrid
+  parent: R_EmailEngine.Providers
+  children:
+  - R_EmailEngine.Providers.EmailSendGrid.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  - R_EmailEngine.Providers.EmailSendGrid.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  langs:
+  - csharp
+  - vb
+  name: EmailSendGrid
+  nameWithType: EmailSendGrid
+  fullName: R_EmailEngine.Providers.EmailSendGrid
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/Providers/EmailSendGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailSendGrid
+    path: Microservices/R_EmailEngine/Providers/EmailSendGrid.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.Providers
+  syntax:
+    content: 'public class EmailSendGrid : object, R_IEmail'
+    content.vb: >-
+      Public Class EmailSendGrid
+          Inherits Object
+          Implements R_IEmail
+  inheritance:
+  - System.Object
+  implements:
+  - R_EmailEngine.R_IEmail
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngine.Providers.EmailSendGrid.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  commentId: M:R_EmailEngine.Providers.EmailSendGrid.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  id: SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  parent: R_EmailEngine.Providers.EmailSendGrid
+  langs:
+  - csharp
+  - vb
+  name: SendMail(EmailConfigDTO, EmailDTO)
+  nameWithType: EmailSendGrid.SendMail(EmailConfigDTO, EmailDTO)
+  fullName: R_EmailEngine.Providers.EmailSendGrid.SendMail(R_EmailEngine.DTOs.EmailConfigDTO, R_EmailEngine.DTOs.EmailDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/Providers/EmailSendGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SendMail
+    path: Microservices/R_EmailEngine/Providers/EmailSendGrid.cs
+    startLine: 8
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.Providers
+  syntax:
+    content: public void SendMail(EmailConfigDTO poEmailConfig, EmailDTO poEmail)
+    parameters:
+    - id: poEmailConfig
+      type: R_EmailEngine.DTOs.EmailConfigDTO
+    - id: poEmail
+      type: R_EmailEngine.DTOs.EmailDTO
+    content.vb: Public Sub SendMail(poEmailConfig As EmailConfigDTO, poEmail As EmailDTO)
+  overload: R_EmailEngine.Providers.EmailSendGrid.SendMail*
+  implements:
+  - R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.Providers.EmailSendGrid.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  commentId: M:R_EmailEngine.Providers.EmailSendGrid.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  id: SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  parent: R_EmailEngine.Providers.EmailSendGrid
+  langs:
+  - csharp
+  - vb
+  name: SendMailAsync(EmailConfigDTO, EmailDTO)
+  nameWithType: EmailSendGrid.SendMailAsync(EmailConfigDTO, EmailDTO)
+  fullName: R_EmailEngine.Providers.EmailSendGrid.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO, R_EmailEngine.DTOs.EmailDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/Providers/EmailSendGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SendMailAsync
+    path: Microservices/R_EmailEngine/Providers/EmailSendGrid.cs
+    startLine: 30
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.Providers
+  syntax:
+    content: public Task SendMailAsync(EmailConfigDTO poEmailConfig, EmailDTO poEmail)
+    parameters:
+    - id: poEmailConfig
+      type: R_EmailEngine.DTOs.EmailConfigDTO
+    - id: poEmail
+      type: R_EmailEngine.DTOs.EmailDTO
+    return:
+      type: Task
+    content.vb: Public Function SendMailAsync(poEmailConfig As EmailConfigDTO, poEmail As EmailDTO) As Task
+  overload: R_EmailEngine.Providers.EmailSendGrid.SendMailAsync*
+  implements:
+  - R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngine.Providers
+  commentId: N:R_EmailEngine.Providers
+  name: R_EmailEngine.Providers
+  nameWithType: R_EmailEngine.Providers
+  fullName: R_EmailEngine.Providers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngine.R_IEmail
+  commentId: T:R_EmailEngine.R_IEmail
+  parent: R_EmailEngine
+  name: R_IEmail
+  nameWithType: R_IEmail
+  fullName: R_EmailEngine.R_IEmail
+- uid: R_EmailEngine
+  commentId: N:R_EmailEngine
+  name: R_EmailEngine
+  nameWithType: R_EmailEngine
+  fullName: R_EmailEngine
+- uid: R_EmailEngine.Providers.EmailSendGrid.SendMail*
+  commentId: Overload:R_EmailEngine.Providers.EmailSendGrid.SendMail
+  name: SendMail
+  nameWithType: EmailSendGrid.SendMail
+  fullName: R_EmailEngine.Providers.EmailSendGrid.SendMail
+- uid: R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  commentId: M:R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  parent: R_EmailEngine.R_IEmail
+  name: SendMail(EmailConfigDTO, EmailDTO)
+  nameWithType: R_IEmail.SendMail(EmailConfigDTO, EmailDTO)
+  fullName: R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO, R_EmailEngine.DTOs.EmailDTO)
+  spec.csharp:
+  - uid: R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+    name: SendMail
+    nameWithType: R_IEmail.SendMail
+    fullName: R_EmailEngine.R_IEmail.SendMail
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_EmailEngine.DTOs.EmailConfigDTO
+    name: EmailConfigDTO
+    nameWithType: EmailConfigDTO
+    fullName: R_EmailEngine.DTOs.EmailConfigDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_EmailEngine.DTOs.EmailDTO
+    name: EmailDTO
+    nameWithType: EmailDTO
+    fullName: R_EmailEngine.DTOs.EmailDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+    name: SendMail
+    nameWithType: R_IEmail.SendMail
+    fullName: R_EmailEngine.R_IEmail.SendMail
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_EmailEngine.DTOs.EmailConfigDTO
+    name: EmailConfigDTO
+    nameWithType: EmailConfigDTO
+    fullName: R_EmailEngine.DTOs.EmailConfigDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_EmailEngine.DTOs.EmailDTO
+    name: EmailDTO
+    nameWithType: EmailDTO
+    fullName: R_EmailEngine.DTOs.EmailDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_EmailEngine.DTOs.EmailConfigDTO
+  commentId: T:R_EmailEngine.DTOs.EmailConfigDTO
+  parent: R_EmailEngine.DTOs
+  name: EmailConfigDTO
+  nameWithType: EmailConfigDTO
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO
+- uid: R_EmailEngine.DTOs.EmailDTO
+  commentId: T:R_EmailEngine.DTOs.EmailDTO
+  parent: R_EmailEngine.DTOs
+  name: EmailDTO
+  nameWithType: EmailDTO
+  fullName: R_EmailEngine.DTOs.EmailDTO
+- uid: R_EmailEngine.DTOs
+  commentId: N:R_EmailEngine.DTOs
+  name: R_EmailEngine.DTOs
+  nameWithType: R_EmailEngine.DTOs
+  fullName: R_EmailEngine.DTOs
+- uid: R_EmailEngine.Providers.EmailSendGrid.SendMailAsync*
+  commentId: Overload:R_EmailEngine.Providers.EmailSendGrid.SendMailAsync
+  name: SendMailAsync
+  nameWithType: EmailSendGrid.SendMailAsync
+  fullName: R_EmailEngine.Providers.EmailSendGrid.SendMailAsync
+- uid: R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  commentId: M:R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  parent: R_EmailEngine.R_IEmail
+  name: SendMailAsync(EmailConfigDTO, EmailDTO)
+  nameWithType: R_IEmail.SendMailAsync(EmailConfigDTO, EmailDTO)
+  fullName: R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO, R_EmailEngine.DTOs.EmailDTO)
+  spec.csharp:
+  - uid: R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+    name: SendMailAsync
+    nameWithType: R_IEmail.SendMailAsync
+    fullName: R_EmailEngine.R_IEmail.SendMailAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_EmailEngine.DTOs.EmailConfigDTO
+    name: EmailConfigDTO
+    nameWithType: EmailConfigDTO
+    fullName: R_EmailEngine.DTOs.EmailConfigDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_EmailEngine.DTOs.EmailDTO
+    name: EmailDTO
+    nameWithType: EmailDTO
+    fullName: R_EmailEngine.DTOs.EmailDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+    name: SendMailAsync
+    nameWithType: R_IEmail.SendMailAsync
+    fullName: R_EmailEngine.R_IEmail.SendMailAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_EmailEngine.DTOs.EmailConfigDTO
+    name: EmailConfigDTO
+    nameWithType: EmailConfigDTO
+    fullName: R_EmailEngine.DTOs.EmailConfigDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_EmailEngine.DTOs.EmailDTO
+    name: EmailDTO
+    nameWithType: EmailDTO
+    fullName: R_EmailEngine.DTOs.EmailDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

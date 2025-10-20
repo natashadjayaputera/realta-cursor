@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.SampleProcessTableKeyDTO
+  commentId: T:SampleStandardJob.SampleProcessTableKeyDTO
+  id: SampleProcessTableKeyDTO
+  parent: SampleStandardJob
+  children:
+  - SampleStandardJob.SampleProcessTableKeyDTO.ID
+  langs:
+  - csharp
+  - vb
+  name: SampleProcessTableKeyDTO
+  nameWithType: SampleProcessTableKeyDTO
+  fullName: SampleStandardJob.SampleProcessTableKeyDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SampleProcessTableKeyDTO
+    path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableKeyDTO.cs
+    startLine: 8
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: 'public class SampleProcessTableKeyDTO : object'
+    content.vb: >-
+      Public Class SampleProcessTableKeyDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SampleStandardJob.SampleProcessTableKeyDTO.ID
+  commentId: P:SampleStandardJob.SampleProcessTableKeyDTO.ID
+  id: ID
+  parent: SampleStandardJob.SampleProcessTableKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: SampleProcessTableKeyDTO.ID
+  fullName: SampleStandardJob.SampleProcessTableKeyDTO.ID
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ID
+    path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableKeyDTO.cs
+    startLine: 10
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public string ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ID As String
+  overload: SampleStandardJob.SampleProcessTableKeyDTO.ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: SampleStandardJob
+  commentId: N:SampleStandardJob
+  name: SampleStandardJob
+  nameWithType: SampleStandardJob
+  fullName: SampleStandardJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SampleStandardJob.SampleProcessTableKeyDTO.ID*
+  commentId: Overload:SampleStandardJob.SampleProcessTableKeyDTO.ID
+  name: ID
+  nameWithType: SampleProcessTableKeyDTO.ID
+  fullName: SampleStandardJob.SampleProcessTableKeyDTO.ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

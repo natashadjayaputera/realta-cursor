@@ -1,0 +1,1155 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  commentId: T:R_BlazorFrontEnd.Tenant.R_TenantRouter
+  id: R_TenantRouter
+  parent: R_BlazorFrontEnd.Tenant
+  children:
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
+  langs:
+  - csharp
+  - vb
+  name: R_TenantRouter
+  nameWithType: R_TenantRouter
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_TenantRouter
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 23
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nA component that supplies route data corresponding to the current navigation state.\n"
+  example: []
+  syntax:
+    content: 'public class R_TenantRouter : IComponent, IHandleAfterRender, IDisposable'
+    content.vb: >-
+      Public Class R_TenantRouter
+          Inherits IComponent
+          Implements IHandleAfterRender, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - IHandleAfterRender
+  - IDisposable
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
+  id: AppAssembly
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: AppAssembly
+  nameWithType: R_TenantRouter.AppAssembly
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AppAssembly
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 48
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets the assembly that should be searched for components matching the URI.\n"
+  example: []
+  syntax:
+    content: public Assembly? AppAssembly { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Assembly}
+    content.vb: Public Property AppAssembly As Assembly?
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
+  id: AdditionalAssemblies
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: AdditionalAssemblies
+  nameWithType: R_TenantRouter.AdditionalAssemblies
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AdditionalAssemblies
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 54
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets a collection of additional assemblies that should be searched for components\nthat can match URIs.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Assembly> AdditionalAssemblies { get; set; }
+    parameters: []
+    return:
+      type: IEnumerable{Assembly}
+    content.vb: Public Property AdditionalAssemblies As IEnumerable(Of Assembly)
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
+  id: NotFound
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: NotFound
+  nameWithType: R_TenantRouter.NotFound
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NotFound
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 59
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets the content to display when no match is found for the requested route.\n"
+  example: []
+  syntax:
+    content: public RenderFragment? NotFound { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{RenderFragment}
+    content.vb: Public Property NotFound As RenderFragment?
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
+  id: Found
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: Found
+  nameWithType: R_TenantRouter.Found
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Found
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 64
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets the content to display when a match is found for the requested route.\n"
+  example: []
+  syntax:
+    content: public RenderFragment<RouteData>? Found { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{RenderFragment{RouteData}}
+    content.vb: Public Property Found As RenderFragment(Of RouteData)?
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
+  id: Navigating
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: Navigating
+  nameWithType: R_TenantRouter.Navigating
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Navigating
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 70
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets the content to display when asynchronous navigation is in progress.\n"
+  example: []
+  syntax:
+    content: public RenderFragment? Navigating { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{RenderFragment}
+      description: ''
+    content.vb: Public Property Navigating As RenderFragment?
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
+  id: NoTenant
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: NoTenant
+  nameWithType: R_TenantRouter.NoTenant
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NoTenant
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 76
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets the content to display when no tenant id found for the requested route.\n"
+  example: []
+  syntax:
+    content: public RenderFragment<string>? NoTenant { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{RenderFragment{System.String}}
+      description: ''
+    content.vb: Public Property NoTenant As RenderFragment(Of String)?
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
+  id: ApiError
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: ApiError
+  nameWithType: R_TenantRouter.ApiError
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ApiError
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 78
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  syntax:
+    content: public RenderFragment<HttpResponseMessage>? ApiError { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{RenderFragment{HttpResponseMessage}}
+    content.vb: Public Property ApiError As RenderFragment(Of HttpResponseMessage)?
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
+  id: OnNavigateAsync
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: OnNavigateAsync
+  nameWithType: R_TenantRouter.OnNavigateAsync
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OnNavigateAsync
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 83
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets a handler that should be called before navigating to a new page.\n"
+  example: []
+  syntax:
+    content: public EventCallback<TenantNavigationContext> OnNavigateAsync { get; set; }
+    parameters: []
+    return:
+      type: EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}
+    content.vb: Public Property OnNavigateAsync As EventCallback(Of TenantNavigationContext)
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
+  commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
+  id: PreferExactMatches
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: PreferExactMatches
+  nameWithType: R_TenantRouter.PreferExactMatches
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: PreferExactMatches
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 96
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nGets or sets a flag to indicate whether route matching should prefer exact matches\nover wildcards.\n"
+  remarks: "\n<p>\nImportant: all applications should explicitly set this to true. The option to set it to false\n(or leave unset, which defaults to false) is only provided for backward compatibility.\nIn .NET 6, this option will be removed and the router will always prefer exact matches.\n</p>\n"
+  example: []
+  syntax:
+    content: public bool PreferExactMatches { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property PreferExactMatches As Boolean
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
+  commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
+  id: Attach(RenderHandle)
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: Attach(RenderHandle)
+  nameWithType: R_TenantRouter.Attach(RenderHandle)
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Attach
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 112
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  example: []
+  syntax:
+    content: public void Attach(RenderHandle renderHandle)
+    parameters:
+    - id: renderHandle
+      type: RenderHandle
+    content.vb: Public Sub Attach(renderHandle As RenderHandle)
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
+  commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
+  id: SetParametersAsync(ParameterView)
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: SetParametersAsync(ParameterView)
+  nameWithType: R_TenantRouter.SetParametersAsync(ParameterView)
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetParametersAsync
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 122
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  example: []
+  syntax:
+    content: public Task SetParametersAsync(ParameterView parameters)
+    parameters:
+    - id: parameters
+      type: ParameterView
+    return:
+      type: Task
+    content.vb: Public Function SetParametersAsync(parameters As ParameterView) As Task
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
+  commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
+  id: Dispose
+  parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: R_TenantRouter.Dispose()
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Dispose
+    path: Library/R_BlazorFrontEnd.Tenant/R_TenantRouter.cs
+    startLine: 467
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorFrontEnd.Tenant
+  commentId: N:R_BlazorFrontEnd.Tenant
+  name: R_BlazorFrontEnd.Tenant
+  nameWithType: R_BlazorFrontEnd.Tenant
+  fullName: R_BlazorFrontEnd.Tenant
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IHandleAfterRender
+  commentId: '!:IHandleAfterRender'
+  isExternal: true
+  name: IHandleAfterRender
+  nameWithType: IHandleAfterRender
+  fullName: IHandleAfterRender
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
+  name: AppAssembly
+  nameWithType: R_TenantRouter.AppAssembly
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
+- uid: System.Nullable{Assembly}
+  commentId: '!:System.Nullable{Assembly}'
+  definition: System.Nullable`1
+  name: Nullable<Assembly>
+  nameWithType: Nullable<Assembly>
+  fullName: System.Nullable<Assembly>
+  nameWithType.vb: Nullable(Of Assembly)
+  fullName.vb: System.Nullable(Of Assembly)
+  name.vb: Nullable(Of Assembly)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
+  name: AdditionalAssemblies
+  nameWithType: R_TenantRouter.AdditionalAssemblies
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
+- uid: IEnumerable{Assembly}
+  commentId: '!:IEnumerable{Assembly}'
+  definition: IEnumerable`1
+  name: IEnumerable<Assembly>
+  nameWithType: IEnumerable<Assembly>
+  fullName: IEnumerable<Assembly>
+  nameWithType.vb: IEnumerable(Of Assembly)
+  fullName.vb: IEnumerable(Of Assembly)
+  name.vb: IEnumerable(Of Assembly)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  commentId: '!:IEnumerable`1'
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
+  name: NotFound
+  nameWithType: R_TenantRouter.NotFound
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
+- uid: System.Nullable{RenderFragment}
+  commentId: '!:System.Nullable{RenderFragment}'
+  definition: System.Nullable`1
+  name: Nullable<RenderFragment>
+  nameWithType: Nullable<RenderFragment>
+  fullName: System.Nullable<RenderFragment>
+  nameWithType.vb: Nullable(Of RenderFragment)
+  fullName.vb: System.Nullable(Of RenderFragment)
+  name.vb: Nullable(Of RenderFragment)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RenderFragment
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RenderFragment
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
+  name: Found
+  nameWithType: R_TenantRouter.Found
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
+- uid: System.Nullable{RenderFragment{RouteData}}
+  commentId: '!:System.Nullable{RenderFragment{RouteData}}'
+  definition: System.Nullable`1
+  name: Nullable<RenderFragment<RouteData>>
+  nameWithType: Nullable<RenderFragment<RouteData>>
+  fullName: System.Nullable<RenderFragment<RouteData>>
+  nameWithType.vb: Nullable(Of RenderFragment(Of RouteData))
+  fullName.vb: System.Nullable(Of RenderFragment(Of RouteData))
+  name.vb: Nullable(Of RenderFragment(Of RouteData))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RenderFragment`1
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RouteData
+    name: RouteData
+    nameWithType: RouteData
+    fullName: RouteData
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RenderFragment`1
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RouteData
+    name: RouteData
+    nameWithType: RouteData
+    fullName: RouteData
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
+  name: Navigating
+  nameWithType: R_TenantRouter.Navigating
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
+  name: NoTenant
+  nameWithType: R_TenantRouter.NoTenant
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
+- uid: System.Nullable{RenderFragment{System.String}}
+  commentId: '!:System.Nullable{RenderFragment{System.String}}'
+  definition: System.Nullable`1
+  name: Nullable<RenderFragment<String>>
+  nameWithType: Nullable<RenderFragment<String>>
+  fullName: System.Nullable<RenderFragment<System.String>>
+  nameWithType.vb: Nullable(Of RenderFragment(Of String))
+  fullName.vb: System.Nullable(Of RenderFragment(Of System.String))
+  name.vb: Nullable(Of RenderFragment(Of String))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RenderFragment`1
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RenderFragment`1
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
+  name: ApiError
+  nameWithType: R_TenantRouter.ApiError
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
+- uid: System.Nullable{RenderFragment{HttpResponseMessage}}
+  commentId: '!:System.Nullable{RenderFragment{HttpResponseMessage}}'
+  definition: System.Nullable`1
+  name: Nullable<RenderFragment<HttpResponseMessage>>
+  nameWithType: Nullable<RenderFragment<HttpResponseMessage>>
+  fullName: System.Nullable<RenderFragment<HttpResponseMessage>>
+  nameWithType.vb: Nullable(Of RenderFragment(Of HttpResponseMessage))
+  fullName.vb: System.Nullable(Of RenderFragment(Of HttpResponseMessage))
+  name.vb: Nullable(Of RenderFragment(Of HttpResponseMessage))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RenderFragment`1
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RenderFragment`1
+    name: RenderFragment
+    nameWithType: RenderFragment
+    fullName: RenderFragment
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
+  name: OnNavigateAsync
+  nameWithType: R_TenantRouter.OnNavigateAsync
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
+- uid: EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}
+  commentId: '!:EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}'
+  definition: EventCallback`1
+  name: EventCallback<TenantNavigationContext>
+  nameWithType: EventCallback<TenantNavigationContext>
+  fullName: EventCallback<R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext>
+  nameWithType.vb: EventCallback(Of TenantNavigationContext)
+  fullName.vb: EventCallback(Of R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext)
+  name.vb: EventCallback(Of TenantNavigationContext)
+  spec.csharp:
+  - uid: EventCallback`1
+    name: EventCallback
+    nameWithType: EventCallback
+    fullName: EventCallback
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+    name: TenantNavigationContext
+    nameWithType: TenantNavigationContext
+    fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EventCallback`1
+    name: EventCallback
+    nameWithType: EventCallback
+    fullName: EventCallback
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+    name: TenantNavigationContext
+    nameWithType: TenantNavigationContext
+    fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EventCallback`1
+  commentId: '!:EventCallback`1'
+  isExternal: true
+  name: EventCallback<>
+  nameWithType: EventCallback<>
+  fullName: EventCallback<>
+  nameWithType.vb: EventCallback(Of )
+  fullName.vb: EventCallback(Of )
+  name.vb: EventCallback(Of )
+  spec.csharp:
+  - uid: EventCallback`1
+    name: EventCallback
+    nameWithType: EventCallback
+    fullName: EventCallback
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EventCallback`1
+    name: EventCallback
+    nameWithType: EventCallback
+    fullName: EventCallback
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
+  name: PreferExactMatches
+  nameWithType: R_TenantRouter.PreferExactMatches
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach
+  name: Attach
+  nameWithType: R_TenantRouter.Attach
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach
+- uid: RenderHandle
+  commentId: '!:RenderHandle'
+  isExternal: true
+  name: RenderHandle
+  nameWithType: RenderHandle
+  fullName: RenderHandle
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync
+  name: SetParametersAsync
+  nameWithType: R_TenantRouter.SetParametersAsync
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync
+- uid: ParameterView
+  commentId: '!:ParameterView'
+  isExternal: true
+  name: ParameterView
+  nameWithType: ParameterView
+  fullName: ParameterView
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
+  name: Dispose
+  nameWithType: R_TenantRouter.Dispose
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose

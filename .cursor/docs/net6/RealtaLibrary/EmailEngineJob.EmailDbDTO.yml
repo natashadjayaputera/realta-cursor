@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmailEngineJob.EmailDbDTO
+  commentId: T:EmailEngineJob.EmailDbDTO
+  id: EmailDbDTO
+  parent: EmailEngineJob
+  children:
+  - EmailEngineJob.EmailDbDTO.CEMAIL_ID
+  - EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT
+  langs:
+  - csharp
+  - vb
+  name: EmailDbDTO
+  nameWithType: EmailDbDTO
+  fullName: EmailEngineJob.EmailDbDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailDbDTO
+    path: Engine/Jobs/EmailEngineJob/EmailDbDTO.cs
+    startLine: 8
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: 'public class EmailDbDTO : object'
+    content.vb: >-
+      Public Class EmailDbDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EmailEngineJob.EmailDbDTO.CEMAIL_ID
+  commentId: P:EmailEngineJob.EmailDbDTO.CEMAIL_ID
+  id: CEMAIL_ID
+  parent: EmailEngineJob.EmailDbDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_ID
+  nameWithType: EmailDbDTO.CEMAIL_ID
+  fullName: EmailEngineJob.EmailDbDTO.CEMAIL_ID
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_ID
+    path: Engine/Jobs/EmailEngineJob/EmailDbDTO.cs
+    startLine: 10
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: public string CEMAIL_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_ID As String
+  overload: EmailEngineJob.EmailDbDTO.CEMAIL_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT
+  commentId: P:EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT
+  id: CEMAIL_SUBJECT
+  parent: EmailEngineJob.EmailDbDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_SUBJECT
+  nameWithType: EmailDbDTO.CEMAIL_SUBJECT
+  fullName: EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_SUBJECT
+    path: Engine/Jobs/EmailEngineJob/EmailDbDTO.cs
+    startLine: 11
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: public string CEMAIL_SUBJECT { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_SUBJECT As String
+  overload: EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: EmailEngineJob
+  commentId: N:EmailEngineJob
+  name: EmailEngineJob
+  nameWithType: EmailEngineJob
+  fullName: EmailEngineJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: EmailEngineJob.EmailDbDTO.CEMAIL_ID*
+  commentId: Overload:EmailEngineJob.EmailDbDTO.CEMAIL_ID
+  name: CEMAIL_ID
+  nameWithType: EmailDbDTO.CEMAIL_ID
+  fullName: EmailEngineJob.EmailDbDTO.CEMAIL_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT*
+  commentId: Overload:EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT
+  name: CEMAIL_SUBJECT
+  nameWithType: EmailDbDTO.CEMAIL_SUBJECT
+  fullName: EmailEngineJob.EmailDbDTO.CEMAIL_SUBJECT

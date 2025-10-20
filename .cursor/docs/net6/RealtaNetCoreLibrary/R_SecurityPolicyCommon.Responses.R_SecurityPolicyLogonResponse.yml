@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  commentId: T:R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  id: R_SecurityPolicyLogonResponse
+  parent: R_SecurityPolicyCommon.Responses
+  children:
+  - R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN
+  - R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN
+  - R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID
+  langs:
+  - csharp
+  - vb
+  name: R_SecurityPolicyLogonResponse
+  nameWithType: R_SecurityPolicyLogonResponse
+  fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SecurityPolicyLogonResponse
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+    startLine: 2
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: 'public class R_SecurityPolicyLogonResponse : object'
+    content.vb: >-
+      Public Class R_SecurityPolicyLogonResponse
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN
+  commentId: P:R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN
+  id: CTOKEN
+  parent: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  langs:
+  - csharp
+  - vb
+  name: CTOKEN
+  nameWithType: R_SecurityPolicyLogonResponse.CTOKEN
+  fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTOKEN
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public string CTOKEN { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CTOKEN As String
+  overload: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID
+  commentId: P:R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID
+  id: CTOKEN_ID
+  parent: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  langs:
+  - csharp
+  - vb
+  name: CTOKEN_ID
+  nameWithType: R_SecurityPolicyLogonResponse.CTOKEN_ID
+  fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTOKEN_ID
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+    startLine: 5
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public string CTOKEN_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CTOKEN_ID As String
+  overload: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN
+  commentId: P:R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN
+  id: CREFRESH_TOKEN
+  parent: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse
+  langs:
+  - csharp
+  - vb
+  name: CREFRESH_TOKEN
+  nameWithType: R_SecurityPolicyLogonResponse.CREFRESH_TOKEN
+  fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CREFRESH_TOKEN
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_SecurityPolicyLogonResponse.cs
+    startLine: 6
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public string CREFRESH_TOKEN { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CREFRESH_TOKEN As String
+  overload: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_SecurityPolicyCommon.Responses
+  commentId: N:R_SecurityPolicyCommon.Responses
+  name: R_SecurityPolicyCommon.Responses
+  nameWithType: R_SecurityPolicyCommon.Responses
+  fullName: R_SecurityPolicyCommon.Responses
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN
+  name: CTOKEN
+  nameWithType: R_SecurityPolicyLogonResponse.CTOKEN
+  fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID
+  name: CTOKEN_ID
+  nameWithType: R_SecurityPolicyLogonResponse.CTOKEN_ID
+  fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CTOKEN_ID
+- uid: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN
+  name: CREFRESH_TOKEN
+  nameWithType: R_SecurityPolicyLogonResponse.CREFRESH_TOKEN
+  fullName: R_SecurityPolicyCommon.Responses.R_SecurityPolicyLogonResponse.CREFRESH_TOKEN

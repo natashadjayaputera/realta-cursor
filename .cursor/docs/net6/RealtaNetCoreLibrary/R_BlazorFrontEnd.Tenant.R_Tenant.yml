@@ -1,0 +1,556 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant
+  commentId: T:R_BlazorFrontEnd.Tenant.R_Tenant
+  id: R_Tenant
+  parent: R_BlazorFrontEnd.Tenant
+  children:
+  - R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
+  - R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,IDictionary{System.String,System.String})
+  - R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
+  - R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+  - R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
+  - R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: R_Tenant
+  nameWithType: R_Tenant
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_Tenant
+    path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nTenant\n"
+  example: []
+  syntax:
+    content: 'public class R_Tenant : object, R_ITenant'
+    content.vb: >-
+      Public Class R_Tenant
+          Inherits Object
+          Implements R_ITenant
+  inheritance:
+  - System.Object
+  implements:
+  - R_BlazorFrontEnd.Interfaces.R_ITenant
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
+  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
+  id: '#ctor'
+  parent: R_BlazorFrontEnd.Tenant.R_Tenant
+  langs:
+  - csharp
+  - vb
+  name: R_Tenant()
+  nameWithType: R_Tenant.R_Tenant()
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant()
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  syntax:
+    content: public R_Tenant()
+    content.vb: Public Sub New
+  overload: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,IDictionary{System.String,System.String})
+  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,IDictionary{System.String,System.String})
+  id: '#ctor(System.String,IDictionary{System.String,System.String})'
+  parent: R_BlazorFrontEnd.Tenant.R_Tenant
+  langs:
+  - csharp
+  - vb
+  name: R_Tenant(String, IDictionary<String, String>)
+  nameWithType: R_Tenant.R_Tenant(String, IDictionary<String, String>)
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant(System.String, IDictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+    startLine: 20
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nCtor\n"
+  example: []
+  syntax:
+    content: public R_Tenant(string identifier, IDictionary<string, string> parameters)
+    parameters:
+    - id: identifier
+      type: System.String
+      description: Identifier
+    - id: parameters
+      type: IDictionary{System.String,System.String}
+      description: Parameters (optional)
+    content.vb: Public Sub New(identifier As String, parameters As IDictionary(Of String, String))
+  overload: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor*
+  nameWithType.vb: R_Tenant.R_Tenant(String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant(System.String, IDictionary(Of System.String, System.String))
+  name.vb: R_Tenant(String, IDictionary(Of String, String))
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
+  commentId: P:R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
+  id: Identifier
+  parent: R_BlazorFrontEnd.Tenant.R_Tenant
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: R_Tenant.Identifier
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Identifier
+    path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+    startLine: 30
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nTenant URL Identifier\n"
+  example: []
+  syntax:
+    content: public string Identifier { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public ReadOnly Property Identifier As String
+  overload: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier*
+  implements:
+  - R_BlazorFrontEnd.Interfaces.R_ITenant.Identifier
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+  commentId: P:R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+  id: Parameters
+  parent: R_BlazorFrontEnd.Tenant.R_Tenant
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: R_Tenant.Parameters
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Parameters
+    path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+    startLine: 38
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  summary: "\nTenant Parameters\n"
+  example: []
+  syntax:
+    content: public IDictionary<string, string> Parameters { get; }
+    parameters: []
+    return:
+      type: IDictionary{System.String,System.String}
+      description: ''
+    content.vb: Public ReadOnly Property Parameters As IDictionary(Of String, String)
+  overload: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
+  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
+  id: SetIdentifier(System.String)
+  parent: R_BlazorFrontEnd.Tenant.R_Tenant
+  langs:
+  - csharp
+  - vb
+  name: SetIdentifier(String)
+  nameWithType: R_Tenant.SetIdentifier(String)
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetIdentifier
+    path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+    startLine: 40
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  syntax:
+    content: public void SetIdentifier(string identifier)
+    parameters:
+    - id: identifier
+      type: System.String
+    content.vb: Public Sub SetIdentifier(identifier As String)
+  overload: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier*
+  implements:
+  - R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary{System.String,System.String})
+  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary{System.String,System.String})
+  id: SetParameters(IDictionary{System.String,System.String})
+  parent: R_BlazorFrontEnd.Tenant.R_Tenant
+  langs:
+  - csharp
+  - vb
+  name: SetParameters(IDictionary<String, String>)
+  nameWithType: R_Tenant.SetParameters(IDictionary<String, String>)
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetParameters
+    path: Library/R_BlazorFrontEnd.Tenant/R_Tenant.cs
+    startLine: 47
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant
+  syntax:
+    content: public void SetParameters(IDictionary<string, string> parameters)
+    parameters:
+    - id: parameters
+      type: IDictionary{System.String,System.String}
+    content.vb: Public Sub SetParameters(parameters As IDictionary(Of String, String))
+  overload: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters*
+  nameWithType.vb: R_Tenant.SetParameters(IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary(Of System.String, System.String))
+  name.vb: SetParameters(IDictionary(Of String, String))
+references:
+- uid: R_BlazorFrontEnd.Tenant
+  commentId: N:R_BlazorFrontEnd.Tenant
+  name: R_BlazorFrontEnd.Tenant
+  nameWithType: R_BlazorFrontEnd.Tenant
+  fullName: R_BlazorFrontEnd.Tenant
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Interfaces.R_ITenant
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_ITenant
+  parent: R_BlazorFrontEnd.Interfaces
+  name: R_ITenant
+  nameWithType: R_ITenant
+  fullName: R_BlazorFrontEnd.Interfaces.R_ITenant
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Interfaces
+  commentId: N:R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  nameWithType: R_BlazorFrontEnd.Interfaces
+  fullName: R_BlazorFrontEnd.Interfaces
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
+  name: R_Tenant
+  nameWithType: R_Tenant.R_Tenant
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IDictionary{System.String,System.String}
+  commentId: '!:IDictionary{System.String,System.String}'
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
+  name: Identifier
+  nameWithType: R_Tenant.Identifier
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
+- uid: R_BlazorFrontEnd.Interfaces.R_ITenant.Identifier
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_ITenant.Identifier
+  parent: R_BlazorFrontEnd.Interfaces.R_ITenant
+  name: Identifier
+  nameWithType: R_ITenant.Identifier
+  fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.Identifier
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+  name: Parameters
+  nameWithType: R_Tenant.Parameters
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier
+  name: SetIdentifier
+  nameWithType: R_Tenant.SetIdentifier
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier
+- uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ITenant
+  isExternal: true
+  name: SetIdentifier(String)
+  nameWithType: R_ITenant.SetIdentifier(String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
+    name: SetIdentifier
+    nameWithType: R_ITenant.SetIdentifier
+    fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
+    name: SetIdentifier
+    nameWithType: R_ITenant.SetIdentifier
+    fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters
+  name: SetParameters
+  nameWithType: R_Tenant.SetParameters
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters

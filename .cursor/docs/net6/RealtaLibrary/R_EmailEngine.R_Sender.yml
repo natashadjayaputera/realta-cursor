@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.R_Sender
+  commentId: T:R_EmailEngine.R_Sender
+  id: R_Sender
+  parent: R_EmailEngine
+  children:
+  - R_EmailEngine.R_Sender.R_SendById(System.String,DbConnection)
+  - R_EmailEngine.R_Sender.R_SendById(System.String,System.String)
+  - R_EmailEngine.R_Sender.R_SendByIdAsync(System.String,DbConnection)
+  - R_EmailEngine.R_Sender.R_SendByIdAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_Sender
+  nameWithType: R_Sender
+  fullName: R_EmailEngine.R_Sender
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_Sender.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_Sender
+    path: Microservices/R_EmailEngine/R_Sender.cs
+    startLine: 12
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: 'public class R_Sender : object'
+    content.vb: >-
+      Public Class R_Sender
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngine.R_Sender.R_SendById(System.String,System.String)
+  commentId: M:R_EmailEngine.R_Sender.R_SendById(System.String,System.String)
+  id: R_SendById(System.String,System.String)
+  parent: R_EmailEngine.R_Sender
+  langs:
+  - csharp
+  - vb
+  name: R_SendById(String, String)
+  nameWithType: R_Sender.R_SendById(String, String)
+  fullName: R_EmailEngine.R_Sender.R_SendById(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_Sender.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SendById
+    path: Microservices/R_EmailEngine/R_Sender.cs
+    startLine: 14
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: public void R_SendById(string pcEmailId, string pcConnectionStringName = "")
+    parameters:
+    - id: pcEmailId
+      type: System.String
+    - id: pcConnectionStringName
+      type: System.String
+    content.vb: Public Sub R_SendById(pcEmailId As String, pcConnectionStringName As String = "")
+  overload: R_EmailEngine.R_Sender.R_SendById*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.R_Sender.R_SendById(System.String,DbConnection)
+  commentId: M:R_EmailEngine.R_Sender.R_SendById(System.String,DbConnection)
+  id: R_SendById(System.String,DbConnection)
+  parent: R_EmailEngine.R_Sender
+  langs:
+  - csharp
+  - vb
+  name: R_SendById(String, DbConnection)
+  nameWithType: R_Sender.R_SendById(String, DbConnection)
+  fullName: R_EmailEngine.R_Sender.R_SendById(System.String, DbConnection)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_Sender.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SendById
+    path: Microservices/R_EmailEngine/R_Sender.cs
+    startLine: 57
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: public void R_SendById(string pcEmailId, DbConnection poConnection)
+    parameters:
+    - id: pcEmailId
+      type: System.String
+    - id: poConnection
+      type: DbConnection
+    content.vb: Public Sub R_SendById(pcEmailId As String, poConnection As DbConnection)
+  overload: R_EmailEngine.R_Sender.R_SendById*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.R_Sender.R_SendByIdAsync(System.String,System.String)
+  commentId: M:R_EmailEngine.R_Sender.R_SendByIdAsync(System.String,System.String)
+  id: R_SendByIdAsync(System.String,System.String)
+  parent: R_EmailEngine.R_Sender
+  langs:
+  - csharp
+  - vb
+  name: R_SendByIdAsync(String, String)
+  nameWithType: R_Sender.R_SendByIdAsync(String, String)
+  fullName: R_EmailEngine.R_Sender.R_SendByIdAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_Sender.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SendByIdAsync
+    path: Microservices/R_EmailEngine/R_Sender.cs
+    startLine: 247
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: public Task R_SendByIdAsync(string pcEmailId, string pcConnectionStringName = "")
+    parameters:
+    - id: pcEmailId
+      type: System.String
+    - id: pcConnectionStringName
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function R_SendByIdAsync(pcEmailId As String, pcConnectionStringName As String = "") As Task
+  overload: R_EmailEngine.R_Sender.R_SendByIdAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.R_Sender.R_SendByIdAsync(System.String,DbConnection)
+  commentId: M:R_EmailEngine.R_Sender.R_SendByIdAsync(System.String,DbConnection)
+  id: R_SendByIdAsync(System.String,DbConnection)
+  parent: R_EmailEngine.R_Sender
+  langs:
+  - csharp
+  - vb
+  name: R_SendByIdAsync(String, DbConnection)
+  nameWithType: R_Sender.R_SendByIdAsync(String, DbConnection)
+  fullName: R_EmailEngine.R_Sender.R_SendByIdAsync(System.String, DbConnection)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_Sender.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SendByIdAsync
+    path: Microservices/R_EmailEngine/R_Sender.cs
+    startLine: 292
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: public Task R_SendByIdAsync(string pcEmailId, DbConnection poConnection)
+    parameters:
+    - id: pcEmailId
+      type: System.String
+    - id: poConnection
+      type: DbConnection
+    return:
+      type: Task
+    content.vb: Public Function R_SendByIdAsync(pcEmailId As String, poConnection As DbConnection) As Task
+  overload: R_EmailEngine.R_Sender.R_SendByIdAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngine
+  commentId: N:R_EmailEngine
+  name: R_EmailEngine
+  nameWithType: R_EmailEngine
+  fullName: R_EmailEngine
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngine.R_Sender.R_SendById*
+  commentId: Overload:R_EmailEngine.R_Sender.R_SendById
+  name: R_SendById
+  nameWithType: R_Sender.R_SendById
+  fullName: R_EmailEngine.R_Sender.R_SendById
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DbConnection
+  isExternal: true
+  name: DbConnection
+  nameWithType: DbConnection
+  fullName: DbConnection
+- uid: R_EmailEngine.R_Sender.R_SendByIdAsync*
+  commentId: Overload:R_EmailEngine.R_Sender.R_SendByIdAsync
+  name: R_SendByIdAsync
+  nameWithType: R_Sender.R_SendByIdAsync
+  fullName: R_EmailEngine.R_Sender.R_SendByIdAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

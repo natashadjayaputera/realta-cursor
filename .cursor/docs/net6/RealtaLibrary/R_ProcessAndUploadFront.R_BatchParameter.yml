@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ProcessAndUploadFront.R_BatchParameter
+  commentId: T:R_ProcessAndUploadFront.R_BatchParameter
+  id: R_BatchParameter
+  parent: R_ProcessAndUploadFront
+  children:
+  - R_ProcessAndUploadFront.R_BatchParameter.BigObject
+  - R_ProcessAndUploadFront.R_BatchParameter.ClassName
+  - R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID
+  - R_ProcessAndUploadFront.R_BatchParameter.USER_ID
+  - R_ProcessAndUploadFront.R_BatchParameter.UserParameters
+  langs:
+  - csharp
+  - vb
+  name: R_BatchParameter
+  nameWithType: R_BatchParameter
+  fullName: R_ProcessAndUploadFront.R_BatchParameter
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_BatchParameter
+    path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+    startLine: 5
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: 'public class R_BatchParameter : object'
+    content.vb: >-
+      Public Class R_BatchParameter
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID
+  commentId: P:R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID
+  id: COMPANY_ID
+  parent: R_ProcessAndUploadFront.R_BatchParameter
+  langs:
+  - csharp
+  - vb
+  name: COMPANY_ID
+  nameWithType: R_BatchParameter.COMPANY_ID
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: COMPANY_ID
+    path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+    startLine: 7
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: public string COMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property COMPANY_ID As String
+  overload: R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_ProcessAndUploadFront.R_BatchParameter.USER_ID
+  commentId: P:R_ProcessAndUploadFront.R_BatchParameter.USER_ID
+  id: USER_ID
+  parent: R_ProcessAndUploadFront.R_BatchParameter
+  langs:
+  - csharp
+  - vb
+  name: USER_ID
+  nameWithType: R_BatchParameter.USER_ID
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.USER_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: USER_ID
+    path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+    startLine: 8
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: public string USER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property USER_ID As String
+  overload: R_ProcessAndUploadFront.R_BatchParameter.USER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_ProcessAndUploadFront.R_BatchParameter.ClassName
+  commentId: P:R_ProcessAndUploadFront.R_BatchParameter.ClassName
+  id: ClassName
+  parent: R_ProcessAndUploadFront.R_BatchParameter
+  langs:
+  - csharp
+  - vb
+  name: ClassName
+  nameWithType: R_BatchParameter.ClassName
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.ClassName
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ClassName
+    path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+    startLine: 9
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: public string ClassName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClassName As String
+  overload: R_ProcessAndUploadFront.R_BatchParameter.ClassName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_ProcessAndUploadFront.R_BatchParameter.BigObject
+  commentId: P:R_ProcessAndUploadFront.R_BatchParameter.BigObject
+  id: BigObject
+  parent: R_ProcessAndUploadFront.R_BatchParameter
+  langs:
+  - csharp
+  - vb
+  name: BigObject
+  nameWithType: R_BatchParameter.BigObject
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.BigObject
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: BigObject
+    path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+    startLine: 10
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: public object BigObject { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property BigObject As Object
+  overload: R_ProcessAndUploadFront.R_BatchParameter.BigObject*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_ProcessAndUploadFront.R_BatchParameter.UserParameters
+  commentId: P:R_ProcessAndUploadFront.R_BatchParameter.UserParameters
+  id: UserParameters
+  parent: R_ProcessAndUploadFront.R_BatchParameter
+  langs:
+  - csharp
+  - vb
+  name: UserParameters
+  nameWithType: R_BatchParameter.UserParameters
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.UserParameters
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: UserParameters
+    path: Microservices/R_ProcessAndUploadFront/DTO/R_BatchParameter.cs
+    startLine: 11
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: public List<R_KeyValue> UserParameters { get; set; }
+    parameters: []
+    return:
+      type: List{R_CommonFrontBackAPI.R_KeyValue}
+    content.vb: Public Property UserParameters As List(Of R_KeyValue)
+  overload: R_ProcessAndUploadFront.R_BatchParameter.UserParameters*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_ProcessAndUploadFront
+  commentId: N:R_ProcessAndUploadFront
+  name: R_ProcessAndUploadFront
+  nameWithType: R_ProcessAndUploadFront
+  fullName: R_ProcessAndUploadFront
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID*
+  commentId: Overload:R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID
+  name: COMPANY_ID
+  nameWithType: R_BatchParameter.COMPANY_ID
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.COMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_ProcessAndUploadFront.R_BatchParameter.USER_ID*
+  commentId: Overload:R_ProcessAndUploadFront.R_BatchParameter.USER_ID
+  name: USER_ID
+  nameWithType: R_BatchParameter.USER_ID
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.USER_ID
+- uid: R_ProcessAndUploadFront.R_BatchParameter.ClassName*
+  commentId: Overload:R_ProcessAndUploadFront.R_BatchParameter.ClassName
+  name: ClassName
+  nameWithType: R_BatchParameter.ClassName
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.ClassName
+- uid: R_ProcessAndUploadFront.R_BatchParameter.BigObject*
+  commentId: Overload:R_ProcessAndUploadFront.R_BatchParameter.BigObject
+  name: BigObject
+  nameWithType: R_BatchParameter.BigObject
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.BigObject
+- uid: R_ProcessAndUploadFront.R_BatchParameter.UserParameters*
+  commentId: Overload:R_ProcessAndUploadFront.R_BatchParameter.UserParameters
+  name: UserParameters
+  nameWithType: R_BatchParameter.UserParameters
+  fullName: R_ProcessAndUploadFront.R_BatchParameter.UserParameters
+- uid: List{R_CommonFrontBackAPI.R_KeyValue}
+  commentId: '!:List{R_CommonFrontBackAPI.R_KeyValue}'
+  definition: List`1
+  name: List<R_KeyValue>
+  nameWithType: List<R_KeyValue>
+  fullName: List<R_CommonFrontBackAPI.R_KeyValue>
+  nameWithType.vb: List(Of R_KeyValue)
+  fullName.vb: List(Of R_CommonFrontBackAPI.R_KeyValue)
+  name.vb: List(Of R_KeyValue)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_KeyValue
+    name: R_KeyValue
+    nameWithType: R_KeyValue
+    fullName: R_CommonFrontBackAPI.R_KeyValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_KeyValue
+    name: R_KeyValue
+    nameWithType: R_KeyValue
+    fullName: R_CommonFrontBackAPI.R_KeyValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

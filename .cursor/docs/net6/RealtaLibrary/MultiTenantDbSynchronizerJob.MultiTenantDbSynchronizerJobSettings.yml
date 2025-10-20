@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings
+  commentId: T:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings
+  id: MultiTenantDbSynchronizerJobSettings
+  parent: MultiTenantDbSynchronizerJob
+  children:
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbSynchronizerJobSettings
+  nameWithType: MultiTenantDbSynchronizerJobSettings
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantDbSynchronizerJobSettings
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSettings.cs
+    startLine: 6
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: 'public class MultiTenantDbSynchronizerJobSettings : R_SchedulerSettingsDTO'
+    content.vb: >-
+      Public Class MultiTenantDbSynchronizerJobSettings
+          Inherits R_SchedulerSettingsDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings
+  commentId: P:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings
+  id: Settings
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: MultiTenantDbSynchronizerJobSettings.Settings
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Settings
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSettings.cs
+    startLine: 8
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public List<MultiTenantDbSynchronizerJobSetting> Settings { get; set; }
+    parameters: []
+    return:
+      type: List{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting}
+    content.vb: Public Property Settings As List(Of MultiTenantDbSynchronizerJobSetting)
+  overload: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings
+  commentId: M:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings
+  id: GetSettings
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings
+  langs:
+  - csharp
+  - vb
+  name: GetSettings()
+  nameWithType: MultiTenantDbSynchronizerJobSettings.GetSettings()
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings()
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetSettings
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobSettings.cs
+    startLine: 9
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public override IList GetSettings()
+    return:
+      type: IList
+    content.vb: Public Overrides Function GetSettings As IList
+  overload: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: MultiTenantDbSynchronizerJob
+  commentId: N:MultiTenantDbSynchronizerJob
+  name: MultiTenantDbSynchronizerJob
+  nameWithType: MultiTenantDbSynchronizerJob
+  fullName: MultiTenantDbSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings*
+  commentId: Overload:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings
+  name: Settings
+  nameWithType: MultiTenantDbSynchronizerJobSettings.Settings
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.Settings
+- uid: List{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting}
+  commentId: '!:List{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting}'
+  definition: List`1
+  name: List<MultiTenantDbSynchronizerJobSetting>
+  nameWithType: List<MultiTenantDbSynchronizerJobSetting>
+  fullName: List<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting>
+  nameWithType.vb: List(Of MultiTenantDbSynchronizerJobSetting)
+  fullName.vb: List(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting)
+  name.vb: List(Of MultiTenantDbSynchronizerJobSetting)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+    name: MultiTenantDbSynchronizerJobSetting
+    nameWithType: MultiTenantDbSynchronizerJobSetting
+    fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+    name: MultiTenantDbSynchronizerJobSetting
+    nameWithType: MultiTenantDbSynchronizerJobSetting
+    fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSetting
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings*
+  commentId: Overload:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings
+  name: GetSettings
+  nameWithType: MultiTenantDbSynchronizerJobSettings.GetSettings
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobSettings.GetSettings
+- uid: IList
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: IList

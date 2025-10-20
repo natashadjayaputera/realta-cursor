@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  commentId: T:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  id: MultiTenantDbSynchronizerJobCls
+  parent: MultiTenantDbSynchronizerJob
+  children:
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.#ctor(ILogger{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute(IJobExecutionContext)
+  - MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings(R_GetConnectionStringParameterDTO)
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbSynchronizerJobCls
+  nameWithType: MultiTenantDbSynchronizerJobCls
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantDbSynchronizerJobCls
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+    startLine: 12
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: 'public class MultiTenantDbSynchronizerJobCls : IJob'
+    content.vb: >-
+      Public Class MultiTenantDbSynchronizerJobCls
+          Inherits IJob
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.#ctor(ILogger{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)
+  commentId: M:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.#ctor(ILogger{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)
+  id: '#ctor(ILogger{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls},R_ILocalCacheMultiTenantFromDb)'
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbSynchronizerJobCls(ILogger<MultiTenantDbSynchronizerJobCls>, R_ILocalCacheMultiTenantFromDb)
+  nameWithType: MultiTenantDbSynchronizerJobCls.MultiTenantDbSynchronizerJobCls(ILogger<MultiTenantDbSynchronizerJobCls>, R_ILocalCacheMultiTenantFromDb)
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.MultiTenantDbSynchronizerJobCls(ILogger<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls>, R_ILocalCacheMultiTenantFromDb)
+  type: Constructor
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+    startLine: 19
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public MultiTenantDbSynchronizerJobCls(ILogger<MultiTenantDbSynchronizerJobCls> poLogger, R_ILocalCacheMultiTenantFromDb poHelperCacheFromDb)
+    parameters:
+    - id: poLogger
+      type: ILogger{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls}
+    - id: poHelperCacheFromDb
+      type: R_ILocalCacheMultiTenantFromDb
+    content.vb: Public Sub New(poLogger As ILogger(Of MultiTenantDbSynchronizerJobCls), poHelperCacheFromDb As R_ILocalCacheMultiTenantFromDb)
+  overload: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.#ctor*
+  nameWithType.vb: MultiTenantDbSynchronizerJobCls.MultiTenantDbSynchronizerJobCls(ILogger(Of MultiTenantDbSynchronizerJobCls), R_ILocalCacheMultiTenantFromDb)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.MultiTenantDbSynchronizerJobCls(ILogger(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls), R_ILocalCacheMultiTenantFromDb)
+  name.vb: MultiTenantDbSynchronizerJobCls(ILogger(Of MultiTenantDbSynchronizerJobCls), R_ILocalCacheMultiTenantFromDb)
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute(IJobExecutionContext)
+  commentId: M:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute(IJobExecutionContext)
+  id: Execute(IJobExecutionContext)
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  langs:
+  - csharp
+  - vb
+  name: Execute(IJobExecutionContext)
+  nameWithType: MultiTenantDbSynchronizerJobCls.Execute(IJobExecutionContext)
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Execute
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+    startLine: 27
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public Task Execute(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: Task
+    content.vb: Public Function Execute(context As IJobExecutionContext) As Task
+  overload: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings(R_GetConnectionStringParameterDTO)
+  commentId: M:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings(R_GetConnectionStringParameterDTO)
+  id: R_GetConnectionStrings(R_GetConnectionStringParameterDTO)
+  parent: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_GetConnectionStrings(R_GetConnectionStringParameterDTO)
+  nameWithType: MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings(R_GetConnectionStringParameterDTO)
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings(R_GetConnectionStringParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetConnectionStrings
+    path: Engine/Jobs/MultiTenantDbSynchronizerJob/MultiTenantDbSynchronizerJobCls.cs
+    startLine: 132
+  assemblies:
+  - MultiTenantDbSynchronizerJob
+  namespace: MultiTenantDbSynchronizerJob
+  syntax:
+    content: public Task<List<R_ConnectionStringDTO>> R_GetConnectionStrings(R_GetConnectionStringParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_GetConnectionStringParameterDTO
+    return:
+      type: Task{List{R_ConnectionStringDTO}}
+    content.vb: Public Function R_GetConnectionStrings(poParameter As R_GetConnectionStringParameterDTO) As Task(Of List(Of R_ConnectionStringDTO))
+  overload: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MultiTenantDbSynchronizerJob
+  commentId: N:MultiTenantDbSynchronizerJob
+  name: MultiTenantDbSynchronizerJob
+  nameWithType: MultiTenantDbSynchronizerJob
+  fullName: MultiTenantDbSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.#ctor*
+  commentId: Overload:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.#ctor
+  name: MultiTenantDbSynchronizerJobCls
+  nameWithType: MultiTenantDbSynchronizerJobCls.MultiTenantDbSynchronizerJobCls
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.MultiTenantDbSynchronizerJobCls
+- uid: ILogger{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls}
+  commentId: '!:ILogger{MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls}'
+  definition: ILogger`1
+  name: ILogger<MultiTenantDbSynchronizerJobCls>
+  nameWithType: ILogger<MultiTenantDbSynchronizerJobCls>
+  fullName: ILogger<MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls>
+  nameWithType.vb: ILogger(Of MultiTenantDbSynchronizerJobCls)
+  fullName.vb: ILogger(Of MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls)
+  name.vb: ILogger(Of MultiTenantDbSynchronizerJobCls)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+    name: MultiTenantDbSynchronizerJobCls
+    nameWithType: MultiTenantDbSynchronizerJobCls
+    fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+    name: MultiTenantDbSynchronizerJobCls
+    nameWithType: MultiTenantDbSynchronizerJobCls
+    fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ILocalCacheMultiTenantFromDb
+  isExternal: true
+  name: R_ILocalCacheMultiTenantFromDb
+  nameWithType: R_ILocalCacheMultiTenantFromDb
+  fullName: R_ILocalCacheMultiTenantFromDb
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute*
+  commentId: Overload:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute
+  name: Execute
+  nameWithType: MultiTenantDbSynchronizerJobCls.Execute
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.Execute
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings*
+  commentId: Overload:MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings
+  name: R_GetConnectionStrings
+  nameWithType: MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings
+  fullName: MultiTenantDbSynchronizerJob.MultiTenantDbSynchronizerJobCls.R_GetConnectionStrings
+- uid: R_GetConnectionStringParameterDTO
+  commentId: '!:R_GetConnectionStringParameterDTO'
+  isExternal: true
+  name: R_GetConnectionStringParameterDTO
+  nameWithType: R_GetConnectionStringParameterDTO
+  fullName: R_GetConnectionStringParameterDTO
+- uid: Task{List{R_ConnectionStringDTO}}
+  commentId: '!:Task{List{R_ConnectionStringDTO}}'
+  definition: Task`1
+  name: Task<List<R_ConnectionStringDTO>>
+  nameWithType: Task<List<R_ConnectionStringDTO>>
+  fullName: Task<List<R_ConnectionStringDTO>>
+  nameWithType.vb: Task(Of List(Of R_ConnectionStringDTO))
+  fullName.vb: Task(Of List(Of R_ConnectionStringDTO))
+  name.vb: Task(Of List(Of R_ConnectionStringDTO))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_ConnectionStringDTO
+    name: R_ConnectionStringDTO
+    nameWithType: R_ConnectionStringDTO
+    fullName: R_ConnectionStringDTO
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_ConnectionStringDTO
+    name: R_ConnectionStringDTO
+    nameWithType: R_ConnectionStringDTO
+    fullName: R_ConnectionStringDTO
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

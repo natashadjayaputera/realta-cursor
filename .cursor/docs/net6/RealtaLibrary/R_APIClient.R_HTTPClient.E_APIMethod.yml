@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIClient.R_HTTPClient.E_APIMethod
+  commentId: T:R_APIClient.R_HTTPClient.E_APIMethod
+  id: R_HTTPClient.E_APIMethod
+  parent: R_APIClient
+  children:
+  - R_APIClient.R_HTTPClient.E_APIMethod.DELETE_MODE
+  - R_APIClient.R_HTTPClient.E_APIMethod.GET_MODE
+  - R_APIClient.R_HTTPClient.E_APIMethod.POST_MODE
+  langs:
+  - csharp
+  - vb
+  name: R_HTTPClient.E_APIMethod
+  nameWithType: R_HTTPClient.E_APIMethod
+  fullName: R_APIClient.R_HTTPClient.E_APIMethod
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: E_APIMethod
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 27
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: 'public enum E_APIMethod : int'
+    content.vb: Public Enum E_APIMethod As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_APIClient.R_HTTPClient.E_APIMethod.GET_MODE
+  commentId: F:R_APIClient.R_HTTPClient.E_APIMethod.GET_MODE
+  id: GET_MODE
+  parent: R_APIClient.R_HTTPClient.E_APIMethod
+  langs:
+  - csharp
+  - vb
+  name: GET_MODE
+  nameWithType: R_HTTPClient.E_APIMethod.GET_MODE
+  fullName: R_APIClient.R_HTTPClient.E_APIMethod.GET_MODE
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GET_MODE
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 29
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: GET_MODE = 0
+    return:
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_APIClient.R_HTTPClient.E_APIMethod.POST_MODE
+  commentId: F:R_APIClient.R_HTTPClient.E_APIMethod.POST_MODE
+  id: POST_MODE
+  parent: R_APIClient.R_HTTPClient.E_APIMethod
+  langs:
+  - csharp
+  - vb
+  name: POST_MODE
+  nameWithType: R_HTTPClient.E_APIMethod.POST_MODE
+  fullName: R_APIClient.R_HTTPClient.E_APIMethod.POST_MODE
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: POST_MODE
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 30
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: POST_MODE = 1
+    return:
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_APIClient.R_HTTPClient.E_APIMethod.DELETE_MODE
+  commentId: F:R_APIClient.R_HTTPClient.E_APIMethod.DELETE_MODE
+  id: DELETE_MODE
+  parent: R_APIClient.R_HTTPClient.E_APIMethod
+  langs:
+  - csharp
+  - vb
+  name: DELETE_MODE
+  nameWithType: R_HTTPClient.E_APIMethod.DELETE_MODE
+  fullName: R_APIClient.R_HTTPClient.E_APIMethod.DELETE_MODE
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: DELETE_MODE
+    path: Microservices/R_APIClient/R_HTTPClient.cs
+    startLine: 31
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: DELETE_MODE = 2
+    return:
+      type: R_APIClient.R_HTTPClient.E_APIMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_APIClient
+  commentId: N:R_APIClient
+  name: R_APIClient
+  nameWithType: R_APIClient
+  fullName: R_APIClient
+- uid: R_APIClient.R_HTTPClient.E_APIMethod
+  commentId: T:R_APIClient.R_HTTPClient.E_APIMethod
+  parent: R_APIClient
+  name: R_HTTPClient.E_APIMethod
+  nameWithType: R_HTTPClient.E_APIMethod
+  fullName: R_APIClient.R_HTTPClient.E_APIMethod

@@ -1,0 +1,1832 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  commentId: T:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  id: R_BusinessObjectServiceClientBase`1
+  parent: R_BusinessObjectFront
+  children:
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._HttpClientName
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._ModuleName
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._RequestServiceEndPoint
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._SendWithContext
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._SendWithToken
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDeleteAsync(`0)
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecordAsync(`0)
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  - R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSaveAsync(`0,R_CommonFrontBackAPI.eCRUDMode)
+  langs:
+  - csharp
+  - vb
+  name: R_BusinessObjectServiceClientBase<EntityDTO>
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_BusinessObjectServiceClientBase
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 8
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: 'public abstract class R_BusinessObjectServiceClientBase<EntityDTO> : object, R_IServiceCRUDBase<EntityDTO>, R_IServiceCRUDAsyncBase<EntityDTO>'
+    typeParameters:
+    - id: EntityDTO
+    content.vb: >-
+      Public MustInherit Class R_BusinessObjectServiceClientBase(Of EntityDTO)
+          Inherits Object
+          Implements R_IServiceCRUDBase(Of EntityDTO), R_IServiceCRUDAsyncBase(Of EntityDTO)
+  inheritance:
+  - System.Object
+  implements:
+  - R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}
+  - R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase{{EntityDTO}}
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO)
+  name.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._HttpClientName
+  commentId: F:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._HttpClientName
+  id: _HttpClientName
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: _HttpClientName
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>._HttpClientName
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>._HttpClientName
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _HttpClientName
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 10
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: protected string _HttpClientName
+    return:
+      type: System.String
+    content.vb: Protected _HttpClientName As String
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)._HttpClientName
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO)._HttpClientName
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._RequestServiceEndPoint
+  commentId: F:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._RequestServiceEndPoint
+  id: _RequestServiceEndPoint
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: _RequestServiceEndPoint
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>._RequestServiceEndPoint
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>._RequestServiceEndPoint
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _RequestServiceEndPoint
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 11
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: protected string _RequestServiceEndPoint
+    return:
+      type: System.String
+    content.vb: Protected _RequestServiceEndPoint As String
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)._RequestServiceEndPoint
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO)._RequestServiceEndPoint
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._SendWithContext
+  commentId: F:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._SendWithContext
+  id: _SendWithContext
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: _SendWithContext
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>._SendWithContext
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>._SendWithContext
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _SendWithContext
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 12
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: protected bool _SendWithContext
+    return:
+      type: System.Boolean
+    content.vb: Protected _SendWithContext As Boolean
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)._SendWithContext
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO)._SendWithContext
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._SendWithToken
+  commentId: F:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._SendWithToken
+  id: _SendWithToken
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: _SendWithToken
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>._SendWithToken
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>._SendWithToken
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _SendWithToken
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 13
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: protected bool _SendWithToken
+    return:
+      type: System.Boolean
+    content.vb: Protected _SendWithToken As Boolean
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)._SendWithToken
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO)._SendWithToken
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._ModuleName
+  commentId: F:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1._ModuleName
+  id: _ModuleName
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: _ModuleName
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>._ModuleName
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>._ModuleName
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _ModuleName
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 14
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: protected string _ModuleName
+    return:
+      type: System.String
+    content.vb: Protected _ModuleName As String
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO)._ModuleName
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO)._ModuleName
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  id: '#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)'
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_BusinessObjectServiceClientBase(String, String, String, Boolean, Boolean)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_BusinessObjectServiceClientBase(String, String, String, Boolean, Boolean)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_BusinessObjectServiceClientBase(System.String, System.String, System.String, System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 18
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: protected R_BusinessObjectServiceClientBase(string pcHttpClientName, string pcRequestServiceEndPoint, string pcModuleName, bool plSendWithContext = true, bool plSendWithToken = true)
+    parameters:
+    - id: pcHttpClientName
+      type: System.String
+    - id: pcRequestServiceEndPoint
+      type: System.String
+    - id: pcModuleName
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plSendWithToken
+      type: System.Boolean
+    content.vb: Protected Sub New(pcHttpClientName As String, pcRequestServiceEndPoint As String, pcModuleName As String, plSendWithContext As Boolean = True, plSendWithToken As Boolean = True)
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.#ctor*
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_BusinessObjectServiceClientBase(String, String, String, Boolean, Boolean)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_BusinessObjectServiceClientBase(System.String, System.String, System.String, System.Boolean, System.Boolean)
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecordAsync(`0)
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecordAsync(`0)
+  id: R_ServiceGetRecordAsync(`0)
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetRecordAsync(EntityDTO)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecordAsync(EntityDTO)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecordAsync(EntityDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceGetRecordAsync
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 32
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: public Task<EntityDTO> R_ServiceGetRecordAsync(EntityDTO poEntity)
+    parameters:
+    - id: poEntity
+      type: '{EntityDTO}'
+    return:
+      type: Task{{EntityDTO}}
+    content.vb: Public Function R_ServiceGetRecordAsync(poEntity As EntityDTO) As Task(Of EntityDTO)
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecordAsync*
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecordAsync(EntityDTO)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecordAsync(EntityDTO)
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSaveAsync(`0,R_CommonFrontBackAPI.eCRUDMode)
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSaveAsync(`0,R_CommonFrontBackAPI.eCRUDMode)
+  id: R_ServiceSaveAsync(`0,R_CommonFrontBackAPI.eCRUDMode)
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceSaveAsync(EntityDTO, eCRUDMode)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSaveAsync(EntityDTO, eCRUDMode)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSaveAsync(EntityDTO, R_CommonFrontBackAPI.eCRUDMode)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceSaveAsync
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 68
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: public Task<EntityDTO> R_ServiceSaveAsync(EntityDTO poEntity, eCRUDMode peCRUDMode)
+    parameters:
+    - id: poEntity
+      type: '{EntityDTO}'
+    - id: peCRUDMode
+      type: R_CommonFrontBackAPI.eCRUDMode
+    return:
+      type: Task{{EntityDTO}}
+    content.vb: Public Function R_ServiceSaveAsync(poEntity As EntityDTO, peCRUDMode As eCRUDMode) As Task(Of EntityDTO)
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSaveAsync*
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSaveAsync(EntityDTO, eCRUDMode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSaveAsync(EntityDTO, R_CommonFrontBackAPI.eCRUDMode)
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDeleteAsync(`0)
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDeleteAsync(`0)
+  id: R_ServiceDeleteAsync(`0)
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceDeleteAsync(EntityDTO)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDeleteAsync(EntityDTO)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDeleteAsync(EntityDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceDeleteAsync
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 105
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: public Task R_ServiceDeleteAsync(EntityDTO poEntity)
+    parameters:
+    - id: poEntity
+      type: '{EntityDTO}'
+    return:
+      type: Task
+    content.vb: Public Function R_ServiceDeleteAsync(poEntity As EntityDTO) As Task
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDeleteAsync*
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDeleteAsync(EntityDTO)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDeleteAsync(EntityDTO)
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  id: R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  isEii: true
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<EntityDTO>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 136
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: R_ServiceGetRecordResultDTO<EntityDTO> R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO> poParameter)
+    parameters:
+    - id: poParameter
+      type: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{{EntityDTO}}
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO{{EntityDTO}}
+    content.vb: Function R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(poParameter As R_ServiceGetRecordParameterDTO(Of EntityDTO)) As R_ServiceGetRecordResultDTO(Of EntityDTO) Implements R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceGetRecord*
+  implements:
+  - R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{{EntityDTO}})
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  name.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  id: R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  isEii: true
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<EntityDTO>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 140
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: R_ServiceSaveResultDTO<EntityDTO> R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO> poParameter)
+    parameters:
+    - id: poParameter
+      type: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{{EntityDTO}}
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceSaveResultDTO{{EntityDTO}}
+    content.vb: Function R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(poParameter As R_ServiceSaveParameterDTO(Of EntityDTO)) As R_ServiceSaveResultDTO(Of EntityDTO) Implements R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceSave*
+  implements:
+  - R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{{EntityDTO}})
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of EntityDTO))
+  name.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  id: R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  isEii: true
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO<EntityDTO>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 144
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: R_ServiceDeleteResultDTO R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO> poParameter)
+    parameters:
+    - id: poParameter
+      type: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{{EntityDTO}}
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+    content.vb: Function R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(poParameter As R_ServiceDeleteParameterDTO(Of EntityDTO)) As R_ServiceDeleteResultDTO Implements R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceDelete*
+  implements:
+  - R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{{EntityDTO}})
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO(Of EntityDTO))
+  name.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  id: R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<EntityDTO>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceGetRecord
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 149
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: public Task<R_ServiceGetRecordResultDTO<EntityDTO>> R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO> poParameter)
+    parameters:
+    - id: poParameter
+      type: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{{EntityDTO}}
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO{{EntityDTO}}}
+    content.vb: Public Function R_ServiceGetRecord(poParameter As R_ServiceGetRecordParameterDTO(Of EntityDTO)) As Task(Of R_ServiceGetRecordResultDTO(Of EntityDTO))
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecord*
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  id: R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<EntityDTO>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceSave
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 154
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: public Task<R_ServiceSaveResultDTO<EntityDTO>> R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO> poParameter)
+    parameters:
+    - id: poParameter
+      type: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{{EntityDTO}}
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceSaveResultDTO{{EntityDTO}}}
+    content.vb: Public Function R_ServiceSave(poParameter As R_ServiceSaveParameterDTO(Of EntityDTO)) As Task(Of R_ServiceSaveResultDTO(Of EntityDTO))
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSave*
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  commentId: M:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  id: R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  parent: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO<EntityDTO>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceDelete
+    path: Microservices/R_BusinessObjectFront/R_BusinessObjectServiceClientBase.cs
+    startLine: 159
+  assemblies:
+  - R_BusinessObjectFront
+  namespace: R_BusinessObjectFront
+  syntax:
+    content: public Task<R_ServiceDeleteResultDTO> R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO> poParameter)
+    parameters:
+    - id: poParameter
+      type: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{{EntityDTO}}
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceDeleteResultDTO}
+    content.vb: Public Function R_ServiceDelete(poParameter As R_ServiceDeleteParameterDTO(Of EntityDTO)) As Task(Of R_ServiceDeleteResultDTO)
+  overload: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDelete*
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+references:
+- uid: R_BusinessObjectFront
+  commentId: N:R_BusinessObjectFront
+  name: R_BusinessObjectFront
+  nameWithType: R_BusinessObjectFront
+  fullName: R_BusinessObjectFront
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}
+  commentId: T:R_CommonFrontBackAPI.R_IServiceCRUDBase{`0}
+  parent: R_CommonFrontBackAPI
+  definition: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+  name: R_IServiceCRUDBase<EntityDTO>
+  nameWithType: R_IServiceCRUDBase<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO)
+  name.vb: R_IServiceCRUDBase(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+    name: R_IServiceCRUDBase
+    nameWithType: R_IServiceCRUDBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+    name: R_IServiceCRUDBase
+    nameWithType: R_IServiceCRUDBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase{{EntityDTO}}
+  commentId: T:R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase{`0}
+  parent: R_CommonFrontBackAPI
+  definition: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+  name: R_IServiceCRUDAsyncBase<EntityDTO>
+  nameWithType: R_IServiceCRUDAsyncBase<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase<EntityDTO>
+  nameWithType.vb: R_IServiceCRUDAsyncBase(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase(Of EntityDTO)
+  name.vb: R_IServiceCRUDAsyncBase(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+    name: R_IServiceCRUDAsyncBase
+    nameWithType: R_IServiceCRUDAsyncBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+    name: R_IServiceCRUDAsyncBase
+    nameWithType: R_IServiceCRUDAsyncBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+  commentId: T:R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+  name: R_IServiceCRUDBase<EntityDTO>
+  nameWithType: R_IServiceCRUDBase<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO)
+  name.vb: R_IServiceCRUDBase(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+    name: R_IServiceCRUDBase
+    nameWithType: R_IServiceCRUDBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+    name: R_IServiceCRUDBase
+    nameWithType: R_IServiceCRUDBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+  commentId: T:R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+  name: R_IServiceCRUDAsyncBase<EntityDTO>
+  nameWithType: R_IServiceCRUDAsyncBase<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase<EntityDTO>
+  nameWithType.vb: R_IServiceCRUDAsyncBase(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase(Of EntityDTO)
+  name.vb: R_IServiceCRUDAsyncBase(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+    name: R_IServiceCRUDAsyncBase
+    nameWithType: R_IServiceCRUDAsyncBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+    name: R_IServiceCRUDAsyncBase
+    nameWithType: R_IServiceCRUDAsyncBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.#ctor*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.#ctor
+  name: R_BusinessObjectServiceClientBase
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_BusinessObjectServiceClientBase
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_BusinessObjectServiceClientBase
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_BusinessObjectServiceClientBase
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_BusinessObjectServiceClientBase
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecordAsync*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecordAsync
+  name: R_ServiceGetRecordAsync
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecordAsync
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecordAsync
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecordAsync
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecordAsync
+- uid: '{EntityDTO}'
+  commentId: '!:EntityDTO'
+  definition: EntityDTO
+  name: EntityDTO
+  nameWithType: EntityDTO
+  fullName: EntityDTO
+- uid: Task{{EntityDTO}}
+  commentId: '!:Task{`0}'
+  definition: Task`1
+  name: Task<EntityDTO>
+  nameWithType: Task<EntityDTO>
+  fullName: Task<EntityDTO>
+  nameWithType.vb: Task(Of EntityDTO)
+  fullName.vb: Task(Of EntityDTO)
+  name.vb: Task(Of EntityDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityDTO
+  name: EntityDTO
+  nameWithType: EntityDTO
+  fullName: EntityDTO
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSaveAsync*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSaveAsync
+  name: R_ServiceSaveAsync
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSaveAsync
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSaveAsync
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSaveAsync
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSaveAsync
+- uid: R_CommonFrontBackAPI.eCRUDMode
+  commentId: T:R_CommonFrontBackAPI.eCRUDMode
+  parent: R_CommonFrontBackAPI
+  name: eCRUDMode
+  nameWithType: eCRUDMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDeleteAsync*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDeleteAsync
+  name: R_ServiceDeleteAsync
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDeleteAsync
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDeleteAsync
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDeleteAsync
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDeleteAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceGetRecord*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceGetRecord
+  name: R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+  name.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{{EntityDTO}})
+  commentId: M:R_CommonFrontBackAPI.R_IServiceCRUDBase{`0}.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  parent: R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}
+  definition: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  name: R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<EntityDTO>)
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+    name: R_ServiceGetRecord
+    nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+    name: R_ServiceGetRecord
+    nameWithType: R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{{EntityDTO}}
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0}
+  parent: R_CommonFrontBackAPI
+  definition: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  name: R_ServiceGetRecordParameterDTO<EntityDTO>
+  nameWithType: R_ServiceGetRecordParameterDTO<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<EntityDTO>
+  nameWithType.vb: R_ServiceGetRecordParameterDTO(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of EntityDTO)
+  name.vb: R_ServiceGetRecordParameterDTO(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO{{EntityDTO}}
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO{`0}
+  parent: R_CommonFrontBackAPI
+  definition: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  name: R_ServiceGetRecordResultDTO<EntityDTO>
+  nameWithType: R_ServiceGetRecordResultDTO<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO<EntityDTO>
+  nameWithType.vb: R_ServiceGetRecordResultDTO(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO(Of EntityDTO)
+  name.vb: R_ServiceGetRecordResultDTO(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  commentId: M:R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+  name: R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<EntityDTO>)
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<EntityDTO>)
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceGetRecord(R_ServiceGetRecordParameterDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+    name: R_ServiceGetRecord
+    nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceGetRecord
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceGetRecord(R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO{`0})
+    name: R_ServiceGetRecord
+    nameWithType: R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceGetRecord
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  name: R_ServiceGetRecordParameterDTO<E>
+  nameWithType: R_ServiceGetRecordParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<E>
+  nameWithType.vb: R_ServiceGetRecordParameterDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of E)
+  name.vb: R_ServiceGetRecordParameterDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  name: R_ServiceGetRecordResultDTO<E>
+  nameWithType: R_ServiceGetRecordResultDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO<E>
+  nameWithType.vb: R_ServiceGetRecordResultDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO(Of E)
+  name.vb: R_ServiceGetRecordResultDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceSave*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceSave
+  name: R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+  name.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{{EntityDTO}})
+  commentId: M:R_CommonFrontBackAPI.R_IServiceCRUDBase{`0}.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  parent: R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}
+  definition: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  name: R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<EntityDTO>)
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+    name: R_ServiceSave
+    nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+    name: R_ServiceSave
+    nameWithType: R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{{EntityDTO}}
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0}
+  parent: R_CommonFrontBackAPI
+  definition: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  name: R_ServiceSaveParameterDTO<EntityDTO>
+  nameWithType: R_ServiceSaveParameterDTO<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<EntityDTO>
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of EntityDTO)
+  name.vb: R_ServiceSaveParameterDTO(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO{{EntityDTO}}
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveResultDTO{`0}
+  parent: R_CommonFrontBackAPI
+  definition: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  name: R_ServiceSaveResultDTO<EntityDTO>
+  nameWithType: R_ServiceSaveResultDTO<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO<EntityDTO>
+  nameWithType.vb: R_ServiceSaveResultDTO(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveResultDTO(Of EntityDTO)
+  name.vb: R_ServiceSaveResultDTO(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  commentId: M:R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+  name: R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_ServiceSaveParameterDTO<EntityDTO>)
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<EntityDTO>)
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceSave(R_ServiceSaveParameterDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+    name: R_ServiceSave
+    nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceSave
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceSave(R_CommonFrontBackAPI.R_ServiceSaveParameterDTO{`0})
+    name: R_ServiceSave
+    nameWithType: R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceSave
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  name: R_ServiceSaveParameterDTO<E>
+  nameWithType: R_ServiceSaveParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<E>
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of E)
+  name.vb: R_ServiceSaveParameterDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  name: R_ServiceSaveResultDTO<E>
+  nameWithType: R_ServiceSaveResultDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO<E>
+  nameWithType.vb: R_ServiceSaveResultDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveResultDTO(Of E)
+  name.vb: R_ServiceSaveResultDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceDelete*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_CommonFrontBackAPI#R_IServiceCRUDBase{EntityDTO}#R_ServiceDelete
+  name: R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+  name.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{{EntityDTO}})
+  commentId: M:R_CommonFrontBackAPI.R_IServiceCRUDBase{`0}.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  parent: R_CommonFrontBackAPI.R_IServiceCRUDBase{{EntityDTO}}
+  definition: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  name: R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO<EntityDTO>)
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+    name: R_ServiceDelete
+    nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+    name: R_ServiceDelete
+    nameWithType: R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{{EntityDTO}}
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0}
+  parent: R_CommonFrontBackAPI
+  definition: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+  name: R_ServiceDeleteParameterDTO<EntityDTO>
+  nameWithType: R_ServiceDeleteParameterDTO<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO<EntityDTO>
+  nameWithType.vb: R_ServiceDeleteParameterDTO(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO(Of EntityDTO)
+  name.vb: R_ServiceDeleteParameterDTO(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceDeleteResultDTO
+  nameWithType: R_ServiceDeleteResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  commentId: M:R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+  name: R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_ServiceDeleteParameterDTO<EntityDTO>)
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO<EntityDTO>)
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO(Of EntityDTO))
+  name.vb: R_ServiceDelete(R_ServiceDeleteParameterDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+    name: R_ServiceDelete
+    nameWithType: R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>.R_ServiceDelete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1.R_ServiceDelete(R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO{`0})
+    name: R_ServiceDelete
+    nameWithType: R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO).R_ServiceDelete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+  name: R_ServiceDeleteParameterDTO<E>
+  nameWithType: R_ServiceDeleteParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO<E>
+  nameWithType.vb: R_ServiceDeleteParameterDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO(Of E)
+  name.vb: R_ServiceDeleteParameterDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecord*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceGetRecord
+  name: R_ServiceGetRecord
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecord
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceGetRecord
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecord
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceGetRecord
+- uid: Task{R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO{{EntityDTO}}}
+  commentId: '!:Task{R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO{`0}}'
+  definition: Task`1
+  name: Task<R_ServiceGetRecordResultDTO<EntityDTO>>
+  nameWithType: Task<R_ServiceGetRecordResultDTO<EntityDTO>>
+  fullName: Task<R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO<EntityDTO>>
+  nameWithType.vb: Task(Of R_ServiceGetRecordResultDTO(Of EntityDTO))
+  fullName.vb: Task(Of R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO(Of EntityDTO))
+  name.vb: Task(Of R_ServiceGetRecordResultDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSave*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceSave
+  name: R_ServiceSave
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSave
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceSave
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSave
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceSave
+- uid: Task{R_CommonFrontBackAPI.R_ServiceSaveResultDTO{{EntityDTO}}}
+  commentId: '!:Task{R_CommonFrontBackAPI.R_ServiceSaveResultDTO{`0}}'
+  definition: Task`1
+  name: Task<R_ServiceSaveResultDTO<EntityDTO>>
+  nameWithType: Task<R_ServiceSaveResultDTO<EntityDTO>>
+  fullName: Task<R_CommonFrontBackAPI.R_ServiceSaveResultDTO<EntityDTO>>
+  nameWithType.vb: Task(Of R_ServiceSaveResultDTO(Of EntityDTO))
+  fullName.vb: Task(Of R_CommonFrontBackAPI.R_ServiceSaveResultDTO(Of EntityDTO))
+  name.vb: Task(Of R_ServiceSaveResultDTO(Of EntityDTO))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDelete*
+  commentId: Overload:R_BusinessObjectFront.R_BusinessObjectServiceClientBase`1.R_ServiceDelete
+  name: R_ServiceDelete
+  nameWithType: R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDelete
+  fullName: R_BusinessObjectFront.R_BusinessObjectServiceClientBase<EntityDTO>.R_ServiceDelete
+  nameWithType.vb: R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDelete
+  fullName.vb: R_BusinessObjectFront.R_BusinessObjectServiceClientBase(Of EntityDTO).R_ServiceDelete
+- uid: Task{R_CommonFrontBackAPI.R_ServiceDeleteResultDTO}
+  commentId: '!:Task{R_CommonFrontBackAPI.R_ServiceDeleteResultDTO}'
+  definition: Task`1
+  name: Task<R_ServiceDeleteResultDTO>
+  nameWithType: Task<R_ServiceDeleteResultDTO>
+  fullName: Task<R_CommonFrontBackAPI.R_ServiceDeleteResultDTO>
+  nameWithType.vb: Task(Of R_ServiceDeleteResultDTO)
+  fullName.vb: Task(Of R_CommonFrontBackAPI.R_ServiceDeleteResultDTO)
+  name.vb: Task(Of R_ServiceDeleteResultDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+    name: R_ServiceDeleteResultDTO
+    nameWithType: R_ServiceDeleteResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+    name: R_ServiceDeleteResultDTO
+    nameWithType: R_ServiceDeleteResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  - name: )
+    nameWithType: )
+    fullName: )

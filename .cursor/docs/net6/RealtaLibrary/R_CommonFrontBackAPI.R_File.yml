@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_File
+  commentId: T:R_CommonFrontBackAPI.R_File
+  id: R_File
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_File.FileDescription
+  - R_CommonFrontBackAPI.R_File.FileExtension
+  - R_CommonFrontBackAPI.R_File.FileId
+  langs:
+  - csharp
+  - vb
+  name: R_File
+  nameWithType: R_File
+  fullName: R_CommonFrontBackAPI.R_File
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_File
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_File : object'
+    content.vb: >-
+      Public Class R_File
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_File.FileId
+  commentId: P:R_CommonFrontBackAPI.R_File.FileId
+  id: FileId
+  parent: R_CommonFrontBackAPI.R_File
+  langs:
+  - csharp
+  - vb
+  name: FileId
+  nameWithType: R_File.FileId
+  fullName: R_CommonFrontBackAPI.R_File.FileId
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileId
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string FileId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileId As String
+  overload: R_CommonFrontBackAPI.R_File.FileId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_File.FileDescription
+  commentId: P:R_CommonFrontBackAPI.R_File.FileDescription
+  id: FileDescription
+  parent: R_CommonFrontBackAPI.R_File
+  langs:
+  - csharp
+  - vb
+  name: FileDescription
+  nameWithType: R_File.FileDescription
+  fullName: R_CommonFrontBackAPI.R_File.FileDescription
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileDescription
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string FileDescription { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileDescription As String
+  overload: R_CommonFrontBackAPI.R_File.FileDescription*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_File.FileExtension
+  commentId: P:R_CommonFrontBackAPI.R_File.FileExtension
+  id: FileExtension
+  parent: R_CommonFrontBackAPI.R_File
+  langs:
+  - csharp
+  - vb
+  name: FileExtension
+  nameWithType: R_File.FileExtension
+  fullName: R_CommonFrontBackAPI.R_File.FileExtension
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileExtension
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_File.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string FileExtension { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileExtension As String
+  overload: R_CommonFrontBackAPI.R_File.FileExtension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_File.FileId*
+  commentId: Overload:R_CommonFrontBackAPI.R_File.FileId
+  name: FileId
+  nameWithType: R_File.FileId
+  fullName: R_CommonFrontBackAPI.R_File.FileId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_File.FileDescription*
+  commentId: Overload:R_CommonFrontBackAPI.R_File.FileDescription
+  name: FileDescription
+  nameWithType: R_File.FileDescription
+  fullName: R_CommonFrontBackAPI.R_File.FileDescription
+- uid: R_CommonFrontBackAPI.R_File.FileExtension*
+  commentId: Overload:R_CommonFrontBackAPI.R_File.FileExtension
+  name: FileExtension
+  nameWithType: R_File.FileExtension
+  fullName: R_CommonFrontBackAPI.R_File.FileExtension

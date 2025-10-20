@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_CommonConstant
+  commentId: T:R_CommonFrontBackAPI.R_CommonConstant
+  id: R_CommonConstant
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_CommonConstant.R_CORRELATION_ID
+  langs:
+  - csharp
+  - vb
+  name: R_CommonConstant
+  nameWithType: R_CommonConstant
+  fullName: R_CommonFrontBackAPI.R_CommonConstant
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CommonConstant
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 19
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_CommonConstant : object'
+    content.vb: >-
+      Public Class R_CommonConstant
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_CommonConstant.R_CORRELATION_ID
+  commentId: F:R_CommonFrontBackAPI.R_CommonConstant.R_CORRELATION_ID
+  id: R_CORRELATION_ID
+  parent: R_CommonFrontBackAPI.R_CommonConstant
+  langs:
+  - csharp
+  - vb
+  name: R_CORRELATION_ID
+  nameWithType: R_CommonConstant.R_CORRELATION_ID
+  fullName: R_CommonFrontBackAPI.R_CommonConstant.R_CORRELATION_ID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CORRELATION_ID
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 21
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public const string R_CORRELATION_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const R_CORRELATION_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

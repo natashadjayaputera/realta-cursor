@@ -1,0 +1,418 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.DbExtension
+  commentId: T:BackExtension.DbExtension
+  id: DbExtension
+  parent: BackExtension
+  children:
+  - BackExtension.DbExtension.AddDbCommandParameter(DbCommand,System.String,DbType,System.Nullable{System.Object})
+  - BackExtension.DbExtension.CloseDbConnection(DbConnection)
+  - BackExtension.DbExtension.GetUploadErrorStatus(DbCommand,BackExtension.DTOs.GetUploadErrorStatusDTO)
+  - BackExtension.DbExtension.WriteErrorStatus(DbCommand,BackExtension.DTOs.WriteErrorStatusDTO)
+  - BackExtension.DbExtension.WriteUploadStatus(DbCommand,BackExtension.DTOs.WriteUploadStatusDTO)
+  langs:
+  - csharp
+  - vb
+  name: DbExtension
+  nameWithType: DbExtension
+  fullName: BackExtension.DbExtension
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/DbExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DbExtension
+    path: Library Back/BackExtension/DbExtension.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: 'public static class DbExtension : object'
+    content.vb: >-
+      Public Module DbExtension
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: BackExtension.DbExtension.AddDbCommandParameter(DbCommand,System.String,DbType,System.Nullable{System.Object})
+  commentId: M:BackExtension.DbExtension.AddDbCommandParameter(DbCommand,System.String,DbType,System.Nullable{System.Object})
+  id: AddDbCommandParameter(DbCommand,System.String,DbType,System.Nullable{System.Object})
+  isExtensionMethod: true
+  parent: BackExtension.DbExtension
+  langs:
+  - csharp
+  - vb
+  name: AddDbCommandParameter(DbCommand, String, DbType, Nullable<Object>)
+  nameWithType: DbExtension.AddDbCommandParameter(DbCommand, String, DbType, Nullable<Object>)
+  fullName: BackExtension.DbExtension.AddDbCommandParameter(DbCommand, System.String, DbType, System.Nullable<System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/DbExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AddDbCommandParameter
+    path: Library Back/BackExtension/DbExtension.cs
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: public static DbCommand AddDbCommandParameter(this DbCommand poDbCommand, string pcParameterName, DbType poDataType, object? poValue)
+    parameters:
+    - id: poDbCommand
+      type: DbCommand
+    - id: pcParameterName
+      type: System.String
+    - id: poDataType
+      type: DbType
+    - id: poValue
+      type: System.Nullable{System.Object}
+    return:
+      type: DbCommand
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddDbCommandParameter(poDbCommand As DbCommand, pcParameterName As String, poDataType As DbType, poValue As Object?) As DbCommand
+  overload: BackExtension.DbExtension.AddDbCommandParameter*
+  nameWithType.vb: DbExtension.AddDbCommandParameter(DbCommand, String, DbType, Nullable(Of Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BackExtension.DbExtension.AddDbCommandParameter(DbCommand, System.String, DbType, System.Nullable(Of System.Object))
+  name.vb: AddDbCommandParameter(DbCommand, String, DbType, Nullable(Of Object))
+- uid: BackExtension.DbExtension.CloseDbConnection(DbConnection)
+  commentId: M:BackExtension.DbExtension.CloseDbConnection(DbConnection)
+  id: CloseDbConnection(DbConnection)
+  isExtensionMethod: true
+  parent: BackExtension.DbExtension
+  langs:
+  - csharp
+  - vb
+  name: CloseDbConnection(DbConnection)
+  nameWithType: DbExtension.CloseDbConnection(DbConnection)
+  fullName: BackExtension.DbExtension.CloseDbConnection(DbConnection)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/DbExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CloseDbConnection
+    path: Library Back/BackExtension/DbExtension.cs
+    startLine: 25
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: public static void CloseDbConnection(this DbConnection poConn)
+    parameters:
+    - id: poConn
+      type: DbConnection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub CloseDbConnection(poConn As DbConnection)
+  overload: BackExtension.DbExtension.CloseDbConnection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BackExtension.DbExtension.WriteUploadStatus(DbCommand,BackExtension.DTOs.WriteUploadStatusDTO)
+  commentId: M:BackExtension.DbExtension.WriteUploadStatus(DbCommand,BackExtension.DTOs.WriteUploadStatusDTO)
+  id: WriteUploadStatus(DbCommand,BackExtension.DTOs.WriteUploadStatusDTO)
+  isExtensionMethod: true
+  parent: BackExtension.DbExtension
+  langs:
+  - csharp
+  - vb
+  name: WriteUploadStatus(DbCommand, WriteUploadStatusDTO)
+  nameWithType: DbExtension.WriteUploadStatus(DbCommand, WriteUploadStatusDTO)
+  fullName: BackExtension.DbExtension.WriteUploadStatus(DbCommand, BackExtension.DTOs.WriteUploadStatusDTO)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/DbExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: WriteUploadStatus
+    path: Library Back/BackExtension/DbExtension.cs
+    startLine: 34
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: public static void WriteUploadStatus(this DbCommand poDbCommand, WriteUploadStatusDTO poParameter)
+    parameters:
+    - id: poDbCommand
+      type: DbCommand
+    - id: poParameter
+      type: BackExtension.DTOs.WriteUploadStatusDTO
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub WriteUploadStatus(poDbCommand As DbCommand, poParameter As WriteUploadStatusDTO)
+  overload: BackExtension.DbExtension.WriteUploadStatus*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BackExtension.DbExtension.WriteErrorStatus(DbCommand,BackExtension.DTOs.WriteErrorStatusDTO)
+  commentId: M:BackExtension.DbExtension.WriteErrorStatus(DbCommand,BackExtension.DTOs.WriteErrorStatusDTO)
+  id: WriteErrorStatus(DbCommand,BackExtension.DTOs.WriteErrorStatusDTO)
+  isExtensionMethod: true
+  parent: BackExtension.DbExtension
+  langs:
+  - csharp
+  - vb
+  name: WriteErrorStatus(DbCommand, WriteErrorStatusDTO)
+  nameWithType: DbExtension.WriteErrorStatus(DbCommand, WriteErrorStatusDTO)
+  fullName: BackExtension.DbExtension.WriteErrorStatus(DbCommand, BackExtension.DTOs.WriteErrorStatusDTO)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/DbExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: WriteErrorStatus
+    path: Library Back/BackExtension/DbExtension.cs
+    startLine: 46
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: public static void WriteErrorStatus(this DbCommand poDbCommand, WriteErrorStatusDTO poParameter)
+    parameters:
+    - id: poDbCommand
+      type: DbCommand
+    - id: poParameter
+      type: BackExtension.DTOs.WriteErrorStatusDTO
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub WriteErrorStatus(poDbCommand As DbCommand, poParameter As WriteErrorStatusDTO)
+  overload: BackExtension.DbExtension.WriteErrorStatus*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BackExtension.DbExtension.GetUploadErrorStatus(DbCommand,BackExtension.DTOs.GetUploadErrorStatusDTO)
+  commentId: M:BackExtension.DbExtension.GetUploadErrorStatus(DbCommand,BackExtension.DTOs.GetUploadErrorStatusDTO)
+  id: GetUploadErrorStatus(DbCommand,BackExtension.DTOs.GetUploadErrorStatusDTO)
+  isExtensionMethod: true
+  parent: BackExtension.DbExtension
+  langs:
+  - csharp
+  - vb
+  name: GetUploadErrorStatus(DbCommand, GetUploadErrorStatusDTO)
+  nameWithType: DbExtension.GetUploadErrorStatus(DbCommand, GetUploadErrorStatusDTO)
+  fullName: BackExtension.DbExtension.GetUploadErrorStatus(DbCommand, BackExtension.DTOs.GetUploadErrorStatusDTO)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/DbExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetUploadErrorStatus
+    path: Library Back/BackExtension/DbExtension.cs
+    startLine: 58
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: public static void GetUploadErrorStatus(this DbCommand poDbCommand, GetUploadErrorStatusDTO poParameter)
+    parameters:
+    - id: poDbCommand
+      type: DbCommand
+    - id: poParameter
+      type: BackExtension.DTOs.GetUploadErrorStatusDTO
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub GetUploadErrorStatus(poDbCommand As DbCommand, poParameter As GetUploadErrorStatusDTO)
+  overload: BackExtension.DbExtension.GetUploadErrorStatus*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: BackExtension
+  commentId: N:BackExtension
+  name: BackExtension
+  nameWithType: BackExtension
+  fullName: BackExtension
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BackExtension.DbExtension.AddDbCommandParameter*
+  commentId: Overload:BackExtension.DbExtension.AddDbCommandParameter
+  name: AddDbCommandParameter
+  nameWithType: DbExtension.AddDbCommandParameter
+  fullName: BackExtension.DbExtension.AddDbCommandParameter
+- uid: DbCommand
+  isExternal: true
+  name: DbCommand
+  nameWithType: DbCommand
+  fullName: DbCommand
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DbType
+  commentId: '!:DbType'
+  isExternal: true
+  name: DbType
+  nameWithType: DbType
+  fullName: DbType
+- uid: System.Nullable{System.Object}
+  commentId: '!:System.Nullable{System.Object}'
+  definition: System.Nullable`1
+  name: Nullable<Object>
+  nameWithType: Nullable<Object>
+  fullName: System.Nullable<System.Object>
+  nameWithType.vb: Nullable(Of Object)
+  fullName.vb: System.Nullable(Of System.Object)
+  name.vb: Nullable(Of Object)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.DbExtension.CloseDbConnection*
+  commentId: Overload:BackExtension.DbExtension.CloseDbConnection
+  name: CloseDbConnection
+  nameWithType: DbExtension.CloseDbConnection
+  fullName: BackExtension.DbExtension.CloseDbConnection
+- uid: DbConnection
+  commentId: '!:DbConnection'
+  isExternal: true
+  name: DbConnection
+  nameWithType: DbConnection
+  fullName: DbConnection
+- uid: BackExtension.DbExtension.WriteUploadStatus*
+  commentId: Overload:BackExtension.DbExtension.WriteUploadStatus
+  name: WriteUploadStatus
+  nameWithType: DbExtension.WriteUploadStatus
+  fullName: BackExtension.DbExtension.WriteUploadStatus
+- uid: BackExtension.DTOs.WriteUploadStatusDTO
+  commentId: T:BackExtension.DTOs.WriteUploadStatusDTO
+  parent: BackExtension.DTOs
+  name: WriteUploadStatusDTO
+  nameWithType: WriteUploadStatusDTO
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO
+- uid: BackExtension.DTOs
+  commentId: N:BackExtension.DTOs
+  name: BackExtension.DTOs
+  nameWithType: BackExtension.DTOs
+  fullName: BackExtension.DTOs
+- uid: BackExtension.DbExtension.WriteErrorStatus*
+  commentId: Overload:BackExtension.DbExtension.WriteErrorStatus
+  name: WriteErrorStatus
+  nameWithType: DbExtension.WriteErrorStatus
+  fullName: BackExtension.DbExtension.WriteErrorStatus
+- uid: BackExtension.DTOs.WriteErrorStatusDTO
+  commentId: T:BackExtension.DTOs.WriteErrorStatusDTO
+  parent: BackExtension.DTOs
+  name: WriteErrorStatusDTO
+  nameWithType: WriteErrorStatusDTO
+  fullName: BackExtension.DTOs.WriteErrorStatusDTO
+- uid: BackExtension.DbExtension.GetUploadErrorStatus*
+  commentId: Overload:BackExtension.DbExtension.GetUploadErrorStatus
+  name: GetUploadErrorStatus
+  nameWithType: DbExtension.GetUploadErrorStatus
+  fullName: BackExtension.DbExtension.GetUploadErrorStatus
+- uid: BackExtension.DTOs.GetUploadErrorStatusDTO
+  commentId: T:BackExtension.DTOs.GetUploadErrorStatusDTO
+  parent: BackExtension.DTOs
+  name: GetUploadErrorStatusDTO
+  nameWithType: GetUploadErrorStatusDTO
+  fullName: BackExtension.DTOs.GetUploadErrorStatusDTO

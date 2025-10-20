@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.eUploadType
+  commentId: T:R_CommonFrontBackAPI.eUploadType
+  id: eUploadType
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.eUploadType.AttachFile
+  - R_CommonFrontBackAPI.eUploadType.BatchProcess
+  langs:
+  - csharp
+  - vb
+  name: eUploadType
+  nameWithType: eUploadType
+  fullName: R_CommonFrontBackAPI.eUploadType
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: eUploadType
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+    startLine: 3
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public enum eUploadType : int'
+    content.vb: Public Enum eUploadType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_CommonFrontBackAPI.eUploadType.AttachFile
+  commentId: F:R_CommonFrontBackAPI.eUploadType.AttachFile
+  id: AttachFile
+  parent: R_CommonFrontBackAPI.eUploadType
+  langs:
+  - csharp
+  - vb
+  name: AttachFile
+  nameWithType: eUploadType.AttachFile
+  fullName: R_CommonFrontBackAPI.eUploadType.AttachFile
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: AttachFile
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: AttachFile = 0
+    return:
+      type: R_CommonFrontBackAPI.eUploadType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.eUploadType.BatchProcess
+  commentId: F:R_CommonFrontBackAPI.eUploadType.BatchProcess
+  id: BatchProcess
+  parent: R_CommonFrontBackAPI.eUploadType
+  langs:
+  - csharp
+  - vb
+  name: BatchProcess
+  nameWithType: eUploadType.BatchProcess
+  fullName: R_CommonFrontBackAPI.eUploadType.BatchProcess
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: BatchProcess
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_UploadAndProcessKey.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: BatchProcess = 1
+    return:
+      type: R_CommonFrontBackAPI.eUploadType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_CommonFrontBackAPI.eUploadType
+  commentId: T:R_CommonFrontBackAPI.eUploadType
+  parent: R_CommonFrontBackAPI
+  name: eUploadType
+  nameWithType: eUploadType
+  fullName: R_CommonFrontBackAPI.eUploadType

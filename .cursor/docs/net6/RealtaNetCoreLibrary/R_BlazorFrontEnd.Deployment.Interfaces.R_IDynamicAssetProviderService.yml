@@ -1,0 +1,325 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService
+  commentId: T:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService
+  id: R_IDynamicAssetProviderService
+  parent: R_BlazorFrontEnd.Deployment.Interfaces
+  children:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(System.String)
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(System.String)
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
+  langs:
+  - csharp
+  - vb
+  name: R_IDynamicAssetProviderService
+  nameWithType: R_IDynamicAssetProviderService
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IDynamicAssetProviderService
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: public interface R_IDynamicAssetProviderService
+    content.vb: Public Interface R_IDynamicAssetProviderService
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
+  id: InitAssetAsync
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService
+  langs:
+  - csharp
+  - vb
+  name: InitAssetAsync()
+  nameWithType: R_IDynamicAssetProviderService.InitAssetAsync()
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: InitAssetAsync
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: Task InitAssetAsync()
+    return:
+      type: Task
+    content.vb: Function InitAssetAsync As Task
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync*
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(System.String)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(System.String)
+  id: GetAssetAsync(System.String)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService
+  langs:
+  - csharp
+  - vb
+  name: GetAssetAsync(String)
+  nameWithType: R_IDynamicAssetProviderService.GetAssetAsync(String)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetAssetAsync
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: Task<byte[]> GetAssetAsync(string assetName)
+    parameters:
+    - id: assetName
+      type: System.String
+    return:
+      type: Task{System.Byte[]}
+    content.vb: Function GetAssetAsync(assetName As String) As Task(Of Byte())
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync*
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(System.String)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(System.String)
+  id: GetAssetNameAsync(System.String)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService
+  langs:
+  - csharp
+  - vb
+  name: GetAssetNameAsync(String)
+  nameWithType: R_IDynamicAssetProviderService.GetAssetNameAsync(String)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetAssetNameAsync
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IDynamicAssetProviderService.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: string GetAssetNameAsync(string assetName)
+    parameters:
+    - id: assetName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function GetAssetNameAsync(assetName As String) As String
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync*
+references:
+- uid: R_BlazorFrontEnd.Deployment.Interfaces
+  commentId: N:R_BlazorFrontEnd.Deployment.Interfaces
+  name: R_BlazorFrontEnd.Deployment.Interfaces
+  nameWithType: R_BlazorFrontEnd.Deployment.Interfaces
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
+  name: InitAssetAsync
+  nameWithType: R_IDynamicAssetProviderService.InitAssetAsync
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync
+  name: GetAssetAsync
+  nameWithType: R_IDynamicAssetProviderService.GetAssetAsync
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{System.Byte[]}
+  commentId: '!:Task{System.Byte[]}'
+  definition: Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync
+  name: GetAssetNameAsync
+  nameWithType: R_IDynamicAssetProviderService.GetAssetNameAsync
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync

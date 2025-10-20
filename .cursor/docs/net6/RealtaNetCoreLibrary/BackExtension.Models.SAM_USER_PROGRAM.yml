@@ -1,0 +1,1041 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.SAM_USER_PROGRAM
+  commentId: T:BackExtension.Models.SAM_USER_PROGRAM
+  id: SAM_USER_PROGRAM
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID
+  - BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY
+  - BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID
+  - BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+  - BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID
+  - BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME
+  - BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE
+  - BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY
+  - BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID
+  - BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE
+  - BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE
+  - BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX
+  - BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX
+  - BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX
+  - BackExtension.Models.SAM_USER_PROGRAM.ILEVEL
+  - BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX
+  - BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE
+  langs:
+  - csharp
+  - vb
+  name: SAM_USER_PROGRAM
+  nameWithType: SAM_USER_PROGRAM
+  fullName: BackExtension.Models.SAM_USER_PROGRAM
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SAM_USER_PROGRAM
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class SAM_USER_PROGRAM : object'
+    content.vb: >-
+      Public Class SAM_USER_PROGRAM
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: SAM_USER_PROGRAM.CCOMPANY_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID
+  id: CUSER_ID
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CUSER_ID
+  nameWithType: SAM_USER_PROGRAM.CUSER_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_ID
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CUSER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CUSER_ID As String
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID
+  id: CMENU_ID
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CMENU_ID
+  nameWithType: SAM_USER_PROGRAM.CMENU_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CMENU_ID
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CMENU_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CMENU_ID As String
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE
+  id: CSUB_MENU_TYPE
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CSUB_MENU_TYPE
+  nameWithType: SAM_USER_PROGRAM.CSUB_MENU_TYPE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSUB_MENU_TYPE
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CSUB_MENU_TYPE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CSUB_MENU_TYPE As String?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID
+  id: CSUB_MENU_ID
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CSUB_MENU_ID
+  nameWithType: SAM_USER_PROGRAM.CSUB_MENU_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSUB_MENU_ID
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 10
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CSUB_MENU_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSUB_MENU_ID As String
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX
+  id: IGROUP_INDEX
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: IGROUP_INDEX
+  nameWithType: SAM_USER_PROGRAM.IGROUP_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IGROUP_INDEX
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 11
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? IGROUP_INDEX { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property IGROUP_INDEX As Integer?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX
+  id: IROW_INDEX
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: IROW_INDEX
+  nameWithType: SAM_USER_PROGRAM.IROW_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IROW_INDEX
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 12
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? IROW_INDEX { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property IROW_INDEX As Integer?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX
+  id: ICOLUMN_INDEX
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: ICOLUMN_INDEX
+  nameWithType: SAM_USER_PROGRAM.ICOLUMN_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ICOLUMN_INDEX
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 13
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? ICOLUMN_INDEX { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property ICOLUMN_INDEX As Integer?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE
+  id: LFAVORITE
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: LFAVORITE
+  nameWithType: SAM_USER_PROGRAM.LFAVORITE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LFAVORITE
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 14
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool? LFAVORITE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property LFAVORITE As Boolean?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX
+  id: IFAVORITE_INDEX
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: IFAVORITE_INDEX
+  nameWithType: SAM_USER_PROGRAM.IFAVORITE_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IFAVORITE_INDEX
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 15
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? IFAVORITE_INDEX { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property IFAVORITE_INDEX As Integer?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+  id: CPARENT_SUB_MENU_ID
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CPARENT_SUB_MENU_ID
+  nameWithType: SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CPARENT_SUB_MENU_ID
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 16
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CPARENT_SUB_MENU_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CPARENT_SUB_MENU_ID As String
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.ILEVEL
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.ILEVEL
+  id: ILEVEL
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: ILEVEL
+  nameWithType: SAM_USER_PROGRAM.ILEVEL
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.ILEVEL
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ILEVEL
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 17
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? ILEVEL { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property ILEVEL As Integer?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.ILEVEL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY
+  id: CUPDATE_BY
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CUPDATE_BY
+  nameWithType: SAM_USER_PROGRAM.CUPDATE_BY
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUPDATE_BY
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 18
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CUPDATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CUPDATE_BY As String?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE
+  id: DUPDATE_DATE
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: DUPDATE_DATE
+  nameWithType: SAM_USER_PROGRAM.DUPDATE_DATE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DUPDATE_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 19
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DUPDATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DUPDATE_DATE As DateTime?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY
+  id: CCREATE_BY
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CCREATE_BY
+  nameWithType: SAM_USER_PROGRAM.CCREATE_BY
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCREATE_BY
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 20
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CCREATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CCREATE_BY As String?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE
+  id: DCREATE_DATE
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: DCREATE_DATE
+  nameWithType: SAM_USER_PROGRAM.DCREATE_DATE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DCREATE_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 21
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DCREATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DCREATE_DATE As DateTime?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME
+  commentId: P:BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME
+  id: CSUB_MENU_NAME
+  parent: BackExtension.Models.SAM_USER_PROGRAM
+  langs:
+  - csharp
+  - vb
+  name: CSUB_MENU_NAME
+  nameWithType: SAM_USER_PROGRAM.CSUB_MENU_NAME
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSUB_MENU_NAME
+    path: Library Back/BackExtension/Models/SAM_USER_PROGRAM.CS
+    startLine: 22
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CSUB_MENU_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CSUB_MENU_NAME As String?
+  overload: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: SAM_USER_PROGRAM.CCOMPANY_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID
+  name: CUSER_ID
+  nameWithType: SAM_USER_PROGRAM.CUSER_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CUSER_ID
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID
+  name: CMENU_ID
+  nameWithType: SAM_USER_PROGRAM.CMENU_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CMENU_ID
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE
+  name: CSUB_MENU_TYPE
+  nameWithType: SAM_USER_PROGRAM.CSUB_MENU_TYPE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_TYPE
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID
+  name: CSUB_MENU_ID
+  nameWithType: SAM_USER_PROGRAM.CSUB_MENU_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_ID
+- uid: BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX
+  name: IGROUP_INDEX
+  nameWithType: SAM_USER_PROGRAM.IGROUP_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.IGROUP_INDEX
+- uid: System.Nullable{System.Int32}
+  commentId: '!:System.Nullable{System.Int32}'
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX
+  name: IROW_INDEX
+  nameWithType: SAM_USER_PROGRAM.IROW_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.IROW_INDEX
+- uid: BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX
+  name: ICOLUMN_INDEX
+  nameWithType: SAM_USER_PROGRAM.ICOLUMN_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.ICOLUMN_INDEX
+- uid: BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE
+  name: LFAVORITE
+  nameWithType: SAM_USER_PROGRAM.LFAVORITE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.LFAVORITE
+- uid: System.Nullable{System.Boolean}
+  commentId: '!:System.Nullable{System.Boolean}'
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX
+  name: IFAVORITE_INDEX
+  nameWithType: SAM_USER_PROGRAM.IFAVORITE_INDEX
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.IFAVORITE_INDEX
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+  name: CPARENT_SUB_MENU_ID
+  nameWithType: SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CPARENT_SUB_MENU_ID
+- uid: BackExtension.Models.SAM_USER_PROGRAM.ILEVEL*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.ILEVEL
+  name: ILEVEL
+  nameWithType: SAM_USER_PROGRAM.ILEVEL
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.ILEVEL
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY
+  name: CUPDATE_BY
+  nameWithType: SAM_USER_PROGRAM.CUPDATE_BY
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CUPDATE_BY
+- uid: BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE
+  name: DUPDATE_DATE
+  nameWithType: SAM_USER_PROGRAM.DUPDATE_DATE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.DUPDATE_DATE
+- uid: System.Nullable{DateTime}
+  commentId: '!:System.Nullable{DateTime}'
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY
+  name: CCREATE_BY
+  nameWithType: SAM_USER_PROGRAM.CCREATE_BY
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CCREATE_BY
+- uid: BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE
+  name: DCREATE_DATE
+  nameWithType: SAM_USER_PROGRAM.DCREATE_DATE
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.DCREATE_DATE
+- uid: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME*
+  commentId: Overload:BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME
+  name: CSUB_MENU_NAME
+  nameWithType: SAM_USER_PROGRAM.CSUB_MENU_NAME
+  fullName: BackExtension.Models.SAM_USER_PROGRAM.CSUB_MENU_NAME

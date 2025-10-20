@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ProcessorJob.R_IProcessJobBase`2
+  commentId: T:R_ProcessorJob.R_IProcessJobBase`2
+  id: R_IProcessJobBase`2
+  parent: R_ProcessorJob
+  children:
+  - R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+  langs:
+  - csharp
+  - vb
+  name: R_IProcessJobBase<T, E>
+  nameWithType: R_IProcessJobBase<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IProcessJobBase
+    path: Microservices/R_ProcessorJob/R_IProcessJobBase.cs
+    startLine: 7
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: public interface R_IProcessJobBase<T, E>
+    typeParameters:
+    - id: T
+    - id: E
+    content.vb: Public Interface R_IProcessJobBase(Of T, E)
+  nameWithType.vb: R_IProcessJobBase(Of T, E)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E)
+  name.vb: R_IProcessJobBase(Of T, E)
+- uid: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+  commentId: M:R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+  id: R_SingleProcessAsync(System.String,`0)
+  parent: R_ProcessorJob.R_IProcessJobBase`2
+  langs:
+  - csharp
+  - vb
+  name: R_SingleProcessAsync(String, T)
+  nameWithType: R_IProcessJobBase<T, E>.R_SingleProcessAsync(String, T)
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>.R_SingleProcessAsync(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobBase.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SingleProcessAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobBase.cs
+    startLine: 9
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: Task R_SingleProcessAsync(string poKey, T poParameter)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poParameter
+      type: '{T}'
+    return:
+      type: Task
+    content.vb: Function R_SingleProcessAsync(poKey As String, poParameter As T) As Task
+  overload: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync*
+  nameWithType.vb: R_IProcessJobBase(Of T, E).R_SingleProcessAsync(String, T)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E).R_SingleProcessAsync(System.String, T)
+references:
+- uid: R_ProcessorJob
+  commentId: N:R_ProcessorJob
+  name: R_ProcessorJob
+  nameWithType: R_ProcessorJob
+  fullName: R_ProcessorJob
+- uid: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync*
+  commentId: Overload:R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync
+  name: R_SingleProcessAsync
+  nameWithType: R_IProcessJobBase<T, E>.R_SingleProcessAsync
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>.R_SingleProcessAsync
+  nameWithType.vb: R_IProcessJobBase(Of T, E).R_SingleProcessAsync
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E).R_SingleProcessAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

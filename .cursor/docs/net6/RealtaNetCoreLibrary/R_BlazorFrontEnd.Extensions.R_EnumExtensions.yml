@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_EnumExtensions
+  id: R_EnumExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  children:
+  - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
+  - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
+  - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_EnumExtensions
+  nameWithType: R_EnumExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_EnumExtensions
+    path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Extensions
+  syntax:
+    content: 'public static class R_EnumExtensions : object'
+    content.vb: >-
+      Public Module R_EnumExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
+  id: ToDescription(Enum)
+  isExtensionMethod: true
+  parent: R_BlazorFrontEnd.Extensions.R_EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDescription(Enum)
+  nameWithType: R_EnumExtensions.ToDescription(Enum)
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ToDescription
+    path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Extensions
+  syntax:
+    content: public static string ToDescription(this Enum val)
+    parameters:
+    - id: val
+      type: Enum
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToDescription(val As  Enum) As String
+  overload: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum``1(System.String)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum``1(System.String)
+  id: ToEnum``1(System.String)
+  isExtensionMethod: true
+  parent: R_BlazorFrontEnd.Extensions.R_EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToEnum<T>(String)
+  nameWithType: R_EnumExtensions.ToEnum<T>(String)
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ToEnum
+    path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+    startLine: 21
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Extensions
+  syntax:
+    content: >-
+      public static T ToEnum<T>(this string description)
+          where T : struct, Enum
+    parameters:
+    - id: description
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToEnum(Of T As {Structure,  Enum})(description As String) As T
+  overload: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum*
+  nameWithType.vb: R_EnumExtensions.ToEnum(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum(Of T)(System.String)
+  name.vb: ToEnum(Of T)(String)
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
+  commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
+  id: ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
+  isExtensionMethod: true
+  parent: R_BlazorFrontEnd.Extensions.R_EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDescriptions<TEnum>(Nullable<IEnumerable<TEnum>>, Nullable<String>)
+  nameWithType: R_EnumExtensions.ToDescriptions<TEnum>(Nullable<IEnumerable<TEnum>>, Nullable<String>)
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions<TEnum>(System.Nullable<IEnumerable<TEnum>>, System.Nullable<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ToDescriptions
+    path: Library/R_BlazorFrontEnd/Extensions/R_EnumExtensions.cs
+    startLine: 36
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Extensions
+  syntax:
+    content: >-
+      public static string ToDescriptions<TEnum>(this IEnumerable<TEnum>? enums, string? separator = null)
+          where TEnum : Enum
+    parameters:
+    - id: enums
+      type: System.Nullable{IEnumerable{{TEnum}}}
+    - id: separator
+      type: System.Nullable{System.String}
+    typeParameters:
+    - id: TEnum
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToDescriptions(Of TEnum As  Enum)(enums As IEnumerable(Of TEnum)?, separator As String? = Nothing) As String
+  overload: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions*
+  nameWithType.vb: R_EnumExtensions.ToDescriptions(Of TEnum)(Nullable(Of IEnumerable(Of TEnum)), Nullable(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions(Of TEnum)(System.Nullable(Of IEnumerable(Of TEnum)), System.Nullable(Of System.String))
+  name.vb: ToDescriptions(Of TEnum)(Nullable(Of IEnumerable(Of TEnum)), Nullable(Of String))
+references:
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription*
+  commentId: Overload:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription
+  name: ToDescription
+  nameWithType: R_EnumExtensions.ToDescription
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription
+- uid: Enum
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: Enum
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum*
+  commentId: Overload:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum
+  name: ToEnum
+  nameWithType: R_EnumExtensions.ToEnum
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions*
+  commentId: Overload:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions
+  name: ToDescriptions
+  nameWithType: R_EnumExtensions.ToDescriptions
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions
+- uid: System.Nullable{IEnumerable{{TEnum}}}
+  commentId: '!:System.Nullable{IEnumerable{``0}}'
+  definition: System.Nullable`1
+  name: Nullable<IEnumerable<TEnum>>
+  nameWithType: Nullable<IEnumerable<TEnum>>
+  fullName: System.Nullable<IEnumerable<TEnum>>
+  nameWithType.vb: Nullable(Of IEnumerable(Of TEnum))
+  fullName.vb: System.Nullable(Of IEnumerable(Of TEnum))
+  name.vb: Nullable(Of IEnumerable(Of TEnum))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEnum
+    nameWithType: TEnum
+    fullName: TEnum
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEnum
+    nameWithType: TEnum
+    fullName: TEnum
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

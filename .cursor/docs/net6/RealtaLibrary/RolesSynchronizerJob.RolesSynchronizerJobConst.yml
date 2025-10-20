@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: RolesSynchronizerJob.RolesSynchronizerJobConst
+  commentId: T:RolesSynchronizerJob.RolesSynchronizerJobConst
+  id: RolesSynchronizerJobConst
+  parent: RolesSynchronizerJob
+  children:
+  - RolesSynchronizerJob.RolesSynchronizerJobConst.FOR_APPLICATION_ID
+  - RolesSynchronizerJob.RolesSynchronizerJobConst.SETTING_NAME
+  langs:
+  - csharp
+  - vb
+  name: RolesSynchronizerJobConst
+  nameWithType: RolesSynchronizerJobConst
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobConst
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: RolesSynchronizerJobConst
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobConst.cs
+    startLine: 4
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: 'public class RolesSynchronizerJobConst : R_SchedulerSettingConstant'
+    content.vb: >-
+      Public Class RolesSynchronizerJobConst
+          Inherits R_SchedulerSettingConstant
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RolesSynchronizerJob.RolesSynchronizerJobConst.SETTING_NAME
+  commentId: F:RolesSynchronizerJob.RolesSynchronizerJobConst.SETTING_NAME
+  id: SETTING_NAME
+  parent: RolesSynchronizerJob.RolesSynchronizerJobConst
+  langs:
+  - csharp
+  - vb
+  name: SETTING_NAME
+  nameWithType: RolesSynchronizerJobConst.SETTING_NAME
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobConst.SETTING_NAME
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SETTING_NAME
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobConst.cs
+    startLine: 6
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public const string SETTING_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const SETTING_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: RolesSynchronizerJob.RolesSynchronizerJobConst.FOR_APPLICATION_ID
+  commentId: F:RolesSynchronizerJob.RolesSynchronizerJobConst.FOR_APPLICATION_ID
+  id: FOR_APPLICATION_ID
+  parent: RolesSynchronizerJob.RolesSynchronizerJobConst
+  langs:
+  - csharp
+  - vb
+  name: FOR_APPLICATION_ID
+  nameWithType: RolesSynchronizerJobConst.FOR_APPLICATION_ID
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobConst.FOR_APPLICATION_ID
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FOR_APPLICATION_ID
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobConst.cs
+    startLine: 7
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public const string FOR_APPLICATION_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const FOR_APPLICATION_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: RolesSynchronizerJob
+  commentId: N:RolesSynchronizerJob
+  name: RolesSynchronizerJob
+  nameWithType: RolesSynchronizerJob
+  fullName: RolesSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

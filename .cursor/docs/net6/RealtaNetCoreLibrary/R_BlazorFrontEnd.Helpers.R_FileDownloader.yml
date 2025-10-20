@@ -1,0 +1,542 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FileDownloader
+  id: R_FileDownloader
+  parent: R_BlazorFrontEnd.Helpers
+  children:
+  - R_BlazorFrontEnd.Helpers.R_FileDownloader.#ctor(System.Nullable{HttpClient})
+  - R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose
+  - R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync(System.String,System.String,Uri)
+  - R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  langs:
+  - csharp
+  - vb
+  name: R_FileDownloader
+  nameWithType: R_FileDownloader
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FileDownloader
+    path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: 'public class R_FileDownloader : object, R_IFileDownloader, IDisposable'
+    content.vb: >-
+      Public Class R_FileDownloader
+          Inherits Object
+          Implements R_IFileDownloader, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  - IDisposable
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.#ctor(System.Nullable{HttpClient})
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FileDownloader.#ctor(System.Nullable{HttpClient})
+  id: '#ctor(System.Nullable{HttpClient})'
+  parent: R_BlazorFrontEnd.Helpers.R_FileDownloader
+  langs:
+  - csharp
+  - vb
+  name: R_FileDownloader(Nullable<HttpClient>)
+  nameWithType: R_FileDownloader.R_FileDownloader(Nullable<HttpClient>)
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_FileDownloader(System.Nullable<HttpClient>)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public R_FileDownloader(HttpClient? httpClient = null)
+    parameters:
+    - id: httpClient
+      type: System.Nullable{HttpClient}
+    content.vb: Public Sub New(httpClient As HttpClient? = Nothing)
+  overload: R_BlazorFrontEnd.Helpers.R_FileDownloader.#ctor*
+  nameWithType.vb: R_FileDownloader.R_FileDownloader(Nullable(Of HttpClient))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_FileDownloader(System.Nullable(Of HttpClient))
+  name.vb: R_FileDownloader(Nullable(Of HttpClient))
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync(System.String,System.String,Uri)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync(System.String,System.String,Uri)
+  id: R_DownloadFileAsync(System.String,System.String,Uri)
+  parent: R_BlazorFrontEnd.Helpers.R_FileDownloader
+  langs:
+  - csharp
+  - vb
+  name: R_DownloadFileAsync(String, String, Uri)
+  nameWithType: R_FileDownloader.R_DownloadFileAsync(String, String, Uri)
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync(System.String, System.String, Uri)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_DownloadFileAsync
+    path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+    startLine: 24
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  summary: "\nDownloads an image asynchronously from the <code data-dev-comment-type=\"paramref\" class=\"paramref\">uri</code> and places it in the specified <code data-dev-comment-type=\"paramref\" class=\"paramref\">directoryPath</code> with the specified <code data-dev-comment-type=\"paramref\" class=\"paramref\">fileName</code>.\n"
+  example: []
+  syntax:
+    content: public Task R_DownloadFileAsync(string directoryPath, string fileName, Uri uri)
+    parameters:
+    - id: directoryPath
+      type: System.String
+      description: The relative or absolute path to the directory to place the image in.
+    - id: fileName
+      type: System.String
+      description: The name of the file without the file extension.
+    - id: uri
+      type: Uri
+      description: The URI for the image to download.
+    return:
+      type: Task
+    content.vb: Public Function R_DownloadFileAsync(directoryPath As String, fileName As String, uri As Uri) As Task
+  overload: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  id: R_GetByteFromFileUrlAsync(Uri)
+  parent: R_BlazorFrontEnd.Helpers.R_FileDownloader
+  langs:
+  - csharp
+  - vb
+  name: R_GetByteFromFileUrlAsync(Uri)
+  nameWithType: R_FileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetByteFromFileUrlAsync
+    path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+    startLine: 41
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public Task<byte[]> R_GetByteFromFileUrlAsync(Uri uri)
+    parameters:
+    - id: uri
+      type: Uri
+    return:
+      type: Task{System.Byte[]}
+    content.vb: Public Function R_GetByteFromFileUrlAsync(uri As Uri) As Task(Of Byte())
+  overload: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync*
+  implements:
+  - R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose
+  id: Dispose
+  parent: R_BlazorFrontEnd.Helpers.R_FileDownloader
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: R_FileDownloader.Dispose()
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Dispose
+    path: Library/R_BlazorFrontEnd/Helpers/R_FileDownloader.cs
+    startLine: 48
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  parent: R_BlazorFrontEnd.Interfaces
+  name: R_IFileDownloader
+  nameWithType: R_IFileDownloader
+  fullName: R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Interfaces
+  commentId: N:R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  nameWithType: R_BlazorFrontEnd.Interfaces
+  fullName: R_BlazorFrontEnd.Interfaces
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FileDownloader.#ctor
+  name: R_FileDownloader
+  nameWithType: R_FileDownloader.R_FileDownloader
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_FileDownloader
+- uid: System.Nullable{HttpClient}
+  commentId: '!:System.Nullable{HttpClient}'
+  definition: System.Nullable`1
+  name: Nullable<HttpClient>
+  nameWithType: Nullable<HttpClient>
+  fullName: System.Nullable<HttpClient>
+  nameWithType.vb: Nullable(Of HttpClient)
+  fullName.vb: System.Nullable(Of HttpClient)
+  name.vb: Nullable(Of HttpClient)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HttpClient
+    name: HttpClient
+    nameWithType: HttpClient
+    fullName: HttpClient
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HttpClient
+    name: HttpClient
+    nameWithType: HttpClient
+    fullName: HttpClient
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync
+  name: R_DownloadFileAsync
+  nameWithType: R_FileDownloader.R_DownloadFileAsync
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_DownloadFileAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync
+  name: R_GetByteFromFileUrlAsync
+  nameWithType: R_FileDownloader.R_GetByteFromFileUrlAsync
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.R_GetByteFromFileUrlAsync
+- uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  parent: R_BlazorFrontEnd.Interfaces.R_IFileDownloader
+  isExternal: true
+  name: R_GetByteFromFileUrlAsync(Uri)
+  nameWithType: R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+    name: R_GetByteFromFileUrlAsync
+    nameWithType: R_IFileDownloader.R_GetByteFromFileUrlAsync
+    fullName: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync(Uri)
+    name: R_GetByteFromFileUrlAsync
+    nameWithType: R_IFileDownloader.R_GetByteFromFileUrlAsync
+    fullName: R_BlazorFrontEnd.Interfaces.R_IFileDownloader.R_GetByteFromFileUrlAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{System.Byte[]}
+  commentId: '!:Task{System.Byte[]}'
+  definition: Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose
+  name: Dispose
+  nameWithType: R_FileDownloader.Dispose
+  fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader.Dispose

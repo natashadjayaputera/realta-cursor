@@ -1,0 +1,428 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient
+  commentId: T:R_EmailEngineFront.R_EmailEngineServiceClient
+  id: R_EmailEngineServiceClient
+  parent: R_EmailEngineFront
+  children:
+  - R_EmailEngineFront.R_EmailEngineServiceClient.#ctor(System.String,System.String,System.Boolean,System.Boolean)
+  - R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail(R_EmailEngineFront.R_EmailEngineFrontPar)
+  - R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  - R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineServiceClient
+  nameWithType: R_EmailEngineServiceClient
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineServiceClient
+    path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+    startLine: 11
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: 'public class R_EmailEngineServiceClient : object, R_IServiceEmailEngine'
+    content.vb: >-
+      Public Class R_EmailEngineServiceClient
+          Inherits Object
+          Implements R_IServiceEmailEngine
+  inheritance:
+  - System.Object
+  implements:
+  - R_CommonFrontBackAPI.R_IServiceEmailEngine
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.#ctor(System.String,System.String,System.Boolean,System.Boolean)
+  commentId: M:R_EmailEngineFront.R_EmailEngineServiceClient.#ctor(System.String,System.String,System.Boolean,System.Boolean)
+  id: '#ctor(System.String,System.String,System.Boolean,System.Boolean)'
+  parent: R_EmailEngineFront.R_EmailEngineServiceClient
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineServiceClient(String, String, Boolean, Boolean)
+  nameWithType: R_EmailEngineServiceClient.R_EmailEngineServiceClient(String, String, Boolean, Boolean)
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_EmailEngineServiceClient(System.String, System.String, System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+    startLine: 24
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public R_EmailEngineServiceClient(string pcHttpClientName = null, string pcRequestServiceEndPoint = null, bool plSendWithContext = true, bool plSendWithToken = true)
+    parameters:
+    - id: pcHttpClientName
+      type: System.String
+    - id: pcRequestServiceEndPoint
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plSendWithToken
+      type: System.Boolean
+    content.vb: Public Sub New(pcHttpClientName As String = Nothing, pcRequestServiceEndPoint As String = Nothing, plSendWithContext As Boolean = True, plSendWithToken As Boolean = True)
+  overload: R_EmailEngineFront.R_EmailEngineServiceClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail(R_EmailEngineFront.R_EmailEngineFrontPar)
+  commentId: M:R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail(R_EmailEngineFront.R_EmailEngineFrontPar)
+  id: R_SaveEmail(R_EmailEngineFront.R_EmailEngineFrontPar)
+  parent: R_EmailEngineFront.R_EmailEngineServiceClient
+  langs:
+  - csharp
+  - vb
+  name: R_SaveEmail(R_EmailEngineFrontPar)
+  nameWithType: R_EmailEngineServiceClient.R_SaveEmail(R_EmailEngineFrontPar)
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail(R_EmailEngineFront.R_EmailEngineFrontPar)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SaveEmail
+    path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+    startLine: 36
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public Task<string> R_SaveEmail(R_EmailEngineFrontPar poEmailPar)
+    parameters:
+    - id: poEmailPar
+      type: R_EmailEngineFront.R_EmailEngineFrontPar
+    return:
+      type: Task{System.String}
+    content.vb: Public Function R_SaveEmail(poEmailPar As R_EmailEngineFrontPar) As Task(Of String)
+  overload: R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  commentId: M:R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  id: R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  parent: R_EmailEngineFront.R_EmailEngineServiceClient
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  nameWithType: R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceEmailEngineLoadData
+    path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+    startLine: 159
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public R_ServiceEmailEngineLoadDataResultDTO R_ServiceEmailEngineLoadData(R_EmailEngineDataPar poData)
+    parameters:
+    - id: poData
+      type: R_CommonFrontBackAPI.R_EmailEngineDataPar
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+    content.vb: Public Function R_ServiceEmailEngineLoadData(poData As R_EmailEngineDataPar) As R_ServiceEmailEngineLoadDataResultDTO
+  overload: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData*
+  implements:
+  - R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  commentId: M:R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  id: R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  parent: R_EmailEngineFront.R_EmailEngineServiceClient
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  nameWithType: R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceEmailEngineProcessData
+    path: Microservices/R_EmailEngineFront/R_EmailEngineServiceClient.cs
+    startLine: 186
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public R_ServiceEmailEngineProcessDataResultDTO R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar podata)
+    parameters:
+    - id: podata
+      type: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+    content.vb: Public Function R_ServiceEmailEngineProcessData(podata As R_EmailEngineCommandPar) As R_ServiceEmailEngineProcessDataResultDTO
+  overload: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData*
+  implements:
+  - R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngineFront
+  commentId: N:R_EmailEngineFront
+  name: R_EmailEngineFront
+  nameWithType: R_EmailEngineFront
+  fullName: R_EmailEngineFront
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  commentId: T:R_CommonFrontBackAPI.R_IServiceEmailEngine
+  parent: R_CommonFrontBackAPI
+  name: R_IServiceEmailEngine
+  nameWithType: R_IServiceEmailEngine
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.#ctor*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineServiceClient.#ctor
+  name: R_EmailEngineServiceClient
+  nameWithType: R_EmailEngineServiceClient.R_EmailEngineServiceClient
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_EmailEngineServiceClient
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail
+  name: R_SaveEmail
+  nameWithType: R_EmailEngineServiceClient.R_SaveEmail
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_SaveEmail
+- uid: R_EmailEngineFront.R_EmailEngineFrontPar
+  commentId: T:R_EmailEngineFront.R_EmailEngineFrontPar
+  parent: R_EmailEngineFront
+  name: R_EmailEngineFrontPar
+  nameWithType: R_EmailEngineFrontPar
+  fullName: R_EmailEngineFront.R_EmailEngineFrontPar
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData
+  name: R_ServiceEmailEngineLoadData
+  nameWithType: R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineLoadData
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  parent: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  name: R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+    name: R_ServiceEmailEngineLoadData
+    nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineLoadData
+    fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+    name: R_EmailEngineDataPar
+    nameWithType: R_EmailEngineDataPar
+    fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+    name: R_ServiceEmailEngineLoadData
+    nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineLoadData
+    fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+    name: R_EmailEngineDataPar
+    nameWithType: R_EmailEngineDataPar
+    fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineDataPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineDataPar
+  nameWithType: R_EmailEngineDataPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceEmailEngineLoadDataResultDTO
+  nameWithType: R_ServiceEmailEngineLoadDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+- uid: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData
+  name: R_ServiceEmailEngineProcessData
+  nameWithType: R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData
+  fullName: R_EmailEngineFront.R_EmailEngineServiceClient.R_ServiceEmailEngineProcessData
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  parent: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  name: R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+    name: R_ServiceEmailEngineProcessData
+    nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineProcessData
+    fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+    name: R_EmailEngineCommandPar
+    nameWithType: R_EmailEngineCommandPar
+    fullName: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+    name: R_ServiceEmailEngineProcessData
+    nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineProcessData
+    fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+    name: R_EmailEngineCommandPar
+    nameWithType: R_EmailEngineCommandPar
+    fullName: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineCommandPar
+  nameWithType: R_EmailEngineCommandPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceEmailEngineProcessDataResultDTO
+  nameWithType: R_ServiceEmailEngineProcessDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO

@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: PrintMessage.PrintMessageSetting
+  commentId: T:PrintMessage.PrintMessageSetting
+  id: PrintMessageSetting
+  parent: PrintMessage
+  children:
+  - PrintMessage.PrintMessageSetting.CoId
+  langs:
+  - csharp
+  - vb
+  name: PrintMessageSetting
+  nameWithType: PrintMessageSetting
+  fullName: PrintMessage.PrintMessageSetting
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PrintMessageSetting
+    path: Engine/SampleJob/PrintMessage/PrintMessageSetting.cs
+    startLine: 9
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: 'public class PrintMessageSetting : R_SchedulerSettingDTO'
+    content.vb: >-
+      Public Class PrintMessageSetting
+          Inherits R_SchedulerSettingDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PrintMessage.PrintMessageSetting.CoId
+  commentId: P:PrintMessage.PrintMessageSetting.CoId
+  id: CoId
+  parent: PrintMessage.PrintMessageSetting
+  langs:
+  - csharp
+  - vb
+  name: CoId
+  nameWithType: PrintMessageSetting.CoId
+  fullName: PrintMessage.PrintMessageSetting.CoId
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CoId
+    path: Engine/SampleJob/PrintMessage/PrintMessageSetting.cs
+    startLine: 11
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: public string CoId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CoId As String
+  overload: PrintMessage.PrintMessageSetting.CoId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: PrintMessage
+  commentId: N:PrintMessage
+  name: PrintMessage
+  nameWithType: PrintMessage
+  fullName: PrintMessage
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PrintMessage.PrintMessageSetting.CoId*
+  commentId: Overload:PrintMessage.PrintMessageSetting.CoId
+  name: CoId
+  nameWithType: PrintMessageSetting.CoId
+  fullName: PrintMessage.PrintMessageSetting.CoId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

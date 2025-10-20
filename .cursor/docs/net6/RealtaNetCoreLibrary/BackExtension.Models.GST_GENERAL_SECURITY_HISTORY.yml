@@ -1,0 +1,343 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY
+  commentId: T:BackExtension.Models.GST_GENERAL_SECURITY_HISTORY
+  id: GST_GENERAL_SECURITY_HISTORY
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+  - BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+  - BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+  langs:
+  - csharp
+  - vb
+  name: GST_GENERAL_SECURITY_HISTORY
+  nameWithType: GST_GENERAL_SECURITY_HISTORY
+  fullName: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GST_GENERAL_SECURITY_HISTORY
+    path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class GST_GENERAL_SECURITY_HISTORY : object'
+    content.vb: >-
+      Public Class GST_GENERAL_SECURITY_HISTORY
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+  commentId: P:BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+  id: CUSER_ID
+  parent: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY
+  langs:
+  - csharp
+  - vb
+  name: CUSER_ID
+  nameWithType: GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+  fullName: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_ID
+    path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CUSER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CUSER_ID As String
+  overload: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+  commentId: P:BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+  id: DCREATE_DATE
+  parent: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY
+  langs:
+  - csharp
+  - vb
+  name: DCREATE_DATE
+  nameWithType: GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+  fullName: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DCREATE_DATE
+    path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime DCREATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property DCREATE_DATE As DateTime
+  overload: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+  commentId: P:BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+  id: CUSER_PASSWORD
+  parent: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY
+  langs:
+  - csharp
+  - vb
+  name: CUSER_PASSWORD
+  nameWithType: GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+  fullName: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_PASSWORD
+    path: Library Back/BackExtension/Models/GST_GENERAL_SECURITY_HISTORY.cs
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CUSER_PASSWORD { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CUSER_PASSWORD As String?
+  overload: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID*
+  commentId: Overload:BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+  name: CUSER_ID
+  nameWithType: GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+  fullName: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE*
+  commentId: Overload:BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+  name: DCREATE_DATE
+  nameWithType: GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+  fullName: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.DCREATE_DATE
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD*
+  commentId: Overload:BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+  name: CUSER_PASSWORD
+  nameWithType: GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+  fullName: BackExtension.Models.GST_GENERAL_SECURITY_HISTORY.CUSER_PASSWORD
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

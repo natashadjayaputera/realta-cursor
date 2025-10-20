@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  commentId: T:R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  id: R_DataColumnMapping
+  parent: R_BlazorFrontEnd.Excel.Mappings
+  children:
+  - R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.#ctor(System.Int32,System.String)
+  - R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName
+  - R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index
+  langs:
+  - csharp
+  - vb
+  name: R_DataColumnMapping
+  nameWithType: R_DataColumnMapping
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_DataColumnMapping
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: 'public class R_DataColumnMapping : object'
+    content.vb: >-
+      Public Class R_DataColumnMapping
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index
+  commentId: P:R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index
+  id: Index
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: R_DataColumnMapping.Index
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Index
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public int Index { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Index As Integer
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName
+  commentId: P:R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName
+  id: DataColumnName
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  langs:
+  - csharp
+  - vb
+  name: DataColumnName
+  nameWithType: R_DataColumnMapping.DataColumnName
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DataColumnName
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public string DataColumnName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataColumnName As String
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.#ctor(System.Int32,System.String)
+  commentId: M:R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.#ctor(System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String)'
+  parent: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  langs:
+  - csharp
+  - vb
+  name: R_DataColumnMapping(Int32, String)
+  nameWithType: R_DataColumnMapping.R_DataColumnMapping(Int32, String)
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.R_DataColumnMapping(System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd/Excel/Mappings/R_DataColumnMapping.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Excel.Mappings
+  syntax:
+    content: public R_DataColumnMapping(int piIndex, string columnName)
+    parameters:
+    - id: piIndex
+      type: System.Int32
+    - id: columnName
+      type: System.String
+    content.vb: Public Sub New(piIndex As Integer, columnName As String)
+  overload: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorFrontEnd.Excel.Mappings
+  commentId: N:R_BlazorFrontEnd.Excel.Mappings
+  name: R_BlazorFrontEnd.Excel.Mappings
+  nameWithType: R_BlazorFrontEnd.Excel.Mappings
+  fullName: R_BlazorFrontEnd.Excel.Mappings
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index
+  name: Index
+  nameWithType: R_DataColumnMapping.Index
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.Index
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName
+  name: DataColumnName
+  nameWithType: R_DataColumnMapping.DataColumnName
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.DataColumnName
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.#ctor
+  name: R_DataColumnMapping
+  nameWithType: R_DataColumnMapping.R_DataColumnMapping
+  fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping.R_DataColumnMapping

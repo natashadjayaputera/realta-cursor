@@ -1,0 +1,50 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIClientWebAssemblyExtension.ExtensionMethods
+  commentId: T:R_APIClientWebAssemblyExtension.ExtensionMethods
+  id: ExtensionMethods
+  parent: R_APIClientWebAssemblyExtension
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: R_APIClientWebAssemblyExtension.ExtensionMethods
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_APIClientWebAssemblyExtension/ExtensionMethods.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ExtensionMethods
+    path: Microservices/R_APIClientWebAssemblyExtension/ExtensionMethods.cs
+    startLine: 13
+  assemblies:
+  - R_APIClientWebAssemblyExtension
+  namespace: R_APIClientWebAssemblyExtension
+  syntax:
+    content: 'public static class ExtensionMethods : object'
+    content.vb: >-
+      Public Module ExtensionMethods
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+references:
+- uid: R_APIClientWebAssemblyExtension
+  commentId: N:R_APIClientWebAssemblyExtension
+  name: R_APIClientWebAssemblyExtension
+  nameWithType: R_APIClientWebAssemblyExtension
+  fullName: R_APIClientWebAssemblyExtension
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

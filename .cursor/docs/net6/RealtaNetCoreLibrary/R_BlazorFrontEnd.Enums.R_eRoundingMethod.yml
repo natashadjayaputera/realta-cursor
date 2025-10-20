@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  commentId: T:R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  id: R_eRoundingMethod
+  parent: R_BlazorFrontEnd.Enums
+  children:
+  - R_BlazorFrontEnd.Enums.R_eRoundingMethod.Down
+  - R_BlazorFrontEnd.Enums.R_eRoundingMethod.Up
+  - R_BlazorFrontEnd.Enums.R_eRoundingMethod.UpDown
+  langs:
+  - csharp
+  - vb
+  name: R_eRoundingMethod
+  nameWithType: R_eRoundingMethod
+  fullName: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eRoundingMethod
+    path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: 'public enum R_eRoundingMethod : int'
+    content.vb: Public Enum R_eRoundingMethod As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod.Up
+  commentId: F:R_BlazorFrontEnd.Enums.R_eRoundingMethod.Up
+  id: Up
+  parent: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: R_eRoundingMethod.Up
+  fullName: R_BlazorFrontEnd.Enums.R_eRoundingMethod.Up
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Up
+    path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Up = 0
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod.Down
+  commentId: F:R_BlazorFrontEnd.Enums.R_eRoundingMethod.Down
+  id: Down
+  parent: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: R_eRoundingMethod.Down
+  fullName: R_BlazorFrontEnd.Enums.R_eRoundingMethod.Down
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Down
+    path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Down = 1
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod.UpDown
+  commentId: F:R_BlazorFrontEnd.Enums.R_eRoundingMethod.UpDown
+  id: UpDown
+  parent: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  langs:
+  - csharp
+  - vb
+  name: UpDown
+  nameWithType: R_eRoundingMethod.UpDown
+  fullName: R_BlazorFrontEnd.Enums.R_eRoundingMethod.UpDown
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: UpDown
+    path: Library/R_BlazorFrontEnd/Enums/R_eRoundingMethod.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: UpDown = 2
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_BlazorFrontEnd.Enums
+  commentId: N:R_BlazorFrontEnd.Enums
+  name: R_BlazorFrontEnd.Enums
+  nameWithType: R_BlazorFrontEnd.Enums
+  fullName: R_BlazorFrontEnd.Enums
+- uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  commentId: T:R_BlazorFrontEnd.Enums.R_eRoundingMethod
+  parent: R_BlazorFrontEnd.Enums
+  name: R_eRoundingMethod
+  nameWithType: R_eRoundingMethod
+  fullName: R_BlazorFrontEnd.Enums.R_eRoundingMethod

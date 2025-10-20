@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+  commentId: T:R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+  id: R_ReportServerUtility.R_ReportServerException
+  parent: R_ReportServerClient
+  children:
+  - R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data
+  langs:
+  - csharp
+  - vb
+  name: R_ReportServerUtility.R_ReportServerException
+  nameWithType: R_ReportServerUtility.R_ReportServerException
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ReportServerException
+    path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+    startLine: 225
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: 'public class R_ReportServerException : R_APIResultBaseDTO'
+    content.vb: >-
+      Public Class R_ReportServerException
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data
+  commentId: P:R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data
+  id: data
+  parent: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: R_ReportServerUtility.R_ReportServerException.data
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: data
+    path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+    startLine: 227
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public object data { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property data As Object
+  overload: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_ReportServerClient
+  commentId: N:R_ReportServerClient
+  name: R_ReportServerClient
+  nameWithType: R_ReportServerClient
+  fullName: R_ReportServerClient
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data*
+  commentId: Overload:R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data
+  name: data
+  nameWithType: R_ReportServerUtility.R_ReportServerException.data
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_ReportServerException.data

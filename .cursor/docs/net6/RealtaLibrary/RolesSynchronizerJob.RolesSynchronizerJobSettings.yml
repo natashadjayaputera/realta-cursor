@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSettings
+  commentId: T:RolesSynchronizerJob.RolesSynchronizerJobSettings
+  id: RolesSynchronizerJobSettings
+  parent: RolesSynchronizerJob
+  children:
+  - RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings
+  - RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings
+  langs:
+  - csharp
+  - vb
+  name: RolesSynchronizerJobSettings
+  nameWithType: RolesSynchronizerJobSettings
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSettings
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: RolesSynchronizerJobSettings
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSettings.cs
+    startLine: 10
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: 'public class RolesSynchronizerJobSettings : R_SchedulerSettingsDTO'
+    content.vb: >-
+      Public Class RolesSynchronizerJobSettings
+          Inherits R_SchedulerSettingsDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings
+  commentId: P:RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings
+  id: Settings
+  parent: RolesSynchronizerJob.RolesSynchronizerJobSettings
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: RolesSynchronizerJobSettings.Settings
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Settings
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSettings.cs
+    startLine: 12
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public List<RolesSynchronizerJobSetting> Settings { get; set; }
+    parameters: []
+    return:
+      type: List{RolesSynchronizerJob.RolesSynchronizerJobSetting}
+    content.vb: Public Property Settings As List(Of RolesSynchronizerJobSetting)
+  overload: RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings
+  commentId: M:RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings
+  id: GetSettings
+  parent: RolesSynchronizerJob.RolesSynchronizerJobSettings
+  langs:
+  - csharp
+  - vb
+  name: GetSettings()
+  nameWithType: RolesSynchronizerJobSettings.GetSettings()
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings()
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetSettings
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSettings.cs
+    startLine: 13
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public override IList GetSettings()
+    return:
+      type: IList
+    content.vb: Public Overrides Function GetSettings As IList
+  overload: RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: RolesSynchronizerJob
+  commentId: N:RolesSynchronizerJob
+  name: RolesSynchronizerJob
+  nameWithType: RolesSynchronizerJob
+  fullName: RolesSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings*
+  commentId: Overload:RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings
+  name: Settings
+  nameWithType: RolesSynchronizerJobSettings.Settings
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSettings.Settings
+- uid: List{RolesSynchronizerJob.RolesSynchronizerJobSetting}
+  commentId: '!:List{RolesSynchronizerJob.RolesSynchronizerJobSetting}'
+  definition: List`1
+  name: List<RolesSynchronizerJobSetting>
+  nameWithType: List<RolesSynchronizerJobSetting>
+  fullName: List<RolesSynchronizerJob.RolesSynchronizerJobSetting>
+  nameWithType.vb: List(Of RolesSynchronizerJobSetting)
+  fullName.vb: List(Of RolesSynchronizerJob.RolesSynchronizerJobSetting)
+  name.vb: List(Of RolesSynchronizerJobSetting)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobSetting
+    name: RolesSynchronizerJobSetting
+    nameWithType: RolesSynchronizerJobSetting
+    fullName: RolesSynchronizerJob.RolesSynchronizerJobSetting
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RolesSynchronizerJob.RolesSynchronizerJobSetting
+    name: RolesSynchronizerJobSetting
+    nameWithType: RolesSynchronizerJobSetting
+    fullName: RolesSynchronizerJob.RolesSynchronizerJobSetting
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings*
+  commentId: Overload:RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings
+  name: GetSettings
+  nameWithType: RolesSynchronizerJobSettings.GetSettings
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSettings.GetSettings
+- uid: IList
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: IList

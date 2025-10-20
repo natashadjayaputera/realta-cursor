@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  commentId: T:R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  id: R_eReportFileOutputType
+  parent: R_BlazorFrontEnd.Enums
+  children:
+  - R_BlazorFrontEnd.Enums.R_eReportFileOutputType.CSV
+  - R_BlazorFrontEnd.Enums.R_eReportFileOutputType.PDF
+  - R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLS
+  - R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLSX
+  langs:
+  - csharp
+  - vb
+  name: R_eReportFileOutputType
+  nameWithType: R_eReportFileOutputType
+  fullName: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eReportFileOutputType
+    path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: 'public enum R_eReportFileOutputType : int'
+    content.vb: Public Enum R_eReportFileOutputType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.PDF
+  commentId: F:R_BlazorFrontEnd.Enums.R_eReportFileOutputType.PDF
+  id: PDF
+  parent: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  langs:
+  - csharp
+  - vb
+  name: PDF
+  nameWithType: R_eReportFileOutputType.PDF
+  fullName: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.PDF
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: PDF
+    path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: PDF = null
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+    content.vb: PDF = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLS
+  commentId: F:R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLS
+  id: XLS
+  parent: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  langs:
+  - csharp
+  - vb
+  name: XLS
+  nameWithType: R_eReportFileOutputType.XLS
+  fullName: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLS
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: XLS
+    path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: XLS = null
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+    content.vb: XLS = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLSX
+  commentId: F:R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLSX
+  id: XLSX
+  parent: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  langs:
+  - csharp
+  - vb
+  name: XLSX
+  nameWithType: R_eReportFileOutputType.XLSX
+  fullName: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.XLSX
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: XLSX
+    path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: XLSX = null
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+    content.vb: XLSX = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.CSV
+  commentId: F:R_BlazorFrontEnd.Enums.R_eReportFileOutputType.CSV
+  id: CSV
+  parent: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  langs:
+  - csharp
+  - vb
+  name: CSV
+  nameWithType: R_eReportFileOutputType.CSV
+  fullName: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.CSV
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSV
+    path: Library/R_BlazorFrontEnd/Enums/R_eReportFileOutputType.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: CSV = null
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+    content.vb: CSV = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_BlazorFrontEnd.Enums
+  commentId: N:R_BlazorFrontEnd.Enums
+  name: R_BlazorFrontEnd.Enums
+  nameWithType: R_BlazorFrontEnd.Enums
+  fullName: R_BlazorFrontEnd.Enums
+- uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  commentId: T:R_BlazorFrontEnd.Enums.R_eReportFileOutputType
+  parent: R_BlazorFrontEnd.Enums
+  name: R_eReportFileOutputType
+  nameWithType: R_eReportFileOutputType
+  fullName: R_BlazorFrontEnd.Enums.R_eReportFileOutputType

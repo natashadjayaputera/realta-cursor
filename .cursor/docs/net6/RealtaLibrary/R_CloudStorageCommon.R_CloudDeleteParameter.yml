@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.R_CloudDeleteParameter
+  commentId: T:R_CloudStorageCommon.R_CloudDeleteParameter
+  id: R_CloudDeleteParameter
+  parent: R_CloudStorageCommon
+  children:
+  - R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory
+  - R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile
+  - R_CloudStorageCommon.R_CloudDeleteParameter.FileName
+  langs:
+  - csharp
+  - vb
+  name: R_CloudDeleteParameter
+  nameWithType: R_CloudDeleteParameter
+  fullName: R_CloudStorageCommon.R_CloudDeleteParameter
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CloudDeleteParameter
+    path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+    startLine: 7
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public class R_CloudDeleteParameter : object'
+    content.vb: >-
+      Public Class R_CloudDeleteParameter
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory
+  commentId: P:R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory
+  id: CloudStorageDirectory
+  parent: R_CloudStorageCommon.R_CloudDeleteParameter
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageDirectory
+  nameWithType: R_CloudDeleteParameter.CloudStorageDirectory
+  fullName: R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageDirectory
+    path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+    startLine: 9
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public string CloudStorageDirectory { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CloudStorageDirectory As String
+  overload: R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile
+  commentId: P:R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile
+  id: CredentialFile
+  parent: R_CloudStorageCommon.R_CloudDeleteParameter
+  langs:
+  - csharp
+  - vb
+  name: CredentialFile
+  nameWithType: R_CloudDeleteParameter.CredentialFile
+  fullName: R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CredentialFile
+    path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+    startLine: 10
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public byte[] CredentialFile { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property CredentialFile As Byte()
+  overload: R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CloudStorageCommon.R_CloudDeleteParameter.FileName
+  commentId: P:R_CloudStorageCommon.R_CloudDeleteParameter.FileName
+  id: FileName
+  parent: R_CloudStorageCommon.R_CloudDeleteParameter
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: R_CloudDeleteParameter.FileName
+  fullName: R_CloudStorageCommon.R_CloudDeleteParameter.FileName
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileName
+    path: Microservices/R_CloudStorageCommon/R_CloudDeleteParameter.cs
+    startLine: 11
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileName As String
+  overload: R_CloudStorageCommon.R_CloudDeleteParameter.FileName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory*
+  commentId: Overload:R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory
+  name: CloudStorageDirectory
+  nameWithType: R_CloudDeleteParameter.CloudStorageDirectory
+  fullName: R_CloudStorageCommon.R_CloudDeleteParameter.CloudStorageDirectory
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile*
+  commentId: Overload:R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile
+  name: CredentialFile
+  nameWithType: R_CloudDeleteParameter.CredentialFile
+  fullName: R_CloudStorageCommon.R_CloudDeleteParameter.CredentialFile
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_CloudStorageCommon.R_CloudDeleteParameter.FileName*
+  commentId: Overload:R_CloudStorageCommon.R_CloudDeleteParameter.FileName
+  name: FileName
+  nameWithType: R_CloudDeleteParameter.FileName
+  fullName: R_CloudStorageCommon.R_CloudDeleteParameter.FileName

@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  commentId: T:R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  id: R_ECloudStorageDirectoryAccess
+  parent: R_CloudStorageCommon
+  children:
+  - R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PrivateRead
+  - R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PublicRead
+  langs:
+  - csharp
+  - vb
+  name: R_ECloudStorageDirectoryAccess
+  nameWithType: R_ECloudStorageDirectoryAccess
+  fullName: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ECloudStorageDirectoryAccess
+    path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+    startLine: 12
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public enum R_ECloudStorageDirectoryAccess : int'
+    content.vb: Public Enum R_ECloudStorageDirectoryAccess As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PrivateRead
+  commentId: F:R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PrivateRead
+  id: PrivateRead
+  parent: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  langs:
+  - csharp
+  - vb
+  name: PrivateRead
+  nameWithType: R_ECloudStorageDirectoryAccess.PrivateRead
+  fullName: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PrivateRead
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PrivateRead
+    path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+    startLine: 14
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: PrivateRead = 0
+    return:
+      type: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PublicRead
+  commentId: F:R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PublicRead
+  id: PublicRead
+  parent: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  langs:
+  - csharp
+  - vb
+  name: PublicRead
+  nameWithType: R_ECloudStorageDirectoryAccess.PublicRead
+  fullName: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess.PublicRead
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PublicRead
+    path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+    startLine: 15
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: PublicRead = 1
+    return:
+      type: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  commentId: T:R_CloudStorageCommon.R_ECloudStorageDirectoryAccess
+  parent: R_CloudStorageCommon
+  name: R_ECloudStorageDirectoryAccess
+  nameWithType: R_ECloudStorageDirectoryAccess
+  fullName: R_CloudStorageCommon.R_ECloudStorageDirectoryAccess

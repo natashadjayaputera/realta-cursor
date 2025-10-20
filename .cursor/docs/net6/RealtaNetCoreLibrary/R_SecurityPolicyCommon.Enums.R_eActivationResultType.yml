@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  commentId: T:R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  id: R_eActivationResultType
+  parent: R_SecurityPolicyCommon.Enums
+  children:
+  - R_SecurityPolicyCommon.Enums.R_eActivationResultType.AfterExpired
+  - R_SecurityPolicyCommon.Enums.R_eActivationResultType.BeforeExpired
+  - R_SecurityPolicyCommon.Enums.R_eActivationResultType.Expired
+  - R_SecurityPolicyCommon.Enums.R_eActivationResultType.NowExpired
+  langs:
+  - csharp
+  - vb
+  name: R_eActivationResultType
+  nameWithType: R_eActivationResultType
+  fullName: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  type: Enum
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eActivationResultType
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+    startLine: 2
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: 'public enum R_eActivationResultType : int'
+    content.vb: Public Enum R_eActivationResultType As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType.BeforeExpired
+  commentId: F:R_SecurityPolicyCommon.Enums.R_eActivationResultType.BeforeExpired
+  id: BeforeExpired
+  parent: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  langs:
+  - csharp
+  - vb
+  name: BeforeExpired
+  nameWithType: R_eActivationResultType.BeforeExpired
+  fullName: R_SecurityPolicyCommon.Enums.R_eActivationResultType.BeforeExpired
+  type: Field
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: BeforeExpired
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: BeforeExpired = 0
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType.NowExpired
+  commentId: F:R_SecurityPolicyCommon.Enums.R_eActivationResultType.NowExpired
+  id: NowExpired
+  parent: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  langs:
+  - csharp
+  - vb
+  name: NowExpired
+  nameWithType: R_eActivationResultType.NowExpired
+  fullName: R_SecurityPolicyCommon.Enums.R_eActivationResultType.NowExpired
+  type: Field
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NowExpired
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+    startLine: 5
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: NowExpired = 1
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType.AfterExpired
+  commentId: F:R_SecurityPolicyCommon.Enums.R_eActivationResultType.AfterExpired
+  id: AfterExpired
+  parent: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  langs:
+  - csharp
+  - vb
+  name: AfterExpired
+  nameWithType: R_eActivationResultType.AfterExpired
+  fullName: R_SecurityPolicyCommon.Enums.R_eActivationResultType.AfterExpired
+  type: Field
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AfterExpired
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+    startLine: 6
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: AfterExpired = 2
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType.Expired
+  commentId: F:R_SecurityPolicyCommon.Enums.R_eActivationResultType.Expired
+  id: Expired
+  parent: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  langs:
+  - csharp
+  - vb
+  name: Expired
+  nameWithType: R_eActivationResultType.Expired
+  fullName: R_SecurityPolicyCommon.Enums.R_eActivationResultType.Expired
+  type: Field
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Expired
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Enums/R_eActivationResultType.cs
+    startLine: 7
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Enums
+  syntax:
+    content: Expired = 3
+    return:
+      type: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_SecurityPolicyCommon.Enums
+  commentId: N:R_SecurityPolicyCommon.Enums
+  name: R_SecurityPolicyCommon.Enums
+  nameWithType: R_SecurityPolicyCommon.Enums
+  fullName: R_SecurityPolicyCommon.Enums
+- uid: R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  commentId: T:R_SecurityPolicyCommon.Enums.R_eActivationResultType
+  parent: R_SecurityPolicyCommon.Enums
+  name: R_eActivationResultType
+  nameWithType: R_eActivationResultType
+  fullName: R_SecurityPolicyCommon.Enums.R_eActivationResultType

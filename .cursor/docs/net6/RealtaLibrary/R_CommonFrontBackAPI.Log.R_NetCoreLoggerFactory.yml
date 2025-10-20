@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  id: R_NetCoreLoggerFactory
+  parent: R_CommonFrontBackAPI.Log
+  children:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  langs:
+  - csharp
+  - vb
+  name: R_NetCoreLoggerFactory
+  nameWithType: R_NetCoreLoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerFactory.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NetCoreLoggerFactory
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerFactory.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: 'public class R_NetCoreLoggerFactory : object'
+    content.vb: >-
+      Public Class R_NetCoreLoggerFactory
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  id: _LoggerFactory
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  langs:
+  - csharp
+  - vb
+  name: _LoggerFactory
+  nameWithType: R_NetCoreLoggerFactory._LoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerFactory.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _LoggerFactory
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerFactory.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: protected static ILoggerFactory _LoggerFactory
+    return:
+      type: ILoggerFactory
+    content.vb: Protected Shared _LoggerFactory As ILoggerFactory
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  id: ConfigureFactoryLogger(ILoggerFactory)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  langs:
+  - csharp
+  - vb
+  name: ConfigureFactoryLogger(ILoggerFactory)
+  nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerFactory.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ConfigureFactoryLogger
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerFactory.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public static void ConfigureFactoryLogger(ILoggerFactory poLoggerFactory)
+    parameters:
+    - id: poLoggerFactory
+      type: ILoggerFactory
+    content.vb: Public Shared Sub ConfigureFactoryLogger(poLoggerFactory As ILoggerFactory)
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ILoggerFactory
+  isExternal: true
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: ILoggerFactory
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  name: ConfigureFactoryLogger
+  nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger

@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIClient.R_MultiPartFileParameter
+  commentId: T:R_APIClient.R_MultiPartFileParameter
+  id: R_MultiPartFileParameter
+  parent: R_APIClient
+  children:
+  - R_APIClient.R_MultiPartFileParameter.#ctor(System.Byte[],System.String)
+  - R_APIClient.R_MultiPartFileParameter.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_MultiPartFileParameter
+  nameWithType: R_MultiPartFileParameter
+  fullName: R_APIClient.R_MultiPartFileParameter
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_MultiPartFileParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_MultiPartFileParameter
+    path: Microservices/R_APIClient/R_MultiPartFileParameter.cs
+    startLine: 6
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: 'public class R_MultiPartFileParameter : object'
+    content.vb: >-
+      Public Class R_MultiPartFileParameter
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_APIClient.R_MultiPartFileParameter.#ctor(System.Byte[],System.String)
+  commentId: M:R_APIClient.R_MultiPartFileParameter.#ctor(System.Byte[],System.String)
+  id: '#ctor(System.Byte[],System.String)'
+  parent: R_APIClient.R_MultiPartFileParameter
+  langs:
+  - csharp
+  - vb
+  name: R_MultiPartFileParameter(Byte[], String)
+  nameWithType: R_MultiPartFileParameter.R_MultiPartFileParameter(Byte[], String)
+  fullName: R_APIClient.R_MultiPartFileParameter.R_MultiPartFileParameter(System.Byte[], System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_MultiPartFileParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_APIClient/R_MultiPartFileParameter.cs
+    startLine: 13
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public R_MultiPartFileParameter(byte[] poFile, string pcFileName)
+    parameters:
+    - id: poFile
+      type: System.Byte[]
+    - id: pcFileName
+      type: System.String
+    content.vb: Public Sub New(poFile As Byte(), pcFileName As String)
+  overload: R_APIClient.R_MultiPartFileParameter.#ctor*
+  nameWithType.vb: R_MultiPartFileParameter.R_MultiPartFileParameter(Byte(), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_APIClient.R_MultiPartFileParameter.R_MultiPartFileParameter(System.Byte(), System.String)
+  name.vb: R_MultiPartFileParameter(Byte(), String)
+- uid: R_APIClient.R_MultiPartFileParameter.#ctor(System.String)
+  commentId: M:R_APIClient.R_MultiPartFileParameter.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: R_APIClient.R_MultiPartFileParameter
+  langs:
+  - csharp
+  - vb
+  name: R_MultiPartFileParameter(String)
+  nameWithType: R_MultiPartFileParameter.R_MultiPartFileParameter(String)
+  fullName: R_APIClient.R_MultiPartFileParameter.R_MultiPartFileParameter(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_MultiPartFileParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_APIClient/R_MultiPartFileParameter.cs
+    startLine: 19
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public R_MultiPartFileParameter(string pcFullFilePathName)
+    parameters:
+    - id: pcFullFilePathName
+      type: System.String
+    content.vb: Public Sub New(pcFullFilePathName As String)
+  overload: R_APIClient.R_MultiPartFileParameter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_APIClient
+  commentId: N:R_APIClient
+  name: R_APIClient
+  nameWithType: R_APIClient
+  fullName: R_APIClient
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_APIClient.R_MultiPartFileParameter.#ctor*
+  commentId: Overload:R_APIClient.R_MultiPartFileParameter.#ctor
+  name: R_MultiPartFileParameter
+  nameWithType: R_MultiPartFileParameter.R_MultiPartFileParameter
+  fullName: R_APIClient.R_MultiPartFileParameter.R_MultiPartFileParameter
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

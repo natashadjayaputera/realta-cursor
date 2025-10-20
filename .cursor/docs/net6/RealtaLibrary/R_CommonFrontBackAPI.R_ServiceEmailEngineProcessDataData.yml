@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+  id: R_ServiceEmailEngineProcessDataData
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceEmailEngineProcessDataData
+  nameWithType: R_ServiceEmailEngineProcessDataData
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_ServiceEmailEngineProcessDataResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceEmailEngineProcessDataData
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_ServiceEmailEngineProcessDataResultDTO.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceEmailEngineProcessDataData : object'
+    content.vb: >-
+      Public Class R_ServiceEmailEngineProcessDataData
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId
+  commentId: P:R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId
+  id: EmailId
+  parent: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+  langs:
+  - csharp
+  - vb
+  name: EmailId
+  nameWithType: R_ServiceEmailEngineProcessDataData.EmailId
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_ServiceEmailEngineProcessDataResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailId
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_ServiceEmailEngineProcessDataResultDTO.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string EmailId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EmailId As String
+  overload: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId
+  name: EmailId
+  nameWithType: R_ServiceEmailEngineProcessDataData.EmailId
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData.EmailId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

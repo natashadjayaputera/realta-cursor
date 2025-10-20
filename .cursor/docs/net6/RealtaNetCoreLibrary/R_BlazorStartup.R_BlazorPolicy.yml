@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorStartup.R_BlazorPolicy
+  commentId: T:R_BlazorStartup.R_BlazorPolicy
+  id: R_BlazorPolicy
+  parent: R_BlazorStartup
+  children:
+  - R_BlazorStartup.R_BlazorPolicy.SupportApiClient
+  - R_BlazorStartup.R_BlazorPolicy.SupportAuthentication
+  - R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant
+  langs:
+  - csharp
+  - vb
+  name: R_BlazorPolicy
+  nameWithType: R_BlazorPolicy
+  fullName: R_BlazorStartup.R_BlazorPolicy
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_BlazorPolicy
+    path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: 'public class R_BlazorPolicy : object'
+    content.vb: >-
+      Public Class R_BlazorPolicy
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorStartup.R_BlazorPolicy.SupportApiClient
+  commentId: P:R_BlazorStartup.R_BlazorPolicy.SupportApiClient
+  id: SupportApiClient
+  parent: R_BlazorStartup.R_BlazorPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportApiClient
+  nameWithType: R_BlazorPolicy.SupportApiClient
+  fullName: R_BlazorStartup.R_BlazorPolicy.SupportApiClient
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SupportApiClient
+    path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: public bool SupportApiClient { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SupportApiClient As Boolean
+  overload: R_BlazorStartup.R_BlazorPolicy.SupportApiClient*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorStartup.R_BlazorPolicy.SupportAuthentication
+  commentId: P:R_BlazorStartup.R_BlazorPolicy.SupportAuthentication
+  id: SupportAuthentication
+  parent: R_BlazorStartup.R_BlazorPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportAuthentication
+  nameWithType: R_BlazorPolicy.SupportAuthentication
+  fullName: R_BlazorStartup.R_BlazorPolicy.SupportAuthentication
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SupportAuthentication
+    path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: public bool SupportAuthentication { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SupportAuthentication As Boolean
+  overload: R_BlazorStartup.R_BlazorPolicy.SupportAuthentication*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant
+  commentId: P:R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant
+  id: SupportMultiTenant
+  parent: R_BlazorStartup.R_BlazorPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportMultiTenant
+  nameWithType: R_BlazorPolicy.SupportMultiTenant
+  fullName: R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SupportMultiTenant
+    path: Library/R_BlazorStartup/R_BlazorPolicy.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: public bool SupportMultiTenant { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SupportMultiTenant As Boolean
+  overload: R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorStartup
+  commentId: N:R_BlazorStartup
+  name: R_BlazorStartup
+  nameWithType: R_BlazorStartup
+  fullName: R_BlazorStartup
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorStartup.R_BlazorPolicy.SupportApiClient*
+  commentId: Overload:R_BlazorStartup.R_BlazorPolicy.SupportApiClient
+  name: SupportApiClient
+  nameWithType: R_BlazorPolicy.SupportApiClient
+  fullName: R_BlazorStartup.R_BlazorPolicy.SupportApiClient
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorStartup.R_BlazorPolicy.SupportAuthentication*
+  commentId: Overload:R_BlazorStartup.R_BlazorPolicy.SupportAuthentication
+  name: SupportAuthentication
+  nameWithType: R_BlazorPolicy.SupportAuthentication
+  fullName: R_BlazorStartup.R_BlazorPolicy.SupportAuthentication
+- uid: R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant*
+  commentId: Overload:R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant
+  name: SupportMultiTenant
+  nameWithType: R_BlazorPolicy.SupportMultiTenant
+  fullName: R_BlazorStartup.R_BlazorPolicy.SupportMultiTenant

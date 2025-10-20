@@ -1,0 +1,989 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.CloudStorageJobLogger
+  commentId: T:CloudStorageJob.CloudStorageJobLogger
+  id: CloudStorageJobLogger
+  parent: CloudStorageJob
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageJobLogger
+  nameWithType: CloudStorageJobLogger
+  fullName: CloudStorageJob.CloudStorageJobLogger
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobLogger.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageJobLogger
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobLogger.cs
+    startLine: 4
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class CloudStorageJobLogger : R_NetCoreLoggerBase<CloudStorageJobLogger>'
+    content.vb: >-
+      Public Class CloudStorageJobLogger
+          Inherits R_NetCoreLoggerBase(Of CloudStorageJobLogger)
+  inheritance:
+  - System.Object
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  inheritedMembers:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}._Logger
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}._Instance
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.R_InitializeLogger(ILogger)
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.R_GetInstanceLogger
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(Exception)
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(Exception,System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogInfo(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogDebug(System.String,System.Object[])
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  - R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  parent: R_CommonFrontBackAPI.Log
+  name: R_NetCoreLoggerFactory
+  nameWithType: R_NetCoreLoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  parent: R_CommonFrontBackAPI.Log
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  name: R_NetCoreLoggerBase<CloudStorageJobLogger>
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger)
+  name.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CloudStorageJob.CloudStorageJobLogger
+    name: CloudStorageJobLogger
+    nameWithType: CloudStorageJobLogger
+    fullName: CloudStorageJob.CloudStorageJobLogger
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CloudStorageJob.CloudStorageJobLogger
+    name: CloudStorageJobLogger
+    nameWithType: CloudStorageJobLogger
+    fullName: CloudStorageJob.CloudStorageJobLogger
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}._Logger
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}._Logger
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  name: _Logger
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>._Logger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>._Logger
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger)._Logger
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger)._Logger
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}._Instance
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}._Instance
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  name: _Instance
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>._Instance
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>._Instance
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger)._Instance
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger)._Instance
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.R_InitializeLogger(ILogger)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.R_InitializeLogger(ILogger)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  name: R_InitializeLogger(ILogger)
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.R_InitializeLogger(ILogger)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.R_InitializeLogger(ILogger)
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger).R_InitializeLogger(ILogger)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).R_InitializeLogger(ILogger)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase(Of CloudStorageJobLogger).R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.R_GetInstanceLogger
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.R_GetInstanceLogger
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  name: R_GetInstanceLogger()
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.R_GetInstanceLogger()
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.R_GetInstanceLogger()
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger).R_GetInstanceLogger()
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).R_GetInstanceLogger()
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase(Of CloudStorageJobLogger).R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  name: LogError(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogError(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogError(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogError(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogError(System.String, System.Object())
+  name.vb: LogError(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(Exception)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(Exception)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  name: LogError(Exception)
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogError(Exception)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogError(Exception)
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogError(Exception)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogError(Exception)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(Exception,System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogError(Exception,System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  name: LogError(Exception, String, Object[])
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogError(Exception, String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogError(Exception, System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogError(Exception, String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogError(Exception, System.String, System.Object())
+  name.vb: LogError(Exception, String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogInfo(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogInfo(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  name: LogInfo(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogInfo(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogInfo(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogInfo(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogInfo(System.String, System.Object())
+  name.vb: LogInfo(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogDebug(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}.LogDebug(System.String,System.Object[])
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase{CloudStorageJob.CloudStorageJobLogger}
+  definition: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  name: LogDebug(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogDebug(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogDebug(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogDebug(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogDebug(System.String, System.Object())
+  name.vb: LogDebug(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase<CloudStorageJobLogger>.LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<CloudStorageJob.CloudStorageJobLogger>.LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase(Of CloudStorageJobLogger).LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of CloudStorageJob.CloudStorageJobLogger).LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  name: _LoggerFactory
+  nameWithType: R_NetCoreLoggerFactory._LoggerFactory
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory._LoggerFactory
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory
+  isExternal: true
+  name: ConfigureFactoryLogger(ILoggerFactory)
+  nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+    name: ConfigureFactoryLogger
+    nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger(ILoggerFactory)
+    name: ConfigureFactoryLogger
+    nameWithType: R_NetCoreLoggerFactory.ConfigureFactoryLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerFactory.ConfigureFactoryLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILoggerFactory
+    name: ILoggerFactory
+    nameWithType: ILoggerFactory
+    fullName: ILoggerFactory
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+  name: R_NetCoreLoggerBase<T>
+  nameWithType: R_NetCoreLoggerBase<T>
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)
+  name.vb: R_NetCoreLoggerBase(Of T)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1
+    name: R_NetCoreLoggerBase
+    nameWithType: R_NetCoreLoggerBase
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Logger
+  name: _Logger
+  nameWithType: R_NetCoreLoggerBase<T>._Logger
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>._Logger
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)._Logger
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)._Logger
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  commentId: F:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1._Instance
+  name: _Instance
+  nameWithType: R_NetCoreLoggerBase<T>._Instance
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>._Instance
+  nameWithType.vb: R_NetCoreLoggerBase(Of T)._Instance
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T)._Instance
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+  isExternal: true
+  name: R_InitializeLogger(ILogger)
+  nameWithType: R_NetCoreLoggerBase<T>.R_InitializeLogger(ILogger)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_InitializeLogger(ILogger)
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_InitializeLogger(ILogger)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_InitializeLogger(ILogger)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase<T>.R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_InitializeLogger(ILogger)
+    name: R_InitializeLogger
+    nameWithType: R_NetCoreLoggerBase(Of T).R_InitializeLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_InitializeLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: ILogger
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+  name: R_GetInstanceLogger()
+  nameWithType: R_NetCoreLoggerBase<T>.R_GetInstanceLogger()
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_GetInstanceLogger()
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).R_GetInstanceLogger()
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_GetInstanceLogger()
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase<T>.R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.R_GetInstanceLogger
+    name: R_GetInstanceLogger
+    nameWithType: R_NetCoreLoggerBase(Of T).R_GetInstanceLogger
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).R_GetInstanceLogger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+  isExternal: true
+  name: LogError(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(System.String, System.Object())
+  name.vb: LogError(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<T>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of T).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+  isExternal: true
+  name: LogError(Exception)
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(Exception)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(Exception)
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(Exception)
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(Exception)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<T>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception)
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of T).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+  isExternal: true
+  name: LogError(Exception, String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogError(Exception, String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError(Exception, System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogError(Exception, String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError(Exception, System.String, System.Object())
+  name.vb: LogError(Exception, String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase<T>.LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogError(Exception,System.String,System.Object[])
+    name: LogError
+    nameWithType: R_NetCoreLoggerBase(Of T).LogError
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+  isExternal: true
+  name: LogInfo(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogInfo(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogInfo(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogInfo(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogInfo(System.String, System.Object())
+  name.vb: LogInfo(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase<T>.LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogInfo(System.String,System.Object[])
+    name: LogInfo
+    nameWithType: R_NetCoreLoggerBase(Of T).LogInfo
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+  isExternal: true
+  name: LogDebug(String, Object[])
+  nameWithType: R_NetCoreLoggerBase<T>.LogDebug(String, Object[])
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogDebug(System.String, System.Object[])
+  nameWithType.vb: R_NetCoreLoggerBase(Of T).LogDebug(String, Object())
+  fullName.vb: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogDebug(System.String, System.Object())
+  name.vb: LogDebug(String, Object())
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase<T>.LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase<T>.LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase`1.LogDebug(System.String,System.Object[])
+    name: LogDebug
+    nameWithType: R_NetCoreLoggerBase(Of T).LogDebug
+    fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerBase(Of T).LogDebug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )

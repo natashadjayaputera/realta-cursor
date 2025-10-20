@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyBack.R_LicenseActivationCls
+  commentId: T:R_SecurityPolicyBack.R_LicenseActivationCls
+  id: R_LicenseActivationCls
+  parent: R_SecurityPolicyBack
+  children:
+  - R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
+  - R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
+  langs:
+  - csharp
+  - vb
+  name: R_LicenseActivationCls
+  nameWithType: R_LicenseActivationCls
+  fullName: R_SecurityPolicyBack.R_LicenseActivationCls
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_LicenseActivationCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_LicenseActivationCls
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_LicenseActivationCls.cs
+    startLine: 12
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: 'public static class R_LicenseActivationCls : object'
+    content.vb: >-
+      Public Module R_LicenseActivationCls
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
+  commentId: M:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
+  id: R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
+  parent: R_SecurityPolicyBack.R_LicenseActivationCls
+  langs:
+  - csharp
+  - vb
+  name: R_CheckLicenseAsync(CheckLicenseParameterDTO)
+  nameWithType: R_LicenseActivationCls.R_CheckLicenseAsync(CheckLicenseParameterDTO)
+  fullName: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_LicenseActivationCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_CheckLicenseAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_LicenseActivationCls.cs
+    startLine: 14
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task<R_LicenseActivationResponse> R_CheckLicenseAsync(CheckLicenseParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
+    return:
+      type: Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
+    content.vb: Public Shared Function R_CheckLicenseAsync(poParameter As CheckLicenseParameterDTO) As Task(Of R_LicenseActivationResponse)
+  overload: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
+  commentId: M:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
+  id: R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
+  parent: R_SecurityPolicyBack.R_LicenseActivationCls
+  langs:
+  - csharp
+  - vb
+  name: R_CheckActivationAsync(CheckActivationParameterDTO)
+  nameWithType: R_LicenseActivationCls.R_CheckActivationAsync(CheckActivationParameterDTO)
+  fullName: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_LicenseActivationCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_CheckActivationAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_LicenseActivationCls.cs
+    startLine: 95
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task<R_LicenseActivationResponse> R_CheckActivationAsync(CheckActivationParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+    return:
+      type: Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
+    content.vb: Public Shared Function R_CheckActivationAsync(poParameter As CheckActivationParameterDTO) As Task(Of R_LicenseActivationResponse)
+  overload: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_SecurityPolicyBack
+  commentId: N:R_SecurityPolicyBack
+  name: R_SecurityPolicyBack
+  nameWithType: R_SecurityPolicyBack
+  fullName: R_SecurityPolicyBack
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync
+  name: R_CheckLicenseAsync
+  nameWithType: R_LicenseActivationCls.R_CheckLicenseAsync
+  fullName: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync
+- uid: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: CheckLicenseParameterDTO
+  nameWithType: CheckLicenseParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
+- uid: Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
+  commentId: '!:Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}'
+  definition: Task`1
+  name: Task<R_LicenseActivationResponse>
+  nameWithType: Task<R_LicenseActivationResponse>
+  fullName: Task<R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse>
+  nameWithType.vb: Task(Of R_LicenseActivationResponse)
+  fullName.vb: Task(Of R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse)
+  name.vb: Task(Of R_LicenseActivationResponse)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+    name: R_LicenseActivationResponse
+    nameWithType: R_LicenseActivationResponse
+    fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+    name: R_LicenseActivationResponse
+    nameWithType: R_LicenseActivationResponse
+    fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyCommon.DTOs
+  commentId: N:R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  nameWithType: R_SecurityPolicyCommon.DTOs
+  fullName: R_SecurityPolicyCommon.DTOs
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync
+  name: R_CheckActivationAsync
+  nameWithType: R_LicenseActivationCls.R_CheckActivationAsync
+  fullName: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync
+- uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: CheckActivationParameterDTO
+  nameWithType: CheckActivationParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO

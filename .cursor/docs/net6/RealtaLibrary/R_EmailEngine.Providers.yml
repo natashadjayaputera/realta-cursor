@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.Providers
+  commentId: N:R_EmailEngine.Providers
+  id: R_EmailEngine.Providers
+  children:
+  - R_EmailEngine.Providers.EmailSendGrid
+  - R_EmailEngine.Providers.EmailSmtp
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngine.Providers
+  nameWithType: R_EmailEngine.Providers
+  fullName: R_EmailEngine.Providers
+  type: Namespace
+  assemblies:
+  - R_EmailEngine
+references:
+- uid: R_EmailEngine.Providers.EmailSendGrid
+  commentId: T:R_EmailEngine.Providers.EmailSendGrid
+  name: EmailSendGrid
+  nameWithType: EmailSendGrid
+  fullName: R_EmailEngine.Providers.EmailSendGrid
+- uid: R_EmailEngine.Providers.EmailSmtp
+  commentId: T:R_EmailEngine.Providers.EmailSmtp
+  name: EmailSmtp
+  nameWithType: EmailSmtp
+  fullName: R_EmailEngine.Providers.EmailSmtp

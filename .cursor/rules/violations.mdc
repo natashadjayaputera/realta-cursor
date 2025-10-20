@@ -1,0 +1,56 @@
+---
+alwaysApply: true
+priority: HIGH
+---
+
+# VIOLATION CHECKLIST - STOP IF YOU SEE THESE
+
+## INSTANT STOP (Do not generate code)
+
+1. ❌ Logger in Common project → STOP, move to Back
+2. ❌ Activity in Common project → STOP, move to Back
+3. ❌ Custom Logger implementation → STOP, inherit R_NetCoreLoggerBase only
+4. ❌ Custom Activity implementation → STOP, inherit R_ActivitySourceBase only
+5. ❌ Using R_IServiceCRUDBase → STOP, use R_IServiceCRUDAsyncBase
+6. ❌ Manual connection disposal (not using 'using') → STOP, add 'using var'
+7. ❌ Missing "loDb = null" in finally → STOP, add it
+8. ❌ Using R_FrontGlobalVar in ViewModel → STOP, inject IClientHelper
+9. ❌ R_Popup for dialogs → STOP, use MessageBoxService
+10. ❌ R_Button for navigation → STOP, use R_Popup/R_Lookup/etc.
+
+## FLAG & REFUSE (Do not continue)
+
+11. ❌ Creating separate {ProgramName}110 projects → Flag, explain consolidation
+12. ❌ Multiple Model classes for same controller → Flag, explain single model
+13. ❌ Resources in subfolders → Flag, move to root
+14. ❌ DTOs in Back project → Flag, move to Common
+15. ❌ Business logic in Front project → Flag, move to Model
+
+## ASK USER (Cannot proceed without approval)
+
+16. ❌ Unclear DLL reference → Ask, never invent
+17. ❌ Unknown pattern in documentation → Ask, never improvise
+18. ❌ Conflicting requirements → Ask for clarification
+19. ❌ Ambiguous method naming → Ask for specification
+20. ❌ SQL query changes required → Ask for DB team approval
+
+---
+
+# RESPONSE FORMAT WHEN VIOLATION FOUND
+
+**Example:**
+
+```
+VIOLATION DETECTED: Rule #5 - Variable Naming
+
+Your code uses:
+  private string _CompanyId;  ← CamelCase with underscore
+
+Correct pattern:
+  private string _companyId;  ← snake_case after underscore
+
+Fix required: Change to snake_case for all private fields.
+Continuing... [or] Stopping work until corrected.
+```
+
+---

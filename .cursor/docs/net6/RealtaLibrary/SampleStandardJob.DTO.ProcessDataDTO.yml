@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.DTO.ProcessDataDTO
+  commentId: T:SampleStandardJob.DTO.ProcessDataDTO
+  id: ProcessDataDTO
+  parent: SampleStandardJob.DTO
+  children:
+  - SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID
+  - SampleStandardJob.DTO.ProcessDataDTO.ID
+  langs:
+  - csharp
+  - vb
+  name: ProcessDataDTO
+  nameWithType: ProcessDataDTO
+  fullName: SampleStandardJob.DTO.ProcessDataDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/ProcessDataDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ProcessDataDTO
+    path: Engine/SampleJob/SampleStandardJob/DTO/ProcessDataDTO.cs
+    startLine: 8
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: 'public class ProcessDataDTO : object'
+    content.vb: >-
+      Public Class ProcessDataDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID
+  commentId: P:SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: SampleStandardJob.DTO.ProcessDataDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: ProcessDataDTO.CCOMPANY_ID
+  fullName: SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/ProcessDataDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCOMPANY_ID
+    path: Engine/SampleJob/SampleStandardJob/DTO/ProcessDataDTO.cs
+    startLine: 10
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.DTO.ProcessDataDTO.ID
+  commentId: P:SampleStandardJob.DTO.ProcessDataDTO.ID
+  id: ID
+  parent: SampleStandardJob.DTO.ProcessDataDTO
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: ProcessDataDTO.ID
+  fullName: SampleStandardJob.DTO.ProcessDataDTO.ID
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/ProcessDataDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ID
+    path: Engine/SampleJob/SampleStandardJob/DTO/ProcessDataDTO.cs
+    startLine: 11
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: public string ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ID As String
+  overload: SampleStandardJob.DTO.ProcessDataDTO.ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: SampleStandardJob.DTO
+  commentId: N:SampleStandardJob.DTO
+  name: SampleStandardJob.DTO
+  nameWithType: SampleStandardJob.DTO
+  fullName: SampleStandardJob.DTO
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID*
+  commentId: Overload:SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: ProcessDataDTO.CCOMPANY_ID
+  fullName: SampleStandardJob.DTO.ProcessDataDTO.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SampleStandardJob.DTO.ProcessDataDTO.ID*
+  commentId: Overload:SampleStandardJob.DTO.ProcessDataDTO.ID
+  name: ID
+  nameWithType: ProcessDataDTO.ID
+  fullName: SampleStandardJob.DTO.ProcessDataDTO.ID

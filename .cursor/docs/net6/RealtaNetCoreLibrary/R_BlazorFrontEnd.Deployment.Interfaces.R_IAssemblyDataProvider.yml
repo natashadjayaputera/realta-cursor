@@ -1,0 +1,332 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider
+  commentId: T:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider
+  id: R_IAssemblyDataProvider
+  parent: R_BlazorFrontEnd.Deployment.Interfaces
+  children:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync(System.String)
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync(AssemblyName)
+  langs:
+  - csharp
+  - vb
+  name: R_IAssemblyDataProvider
+  nameWithType: R_IAssemblyDataProvider
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyDataProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IAssemblyDataProvider
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyDataProvider.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: public interface R_IAssemblyDataProvider
+    content.vb: Public Interface R_IAssemblyDataProvider
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync(AssemblyName)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync(AssemblyName)
+  id: GetAssemblyDataAsync(AssemblyName)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider
+  langs:
+  - csharp
+  - vb
+  name: GetAssemblyDataAsync(AssemblyName)
+  nameWithType: R_IAssemblyDataProvider.GetAssemblyDataAsync(AssemblyName)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync(AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyDataProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetAssemblyDataAsync
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyDataProvider.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: Task<IList<AssemblyData>?> GetAssemblyDataAsync(AssemblyName assemblyName)
+    parameters:
+    - id: assemblyName
+      type: AssemblyName
+    return:
+      type: Task{System.Nullable{IList{R_BlazorFrontEnd.Deployment.Models.AssemblyData}}}
+    content.vb: Function GetAssemblyDataAsync(assemblyName As AssemblyName) As Task(Of IList(Of AssemblyData)?)
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync*
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync(System.String)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync(System.String)
+  id: CheckAssemblyAsync(System.String)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider
+  langs:
+  - csharp
+  - vb
+  name: CheckAssemblyAsync(String)
+  nameWithType: R_IAssemblyDataProvider.CheckAssemblyAsync(String)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyDataProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CheckAssemblyAsync
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyDataProvider.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: Task CheckAssemblyAsync(string assemblyName)
+    parameters:
+    - id: assemblyName
+      type: System.String
+    return:
+      type: Task
+    content.vb: Function CheckAssemblyAsync(assemblyName As String) As Task
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync*
+references:
+- uid: R_BlazorFrontEnd.Deployment.Interfaces
+  commentId: N:R_BlazorFrontEnd.Deployment.Interfaces
+  name: R_BlazorFrontEnd.Deployment.Interfaces
+  nameWithType: R_BlazorFrontEnd.Deployment.Interfaces
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync
+  name: GetAssemblyDataAsync
+  nameWithType: R_IAssemblyDataProvider.GetAssemblyDataAsync
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.GetAssemblyDataAsync
+- uid: AssemblyName
+  isExternal: true
+  name: AssemblyName
+  nameWithType: AssemblyName
+  fullName: AssemblyName
+- uid: Task{System.Nullable{IList{R_BlazorFrontEnd.Deployment.Models.AssemblyData}}}
+  commentId: '!:Task{System.Nullable{IList{R_BlazorFrontEnd.Deployment.Models.AssemblyData}}}'
+  definition: Task`1
+  name: Task<Nullable<IList<AssemblyData>>>
+  nameWithType: Task<Nullable<IList<AssemblyData>>>
+  fullName: Task<System.Nullable<IList<R_BlazorFrontEnd.Deployment.Models.AssemblyData>>>
+  nameWithType.vb: Task(Of Nullable(Of IList(Of AssemblyData)))
+  fullName.vb: Task(Of System.Nullable(Of IList(Of R_BlazorFrontEnd.Deployment.Models.AssemblyData)))
+  name.vb: Task(Of Nullable(Of IList(Of AssemblyData)))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+    name: AssemblyData
+    nameWithType: AssemblyData
+    fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+    name: AssemblyData
+    nameWithType: AssemblyData
+    fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync
+  name: CheckAssemblyAsync
+  nameWithType: R_IAssemblyDataProvider.CheckAssemblyAsync
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyDataProvider.CheckAssemblyAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

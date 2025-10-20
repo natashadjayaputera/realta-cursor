@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.State.R_StateContainer`1
+  commentId: T:R_BlazorFrontEnd.State.R_StateContainer`1
+  id: R_StateContainer`1
+  parent: R_BlazorFrontEnd.State
+  children:
+  - R_BlazorFrontEnd.State.R_StateContainer`1.OnStateChanged
+  - R_BlazorFrontEnd.State.R_StateContainer`1.SetValue(`0)
+  - R_BlazorFrontEnd.State.R_StateContainer`1.Value
+  langs:
+  - csharp
+  - vb
+  name: R_StateContainer<T>
+  nameWithType: R_StateContainer<T>
+  fullName: R_BlazorFrontEnd.State.R_StateContainer<T>
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_StateContainer
+    path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.State
+  syntax:
+    content: 'public abstract class R_StateContainer<T> : object'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class R_StateContainer(Of T)
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  nameWithType.vb: R_StateContainer(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: R_BlazorFrontEnd.State.R_StateContainer(Of T)
+  name.vb: R_StateContainer(Of T)
+- uid: R_BlazorFrontEnd.State.R_StateContainer`1.Value
+  commentId: P:R_BlazorFrontEnd.State.R_StateContainer`1.Value
+  id: Value
+  parent: R_BlazorFrontEnd.State.R_StateContainer`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: R_StateContainer<T>.Value
+  fullName: R_BlazorFrontEnd.State.R_StateContainer<T>.Value
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Value
+    path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.State
+  syntax:
+    content: public T Value { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Value As T
+  overload: R_BlazorFrontEnd.State.R_StateContainer`1.Value*
+  nameWithType.vb: R_StateContainer(Of T).Value
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: R_BlazorFrontEnd.State.R_StateContainer(Of T).Value
+- uid: R_BlazorFrontEnd.State.R_StateContainer`1.OnStateChanged
+  commentId: E:R_BlazorFrontEnd.State.R_StateContainer`1.OnStateChanged
+  id: OnStateChanged
+  parent: R_BlazorFrontEnd.State.R_StateContainer`1
+  langs:
+  - csharp
+  - vb
+  name: OnStateChanged
+  nameWithType: R_StateContainer<T>.OnStateChanged
+  fullName: R_BlazorFrontEnd.State.R_StateContainer<T>.OnStateChanged
+  type: Event
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OnStateChanged
+    path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.State
+  syntax:
+    content: public event Action? OnStateChanged
+    return:
+      type: System.Nullable{Action}
+    content.vb: Public Event OnStateChanged As Action?
+  nameWithType.vb: R_StateContainer(Of T).OnStateChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.State.R_StateContainer(Of T).OnStateChanged
+- uid: R_BlazorFrontEnd.State.R_StateContainer`1.SetValue(`0)
+  commentId: M:R_BlazorFrontEnd.State.R_StateContainer`1.SetValue(`0)
+  id: SetValue(`0)
+  parent: R_BlazorFrontEnd.State.R_StateContainer`1
+  langs:
+  - csharp
+  - vb
+  name: SetValue(T)
+  nameWithType: R_StateContainer<T>.SetValue(T)
+  fullName: R_BlazorFrontEnd.State.R_StateContainer<T>.SetValue(T)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetValue
+    path: Library/R_BlazorFrontEnd/State/R_StateContainer.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.State
+  syntax:
+    content: public void SetValue(T poValue)
+    parameters:
+    - id: poValue
+      type: '{T}'
+    content.vb: Public Sub SetValue(poValue As T)
+  overload: R_BlazorFrontEnd.State.R_StateContainer`1.SetValue*
+  nameWithType.vb: R_StateContainer(Of T).SetValue(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.State.R_StateContainer(Of T).SetValue(T)
+references:
+- uid: R_BlazorFrontEnd.State
+  commentId: N:R_BlazorFrontEnd.State
+  name: R_BlazorFrontEnd.State
+  nameWithType: R_BlazorFrontEnd.State
+  fullName: R_BlazorFrontEnd.State
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.State.R_StateContainer`1.Value*
+  commentId: Overload:R_BlazorFrontEnd.State.R_StateContainer`1.Value
+  name: Value
+  nameWithType: R_StateContainer<T>.Value
+  fullName: R_BlazorFrontEnd.State.R_StateContainer<T>.Value
+  nameWithType.vb: R_StateContainer(Of T).Value
+  fullName.vb: R_BlazorFrontEnd.State.R_StateContainer(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Nullable{Action}
+  commentId: '!:System.Nullable{Action}'
+  definition: System.Nullable`1
+  name: Nullable<Action>
+  nameWithType: Nullable<Action>
+  fullName: System.Nullable<Action>
+  nameWithType.vb: Nullable(Of Action)
+  fullName.vb: System.Nullable(Of Action)
+  name.vb: Nullable(Of Action)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Action
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Action
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.State.R_StateContainer`1.SetValue*
+  commentId: Overload:R_BlazorFrontEnd.State.R_StateContainer`1.SetValue
+  name: SetValue
+  nameWithType: R_StateContainer<T>.SetValue
+  fullName: R_BlazorFrontEnd.State.R_StateContainer<T>.SetValue
+  nameWithType.vb: R_StateContainer(Of T).SetValue
+  fullName.vb: R_BlazorFrontEnd.State.R_StateContainer(Of T).SetValue

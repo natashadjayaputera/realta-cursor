@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLoggerDefault
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLoggerDefault
+  id: R_NetCoreLoggerDefault
+  parent: R_CommonFrontBackAPI.Log
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: R_NetCoreLoggerDefault
+  nameWithType: R_NetCoreLoggerDefault
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLoggerDefault
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerDefault.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NetCoreLoggerDefault
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLoggerDefault.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: 'public class R_NetCoreLoggerDefault : object'
+    content.vb: >-
+      Public Class R_NetCoreLoggerDefault
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

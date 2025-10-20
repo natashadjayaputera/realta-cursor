@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.AzureStorageLogger
+  commentId: T:R_CloudStorageCommon.AzureStorageLogger
+  id: AzureStorageLogger
+  parent: R_CloudStorageCommon
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AzureStorageLogger
+  nameWithType: AzureStorageLogger
+  fullName: R_CloudStorageCommon.AzureStorageLogger
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/AzureStorageLogger.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: AzureStorageLogger
+    path: Microservices/R_CloudStorageCommon/AzureStorageLogger.cs
+    startLine: 4
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public class AzureStorageLogger : R_NetCoreLoggerBase<AzureStorageLogger>'
+    content.vb: >-
+      Public Class AzureStorageLogger
+          Inherits R_NetCoreLoggerBase(Of AzureStorageLogger)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO
+  commentId: T:R_EmailEngine.DTOs.EmailAttachmentDTO
+  id: EmailAttachmentDTO
+  parent: R_EmailEngine.DTOs
+  children:
+  - R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID
+  - R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION
+  - R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME
+  - R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE
+  langs:
+  - csharp
+  - vb
+  name: EmailAttachmentDTO
+  nameWithType: EmailAttachmentDTO
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailAttachmentDTO
+    path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+    startLine: 2
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: 'public class EmailAttachmentDTO : object'
+    content.vb: >-
+      Public Class EmailAttachmentDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID
+  commentId: P:R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID
+  id: CEMAIL_ID
+  parent: R_EmailEngine.DTOs.EmailAttachmentDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_ID
+  nameWithType: EmailAttachmentDTO.CEMAIL_ID
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_ID
+    path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+    startLine: 4
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_ID As String
+  overload: R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME
+  commentId: P:R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME
+  id: CFILE_NAME
+  parent: R_EmailEngine.DTOs.EmailAttachmentDTO
+  langs:
+  - csharp
+  - vb
+  name: CFILE_NAME
+  nameWithType: EmailAttachmentDTO.CFILE_NAME
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CFILE_NAME
+    path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+    startLine: 5
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CFILE_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CFILE_NAME As String
+  overload: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION
+  commentId: P:R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION
+  id: CFILE_EXTENSION
+  parent: R_EmailEngine.DTOs.EmailAttachmentDTO
+  langs:
+  - csharp
+  - vb
+  name: CFILE_EXTENSION
+  nameWithType: EmailAttachmentDTO.CFILE_EXTENSION
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CFILE_EXTENSION
+    path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CFILE_EXTENSION { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CFILE_EXTENSION As String
+  overload: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE
+  commentId: P:R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE
+  id: OFILE
+  parent: R_EmailEngine.DTOs.EmailAttachmentDTO
+  langs:
+  - csharp
+  - vb
+  name: OFILE
+  nameWithType: EmailAttachmentDTO.OFILE
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: OFILE
+    path: Microservices/R_EmailEngine/DTOs/EmailAttachmentDTO.cs
+    startLine: 7
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public byte[] OFILE { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property OFILE As Byte()
+  overload: R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngine.DTOs
+  commentId: N:R_EmailEngine.DTOs
+  name: R_EmailEngine.DTOs
+  nameWithType: R_EmailEngine.DTOs
+  fullName: R_EmailEngine.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID*
+  commentId: Overload:R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID
+  name: CEMAIL_ID
+  nameWithType: EmailAttachmentDTO.CEMAIL_ID
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.CEMAIL_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME*
+  commentId: Overload:R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME
+  name: CFILE_NAME
+  nameWithType: EmailAttachmentDTO.CFILE_NAME
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_NAME
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION*
+  commentId: Overload:R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION
+  name: CFILE_EXTENSION
+  nameWithType: EmailAttachmentDTO.CFILE_EXTENSION
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.CFILE_EXTENSION
+- uid: R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE*
+  commentId: Overload:R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE
+  name: OFILE
+  nameWithType: EmailAttachmentDTO.OFILE
+  fullName: R_EmailEngine.DTOs.EmailAttachmentDTO.OFILE
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

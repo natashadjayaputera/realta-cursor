@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_NameValue
+  commentId: T:R_CommonFrontBackAPI.R_NameValue
+  id: R_NameValue
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_NameValue.Name
+  - R_CommonFrontBackAPI.R_NameValue.Value
+  langs:
+  - csharp
+  - vb
+  name: R_NameValue
+  nameWithType: R_NameValue
+  fullName: R_CommonFrontBackAPI.R_NameValue
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NameValue.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NameValue
+    path: Microservices/R_CommonFrontBackAPI/R_NameValue.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_NameValue : object'
+    content.vb: >-
+      Public Class R_NameValue
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_NameValue.Name
+  commentId: P:R_CommonFrontBackAPI.R_NameValue.Name
+  id: Name
+  parent: R_CommonFrontBackAPI.R_NameValue
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: R_NameValue.Name
+  fullName: R_CommonFrontBackAPI.R_NameValue.Name
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NameValue.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Name
+    path: Microservices/R_CommonFrontBackAPI/R_NameValue.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: R_CommonFrontBackAPI.R_NameValue.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_NameValue.Value
+  commentId: P:R_CommonFrontBackAPI.R_NameValue.Value
+  id: Value
+  parent: R_CommonFrontBackAPI.R_NameValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: R_NameValue.Value
+  fullName: R_CommonFrontBackAPI.R_NameValue.Value
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NameValue.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Value
+    path: Microservices/R_CommonFrontBackAPI/R_NameValue.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: R_CommonFrontBackAPI.R_NameValue.Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_NameValue.Name*
+  commentId: Overload:R_CommonFrontBackAPI.R_NameValue.Name
+  name: Name
+  nameWithType: R_NameValue.Name
+  fullName: R_CommonFrontBackAPI.R_NameValue.Name
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_NameValue.Value*
+  commentId: Overload:R_CommonFrontBackAPI.R_NameValue.Value
+  name: Value
+  nameWithType: R_NameValue.Value
+  fullName: R_CommonFrontBackAPI.R_NameValue.Value

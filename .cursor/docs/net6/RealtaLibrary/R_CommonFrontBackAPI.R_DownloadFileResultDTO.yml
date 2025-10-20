@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_DownloadFileResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_DownloadFileResultDTO
+  id: R_DownloadFileResultDTO
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult
+  langs:
+  - csharp
+  - vb
+  name: R_DownloadFileResultDTO
+  nameWithType: R_DownloadFileResultDTO
+  fullName: R_CommonFrontBackAPI.R_DownloadFileResultDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_DownloadFileResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DownloadFileResultDTO
+    path: Microservices/R_CommonFrontBackAPI/R_DownloadFileResultDTO.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_DownloadFileResultDTO : R_APIResultBaseDTO'
+    content.vb: >-
+      Public Class R_DownloadFileResultDTO
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult
+  commentId: P:R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult
+  id: GuidResult
+  parent: R_CommonFrontBackAPI.R_DownloadFileResultDTO
+  langs:
+  - csharp
+  - vb
+  name: GuidResult
+  nameWithType: R_DownloadFileResultDTO.GuidResult
+  fullName: R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_DownloadFileResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GuidResult
+    path: Microservices/R_CommonFrontBackAPI/R_DownloadFileResultDTO.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string GuidResult { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property GuidResult As String
+  overload: R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult*
+  commentId: Overload:R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult
+  name: GuidResult
+  nameWithType: R_DownloadFileResultDTO.GuidResult
+  fullName: R_CommonFrontBackAPI.R_DownloadFileResultDTO.GuidResult
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

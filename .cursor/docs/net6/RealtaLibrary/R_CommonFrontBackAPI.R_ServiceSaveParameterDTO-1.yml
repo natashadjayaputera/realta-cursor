@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  id: R_ServiceSaveParameterDTO`1
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.CRUDMode
+  - R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.Entity
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceSaveParameterDTO<E>
+  nameWithType: R_ServiceSaveParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<E>
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceSaveParameterDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveParameterDTO.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceSaveParameterDTO<E> : object'
+    typeParameters:
+    - id: E
+    content.vb: >-
+      Public Class R_ServiceSaveParameterDTO(Of E)
+          Inherits Object
+  inheritance:
+  - System.Object
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of E)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of E)
+  name.vb: R_ServiceSaveParameterDTO(Of E)
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.Entity
+  commentId: P:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.Entity
+  id: Entity
+  parent: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  langs:
+  - csharp
+  - vb
+  name: Entity
+  nameWithType: R_ServiceSaveParameterDTO<E>.Entity
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<E>.Entity
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Entity
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveParameterDTO.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public E Entity { get; set; }
+    parameters: []
+    return:
+      type: '{E}'
+    content.vb: Public Property Entity As E
+  overload: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.Entity*
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of E).Entity
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of E).Entity
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.CRUDMode
+  commentId: P:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.CRUDMode
+  id: CRUDMode
+  parent: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  langs:
+  - csharp
+  - vb
+  name: CRUDMode
+  nameWithType: R_ServiceSaveParameterDTO<E>.CRUDMode
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<E>.CRUDMode
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CRUDMode
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveParameterDTO.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public eCRUDMode CRUDMode { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.eCRUDMode
+    content.vb: Public Property CRUDMode As eCRUDMode
+  overload: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.CRUDMode*
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of E).CRUDMode
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of E).CRUDMode
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.Entity*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.Entity
+  name: Entity
+  nameWithType: R_ServiceSaveParameterDTO<E>.Entity
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<E>.Entity
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of E).Entity
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of E).Entity
+- uid: '{E}'
+  commentId: '!:E'
+  definition: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.CRUDMode*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1.CRUDMode
+  name: CRUDMode
+  nameWithType: R_ServiceSaveParameterDTO<E>.CRUDMode
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<E>.CRUDMode
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of E).CRUDMode
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of E).CRUDMode
+- uid: R_CommonFrontBackAPI.eCRUDMode
+  commentId: T:R_CommonFrontBackAPI.eCRUDMode
+  parent: R_CommonFrontBackAPI
+  name: eCRUDMode
+  nameWithType: eCRUDMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode

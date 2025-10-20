@@ -1,0 +1,673 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.GST_LICENSE
+  commentId: T:BackExtension.Models.GST_LICENSE
+  id: GST_LICENSE
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.GST_LICENSE.CCOMPANY_ID
+  - BackExtension.Models.GST_LICENSE.CCREATE_BY
+  - BackExtension.Models.GST_LICENSE.CLICENSE_CODE
+  - BackExtension.Models.GST_LICENSE.CLICENSE_MODE
+  - BackExtension.Models.GST_LICENSE.CSERVER_UID
+  - BackExtension.Models.GST_LICENSE.CUPDATE_BY
+  - BackExtension.Models.GST_LICENSE.DCREATE_DATE
+  - BackExtension.Models.GST_LICENSE.DUPDATE_DATE
+  - BackExtension.Models.GST_LICENSE.NLICENSEE
+  - BackExtension.Models.GST_LICENSE.NTIMEOUT
+  langs:
+  - csharp
+  - vb
+  name: GST_LICENSE
+  nameWithType: GST_LICENSE
+  fullName: BackExtension.Models.GST_LICENSE
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GST_LICENSE
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class GST_LICENSE : object'
+    content.vb: >-
+      Public Class GST_LICENSE
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.GST_LICENSE.CCOMPANY_ID
+  commentId: P:BackExtension.Models.GST_LICENSE.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: GST_LICENSE.CCOMPANY_ID
+  fullName: BackExtension.Models.GST_LICENSE.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: BackExtension.Models.GST_LICENSE.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.CSERVER_UID
+  commentId: P:BackExtension.Models.GST_LICENSE.CSERVER_UID
+  id: CSERVER_UID
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: CSERVER_UID
+  nameWithType: GST_LICENSE.CSERVER_UID
+  fullName: BackExtension.Models.GST_LICENSE.CSERVER_UID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSERVER_UID
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CSERVER_UID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSERVER_UID As String
+  overload: BackExtension.Models.GST_LICENSE.CSERVER_UID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.CLICENSE_CODE
+  commentId: P:BackExtension.Models.GST_LICENSE.CLICENSE_CODE
+  id: CLICENSE_CODE
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: CLICENSE_CODE
+  nameWithType: GST_LICENSE.CLICENSE_CODE
+  fullName: BackExtension.Models.GST_LICENSE.CLICENSE_CODE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CLICENSE_CODE
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CLICENSE_CODE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CLICENSE_CODE As String
+  overload: BackExtension.Models.GST_LICENSE.CLICENSE_CODE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.CLICENSE_MODE
+  commentId: P:BackExtension.Models.GST_LICENSE.CLICENSE_MODE
+  id: CLICENSE_MODE
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: CLICENSE_MODE
+  nameWithType: GST_LICENSE.CLICENSE_MODE
+  fullName: BackExtension.Models.GST_LICENSE.CLICENSE_MODE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CLICENSE_MODE
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CLICENSE_MODE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CLICENSE_MODE As String
+  overload: BackExtension.Models.GST_LICENSE.CLICENSE_MODE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.NLICENSEE
+  commentId: P:BackExtension.Models.GST_LICENSE.NLICENSEE
+  id: NLICENSEE
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: NLICENSEE
+  nameWithType: GST_LICENSE.NLICENSEE
+  fullName: BackExtension.Models.GST_LICENSE.NLICENSEE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NLICENSEE
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 10
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int NLICENSEE { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NLICENSEE As Integer
+  overload: BackExtension.Models.GST_LICENSE.NLICENSEE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.NTIMEOUT
+  commentId: P:BackExtension.Models.GST_LICENSE.NTIMEOUT
+  id: NTIMEOUT
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: NTIMEOUT
+  nameWithType: GST_LICENSE.NTIMEOUT
+  fullName: BackExtension.Models.GST_LICENSE.NTIMEOUT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NTIMEOUT
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 11
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int NTIMEOUT { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NTIMEOUT As Integer
+  overload: BackExtension.Models.GST_LICENSE.NTIMEOUT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.CUPDATE_BY
+  commentId: P:BackExtension.Models.GST_LICENSE.CUPDATE_BY
+  id: CUPDATE_BY
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: CUPDATE_BY
+  nameWithType: GST_LICENSE.CUPDATE_BY
+  fullName: BackExtension.Models.GST_LICENSE.CUPDATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUPDATE_BY
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 12
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CUPDATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CUPDATE_BY As String?
+  overload: BackExtension.Models.GST_LICENSE.CUPDATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.DUPDATE_DATE
+  commentId: P:BackExtension.Models.GST_LICENSE.DUPDATE_DATE
+  id: DUPDATE_DATE
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: DUPDATE_DATE
+  nameWithType: GST_LICENSE.DUPDATE_DATE
+  fullName: BackExtension.Models.GST_LICENSE.DUPDATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DUPDATE_DATE
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 13
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DUPDATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DUPDATE_DATE As DateTime?
+  overload: BackExtension.Models.GST_LICENSE.DUPDATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.CCREATE_BY
+  commentId: P:BackExtension.Models.GST_LICENSE.CCREATE_BY
+  id: CCREATE_BY
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: CCREATE_BY
+  nameWithType: GST_LICENSE.CCREATE_BY
+  fullName: BackExtension.Models.GST_LICENSE.CCREATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCREATE_BY
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 14
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CCREATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CCREATE_BY As String?
+  overload: BackExtension.Models.GST_LICENSE.CCREATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_LICENSE.DCREATE_DATE
+  commentId: P:BackExtension.Models.GST_LICENSE.DCREATE_DATE
+  id: DCREATE_DATE
+  parent: BackExtension.Models.GST_LICENSE
+  langs:
+  - csharp
+  - vb
+  name: DCREATE_DATE
+  nameWithType: GST_LICENSE.DCREATE_DATE
+  fullName: BackExtension.Models.GST_LICENSE.DCREATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_LICENSE.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DCREATE_DATE
+    path: Library Back/BackExtension/Models/GST_LICENSE.cs
+    startLine: 15
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DCREATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DCREATE_DATE As DateTime?
+  overload: BackExtension.Models.GST_LICENSE.DCREATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.GST_LICENSE.CCOMPANY_ID*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: GST_LICENSE.CCOMPANY_ID
+  fullName: BackExtension.Models.GST_LICENSE.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.GST_LICENSE.CSERVER_UID*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.CSERVER_UID
+  name: CSERVER_UID
+  nameWithType: GST_LICENSE.CSERVER_UID
+  fullName: BackExtension.Models.GST_LICENSE.CSERVER_UID
+- uid: BackExtension.Models.GST_LICENSE.CLICENSE_CODE*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.CLICENSE_CODE
+  name: CLICENSE_CODE
+  nameWithType: GST_LICENSE.CLICENSE_CODE
+  fullName: BackExtension.Models.GST_LICENSE.CLICENSE_CODE
+- uid: BackExtension.Models.GST_LICENSE.CLICENSE_MODE*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.CLICENSE_MODE
+  name: CLICENSE_MODE
+  nameWithType: GST_LICENSE.CLICENSE_MODE
+  fullName: BackExtension.Models.GST_LICENSE.CLICENSE_MODE
+- uid: BackExtension.Models.GST_LICENSE.NLICENSEE*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.NLICENSEE
+  name: NLICENSEE
+  nameWithType: GST_LICENSE.NLICENSEE
+  fullName: BackExtension.Models.GST_LICENSE.NLICENSEE
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BackExtension.Models.GST_LICENSE.NTIMEOUT*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.NTIMEOUT
+  name: NTIMEOUT
+  nameWithType: GST_LICENSE.NTIMEOUT
+  fullName: BackExtension.Models.GST_LICENSE.NTIMEOUT
+- uid: BackExtension.Models.GST_LICENSE.CUPDATE_BY*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.CUPDATE_BY
+  name: CUPDATE_BY
+  nameWithType: GST_LICENSE.CUPDATE_BY
+  fullName: BackExtension.Models.GST_LICENSE.CUPDATE_BY
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.GST_LICENSE.DUPDATE_DATE*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.DUPDATE_DATE
+  name: DUPDATE_DATE
+  nameWithType: GST_LICENSE.DUPDATE_DATE
+  fullName: BackExtension.Models.GST_LICENSE.DUPDATE_DATE
+- uid: System.Nullable{DateTime}
+  commentId: '!:System.Nullable{DateTime}'
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.GST_LICENSE.CCREATE_BY*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.CCREATE_BY
+  name: CCREATE_BY
+  nameWithType: GST_LICENSE.CCREATE_BY
+  fullName: BackExtension.Models.GST_LICENSE.CCREATE_BY
+- uid: BackExtension.Models.GST_LICENSE.DCREATE_DATE*
+  commentId: Overload:BackExtension.Models.GST_LICENSE.DCREATE_DATE
+  name: DCREATE_DATE
+  nameWithType: GST_LICENSE.DCREATE_DATE
+  fullName: BackExtension.Models.GST_LICENSE.DCREATE_DATE

@@ -1,0 +1,733 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception
+  commentId: T:R_BlazorFrontEnd.Exceptions.R_Exception
+  id: R_Exception
+  parent: R_BlazorFrontEnd.Exceptions
+  children:
+  - R_BlazorFrontEnd.Exceptions.R_Exception.#ctor
+  - R_BlazorFrontEnd.Exceptions.R_Exception.#ctor(List{R_BlazorFrontEnd.Exceptions.R_Error})
+  - R_BlazorFrontEnd.Exceptions.R_Exception.Add(Exception)
+  - R_BlazorFrontEnd.Exceptions.R_Exception.Add(R_BlazorFrontEnd.Exceptions.R_Error)
+  - R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String)
+  - R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String,List{R_BlazorFrontEnd.Exceptions.R_ErrorDetail})
+  - R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String,System.String,System.String)
+  - R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList
+  - R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList
+  - R_BlazorFrontEnd.Exceptions.R_Exception.HasError
+  - R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors
+  langs:
+  - csharp
+  - vb
+  name: R_Exception
+  nameWithType: R_Exception
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_Exception
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: 'public class R_Exception : Exception'
+    content.vb: >-
+      Public Class R_Exception
+          Inherits Exception
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList
+  commentId: P:R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList
+  id: ErrorList
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: ErrorList
+  nameWithType: R_Exception.ErrorList
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ErrorList
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public List<R_IError> ErrorList { get; }
+    parameters: []
+    return:
+      type: List{R_APICommonDTO.R_IError}
+    content.vb: Public ReadOnly Property ErrorList As List(Of R_IError)
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.HasError
+  commentId: P:R_BlazorFrontEnd.Exceptions.R_Exception.HasError
+  id: HasError
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: HasError
+  nameWithType: R_Exception.HasError
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.HasError
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HasError
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 18
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public bool HasError { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasError As Boolean
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.HasError*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.#ctor
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.#ctor
+  id: '#ctor'
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: R_Exception()
+  nameWithType: R_Exception.R_Exception()
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.R_Exception()
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 26
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public R_Exception()
+    content.vb: Public Sub New
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.#ctor(List{R_BlazorFrontEnd.Exceptions.R_Error})
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.#ctor(List{R_BlazorFrontEnd.Exceptions.R_Error})
+  id: '#ctor(List{R_BlazorFrontEnd.Exceptions.R_Error})'
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: R_Exception(List<R_Error>)
+  nameWithType: R_Exception.R_Exception(List<R_Error>)
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.R_Exception(List<R_BlazorFrontEnd.Exceptions.R_Error>)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 32
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public R_Exception(List<R_Error> poErrors)
+    parameters:
+    - id: poErrors
+      type: List{R_BlazorFrontEnd.Exceptions.R_Error}
+    content.vb: Public Sub New(poErrors As List(Of R_Error))
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.#ctor*
+  nameWithType.vb: R_Exception.R_Exception(List(Of R_Error))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Exceptions.R_Exception.R_Exception(List(Of R_BlazorFrontEnd.Exceptions.R_Error))
+  name.vb: R_Exception(List(Of R_Error))
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList
+  id: GetErrorList
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: GetErrorList()
+  nameWithType: R_Exception.GetErrorList()
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetErrorList
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 38
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public List<R_Error> GetErrorList()
+    return:
+      type: List{R_BlazorFrontEnd.Exceptions.R_Error}
+    content.vb: Public Function GetErrorList As List(Of R_Error)
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.Add(R_BlazorFrontEnd.Exceptions.R_Error)
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.Add(R_BlazorFrontEnd.Exceptions.R_Error)
+  id: Add(R_BlazorFrontEnd.Exceptions.R_Error)
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: Add(R_Error)
+  nameWithType: R_Exception.Add(R_Error)
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.Add(R_BlazorFrontEnd.Exceptions.R_Error)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Add
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 44
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public void Add(R_Error poError)
+    parameters:
+    - id: poError
+      type: R_BlazorFrontEnd.Exceptions.R_Error
+    content.vb: Public Sub Add(poError As R_Error)
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.Add*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String)
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String)
+  id: Add(System.String,System.String)
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: Add(String, String)
+  nameWithType: R_Exception.Add(String, String)
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Add
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 49
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public void Add(string pcErrorNo, string pcErrorDesc)
+    parameters:
+    - id: pcErrorNo
+      type: System.String
+    - id: pcErrorDesc
+      type: System.String
+    content.vb: Public Sub Add(pcErrorNo As String, pcErrorDesc As String)
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.Add*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String,List{R_BlazorFrontEnd.Exceptions.R_ErrorDetail})
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String,List{R_BlazorFrontEnd.Exceptions.R_ErrorDetail})
+  id: Add(System.String,System.String,List{R_BlazorFrontEnd.Exceptions.R_ErrorDetail})
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: Add(String, String, List<R_ErrorDetail>)
+  nameWithType: R_Exception.Add(String, String, List<R_ErrorDetail>)
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String, System.String, List<R_BlazorFrontEnd.Exceptions.R_ErrorDetail>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Add
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 54
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public void Add(string pcErrorNo, string pcErrorDesc, List<R_ErrorDetail> poErrorDetails)
+    parameters:
+    - id: pcErrorNo
+      type: System.String
+    - id: pcErrorDesc
+      type: System.String
+    - id: poErrorDetails
+      type: List{R_BlazorFrontEnd.Exceptions.R_ErrorDetail}
+    content.vb: Public Sub Add(pcErrorNo As String, pcErrorDesc As String, poErrorDetails As List(Of R_ErrorDetail))
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.Add*
+  nameWithType.vb: R_Exception.Add(String, String, List(Of R_ErrorDetail))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String, System.String, List(Of R_BlazorFrontEnd.Exceptions.R_ErrorDetail))
+  name.vb: Add(String, String, List(Of R_ErrorDetail))
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String,System.String,System.String)
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String,System.String,System.String,System.String)
+  id: Add(System.String,System.String,System.String,System.String)
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: Add(String, String, String, String)
+  nameWithType: R_Exception.Add(String, String, String, String)
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.Add(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Add
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 59
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public void Add(string pcErrorNo, string pcErrorDesc, string pcErrorDetailNo, string pcErrorDetailDesc)
+    parameters:
+    - id: pcErrorNo
+      type: System.String
+    - id: pcErrorDesc
+      type: System.String
+    - id: pcErrorDetailNo
+      type: System.String
+    - id: pcErrorDetailDesc
+      type: System.String
+    content.vb: Public Sub Add(pcErrorNo As String, pcErrorDesc As String, pcErrorDetailNo As String, pcErrorDetailDesc As String)
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.Add*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.Add(Exception)
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.Add(Exception)
+  id: Add(Exception)
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: Add(Exception)
+  nameWithType: R_Exception.Add(Exception)
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.Add(Exception)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Add
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 67
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public void Add(Exception poException)
+    parameters:
+    - id: poException
+      type: Exception
+    content.vb: Public Sub Add(poException As Exception)
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.Add*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors
+  commentId: M:R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors
+  id: ThrowExceptionIfErrors
+  parent: R_BlazorFrontEnd.Exceptions.R_Exception
+  langs:
+  - csharp
+  - vb
+  name: ThrowExceptionIfErrors()
+  nameWithType: R_Exception.ThrowExceptionIfErrors()
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ThrowExceptionIfErrors
+    path: Library/R_BlazorFrontEnd/Exceptions/R_Exception.cs
+    startLine: 110
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Exceptions
+  syntax:
+    content: public void ThrowExceptionIfErrors()
+    content.vb: Public Sub ThrowExceptionIfErrors
+  overload: R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorFrontEnd.Exceptions
+  commentId: N:R_BlazorFrontEnd.Exceptions
+  name: R_BlazorFrontEnd.Exceptions
+  nameWithType: R_BlazorFrontEnd.Exceptions
+  fullName: R_BlazorFrontEnd.Exceptions
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList*
+  commentId: Overload:R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList
+  name: ErrorList
+  nameWithType: R_Exception.ErrorList
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.ErrorList
+- uid: List{R_APICommonDTO.R_IError}
+  commentId: '!:List{R_APICommonDTO.R_IError}'
+  definition: List`1
+  name: List<R_IError>
+  nameWithType: List<R_IError>
+  fullName: List<R_APICommonDTO.R_IError>
+  nameWithType.vb: List(Of R_IError)
+  fullName.vb: List(Of R_APICommonDTO.R_IError)
+  name.vb: List(Of R_IError)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_APICommonDTO.R_IError
+    name: R_IError
+    nameWithType: R_IError
+    fullName: R_APICommonDTO.R_IError
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_APICommonDTO.R_IError
+    name: R_IError
+    nameWithType: R_IError
+    fullName: R_APICommonDTO.R_IError
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.HasError*
+  commentId: Overload:R_BlazorFrontEnd.Exceptions.R_Exception.HasError
+  name: HasError
+  nameWithType: R_Exception.HasError
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.HasError
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Exceptions.R_Exception.#ctor
+  name: R_Exception
+  nameWithType: R_Exception.R_Exception
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.R_Exception
+- uid: List{R_BlazorFrontEnd.Exceptions.R_Error}
+  commentId: '!:List{R_BlazorFrontEnd.Exceptions.R_Error}'
+  definition: List`1
+  name: List<R_Error>
+  nameWithType: List<R_Error>
+  fullName: List<R_BlazorFrontEnd.Exceptions.R_Error>
+  nameWithType.vb: List(Of R_Error)
+  fullName.vb: List(Of R_BlazorFrontEnd.Exceptions.R_Error)
+  name.vb: List(Of R_Error)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Exceptions.R_Error
+    name: R_Error
+    nameWithType: R_Error
+    fullName: R_BlazorFrontEnd.Exceptions.R_Error
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Exceptions.R_Error
+    name: R_Error
+    nameWithType: R_Error
+    fullName: R_BlazorFrontEnd.Exceptions.R_Error
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList*
+  commentId: Overload:R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList
+  name: GetErrorList
+  nameWithType: R_Exception.GetErrorList
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.GetErrorList
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.Add*
+  commentId: Overload:R_BlazorFrontEnd.Exceptions.R_Exception.Add
+  name: Add
+  nameWithType: R_Exception.Add
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.Add
+- uid: R_BlazorFrontEnd.Exceptions.R_Error
+  commentId: T:R_BlazorFrontEnd.Exceptions.R_Error
+  parent: R_BlazorFrontEnd.Exceptions
+  name: R_Error
+  nameWithType: R_Error
+  fullName: R_BlazorFrontEnd.Exceptions.R_Error
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: List{R_BlazorFrontEnd.Exceptions.R_ErrorDetail}
+  commentId: '!:List{R_BlazorFrontEnd.Exceptions.R_ErrorDetail}'
+  definition: List`1
+  name: List<R_ErrorDetail>
+  nameWithType: List<R_ErrorDetail>
+  fullName: List<R_BlazorFrontEnd.Exceptions.R_ErrorDetail>
+  nameWithType.vb: List(Of R_ErrorDetail)
+  fullName.vb: List(Of R_BlazorFrontEnd.Exceptions.R_ErrorDetail)
+  name.vb: List(Of R_ErrorDetail)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+    name: R_ErrorDetail
+    nameWithType: R_ErrorDetail
+    fullName: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+    name: R_ErrorDetail
+    nameWithType: R_ErrorDetail
+    fullName: R_BlazorFrontEnd.Exceptions.R_ErrorDetail
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Exception
+  commentId: '!:Exception'
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors*
+  commentId: Overload:R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors
+  name: ThrowExceptionIfErrors
+  nameWithType: R_Exception.ThrowExceptionIfErrors
+  fullName: R_BlazorFrontEnd.Exceptions.R_Exception.ThrowExceptionIfErrors

@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineBackFile
+  id: R_EmailEngineBackFile
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension
+  - R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId
+  - R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName
+  - R_CommonFrontBackAPI.R_EmailEngineBackFile.Key
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineBackFile
+  nameWithType: R_EmailEngineBackFile
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineBackFile
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+    startLine: 2
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_EmailEngineBackFile : object'
+    content.vb: >-
+      Public Class R_EmailEngineBackFile
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId
+  id: FileId
+  parent: R_CommonFrontBackAPI.R_EmailEngineBackFile
+  langs:
+  - csharp
+  - vb
+  name: FileId
+  nameWithType: R_EmailEngineBackFile.FileId
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileId
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string FileId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileId As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName
+  id: FileName
+  parent: R_CommonFrontBackAPI.R_EmailEngineBackFile
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: R_EmailEngineBackFile.FileName
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileName
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileName As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension
+  id: FileExtension
+  parent: R_CommonFrontBackAPI.R_EmailEngineBackFile
+  langs:
+  - csharp
+  - vb
+  name: FileExtension
+  nameWithType: R_EmailEngineBackFile.FileExtension
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileExtension
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string FileExtension { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileExtension As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.Key
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineBackFile.Key
+  id: Key
+  parent: R_CommonFrontBackAPI.R_EmailEngineBackFile
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: R_EmailEngineBackFile.Key
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.Key
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Key
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineBackFile.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public R_EmailEngineKey Key { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_EmailEngineKey
+    content.vb: Public Property Key As R_EmailEngineKey
+  overload: R_CommonFrontBackAPI.R_EmailEngineBackFile.Key*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId
+  name: FileId
+  nameWithType: R_EmailEngineBackFile.FileId
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName
+  name: FileName
+  nameWithType: R_EmailEngineBackFile.FileName
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileName
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension
+  name: FileExtension
+  nameWithType: R_EmailEngineBackFile.FileExtension
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.FileExtension
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile.Key*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineBackFile.Key
+  name: Key
+  nameWithType: R_EmailEngineBackFile.Key
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile.Key
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineKey
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineKey
+  nameWithType: R_EmailEngineKey
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey

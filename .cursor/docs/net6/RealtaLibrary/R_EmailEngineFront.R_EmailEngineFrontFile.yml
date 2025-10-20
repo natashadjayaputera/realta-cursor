@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile
+  commentId: T:R_EmailEngineFront.R_EmailEngineFrontFile
+  id: R_EmailEngineFrontFile
+  parent: R_EmailEngineFront
+  children:
+  - R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension
+  - R_EmailEngineFront.R_EmailEngineFrontFile.FileId
+  - R_EmailEngineFront.R_EmailEngineFrontFile.FileName
+  - R_EmailEngineFront.R_EmailEngineFrontFile.FilePath
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineFrontFile
+  nameWithType: R_EmailEngineFrontFile
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineFrontFile
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: 'public class R_EmailEngineFrontFile : object'
+    content.vb: >-
+      Public Class R_EmailEngineFrontFile
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FileId
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontFile.FileId
+  id: FileId
+  parent: R_EmailEngineFront.R_EmailEngineFrontFile
+  langs:
+  - csharp
+  - vb
+  name: FileId
+  nameWithType: R_EmailEngineFrontFile.FileId
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FileId
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileId
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+    startLine: 8
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public string FileId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileId As String
+  overload: R_EmailEngineFront.R_EmailEngineFrontFile.FileId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FileName
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontFile.FileName
+  id: FileName
+  parent: R_EmailEngineFront.R_EmailEngineFrontFile
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: R_EmailEngineFrontFile.FileName
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FileName
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileName
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+    startLine: 9
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileName As String
+  overload: R_EmailEngineFront.R_EmailEngineFrontFile.FileName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension
+  id: FileExtension
+  parent: R_EmailEngineFront.R_EmailEngineFrontFile
+  langs:
+  - csharp
+  - vb
+  name: FileExtension
+  nameWithType: R_EmailEngineFrontFile.FileExtension
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FileExtension
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+    startLine: 10
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public string FileExtension { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileExtension As String
+  overload: R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FilePath
+  commentId: P:R_EmailEngineFront.R_EmailEngineFrontFile.FilePath
+  id: FilePath
+  parent: R_EmailEngineFront.R_EmailEngineFrontFile
+  langs:
+  - csharp
+  - vb
+  name: FilePath
+  nameWithType: R_EmailEngineFrontFile.FilePath
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FilePath
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FilePath
+    path: Microservices/R_EmailEngineFront/DTO/R_EmailEngineFrontFile.cs
+    startLine: 11
+  assemblies:
+  - R_EmailEngineFront
+  namespace: R_EmailEngineFront
+  syntax:
+    content: public string FilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FilePath As String
+  overload: R_EmailEngineFront.R_EmailEngineFrontFile.FilePath*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngineFront
+  commentId: N:R_EmailEngineFront
+  name: R_EmailEngineFront
+  nameWithType: R_EmailEngineFront
+  fullName: R_EmailEngineFront
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FileId*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontFile.FileId
+  name: FileId
+  nameWithType: R_EmailEngineFrontFile.FileId
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FileId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FileName*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontFile.FileName
+  name: FileName
+  nameWithType: R_EmailEngineFrontFile.FileName
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FileName
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension
+  name: FileExtension
+  nameWithType: R_EmailEngineFrontFile.FileExtension
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FileExtension
+- uid: R_EmailEngineFront.R_EmailEngineFrontFile.FilePath*
+  commentId: Overload:R_EmailEngineFront.R_EmailEngineFrontFile.FilePath
+  name: FilePath
+  nameWithType: R_EmailEngineFrontFile.FilePath
+  fullName: R_EmailEngineFront.R_EmailEngineFrontFile.FilePath

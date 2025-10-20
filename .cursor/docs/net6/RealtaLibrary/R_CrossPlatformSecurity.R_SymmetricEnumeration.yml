@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CrossPlatformSecurity.R_SymmetricEnumeration
+  commentId: T:R_CrossPlatformSecurity.R_SymmetricEnumeration
+  id: R_SymmetricEnumeration
+  parent: R_CrossPlatformSecurity
+  children:
+  - R_CrossPlatformSecurity.R_SymmetricEnumeration.SymmetricVector
+  langs:
+  - csharp
+  - vb
+  name: R_SymmetricEnumeration
+  nameWithType: R_SymmetricEnumeration
+  fullName: R_CrossPlatformSecurity.R_SymmetricEnumeration
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricEnumeration.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SymmetricEnumeration
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricEnumeration.cs
+    startLine: 8
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: 'public class R_SymmetricEnumeration : object'
+    content.vb: >-
+      Public Class R_SymmetricEnumeration
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CrossPlatformSecurity.R_SymmetricEnumeration.SymmetricVector
+  commentId: F:R_CrossPlatformSecurity.R_SymmetricEnumeration.SymmetricVector
+  id: SymmetricVector
+  parent: R_CrossPlatformSecurity.R_SymmetricEnumeration
+  langs:
+  - csharp
+  - vb
+  name: SymmetricVector
+  nameWithType: R_SymmetricEnumeration.SymmetricVector
+  fullName: R_CrossPlatformSecurity.R_SymmetricEnumeration.SymmetricVector
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CrossPlatformSecurity/R_SymmetricEnumeration.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SymmetricVector
+    path: Microservices/R_CrossPlatformSecurity/R_SymmetricEnumeration.cs
+    startLine: 10
+  assemblies:
+  - R_CrossPlatformSecurity
+  namespace: R_CrossPlatformSecurity
+  syntax:
+    content: public const string SymmetricVector = null
+    return:
+      type: System.String
+    content.vb: Public Const SymmetricVector As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CrossPlatformSecurity
+  commentId: N:R_CrossPlatformSecurity
+  name: R_CrossPlatformSecurity
+  nameWithType: R_CrossPlatformSecurity
+  fullName: R_CrossPlatformSecurity
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

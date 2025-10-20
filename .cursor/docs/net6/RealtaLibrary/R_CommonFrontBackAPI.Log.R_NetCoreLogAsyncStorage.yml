@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage
+  id: R_NetCoreLogAsyncStorage
+  parent: R_CommonFrontBackAPI.Log
+  children:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData(System.String)
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: R_NetCoreLogAsyncStorage
+  nameWithType: R_NetCoreLogAsyncStorage
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogAsyncStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NetCoreLogAsyncStorage
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogAsyncStorage.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: 'public static class R_NetCoreLogAsyncStorage : object'
+    content.vb: >-
+      Public Module R_NetCoreLogAsyncStorage
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData(System.String,System.Object)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData(System.String,System.Object)
+  id: SetData(System.String,System.Object)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage
+  langs:
+  - csharp
+  - vb
+  name: SetData(String, Object)
+  nameWithType: R_NetCoreLogAsyncStorage.SetData(String, Object)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogAsyncStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SetData
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogAsyncStorage.cs
+    startLine: 11
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public static void SetData(string name, object data)
+    parameters:
+    - id: name
+      type: System.String
+    - id: data
+      type: System.Object
+    content.vb: Public Shared Sub SetData(name As String, data As Object)
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData(System.String)
+  commentId: M:R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData(System.String)
+  id: GetData(System.String)
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage
+  langs:
+  - csharp
+  - vb
+  name: GetData(String)
+  nameWithType: R_NetCoreLogAsyncStorage.GetData(String)
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogAsyncStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetData
+    path: Microservices/R_CommonFrontBackAPI/Log/R_NetCoreLogAsyncStorage.cs
+    startLine: 14
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI.Log
+  syntax:
+    content: public static object GetData(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Shared Function GetData(name As String) As Object
+  overload: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData
+  name: SetData
+  nameWithType: R_NetCoreLogAsyncStorage.SetData
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.SetData
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData*
+  commentId: Overload:R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData
+  name: GetData
+  nameWithType: R_NetCoreLogAsyncStorage.GetData
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogAsyncStorage.GetData

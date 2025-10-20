@@ -1,0 +1,408 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.StorageDBDTO
+  commentId: T:CloudStorageJob.StorageDBDTO
+  id: StorageDBDTO
+  parent: CloudStorageJob
+  children:
+  - CloudStorageJob.StorageDBDTO.CCOMPANY_ID
+  - CloudStorageJob.StorageDBDTO.CDATA_TYPE
+  - CloudStorageJob.StorageDBDTO.CSTORAGE_ID
+  - CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID
+  - CloudStorageJob.StorageDBDTO.DSYNCH_DATE
+  - CloudStorageJob.StorageDBDTO.ODATA
+  langs:
+  - csharp
+  - vb
+  name: StorageDBDTO
+  nameWithType: StorageDBDTO
+  fullName: CloudStorageJob.StorageDBDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: StorageDBDTO
+    path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+    startLine: 8
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class StorageDBDTO : object'
+    content.vb: >-
+      Public Class StorageDBDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CloudStorageJob.StorageDBDTO.CCOMPANY_ID
+  commentId: P:CloudStorageJob.StorageDBDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: CloudStorageJob.StorageDBDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: StorageDBDTO.CCOMPANY_ID
+  fullName: CloudStorageJob.StorageDBDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCOMPANY_ID
+    path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+    startLine: 10
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: CloudStorageJob.StorageDBDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.StorageDBDTO.CDATA_TYPE
+  commentId: P:CloudStorageJob.StorageDBDTO.CDATA_TYPE
+  id: CDATA_TYPE
+  parent: CloudStorageJob.StorageDBDTO
+  langs:
+  - csharp
+  - vb
+  name: CDATA_TYPE
+  nameWithType: StorageDBDTO.CDATA_TYPE
+  fullName: CloudStorageJob.StorageDBDTO.CDATA_TYPE
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CDATA_TYPE
+    path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+    startLine: 11
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public string CDATA_TYPE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CDATA_TYPE As String
+  overload: CloudStorageJob.StorageDBDTO.CDATA_TYPE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.StorageDBDTO.CSTORAGE_ID
+  commentId: P:CloudStorageJob.StorageDBDTO.CSTORAGE_ID
+  id: CSTORAGE_ID
+  parent: CloudStorageJob.StorageDBDTO
+  langs:
+  - csharp
+  - vb
+  name: CSTORAGE_ID
+  nameWithType: StorageDBDTO.CSTORAGE_ID
+  fullName: CloudStorageJob.StorageDBDTO.CSTORAGE_ID
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSTORAGE_ID
+    path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+    startLine: 12
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public string CSTORAGE_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSTORAGE_ID As String
+  overload: CloudStorageJob.StorageDBDTO.CSTORAGE_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID
+  commentId: P:CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID
+  id: CSTORAGE_PROVIDER_ID
+  parent: CloudStorageJob.StorageDBDTO
+  langs:
+  - csharp
+  - vb
+  name: CSTORAGE_PROVIDER_ID
+  nameWithType: StorageDBDTO.CSTORAGE_PROVIDER_ID
+  fullName: CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSTORAGE_PROVIDER_ID
+    path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+    startLine: 13
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public string CSTORAGE_PROVIDER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSTORAGE_PROVIDER_ID As String
+  overload: CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.StorageDBDTO.ODATA
+  commentId: P:CloudStorageJob.StorageDBDTO.ODATA
+  id: ODATA
+  parent: CloudStorageJob.StorageDBDTO
+  langs:
+  - csharp
+  - vb
+  name: ODATA
+  nameWithType: StorageDBDTO.ODATA
+  fullName: CloudStorageJob.StorageDBDTO.ODATA
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ODATA
+    path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+    startLine: 14
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public byte[] ODATA { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property ODATA As Byte()
+  overload: CloudStorageJob.StorageDBDTO.ODATA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.StorageDBDTO.DSYNCH_DATE
+  commentId: P:CloudStorageJob.StorageDBDTO.DSYNCH_DATE
+  id: DSYNCH_DATE
+  parent: CloudStorageJob.StorageDBDTO
+  langs:
+  - csharp
+  - vb
+  name: DSYNCH_DATE
+  nameWithType: StorageDBDTO.DSYNCH_DATE
+  fullName: CloudStorageJob.StorageDBDTO.DSYNCH_DATE
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: DSYNCH_DATE
+    path: Engine/Jobs/CloudStorageJob/StorageDBDTO.cs
+    startLine: 15
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public DateTime? DSYNCH_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DSYNCH_DATE As DateTime?
+  overload: CloudStorageJob.StorageDBDTO.DSYNCH_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CloudStorageJob.StorageDBDTO.CCOMPANY_ID*
+  commentId: Overload:CloudStorageJob.StorageDBDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: StorageDBDTO.CCOMPANY_ID
+  fullName: CloudStorageJob.StorageDBDTO.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CloudStorageJob.StorageDBDTO.CDATA_TYPE*
+  commentId: Overload:CloudStorageJob.StorageDBDTO.CDATA_TYPE
+  name: CDATA_TYPE
+  nameWithType: StorageDBDTO.CDATA_TYPE
+  fullName: CloudStorageJob.StorageDBDTO.CDATA_TYPE
+- uid: CloudStorageJob.StorageDBDTO.CSTORAGE_ID*
+  commentId: Overload:CloudStorageJob.StorageDBDTO.CSTORAGE_ID
+  name: CSTORAGE_ID
+  nameWithType: StorageDBDTO.CSTORAGE_ID
+  fullName: CloudStorageJob.StorageDBDTO.CSTORAGE_ID
+- uid: CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID*
+  commentId: Overload:CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID
+  name: CSTORAGE_PROVIDER_ID
+  nameWithType: StorageDBDTO.CSTORAGE_PROVIDER_ID
+  fullName: CloudStorageJob.StorageDBDTO.CSTORAGE_PROVIDER_ID
+- uid: CloudStorageJob.StorageDBDTO.ODATA*
+  commentId: Overload:CloudStorageJob.StorageDBDTO.ODATA
+  name: ODATA
+  nameWithType: StorageDBDTO.ODATA
+  fullName: CloudStorageJob.StorageDBDTO.ODATA
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: CloudStorageJob.StorageDBDTO.DSYNCH_DATE*
+  commentId: Overload:CloudStorageJob.StorageDBDTO.DSYNCH_DATE
+  name: DSYNCH_DATE
+  nameWithType: StorageDBDTO.DSYNCH_DATE
+  fullName: CloudStorageJob.StorageDBDTO.DSYNCH_DATE
+- uid: System.Nullable{DateTime}
+  commentId: '!:System.Nullable{DateTime}'
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: '!:System.Nullable`1'
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

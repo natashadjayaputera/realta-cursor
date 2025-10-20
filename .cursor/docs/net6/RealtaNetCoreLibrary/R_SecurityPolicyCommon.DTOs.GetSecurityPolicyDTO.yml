@@ -1,0 +1,1415 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  id: GetSecurityPolicyDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  children:
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  - R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  langs:
+  - csharp
+  - vb
+  name: GetSecurityPolicyDTO
+  nameWithType: GetSecurityPolicyDTO
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetSecurityPolicyDTO
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 2
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: 'public class GetSecurityPolicyDTO : object'
+    content.vb: >-
+      Public Class GetSecurityPolicyDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  id: LACCOUNT_LOCKOUT_THRESHOLD
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LACCOUNT_LOCKOUT_THRESHOLD
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LACCOUNT_LOCKOUT_THRESHOLD As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  id: IACCOUNT_LOCKOUT_THRESHOLD
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IACCOUNT_LOCKOUT_THRESHOLD
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 5
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IACCOUNT_LOCKOUT_THRESHOLD As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  id: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 6
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LRESET_ACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LRESET_ACCOUNT_LOCKOUT_THRESHOLD As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  id: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 7
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IRESET_ACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IRESET_ACCOUNT_LOCKOUT_THRESHOLD As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  id: LACCOUNT_LOCKOUT_DURATION
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LACCOUNT_LOCKOUT_DURATION
+  nameWithType: GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LACCOUNT_LOCKOUT_DURATION
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 8
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LACCOUNT_LOCKOUT_DURATION { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LACCOUNT_LOCKOUT_DURATION As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  id: IACCOUNT_LOCKOUT_DURATION
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IACCOUNT_LOCKOUT_DURATION
+  nameWithType: GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IACCOUNT_LOCKOUT_DURATION
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 9
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IACCOUNT_LOCKOUT_DURATION { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IACCOUNT_LOCKOUT_DURATION As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  id: LMAXIMUM_PASSWORD_AGE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LMAXIMUM_PASSWORD_AGE
+  nameWithType: GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LMAXIMUM_PASSWORD_AGE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 11
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LMAXIMUM_PASSWORD_AGE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LMAXIMUM_PASSWORD_AGE As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  id: CMAXIMUM_PASSWORD_AGE_OPTION
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: CMAXIMUM_PASSWORD_AGE_OPTION
+  nameWithType: GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CMAXIMUM_PASSWORD_AGE_OPTION
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 12
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CMAXIMUM_PASSWORD_AGE_OPTION { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CMAXIMUM_PASSWORD_AGE_OPTION As String
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  id: IMAXIMUM_PASSWORD_AGE_DAYS
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IMAXIMUM_PASSWORD_AGE_DAYS
+  nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMAXIMUM_PASSWORD_AGE_DAYS
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 13
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IMAXIMUM_PASSWORD_AGE_DAYS { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMAXIMUM_PASSWORD_AGE_DAYS As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  id: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 14
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  id: IMAXIMUM_PASSWORD_AGE_MONTH
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IMAXIMUM_PASSWORD_AGE_MONTH
+  nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMAXIMUM_PASSWORD_AGE_MONTH
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 15
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IMAXIMUM_PASSWORD_AGE_MONTH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMAXIMUM_PASSWORD_AGE_MONTH As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  id: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  nameWithType: GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 16
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE As String
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  id: CNEXT_UPDATE_PASSWORD
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: CNEXT_UPDATE_PASSWORD
+  nameWithType: GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CNEXT_UPDATE_PASSWORD
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 18
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CNEXT_UPDATE_PASSWORD { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CNEXT_UPDATE_PASSWORD As String
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  id: CLAST_UPDATE_PASSWORD
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: CLAST_UPDATE_PASSWORD
+  nameWithType: GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CLAST_UPDATE_PASSWORD
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 20
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CLAST_UPDATE_PASSWORD { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CLAST_UPDATE_PASSWORD As String
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
+  id: CCURRENT_DATE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: CCURRENT_DATE
+  nameWithType: GetSecurityPolicyDTO.CCURRENT_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCURRENT_DATE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 21
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CCURRENT_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCURRENT_DATE As String
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  id: CACCOUNT_LOCKOUT_DATE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: CACCOUNT_LOCKOUT_DATE
+  nameWithType: GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CACCOUNT_LOCKOUT_DATE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 22
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CACCOUNT_LOCKOUT_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CACCOUNT_LOCKOUT_DATE As String
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  id: CFAILED_ATTEMPT_DATE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: CFAILED_ATTEMPT_DATE
+  nameWithType: GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CFAILED_ATTEMPT_DATE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 23
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CFAILED_ATTEMPT_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CFAILED_ATTEMPT_DATE As String
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  id: NFAILED_ATTEMPT
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: NFAILED_ATTEMPT
+  nameWithType: GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NFAILED_ATTEMPT
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 24
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int NFAILED_ATTEMPT { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property NFAILED_ATTEMPT As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  id: LMINIMUM_PASSWORD_LENGTH
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LMINIMUM_PASSWORD_LENGTH
+  nameWithType: GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LMINIMUM_PASSWORD_LENGTH
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 26
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LMINIMUM_PASSWORD_LENGTH { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LMINIMUM_PASSWORD_LENGTH As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  id: IMINIMUM_PASSWORD_LENGTH
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IMINIMUM_PASSWORD_LENGTH
+  nameWithType: GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMINIMUM_PASSWORD_LENGTH
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 27
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IMINIMUM_PASSWORD_LENGTH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMINIMUM_PASSWORD_LENGTH As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  id: LMINIMUM_PASSWORD_AGE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LMINIMUM_PASSWORD_AGE
+  nameWithType: GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LMINIMUM_PASSWORD_AGE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 28
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LMINIMUM_PASSWORD_AGE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LMINIMUM_PASSWORD_AGE As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  id: IMINIMUM_PASSWORD_AGE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IMINIMUM_PASSWORD_AGE
+  nameWithType: GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMINIMUM_PASSWORD_AGE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 29
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IMINIMUM_PASSWORD_AGE { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMINIMUM_PASSWORD_AGE As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  id: LENFORCE_PASSWORD_HISTORY
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LENFORCE_PASSWORD_HISTORY
+  nameWithType: GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LENFORCE_PASSWORD_HISTORY
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 30
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LENFORCE_PASSWORD_HISTORY { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LENFORCE_PASSWORD_HISTORY As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  id: IENFORCE_PASSWORD_HISTORY
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: IENFORCE_PASSWORD_HISTORY
+  nameWithType: GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IENFORCE_PASSWORD_HISTORY
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 31
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public int IENFORCE_PASSWORD_HISTORY { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IENFORCE_PASSWORD_HISTORY As Integer
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
+  id: LCOMPLEXITY
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LCOMPLEXITY
+  nameWithType: GetSecurityPolicyDTO.LCOMPLEXITY
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LCOMPLEXITY
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 32
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LCOMPLEXITY { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LCOMPLEXITY As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
+  id: LINCLUDE_LETTER
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_LETTER
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_LETTER
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_LETTER
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 33
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LINCLUDE_LETTER { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_LETTER As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  id: LINCLUDE_UPPERCASE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_UPPERCASE
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_UPPERCASE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 34
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LINCLUDE_UPPERCASE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_UPPERCASE As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  id: LINCLUDE_LOWERCASE
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_LOWERCASE
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_LOWERCASE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 35
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LINCLUDE_LOWERCASE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_LOWERCASE As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  id: LINCLUDE_NUMBER
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_NUMBER
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_NUMBER
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 36
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LINCLUDE_NUMBER { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_NUMBER As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  id: LINCLUDE_SPECIAL_CHARACTER
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_SPECIAL_CHARACTER
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_SPECIAL_CHARACTER
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 37
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LINCLUDE_SPECIAL_CHARACTER { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_SPECIAL_CHARACTER As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  id: LCANNOT_CONTAIN_USER_ID
+  parent: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  langs:
+  - csharp
+  - vb
+  name: LCANNOT_CONTAIN_USER_ID
+  nameWithType: GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LCANNOT_CONTAIN_USER_ID
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/GetSecurityPolicyDTO.cs
+    startLine: 38
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public bool LCANNOT_CONTAIN_USER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LCANNOT_CONTAIN_USER_ID As Boolean
+  overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_SecurityPolicyCommon.DTOs
+  commentId: N:R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  nameWithType: R_SecurityPolicyCommon.DTOs
+  fullName: R_SecurityPolicyCommon.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  name: LACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  name: IACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  name: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  name: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  name: LACCOUNT_LOCKOUT_DURATION
+  nameWithType: GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  name: IACCOUNT_LOCKOUT_DURATION
+  nameWithType: GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  name: LMAXIMUM_PASSWORD_AGE
+  nameWithType: GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  name: CMAXIMUM_PASSWORD_AGE_OPTION
+  nameWithType: GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  name: IMAXIMUM_PASSWORD_AGE_DAYS
+  nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  name: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  name: IMAXIMUM_PASSWORD_AGE_MONTH
+  nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  name: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  nameWithType: GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  name: CNEXT_UPDATE_PASSWORD
+  nameWithType: GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  name: CLAST_UPDATE_PASSWORD
+  nameWithType: GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
+  name: CCURRENT_DATE
+  nameWithType: GetSecurityPolicyDTO.CCURRENT_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  name: CACCOUNT_LOCKOUT_DATE
+  nameWithType: GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  name: CFAILED_ATTEMPT_DATE
+  nameWithType: GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  name: NFAILED_ATTEMPT
+  nameWithType: GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  name: LMINIMUM_PASSWORD_LENGTH
+  nameWithType: GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  name: IMINIMUM_PASSWORD_LENGTH
+  nameWithType: GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  name: LMINIMUM_PASSWORD_AGE
+  nameWithType: GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  name: IMINIMUM_PASSWORD_AGE
+  nameWithType: GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  name: LENFORCE_PASSWORD_HISTORY
+  nameWithType: GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  name: IENFORCE_PASSWORD_HISTORY
+  nameWithType: GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
+  name: LCOMPLEXITY
+  nameWithType: GetSecurityPolicyDTO.LCOMPLEXITY
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
+  name: LINCLUDE_LETTER
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_LETTER
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  name: LINCLUDE_UPPERCASE
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  name: LINCLUDE_LOWERCASE
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  name: LINCLUDE_NUMBER
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  name: LINCLUDE_SPECIAL_CHARACTER
+  nameWithType: GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+- uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  name: LCANNOT_CONTAIN_USER_ID
+  nameWithType: GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID

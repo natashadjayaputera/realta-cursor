@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  id: SecurityPolicyGenericResultDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: SecurityPolicyGenericResultDTO
+  nameWithType: SecurityPolicyGenericResultDTO
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyGenericResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SecurityPolicyGenericResultDTO
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyGenericResultDTO.cs
+    startLine: 9
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: 'public class SecurityPolicyGenericResultDTO : R_APIResultBaseDTO'
+    content.vb: >-
+      Public Class SecurityPolicyGenericResultDTO
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  - R_APICommonDTO.R_APIResultBaseDTO
+  inheritedMembers:
+  - R_APICommonDTO.R_APIResultBaseDTO.errors
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: R_SecurityPolicyCommon.DTOs
+  commentId: N:R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  nameWithType: R_SecurityPolicyCommon.DTOs
+  fullName: R_SecurityPolicyCommon.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_APICommonDTO.R_APIResultBaseDTO
+  commentId: T:R_APICommonDTO.R_APIResultBaseDTO
+  parent: R_APICommonDTO
+  isExternal: true
+  name: R_APIResultBaseDTO
+  nameWithType: R_APIResultBaseDTO
+  fullName: R_APICommonDTO.R_APIResultBaseDTO
+- uid: R_APICommonDTO.R_APIResultBaseDTO.errors
+  commentId: P:R_APICommonDTO.R_APIResultBaseDTO.errors
+  parent: R_APICommonDTO.R_APIResultBaseDTO
+  isExternal: true
+  name: errors
+  nameWithType: R_APIResultBaseDTO.errors
+  fullName: R_APICommonDTO.R_APIResultBaseDTO.errors
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APICommonDTO
+  commentId: N:R_APICommonDTO
+  isExternal: true
+  name: R_APICommonDTO
+  nameWithType: R_APICommonDTO
+  fullName: R_APICommonDTO
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions

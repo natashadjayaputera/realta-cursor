@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_AuthenticationFront.R_TokenRepository
+  commentId: T:R_AuthenticationFront.R_TokenRepository
+  id: R_TokenRepository
+  parent: R_AuthenticationFront
+  children:
+  - R_AuthenticationFront.R_TokenRepository.#ctor(System.String,System.Double)
+  - R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken
+  - R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest
+  - R_AuthenticationFront.R_TokenRepository.R_GetToken
+  - R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired
+  - R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken(System.String)
+  - R_AuthenticationFront.R_TokenRepository.R_SetToken(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_TokenRepository
+  nameWithType: R_TokenRepository
+  fullName: R_AuthenticationFront.R_TokenRepository
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_TokenRepository
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 8
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: 'public class R_TokenRepository : R_ITokenRepository'
+    content.vb: >-
+      Public Class R_TokenRepository
+          Inherits R_ITokenRepository
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_AuthenticationFront.R_TokenRepository.#ctor(System.String,System.Double)
+  commentId: M:R_AuthenticationFront.R_TokenRepository.#ctor(System.String,System.Double)
+  id: '#ctor(System.String,System.Double)'
+  parent: R_AuthenticationFront.R_TokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_TokenRepository(String, Double)
+  nameWithType: R_TokenRepository.R_TokenRepository(String, Double)
+  fullName: R_AuthenticationFront.R_TokenRepository.R_TokenRepository(System.String, System.Double)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 16
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: public R_TokenRepository(string pcAPIRefreshTokenRequestEndPoint = null, double pnRefreshTokenSpareInSeconds = null)
+    parameters:
+    - id: pcAPIRefreshTokenRequestEndPoint
+      type: System.String
+    - id: pnRefreshTokenSpareInSeconds
+      type: System.Double
+    content.vb: Public Sub New(pcAPIRefreshTokenRequestEndPoint As String = Nothing, pnRefreshTokenSpareInSeconds As Double = Nothing)
+  overload: R_AuthenticationFront.R_TokenRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_AuthenticationFront.R_TokenRepository.R_SetToken(System.String)
+  commentId: M:R_AuthenticationFront.R_TokenRepository.R_SetToken(System.String)
+  id: R_SetToken(System.String)
+  parent: R_AuthenticationFront.R_TokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_SetToken(String)
+  nameWithType: R_TokenRepository.R_SetToken(String)
+  fullName: R_AuthenticationFront.R_TokenRepository.R_SetToken(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetToken
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 23
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: public void R_SetToken(string pcToken)
+    parameters:
+    - id: pcToken
+      type: System.String
+    content.vb: Public Sub R_SetToken(pcToken As String)
+  overload: R_AuthenticationFront.R_TokenRepository.R_SetToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_AuthenticationFront.R_TokenRepository.R_GetToken
+  commentId: M:R_AuthenticationFront.R_TokenRepository.R_GetToken
+  id: R_GetToken
+  parent: R_AuthenticationFront.R_TokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_GetToken()
+  nameWithType: R_TokenRepository.R_GetToken()
+  fullName: R_AuthenticationFront.R_TokenRepository.R_GetToken()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetToken
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 27
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: public string R_GetToken()
+    return:
+      type: System.String
+    content.vb: Public Function R_GetToken As String
+  overload: R_AuthenticationFront.R_TokenRepository.R_GetToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken(System.String)
+  commentId: M:R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken(System.String)
+  id: R_SetRefreshToken(System.String)
+  parent: R_AuthenticationFront.R_TokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_SetRefreshToken(String)
+  nameWithType: R_TokenRepository.R_SetRefreshToken(String)
+  fullName: R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetRefreshToken
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 32
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: public void R_SetRefreshToken(string pcRefreshToken)
+    parameters:
+    - id: pcRefreshToken
+      type: System.String
+    content.vb: Public Sub R_SetRefreshToken(pcRefreshToken As String)
+  overload: R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken
+  commentId: M:R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken
+  id: R_GetRefreshToken
+  parent: R_AuthenticationFront.R_TokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_GetRefreshToken()
+  nameWithType: R_TokenRepository.R_GetRefreshToken()
+  fullName: R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetRefreshToken
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 36
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: public string R_GetRefreshToken()
+    return:
+      type: System.String
+    content.vb: Public Function R_GetRefreshToken As String
+  overload: R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest
+  commentId: M:R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest
+  id: R_GetRefreshTokenRequest
+  parent: R_AuthenticationFront.R_TokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_GetRefreshTokenRequest()
+  nameWithType: R_TokenRepository.R_GetRefreshTokenRequest()
+  fullName: R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetRefreshTokenRequest
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 41
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: public string R_GetRefreshTokenRequest()
+    return:
+      type: System.String
+    content.vb: Public Function R_GetRefreshTokenRequest As String
+  overload: R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired
+  commentId: M:R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired
+  id: R_IsTokenExpired
+  parent: R_AuthenticationFront.R_TokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_IsTokenExpired()
+  nameWithType: R_TokenRepository.R_IsTokenExpired()
+  fullName: R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IsTokenExpired
+    path: Microservices/R_AuthenticationFront/R_TokenRepository.cs
+    startLine: 46
+  assemblies:
+  - R_AuthenticationFront
+  namespace: R_AuthenticationFront
+  syntax:
+    content: public bool R_IsTokenExpired()
+    return:
+      type: System.Boolean
+    content.vb: Public Function R_IsTokenExpired As Boolean
+  overload: R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_AuthenticationFront
+  commentId: N:R_AuthenticationFront
+  name: R_AuthenticationFront
+  nameWithType: R_AuthenticationFront
+  fullName: R_AuthenticationFront
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_AuthenticationFront.R_TokenRepository.#ctor*
+  commentId: Overload:R_AuthenticationFront.R_TokenRepository.#ctor
+  name: R_TokenRepository
+  nameWithType: R_TokenRepository.R_TokenRepository
+  fullName: R_AuthenticationFront.R_TokenRepository.R_TokenRepository
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Double
+  commentId: '!:System.Double'
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: R_AuthenticationFront.R_TokenRepository.R_SetToken*
+  commentId: Overload:R_AuthenticationFront.R_TokenRepository.R_SetToken
+  name: R_SetToken
+  nameWithType: R_TokenRepository.R_SetToken
+  fullName: R_AuthenticationFront.R_TokenRepository.R_SetToken
+- uid: R_AuthenticationFront.R_TokenRepository.R_GetToken*
+  commentId: Overload:R_AuthenticationFront.R_TokenRepository.R_GetToken
+  name: R_GetToken
+  nameWithType: R_TokenRepository.R_GetToken
+  fullName: R_AuthenticationFront.R_TokenRepository.R_GetToken
+- uid: R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken*
+  commentId: Overload:R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken
+  name: R_SetRefreshToken
+  nameWithType: R_TokenRepository.R_SetRefreshToken
+  fullName: R_AuthenticationFront.R_TokenRepository.R_SetRefreshToken
+- uid: R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken*
+  commentId: Overload:R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken
+  name: R_GetRefreshToken
+  nameWithType: R_TokenRepository.R_GetRefreshToken
+  fullName: R_AuthenticationFront.R_TokenRepository.R_GetRefreshToken
+- uid: R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest*
+  commentId: Overload:R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest
+  name: R_GetRefreshTokenRequest
+  nameWithType: R_TokenRepository.R_GetRefreshTokenRequest
+  fullName: R_AuthenticationFront.R_TokenRepository.R_GetRefreshTokenRequest
+- uid: R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired*
+  commentId: Overload:R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired
+  name: R_IsTokenExpired
+  nameWithType: R_TokenRepository.R_IsTokenExpired
+  fullName: R_AuthenticationFront.R_TokenRepository.R_IsTokenExpired
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

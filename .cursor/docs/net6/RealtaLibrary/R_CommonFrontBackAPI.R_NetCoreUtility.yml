@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility
+  commentId: T:R_CommonFrontBackAPI.R_NetCoreUtility
+  id: R_NetCoreUtility
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray(System.Byte[],System.Int64)
+  - R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject``1(``0)
+  - R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte(System.String,System.Byte[])
+  - R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte``1(System.Byte[])
+  - R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream``1(IEnumerable{``0})
+  - R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte(System.String)
+  - R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: R_NetCoreUtility
+  nameWithType: R_NetCoreUtility
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_NetCoreUtility
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_NetCoreUtility : object'
+    content.vb: >-
+      Public Class R_NetCoreUtility
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream``1(IEnumerable{``0})
+  commentId: M:R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream``1(IEnumerable{``0})
+  id: R_GetAsyncStream``1(IEnumerable{``0})
+  parent: R_CommonFrontBackAPI.R_NetCoreUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetAsyncStream<T>(IEnumerable<T>)
+  nameWithType: R_NetCoreUtility.R_GetAsyncStream<T>(IEnumerable<T>)
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream<T>(IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetAsyncStream
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 13
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static IAsyncEnumerable<T> R_GetAsyncStream<T>(IEnumerable<T> poParameter)
+    parameters:
+    - id: poParameter
+      type: IEnumerable{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: IAsyncEnumerable{{T}}
+    content.vb: Public Shared Function R_GetAsyncStream(Of T)(poParameter As IEnumerable(Of T)) As IAsyncEnumerable(Of T)
+  overload: R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream*
+  nameWithType.vb: R_NetCoreUtility.R_GetAsyncStream(Of T)(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream(Of T)(IEnumerable(Of T))
+  name.vb: R_GetAsyncStream(Of T)(IEnumerable(Of T))
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray(System.Byte[],System.Int64)
+  commentId: M:R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray(System.Byte[],System.Int64)
+  id: R_ChunkByteArray(System.Byte[],System.Int64)
+  parent: R_CommonFrontBackAPI.R_NetCoreUtility
+  langs:
+  - csharp
+  - vb
+  name: R_ChunkByteArray(Byte[], Int64)
+  nameWithType: R_NetCoreUtility.R_ChunkByteArray(Byte[], Int64)
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray(System.Byte[], System.Int64)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ChunkByteArray
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 21
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static byte[][] R_ChunkByteArray(byte[] poByteData, long pnBufferSize)
+    parameters:
+    - id: poByteData
+      type: System.Byte[]
+    - id: pnBufferSize
+      type: System.Int64
+    return:
+      type: System.Byte[][]
+    content.vb: Public Shared Function R_ChunkByteArray(poByteData As Byte(), pnBufferSize As Long) As Byte()()
+  overload: R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray*
+  nameWithType.vb: R_NetCoreUtility.R_ChunkByteArray(Byte(), Int64)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray(System.Byte(), System.Int64)
+  name.vb: R_ChunkByteArray(Byte(), Int64)
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte(System.String)
+  commentId: M:R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte(System.String)
+  id: R_SerializeFileToByte(System.String)
+  parent: R_CommonFrontBackAPI.R_NetCoreUtility
+  langs:
+  - csharp
+  - vb
+  name: R_SerializeFileToByte(String)
+  nameWithType: R_NetCoreUtility.R_SerializeFileToByte(String)
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SerializeFileToByte
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 42
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static byte[] R_SerializeFileToByte(string pcFile)
+    parameters:
+    - id: pcFile
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function R_SerializeFileToByte(pcFile As String) As Byte()
+  overload: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte(System.String,System.Byte[])
+  commentId: M:R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte(System.String,System.Byte[])
+  id: R_DeserializeFileFromByte(System.String,System.Byte[])
+  parent: R_CommonFrontBackAPI.R_NetCoreUtility
+  langs:
+  - csharp
+  - vb
+  name: R_DeserializeFileFromByte(String, Byte[])
+  nameWithType: R_NetCoreUtility.R_DeserializeFileFromByte(String, Byte[])
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte(System.String, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DeserializeFileFromByte
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 71
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static void R_DeserializeFileFromByte(string pcFile, byte[] pbData)
+    parameters:
+    - id: pcFile
+      type: System.String
+    - id: pbData
+      type: System.Byte[]
+    content.vb: Public Shared Sub R_DeserializeFileFromByte(pcFile As String, pbData As Byte())
+  overload: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte*
+  nameWithType.vb: R_NetCoreUtility.R_DeserializeFileFromByte(String, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte(System.String, System.Byte())
+  name.vb: R_DeserializeFileFromByte(String, Byte())
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject``1(``0)
+  commentId: M:R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject``1(``0)
+  id: R_CloneObject``1(``0)
+  parent: R_CommonFrontBackAPI.R_NetCoreUtility
+  langs:
+  - csharp
+  - vb
+  name: R_CloneObject<T>(T)
+  nameWithType: R_NetCoreUtility.R_CloneObject<T>(T)
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CloneObject
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 93
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: >-
+      public static T R_CloneObject<T>(T poObject)
+          where T : class
+    parameters:
+    - id: poObject
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function R_CloneObject(Of T As Class)(poObject As T) As T
+  overload: R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject*
+  nameWithType.vb: R_NetCoreUtility.R_CloneObject(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject(Of T)(T)
+  name.vb: R_CloneObject(Of T)(T)
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte``1(``0)
+  commentId: M:R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte``1(``0)
+  id: R_SerializeObjectToByte``1(``0)
+  parent: R_CommonFrontBackAPI.R_NetCoreUtility
+  langs:
+  - csharp
+  - vb
+  name: R_SerializeObjectToByte<T>(T)
+  nameWithType: R_NetCoreUtility.R_SerializeObjectToByte<T>(T)
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SerializeObjectToByte
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 113
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: >-
+      public static byte[] R_SerializeObjectToByte<T>(T poObject)
+          where T : class
+    parameters:
+    - id: poObject
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function R_SerializeObjectToByte(Of T As Class)(poObject As T) As Byte()
+  overload: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte*
+  nameWithType.vb: R_NetCoreUtility.R_SerializeObjectToByte(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte(Of T)(T)
+  name.vb: R_SerializeObjectToByte(Of T)(T)
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte``1(System.Byte[])
+  commentId: M:R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte``1(System.Byte[])
+  id: R_DeserializeObjectFromByte``1(System.Byte[])
+  parent: R_CommonFrontBackAPI.R_NetCoreUtility
+  langs:
+  - csharp
+  - vb
+  name: R_DeserializeObjectFromByte<T>(Byte[])
+  nameWithType: R_NetCoreUtility.R_DeserializeObjectFromByte<T>(Byte[])
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte<T>(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_DeserializeObjectFromByte
+    path: Microservices/R_CommonFrontBackAPI/R_NetCoreUtility.cs
+    startLine: 130
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: >-
+      public static T R_DeserializeObjectFromByte<T>(byte[] poData)
+          where T : class
+    parameters:
+    - id: poData
+      type: System.Byte[]
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function R_DeserializeObjectFromByte(Of T As Class)(poData As Byte()) As T
+  overload: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte*
+  nameWithType.vb: R_NetCoreUtility.R_DeserializeObjectFromByte(Of T)(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte(Of T)(System.Byte())
+  name.vb: R_DeserializeObjectFromByte(Of T)(Byte())
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream*
+  commentId: Overload:R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream
+  name: R_GetAsyncStream
+  nameWithType: R_NetCoreUtility.R_GetAsyncStream
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_GetAsyncStream
+- uid: IEnumerable{{T}}
+  commentId: '!:IEnumerable{``0}'
+  definition: IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IAsyncEnumerable{{T}}
+  commentId: '!:IAsyncEnumerable{``0}'
+  definition: IAsyncEnumerable`1
+  name: IAsyncEnumerable<T>
+  nameWithType: IAsyncEnumerable<T>
+  fullName: IAsyncEnumerable<T>
+  nameWithType.vb: IAsyncEnumerable(Of T)
+  fullName.vb: IAsyncEnumerable(Of T)
+  name.vb: IAsyncEnumerable(Of T)
+  spec.csharp:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  commentId: '!:IEnumerable`1'
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IAsyncEnumerable`1
+  isExternal: true
+  name: IAsyncEnumerable<>
+  nameWithType: IAsyncEnumerable<>
+  fullName: IAsyncEnumerable<>
+  nameWithType.vb: IAsyncEnumerable(Of )
+  fullName.vb: IAsyncEnumerable(Of )
+  name.vb: IAsyncEnumerable(Of )
+  spec.csharp:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray*
+  commentId: Overload:R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray
+  name: R_ChunkByteArray
+  nameWithType: R_NetCoreUtility.R_ChunkByteArray
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_ChunkByteArray
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int64
+  commentId: '!:System.Int64'
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System.Byte[][]
+  isExternal: true
+  name: Byte[][]
+  nameWithType: Byte[][]
+  fullName: System.Byte[][]
+  nameWithType.vb: Byte()()
+  fullName.vb: System.Byte()()
+  name.vb: Byte()()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte*
+  commentId: Overload:R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte
+  name: R_SerializeFileToByte
+  nameWithType: R_NetCoreUtility.R_SerializeFileToByte
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeFileToByte
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte*
+  commentId: Overload:R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte
+  name: R_DeserializeFileFromByte
+  nameWithType: R_NetCoreUtility.R_DeserializeFileFromByte
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeFileFromByte
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject*
+  commentId: Overload:R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject
+  name: R_CloneObject
+  nameWithType: R_NetCoreUtility.R_CloneObject
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_CloneObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte*
+  commentId: Overload:R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte
+  name: R_SerializeObjectToByte
+  nameWithType: R_NetCoreUtility.R_SerializeObjectToByte
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_SerializeObjectToByte
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte*
+  commentId: Overload:R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte
+  name: R_DeserializeObjectFromByte
+  nameWithType: R_NetCoreUtility.R_DeserializeObjectFromByte
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility.R_DeserializeObjectFromByte

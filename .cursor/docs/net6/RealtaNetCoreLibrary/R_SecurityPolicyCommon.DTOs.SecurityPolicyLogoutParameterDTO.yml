@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  id: SecurityPolicyLogoutParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  children:
+  - R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+  - R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID
+  langs:
+  - csharp
+  - vb
+  name: SecurityPolicyLogoutParameterDTO
+  nameWithType: SecurityPolicyLogoutParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyLogoutParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SecurityPolicyLogoutParameterDTO
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyLogoutParameterDTO.cs
+    startLine: 2
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: 'public class SecurityPolicyLogoutParameterDTO : object'
+    content.vb: >-
+      Public Class SecurityPolicyLogoutParameterDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+  commentId: P:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyLogoutParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyLogoutParameterDTO.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID
+  commentId: P:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID
+  id: CUSER_ID
+  parent: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: CUSER_ID
+  nameWithType: SecurityPolicyLogoutParameterDTO.CUSER_ID
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyLogoutParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_ID
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/SecurityPolicyLogoutParameterDTO.cs
+    startLine: 5
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CUSER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CUSER_ID As String
+  overload: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_SecurityPolicyCommon.DTOs
+  commentId: N:R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  nameWithType: R_SecurityPolicyCommon.DTOs
+  fullName: R_SecurityPolicyCommon.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID
+  name: CUSER_ID
+  nameWithType: SecurityPolicyLogoutParameterDTO.CUSER_ID
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO.CUSER_ID

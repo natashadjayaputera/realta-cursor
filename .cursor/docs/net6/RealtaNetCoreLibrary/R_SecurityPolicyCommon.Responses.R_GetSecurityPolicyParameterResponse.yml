@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+  commentId: T:R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+  id: R_GetSecurityPolicyParameterResponse
+  parent: R_SecurityPolicyCommon.Responses
+  children:
+  - R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+  - R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  langs:
+  - csharp
+  - vb
+  name: R_GetSecurityPolicyParameterResponse
+  nameWithType: R_GetSecurityPolicyParameterResponse
+  fullName: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_GetSecurityPolicyParameterResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetSecurityPolicyParameterResponse
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_GetSecurityPolicyParameterResponse.cs
+    startLine: 2
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: 'public class R_GetSecurityPolicyParameterResponse : object'
+    content.vb: >-
+      Public Class R_GetSecurityPolicyParameterResponse
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  commentId: P:R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  id: LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  parent: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+  langs:
+  - csharp
+  - vb
+  name: LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  nameWithType: R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  fullName: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_GetSecurityPolicyParameterResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LCHOOSE_COMPANY_AT_LOGIN_PAGE
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_GetSecurityPolicyParameterResponse.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public bool LCHOOSE_COMPANY_AT_LOGIN_PAGE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LCHOOSE_COMPANY_AT_LOGIN_PAGE As Boolean
+  overload: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+  commentId: P:R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+  id: CSECURITY_AND_ACCOUNT_POLICY
+  parent: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse
+  langs:
+  - csharp
+  - vb
+  name: CSECURITY_AND_ACCOUNT_POLICY
+  nameWithType: R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+  fullName: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_GetSecurityPolicyParameterResponse.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSECURITY_AND_ACCOUNT_POLICY
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/Responses/R_GetSecurityPolicyParameterResponse.cs
+    startLine: 5
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.Responses
+  syntax:
+    content: public string CSECURITY_AND_ACCOUNT_POLICY { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSECURITY_AND_ACCOUNT_POLICY As String
+  overload: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_SecurityPolicyCommon.Responses
+  commentId: N:R_SecurityPolicyCommon.Responses
+  name: R_SecurityPolicyCommon.Responses
+  nameWithType: R_SecurityPolicyCommon.Responses
+  fullName: R_SecurityPolicyCommon.Responses
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  name: LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  nameWithType: R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+  fullName: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.LCHOOSE_COMPANY_AT_LOGIN_PAGE
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY*
+  commentId: Overload:R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+  name: CSECURITY_AND_ACCOUNT_POLICY
+  nameWithType: R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+  fullName: R_SecurityPolicyCommon.Responses.R_GetSecurityPolicyParameterResponse.CSECURITY_AND_ACCOUNT_POLICY
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityTokenBack.R_SecurityTokenCls
+  commentId: T:R_SecurityTokenBack.R_SecurityTokenCls
+  id: R_SecurityTokenCls
+  parent: R_SecurityTokenBack
+  children:
+  - R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync(System.String)
+  - R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync(R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO)
+  langs:
+  - csharp
+  - vb
+  name: R_SecurityTokenCls
+  nameWithType: R_SecurityTokenCls
+  fullName: R_SecurityTokenBack.R_SecurityTokenCls
+  type: Class
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenBack/R_SecurityTokenCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SecurityTokenCls
+    path: R_SecurityToken/R_SecurityTokenBack/R_SecurityTokenCls.cs
+    startLine: 12
+  assemblies:
+  - R_SecurityTokenBack
+  namespace: R_SecurityTokenBack
+  syntax:
+    content: 'public static class R_SecurityTokenCls : object'
+    content.vb: >-
+      Public Module R_SecurityTokenCls
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync(System.String)
+  commentId: M:R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync(System.String)
+  id: R_GetUserByRefreshTokenAsync(System.String)
+  parent: R_SecurityTokenBack.R_SecurityTokenCls
+  langs:
+  - csharp
+  - vb
+  name: R_GetUserByRefreshTokenAsync(String)
+  nameWithType: R_SecurityTokenCls.R_GetUserByRefreshTokenAsync(String)
+  fullName: R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenBack/R_SecurityTokenCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetUserByRefreshTokenAsync
+    path: R_SecurityToken/R_SecurityTokenBack/R_SecurityTokenCls.cs
+    startLine: 14
+  assemblies:
+  - R_SecurityTokenBack
+  namespace: R_SecurityTokenBack
+  syntax:
+    content: public static Task<TokenDTO> R_GetUserByRefreshTokenAsync(string pcRefreshToken)
+    parameters:
+    - id: pcRefreshToken
+      type: System.String
+    return:
+      type: Task{R_SecurityTokenCommon.DTOs.TokenDTO}
+    content.vb: Public Shared Function R_GetUserByRefreshTokenAsync(pcRefreshToken As String) As Task(Of TokenDTO)
+  overload: R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync(R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO)
+  commentId: M:R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync(R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO)
+  id: R_UpdateRefreshTokenAsync(R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO)
+  parent: R_SecurityTokenBack.R_SecurityTokenCls
+  langs:
+  - csharp
+  - vb
+  name: R_UpdateRefreshTokenAsync(UpdateRefreshTokenParameterDTO)
+  nameWithType: R_SecurityTokenCls.R_UpdateRefreshTokenAsync(UpdateRefreshTokenParameterDTO)
+  fullName: R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync(R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityToken/R_SecurityTokenBack/R_SecurityTokenCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_UpdateRefreshTokenAsync
+    path: R_SecurityToken/R_SecurityTokenBack/R_SecurityTokenCls.cs
+    startLine: 73
+  assemblies:
+  - R_SecurityTokenBack
+  namespace: R_SecurityTokenBack
+  syntax:
+    content: public static Task<string> R_UpdateRefreshTokenAsync(UpdateRefreshTokenParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
+    return:
+      type: Task{System.String}
+    content.vb: Public Shared Function R_UpdateRefreshTokenAsync(poParameter As UpdateRefreshTokenParameterDTO) As Task(Of String)
+  overload: R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_SecurityTokenBack
+  commentId: N:R_SecurityTokenBack
+  name: R_SecurityTokenBack
+  nameWithType: R_SecurityTokenBack
+  fullName: R_SecurityTokenBack
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync*
+  commentId: Overload:R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync
+  name: R_GetUserByRefreshTokenAsync
+  nameWithType: R_SecurityTokenCls.R_GetUserByRefreshTokenAsync
+  fullName: R_SecurityTokenBack.R_SecurityTokenCls.R_GetUserByRefreshTokenAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{R_SecurityTokenCommon.DTOs.TokenDTO}
+  commentId: '!:Task{R_SecurityTokenCommon.DTOs.TokenDTO}'
+  definition: Task`1
+  name: Task<TokenDTO>
+  nameWithType: Task<TokenDTO>
+  fullName: Task<R_SecurityTokenCommon.DTOs.TokenDTO>
+  nameWithType.vb: Task(Of TokenDTO)
+  fullName.vb: Task(Of R_SecurityTokenCommon.DTOs.TokenDTO)
+  name.vb: Task(Of TokenDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityTokenCommon.DTOs.TokenDTO
+    name: TokenDTO
+    nameWithType: TokenDTO
+    fullName: R_SecurityTokenCommon.DTOs.TokenDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityTokenCommon.DTOs.TokenDTO
+    name: TokenDTO
+    nameWithType: TokenDTO
+    fullName: R_SecurityTokenCommon.DTOs.TokenDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync*
+  commentId: Overload:R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync
+  name: R_UpdateRefreshTokenAsync
+  nameWithType: R_SecurityTokenCls.R_UpdateRefreshTokenAsync
+  fullName: R_SecurityTokenBack.R_SecurityTokenCls.R_UpdateRefreshTokenAsync
+- uid: R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
+  commentId: T:R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
+  parent: R_SecurityTokenCommon.DTOs
+  name: UpdateRefreshTokenParameterDTO
+  nameWithType: UpdateRefreshTokenParameterDTO
+  fullName: R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityTokenCommon.DTOs
+  commentId: N:R_SecurityTokenCommon.DTOs
+  name: R_SecurityTokenCommon.DTOs
+  nameWithType: R_SecurityTokenCommon.DTOs
+  fullName: R_SecurityTokenCommon.DTOs

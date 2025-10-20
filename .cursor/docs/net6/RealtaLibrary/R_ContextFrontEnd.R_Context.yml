@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ContextFrontEnd.R_Context
+  commentId: T:R_ContextFrontEnd.R_Context
+  id: R_Context
+  parent: R_ContextFrontEnd
+  children:
+  - R_ContextFrontEnd.R_Context.#ctor
+  - R_ContextFrontEnd.R_Context._GetInternalContext
+  - R_ContextFrontEnd.R_Context._GetInternalContext(System.String)
+  - R_ContextFrontEnd.R_Context._SetInternalContext(System.String,System.Object)
+  - R_ContextFrontEnd.R_Context.R_GetContext
+  - R_ContextFrontEnd.R_Context.R_GetContext(System.String)
+  - R_ContextFrontEnd.R_Context.R_GetStreamingContext
+  - R_ContextFrontEnd.R_Context.R_GetStreamingContext(System.String)
+  - R_ContextFrontEnd.R_Context.R_SetContext(Dictionary{System.String,System.Object})
+  - R_ContextFrontEnd.R_Context.R_SetContext(System.String,System.Object)
+  - R_ContextFrontEnd.R_Context.R_SetStreamingContext(Dictionary{System.String,System.Object})
+  - R_ContextFrontEnd.R_Context.R_SetStreamingContext(System.String,System.Object)
+  - R_ContextFrontEnd.R_Context.SetData(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: R_Context
+  nameWithType: R_Context
+  fullName: R_ContextFrontEnd.R_Context
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_Context
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 6
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: 'public class R_Context : object'
+    content.vb: >-
+      Public Class R_Context
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_ContextFrontEnd.R_Context.#ctor
+  commentId: M:R_ContextFrontEnd.R_Context.#ctor
+  id: '#ctor'
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_Context()
+  nameWithType: R_Context.R_Context()
+  fullName: R_ContextFrontEnd.R_Context.R_Context()
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 11
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public R_Context()
+    content.vb: Public Sub New
+  overload: R_ContextFrontEnd.R_Context.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context.SetData(System.String,System.Object)
+  commentId: M:R_ContextFrontEnd.R_Context.SetData(System.String,System.Object)
+  id: SetData(System.String,System.Object)
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: SetData(String, Object)
+  nameWithType: R_Context.SetData(String, Object)
+  fullName: R_ContextFrontEnd.R_Context.SetData(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SetData
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 20
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public static void SetData(string name, object data)
+    parameters:
+    - id: name
+      type: System.String
+    - id: data
+      type: System.Object
+    content.vb: Public Shared Sub SetData(name As String, data As Object)
+  overload: R_ContextFrontEnd.R_Context.SetData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_ContextFrontEnd.R_Context._SetInternalContext(System.String,System.Object)
+  commentId: M:R_ContextFrontEnd.R_Context._SetInternalContext(System.String,System.Object)
+  id: _SetInternalContext(System.String,System.Object)
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: _SetInternalContext(String, Object)
+  nameWithType: R_Context._SetInternalContext(String, Object)
+  fullName: R_ContextFrontEnd.R_Context._SetInternalContext(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _SetInternalContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 41
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public void _SetInternalContext(string pcKey, object poObject)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poObject
+      type: System.Object
+    content.vb: Public Sub _SetInternalContext(pcKey As String, poObject As Object)
+  overload: R_ContextFrontEnd.R_Context._SetInternalContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context._GetInternalContext
+  commentId: M:R_ContextFrontEnd.R_Context._GetInternalContext
+  id: _GetInternalContext
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: _GetInternalContext()
+  nameWithType: R_Context._GetInternalContext()
+  fullName: R_ContextFrontEnd.R_Context._GetInternalContext()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _GetInternalContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 57
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public Dictionary<string, object> _GetInternalContext()
+    return:
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Function _GetInternalContext As Dictionary(Of String, Object)
+  overload: R_ContextFrontEnd.R_Context._GetInternalContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context._GetInternalContext(System.String)
+  commentId: M:R_ContextFrontEnd.R_Context._GetInternalContext(System.String)
+  id: _GetInternalContext(System.String)
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: _GetInternalContext(String)
+  nameWithType: R_Context._GetInternalContext(String)
+  fullName: R_ContextFrontEnd.R_Context._GetInternalContext(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _GetInternalContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 62
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public object _GetInternalContext(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function _GetInternalContext(pcKey As String) As Object
+  overload: R_ContextFrontEnd.R_Context._GetInternalContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context.R_SetContext(Dictionary{System.String,System.Object})
+  commentId: M:R_ContextFrontEnd.R_Context.R_SetContext(Dictionary{System.String,System.Object})
+  id: R_SetContext(Dictionary{System.String,System.Object})
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_SetContext(Dictionary<String, Object>)
+  nameWithType: R_Context.R_SetContext(Dictionary<String, Object>)
+  fullName: R_ContextFrontEnd.R_Context.R_SetContext(Dictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 74
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public void R_SetContext(Dictionary<string, object> poData)
+    parameters:
+    - id: poData
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Sub R_SetContext(poData As Dictionary(Of String, Object))
+  overload: R_ContextFrontEnd.R_Context.R_SetContext*
+  nameWithType.vb: R_Context.R_SetContext(Dictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_ContextFrontEnd.R_Context.R_SetContext(Dictionary(Of System.String, System.Object))
+  name.vb: R_SetContext(Dictionary(Of String, Object))
+- uid: R_ContextFrontEnd.R_Context.R_SetContext(System.String,System.Object)
+  commentId: M:R_ContextFrontEnd.R_Context.R_SetContext(System.String,System.Object)
+  id: R_SetContext(System.String,System.Object)
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_SetContext(String, Object)
+  nameWithType: R_Context.R_SetContext(String, Object)
+  fullName: R_ContextFrontEnd.R_Context.R_SetContext(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 79
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public void R_SetContext(string pcKey, object poObject)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poObject
+      type: System.Object
+    content.vb: Public Sub R_SetContext(pcKey As String, poObject As Object)
+  overload: R_ContextFrontEnd.R_Context.R_SetContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context.R_GetContext
+  commentId: M:R_ContextFrontEnd.R_Context.R_GetContext
+  id: R_GetContext
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_GetContext()
+  nameWithType: R_Context.R_GetContext()
+  fullName: R_ContextFrontEnd.R_Context.R_GetContext()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 95
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public Dictionary<string, object> R_GetContext()
+    return:
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Function R_GetContext As Dictionary(Of String, Object)
+  overload: R_ContextFrontEnd.R_Context.R_GetContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context.R_GetContext(System.String)
+  commentId: M:R_ContextFrontEnd.R_Context.R_GetContext(System.String)
+  id: R_GetContext(System.String)
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_GetContext(String)
+  nameWithType: R_Context.R_GetContext(String)
+  fullName: R_ContextFrontEnd.R_Context.R_GetContext(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 100
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public object R_GetContext(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function R_GetContext(pcKey As String) As Object
+  overload: R_ContextFrontEnd.R_Context.R_GetContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context.R_SetStreamingContext(Dictionary{System.String,System.Object})
+  commentId: M:R_ContextFrontEnd.R_Context.R_SetStreamingContext(Dictionary{System.String,System.Object})
+  id: R_SetStreamingContext(Dictionary{System.String,System.Object})
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_SetStreamingContext(Dictionary<String, Object>)
+  nameWithType: R_Context.R_SetStreamingContext(Dictionary<String, Object>)
+  fullName: R_ContextFrontEnd.R_Context.R_SetStreamingContext(Dictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetStreamingContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 111
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public void R_SetStreamingContext(Dictionary<string, object> poData)
+    parameters:
+    - id: poData
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Sub R_SetStreamingContext(poData As Dictionary(Of String, Object))
+  overload: R_ContextFrontEnd.R_Context.R_SetStreamingContext*
+  nameWithType.vb: R_Context.R_SetStreamingContext(Dictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_ContextFrontEnd.R_Context.R_SetStreamingContext(Dictionary(Of System.String, System.Object))
+  name.vb: R_SetStreamingContext(Dictionary(Of String, Object))
+- uid: R_ContextFrontEnd.R_Context.R_SetStreamingContext(System.String,System.Object)
+  commentId: M:R_ContextFrontEnd.R_Context.R_SetStreamingContext(System.String,System.Object)
+  id: R_SetStreamingContext(System.String,System.Object)
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_SetStreamingContext(String, Object)
+  nameWithType: R_Context.R_SetStreamingContext(String, Object)
+  fullName: R_ContextFrontEnd.R_Context.R_SetStreamingContext(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SetStreamingContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 116
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public void R_SetStreamingContext(string pcKey, object poObject)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poObject
+      type: System.Object
+    content.vb: Public Sub R_SetStreamingContext(pcKey As String, poObject As Object)
+  overload: R_ContextFrontEnd.R_Context.R_SetStreamingContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context.R_GetStreamingContext
+  commentId: M:R_ContextFrontEnd.R_Context.R_GetStreamingContext
+  id: R_GetStreamingContext
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_GetStreamingContext()
+  nameWithType: R_Context.R_GetStreamingContext()
+  fullName: R_ContextFrontEnd.R_Context.R_GetStreamingContext()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetStreamingContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 132
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public Dictionary<string, object> R_GetStreamingContext()
+    return:
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Function R_GetStreamingContext As Dictionary(Of String, Object)
+  overload: R_ContextFrontEnd.R_Context.R_GetStreamingContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ContextFrontEnd.R_Context.R_GetStreamingContext(System.String)
+  commentId: M:R_ContextFrontEnd.R_Context.R_GetStreamingContext(System.String)
+  id: R_GetStreamingContext(System.String)
+  parent: R_ContextFrontEnd.R_Context
+  langs:
+  - csharp
+  - vb
+  name: R_GetStreamingContext(String)
+  nameWithType: R_Context.R_GetStreamingContext(String)
+  fullName: R_ContextFrontEnd.R_Context.R_GetStreamingContext(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ContextFrontEnd/R_Context.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetStreamingContext
+    path: Microservices/R_ContextFrontEnd/R_Context.cs
+    startLine: 137
+  assemblies:
+  - R_ContextFrontEnd
+  namespace: R_ContextFrontEnd
+  syntax:
+    content: public object R_GetStreamingContext(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function R_GetStreamingContext(pcKey As String) As Object
+  overload: R_ContextFrontEnd.R_Context.R_GetStreamingContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_ContextFrontEnd
+  commentId: N:R_ContextFrontEnd
+  name: R_ContextFrontEnd
+  nameWithType: R_ContextFrontEnd
+  fullName: R_ContextFrontEnd
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ContextFrontEnd.R_Context.#ctor*
+  commentId: Overload:R_ContextFrontEnd.R_Context.#ctor
+  name: R_Context
+  nameWithType: R_Context.R_Context
+  fullName: R_ContextFrontEnd.R_Context.R_Context
+- uid: R_ContextFrontEnd.R_Context.SetData*
+  commentId: Overload:R_ContextFrontEnd.R_Context.SetData
+  name: SetData
+  nameWithType: R_Context.SetData
+  fullName: R_ContextFrontEnd.R_Context.SetData
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_ContextFrontEnd.R_Context._SetInternalContext*
+  commentId: Overload:R_ContextFrontEnd.R_Context._SetInternalContext
+  name: _SetInternalContext
+  nameWithType: R_Context._SetInternalContext
+  fullName: R_ContextFrontEnd.R_Context._SetInternalContext
+- uid: R_ContextFrontEnd.R_Context._GetInternalContext*
+  commentId: Overload:R_ContextFrontEnd.R_Context._GetInternalContext
+  name: _GetInternalContext
+  nameWithType: R_Context._GetInternalContext
+  fullName: R_ContextFrontEnd.R_Context._GetInternalContext
+- uid: Dictionary{System.String,System.Object}
+  commentId: '!:Dictionary{System.String,System.Object}'
+  definition: Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ContextFrontEnd.R_Context.R_SetContext*
+  commentId: Overload:R_ContextFrontEnd.R_Context.R_SetContext
+  name: R_SetContext
+  nameWithType: R_Context.R_SetContext
+  fullName: R_ContextFrontEnd.R_Context.R_SetContext
+- uid: R_ContextFrontEnd.R_Context.R_GetContext*
+  commentId: Overload:R_ContextFrontEnd.R_Context.R_GetContext
+  name: R_GetContext
+  nameWithType: R_Context.R_GetContext
+  fullName: R_ContextFrontEnd.R_Context.R_GetContext
+- uid: R_ContextFrontEnd.R_Context.R_SetStreamingContext*
+  commentId: Overload:R_ContextFrontEnd.R_Context.R_SetStreamingContext
+  name: R_SetStreamingContext
+  nameWithType: R_Context.R_SetStreamingContext
+  fullName: R_ContextFrontEnd.R_Context.R_SetStreamingContext
+- uid: R_ContextFrontEnd.R_Context.R_GetStreamingContext*
+  commentId: Overload:R_ContextFrontEnd.R_Context.R_GetStreamingContext
+  name: R_GetStreamingContext
+  nameWithType: R_Context.R_GetStreamingContext
+  fullName: R_ContextFrontEnd.R_Context.R_GetStreamingContext

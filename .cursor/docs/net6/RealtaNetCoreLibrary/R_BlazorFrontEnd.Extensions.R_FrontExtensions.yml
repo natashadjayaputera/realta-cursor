@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  id: R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  children:
+  - R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Extensions/R_FrontExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FrontExtensions
+    path: Library/R_BlazorFrontEnd/Extensions/R_FrontExtensions.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Extensions
+  syntax:
+    content: 'public static class R_FrontExtensions : object'
+    content.vb: >-
+      Public Module R_FrontExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  id: ThrowIfNull(System.Object)
+  isExtensionMethod: true
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Extensions/R_FrontExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ThrowIfNull
+    path: Library/R_BlazorFrontEnd/Extensions/R_FrontExtensions.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Extensions
+  syntax:
+    content: public static void ThrowIfNull(this object poParameter)
+    parameters:
+    - id: poParameter
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ThrowIfNull(poParameter As Object)
+  overload: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull*
+  commentId: Overload:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  name: ThrowIfNull
+  nameWithType: R_FrontExtensions.ThrowIfNull
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull

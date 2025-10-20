@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  id: R_ServiceProcessDataResultDTO
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceProcessDataResultDTO
+  nameWithType: R_ServiceProcessDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_ServiceProcessDataResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceProcessDataResultDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_ServiceProcessDataResultDTO.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceProcessDataResultDTO : R_APIResultBaseDTO'
+    content.vb: >-
+      Public Class R_ServiceProcessDataResultDTO
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data
+  commentId: P:R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data
+  id: data
+  parent: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: R_ServiceProcessDataResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_ServiceProcessDataResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: data
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/AttachAndUpload/R_ServiceProcessDataResultDTO.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public object data { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property data As Object
+  overload: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data
+  name: data
+  nameWithType: R_ServiceProcessDataResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO.data

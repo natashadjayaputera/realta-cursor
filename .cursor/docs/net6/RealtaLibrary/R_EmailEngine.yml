@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine
+  commentId: N:R_EmailEngine
+  id: R_EmailEngine
+  children:
+  - R_EmailEngine.R_EmailEngineFactory
+  - R_EmailEngine.R_IEmail
+  - R_EmailEngine.R_Sender
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngine
+  nameWithType: R_EmailEngine
+  fullName: R_EmailEngine
+  type: Namespace
+  assemblies:
+  - R_EmailEngine
+references:
+- uid: R_EmailEngine.R_EmailEngineFactory
+  commentId: T:R_EmailEngine.R_EmailEngineFactory
+  name: R_EmailEngineFactory
+  nameWithType: R_EmailEngineFactory
+  fullName: R_EmailEngine.R_EmailEngineFactory
+- uid: R_EmailEngine.R_IEmail
+  commentId: T:R_EmailEngine.R_IEmail
+  parent: R_EmailEngine
+  name: R_IEmail
+  nameWithType: R_IEmail
+  fullName: R_EmailEngine.R_IEmail
+- uid: R_EmailEngine.R_Sender
+  commentId: T:R_EmailEngine.R_Sender
+  name: R_Sender
+  nameWithType: R_Sender
+  fullName: R_EmailEngine.R_Sender
+- uid: R_EmailEngine
+  commentId: N:R_EmailEngine
+  name: R_EmailEngine
+  nameWithType: R_EmailEngine
+  fullName: R_EmailEngine

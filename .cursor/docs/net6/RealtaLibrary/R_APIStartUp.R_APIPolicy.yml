@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIStartUp.R_APIPolicy
+  commentId: T:R_APIStartUp.R_APIPolicy
+  id: R_APIPolicy
+  parent: R_APIStartUp
+  children:
+  - R_APIStartUp.R_APIPolicy.SupportAuthentication
+  - R_APIStartUp.R_APIPolicy.SupportAuthorization
+  - R_APIStartUp.R_APIPolicy.SupportCache
+  - R_APIStartUp.R_APIPolicy.SupportContext
+  - R_APIStartUp.R_APIPolicy.SupportDatabase
+  - R_APIStartUp.R_APIPolicy.SupportDefaultCORS
+  - R_APIStartUp.R_APIPolicy.SupportFastReport
+  - R_APIStartUp.R_APIPolicy.SupportGlobalException
+  - R_APIStartUp.R_APIPolicy.SupportOpenTelemetry
+  - R_APIStartUp.R_APIPolicy.SupportReportServerClient
+  - R_APIStartUp.R_APIPolicy.SupportSwagger
+  langs:
+  - csharp
+  - vb
+  name: R_APIPolicy
+  nameWithType: R_APIPolicy
+  fullName: R_APIStartUp.R_APIPolicy
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIPolicy
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 8
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: 'public class R_APIPolicy : object'
+    content.vb: >-
+      Public Class R_APIPolicy
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_APIStartUp.R_APIPolicy.SupportSwagger
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportSwagger
+  id: SupportSwagger
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportSwagger
+  nameWithType: R_APIPolicy.SupportSwagger
+  fullName: R_APIStartUp.R_APIPolicy.SupportSwagger
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportSwagger
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 10
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportSwagger { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportSwagger As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportSwagger*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportDefaultCORS
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportDefaultCORS
+  id: SupportDefaultCORS
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportDefaultCORS
+  nameWithType: R_APIPolicy.SupportDefaultCORS
+  fullName: R_APIStartUp.R_APIPolicy.SupportDefaultCORS
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportDefaultCORS
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 11
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportDefaultCORS { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportDefaultCORS As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportDefaultCORS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportGlobalException
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportGlobalException
+  id: SupportGlobalException
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportGlobalException
+  nameWithType: R_APIPolicy.SupportGlobalException
+  fullName: R_APIStartUp.R_APIPolicy.SupportGlobalException
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportGlobalException
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 12
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportGlobalException { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportGlobalException As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportGlobalException*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportContext
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportContext
+  id: SupportContext
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportContext
+  nameWithType: R_APIPolicy.SupportContext
+  fullName: R_APIStartUp.R_APIPolicy.SupportContext
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportContext
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 13
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportContext { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportContext As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportContext*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportDatabase
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportDatabase
+  id: SupportDatabase
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportDatabase
+  nameWithType: R_APIPolicy.SupportDatabase
+  fullName: R_APIStartUp.R_APIPolicy.SupportDatabase
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportDatabase
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 14
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportDatabase { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportDatabase As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportDatabase*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportAuthentication
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportAuthentication
+  id: SupportAuthentication
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportAuthentication
+  nameWithType: R_APIPolicy.SupportAuthentication
+  fullName: R_APIStartUp.R_APIPolicy.SupportAuthentication
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportAuthentication
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 15
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportAuthentication { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportAuthentication As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportAuthentication*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportCache
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportCache
+  id: SupportCache
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportCache
+  nameWithType: R_APIPolicy.SupportCache
+  fullName: R_APIStartUp.R_APIPolicy.SupportCache
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportCache
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 16
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportCache { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportCache As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportCache*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportFastReport
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportFastReport
+  id: SupportFastReport
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportFastReport
+  nameWithType: R_APIPolicy.SupportFastReport
+  fullName: R_APIStartUp.R_APIPolicy.SupportFastReport
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportFastReport
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 17
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportFastReport { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportFastReport As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportFastReport*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportOpenTelemetry
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportOpenTelemetry
+  id: SupportOpenTelemetry
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportOpenTelemetry
+  nameWithType: R_APIPolicy.SupportOpenTelemetry
+  fullName: R_APIStartUp.R_APIPolicy.SupportOpenTelemetry
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportOpenTelemetry
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 18
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportOpenTelemetry { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportOpenTelemetry As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportOpenTelemetry*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportAuthorization
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportAuthorization
+  id: SupportAuthorization
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportAuthorization
+  nameWithType: R_APIPolicy.SupportAuthorization
+  fullName: R_APIStartUp.R_APIPolicy.SupportAuthorization
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportAuthorization
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 19
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportAuthorization { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportAuthorization As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportAuthorization*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_APIStartUp.R_APIPolicy.SupportReportServerClient
+  commentId: P:R_APIStartUp.R_APIPolicy.SupportReportServerClient
+  id: SupportReportServerClient
+  parent: R_APIStartUp.R_APIPolicy
+  langs:
+  - csharp
+  - vb
+  name: SupportReportServerClient
+  nameWithType: R_APIPolicy.SupportReportServerClient
+  fullName: R_APIStartUp.R_APIPolicy.SupportReportServerClient
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIStartUp/R_APIPolicy.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SupportReportServerClient
+    path: Microservices/R_APIStartUp/R_APIPolicy.cs
+    startLine: 20
+  assemblies:
+  - R_APIStartUp
+  namespace: R_APIStartUp
+  syntax:
+    content: public Boolean SupportReportServerClient { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property SupportReportServerClient As Boolean
+  overload: R_APIStartUp.R_APIPolicy.SupportReportServerClient*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_APIStartUp
+  commentId: N:R_APIStartUp
+  name: R_APIStartUp
+  nameWithType: R_APIStartUp
+  fullName: R_APIStartUp
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_APIStartUp.R_APIPolicy.SupportSwagger*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportSwagger
+  name: SupportSwagger
+  nameWithType: R_APIPolicy.SupportSwagger
+  fullName: R_APIStartUp.R_APIPolicy.SupportSwagger
+- uid: Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: Boolean
+- uid: R_APIStartUp.R_APIPolicy.SupportDefaultCORS*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportDefaultCORS
+  name: SupportDefaultCORS
+  nameWithType: R_APIPolicy.SupportDefaultCORS
+  fullName: R_APIStartUp.R_APIPolicy.SupportDefaultCORS
+- uid: R_APIStartUp.R_APIPolicy.SupportGlobalException*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportGlobalException
+  name: SupportGlobalException
+  nameWithType: R_APIPolicy.SupportGlobalException
+  fullName: R_APIStartUp.R_APIPolicy.SupportGlobalException
+- uid: R_APIStartUp.R_APIPolicy.SupportContext*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportContext
+  name: SupportContext
+  nameWithType: R_APIPolicy.SupportContext
+  fullName: R_APIStartUp.R_APIPolicy.SupportContext
+- uid: R_APIStartUp.R_APIPolicy.SupportDatabase*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportDatabase
+  name: SupportDatabase
+  nameWithType: R_APIPolicy.SupportDatabase
+  fullName: R_APIStartUp.R_APIPolicy.SupportDatabase
+- uid: R_APIStartUp.R_APIPolicy.SupportAuthentication*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportAuthentication
+  name: SupportAuthentication
+  nameWithType: R_APIPolicy.SupportAuthentication
+  fullName: R_APIStartUp.R_APIPolicy.SupportAuthentication
+- uid: R_APIStartUp.R_APIPolicy.SupportCache*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportCache
+  name: SupportCache
+  nameWithType: R_APIPolicy.SupportCache
+  fullName: R_APIStartUp.R_APIPolicy.SupportCache
+- uid: R_APIStartUp.R_APIPolicy.SupportFastReport*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportFastReport
+  name: SupportFastReport
+  nameWithType: R_APIPolicy.SupportFastReport
+  fullName: R_APIStartUp.R_APIPolicy.SupportFastReport
+- uid: R_APIStartUp.R_APIPolicy.SupportOpenTelemetry*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportOpenTelemetry
+  name: SupportOpenTelemetry
+  nameWithType: R_APIPolicy.SupportOpenTelemetry
+  fullName: R_APIStartUp.R_APIPolicy.SupportOpenTelemetry
+- uid: R_APIStartUp.R_APIPolicy.SupportAuthorization*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportAuthorization
+  name: SupportAuthorization
+  nameWithType: R_APIPolicy.SupportAuthorization
+  fullName: R_APIStartUp.R_APIPolicy.SupportAuthorization
+- uid: R_APIStartUp.R_APIPolicy.SupportReportServerClient*
+  commentId: Overload:R_APIStartUp.R_APIPolicy.SupportReportServerClient
+  name: SupportReportServerClient
+  nameWithType: R_APIPolicy.SupportReportServerClient
+  fullName: R_APIStartUp.R_APIPolicy.SupportReportServerClient

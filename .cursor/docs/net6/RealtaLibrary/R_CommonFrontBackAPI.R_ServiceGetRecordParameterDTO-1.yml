@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  id: R_ServiceGetRecordParameterDTO`1
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1.Entity
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetRecordParameterDTO<E>
+  nameWithType: R_ServiceGetRecordParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<E>
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceGetRecordParameterDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordParameterDTO.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceGetRecordParameterDTO<E> : object'
+    typeParameters:
+    - id: E
+    content.vb: >-
+      Public Class R_ServiceGetRecordParameterDTO(Of E)
+          Inherits Object
+  inheritance:
+  - System.Object
+  nameWithType.vb: R_ServiceGetRecordParameterDTO(Of E)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of E)
+  name.vb: R_ServiceGetRecordParameterDTO(Of E)
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1.Entity
+  commentId: P:R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1.Entity
+  id: Entity
+  parent: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  langs:
+  - csharp
+  - vb
+  name: Entity
+  nameWithType: R_ServiceGetRecordParameterDTO<E>.Entity
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<E>.Entity
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Entity
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordParameterDTO.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public E Entity { get; set; }
+    parameters: []
+    return:
+      type: '{E}'
+    content.vb: Public Property Entity As E
+  overload: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1.Entity*
+  nameWithType.vb: R_ServiceGetRecordParameterDTO(Of E).Entity
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of E).Entity
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1.Entity*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1.Entity
+  name: Entity
+  nameWithType: R_ServiceGetRecordParameterDTO<E>.Entity
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<E>.Entity
+  nameWithType.vb: R_ServiceGetRecordParameterDTO(Of E).Entity
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of E).Entity
+- uid: '{E}'
+  commentId: '!:E'
+  definition: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: E
+  name: E
+  nameWithType: E
+  fullName: E

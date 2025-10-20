@@ -1,0 +1,510 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.LoggerConfigurationBrowserHttpExtensions
+  commentId: T:Serilog.LoggerConfigurationBrowserHttpExtensions
+  id: LoggerConfigurationBrowserHttpExtensions
+  parent: Serilog
+  children:
+  - Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration,HttpClient,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32)
+  - Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32,HttpMessageHandler,IDictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: LoggerConfigurationBrowserHttpExtensions
+  nameWithType: LoggerConfigurationBrowserHttpExtensions
+  fullName: Serilog.LoggerConfigurationBrowserHttpExtensions
+  type: Class
+  source:
+    remote:
+      path: Library/Serilog.Sinks.BrowserHttp/LoggerConfigurationBrowserHttpExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LoggerConfigurationBrowserHttpExtensions
+    path: Library/Serilog.Sinks.BrowserHttp/LoggerConfigurationBrowserHttpExtensions.cs
+    startLine: 27
+  assemblies:
+  - Serilog.Sinks.BrowserHttp
+  namespace: Serilog
+  summary: "\nExtends Serilog configuration to write events via HTTP.\n"
+  example: []
+  syntax:
+    content: 'public static class LoggerConfigurationBrowserHttpExtensions : object'
+    content.vb: >-
+      Public Module LoggerConfigurationBrowserHttpExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32,HttpMessageHandler,IDictionary{System.String,System.String})
+  commentId: M:Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32,HttpMessageHandler,IDictionary{System.String,System.String})
+  id: BrowserHttp(LoggerSinkConfiguration,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32,HttpMessageHandler,IDictionary{System.String,System.String})
+  isExtensionMethod: true
+  parent: Serilog.LoggerConfigurationBrowserHttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: BrowserHttp(LoggerSinkConfiguration, String, LogEventLevel, Int32, Nullable<TimeSpan>, Nullable<Int64>, LoggingLevelSwitch, Int32, HttpMessageHandler, IDictionary<String, String>)
+  nameWithType: LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, String, LogEventLevel, Int32, Nullable<TimeSpan>, Nullable<Int64>, LoggingLevelSwitch, Int32, HttpMessageHandler, IDictionary<String, String>)
+  fullName: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, System.String, LogEventLevel, System.Int32, System.Nullable<TimeSpan>, System.Nullable<System.Int64>, LoggingLevelSwitch, System.Int32, HttpMessageHandler, IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Library/Serilog.Sinks.BrowserHttp/LoggerConfigurationBrowserHttpExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: BrowserHttp
+    path: Library/Serilog.Sinks.BrowserHttp/LoggerConfigurationBrowserHttpExtensions.cs
+    startLine: 52
+  assemblies:
+  - Serilog.Sinks.BrowserHttp
+  namespace: Serilog
+  summary: "\nAdds a sink that writes log events to an HTTP server.\n"
+  example: []
+  syntax:
+    content: public static LoggerConfiguration BrowserHttp(this LoggerSinkConfiguration loggerSinkConfiguration, string endpointUrl = null, LogEventLevel restrictedToMinimumLevel = null, int batchPostingLimit = null, TimeSpan? period = null, long? eventBodyLimitBytes = null, LoggingLevelSwitch controlLevelSwitch = null, int queueSizeLimit = null, HttpMessageHandler messageHandler = null, IDictionary<string, string> defaultRequestHeaders = null)
+    parameters:
+    - id: loggerSinkConfiguration
+      type: LoggerSinkConfiguration
+      description: The logger configuration.
+    - id: endpointUrl
+      type: System.String
+      description: The URL of the server logging endpoint.
+    - id: restrictedToMinimumLevel
+      type: LogEventLevel
+      description: "The minimum log event level required \nin order to write an event to the sink."
+    - id: batchPostingLimit
+      type: System.Int32
+      description: The maximum number of events to post in a single batch.
+    - id: period
+      type: System.Nullable{TimeSpan}
+      description: The time to wait between checking for event batches.
+    - id: eventBodyLimitBytes
+      type: System.Nullable{System.Int64}
+      description: >-
+        The maximum size, in bytes, that the JSON representation of
+
+        an event may take before it is dropped rather than being sent to the server. Specify null for no limit.
+
+        The default is 265 KB.
+    - id: controlLevelSwitch
+      type: LoggingLevelSwitch
+      description: >-
+        If provided, the switch will be updated based on the server&apos;s level setting
+
+        for the corresponding API key. Passing the same key to MinimumLevel.ControlledBy() will make the whole pipeline
+
+        dynamically controlled. Do not specify <code data-dev-comment-type="paramref" class="paramref">restrictedToMinimumLevel</code> with this setting.
+    - id: queueSizeLimit
+      type: System.Int32
+      description: >-
+        The maximum number of events that will be held in-memory while waiting to ship them to
+
+        the server. Beyond this limit, events will be dropped. The default is 100,000. Has no effect on
+
+        durable log shipping.
+    - id: messageHandler
+      type: HttpMessageHandler
+      description: Used to construct the HttpClient that will send the log messages to the ingestion endpoint.
+    - id: defaultRequestHeaders
+      type: IDictionary{System.String,System.String}
+    return:
+      type: LoggerConfiguration
+      description: Logger configuration, allowing configuration to continue.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function BrowserHttp(loggerSinkConfiguration As LoggerSinkConfiguration, endpointUrl As String = Nothing, restrictedToMinimumLevel As LogEventLevel = Nothing, batchPostingLimit As Integer = Nothing, period As TimeSpan? = Nothing, eventBodyLimitBytes As Long? = Nothing, controlLevelSwitch As LoggingLevelSwitch = Nothing, queueSizeLimit As Integer = Nothing, messageHandler As HttpMessageHandler = Nothing, defaultRequestHeaders As IDictionary(Of String, String) = Nothing) As LoggerConfiguration
+  overload: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp*
+  nameWithType.vb: LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, String, LogEventLevel, Int32, Nullable(Of TimeSpan), Nullable(Of Int64), LoggingLevelSwitch, Int32, HttpMessageHandler, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, System.String, LogEventLevel, System.Int32, System.Nullable(Of TimeSpan), System.Nullable(Of System.Int64), LoggingLevelSwitch, System.Int32, HttpMessageHandler, IDictionary(Of System.String, System.String))
+  name.vb: BrowserHttp(LoggerSinkConfiguration, String, LogEventLevel, Int32, Nullable(Of TimeSpan), Nullable(Of Int64), LoggingLevelSwitch, Int32, HttpMessageHandler, IDictionary(Of String, String))
+- uid: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration,HttpClient,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32)
+  commentId: M:Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration,HttpClient,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32)
+  id: BrowserHttp(LoggerSinkConfiguration,HttpClient,System.String,LogEventLevel,System.Int32,System.Nullable{TimeSpan},System.Nullable{System.Int64},LoggingLevelSwitch,System.Int32)
+  isExtensionMethod: true
+  parent: Serilog.LoggerConfigurationBrowserHttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: BrowserHttp(LoggerSinkConfiguration, HttpClient, String, LogEventLevel, Int32, Nullable<TimeSpan>, Nullable<Int64>, LoggingLevelSwitch, Int32)
+  nameWithType: LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, HttpClient, String, LogEventLevel, Int32, Nullable<TimeSpan>, Nullable<Int64>, LoggingLevelSwitch, Int32)
+  fullName: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, HttpClient, System.String, LogEventLevel, System.Int32, System.Nullable<TimeSpan>, System.Nullable<System.Int64>, LoggingLevelSwitch, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Library/Serilog.Sinks.BrowserHttp/LoggerConfigurationBrowserHttpExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: BrowserHttp
+    path: Library/Serilog.Sinks.BrowserHttp/LoggerConfigurationBrowserHttpExtensions.cs
+    startLine: 104
+  assemblies:
+  - Serilog.Sinks.BrowserHttp
+  namespace: Serilog
+  summary: "\nAdds a sink that writes log events to an HTTP server.\n"
+  example: []
+  syntax:
+    content: public static LoggerConfiguration BrowserHttp(this LoggerSinkConfiguration loggerSinkConfiguration, HttpClient httpClient, string endpointUrl = null, LogEventLevel restrictedToMinimumLevel = null, int batchPostingLimit = null, TimeSpan? period = null, long? eventBodyLimitBytes = null, LoggingLevelSwitch controlLevelSwitch = null, int queueSizeLimit = null)
+    parameters:
+    - id: loggerSinkConfiguration
+      type: LoggerSinkConfiguration
+      description: The logger configuration.
+    - id: httpClient
+      type: HttpClient
+      description: The HttpClient that will send the log messages to the ingestion endpoint.
+    - id: endpointUrl
+      type: System.String
+      description: The URL of the server logging endpoint.
+    - id: restrictedToMinimumLevel
+      type: LogEventLevel
+      description: "The minimum log event level required \nin order to write an event to the sink."
+    - id: batchPostingLimit
+      type: System.Int32
+      description: The maximum number of events to post in a single batch.
+    - id: period
+      type: System.Nullable{TimeSpan}
+      description: The time to wait between checking for event batches.
+    - id: eventBodyLimitBytes
+      type: System.Nullable{System.Int64}
+      description: >-
+        The maximum size, in bytes, that the JSON representation of
+
+        an event may take before it is dropped rather than being sent to the server. Specify null for no limit.
+
+        The default is 265 KB.
+    - id: controlLevelSwitch
+      type: LoggingLevelSwitch
+      description: >-
+        If provided, the switch will be updated based on the server&apos;s level setting
+
+        for the corresponding API key. Passing the same key to MinimumLevel.ControlledBy() will make the whole pipeline
+
+        dynamically controlled. Do not specify <code data-dev-comment-type="paramref" class="paramref">restrictedToMinimumLevel</code> with this setting.
+    - id: queueSizeLimit
+      type: System.Int32
+      description: >-
+        The maximum number of events that will be held in-memory while waiting to ship them to
+
+        the server. Beyond this limit, events will be dropped. The default is 100,000. Has no effect on
+
+        durable log shipping.
+    return:
+      type: LoggerConfiguration
+      description: Logger configuration, allowing configuration to continue.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function BrowserHttp(loggerSinkConfiguration As LoggerSinkConfiguration, httpClient As HttpClient, endpointUrl As String = Nothing, restrictedToMinimumLevel As LogEventLevel = Nothing, batchPostingLimit As Integer = Nothing, period As TimeSpan? = Nothing, eventBodyLimitBytes As Long? = Nothing, controlLevelSwitch As LoggingLevelSwitch = Nothing, queueSizeLimit As Integer = Nothing) As LoggerConfiguration
+  overload: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp*
+  nameWithType.vb: LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, HttpClient, String, LogEventLevel, Int32, Nullable(Of TimeSpan), Nullable(Of Int64), LoggingLevelSwitch, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp(LoggerSinkConfiguration, HttpClient, System.String, LogEventLevel, System.Int32, System.Nullable(Of TimeSpan), System.Nullable(Of System.Int64), LoggingLevelSwitch, System.Int32)
+  name.vb: BrowserHttp(LoggerSinkConfiguration, HttpClient, String, LogEventLevel, Int32, Nullable(Of TimeSpan), Nullable(Of Int64), LoggingLevelSwitch, Int32)
+references:
+- uid: Serilog
+  commentId: N:Serilog
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp*
+  commentId: Overload:Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp
+  name: BrowserHttp
+  nameWithType: LoggerConfigurationBrowserHttpExtensions.BrowserHttp
+  fullName: Serilog.LoggerConfigurationBrowserHttpExtensions.BrowserHttp
+- uid: LoggerSinkConfiguration
+  isExternal: true
+  name: LoggerSinkConfiguration
+  nameWithType: LoggerSinkConfiguration
+  fullName: LoggerSinkConfiguration
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: LogEventLevel
+  isExternal: true
+  name: LogEventLevel
+  nameWithType: LogEventLevel
+  fullName: LogEventLevel
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{System.Int64}
+  commentId: '!:System.Nullable{System.Int64}'
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  nameWithType: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  nameWithType.vb: Nullable(Of Int64)
+  fullName.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: LoggingLevelSwitch
+  isExternal: true
+  name: LoggingLevelSwitch
+  nameWithType: LoggingLevelSwitch
+  fullName: LoggingLevelSwitch
+- uid: HttpMessageHandler
+  commentId: '!:HttpMessageHandler'
+  isExternal: true
+  name: HttpMessageHandler
+  nameWithType: HttpMessageHandler
+  fullName: HttpMessageHandler
+- uid: IDictionary{System.String,System.String}
+  commentId: '!:IDictionary{System.String,System.String}'
+  definition: IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: LoggerConfiguration
+  isExternal: true
+  name: LoggerConfiguration
+  nameWithType: LoggerConfiguration
+  fullName: LoggerConfiguration
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IDictionary`2
+  isExternal: true
+  name: IDictionary<, >
+  nameWithType: IDictionary<, >
+  fullName: IDictionary<, >
+  nameWithType.vb: IDictionary(Of , )
+  fullName.vb: IDictionary(Of , )
+  name.vb: IDictionary(Of , )
+  spec.csharp:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: HttpClient
+  commentId: '!:HttpClient'
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient

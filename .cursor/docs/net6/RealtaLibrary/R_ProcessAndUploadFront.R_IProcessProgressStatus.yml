@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ProcessAndUploadFront.R_IProcessProgressStatus
+  commentId: T:R_ProcessAndUploadFront.R_IProcessProgressStatus
+  id: R_IProcessProgressStatus
+  parent: R_ProcessAndUploadFront
+  children:
+  - R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete(System.String,R_CommonFrontBackAPI.eProcessResultMode)
+  - R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError(System.String,R_APIException)
+  - R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress(System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_IProcessProgressStatus
+  nameWithType: R_IProcessProgressStatus
+  fullName: R_ProcessAndUploadFront.R_IProcessProgressStatus
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IProcessProgressStatus
+    path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+    startLine: 9
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: public interface R_IProcessProgressStatus
+    content.vb: Public Interface R_IProcessProgressStatus
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete(System.String,R_CommonFrontBackAPI.eProcessResultMode)
+  commentId: M:R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete(System.String,R_CommonFrontBackAPI.eProcessResultMode)
+  id: ProcessComplete(System.String,R_CommonFrontBackAPI.eProcessResultMode)
+  parent: R_ProcessAndUploadFront.R_IProcessProgressStatus
+  langs:
+  - csharp
+  - vb
+  name: ProcessComplete(String, eProcessResultMode)
+  nameWithType: R_IProcessProgressStatus.ProcessComplete(String, eProcessResultMode)
+  fullName: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete(System.String, R_CommonFrontBackAPI.eProcessResultMode)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ProcessComplete
+    path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+    startLine: 11
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: Task ProcessComplete(string pcKeyGuid, eProcessResultMode poProcessResultMode)
+    parameters:
+    - id: pcKeyGuid
+      type: System.String
+    - id: poProcessResultMode
+      type: R_CommonFrontBackAPI.eProcessResultMode
+    return:
+      type: Task
+    content.vb: Function ProcessComplete(pcKeyGuid As String, poProcessResultMode As eProcessResultMode) As Task
+  overload: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete*
+- uid: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError(System.String,R_APIException)
+  commentId: M:R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError(System.String,R_APIException)
+  id: ProcessError(System.String,R_APIException)
+  parent: R_ProcessAndUploadFront.R_IProcessProgressStatus
+  langs:
+  - csharp
+  - vb
+  name: ProcessError(String, R_APIException)
+  nameWithType: R_IProcessProgressStatus.ProcessError(String, R_APIException)
+  fullName: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError(System.String, R_APIException)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ProcessError
+    path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+    startLine: 12
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: Task ProcessError(string pcKeyGuid, R_APIException ex)
+    parameters:
+    - id: pcKeyGuid
+      type: System.String
+    - id: ex
+      type: R_APIException
+    return:
+      type: Task
+    content.vb: Function ProcessError(pcKeyGuid As String, ex As R_APIException) As Task
+  overload: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError*
+- uid: R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress(System.Int32,System.String)
+  commentId: M:R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress(System.Int32,System.String)
+  id: ReportProgress(System.Int32,System.String)
+  parent: R_ProcessAndUploadFront.R_IProcessProgressStatus
+  langs:
+  - csharp
+  - vb
+  name: ReportProgress(Int32, String)
+  nameWithType: R_IProcessProgressStatus.ReportProgress(Int32, String)
+  fullName: R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ReportProgress
+    path: Microservices/R_ProcessAndUploadFront/R_IProcessProgressStatus.cs
+    startLine: 13
+  assemblies:
+  - R_ProcessAndUploadFront
+  namespace: R_ProcessAndUploadFront
+  syntax:
+    content: Task ReportProgress(int pnProgress, string pcStatus)
+    parameters:
+    - id: pnProgress
+      type: System.Int32
+    - id: pcStatus
+      type: System.String
+    return:
+      type: Task
+    content.vb: Function ReportProgress(pnProgress As Integer, pcStatus As String) As Task
+  overload: R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress*
+references:
+- uid: R_ProcessAndUploadFront
+  commentId: N:R_ProcessAndUploadFront
+  name: R_ProcessAndUploadFront
+  nameWithType: R_ProcessAndUploadFront
+  fullName: R_ProcessAndUploadFront
+- uid: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete*
+  commentId: Overload:R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete
+  name: ProcessComplete
+  nameWithType: R_IProcessProgressStatus.ProcessComplete
+  fullName: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessComplete
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.eProcessResultMode
+  commentId: T:R_CommonFrontBackAPI.eProcessResultMode
+  parent: R_CommonFrontBackAPI
+  name: eProcessResultMode
+  nameWithType: eProcessResultMode
+  fullName: R_CommonFrontBackAPI.eProcessResultMode
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError*
+  commentId: Overload:R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError
+  name: ProcessError
+  nameWithType: R_IProcessProgressStatus.ProcessError
+  fullName: R_ProcessAndUploadFront.R_IProcessProgressStatus.ProcessError
+- uid: R_APIException
+  isExternal: true
+  name: R_APIException
+  nameWithType: R_APIException
+  fullName: R_APIException
+- uid: R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress*
+  commentId: Overload:R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress
+  name: ReportProgress
+  nameWithType: R_IProcessProgressStatus.ReportProgress
+  fullName: R_ProcessAndUploadFront.R_IProcessProgressStatus.ReportProgress
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

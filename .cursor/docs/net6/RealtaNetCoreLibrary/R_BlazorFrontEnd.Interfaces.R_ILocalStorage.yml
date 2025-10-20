@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  id: R_ILocalStorage
+  parent: R_BlazorFrontEnd.Interfaces
+  children:
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem``1(System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync``1(System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync``1(System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem``1(System.String,``0)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync``1(System.String,``0)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync``1(System.String,``0)
+  langs:
+  - csharp
+  - vb
+  name: R_ILocalStorage
+  nameWithType: R_ILocalStorage
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ILocalStorage
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: public interface R_ILocalStorage
+    content.vb: Public Interface R_ILocalStorage
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync``1(System.String,``0)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync``1(System.String,``0)
+  id: SetItemAsync``1(System.String,``0)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: SetItemAsync<TValue>(String, TValue)
+  nameWithType: R_ILocalStorage.SetItemAsync<TValue>(String, TValue)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync<TValue>(System.String, TValue)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetItemAsync
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: ValueTask SetItemAsync<TValue>(string pcKey, TValue poValue)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poValue
+      type: '{TValue}'
+    typeParameters:
+    - id: TValue
+    return:
+      type: ValueTask
+    content.vb: Function SetItemAsync(Of TValue)(pcKey As String, poValue As TValue) As ValueTask
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync*
+  nameWithType.vb: R_ILocalStorage.SetItemAsync(Of TValue)(String, TValue)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync(Of TValue)(System.String, TValue)
+  name.vb: SetItemAsync(Of TValue)(String, TValue)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem``1(System.String,``0)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem``1(System.String,``0)
+  id: SetItem``1(System.String,``0)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: SetItem<TValue>(String, TValue)
+  nameWithType: R_ILocalStorage.SetItem<TValue>(String, TValue)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem<TValue>(System.String, TValue)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetItem
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: void SetItem<TValue>(string pcKey, TValue poValue)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poValue
+      type: '{TValue}'
+    typeParameters:
+    - id: TValue
+    content.vb: Sub SetItem(Of TValue)(pcKey As String, poValue As TValue)
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem*
+  nameWithType.vb: R_ILocalStorage.SetItem(Of TValue)(String, TValue)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem(Of TValue)(System.String, TValue)
+  name.vb: SetItem(Of TValue)(String, TValue)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync``1(System.String,``0)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync``1(System.String,``0)
+  id: SetItemEncryptAsync``1(System.String,``0)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: SetItemEncryptAsync<TValue>(String, TValue)
+  nameWithType: R_ILocalStorage.SetItemEncryptAsync<TValue>(String, TValue)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync<TValue>(System.String, TValue)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetItemEncryptAsync
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: ValueTask SetItemEncryptAsync<TValue>(string pcKey, TValue poValue)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poValue
+      type: '{TValue}'
+    typeParameters:
+    - id: TValue
+    return:
+      type: ValueTask
+    content.vb: Function SetItemEncryptAsync(Of TValue)(pcKey As String, poValue As TValue) As ValueTask
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync*
+  nameWithType.vb: R_ILocalStorage.SetItemEncryptAsync(Of TValue)(String, TValue)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync(Of TValue)(System.String, TValue)
+  name.vb: SetItemEncryptAsync(Of TValue)(String, TValue)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync``1(System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync``1(System.String)
+  id: GetItemAsync``1(System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: GetItemAsync<TValue>(String)
+  nameWithType: R_ILocalStorage.GetItemAsync<TValue>(String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync<TValue>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetItemAsync
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: ValueTask<TValue> GetItemAsync<TValue>(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    typeParameters:
+    - id: TValue
+    return:
+      type: ValueTask{{TValue}}
+    content.vb: Function GetItemAsync(Of TValue)(pcKey As String) As ValueTask(Of TValue)
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync*
+  nameWithType.vb: R_ILocalStorage.GetItemAsync(Of TValue)(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync(Of TValue)(System.String)
+  name.vb: GetItemAsync(Of TValue)(String)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem``1(System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem``1(System.String)
+  id: GetItem``1(System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: GetItem<TValue>(String)
+  nameWithType: R_ILocalStorage.GetItem<TValue>(String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem<TValue>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetItem
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: TValue GetItem<TValue>(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    typeParameters:
+    - id: TValue
+    return:
+      type: '{TValue}'
+    content.vb: Function GetItem(Of TValue)(pcKey As String) As TValue
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem*
+  nameWithType.vb: R_ILocalStorage.GetItem(Of TValue)(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem(Of TValue)(System.String)
+  name.vb: GetItem(Of TValue)(String)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync``1(System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync``1(System.String)
+  id: GetItemEncryptAsync``1(System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: GetItemEncryptAsync<TValue>(String)
+  nameWithType: R_ILocalStorage.GetItemEncryptAsync<TValue>(String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync<TValue>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetItemEncryptAsync
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: ValueTask<TValue> GetItemEncryptAsync<TValue>(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    typeParameters:
+    - id: TValue
+    return:
+      type: ValueTask{{TValue}}
+    content.vb: Function GetItemEncryptAsync(Of TValue)(pcKey As String) As ValueTask(Of TValue)
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync*
+  nameWithType.vb: R_ILocalStorage.GetItemEncryptAsync(Of TValue)(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync(Of TValue)(System.String)
+  name.vb: GetItemEncryptAsync(Of TValue)(String)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
+  id: RemoveItemAsync(System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: RemoveItemAsync(String)
+  nameWithType: R_ILocalStorage.RemoveItemAsync(String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: RemoveItemAsync
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: ValueTask RemoveItemAsync(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    return:
+      type: ValueTask
+    content.vb: Function RemoveItemAsync(pcKey As String) As ValueTask
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync*
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
+  id: RemoveItem(System.String)
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: RemoveItem(String)
+  nameWithType: R_ILocalStorage.RemoveItem(String)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: RemoveItem
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: void RemoveItem(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    content.vb: Sub RemoveItem(pcKey As String)
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem*
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
+  id: RemoveItemsAsync(System.String[])
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: RemoveItemsAsync(String[])
+  nameWithType: R_ILocalStorage.RemoveItemsAsync(String[])
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: RemoveItemsAsync
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 17
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: ValueTask RemoveItemsAsync(string[] pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String[]
+    return:
+      type: ValueTask
+    content.vb: Function RemoveItemsAsync(pcKey As String()) As ValueTask
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync*
+  nameWithType.vb: R_ILocalStorage.RemoveItemsAsync(String())
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String())
+  name.vb: RemoveItemsAsync(String())
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
+  id: RemoveItems(System.String[])
+  parent: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  langs:
+  - csharp
+  - vb
+  name: RemoveItems(String[])
+  nameWithType: R_ILocalStorage.RemoveItems(String[])
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: RemoveItems
+    path: Library/R_BlazorFrontEnd/Interfaces/R_ILocalStorage.cs
+    startLine: 18
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: void RemoveItems(string[] pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String[]
+    content.vb: Sub RemoveItems(pcKey As String())
+  overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems*
+  nameWithType.vb: R_ILocalStorage.RemoveItems(String())
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String())
+  name.vb: RemoveItems(String())
+references:
+- uid: R_BlazorFrontEnd.Interfaces
+  commentId: N:R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  nameWithType: R_BlazorFrontEnd.Interfaces
+  fullName: R_BlazorFrontEnd.Interfaces
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync
+  name: SetItemAsync
+  nameWithType: R_ILocalStorage.SetItemAsync
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: ValueTask
+  isExternal: true
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: ValueTask
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem
+  name: SetItem
+  nameWithType: R_ILocalStorage.SetItem
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync
+  name: SetItemEncryptAsync
+  nameWithType: R_ILocalStorage.SetItemEncryptAsync
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync
+  name: GetItemAsync
+  nameWithType: R_ILocalStorage.GetItemAsync
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync
+- uid: ValueTask{{TValue}}
+  commentId: '!:ValueTask{``0}'
+  definition: ValueTask`1
+  name: ValueTask<TValue>
+  nameWithType: ValueTask<TValue>
+  fullName: ValueTask<TValue>
+  nameWithType.vb: ValueTask(Of TValue)
+  fullName.vb: ValueTask(Of TValue)
+  name.vb: ValueTask(Of TValue)
+  spec.csharp:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ValueTask`1
+  isExternal: true
+  name: ValueTask<>
+  nameWithType: ValueTask<>
+  fullName: ValueTask<>
+  nameWithType.vb: ValueTask(Of )
+  fullName.vb: ValueTask(Of )
+  name.vb: ValueTask(Of )
+  spec.csharp:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem
+  name: GetItem
+  nameWithType: R_ILocalStorage.GetItem
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync
+  name: GetItemEncryptAsync
+  nameWithType: R_ILocalStorage.GetItemEncryptAsync
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync
+  name: RemoveItemAsync
+  nameWithType: R_ILocalStorage.RemoveItemAsync
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem
+  name: RemoveItem
+  nameWithType: R_ILocalStorage.RemoveItem
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync
+  name: RemoveItemsAsync
+  nameWithType: R_ILocalStorage.RemoveItemsAsync
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems
+  name: RemoveItems
+  nameWithType: R_ILocalStorage.RemoveItems
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems

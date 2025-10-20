@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  id: R_ServiceMonitoringProcessResultDTO
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceMonitoringProcessResultDTO
+  nameWithType: R_ServiceMonitoringProcessResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_ServiceMonitoringProcessResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceMonitoringProcessResultDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_ServiceMonitoringProcessResultDTO.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceMonitoringProcessResultDTO : R_APIResultBaseDTO'
+    content.vb: >-
+      Public Class R_ServiceMonitoringProcessResultDTO
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data
+  commentId: P:R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data
+  id: data
+  parent: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: R_ServiceMonitoringProcessResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_ServiceMonitoringProcessResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: data
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_ServiceMonitoringProcessResultDTO.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public R_MonitoringReturn data { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_MonitoringReturn
+    content.vb: Public Property data As R_MonitoringReturn
+  overload: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data
+  name: data
+  nameWithType: R_ServiceMonitoringProcessResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO.data
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn
+  commentId: T:R_CommonFrontBackAPI.R_MonitoringReturn
+  parent: R_CommonFrontBackAPI
+  name: R_MonitoringReturn
+  nameWithType: R_MonitoringReturn
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn

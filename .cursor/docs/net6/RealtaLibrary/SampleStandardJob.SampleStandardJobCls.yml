@@ -1,0 +1,1056 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.SampleStandardJobCls
+  commentId: T:SampleStandardJob.SampleStandardJobCls
+  id: SampleStandardJobCls
+  parent: SampleStandardJob
+  children:
+  - SampleStandardJob.SampleStandardJobCls.#ctor(ILogger{SampleStandardJob.SampleStandardJobCls},R_ILocalCacheMultiTenantFromDb)
+  - SampleStandardJob.SampleStandardJobCls._GetCompanies(System.String)
+  - SampleStandardJob.SampleStandardJobCls.Execute(IJobExecutionContext)
+  - SampleStandardJob.SampleStandardJobCls.R_InitDataAsync(System.String)
+  - SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync(System.String,R_Exception)
+  - SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync(System.String,List{R_Exception})
+  - SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO,R_Exception)
+  - SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  - SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  - SampleStandardJob.SampleStandardJobCls.R_StatusAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: SampleStandardJobCls
+  nameWithType: SampleStandardJobCls
+  fullName: SampleStandardJob.SampleStandardJobCls
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SampleStandardJobCls
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 19
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: 'public class SampleStandardJobCls : IJob, R_IProcessJobAsync<ProcessDataDTO, R_Exception>, R_IProcessJobBase<ProcessDataDTO, R_Exception>'
+    content.vb: >-
+      Public Class SampleStandardJobCls
+          Inherits IJob
+          Implements R_IProcessJobAsync(Of ProcessDataDTO, R_Exception), R_IProcessJobBase(Of ProcessDataDTO, R_Exception)
+  inheritance:
+  - System.Object
+  implements:
+  - R_ProcessorJob.R_IProcessJobAsync{SampleStandardJob.DTO.ProcessDataDTO,R_Exception}
+  - R_ProcessorJob.R_IProcessJobBase{SampleStandardJob.DTO.ProcessDataDTO,R_Exception}
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SampleStandardJob.SampleStandardJobCls.#ctor(ILogger{SampleStandardJob.SampleStandardJobCls},R_ILocalCacheMultiTenantFromDb)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.#ctor(ILogger{SampleStandardJob.SampleStandardJobCls},R_ILocalCacheMultiTenantFromDb)
+  id: '#ctor(ILogger{SampleStandardJob.SampleStandardJobCls},R_ILocalCacheMultiTenantFromDb)'
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: SampleStandardJobCls(ILogger<SampleStandardJobCls>, R_ILocalCacheMultiTenantFromDb)
+  nameWithType: SampleStandardJobCls.SampleStandardJobCls(ILogger<SampleStandardJobCls>, R_ILocalCacheMultiTenantFromDb)
+  fullName: SampleStandardJob.SampleStandardJobCls.SampleStandardJobCls(ILogger<SampleStandardJob.SampleStandardJobCls>, R_ILocalCacheMultiTenantFromDb)
+  type: Constructor
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 27
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public SampleStandardJobCls(ILogger<SampleStandardJobCls> poLogger, R_ILocalCacheMultiTenantFromDb poHelperCacheFromDb)
+    parameters:
+    - id: poLogger
+      type: ILogger{SampleStandardJob.SampleStandardJobCls}
+    - id: poHelperCacheFromDb
+      type: R_ILocalCacheMultiTenantFromDb
+    content.vb: Public Sub New(poLogger As ILogger(Of SampleStandardJobCls), poHelperCacheFromDb As R_ILocalCacheMultiTenantFromDb)
+  overload: SampleStandardJob.SampleStandardJobCls.#ctor*
+  nameWithType.vb: SampleStandardJobCls.SampleStandardJobCls(ILogger(Of SampleStandardJobCls), R_ILocalCacheMultiTenantFromDb)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SampleStandardJob.SampleStandardJobCls.SampleStandardJobCls(ILogger(Of SampleStandardJob.SampleStandardJobCls), R_ILocalCacheMultiTenantFromDb)
+  name.vb: SampleStandardJobCls(ILogger(Of SampleStandardJobCls), R_ILocalCacheMultiTenantFromDb)
+- uid: SampleStandardJob.SampleStandardJobCls.Execute(IJobExecutionContext)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.Execute(IJobExecutionContext)
+  id: Execute(IJobExecutionContext)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: Execute(IJobExecutionContext)
+  nameWithType: SampleStandardJobCls.Execute(IJobExecutionContext)
+  fullName: SampleStandardJob.SampleStandardJobCls.Execute(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Execute
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 33
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task Execute(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: Task
+    content.vb: Public Function Execute(context As IJobExecutionContext) As Task
+  overload: SampleStandardJob.SampleStandardJobCls.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls._GetCompanies(System.String)
+  commentId: M:SampleStandardJob.SampleStandardJobCls._GetCompanies(System.String)
+  id: _GetCompanies(System.String)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: _GetCompanies(String)
+  nameWithType: SampleStandardJobCls._GetCompanies(String)
+  fullName: SampleStandardJob.SampleStandardJobCls._GetCompanies(System.String)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _GetCompanies
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 113
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task<List<CompanyDTO>> _GetCompanies(string poConnectionStringName)
+    parameters:
+    - id: poConnectionStringName
+      type: System.String
+    return:
+      type: Task{List{SampleStandardJob.DTO.CompanyDTO}}
+    content.vb: Public Function _GetCompanies(poConnectionStringName As String) As Task(Of List(Of CompanyDTO))
+  overload: SampleStandardJob.SampleStandardJobCls._GetCompanies*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls.R_StatusAsync(System.String,System.String)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.R_StatusAsync(System.String,System.String)
+  id: R_StatusAsync(System.String,System.String)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_StatusAsync(String, String)
+  nameWithType: SampleStandardJobCls.R_StatusAsync(String, String)
+  fullName: SampleStandardJob.SampleStandardJobCls.R_StatusAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_StatusAsync
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 133
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task R_StatusAsync(string poKey, string pcMessage)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: pcMessage
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function R_StatusAsync(poKey As String, pcMessage As String) As Task
+  overload: SampleStandardJob.SampleStandardJobCls.R_StatusAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls.R_InitDataAsync(System.String)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.R_InitDataAsync(System.String)
+  id: R_InitDataAsync(System.String)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_InitDataAsync(String)
+  nameWithType: SampleStandardJobCls.R_InitDataAsync(String)
+  fullName: SampleStandardJob.SampleStandardJobCls.R_InitDataAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InitDataAsync
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 138
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task<List<ProcessDataDTO>> R_InitDataAsync(string poKey)
+    parameters:
+    - id: poKey
+      type: System.String
+    return:
+      type: Task{List{SampleStandardJob.DTO.ProcessDataDTO}}
+    content.vb: Public Function R_InitDataAsync(poKey As String) As Task(Of List(Of ProcessDataDTO))
+  overload: SampleStandardJob.SampleStandardJobCls.R_InitDataAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync(System.String,R_Exception)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync(System.String,R_Exception)
+  id: R_InitDataErrorStatusAsync(System.String,R_Exception)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_InitDataErrorStatusAsync(String, R_Exception)
+  nameWithType: SampleStandardJobCls.R_InitDataErrorStatusAsync(String, R_Exception)
+  fullName: SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync(System.String, R_Exception)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InitDataErrorStatusAsync
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 171
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task R_InitDataErrorStatusAsync(string poKey, R_Exception poException)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poException
+      type: R_Exception
+    return:
+      type: Task
+    content.vb: Public Function R_InitDataErrorStatusAsync(poKey As String, poException As R_Exception) As Task
+  overload: SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  id: R_SingleProcessAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_SingleProcessAsync(String, ProcessDataDTO)
+  nameWithType: SampleStandardJobCls.R_SingleProcessAsync(String, ProcessDataDTO)
+  fullName: SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync(System.String, SampleStandardJob.DTO.ProcessDataDTO)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SingleProcessAsync
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 176
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task R_SingleProcessAsync(string poKey, ProcessDataDTO poParameter)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poParameter
+      type: SampleStandardJob.DTO.ProcessDataDTO
+    return:
+      type: Task
+    content.vb: Public Function R_SingleProcessAsync(poKey As String, poParameter As ProcessDataDTO) As Task
+  overload: SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO,R_Exception)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO,R_Exception)
+  id: R_SingleErrorStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO,R_Exception)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_SingleErrorStatusAsync(String, ProcessDataDTO, R_Exception)
+  nameWithType: SampleStandardJobCls.R_SingleErrorStatusAsync(String, ProcessDataDTO, R_Exception)
+  fullName: SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync(System.String, SampleStandardJob.DTO.ProcessDataDTO, R_Exception)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SingleErrorStatusAsync
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 284
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task R_SingleErrorStatusAsync(string poKey, ProcessDataDTO poParameter, R_Exception poException)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poParameter
+      type: SampleStandardJob.DTO.ProcessDataDTO
+    - id: poException
+      type: R_Exception
+    return:
+      type: Task
+    content.vb: Public Function R_SingleErrorStatusAsync(poKey As String, poParameter As ProcessDataDTO, poException As R_Exception) As Task
+  overload: SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  commentId: M:SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  id: R_SingleSuccessStatusAsync(System.String,SampleStandardJob.DTO.ProcessDataDTO)
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_SingleSuccessStatusAsync(String, ProcessDataDTO)
+  nameWithType: SampleStandardJobCls.R_SingleSuccessStatusAsync(String, ProcessDataDTO)
+  fullName: SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync(System.String, SampleStandardJob.DTO.ProcessDataDTO)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SingleSuccessStatusAsync
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 289
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task R_SingleSuccessStatusAsync(string poKey, ProcessDataDTO poParameter)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poParameter
+      type: SampleStandardJob.DTO.ProcessDataDTO
+    return:
+      type: Task
+    content.vb: Public Function R_SingleSuccessStatusAsync(poKey As String, poParameter As ProcessDataDTO) As Task
+  overload: SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync(System.String,List{R_Exception})
+  commentId: M:SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync(System.String,List{R_Exception})
+  id: R_ProcessCompleteStatusAsync(System.String,List{R_Exception})
+  parent: SampleStandardJob.SampleStandardJobCls
+  langs:
+  - csharp
+  - vb
+  name: R_ProcessCompleteStatusAsync(String, List<R_Exception>)
+  nameWithType: SampleStandardJobCls.R_ProcessCompleteStatusAsync(String, List<R_Exception>)
+  fullName: SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync(System.String, List<R_Exception>)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ProcessCompleteStatusAsync
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobCls.cs
+    startLine: 294
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public Task R_ProcessCompleteStatusAsync(string poKey, List<R_Exception> poExceptions)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poExceptions
+      type: List{R_Exception}
+    return:
+      type: Task
+    content.vb: Public Function R_ProcessCompleteStatusAsync(poKey As String, poExceptions As List(Of R_Exception)) As Task
+  overload: SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync*
+  nameWithType.vb: SampleStandardJobCls.R_ProcessCompleteStatusAsync(String, List(Of R_Exception))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync(System.String, List(Of R_Exception))
+  name.vb: R_ProcessCompleteStatusAsync(String, List(Of R_Exception))
+references:
+- uid: SampleStandardJob
+  commentId: N:SampleStandardJob
+  name: SampleStandardJob
+  nameWithType: SampleStandardJob
+  fullName: SampleStandardJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ProcessorJob.R_IProcessJobAsync{SampleStandardJob.DTO.ProcessDataDTO,R_Exception}
+  commentId: T:R_ProcessorJob.R_IProcessJobAsync{SampleStandardJob.DTO.ProcessDataDTO,R_Exception}
+  parent: R_ProcessorJob
+  definition: R_ProcessorJob.R_IProcessJobAsync`2
+  name: R_IProcessJobAsync<ProcessDataDTO, R_Exception>
+  nameWithType: R_IProcessJobAsync<ProcessDataDTO, R_Exception>
+  fullName: R_ProcessorJob.R_IProcessJobAsync<SampleStandardJob.DTO.ProcessDataDTO, R_Exception>
+  nameWithType.vb: R_IProcessJobAsync(Of ProcessDataDTO, R_Exception)
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of SampleStandardJob.DTO.ProcessDataDTO, R_Exception)
+  name.vb: R_IProcessJobAsync(Of ProcessDataDTO, R_Exception)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobAsync`2
+    name: R_IProcessJobAsync
+    nameWithType: R_IProcessJobAsync
+    fullName: R_ProcessorJob.R_IProcessJobAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SampleStandardJob.DTO.ProcessDataDTO
+    name: ProcessDataDTO
+    nameWithType: ProcessDataDTO
+    fullName: SampleStandardJob.DTO.ProcessDataDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_Exception
+    name: R_Exception
+    nameWithType: R_Exception
+    fullName: R_Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobAsync`2
+    name: R_IProcessJobAsync
+    nameWithType: R_IProcessJobAsync
+    fullName: R_ProcessorJob.R_IProcessJobAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SampleStandardJob.DTO.ProcessDataDTO
+    name: ProcessDataDTO
+    nameWithType: ProcessDataDTO
+    fullName: SampleStandardJob.DTO.ProcessDataDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_Exception
+    name: R_Exception
+    nameWithType: R_Exception
+    fullName: R_Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobBase{SampleStandardJob.DTO.ProcessDataDTO,R_Exception}
+  commentId: T:R_ProcessorJob.R_IProcessJobBase{SampleStandardJob.DTO.ProcessDataDTO,R_Exception}
+  parent: R_ProcessorJob
+  definition: R_ProcessorJob.R_IProcessJobBase`2
+  name: R_IProcessJobBase<ProcessDataDTO, R_Exception>
+  nameWithType: R_IProcessJobBase<ProcessDataDTO, R_Exception>
+  fullName: R_ProcessorJob.R_IProcessJobBase<SampleStandardJob.DTO.ProcessDataDTO, R_Exception>
+  nameWithType.vb: R_IProcessJobBase(Of ProcessDataDTO, R_Exception)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of SampleStandardJob.DTO.ProcessDataDTO, R_Exception)
+  name.vb: R_IProcessJobBase(Of ProcessDataDTO, R_Exception)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SampleStandardJob.DTO.ProcessDataDTO
+    name: ProcessDataDTO
+    nameWithType: ProcessDataDTO
+    fullName: SampleStandardJob.DTO.ProcessDataDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_Exception
+    name: R_Exception
+    nameWithType: R_Exception
+    fullName: R_Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SampleStandardJob.DTO.ProcessDataDTO
+    name: ProcessDataDTO
+    nameWithType: ProcessDataDTO
+    fullName: SampleStandardJob.DTO.ProcessDataDTO
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_Exception
+    name: R_Exception
+    nameWithType: R_Exception
+    fullName: R_Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobAsync`2
+  commentId: T:R_ProcessorJob.R_IProcessJobAsync`2
+  name: R_IProcessJobAsync<T, E>
+  nameWithType: R_IProcessJobAsync<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>
+  nameWithType.vb: R_IProcessJobAsync(Of T, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E)
+  name.vb: R_IProcessJobAsync(Of T, E)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobAsync`2
+    name: R_IProcessJobAsync
+    nameWithType: R_IProcessJobAsync
+    fullName: R_ProcessorJob.R_IProcessJobAsync
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobAsync`2
+    name: R_IProcessJobAsync
+    nameWithType: R_IProcessJobAsync
+    fullName: R_ProcessorJob.R_IProcessJobAsync
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob
+  commentId: N:R_ProcessorJob
+  name: R_ProcessorJob
+  nameWithType: R_ProcessorJob
+  fullName: R_ProcessorJob
+- uid: R_ProcessorJob.R_IProcessJobBase`2
+  commentId: T:R_ProcessorJob.R_IProcessJobBase`2
+  name: R_IProcessJobBase<T, E>
+  nameWithType: R_IProcessJobBase<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>
+  nameWithType.vb: R_IProcessJobBase(Of T, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E)
+  name.vb: R_IProcessJobBase(Of T, E)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SampleStandardJob.SampleStandardJobCls.#ctor*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.#ctor
+  name: SampleStandardJobCls
+  nameWithType: SampleStandardJobCls.SampleStandardJobCls
+  fullName: SampleStandardJob.SampleStandardJobCls.SampleStandardJobCls
+- uid: ILogger{SampleStandardJob.SampleStandardJobCls}
+  commentId: '!:ILogger{SampleStandardJob.SampleStandardJobCls}'
+  definition: ILogger`1
+  name: ILogger<SampleStandardJobCls>
+  nameWithType: ILogger<SampleStandardJobCls>
+  fullName: ILogger<SampleStandardJob.SampleStandardJobCls>
+  nameWithType.vb: ILogger(Of SampleStandardJobCls)
+  fullName.vb: ILogger(Of SampleStandardJob.SampleStandardJobCls)
+  name.vb: ILogger(Of SampleStandardJobCls)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SampleStandardJob.SampleStandardJobCls
+    name: SampleStandardJobCls
+    nameWithType: SampleStandardJobCls
+    fullName: SampleStandardJob.SampleStandardJobCls
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SampleStandardJob.SampleStandardJobCls
+    name: SampleStandardJobCls
+    nameWithType: SampleStandardJobCls
+    fullName: SampleStandardJob.SampleStandardJobCls
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ILocalCacheMultiTenantFromDb
+  isExternal: true
+  name: R_ILocalCacheMultiTenantFromDb
+  nameWithType: R_ILocalCacheMultiTenantFromDb
+  fullName: R_ILocalCacheMultiTenantFromDb
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SampleStandardJob.SampleStandardJobCls.Execute*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.Execute
+  name: Execute
+  nameWithType: SampleStandardJobCls.Execute
+  fullName: SampleStandardJob.SampleStandardJobCls.Execute
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: SampleStandardJob.SampleStandardJobCls._GetCompanies*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls._GetCompanies
+  name: _GetCompanies
+  nameWithType: SampleStandardJobCls._GetCompanies
+  fullName: SampleStandardJob.SampleStandardJobCls._GetCompanies
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{List{SampleStandardJob.DTO.CompanyDTO}}
+  commentId: '!:Task{List{SampleStandardJob.DTO.CompanyDTO}}'
+  definition: Task`1
+  name: Task<List<CompanyDTO>>
+  nameWithType: Task<List<CompanyDTO>>
+  fullName: Task<List<SampleStandardJob.DTO.CompanyDTO>>
+  nameWithType.vb: Task(Of List(Of CompanyDTO))
+  fullName.vb: Task(Of List(Of SampleStandardJob.DTO.CompanyDTO))
+  name.vb: Task(Of List(Of CompanyDTO))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SampleStandardJob.DTO.CompanyDTO
+    name: CompanyDTO
+    nameWithType: CompanyDTO
+    fullName: SampleStandardJob.DTO.CompanyDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SampleStandardJob.DTO.CompanyDTO
+    name: CompanyDTO
+    nameWithType: CompanyDTO
+    fullName: SampleStandardJob.DTO.CompanyDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SampleStandardJob.SampleStandardJobCls.R_StatusAsync*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.R_StatusAsync
+  name: R_StatusAsync
+  nameWithType: SampleStandardJobCls.R_StatusAsync
+  fullName: SampleStandardJob.SampleStandardJobCls.R_StatusAsync
+- uid: SampleStandardJob.SampleStandardJobCls.R_InitDataAsync*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.R_InitDataAsync
+  name: R_InitDataAsync
+  nameWithType: SampleStandardJobCls.R_InitDataAsync
+  fullName: SampleStandardJob.SampleStandardJobCls.R_InitDataAsync
+- uid: Task{List{SampleStandardJob.DTO.ProcessDataDTO}}
+  commentId: '!:Task{List{SampleStandardJob.DTO.ProcessDataDTO}}'
+  definition: Task`1
+  name: Task<List<ProcessDataDTO>>
+  nameWithType: Task<List<ProcessDataDTO>>
+  fullName: Task<List<SampleStandardJob.DTO.ProcessDataDTO>>
+  nameWithType.vb: Task(Of List(Of ProcessDataDTO))
+  fullName.vb: Task(Of List(Of SampleStandardJob.DTO.ProcessDataDTO))
+  name.vb: Task(Of List(Of ProcessDataDTO))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SampleStandardJob.DTO.ProcessDataDTO
+    name: ProcessDataDTO
+    nameWithType: ProcessDataDTO
+    fullName: SampleStandardJob.DTO.ProcessDataDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SampleStandardJob.DTO.ProcessDataDTO
+    name: ProcessDataDTO
+    nameWithType: ProcessDataDTO
+    fullName: SampleStandardJob.DTO.ProcessDataDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync
+  name: R_InitDataErrorStatusAsync
+  nameWithType: SampleStandardJobCls.R_InitDataErrorStatusAsync
+  fullName: SampleStandardJob.SampleStandardJobCls.R_InitDataErrorStatusAsync
+- uid: R_Exception
+  isExternal: true
+  name: R_Exception
+  nameWithType: R_Exception
+  fullName: R_Exception
+- uid: SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync
+  name: R_SingleProcessAsync
+  nameWithType: SampleStandardJobCls.R_SingleProcessAsync
+  fullName: SampleStandardJob.SampleStandardJobCls.R_SingleProcessAsync
+- uid: SampleStandardJob.DTO.ProcessDataDTO
+  commentId: T:SampleStandardJob.DTO.ProcessDataDTO
+  parent: SampleStandardJob.DTO
+  name: ProcessDataDTO
+  nameWithType: ProcessDataDTO
+  fullName: SampleStandardJob.DTO.ProcessDataDTO
+- uid: SampleStandardJob.DTO
+  commentId: N:SampleStandardJob.DTO
+  name: SampleStandardJob.DTO
+  nameWithType: SampleStandardJob.DTO
+  fullName: SampleStandardJob.DTO
+- uid: SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync
+  name: R_SingleErrorStatusAsync
+  nameWithType: SampleStandardJobCls.R_SingleErrorStatusAsync
+  fullName: SampleStandardJob.SampleStandardJobCls.R_SingleErrorStatusAsync
+- uid: SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync
+  name: R_SingleSuccessStatusAsync
+  nameWithType: SampleStandardJobCls.R_SingleSuccessStatusAsync
+  fullName: SampleStandardJob.SampleStandardJobCls.R_SingleSuccessStatusAsync
+- uid: SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync*
+  commentId: Overload:SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync
+  name: R_ProcessCompleteStatusAsync
+  nameWithType: SampleStandardJobCls.R_ProcessCompleteStatusAsync
+  fullName: SampleStandardJob.SampleStandardJobCls.R_ProcessCompleteStatusAsync
+- uid: List{R_Exception}
+  commentId: '!:List{R_Exception}'
+  definition: List`1
+  name: List<R_Exception>
+  nameWithType: List<R_Exception>
+  fullName: List<R_Exception>
+  nameWithType.vb: List(Of R_Exception)
+  fullName.vb: List(Of R_Exception)
+  name.vb: List(Of R_Exception)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_Exception
+    name: R_Exception
+    nameWithType: R_Exception
+    fullName: R_Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_Exception
+    name: R_Exception
+    nameWithType: R_Exception
+    fullName: R_Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

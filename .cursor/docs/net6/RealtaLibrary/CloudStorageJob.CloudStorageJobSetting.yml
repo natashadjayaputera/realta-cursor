@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.CloudStorageJobSetting
+  commentId: T:CloudStorageJob.CloudStorageJobSetting
+  id: CloudStorageJobSetting
+  parent: CloudStorageJob
+  children:
+  - CloudStorageJob.CloudStorageJobSetting.CompanyId
+  - CloudStorageJob.CloudStorageJobSetting.CredentialAzure
+  - CloudStorageJob.CloudStorageJobSetting.CredentialGoogle
+  - CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure
+  - CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle
+  - CloudStorageJob.CloudStorageJobSetting.RecordPerProcess
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageJobSetting
+  nameWithType: CloudStorageJobSetting
+  fullName: CloudStorageJob.CloudStorageJobSetting
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageJobSetting
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+    startLine: 4
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class CloudStorageJobSetting : R_SchedulerSettingDTO'
+    content.vb: >-
+      Public Class CloudStorageJobSetting
+          Inherits R_SchedulerSettingDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CloudStorageJob.CloudStorageJobSetting.CompanyId
+  commentId: P:CloudStorageJob.CloudStorageJobSetting.CompanyId
+  id: CompanyId
+  parent: CloudStorageJob.CloudStorageJobSetting
+  langs:
+  - csharp
+  - vb
+  name: CompanyId
+  nameWithType: CloudStorageJobSetting.CompanyId
+  fullName: CloudStorageJob.CloudStorageJobSetting.CompanyId
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CompanyId
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+    startLine: 6
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public string CompanyId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CompanyId As String
+  overload: CloudStorageJob.CloudStorageJobSetting.CompanyId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.CloudStorageJobSetting.RecordPerProcess
+  commentId: P:CloudStorageJob.CloudStorageJobSetting.RecordPerProcess
+  id: RecordPerProcess
+  parent: CloudStorageJob.CloudStorageJobSetting
+  langs:
+  - csharp
+  - vb
+  name: RecordPerProcess
+  nameWithType: CloudStorageJobSetting.RecordPerProcess
+  fullName: CloudStorageJob.CloudStorageJobSetting.RecordPerProcess
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: RecordPerProcess
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+    startLine: 7
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public int RecordPerProcess { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RecordPerProcess As Integer
+  overload: CloudStorageJob.CloudStorageJobSetting.RecordPerProcess*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.CloudStorageJobSetting.CredentialAzure
+  commentId: P:CloudStorageJob.CloudStorageJobSetting.CredentialAzure
+  id: CredentialAzure
+  parent: CloudStorageJob.CloudStorageJobSetting
+  langs:
+  - csharp
+  - vb
+  name: CredentialAzure
+  nameWithType: CloudStorageJobSetting.CredentialAzure
+  fullName: CloudStorageJob.CloudStorageJobSetting.CredentialAzure
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CredentialAzure
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+    startLine: 8
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public byte[] CredentialAzure { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property CredentialAzure As Byte()
+  overload: CloudStorageJob.CloudStorageJobSetting.CredentialAzure*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.CloudStorageJobSetting.CredentialGoogle
+  commentId: P:CloudStorageJob.CloudStorageJobSetting.CredentialGoogle
+  id: CredentialGoogle
+  parent: CloudStorageJob.CloudStorageJobSetting
+  langs:
+  - csharp
+  - vb
+  name: CredentialGoogle
+  nameWithType: CloudStorageJobSetting.CredentialGoogle
+  fullName: CloudStorageJob.CloudStorageJobSetting.CredentialGoogle
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CredentialGoogle
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+    startLine: 9
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public byte[] CredentialGoogle { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property CredentialGoogle As Byte()
+  overload: CloudStorageJob.CloudStorageJobSetting.CredentialGoogle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure
+  commentId: P:CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure
+  id: EnablePrivateAccessForAzure
+  parent: CloudStorageJob.CloudStorageJobSetting
+  langs:
+  - csharp
+  - vb
+  name: EnablePrivateAccessForAzure
+  nameWithType: CloudStorageJobSetting.EnablePrivateAccessForAzure
+  fullName: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EnablePrivateAccessForAzure
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+    startLine: 10
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public bool EnablePrivateAccessForAzure { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnablePrivateAccessForAzure As Boolean
+  overload: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle
+  commentId: P:CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle
+  id: EnablePrivateAccessForGoogle
+  parent: CloudStorageJob.CloudStorageJobSetting
+  langs:
+  - csharp
+  - vb
+  name: EnablePrivateAccessForGoogle
+  nameWithType: CloudStorageJobSetting.EnablePrivateAccessForGoogle
+  fullName: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EnablePrivateAccessForGoogle
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSetting.cs
+    startLine: 11
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public bool EnablePrivateAccessForGoogle { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnablePrivateAccessForGoogle As Boolean
+  overload: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CloudStorageJob.CloudStorageJobSetting.CompanyId*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSetting.CompanyId
+  name: CompanyId
+  nameWithType: CloudStorageJobSetting.CompanyId
+  fullName: CloudStorageJob.CloudStorageJobSetting.CompanyId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CloudStorageJob.CloudStorageJobSetting.RecordPerProcess*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSetting.RecordPerProcess
+  name: RecordPerProcess
+  nameWithType: CloudStorageJobSetting.RecordPerProcess
+  fullName: CloudStorageJob.CloudStorageJobSetting.RecordPerProcess
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CloudStorageJob.CloudStorageJobSetting.CredentialAzure*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSetting.CredentialAzure
+  name: CredentialAzure
+  nameWithType: CloudStorageJobSetting.CredentialAzure
+  fullName: CloudStorageJob.CloudStorageJobSetting.CredentialAzure
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: CloudStorageJob.CloudStorageJobSetting.CredentialGoogle*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSetting.CredentialGoogle
+  name: CredentialGoogle
+  nameWithType: CloudStorageJobSetting.CredentialGoogle
+  fullName: CloudStorageJob.CloudStorageJobSetting.CredentialGoogle
+- uid: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure
+  name: EnablePrivateAccessForAzure
+  nameWithType: CloudStorageJobSetting.EnablePrivateAccessForAzure
+  fullName: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForAzure
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle
+  name: EnablePrivateAccessForGoogle
+  nameWithType: CloudStorageJobSetting.EnablePrivateAccessForGoogle
+  fullName: CloudStorageJob.CloudStorageJobSetting.EnablePrivateAccessForGoogle

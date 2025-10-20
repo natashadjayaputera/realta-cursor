@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ErrorStatusReturn
+  commentId: T:R_CommonFrontBackAPI.R_ErrorStatusReturn
+  id: R_ErrorStatusReturn
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage
+  - R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo
+  langs:
+  - csharp
+  - vb
+  name: R_ErrorStatusReturn
+  nameWithType: R_ErrorStatusReturn
+  fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Error/R_ErrorStatusReturn.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ErrorStatusReturn
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Error/R_ErrorStatusReturn.cs
+    startLine: 3
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ErrorStatusReturn : object'
+    content.vb: >-
+      Public Class R_ErrorStatusReturn
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo
+  commentId: P:R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo
+  id: SeqNo
+  parent: R_CommonFrontBackAPI.R_ErrorStatusReturn
+  langs:
+  - csharp
+  - vb
+  name: SeqNo
+  nameWithType: R_ErrorStatusReturn.SeqNo
+  fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Error/R_ErrorStatusReturn.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SeqNo
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Error/R_ErrorStatusReturn.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public int SeqNo { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SeqNo As Integer
+  overload: R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage
+  commentId: P:R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage
+  id: ErrorMessage
+  parent: R_CommonFrontBackAPI.R_ErrorStatusReturn
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: R_ErrorStatusReturn.ErrorMessage
+  fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Error/R_ErrorStatusReturn.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ErrorMessage
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Error/R_ErrorStatusReturn.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string ErrorMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ErrorMessage As String
+  overload: R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo*
+  commentId: Overload:R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo
+  name: SeqNo
+  nameWithType: R_ErrorStatusReturn.SeqNo
+  fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn.SeqNo
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage*
+  commentId: Overload:R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage
+  name: ErrorMessage
+  nameWithType: R_ErrorStatusReturn.ErrorMessage
+  fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn.ErrorMessage
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

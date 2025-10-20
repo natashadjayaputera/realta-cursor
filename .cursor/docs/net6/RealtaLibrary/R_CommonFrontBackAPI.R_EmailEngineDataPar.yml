@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineDataPar
+  id: R_EmailEngineDataPar
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA
+  - R_CommonFrontBackAPI.R_EmailEngineDataPar.Key
+  - R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineDataPar
+  nameWithType: R_EmailEngineDataPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineDataPar
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_EmailEngineDataPar : object'
+    content.vb: >-
+      Public Class R_EmailEngineDataPar
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar.Key
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineDataPar.Key
+  id: Key
+  parent: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: R_EmailEngineDataPar.Key
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar.Key
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Key
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public R_EmailEngineKey Key { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_EmailEngineKey
+    content.vb: Public Property Key As R_EmailEngineKey
+  overload: R_CommonFrontBackAPI.R_EmailEngineDataPar.Key*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO
+  id: SEQ_NO
+  parent: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  langs:
+  - csharp
+  - vb
+  name: SEQ_NO
+  nameWithType: R_EmailEngineDataPar.SEQ_NO
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SEQ_NO
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public int SEQ_NO { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SEQ_NO As Integer
+  overload: R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA
+  id: DATA
+  parent: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  langs:
+  - csharp
+  - vb
+  name: DATA
+  nameWithType: R_EmailEngineDataPar.DATA
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: DATA
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineDataPar.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public byte[] DATA { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property DATA As Byte()
+  overload: R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar.Key*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineDataPar.Key
+  name: Key
+  nameWithType: R_EmailEngineDataPar.Key
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar.Key
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineKey
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineKey
+  nameWithType: R_EmailEngineKey
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO
+  name: SEQ_NO
+  nameWithType: R_EmailEngineDataPar.SEQ_NO
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar.SEQ_NO
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA
+  name: DATA
+  nameWithType: R_EmailEngineDataPar.DATA
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar.DATA
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

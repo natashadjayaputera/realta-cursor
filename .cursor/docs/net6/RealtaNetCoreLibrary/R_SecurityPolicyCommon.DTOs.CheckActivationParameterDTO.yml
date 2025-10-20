@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+  id: CheckActivationParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  children:
+  - R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID
+  - R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID
+  langs:
+  - csharp
+  - vb
+  name: CheckActivationParameterDTO
+  nameWithType: CheckActivationParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/CheckActivationParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CheckActivationParameterDTO
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/CheckActivationParameterDTO.cs
+    startLine: 2
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: 'public class CheckActivationParameterDTO : object'
+    content.vb: >-
+      Public Class CheckActivationParameterDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID
+  commentId: P:R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: CheckActivationParameterDTO.CCOMPANY_ID
+  fullName: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/CheckActivationParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/CheckActivationParameterDTO.cs
+    startLine: 4
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID
+  commentId: P:R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID
+  id: CAPPLICATION_ID
+  parent: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: CAPPLICATION_ID
+  nameWithType: CheckActivationParameterDTO.CAPPLICATION_ID
+  fullName: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID
+  type: Property
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/CheckActivationParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CAPPLICATION_ID
+    path: R_SecurityPolicy/R_SecurityPolicyCommon/DTOs/CheckActivationParameterDTO.cs
+    startLine: 5
+  assemblies:
+  - R_SecurityPolicyCommon
+  namespace: R_SecurityPolicyCommon.DTOs
+  syntax:
+    content: public string CAPPLICATION_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CAPPLICATION_ID As String
+  overload: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_SecurityPolicyCommon.DTOs
+  commentId: N:R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  nameWithType: R_SecurityPolicyCommon.DTOs
+  fullName: R_SecurityPolicyCommon.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: CheckActivationParameterDTO.CCOMPANY_ID
+  fullName: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID*
+  commentId: Overload:R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID
+  name: CAPPLICATION_ID
+  nameWithType: CheckActivationParameterDTO.CAPPLICATION_ID
+  fullName: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.CAPPLICATION_ID

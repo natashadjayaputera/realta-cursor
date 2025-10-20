@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.Enums.eEmailProvider
+  commentId: T:R_EmailEngine.Enums.eEmailProvider
+  id: eEmailProvider
+  parent: R_EmailEngine.Enums
+  children:
+  - R_EmailEngine.Enums.eEmailProvider.SENDGRID
+  - R_EmailEngine.Enums.eEmailProvider.SMTP
+  langs:
+  - csharp
+  - vb
+  name: eEmailProvider
+  nameWithType: eEmailProvider
+  fullName: R_EmailEngine.Enums.eEmailProvider
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/Enums/eEmailProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: eEmailProvider
+    path: Microservices/R_EmailEngine/Enums/eEmailProvider.cs
+    startLine: 2
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.Enums
+  syntax:
+    content: 'public enum eEmailProvider : int'
+    content.vb: Public Enum eEmailProvider As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_EmailEngine.Enums.eEmailProvider.SMTP
+  commentId: F:R_EmailEngine.Enums.eEmailProvider.SMTP
+  id: SMTP
+  parent: R_EmailEngine.Enums.eEmailProvider
+  langs:
+  - csharp
+  - vb
+  name: SMTP
+  nameWithType: eEmailProvider.SMTP
+  fullName: R_EmailEngine.Enums.eEmailProvider.SMTP
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/Enums/eEmailProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SMTP
+    path: Microservices/R_EmailEngine/Enums/eEmailProvider.cs
+    startLine: 4
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.Enums
+  syntax:
+    content: SMTP = 0
+    return:
+      type: R_EmailEngine.Enums.eEmailProvider
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_EmailEngine.Enums.eEmailProvider.SENDGRID
+  commentId: F:R_EmailEngine.Enums.eEmailProvider.SENDGRID
+  id: SENDGRID
+  parent: R_EmailEngine.Enums.eEmailProvider
+  langs:
+  - csharp
+  - vb
+  name: SENDGRID
+  nameWithType: eEmailProvider.SENDGRID
+  fullName: R_EmailEngine.Enums.eEmailProvider.SENDGRID
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/Enums/eEmailProvider.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SENDGRID
+    path: Microservices/R_EmailEngine/Enums/eEmailProvider.cs
+    startLine: 5
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.Enums
+  syntax:
+    content: SENDGRID = 1
+    return:
+      type: R_EmailEngine.Enums.eEmailProvider
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_EmailEngine.Enums
+  commentId: N:R_EmailEngine.Enums
+  name: R_EmailEngine.Enums
+  nameWithType: R_EmailEngine.Enums
+  fullName: R_EmailEngine.Enums
+- uid: R_EmailEngine.Enums.eEmailProvider
+  commentId: T:R_EmailEngine.Enums.eEmailProvider
+  parent: R_EmailEngine.Enums
+  name: eEmailProvider
+  nameWithType: eEmailProvider
+  fullName: R_EmailEngine.Enums.eEmailProvider

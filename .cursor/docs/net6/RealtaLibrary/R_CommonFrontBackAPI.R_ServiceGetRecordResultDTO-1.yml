@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  id: R_ServiceGetRecordResultDTO`1
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1.data
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetRecordResultDTO<E>
+  nameWithType: R_ServiceGetRecordResultDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO<E>
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceGetRecordResultDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordResultDTO.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceGetRecordResultDTO<E> : R_APIResultBaseDTO'
+    typeParameters:
+    - id: E
+    content.vb: >-
+      Public Class R_ServiceGetRecordResultDTO(Of E)
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  nameWithType.vb: R_ServiceGetRecordResultDTO(Of E)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO(Of E)
+  name.vb: R_ServiceGetRecordResultDTO(Of E)
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1.data
+  commentId: P:R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1.data
+  id: data
+  parent: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: R_ServiceGetRecordResultDTO<E>.data
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO<E>.data
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: data
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceGetRecordResultDTO.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public E data { get; set; }
+    parameters: []
+    return:
+      type: '{E}'
+    content.vb: Public Property data As E
+  overload: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1.data*
+  nameWithType.vb: R_ServiceGetRecordResultDTO(Of E).data
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO(Of E).data
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1.data*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1.data
+  name: data
+  nameWithType: R_ServiceGetRecordResultDTO<E>.data
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO<E>.data
+  nameWithType.vb: R_ServiceGetRecordResultDTO(Of E).data
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO(Of E).data
+- uid: '{E}'
+  commentId: '!:E'
+  definition: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: E
+  name: E
+  nameWithType: E
+  fullName: E

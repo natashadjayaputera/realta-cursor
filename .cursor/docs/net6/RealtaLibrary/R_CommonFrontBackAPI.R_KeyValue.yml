@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_KeyValue
+  commentId: T:R_CommonFrontBackAPI.R_KeyValue
+  id: R_KeyValue
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_KeyValue.Key
+  - R_CommonFrontBackAPI.R_KeyValue.Value
+  langs:
+  - csharp
+  - vb
+  name: R_KeyValue
+  nameWithType: R_KeyValue
+  fullName: R_CommonFrontBackAPI.R_KeyValue
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_KeyValue.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_KeyValue
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_KeyValue.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_KeyValue : object'
+    content.vb: >-
+      Public Class R_KeyValue
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_KeyValue.Key
+  commentId: P:R_CommonFrontBackAPI.R_KeyValue.Key
+  id: Key
+  parent: R_CommonFrontBackAPI.R_KeyValue
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: R_KeyValue.Key
+  fullName: R_CommonFrontBackAPI.R_KeyValue.Key
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_KeyValue.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Key
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_KeyValue.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Key As String
+  overload: R_CommonFrontBackAPI.R_KeyValue.Key*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_KeyValue.Value
+  commentId: P:R_CommonFrontBackAPI.R_KeyValue.Value
+  id: Value
+  parent: R_CommonFrontBackAPI.R_KeyValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: R_KeyValue.Value
+  fullName: R_CommonFrontBackAPI.R_KeyValue.Value
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_KeyValue.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Value
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Common/R_KeyValue.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public object Value { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Value As Object
+  overload: R_CommonFrontBackAPI.R_KeyValue.Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_KeyValue.Key*
+  commentId: Overload:R_CommonFrontBackAPI.R_KeyValue.Key
+  name: Key
+  nameWithType: R_KeyValue.Key
+  fullName: R_CommonFrontBackAPI.R_KeyValue.Key
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_KeyValue.Value*
+  commentId: Overload:R_CommonFrontBackAPI.R_KeyValue.Value
+  name: Value
+  nameWithType: R_KeyValue.Value
+  fullName: R_CommonFrontBackAPI.R_KeyValue.Value

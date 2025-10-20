@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  id: R_IEnvironment
+  parent: R_BlazorFrontEnd.Interfaces
+  children:
+  - R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName
+  - R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment
+  - R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction
+  - R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging
+  langs:
+  - csharp
+  - vb
+  name: R_IEnvironment
+  nameWithType: R_IEnvironment
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IEnvironment
+    path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: public interface R_IEnvironment
+    content.vb: Public Interface R_IEnvironment
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName
+  id: EnvironmentName
+  parent: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentName
+  nameWithType: R_IEnvironment.EnvironmentName
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: EnvironmentName
+    path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: string EnvironmentName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property EnvironmentName As String
+  overload: R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment
+  id: IsDevelopment
+  parent: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: IsDevelopment
+  nameWithType: R_IEnvironment.IsDevelopment
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsDevelopment
+    path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: bool IsDevelopment { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsDevelopment As Boolean
+  overload: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging
+  id: IsStaging
+  parent: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: IsStaging
+  nameWithType: R_IEnvironment.IsStaging
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsStaging
+    path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: bool IsStaging { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsStaging As Boolean
+  overload: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction
+  id: IsProduction
+  parent: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  langs:
+  - csharp
+  - vb
+  name: IsProduction
+  nameWithType: R_IEnvironment.IsProduction
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsProduction
+    path: Library/R_BlazorFrontEnd/Interfaces/R_IEnvironment.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Interfaces
+  syntax:
+    content: bool IsProduction { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsProduction As Boolean
+  overload: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: R_BlazorFrontEnd.Interfaces
+  commentId: N:R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  nameWithType: R_BlazorFrontEnd.Interfaces
+  fullName: R_BlazorFrontEnd.Interfaces
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName
+  name: EnvironmentName
+  nameWithType: R_IEnvironment.EnvironmentName
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.EnvironmentName
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment
+  name: IsDevelopment
+  nameWithType: R_IEnvironment.IsDevelopment
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsDevelopment
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging
+  name: IsStaging
+  nameWithType: R_IEnvironment.IsStaging
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsStaging
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction*
+  commentId: Overload:R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction
+  name: IsProduction
+  nameWithType: R_IEnvironment.IsProduction
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment.IsProduction

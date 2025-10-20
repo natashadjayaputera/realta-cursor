@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Helpers.R_HtmlUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_HtmlUtility
+  id: R_HtmlUtility
+  parent: R_BlazorFrontEnd.Helpers
+  children:
+  - R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml(System.String)
+  - R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_HtmlUtility
+  nameWithType: R_HtmlUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_HtmlUtility
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_HtmlUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_HtmlUtility
+    path: Library/R_BlazorFrontEnd/Helpers/R_HtmlUtility.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: 'public static class R_HtmlUtility : object'
+    content.vb: >-
+      Public Module R_HtmlUtility
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml(System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml(System.String)
+  id: R_FetchImagesFromHtml(System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_HtmlUtility
+  langs:
+  - csharp
+  - vb
+  name: R_FetchImagesFromHtml(String)
+  nameWithType: R_HtmlUtility.R_FetchImagesFromHtml(String)
+  fullName: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_HtmlUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FetchImagesFromHtml
+    path: Library/R_BlazorFrontEnd/Helpers/R_HtmlUtility.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static List<string> R_FetchImagesFromHtml(string htmlSource)
+    parameters:
+    - id: htmlSource
+      type: System.String
+    return:
+      type: List{System.String}
+    content.vb: Public Shared Function R_FetchImagesFromHtml(htmlSource As String) As List(Of String)
+  overload: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml(System.String)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml(System.String)
+  id: R_FetchImagesBase64FromHtml(System.String)
+  parent: R_BlazorFrontEnd.Helpers.R_HtmlUtility
+  langs:
+  - csharp
+  - vb
+  name: R_FetchImagesBase64FromHtml(String)
+  nameWithType: R_HtmlUtility.R_FetchImagesBase64FromHtml(String)
+  fullName: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_HtmlUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FetchImagesBase64FromHtml
+    path: Library/R_BlazorFrontEnd/Helpers/R_HtmlUtility.cs
+    startLine: 22
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static List<string> R_FetchImagesBase64FromHtml(string htmlSource)
+    parameters:
+    - id: htmlSource
+      type: System.String
+    return:
+      type: List{System.String}
+    content.vb: Public Shared Function R_FetchImagesBase64FromHtml(htmlSource As String) As List(Of String)
+  overload: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml
+  name: R_FetchImagesFromHtml
+  nameWithType: R_HtmlUtility.R_FetchImagesFromHtml
+  fullName: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesFromHtml
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: List{System.String}
+  commentId: '!:List{System.String}'
+  definition: List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml
+  name: R_FetchImagesBase64FromHtml
+  nameWithType: R_HtmlUtility.R_FetchImagesBase64FromHtml
+  fullName: R_BlazorFrontEnd.Helpers.R_HtmlUtility.R_FetchImagesBase64FromHtml

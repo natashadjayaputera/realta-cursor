@@ -1,0 +1,346 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.DTOs.EmailConfigDTO
+  commentId: T:R_EmailEngine.DTOs.EmailConfigDTO
+  id: EmailConfigDTO
+  parent: R_EmailEngine.DTOs
+  children:
+  - R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+  - R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER
+  - R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID
+  - R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT
+  - R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER
+  - R_EmailEngine.DTOs.EmailConfigDTO.LAPI
+  - R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL
+  langs:
+  - csharp
+  - vb
+  name: EmailConfigDTO
+  nameWithType: EmailConfigDTO
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailConfigDTO
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 2
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: 'public class EmailConfigDTO : object'
+    content.vb: >-
+      Public Class EmailConfigDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID
+  commentId: P:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID
+  id: CSMTP_ID
+  parent: R_EmailEngine.DTOs.EmailConfigDTO
+  langs:
+  - csharp
+  - vb
+  name: CSMTP_ID
+  nameWithType: EmailConfigDTO.CSMTP_ID
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSMTP_ID
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 4
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CSMTP_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSMTP_ID As String
+  overload: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER
+  commentId: P:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER
+  id: CSMTP_SERVER
+  parent: R_EmailEngine.DTOs.EmailConfigDTO
+  langs:
+  - csharp
+  - vb
+  name: CSMTP_SERVER
+  nameWithType: EmailConfigDTO.CSMTP_SERVER
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSMTP_SERVER
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 5
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CSMTP_SERVER { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSMTP_SERVER As String
+  overload: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT
+  commentId: P:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT
+  id: CSMTP_PORT
+  parent: R_EmailEngine.DTOs.EmailConfigDTO
+  langs:
+  - csharp
+  - vb
+  name: CSMTP_PORT
+  nameWithType: EmailConfigDTO.CSMTP_PORT
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSMTP_PORT
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CSMTP_PORT { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSMTP_PORT As String
+  overload: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER
+  commentId: P:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER
+  id: CSMTP_CREDENTIAL_USER
+  parent: R_EmailEngine.DTOs.EmailConfigDTO
+  langs:
+  - csharp
+  - vb
+  name: CSMTP_CREDENTIAL_USER
+  nameWithType: EmailConfigDTO.CSMTP_CREDENTIAL_USER
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSMTP_CREDENTIAL_USER
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 7
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CSMTP_CREDENTIAL_USER { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSMTP_CREDENTIAL_USER As String
+  overload: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+  commentId: P:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+  id: CSMTP_CREDENTIAL_PASSWORD
+  parent: R_EmailEngine.DTOs.EmailConfigDTO
+  langs:
+  - csharp
+  - vb
+  name: CSMTP_CREDENTIAL_PASSWORD
+  nameWithType: EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSMTP_CREDENTIAL_PASSWORD
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 8
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CSMTP_CREDENTIAL_PASSWORD { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSMTP_CREDENTIAL_PASSWORD As String
+  overload: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL
+  commentId: P:R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL
+  id: LSUPPORT_SSL
+  parent: R_EmailEngine.DTOs.EmailConfigDTO
+  langs:
+  - csharp
+  - vb
+  name: LSUPPORT_SSL
+  nameWithType: EmailConfigDTO.LSUPPORT_SSL
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LSUPPORT_SSL
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 9
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public bool LSUPPORT_SSL { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LSUPPORT_SSL As Boolean
+  overload: R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.LAPI
+  commentId: P:R_EmailEngine.DTOs.EmailConfigDTO.LAPI
+  id: LAPI
+  parent: R_EmailEngine.DTOs.EmailConfigDTO
+  langs:
+  - csharp
+  - vb
+  name: LAPI
+  nameWithType: EmailConfigDTO.LAPI
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.LAPI
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LAPI
+    path: Microservices/R_EmailEngine/DTOs/EmailConfigDTO.cs
+    startLine: 10
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public bool LAPI { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LAPI As Boolean
+  overload: R_EmailEngine.DTOs.EmailConfigDTO.LAPI*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngine.DTOs
+  commentId: N:R_EmailEngine.DTOs
+  name: R_EmailEngine.DTOs
+  nameWithType: R_EmailEngine.DTOs
+  fullName: R_EmailEngine.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID*
+  commentId: Overload:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID
+  name: CSMTP_ID
+  nameWithType: EmailConfigDTO.CSMTP_ID
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER*
+  commentId: Overload:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER
+  name: CSMTP_SERVER
+  nameWithType: EmailConfigDTO.CSMTP_SERVER
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_SERVER
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT*
+  commentId: Overload:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT
+  name: CSMTP_PORT
+  nameWithType: EmailConfigDTO.CSMTP_PORT
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_PORT
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER*
+  commentId: Overload:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER
+  name: CSMTP_CREDENTIAL_USER
+  nameWithType: EmailConfigDTO.CSMTP_CREDENTIAL_USER
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_USER
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD*
+  commentId: Overload:R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+  name: CSMTP_CREDENTIAL_PASSWORD
+  nameWithType: EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.CSMTP_CREDENTIAL_PASSWORD
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL*
+  commentId: Overload:R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL
+  name: LSUPPORT_SSL
+  nameWithType: EmailConfigDTO.LSUPPORT_SSL
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.LSUPPORT_SSL
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_EmailEngine.DTOs.EmailConfigDTO.LAPI*
+  commentId: Overload:R_EmailEngine.DTOs.EmailConfigDTO.LAPI
+  name: LAPI
+  nameWithType: EmailConfigDTO.LAPI
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO.LAPI

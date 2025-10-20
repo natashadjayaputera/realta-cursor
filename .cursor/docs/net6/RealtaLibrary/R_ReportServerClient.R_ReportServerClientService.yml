@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ReportServerClient.R_ReportServerClientService
+  commentId: T:R_ReportServerClient.R_ReportServerClientService
+  id: R_ReportServerClientService
+  parent: R_ReportServerClient
+  children:
+  - R_ReportServerClient.R_ReportServerClientService.#ctor(IHttpClientFactory)
+  - R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient
+  - R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: R_ReportServerClientService
+  nameWithType: R_ReportServerClientService
+  fullName: R_ReportServerClient.R_ReportServerClientService
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ReportServerClientService
+    path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+    startLine: 6
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: 'public class R_ReportServerClientService : object'
+    content.vb: >-
+      Public Class R_ReportServerClientService
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_ReportServerClient.R_ReportServerClientService.#ctor(IHttpClientFactory)
+  commentId: M:R_ReportServerClient.R_ReportServerClientService.#ctor(IHttpClientFactory)
+  id: '#ctor(IHttpClientFactory)'
+  parent: R_ReportServerClient.R_ReportServerClientService
+  langs:
+  - csharp
+  - vb
+  name: R_ReportServerClientService(IHttpClientFactory)
+  nameWithType: R_ReportServerClientService.R_ReportServerClientService(IHttpClientFactory)
+  fullName: R_ReportServerClient.R_ReportServerClientService.R_ReportServerClientService(IHttpClientFactory)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+    startLine: 10
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public R_ReportServerClientService(IHttpClientFactory poClientFactory)
+    parameters:
+    - id: poClientFactory
+      type: IHttpClientFactory
+    content.vb: Public Sub New(poClientFactory As IHttpClientFactory)
+  overload: R_ReportServerClient.R_ReportServerClientService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient
+  commentId: M:R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient
+  id: R_GetHttpClient
+  parent: R_ReportServerClient.R_ReportServerClientService
+  langs:
+  - csharp
+  - vb
+  name: R_GetHttpClient()
+  nameWithType: R_ReportServerClientService.R_GetHttpClient()
+  fullName: R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetHttpClient
+    path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+    startLine: 21
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public static HttpClient R_GetHttpClient()
+    return:
+      type: HttpClient
+    content.vb: Public Shared Function R_GetHttpClient As HttpClient
+  overload: R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration
+  commentId: M:R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration
+  id: R_GetReportServerConfiguration
+  parent: R_ReportServerClient.R_ReportServerClientService
+  langs:
+  - csharp
+  - vb
+  name: R_GetReportServerConfiguration()
+  nameWithType: R_ReportServerClientService.R_GetReportServerConfiguration()
+  fullName: R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetReportServerConfiguration
+    path: Microservices/R_ReportServerClient/R_ReportServerClientService.cs
+    startLine: 25
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public static R_ReportServerClientConfiguration R_GetReportServerConfiguration()
+    return:
+      type: R_ReportServerClient.DTO.R_ReportServerClientConfiguration
+    content.vb: Public Shared Function R_GetReportServerConfiguration As R_ReportServerClientConfiguration
+  overload: R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_ReportServerClient
+  commentId: N:R_ReportServerClient
+  name: R_ReportServerClient
+  nameWithType: R_ReportServerClient
+  fullName: R_ReportServerClient
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ReportServerClient.R_ReportServerClientService.#ctor*
+  commentId: Overload:R_ReportServerClient.R_ReportServerClientService.#ctor
+  name: R_ReportServerClientService
+  nameWithType: R_ReportServerClientService.R_ReportServerClientService
+  fullName: R_ReportServerClient.R_ReportServerClientService.R_ReportServerClientService
+- uid: IHttpClientFactory
+  commentId: '!:IHttpClientFactory'
+  isExternal: true
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: IHttpClientFactory
+- uid: R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient*
+  commentId: Overload:R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient
+  name: R_GetHttpClient
+  nameWithType: R_ReportServerClientService.R_GetHttpClient
+  fullName: R_ReportServerClient.R_ReportServerClientService.R_GetHttpClient
+- uid: HttpClient
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient
+- uid: R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration*
+  commentId: Overload:R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration
+  name: R_GetReportServerConfiguration
+  nameWithType: R_ReportServerClientService.R_GetReportServerConfiguration
+  fullName: R_ReportServerClient.R_ReportServerClientService.R_GetReportServerConfiguration
+- uid: R_ReportServerClient.DTO.R_ReportServerClientConfiguration
+  commentId: T:R_ReportServerClient.DTO.R_ReportServerClientConfiguration
+  parent: R_ReportServerClient.DTO
+  name: R_ReportServerClientConfiguration
+  nameWithType: R_ReportServerClientConfiguration
+  fullName: R_ReportServerClient.DTO.R_ReportServerClientConfiguration
+- uid: R_ReportServerClient.DTO
+  commentId: N:R_ReportServerClient.DTO
+  name: R_ReportServerClient.DTO
+  nameWithType: R_ReportServerClient.DTO
+  fullName: R_ReportServerClient.DTO

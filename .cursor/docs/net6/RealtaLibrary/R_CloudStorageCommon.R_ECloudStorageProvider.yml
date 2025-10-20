@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.R_ECloudStorageProvider
+  commentId: T:R_CloudStorageCommon.R_ECloudStorageProvider
+  id: R_ECloudStorageProvider
+  parent: R_CloudStorageCommon
+  children:
+  - R_CloudStorageCommon.R_ECloudStorageProvider.AzureStorage
+  - R_CloudStorageCommon.R_ECloudStorageProvider.GoogleStorage
+  langs:
+  - csharp
+  - vb
+  name: R_ECloudStorageProvider
+  nameWithType: R_ECloudStorageProvider
+  fullName: R_CloudStorageCommon.R_ECloudStorageProvider
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ECloudStorageProvider
+    path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+    startLine: 6
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public enum R_ECloudStorageProvider : int'
+    content.vb: Public Enum R_ECloudStorageProvider As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_CloudStorageCommon.R_ECloudStorageProvider.AzureStorage
+  commentId: F:R_CloudStorageCommon.R_ECloudStorageProvider.AzureStorage
+  id: AzureStorage
+  parent: R_CloudStorageCommon.R_ECloudStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: AzureStorage
+  nameWithType: R_ECloudStorageProvider.AzureStorage
+  fullName: R_CloudStorageCommon.R_ECloudStorageProvider.AzureStorage
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: AzureStorage
+    path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+    startLine: 8
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: AzureStorage = 0
+    return:
+      type: R_CloudStorageCommon.R_ECloudStorageProvider
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CloudStorageCommon.R_ECloudStorageProvider.GoogleStorage
+  commentId: F:R_CloudStorageCommon.R_ECloudStorageProvider.GoogleStorage
+  id: GoogleStorage
+  parent: R_CloudStorageCommon.R_ECloudStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: GoogleStorage
+  nameWithType: R_ECloudStorageProvider.GoogleStorage
+  fullName: R_CloudStorageCommon.R_ECloudStorageProvider.GoogleStorage
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GoogleStorage
+    path: Microservices/R_CloudStorageCommon/CloudStorageEnum.cs
+    startLine: 9
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: GoogleStorage = 1
+    return:
+      type: R_CloudStorageCommon.R_ECloudStorageProvider
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: R_CloudStorageCommon.R_ECloudStorageProvider
+  commentId: T:R_CloudStorageCommon.R_ECloudStorageProvider
+  parent: R_CloudStorageCommon
+  name: R_ECloudStorageProvider
+  nameWithType: R_ECloudStorageProvider
+  fullName: R_CloudStorageCommon.R_ECloudStorageProvider

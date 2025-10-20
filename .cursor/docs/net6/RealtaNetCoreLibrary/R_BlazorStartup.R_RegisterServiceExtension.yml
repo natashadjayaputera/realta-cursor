@@ -1,0 +1,280 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorStartup.R_RegisterServiceExtension
+  commentId: T:R_BlazorStartup.R_RegisterServiceExtension
+  id: R_RegisterServiceExtension
+  parent: R_BlazorStartup
+  children:
+  - R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder)
+  - R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder,Action{R_BlazorStartup.R_BlazorPolicyBuilder})
+  - R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService(WebAssemblyHost)
+  langs:
+  - csharp
+  - vb
+  name: R_RegisterServiceExtension
+  nameWithType: R_RegisterServiceExtension
+  fullName: R_BlazorStartup.R_RegisterServiceExtension
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_RegisterServiceExtension
+    path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+    startLine: 19
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: 'public static class R_RegisterServiceExtension : object'
+    content.vb: >-
+      Public Module R_RegisterServiceExtension
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder,Action{R_BlazorStartup.R_BlazorPolicyBuilder})
+  commentId: M:R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder,Action{R_BlazorStartup.R_BlazorPolicyBuilder})
+  id: R_RegisterBlazorServices(WebAssemblyHostBuilder,Action{R_BlazorStartup.R_BlazorPolicyBuilder})
+  isExtensionMethod: true
+  parent: R_BlazorStartup.R_RegisterServiceExtension
+  langs:
+  - csharp
+  - vb
+  name: R_RegisterBlazorServices(WebAssemblyHostBuilder, Action<R_BlazorPolicyBuilder>)
+  nameWithType: R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder, Action<R_BlazorPolicyBuilder>)
+  fullName: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder, Action<R_BlazorStartup.R_BlazorPolicyBuilder>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_RegisterBlazorServices
+    path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+    startLine: 23
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: public static WebAssemblyHostBuilder R_RegisterBlazorServices(this WebAssemblyHostBuilder builder, Action<R_BlazorPolicyBuilder> configurePolicy)
+    parameters:
+    - id: builder
+      type: WebAssemblyHostBuilder
+    - id: configurePolicy
+      type: Action{R_BlazorStartup.R_BlazorPolicyBuilder}
+    return:
+      type: WebAssemblyHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function R_RegisterBlazorServices(builder As WebAssemblyHostBuilder, configurePolicy As Action(Of R_BlazorPolicyBuilder)) As WebAssemblyHostBuilder
+  overload: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices*
+  nameWithType.vb: R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder, Action(Of R_BlazorPolicyBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder, Action(Of R_BlazorStartup.R_BlazorPolicyBuilder))
+  name.vb: R_RegisterBlazorServices(WebAssemblyHostBuilder, Action(Of R_BlazorPolicyBuilder))
+- uid: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder)
+  commentId: M:R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder)
+  id: R_RegisterBlazorServices(WebAssemblyHostBuilder)
+  isExtensionMethod: true
+  parent: R_BlazorStartup.R_RegisterServiceExtension
+  langs:
+  - csharp
+  - vb
+  name: R_RegisterBlazorServices(WebAssemblyHostBuilder)
+  nameWithType: R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder)
+  fullName: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices(WebAssemblyHostBuilder)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_RegisterBlazorServices
+    path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+    startLine: 33
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: public static WebAssemblyHostBuilder R_RegisterBlazorServices(this WebAssemblyHostBuilder builder)
+    parameters:
+    - id: builder
+      type: WebAssemblyHostBuilder
+    return:
+      type: WebAssemblyHostBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function R_RegisterBlazorServices(builder As WebAssemblyHostBuilder) As WebAssemblyHostBuilder
+  overload: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService(WebAssemblyHost)
+  commentId: M:R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService(WebAssemblyHost)
+  id: R_SetupBlazorService(WebAssemblyHost)
+  isExtensionMethod: true
+  parent: R_BlazorStartup.R_RegisterServiceExtension
+  langs:
+  - csharp
+  - vb
+  name: R_SetupBlazorService(WebAssemblyHost)
+  nameWithType: R_RegisterServiceExtension.R_SetupBlazorService(WebAssemblyHost)
+  fullName: R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService(WebAssemblyHost)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetupBlazorService
+    path: Library/R_BlazorStartup/R_RegisterServiceExtension.cs
+    startLine: 91
+  assemblies:
+  - R_BlazorStartup
+  namespace: R_BlazorStartup
+  syntax:
+    content: public static WebAssemblyHost R_SetupBlazorService(this WebAssemblyHost host)
+    parameters:
+    - id: host
+      type: WebAssemblyHost
+    return:
+      type: WebAssemblyHost
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function R_SetupBlazorService(host As WebAssemblyHost) As WebAssemblyHost
+  overload: R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorStartup
+  commentId: N:R_BlazorStartup
+  name: R_BlazorStartup
+  nameWithType: R_BlazorStartup
+  fullName: R_BlazorStartup
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices*
+  commentId: Overload:R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices
+  name: R_RegisterBlazorServices
+  nameWithType: R_RegisterServiceExtension.R_RegisterBlazorServices
+  fullName: R_BlazorStartup.R_RegisterServiceExtension.R_RegisterBlazorServices
+- uid: WebAssemblyHostBuilder
+  isExternal: true
+  name: WebAssemblyHostBuilder
+  nameWithType: WebAssemblyHostBuilder
+  fullName: WebAssemblyHostBuilder
+- uid: Action{R_BlazorStartup.R_BlazorPolicyBuilder}
+  commentId: '!:Action{R_BlazorStartup.R_BlazorPolicyBuilder}'
+  definition: Action`1
+  name: Action<R_BlazorPolicyBuilder>
+  nameWithType: Action<R_BlazorPolicyBuilder>
+  fullName: Action<R_BlazorStartup.R_BlazorPolicyBuilder>
+  nameWithType.vb: Action(Of R_BlazorPolicyBuilder)
+  fullName.vb: Action(Of R_BlazorStartup.R_BlazorPolicyBuilder)
+  name.vb: Action(Of R_BlazorPolicyBuilder)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorStartup.R_BlazorPolicyBuilder
+    name: R_BlazorPolicyBuilder
+    nameWithType: R_BlazorPolicyBuilder
+    fullName: R_BlazorStartup.R_BlazorPolicyBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorStartup.R_BlazorPolicyBuilder
+    name: R_BlazorPolicyBuilder
+    nameWithType: R_BlazorPolicyBuilder
+    fullName: R_BlazorStartup.R_BlazorPolicyBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService*
+  commentId: Overload:R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService
+  name: R_SetupBlazorService
+  nameWithType: R_RegisterServiceExtension.R_SetupBlazorService
+  fullName: R_BlazorStartup.R_RegisterServiceExtension.R_SetupBlazorService
+- uid: WebAssemblyHost
+  isExternal: true
+  name: WebAssemblyHost
+  nameWithType: WebAssemblyHost
+  fullName: WebAssemblyHost

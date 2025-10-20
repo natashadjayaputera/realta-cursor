@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.R_CloudSaveFileParameter
+  commentId: T:R_CloudStorageCommon.R_CloudSaveFileParameter
+  id: R_CloudSaveFileParameter
+  parent: R_CloudStorageCommon
+  children:
+  - R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile
+  langs:
+  - csharp
+  - vb
+  name: R_CloudSaveFileParameter
+  nameWithType: R_CloudSaveFileParameter
+  fullName: R_CloudStorageCommon.R_CloudSaveFileParameter
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudSaveFileParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_CloudSaveFileParameter
+    path: Microservices/R_CloudStorageCommon/R_CloudSaveFileParameter.cs
+    startLine: 6
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public class R_CloudSaveFileParameter : R_CloudSaveParameterBase'
+    content.vb: >-
+      Public Class R_CloudSaveFileParameter
+          Inherits R_CloudSaveParameterBase
+  inheritance:
+  - System.Object
+  - R_CloudStorageCommon.R_CloudSaveParameterBase
+  inheritedMembers:
+  - R_CloudStorageCommon.R_CloudSaveParameterBase.CloudStorageDirectory
+  - R_CloudStorageCommon.R_CloudSaveParameterBase.CredentialFile
+  - R_CloudStorageCommon.R_CloudSaveParameterBase.SaveAs
+  - R_CloudStorageCommon.R_CloudSaveParameterBase.OptionalParameter
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile
+  commentId: P:R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile
+  id: UploadFile
+  parent: R_CloudStorageCommon.R_CloudSaveFileParameter
+  langs:
+  - csharp
+  - vb
+  name: UploadFile
+  nameWithType: R_CloudSaveFileParameter.UploadFile
+  fullName: R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/R_CloudSaveFileParameter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: UploadFile
+    path: Microservices/R_CloudStorageCommon/R_CloudSaveFileParameter.cs
+    startLine: 8
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: public string UploadFile { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UploadFile As String
+  overload: R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CloudStorageCommon.R_CloudSaveParameterBase
+  commentId: T:R_CloudStorageCommon.R_CloudSaveParameterBase
+  parent: R_CloudStorageCommon
+  name: R_CloudSaveParameterBase
+  nameWithType: R_CloudSaveParameterBase
+  fullName: R_CloudStorageCommon.R_CloudSaveParameterBase
+- uid: R_CloudStorageCommon.R_CloudSaveParameterBase.CloudStorageDirectory
+  commentId: P:R_CloudStorageCommon.R_CloudSaveParameterBase.CloudStorageDirectory
+  parent: R_CloudStorageCommon.R_CloudSaveParameterBase
+  name: CloudStorageDirectory
+  nameWithType: R_CloudSaveParameterBase.CloudStorageDirectory
+  fullName: R_CloudStorageCommon.R_CloudSaveParameterBase.CloudStorageDirectory
+- uid: R_CloudStorageCommon.R_CloudSaveParameterBase.CredentialFile
+  commentId: P:R_CloudStorageCommon.R_CloudSaveParameterBase.CredentialFile
+  parent: R_CloudStorageCommon.R_CloudSaveParameterBase
+  name: CredentialFile
+  nameWithType: R_CloudSaveParameterBase.CredentialFile
+  fullName: R_CloudStorageCommon.R_CloudSaveParameterBase.CredentialFile
+- uid: R_CloudStorageCommon.R_CloudSaveParameterBase.SaveAs
+  commentId: P:R_CloudStorageCommon.R_CloudSaveParameterBase.SaveAs
+  parent: R_CloudStorageCommon.R_CloudSaveParameterBase
+  name: SaveAs
+  nameWithType: R_CloudSaveParameterBase.SaveAs
+  fullName: R_CloudStorageCommon.R_CloudSaveParameterBase.SaveAs
+- uid: R_CloudStorageCommon.R_CloudSaveParameterBase.OptionalParameter
+  commentId: P:R_CloudStorageCommon.R_CloudSaveParameterBase.OptionalParameter
+  parent: R_CloudStorageCommon.R_CloudSaveParameterBase
+  name: OptionalParameter
+  nameWithType: R_CloudSaveParameterBase.OptionalParameter
+  fullName: R_CloudStorageCommon.R_CloudSaveParameterBase.OptionalParameter
+- uid: R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile*
+  commentId: Overload:R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile
+  name: UploadFile
+  nameWithType: R_CloudSaveFileParameter.UploadFile
+  fullName: R_CloudStorageCommon.R_CloudSaveFileParameter.UploadFile
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

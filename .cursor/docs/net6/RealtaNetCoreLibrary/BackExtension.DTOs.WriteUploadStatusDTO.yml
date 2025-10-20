@@ -1,0 +1,428 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.DTOs.WriteUploadStatusDTO
+  commentId: T:BackExtension.DTOs.WriteUploadStatusDTO
+  id: WriteUploadStatusDTO
+  parent: BackExtension.DTOs
+  children:
+  - BackExtension.DTOs.WriteUploadStatusDTO.CACTION
+  - BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID
+  - BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus(System.Int32,System.String,System.Int32)
+  - BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID
+  - BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID
+  - BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT
+  - BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS
+  langs:
+  - csharp
+  - vb
+  name: WriteUploadStatusDTO
+  nameWithType: WriteUploadStatusDTO
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: WriteUploadStatusDTO
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 2
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: 'public class WriteUploadStatusDTO : object'
+    content.vb: >-
+      Public Class WriteUploadStatusDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID
+  commentId: P:BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: BackExtension.DTOs.WriteUploadStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: WriteUploadStatusDTO.CCOMPANY_ID
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID
+  commentId: P:BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID
+  id: CUSER_ID
+  parent: BackExtension.DTOs.WriteUploadStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: CUSER_ID
+  nameWithType: WriteUploadStatusDTO.CUSER_ID
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_ID
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 5
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: public string CUSER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CUSER_ID As String
+  overload: BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID
+  commentId: P:BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID
+  id: CKEY_GUID
+  parent: BackExtension.DTOs.WriteUploadStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: CKEY_GUID
+  nameWithType: WriteUploadStatusDTO.CKEY_GUID
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CKEY_GUID
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: public string CKEY_GUID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CKEY_GUID As String
+  overload: BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT
+  commentId: P:BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT
+  id: ICOUNT
+  parent: BackExtension.DTOs.WriteUploadStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: ICOUNT
+  nameWithType: WriteUploadStatusDTO.ICOUNT
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ICOUNT
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: public int ICOUNT { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ICOUNT As Integer
+  overload: BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CACTION
+  commentId: P:BackExtension.DTOs.WriteUploadStatusDTO.CACTION
+  id: CACTION
+  parent: BackExtension.DTOs.WriteUploadStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: CACTION
+  nameWithType: WriteUploadStatusDTO.CACTION
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CACTION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CACTION
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: public string CACTION { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CACTION As String
+  overload: BackExtension.DTOs.WriteUploadStatusDTO.CACTION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS
+  commentId: P:BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS
+  id: ISTATUS
+  parent: BackExtension.DTOs.WriteUploadStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: ISTATUS
+  nameWithType: WriteUploadStatusDTO.ISTATUS
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ISTATUS
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: public int ISTATUS { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ISTATUS As Integer
+  overload: BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus(System.Int32,System.String,System.Int32)
+  commentId: M:BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus(System.Int32,System.String,System.Int32)
+  id: ChangeStatus(System.Int32,System.String,System.Int32)
+  parent: BackExtension.DTOs.WriteUploadStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: ChangeStatus(Int32, String, Int32)
+  nameWithType: WriteUploadStatusDTO.ChangeStatus(Int32, String, Int32)
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus(System.Int32, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ChangeStatus
+    path: Library Back/BackExtension/DTOs/WriteUploadStatusDTO.cs
+    startLine: 11
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.DTOs
+  syntax:
+    content: public void ChangeStatus(int piCount, string pcAction, int piStatus)
+    parameters:
+    - id: piCount
+      type: System.Int32
+    - id: pcAction
+      type: System.String
+    - id: piStatus
+      type: System.Int32
+    content.vb: Public Sub ChangeStatus(piCount As Integer, pcAction As String, piStatus As Integer)
+  overload: BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.DTOs
+  commentId: N:BackExtension.DTOs
+  name: BackExtension.DTOs
+  nameWithType: BackExtension.DTOs
+  fullName: BackExtension.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID*
+  commentId: Overload:BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: WriteUploadStatusDTO.CCOMPANY_ID
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID*
+  commentId: Overload:BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID
+  name: CUSER_ID
+  nameWithType: WriteUploadStatusDTO.CUSER_ID
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CUSER_ID
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID*
+  commentId: Overload:BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID
+  name: CKEY_GUID
+  nameWithType: WriteUploadStatusDTO.CKEY_GUID
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CKEY_GUID
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT*
+  commentId: Overload:BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT
+  name: ICOUNT
+  nameWithType: WriteUploadStatusDTO.ICOUNT
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.ICOUNT
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.CACTION*
+  commentId: Overload:BackExtension.DTOs.WriteUploadStatusDTO.CACTION
+  name: CACTION
+  nameWithType: WriteUploadStatusDTO.CACTION
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.CACTION
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS*
+  commentId: Overload:BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS
+  name: ISTATUS
+  nameWithType: WriteUploadStatusDTO.ISTATUS
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.ISTATUS
+- uid: BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus*
+  commentId: Overload:BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus
+  name: ChangeStatus
+  nameWithType: WriteUploadStatusDTO.ChangeStatus
+  fullName: BackExtension.DTOs.WriteUploadStatusDTO.ChangeStatus

@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.eCRUDMode
+  commentId: T:R_CommonFrontBackAPI.eCRUDMode
+  id: eCRUDMode
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.eCRUDMode.AddMode
+  - R_CommonFrontBackAPI.eCRUDMode.DeleteMode
+  - R_CommonFrontBackAPI.eCRUDMode.EditMode
+  - R_CommonFrontBackAPI.eCRUDMode.NormalMode
+  langs:
+  - csharp
+  - vb
+  name: eCRUDMode
+  nameWithType: eCRUDMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: eCRUDMode
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public enum eCRUDMode : int'
+    content.vb: Public Enum eCRUDMode As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_CommonFrontBackAPI.eCRUDMode.NormalMode
+  commentId: F:R_CommonFrontBackAPI.eCRUDMode.NormalMode
+  id: NormalMode
+  parent: R_CommonFrontBackAPI.eCRUDMode
+  langs:
+  - csharp
+  - vb
+  name: NormalMode
+  nameWithType: eCRUDMode.NormalMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode.NormalMode
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: NormalMode
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 14
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: NormalMode = 0
+    return:
+      type: R_CommonFrontBackAPI.eCRUDMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.eCRUDMode.AddMode
+  commentId: F:R_CommonFrontBackAPI.eCRUDMode.AddMode
+  id: AddMode
+  parent: R_CommonFrontBackAPI.eCRUDMode
+  langs:
+  - csharp
+  - vb
+  name: AddMode
+  nameWithType: eCRUDMode.AddMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode.AddMode
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: AddMode
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 15
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: AddMode = 1
+    return:
+      type: R_CommonFrontBackAPI.eCRUDMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.eCRUDMode.EditMode
+  commentId: F:R_CommonFrontBackAPI.eCRUDMode.EditMode
+  id: EditMode
+  parent: R_CommonFrontBackAPI.eCRUDMode
+  langs:
+  - csharp
+  - vb
+  name: EditMode
+  nameWithType: eCRUDMode.EditMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode.EditMode
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EditMode
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 16
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: EditMode = 2
+    return:
+      type: R_CommonFrontBackAPI.eCRUDMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.eCRUDMode.DeleteMode
+  commentId: F:R_CommonFrontBackAPI.eCRUDMode.DeleteMode
+  id: DeleteMode
+  parent: R_CommonFrontBackAPI.eCRUDMode
+  langs:
+  - csharp
+  - vb
+  name: DeleteMode
+  nameWithType: eCRUDMode.DeleteMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode.DeleteMode
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: DeleteMode
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 17
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: DeleteMode = 3
+    return:
+      type: R_CommonFrontBackAPI.eCRUDMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_CommonFrontBackAPI.eCRUDMode
+  commentId: T:R_CommonFrontBackAPI.eCRUDMode
+  parent: R_CommonFrontBackAPI
+  name: eCRUDMode
+  nameWithType: eCRUDMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode

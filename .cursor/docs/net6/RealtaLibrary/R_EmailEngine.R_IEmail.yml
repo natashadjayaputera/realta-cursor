@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.R_IEmail
+  commentId: T:R_EmailEngine.R_IEmail
+  id: R_IEmail
+  parent: R_EmailEngine
+  children:
+  - R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  - R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  langs:
+  - csharp
+  - vb
+  name: R_IEmail
+  nameWithType: R_IEmail
+  fullName: R_EmailEngine.R_IEmail
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_IEmail.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IEmail
+    path: Microservices/R_EmailEngine/R_IEmail.cs
+    startLine: 4
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: public interface R_IEmail
+    content.vb: Public Interface R_IEmail
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  commentId: M:R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  id: SendMail(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  parent: R_EmailEngine.R_IEmail
+  langs:
+  - csharp
+  - vb
+  name: SendMail(EmailConfigDTO, EmailDTO)
+  nameWithType: R_IEmail.SendMail(EmailConfigDTO, EmailDTO)
+  fullName: R_EmailEngine.R_IEmail.SendMail(R_EmailEngine.DTOs.EmailConfigDTO, R_EmailEngine.DTOs.EmailDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_IEmail.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SendMail
+    path: Microservices/R_EmailEngine/R_IEmail.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: void SendMail(EmailConfigDTO poEmailConfig, EmailDTO poEmail)
+    parameters:
+    - id: poEmailConfig
+      type: R_EmailEngine.DTOs.EmailConfigDTO
+    - id: poEmail
+      type: R_EmailEngine.DTOs.EmailDTO
+    content.vb: Sub SendMail(poEmailConfig As EmailConfigDTO, poEmail As EmailDTO)
+  overload: R_EmailEngine.R_IEmail.SendMail*
+- uid: R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  commentId: M:R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  id: SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO,R_EmailEngine.DTOs.EmailDTO)
+  parent: R_EmailEngine.R_IEmail
+  langs:
+  - csharp
+  - vb
+  name: SendMailAsync(EmailConfigDTO, EmailDTO)
+  nameWithType: R_IEmail.SendMailAsync(EmailConfigDTO, EmailDTO)
+  fullName: R_EmailEngine.R_IEmail.SendMailAsync(R_EmailEngine.DTOs.EmailConfigDTO, R_EmailEngine.DTOs.EmailDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/R_IEmail.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SendMailAsync
+    path: Microservices/R_EmailEngine/R_IEmail.cs
+    startLine: 7
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine
+  syntax:
+    content: Task SendMailAsync(EmailConfigDTO poEmailConfig, EmailDTO poEmail)
+    parameters:
+    - id: poEmailConfig
+      type: R_EmailEngine.DTOs.EmailConfigDTO
+    - id: poEmail
+      type: R_EmailEngine.DTOs.EmailDTO
+    return:
+      type: Task
+    content.vb: Function SendMailAsync(poEmailConfig As EmailConfigDTO, poEmail As EmailDTO) As Task
+  overload: R_EmailEngine.R_IEmail.SendMailAsync*
+references:
+- uid: R_EmailEngine
+  commentId: N:R_EmailEngine
+  name: R_EmailEngine
+  nameWithType: R_EmailEngine
+  fullName: R_EmailEngine
+- uid: R_EmailEngine.R_IEmail.SendMail*
+  commentId: Overload:R_EmailEngine.R_IEmail.SendMail
+  name: SendMail
+  nameWithType: R_IEmail.SendMail
+  fullName: R_EmailEngine.R_IEmail.SendMail
+- uid: R_EmailEngine.DTOs.EmailConfigDTO
+  commentId: T:R_EmailEngine.DTOs.EmailConfigDTO
+  parent: R_EmailEngine.DTOs
+  name: EmailConfigDTO
+  nameWithType: EmailConfigDTO
+  fullName: R_EmailEngine.DTOs.EmailConfigDTO
+- uid: R_EmailEngine.DTOs.EmailDTO
+  commentId: T:R_EmailEngine.DTOs.EmailDTO
+  parent: R_EmailEngine.DTOs
+  name: EmailDTO
+  nameWithType: EmailDTO
+  fullName: R_EmailEngine.DTOs.EmailDTO
+- uid: R_EmailEngine.DTOs
+  commentId: N:R_EmailEngine.DTOs
+  name: R_EmailEngine.DTOs
+  nameWithType: R_EmailEngine.DTOs
+  fullName: R_EmailEngine.DTOs
+- uid: R_EmailEngine.R_IEmail.SendMailAsync*
+  commentId: Overload:R_EmailEngine.R_IEmail.SendMailAsync
+  name: SendMailAsync
+  nameWithType: R_IEmail.SendMailAsync
+  fullName: R_EmailEngine.R_IEmail.SendMailAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

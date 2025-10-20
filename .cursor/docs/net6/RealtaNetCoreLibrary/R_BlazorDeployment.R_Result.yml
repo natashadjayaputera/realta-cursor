@@ -1,0 +1,838 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorDeployment.R_Result
+  commentId: T:R_BlazorDeployment.R_Result
+  id: R_Result
+  parent: R_BlazorDeployment
+  children:
+  - R_BlazorDeployment.R_Result.#ctor
+  - R_BlazorDeployment.R_Result.Fail
+  - R_BlazorDeployment.R_Result.Fail(List{System.String})
+  - R_BlazorDeployment.R_Result.Fail(System.String)
+  - R_BlazorDeployment.R_Result.FailAsync
+  - R_BlazorDeployment.R_Result.FailAsync(List{System.String})
+  - R_BlazorDeployment.R_Result.FailAsync(System.String)
+  - R_BlazorDeployment.R_Result.Messages
+  - R_BlazorDeployment.R_Result.Succeeded
+  - R_BlazorDeployment.R_Result.Success
+  - R_BlazorDeployment.R_Result.Success(System.String)
+  - R_BlazorDeployment.R_Result.SuccessAsync
+  - R_BlazorDeployment.R_Result.SuccessAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_Result
+  nameWithType: R_Result
+  fullName: R_BlazorDeployment.R_Result
+  type: Class
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_Result
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: 'public class R_Result : object, R_IResult'
+    content.vb: >-
+      Public Class R_Result
+          Inherits Object
+          Implements R_IResult
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - R_BlazorDeployment.R_Result`1
+  implements:
+  - R_BlazorDeployment.R_IResult
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorDeployment.R_Result.#ctor
+  commentId: M:R_BlazorDeployment.R_Result.#ctor
+  id: '#ctor'
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: R_Result()
+  nameWithType: R_Result.R_Result()
+  fullName: R_BlazorDeployment.R_Result.R_Result()
+  type: Constructor
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public R_Result()
+    content.vb: Public Sub New
+  overload: R_BlazorDeployment.R_Result.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorDeployment.R_Result.Messages
+  commentId: P:R_BlazorDeployment.R_Result.Messages
+  id: Messages
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: Messages
+  nameWithType: R_Result.Messages
+  fullName: R_BlazorDeployment.R_Result.Messages
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Messages
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public List<string> Messages { get; set; }
+    parameters: []
+    return:
+      type: List{System.String}
+    content.vb: Public Property Messages As List(Of String)
+  overload: R_BlazorDeployment.R_Result.Messages*
+  implements:
+  - R_BlazorDeployment.R_IResult.Messages
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorDeployment.R_Result.Succeeded
+  commentId: P:R_BlazorDeployment.R_Result.Succeeded
+  id: Succeeded
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: Succeeded
+  nameWithType: R_Result.Succeeded
+  fullName: R_BlazorDeployment.R_Result.Succeeded
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Succeeded
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public bool Succeeded { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Succeeded As Boolean
+  overload: R_BlazorDeployment.R_Result.Succeeded*
+  implements:
+  - R_BlazorDeployment.R_IResult.Succeeded
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorDeployment.R_Result.Fail
+  commentId: M:R_BlazorDeployment.R_Result.Fail
+  id: Fail
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: Fail()
+  nameWithType: R_Result.Fail()
+  fullName: R_BlazorDeployment.R_Result.Fail()
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Fail
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static R_IResult Fail()
+    return:
+      type: R_BlazorDeployment.R_IResult
+    content.vb: Public Shared Function Fail As R_IResult
+  overload: R_BlazorDeployment.R_Result.Fail*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorDeployment.R_Result.Fail(System.String)
+  commentId: M:R_BlazorDeployment.R_Result.Fail(System.String)
+  id: Fail(System.String)
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: Fail(String)
+  nameWithType: R_Result.Fail(String)
+  fullName: R_BlazorDeployment.R_Result.Fail(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Fail
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 20
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static R_IResult Fail(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: R_BlazorDeployment.R_IResult
+    content.vb: Public Shared Function Fail(message As String) As R_IResult
+  overload: R_BlazorDeployment.R_Result.Fail*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorDeployment.R_Result.Fail(List{System.String})
+  commentId: M:R_BlazorDeployment.R_Result.Fail(List{System.String})
+  id: Fail(List{System.String})
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: Fail(List<String>)
+  nameWithType: R_Result.Fail(List<String>)
+  fullName: R_BlazorDeployment.R_Result.Fail(List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Fail
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 25
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static R_IResult Fail(List<string> messages)
+    parameters:
+    - id: messages
+      type: List{System.String}
+    return:
+      type: R_BlazorDeployment.R_IResult
+    content.vb: Public Shared Function Fail(messages As List(Of String)) As R_IResult
+  overload: R_BlazorDeployment.R_Result.Fail*
+  nameWithType.vb: R_Result.Fail(List(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorDeployment.R_Result.Fail(List(Of System.String))
+  name.vb: Fail(List(Of String))
+- uid: R_BlazorDeployment.R_Result.FailAsync
+  commentId: M:R_BlazorDeployment.R_Result.FailAsync
+  id: FailAsync
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: FailAsync()
+  nameWithType: R_Result.FailAsync()
+  fullName: R_BlazorDeployment.R_Result.FailAsync()
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: FailAsync
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 30
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static Task<R_IResult> FailAsync()
+    return:
+      type: Task{R_BlazorDeployment.R_IResult}
+    content.vb: Public Shared Function FailAsync As Task(Of R_IResult)
+  overload: R_BlazorDeployment.R_Result.FailAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorDeployment.R_Result.FailAsync(System.String)
+  commentId: M:R_BlazorDeployment.R_Result.FailAsync(System.String)
+  id: FailAsync(System.String)
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: FailAsync(String)
+  nameWithType: R_Result.FailAsync(String)
+  fullName: R_BlazorDeployment.R_Result.FailAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: FailAsync
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 35
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static Task<R_IResult> FailAsync(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: Task{R_BlazorDeployment.R_IResult}
+    content.vb: Public Shared Function FailAsync(message As String) As Task(Of R_IResult)
+  overload: R_BlazorDeployment.R_Result.FailAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorDeployment.R_Result.FailAsync(List{System.String})
+  commentId: M:R_BlazorDeployment.R_Result.FailAsync(List{System.String})
+  id: FailAsync(List{System.String})
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: FailAsync(List<String>)
+  nameWithType: R_Result.FailAsync(List<String>)
+  fullName: R_BlazorDeployment.R_Result.FailAsync(List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: FailAsync
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 40
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static Task<R_IResult> FailAsync(List<string> messages)
+    parameters:
+    - id: messages
+      type: List{System.String}
+    return:
+      type: Task{R_BlazorDeployment.R_IResult}
+    content.vb: Public Shared Function FailAsync(messages As List(Of String)) As Task(Of R_IResult)
+  overload: R_BlazorDeployment.R_Result.FailAsync*
+  nameWithType.vb: R_Result.FailAsync(List(Of String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorDeployment.R_Result.FailAsync(List(Of System.String))
+  name.vb: FailAsync(List(Of String))
+- uid: R_BlazorDeployment.R_Result.Success
+  commentId: M:R_BlazorDeployment.R_Result.Success
+  id: Success
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: Success()
+  nameWithType: R_Result.Success()
+  fullName: R_BlazorDeployment.R_Result.Success()
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Success
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 45
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static R_IResult Success()
+    return:
+      type: R_BlazorDeployment.R_IResult
+    content.vb: Public Shared Function Success As R_IResult
+  overload: R_BlazorDeployment.R_Result.Success*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorDeployment.R_Result.Success(System.String)
+  commentId: M:R_BlazorDeployment.R_Result.Success(System.String)
+  id: Success(System.String)
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: Success(String)
+  nameWithType: R_Result.Success(String)
+  fullName: R_BlazorDeployment.R_Result.Success(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Success
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 50
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static R_IResult Success(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: R_BlazorDeployment.R_IResult
+    content.vb: Public Shared Function Success(message As String) As R_IResult
+  overload: R_BlazorDeployment.R_Result.Success*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorDeployment.R_Result.SuccessAsync
+  commentId: M:R_BlazorDeployment.R_Result.SuccessAsync
+  id: SuccessAsync
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: SuccessAsync()
+  nameWithType: R_Result.SuccessAsync()
+  fullName: R_BlazorDeployment.R_Result.SuccessAsync()
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SuccessAsync
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 55
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static Task<R_IResult> SuccessAsync()
+    return:
+      type: Task{R_BlazorDeployment.R_IResult}
+    content.vb: Public Shared Function SuccessAsync As Task(Of R_IResult)
+  overload: R_BlazorDeployment.R_Result.SuccessAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorDeployment.R_Result.SuccessAsync(System.String)
+  commentId: M:R_BlazorDeployment.R_Result.SuccessAsync(System.String)
+  id: SuccessAsync(System.String)
+  parent: R_BlazorDeployment.R_Result
+  langs:
+  - csharp
+  - vb
+  name: SuccessAsync(String)
+  nameWithType: R_Result.SuccessAsync(String)
+  fullName: R_BlazorDeployment.R_Result.SuccessAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library Back/R_BlazorDeployment/R_Result.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SuccessAsync
+    path: Library Back/R_BlazorDeployment/R_Result.cs
+    startLine: 60
+  assemblies:
+  - R_BlazorDeployment
+  namespace: R_BlazorDeployment
+  syntax:
+    content: public static Task<R_IResult> SuccessAsync(string message)
+    parameters:
+    - id: message
+      type: System.String
+    return:
+      type: Task{R_BlazorDeployment.R_IResult}
+    content.vb: Public Shared Function SuccessAsync(message As String) As Task(Of R_IResult)
+  overload: R_BlazorDeployment.R_Result.SuccessAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorDeployment
+  commentId: N:R_BlazorDeployment
+  name: R_BlazorDeployment
+  nameWithType: R_BlazorDeployment
+  fullName: R_BlazorDeployment
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorDeployment.R_IResult
+  commentId: T:R_BlazorDeployment.R_IResult
+  parent: R_BlazorDeployment
+  name: R_IResult
+  nameWithType: R_IResult
+  fullName: R_BlazorDeployment.R_IResult
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorDeployment.R_Result.#ctor*
+  commentId: Overload:R_BlazorDeployment.R_Result.#ctor
+  name: R_Result
+  nameWithType: R_Result.R_Result
+  fullName: R_BlazorDeployment.R_Result.R_Result
+- uid: R_BlazorDeployment.R_Result.Messages*
+  commentId: Overload:R_BlazorDeployment.R_Result.Messages
+  name: Messages
+  nameWithType: R_Result.Messages
+  fullName: R_BlazorDeployment.R_Result.Messages
+- uid: R_BlazorDeployment.R_IResult.Messages
+  commentId: P:R_BlazorDeployment.R_IResult.Messages
+  parent: R_BlazorDeployment.R_IResult
+  name: Messages
+  nameWithType: R_IResult.Messages
+  fullName: R_BlazorDeployment.R_IResult.Messages
+- uid: List{System.String}
+  commentId: '!:List{System.String}'
+  definition: List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorDeployment.R_Result.Succeeded*
+  commentId: Overload:R_BlazorDeployment.R_Result.Succeeded
+  name: Succeeded
+  nameWithType: R_Result.Succeeded
+  fullName: R_BlazorDeployment.R_Result.Succeeded
+- uid: R_BlazorDeployment.R_IResult.Succeeded
+  commentId: P:R_BlazorDeployment.R_IResult.Succeeded
+  parent: R_BlazorDeployment.R_IResult
+  name: Succeeded
+  nameWithType: R_IResult.Succeeded
+  fullName: R_BlazorDeployment.R_IResult.Succeeded
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorDeployment.R_Result.Fail*
+  commentId: Overload:R_BlazorDeployment.R_Result.Fail
+  name: Fail
+  nameWithType: R_Result.Fail
+  fullName: R_BlazorDeployment.R_Result.Fail
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorDeployment.R_Result.FailAsync*
+  commentId: Overload:R_BlazorDeployment.R_Result.FailAsync
+  name: FailAsync
+  nameWithType: R_Result.FailAsync
+  fullName: R_BlazorDeployment.R_Result.FailAsync
+- uid: Task{R_BlazorDeployment.R_IResult}
+  commentId: '!:Task{R_BlazorDeployment.R_IResult}'
+  definition: Task`1
+  name: Task<R_IResult>
+  nameWithType: Task<R_IResult>
+  fullName: Task<R_BlazorDeployment.R_IResult>
+  nameWithType.vb: Task(Of R_IResult)
+  fullName.vb: Task(Of R_BlazorDeployment.R_IResult)
+  name.vb: Task(Of R_IResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorDeployment.R_IResult
+    name: R_IResult
+    nameWithType: R_IResult
+    fullName: R_BlazorDeployment.R_IResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorDeployment.R_IResult
+    name: R_IResult
+    nameWithType: R_IResult
+    fullName: R_BlazorDeployment.R_IResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorDeployment.R_Result.Success*
+  commentId: Overload:R_BlazorDeployment.R_Result.Success
+  name: Success
+  nameWithType: R_Result.Success
+  fullName: R_BlazorDeployment.R_Result.Success
+- uid: R_BlazorDeployment.R_Result.SuccessAsync*
+  commentId: Overload:R_BlazorDeployment.R_Result.SuccessAsync
+  name: SuccessAsync
+  nameWithType: R_Result.SuccessAsync
+  fullName: R_BlazorDeployment.R_Result.SuccessAsync

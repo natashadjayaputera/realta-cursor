@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  commentId: T:R_CommonFrontBackAPI.R_IServiceEmailEngine
+  id: R_IServiceEmailEngine
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  - R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  langs:
+  - csharp
+  - vb
+  name: R_IServiceEmailEngine
+  nameWithType: R_IServiceEmailEngine
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/Interface/R_IServiceEmailEngine.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IServiceEmailEngine
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/Interface/R_IServiceEmailEngine.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public interface R_IServiceEmailEngine
+    content.vb: Public Interface R_IServiceEmailEngine
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  id: R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  parent: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_EmailEngineDataPar)
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData(R_CommonFrontBackAPI.R_EmailEngineDataPar)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/Interface/R_IServiceEmailEngine.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceEmailEngineLoadData
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/Interface/R_IServiceEmailEngine.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: R_ServiceEmailEngineLoadDataResultDTO R_ServiceEmailEngineLoadData(R_EmailEngineDataPar poData)
+    parameters:
+    - id: poData
+      type: R_CommonFrontBackAPI.R_EmailEngineDataPar
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+    content.vb: Function R_ServiceEmailEngineLoadData(poData As R_EmailEngineDataPar) As R_ServiceEmailEngineLoadDataResultDTO
+  overload: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData*
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  id: R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  parent: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar)
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData(R_CommonFrontBackAPI.R_EmailEngineCommandPar)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/Interface/R_IServiceEmailEngine.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceEmailEngineProcessData
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/Interface/R_IServiceEmailEngine.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: R_ServiceEmailEngineProcessDataResultDTO R_ServiceEmailEngineProcessData(R_EmailEngineCommandPar podata)
+    parameters:
+    - id: podata
+      type: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+    content.vb: Function R_ServiceEmailEngineProcessData(podata As R_EmailEngineCommandPar) As R_ServiceEmailEngineProcessDataResultDTO
+  overload: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData*
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData
+  name: R_ServiceEmailEngineLoadData
+  nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineLoadData
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineLoadData
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineDataPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineDataPar
+  nameWithType: R_EmailEngineDataPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceEmailEngineLoadDataResultDTO
+  nameWithType: R_ServiceEmailEngineLoadDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData
+  name: R_ServiceEmailEngineProcessData
+  nameWithType: R_IServiceEmailEngine.R_ServiceEmailEngineProcessData
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine.R_ServiceEmailEngineProcessData
+- uid: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineCommandPar
+  nameWithType: R_EmailEngineCommandPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceEmailEngineProcessDataResultDTO
+  nameWithType: R_ServiceEmailEngineProcessDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO

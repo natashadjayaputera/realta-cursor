@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CloudStorageCommon.GoogleStorageLogger
+  commentId: T:R_CloudStorageCommon.GoogleStorageLogger
+  id: GoogleStorageLogger
+  parent: R_CloudStorageCommon
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GoogleStorageLogger
+  nameWithType: GoogleStorageLogger
+  fullName: R_CloudStorageCommon.GoogleStorageLogger
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CloudStorageCommon/GoogleStorageLogger.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GoogleStorageLogger
+    path: Microservices/R_CloudStorageCommon/GoogleStorageLogger.cs
+    startLine: 4
+  assemblies:
+  - R_CloudStorageCommon
+  namespace: R_CloudStorageCommon
+  syntax:
+    content: 'public class GoogleStorageLogger : R_NetCoreLoggerBase<GoogleStorageLogger>'
+    content.vb: >-
+      Public Class GoogleStorageLogger
+          Inherits R_NetCoreLoggerBase(Of GoogleStorageLogger)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: R_CloudStorageCommon
+  commentId: N:R_CloudStorageCommon
+  name: R_CloudStorageCommon
+  nameWithType: R_CloudStorageCommon
+  fullName: R_CloudStorageCommon
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIClient.R_HTTPClientWrapper
+  commentId: T:R_APIClient.R_HTTPClientWrapper
+  id: R_HTTPClientWrapper
+  parent: R_APIClient
+  children:
+  - R_APIClient.R_HTTPClientWrapper.httpClientName
+  - R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean)
+  - R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,Dictionary{System.String,System.String})
+  - R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  - R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  langs:
+  - csharp
+  - vb
+  name: R_HTTPClientWrapper
+  nameWithType: R_HTTPClientWrapper
+  fullName: R_APIClient.R_HTTPClientWrapper
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_HTTPClientWrapper
+    path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+    startLine: 10
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: 'public class R_HTTPClientWrapper : object'
+    content.vb: >-
+      Public Class R_HTTPClientWrapper
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_APIClient.R_HTTPClientWrapper.httpClientName
+  commentId: P:R_APIClient.R_HTTPClientWrapper.httpClientName
+  id: httpClientName
+  parent: R_APIClient.R_HTTPClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: httpClientName
+  nameWithType: R_HTTPClientWrapper.httpClientName
+  fullName: R_APIClient.R_HTTPClientWrapper.httpClientName
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: httpClientName
+    path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+    startLine: 12
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public static string httpClientName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property httpClientName As String
+  overload: R_APIClient.R_HTTPClientWrapper.httpClientName*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  id: R_APIRequestObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestObject<TResult>(String, String, String, Boolean, Boolean)
+  nameWithType: R_HTTPClientWrapper.R_APIRequestObject<TResult>(String, String, String, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject<TResult>(System.String, System.String, System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestObject
+    path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+    startLine: 17
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: >-
+      public static Task<TResult> R_APIRequestObject<TResult>(string pcRequestServiceEndPoint, string pcMethodName, string pcModuleName, bool plSendWithContext = true, bool plSendWithToken = true)
+          where TResult : R_APIResultBaseDTO
+    parameters:
+    - id: pcRequestServiceEndPoint
+      type: System.String
+    - id: pcMethodName
+      type: System.String
+    - id: pcModuleName
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plSendWithToken
+      type: System.Boolean
+    typeParameters:
+    - id: TResult
+    return:
+      type: Task{{TResult}}
+    content.vb: Public Shared Function R_APIRequestObject(Of TResult As R_APIResultBaseDTO)(pcRequestServiceEndPoint As String, pcMethodName As String, pcModuleName As String, plSendWithContext As Boolean = True, plSendWithToken As Boolean = True) As Task(Of TResult)
+  overload: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject*
+  nameWithType.vb: R_HTTPClientWrapper.R_APIRequestObject(Of TResult)(String, String, String, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject(Of TResult)(System.String, System.String, System.String, System.Boolean, System.Boolean)
+  name.vb: R_APIRequestObject(Of TResult)(String, String, String, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean)
+  commentId: M:R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean)
+  id: R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean)
+  parent: R_APIClient.R_HTTPClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestObject<TResult, TParam>(String, String, TParam, String, Boolean, Boolean)
+  nameWithType: R_HTTPClientWrapper.R_APIRequestObject<TResult, TParam>(String, String, TParam, String, Boolean, Boolean)
+  fullName: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject<TResult, TParam>(System.String, System.String, TParam, System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestObject
+    path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+    startLine: 36
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: >-
+      public static Task<TResult> R_APIRequestObject<TResult, TParam>(string pcRequestServiceEndPoint, string pcMethodName, TParam poParameter, string pcModuleName, bool plSendWithContext = true, bool plSendWithToken = true)
+          where TResult : R_APIResultBaseDTO
+    parameters:
+    - id: pcRequestServiceEndPoint
+      type: System.String
+    - id: pcMethodName
+      type: System.String
+    - id: poParameter
+      type: '{TParam}'
+    - id: pcModuleName
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plSendWithToken
+      type: System.Boolean
+    typeParameters:
+    - id: TResult
+    - id: TParam
+    return:
+      type: Task{{TResult}}
+    content.vb: Public Shared Function R_APIRequestObject(Of TResult As R_APIResultBaseDTO, TParam)(pcRequestServiceEndPoint As String, pcMethodName As String, poParameter As TParam, pcModuleName As String, plSendWithContext As Boolean = True, plSendWithToken As Boolean = True) As Task(Of TResult)
+  overload: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject*
+  nameWithType.vb: R_HTTPClientWrapper.R_APIRequestObject(Of TResult, TParam)(String, String, TParam, String, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject(Of TResult, TParam)(System.String, System.String, TParam, System.String, System.Boolean, System.Boolean)
+  name.vb: R_APIRequestObject(Of TResult, TParam)(String, String, TParam, String, Boolean, Boolean)
+- uid: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,Dictionary{System.String,System.String})
+  commentId: M:R_APIClient.R_HTTPClientWrapper.R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,Dictionary{System.String,System.String})
+  id: R_APIRequestObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,Dictionary{System.String,System.String})
+  parent: R_APIClient.R_HTTPClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestObject<TResult, TParam>(String, String, TParam, String, Boolean, Boolean, Dictionary<String, String>)
+  nameWithType: R_HTTPClientWrapper.R_APIRequestObject<TResult, TParam>(String, String, TParam, String, Boolean, Boolean, Dictionary<String, String>)
+  fullName: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject<TResult, TParam>(System.String, System.String, TParam, System.String, System.Boolean, System.Boolean, Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestObject
+    path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+    startLine: 56
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: >-
+      public static Task<TResult> R_APIRequestObject<TResult, TParam>(string pcRequestServiceEndPoint, string pcMethodName, TParam poParameter, string pcModuleName, bool plSendWithContext = true, bool plSendWithToken = true, Dictionary<string, string> poHeader = null)
+          where TResult : R_APIResultBaseDTO
+    parameters:
+    - id: pcRequestServiceEndPoint
+      type: System.String
+    - id: pcMethodName
+      type: System.String
+    - id: poParameter
+      type: '{TParam}'
+    - id: pcModuleName
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plSendWithToken
+      type: System.Boolean
+    - id: poHeader
+      type: Dictionary{System.String,System.String}
+    typeParameters:
+    - id: TResult
+    - id: TParam
+    return:
+      type: Task{{TResult}}
+    content.vb: Public Shared Function R_APIRequestObject(Of TResult As R_APIResultBaseDTO, TParam)(pcRequestServiceEndPoint As String, pcMethodName As String, poParameter As TParam, pcModuleName As String, plSendWithContext As Boolean = True, plSendWithToken As Boolean = True, poHeader As Dictionary(Of String, String) = Nothing) As Task(Of TResult)
+  overload: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject*
+  nameWithType.vb: R_HTTPClientWrapper.R_APIRequestObject(Of TResult, TParam)(String, String, TParam, String, Boolean, Boolean, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject(Of TResult, TParam)(System.String, System.String, TParam, System.String, System.Boolean, System.Boolean, Dictionary(Of System.String, System.String))
+  name.vb: R_APIRequestObject(Of TResult, TParam)(String, String, TParam, String, Boolean, Boolean, Dictionary(Of String, String))
+- uid: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  commentId: M:R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  id: R_APIRequestStreamingObject``1(System.String,System.String,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  parent: R_APIClient.R_HTTPClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestStreamingObject<TResult>(String, String, String, Boolean, Boolean, R_INotify<TResult>)
+  nameWithType: R_HTTPClientWrapper.R_APIRequestStreamingObject<TResult>(String, String, String, Boolean, Boolean, R_INotify<TResult>)
+  fullName: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject<TResult>(System.String, System.String, System.String, System.Boolean, System.Boolean, R_APIClient.R_INotify<TResult>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestStreamingObject
+    path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+    startLine: 174
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public static Task<List<TResult>> R_APIRequestStreamingObject<TResult>(string pcRequestServiceEndPoint, string pcMethodName, string pcModuleName, bool plSendWithContext = true, bool plSendWithToken = true, R_INotify<TResult> poNotify = null)
+    parameters:
+    - id: pcRequestServiceEndPoint
+      type: System.String
+    - id: pcMethodName
+      type: System.String
+    - id: pcModuleName
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plSendWithToken
+      type: System.Boolean
+    - id: poNotify
+      type: R_APIClient.R_INotify{{TResult}}
+    typeParameters:
+    - id: TResult
+    return:
+      type: Task{List{{TResult}}}
+    content.vb: Public Shared Function R_APIRequestStreamingObject(Of TResult)(pcRequestServiceEndPoint As String, pcMethodName As String, pcModuleName As String, plSendWithContext As Boolean = True, plSendWithToken As Boolean = True, poNotify As R_INotify(Of TResult) = Nothing) As Task(Of List(Of TResult))
+  overload: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject*
+  nameWithType.vb: R_HTTPClientWrapper.R_APIRequestStreamingObject(Of TResult)(String, String, String, Boolean, Boolean, R_INotify(Of TResult))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject(Of TResult)(System.String, System.String, System.String, System.Boolean, System.Boolean, R_APIClient.R_INotify(Of TResult))
+  name.vb: R_APIRequestStreamingObject(Of TResult)(String, String, String, Boolean, Boolean, R_INotify(Of TResult))
+- uid: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  commentId: M:R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  id: R_APIRequestStreamingObject``2(System.String,System.String,``1,System.String,System.Boolean,System.Boolean,R_APIClient.R_INotify{``0})
+  parent: R_APIClient.R_HTTPClientWrapper
+  langs:
+  - csharp
+  - vb
+  name: R_APIRequestStreamingObject<TResult, TParam>(String, String, TParam, String, Boolean, Boolean, R_INotify<TResult>)
+  nameWithType: R_HTTPClientWrapper.R_APIRequestStreamingObject<TResult, TParam>(String, String, TParam, String, Boolean, Boolean, R_INotify<TResult>)
+  fullName: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject<TResult, TParam>(System.String, System.String, TParam, System.String, System.Boolean, System.Boolean, R_APIClient.R_INotify<TResult>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_APIRequestStreamingObject
+    path: Microservices/R_APIClient/R_HTTPClientWrapper.cs
+    startLine: 194
+  assemblies:
+  - R_APIClient
+  namespace: R_APIClient
+  syntax:
+    content: public static Task<List<TResult>> R_APIRequestStreamingObject<TResult, TParam>(string pcRequestServiceEndPoint, string pcMethodName, TParam poParameter, string pcModuleName, bool plSendWithContext = true, bool plSendWithToken = true, R_INotify<TResult> poNotify = null)
+    parameters:
+    - id: pcRequestServiceEndPoint
+      type: System.String
+    - id: pcMethodName
+      type: System.String
+    - id: poParameter
+      type: '{TParam}'
+    - id: pcModuleName
+      type: System.String
+    - id: plSendWithContext
+      type: System.Boolean
+    - id: plSendWithToken
+      type: System.Boolean
+    - id: poNotify
+      type: R_APIClient.R_INotify{{TResult}}
+    typeParameters:
+    - id: TResult
+    - id: TParam
+    return:
+      type: Task{List{{TResult}}}
+    content.vb: Public Shared Function R_APIRequestStreamingObject(Of TResult, TParam)(pcRequestServiceEndPoint As String, pcMethodName As String, poParameter As TParam, pcModuleName As String, plSendWithContext As Boolean = True, plSendWithToken As Boolean = True, poNotify As R_INotify(Of TResult) = Nothing) As Task(Of List(Of TResult))
+  overload: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject*
+  nameWithType.vb: R_HTTPClientWrapper.R_APIRequestStreamingObject(Of TResult, TParam)(String, String, TParam, String, Boolean, Boolean, R_INotify(Of TResult))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject(Of TResult, TParam)(System.String, System.String, TParam, System.String, System.Boolean, System.Boolean, R_APIClient.R_INotify(Of TResult))
+  name.vb: R_APIRequestStreamingObject(Of TResult, TParam)(String, String, TParam, String, Boolean, Boolean, R_INotify(Of TResult))
+references:
+- uid: R_APIClient
+  commentId: N:R_APIClient
+  name: R_APIClient
+  nameWithType: R_APIClient
+  fullName: R_APIClient
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_APIClient.R_HTTPClientWrapper.httpClientName*
+  commentId: Overload:R_APIClient.R_HTTPClientWrapper.httpClientName
+  name: httpClientName
+  nameWithType: R_HTTPClientWrapper.httpClientName
+  fullName: R_APIClient.R_HTTPClientWrapper.httpClientName
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject*
+  commentId: Overload:R_APIClient.R_HTTPClientWrapper.R_APIRequestObject
+  name: R_APIRequestObject
+  nameWithType: R_HTTPClientWrapper.R_APIRequestObject
+  fullName: R_APIClient.R_HTTPClientWrapper.R_APIRequestObject
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Task{{TResult}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TParam}'
+  commentId: '!:TParam'
+  definition: TParam
+  name: TParam
+  nameWithType: TParam
+  fullName: TParam
+- uid: TParam
+  name: TParam
+  nameWithType: TParam
+  fullName: TParam
+- uid: Dictionary{System.String,System.String}
+  commentId: '!:Dictionary{System.String,System.String}'
+  definition: Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject*
+  commentId: Overload:R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject
+  name: R_APIRequestStreamingObject
+  nameWithType: R_HTTPClientWrapper.R_APIRequestStreamingObject
+  fullName: R_APIClient.R_HTTPClientWrapper.R_APIRequestStreamingObject
+- uid: R_APIClient.R_INotify{{TResult}}
+  commentId: T:R_APIClient.R_INotify{``0}
+  parent: R_APIClient
+  definition: R_APIClient.R_INotify`1
+  name: R_INotify<TResult>
+  nameWithType: R_INotify<TResult>
+  fullName: R_APIClient.R_INotify<TResult>
+  nameWithType.vb: R_INotify(Of TResult)
+  fullName.vb: R_APIClient.R_INotify(Of TResult)
+  name.vb: R_INotify(Of TResult)
+  spec.csharp:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{List{{TResult}}}
+  commentId: '!:Task{List{``0}}'
+  definition: Task`1
+  name: Task<List<TResult>>
+  nameWithType: Task<List<TResult>>
+  fullName: Task<List<TResult>>
+  nameWithType.vb: Task(Of List(Of TResult))
+  fullName.vb: Task(Of List(Of TResult))
+  name.vb: Task(Of List(Of TResult))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_INotify`1
+  commentId: T:R_APIClient.R_INotify`1
+  name: R_INotify<E>
+  nameWithType: R_INotify<E>
+  fullName: R_APIClient.R_INotify<E>
+  nameWithType.vb: R_INotify(Of E)
+  fullName.vb: R_APIClient.R_INotify(Of E)
+  name.vb: R_INotify(Of E)
+  spec.csharp:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )

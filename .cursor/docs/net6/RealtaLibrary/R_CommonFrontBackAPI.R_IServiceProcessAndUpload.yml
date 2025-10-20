@@ -1,0 +1,395 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  commentId: T:R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  id: R_IServiceProcessAndUpload
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload(R_CommonFrontBackAPI.R_UploadData)
+  - R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  - R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess(R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter)
+  - R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  - R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData(R_CommonFrontBackAPI.R_UploadCommand)
+  - R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData(R_CommonFrontBackAPI.R_UploadData)
+  langs:
+  - csharp
+  - vb
+  name: R_IServiceProcessAndUpload
+  nameWithType: R_IServiceProcessAndUpload
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IServiceProcessAndUpload
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public interface R_IServiceProcessAndUpload
+    content.vb: Public Interface R_IServiceProcessAndUpload
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload(R_CommonFrontBackAPI.R_UploadData)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload(R_CommonFrontBackAPI.R_UploadData)
+  id: R_ServiceDeleteUpload(R_CommonFrontBackAPI.R_UploadData)
+  parent: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceDeleteUpload(R_UploadData)
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceDeleteUpload(R_UploadData)
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload(R_CommonFrontBackAPI.R_UploadData)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceDeleteUpload
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: R_ServiceDeleteUploadResultDTO R_ServiceDeleteUpload(R_UploadData poData)
+    parameters:
+    - id: poData
+      type: R_CommonFrontBackAPI.R_UploadData
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+    content.vb: Function R_ServiceDeleteUpload(poData As R_UploadData) As R_ServiceDeleteUploadResultDTO
+  overload: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload*
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData(R_CommonFrontBackAPI.R_UploadData)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData(R_CommonFrontBackAPI.R_UploadData)
+  id: R_ServiceUploadData(R_CommonFrontBackAPI.R_UploadData)
+  parent: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceUploadData(R_UploadData)
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceUploadData(R_UploadData)
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData(R_CommonFrontBackAPI.R_UploadData)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceUploadData
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: R_ServiceUploadDataResultDTO R_ServiceUploadData(R_UploadData poData)
+    parameters:
+    - id: poData
+      type: R_CommonFrontBackAPI.R_UploadData
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+    content.vb: Function R_ServiceUploadData(poData As R_UploadData) As R_ServiceUploadDataResultDTO
+  overload: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData*
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData(R_CommonFrontBackAPI.R_UploadCommand)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData(R_CommonFrontBackAPI.R_UploadCommand)
+  id: R_ServiceProcessData(R_CommonFrontBackAPI.R_UploadCommand)
+  parent: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceProcessData(R_UploadCommand)
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceProcessData(R_UploadCommand)
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData(R_CommonFrontBackAPI.R_UploadCommand)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceProcessData
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: R_ServiceProcessDataResultDTO R_ServiceProcessData(R_UploadCommand poData)
+    parameters:
+    - id: poData
+      type: R_CommonFrontBackAPI.R_UploadCommand
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+    content.vb: Function R_ServiceProcessData(poData As R_UploadCommand) As R_ServiceProcessDataResultDTO
+  overload: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData*
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  id: R_ServiceMonitoringProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  parent: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceMonitoringProcess(R_UploadAndProcessKey)
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceMonitoringProcess(R_UploadAndProcessKey)
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceMonitoringProcess
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: R_ServiceMonitoringProcessResultDTO R_ServiceMonitoringProcess(R_UploadAndProcessKey poMonitorParam)
+    parameters:
+    - id: poMonitorParam
+      type: R_CommonFrontBackAPI.R_UploadAndProcessKey
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+    content.vb: Function R_ServiceMonitoringProcess(poMonitorParam As R_UploadAndProcessKey) As R_ServiceMonitoringProcessResultDTO
+  overload: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess*
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  id: R_ServiceGetErrorProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  parent: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetErrorProcess(R_UploadAndProcessKey)
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceGetErrorProcess(R_UploadAndProcessKey)
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess(R_CommonFrontBackAPI.R_UploadAndProcessKey)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceGetErrorProcess
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+    startLine: 11
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: R_ServiceGetErrorProcessResultDTO R_ServiceGetErrorProcess(R_UploadAndProcessKey poErrorStatusParam)
+    parameters:
+    - id: poErrorStatusParam
+      type: R_CommonFrontBackAPI.R_UploadAndProcessKey
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+    content.vb: Function R_ServiceGetErrorProcess(poErrorStatusParam As R_UploadAndProcessKey) As R_ServiceGetErrorProcessResultDTO
+  overload: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess*
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess(R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter)
+  commentId: M:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess(R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter)
+  id: R_ServiceGetStreamErrorProcess(R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter)
+  parent: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetStreamErrorProcess(R_GetErrorWithMultiLanguageParameter)
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess(R_GetErrorWithMultiLanguageParameter)
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess(R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceGetStreamErrorProcess
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/Interface/R_IServiceProcessAndUpload.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: IAsyncEnumerable<R_ErrorStatusReturn> R_ServiceGetStreamErrorProcess(R_GetErrorWithMultiLanguageParameter poErrorStatusParam)
+    parameters:
+    - id: poErrorStatusParam
+      type: R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+    return:
+      type: IAsyncEnumerable{R_CommonFrontBackAPI.R_ErrorStatusReturn}
+    content.vb: Function R_ServiceGetStreamErrorProcess(poErrorStatusParam As R_GetErrorWithMultiLanguageParameter) As IAsyncEnumerable(Of R_ErrorStatusReturn)
+  overload: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess*
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload
+  name: R_ServiceDeleteUpload
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceDeleteUpload
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceDeleteUpload
+- uid: R_CommonFrontBackAPI.R_UploadData
+  commentId: T:R_CommonFrontBackAPI.R_UploadData
+  parent: R_CommonFrontBackAPI
+  name: R_UploadData
+  nameWithType: R_UploadData
+  fullName: R_CommonFrontBackAPI.R_UploadData
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceDeleteUploadResultDTO
+  nameWithType: R_ServiceDeleteUploadResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData
+  name: R_ServiceUploadData
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceUploadData
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceUploadData
+- uid: R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceUploadDataResultDTO
+  nameWithType: R_ServiceUploadDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData
+  name: R_ServiceProcessData
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceProcessData
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceProcessData
+- uid: R_CommonFrontBackAPI.R_UploadCommand
+  commentId: T:R_CommonFrontBackAPI.R_UploadCommand
+  parent: R_CommonFrontBackAPI
+  name: R_UploadCommand
+  nameWithType: R_UploadCommand
+  fullName: R_CommonFrontBackAPI.R_UploadCommand
+- uid: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceProcessDataResultDTO
+  nameWithType: R_ServiceProcessDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess
+  name: R_ServiceMonitoringProcess
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceMonitoringProcess
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceMonitoringProcess
+- uid: R_CommonFrontBackAPI.R_UploadAndProcessKey
+  commentId: T:R_CommonFrontBackAPI.R_UploadAndProcessKey
+  parent: R_CommonFrontBackAPI
+  name: R_UploadAndProcessKey
+  nameWithType: R_UploadAndProcessKey
+  fullName: R_CommonFrontBackAPI.R_UploadAndProcessKey
+- uid: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceMonitoringProcessResultDTO
+  nameWithType: R_ServiceMonitoringProcessResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess
+  name: R_ServiceGetErrorProcess
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceGetErrorProcess
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetErrorProcess
+- uid: R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceGetErrorProcessResultDTO
+  nameWithType: R_ServiceGetErrorProcessResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess*
+  commentId: Overload:R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess
+  name: R_ServiceGetStreamErrorProcess
+  nameWithType: R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload.R_ServiceGetStreamErrorProcess
+- uid: R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+  commentId: T:R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+  parent: R_CommonFrontBackAPI
+  name: R_GetErrorWithMultiLanguageParameter
+  nameWithType: R_GetErrorWithMultiLanguageParameter
+  fullName: R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+- uid: IAsyncEnumerable{R_CommonFrontBackAPI.R_ErrorStatusReturn}
+  commentId: '!:IAsyncEnumerable{R_CommonFrontBackAPI.R_ErrorStatusReturn}'
+  definition: IAsyncEnumerable`1
+  name: IAsyncEnumerable<R_ErrorStatusReturn>
+  nameWithType: IAsyncEnumerable<R_ErrorStatusReturn>
+  fullName: IAsyncEnumerable<R_CommonFrontBackAPI.R_ErrorStatusReturn>
+  nameWithType.vb: IAsyncEnumerable(Of R_ErrorStatusReturn)
+  fullName.vb: IAsyncEnumerable(Of R_CommonFrontBackAPI.R_ErrorStatusReturn)
+  name.vb: IAsyncEnumerable(Of R_ErrorStatusReturn)
+  spec.csharp:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_ErrorStatusReturn
+    name: R_ErrorStatusReturn
+    nameWithType: R_ErrorStatusReturn
+    fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_ErrorStatusReturn
+    name: R_ErrorStatusReturn
+    nameWithType: R_ErrorStatusReturn
+    fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IAsyncEnumerable`1
+  isExternal: true
+  name: IAsyncEnumerable<>
+  nameWithType: IAsyncEnumerable<>
+  fullName: IAsyncEnumerable<>
+  nameWithType.vb: IAsyncEnumerable(Of )
+  fullName.vb: IAsyncEnumerable(Of )
+  name.vb: IAsyncEnumerable(Of )
+  spec.csharp:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IAsyncEnumerable`1
+    name: IAsyncEnumerable
+    nameWithType: IAsyncEnumerable
+    fullName: IAsyncEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

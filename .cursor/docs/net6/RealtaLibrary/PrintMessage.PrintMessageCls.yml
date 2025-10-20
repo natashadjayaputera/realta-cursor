@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: PrintMessage.PrintMessageCls
+  commentId: T:PrintMessage.PrintMessageCls
+  id: PrintMessageCls
+  parent: PrintMessage
+  children:
+  - PrintMessage.PrintMessageCls.#ctor(ILogger{PrintMessage.PrintMessageCls})
+  - PrintMessage.PrintMessageCls.Execute(IJobExecutionContext)
+  langs:
+  - csharp
+  - vb
+  name: PrintMessageCls
+  nameWithType: PrintMessageCls
+  fullName: PrintMessage.PrintMessageCls
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PrintMessageCls
+    path: Engine/SampleJob/PrintMessage/PrintMessageCls.cs
+    startLine: 6
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: 'public class PrintMessageCls : IJob'
+    content.vb: >-
+      Public Class PrintMessageCls
+          Inherits IJob
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PrintMessage.PrintMessageCls.#ctor(ILogger{PrintMessage.PrintMessageCls})
+  commentId: M:PrintMessage.PrintMessageCls.#ctor(ILogger{PrintMessage.PrintMessageCls})
+  id: '#ctor(ILogger{PrintMessage.PrintMessageCls})'
+  parent: PrintMessage.PrintMessageCls
+  langs:
+  - csharp
+  - vb
+  name: PrintMessageCls(ILogger<PrintMessageCls>)
+  nameWithType: PrintMessageCls.PrintMessageCls(ILogger<PrintMessageCls>)
+  fullName: PrintMessage.PrintMessageCls.PrintMessageCls(ILogger<PrintMessage.PrintMessageCls>)
+  type: Constructor
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Engine/SampleJob/PrintMessage/PrintMessageCls.cs
+    startLine: 10
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: public PrintMessageCls(ILogger<PrintMessageCls> poLogger)
+    parameters:
+    - id: poLogger
+      type: ILogger{PrintMessage.PrintMessageCls}
+    content.vb: Public Sub New(poLogger As ILogger(Of PrintMessageCls))
+  overload: PrintMessage.PrintMessageCls.#ctor*
+  nameWithType.vb: PrintMessageCls.PrintMessageCls(ILogger(Of PrintMessageCls))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PrintMessage.PrintMessageCls.PrintMessageCls(ILogger(Of PrintMessage.PrintMessageCls))
+  name.vb: PrintMessageCls(ILogger(Of PrintMessageCls))
+- uid: PrintMessage.PrintMessageCls.Execute(IJobExecutionContext)
+  commentId: M:PrintMessage.PrintMessageCls.Execute(IJobExecutionContext)
+  id: Execute(IJobExecutionContext)
+  parent: PrintMessage.PrintMessageCls
+  langs:
+  - csharp
+  - vb
+  name: Execute(IJobExecutionContext)
+  nameWithType: PrintMessageCls.Execute(IJobExecutionContext)
+  fullName: PrintMessage.PrintMessageCls.Execute(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Execute
+    path: Engine/SampleJob/PrintMessage/PrintMessageCls.cs
+    startLine: 15
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: public Task Execute(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: Task
+    content.vb: Public Function Execute(context As IJobExecutionContext) As Task
+  overload: PrintMessage.PrintMessageCls.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PrintMessage
+  commentId: N:PrintMessage
+  name: PrintMessage
+  nameWithType: PrintMessage
+  fullName: PrintMessage
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PrintMessage.PrintMessageCls.#ctor*
+  commentId: Overload:PrintMessage.PrintMessageCls.#ctor
+  name: PrintMessageCls
+  nameWithType: PrintMessageCls.PrintMessageCls
+  fullName: PrintMessage.PrintMessageCls.PrintMessageCls
+- uid: ILogger{PrintMessage.PrintMessageCls}
+  commentId: '!:ILogger{PrintMessage.PrintMessageCls}'
+  definition: ILogger`1
+  name: ILogger<PrintMessageCls>
+  nameWithType: ILogger<PrintMessageCls>
+  fullName: ILogger<PrintMessage.PrintMessageCls>
+  nameWithType.vb: ILogger(Of PrintMessageCls)
+  fullName.vb: ILogger(Of PrintMessage.PrintMessageCls)
+  name.vb: ILogger(Of PrintMessageCls)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PrintMessage.PrintMessageCls
+    name: PrintMessageCls
+    nameWithType: PrintMessageCls
+    fullName: PrintMessage.PrintMessageCls
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PrintMessage.PrintMessageCls
+    name: PrintMessageCls
+    nameWithType: PrintMessageCls
+    fullName: PrintMessage.PrintMessageCls
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PrintMessage.PrintMessageCls.Execute*
+  commentId: Overload:PrintMessage.PrintMessageCls.Execute
+  name: Execute
+  nameWithType: PrintMessageCls.Execute
+  fullName: PrintMessage.PrintMessageCls.Execute
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

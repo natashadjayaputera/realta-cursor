@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO
+  commentId: T:SampleStandardJob.DTO.SampleProcessTableStatusDTO
+  id: SampleProcessTableStatusDTO
+  parent: SampleStandardJob.DTO
+  children:
+  - SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE
+  - SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS
+  - SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID
+  langs:
+  - csharp
+  - vb
+  name: SampleProcessTableStatusDTO
+  nameWithType: SampleProcessTableStatusDTO
+  fullName: SampleStandardJob.DTO.SampleProcessTableStatusDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SampleProcessTableStatusDTO
+    path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+    startLine: 8
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: 'public class SampleProcessTableStatusDTO : object'
+    content.vb: >-
+      Public Class SampleProcessTableStatusDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID
+  commentId: P:SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID
+  id: ID
+  parent: SampleStandardJob.DTO.SampleProcessTableStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: SampleProcessTableStatusDTO.ID
+  fullName: SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ID
+    path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+    startLine: 10
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: public string ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ID As String
+  overload: SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS
+  commentId: P:SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS
+  id: CSTATUS
+  parent: SampleStandardJob.DTO.SampleProcessTableStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: CSTATUS
+  nameWithType: SampleProcessTableStatusDTO.CSTATUS
+  fullName: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSTATUS
+    path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+    startLine: 11
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: public string CSTATUS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSTATUS As String
+  overload: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE
+  commentId: P:SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE
+  id: CPROCESS_DATE
+  parent: SampleStandardJob.DTO.SampleProcessTableStatusDTO
+  langs:
+  - csharp
+  - vb
+  name: CPROCESS_DATE
+  nameWithType: SampleProcessTableStatusDTO.CPROCESS_DATE
+  fullName: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CPROCESS_DATE
+    path: Engine/SampleJob/SampleStandardJob/DTO/SampleProcessTableStatusDTO.cs
+    startLine: 12
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: public string CPROCESS_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CPROCESS_DATE As String
+  overload: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: SampleStandardJob.DTO
+  commentId: N:SampleStandardJob.DTO
+  name: SampleStandardJob.DTO
+  nameWithType: SampleStandardJob.DTO
+  fullName: SampleStandardJob.DTO
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID*
+  commentId: Overload:SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID
+  name: ID
+  nameWithType: SampleProcessTableStatusDTO.ID
+  fullName: SampleStandardJob.DTO.SampleProcessTableStatusDTO.ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS*
+  commentId: Overload:SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS
+  name: CSTATUS
+  nameWithType: SampleProcessTableStatusDTO.CSTATUS
+  fullName: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CSTATUS
+- uid: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE*
+  commentId: Overload:SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE
+  name: CPROCESS_DATE
+  nameWithType: SampleProcessTableStatusDTO.CPROCESS_DATE
+  fullName: SampleStandardJob.DTO.SampleProcessTableStatusDTO.CPROCESS_DATE

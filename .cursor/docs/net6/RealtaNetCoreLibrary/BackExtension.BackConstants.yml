@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.BackConstants
+  commentId: T:BackExtension.BackConstants
+  id: BackConstants
+  parent: BackExtension
+  children:
+  - BackExtension.BackConstants.DateTimeFormat
+  langs:
+  - csharp
+  - vb
+  name: BackConstants
+  nameWithType: BackConstants
+  fullName: BackExtension.BackConstants
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/BackConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: BackConstants
+    path: Library Back/BackExtension/BackConstants.cs
+    startLine: 2
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: 'public static class BackConstants : object'
+    content.vb: >-
+      Public Module BackConstants
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: BackExtension.BackConstants.DateTimeFormat
+  commentId: F:BackExtension.BackConstants.DateTimeFormat
+  id: DateTimeFormat
+  parent: BackExtension.BackConstants
+  langs:
+  - csharp
+  - vb
+  name: DateTimeFormat
+  nameWithType: BackConstants.DateTimeFormat
+  fullName: BackExtension.BackConstants.DateTimeFormat
+  type: Field
+  source:
+    remote:
+      path: Library Back/BackExtension/BackConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DateTimeFormat
+    path: Library Back/BackExtension/BackConstants.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: public static string DateTimeFormat
+    return:
+      type: System.String
+    content.vb: Public Shared DateTimeFormat As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: BackExtension
+  commentId: N:BackExtension
+  name: BackExtension
+  nameWithType: BackExtension
+  fullName: BackExtension
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

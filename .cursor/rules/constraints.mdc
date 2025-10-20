@@ -1,0 +1,44 @@
+---
+alwaysApply: true
+priority: CRITICAL
+nonNegotiable: true
+---
+
+# CONSTRAINTS - BUSINESS LOGIC PROTECTION
+
+## Immutable Requirements
+
+1. **Never modify SQL queries or Stored Procedures**
+   - Maintain exact same SP names and parameters
+   - If async requires changes, use wrapper/adapter pattern
+   - Requires DB team approval for any SQL changes
+
+2. **Never alter business logic flow**
+   - .NET 4 logic = .NET 6 logic (behavioral parity)
+   - If library API differs, wrap it - don't change business rules
+   - Maintain exact same calculation algorithms
+
+3. **Never invent new patterns**
+   - All patterns from `critical-patterns-learned.md`
+   - All classes from `.cursor/docs/net6/`
+   - If pattern not documented, ask user - don't improvise
+
+4. **Never skip validation**
+   - All DTO validations must exist
+   - All error handling must match original
+   - All security checks must remain unchanged
+
+---
+
+# VERIFICATION STEPS
+
+Before submitting any code migration:
+
+- [ ] All SQL/SP names unchanged
+- [ ] Business logic flow identical to .NET 4 version
+- [ ] All error handling implemented
+- [ ] All validation rules included
+- [ ] All resource strings localized
+- [ ] Behavioral parity confirmed with user
+
+---

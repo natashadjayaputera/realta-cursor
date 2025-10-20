@@ -1,0 +1,718 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ProcessorJob.R_IProcessJobAsync`2
+  commentId: T:R_ProcessorJob.R_IProcessJobAsync`2
+  id: R_IProcessJobAsync`2
+  parent: R_ProcessorJob
+  children:
+  - R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataAsync(System.String)
+  - R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataErrorStatusAsync(System.String,`1)
+  - R_ProcessorJob.R_IProcessJobAsync`2.R_ProcessCompleteStatusAsync(System.String,List{`1})
+  - R_ProcessorJob.R_IProcessJobAsync`2.R_SingleErrorStatusAsync(System.String,`0,`1)
+  - R_ProcessorJob.R_IProcessJobAsync`2.R_SingleSuccessStatusAsync(System.String,`0)
+  - R_ProcessorJob.R_IProcessJobAsync`2.R_StatusAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_IProcessJobAsync<T, E>
+  nameWithType: R_IProcessJobAsync<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>
+  type: Interface
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_IProcessJobAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+    startLine: 8
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: 'public interface R_IProcessJobAsync<T, E> : R_IProcessJobBase<T, E> where E : R_IException'
+    typeParameters:
+    - id: T
+    - id: E
+    content.vb: >-
+      Public Interface R_IProcessJobAsync(Of T, E As R_IException)
+          Inherits R_IProcessJobBase(Of T, E)
+  inheritedMembers:
+  - R_ProcessorJob.R_IProcessJobBase{{T},{E}}.R_SingleProcessAsync(System.String,{T})
+  nameWithType.vb: R_IProcessJobAsync(Of T, E)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E)
+  name.vb: R_IProcessJobAsync(Of T, E)
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataAsync(System.String)
+  commentId: M:R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataAsync(System.String)
+  id: R_InitDataAsync(System.String)
+  parent: R_ProcessorJob.R_IProcessJobAsync`2
+  langs:
+  - csharp
+  - vb
+  name: R_InitDataAsync(String)
+  nameWithType: R_IProcessJobAsync<T, E>.R_InitDataAsync(String)
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_InitDataAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InitDataAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+    startLine: 10
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: Task<List<T>> R_InitDataAsync(string poKey)
+    parameters:
+    - id: poKey
+      type: System.String
+    return:
+      type: Task{List{{T}}}
+    content.vb: Function R_InitDataAsync(poKey As String) As Task(Of List(Of T))
+  overload: R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataAsync*
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_InitDataAsync(String)
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_InitDataAsync(System.String)
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataErrorStatusAsync(System.String,`1)
+  commentId: M:R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataErrorStatusAsync(System.String,`1)
+  id: R_InitDataErrorStatusAsync(System.String,`1)
+  parent: R_ProcessorJob.R_IProcessJobAsync`2
+  langs:
+  - csharp
+  - vb
+  name: R_InitDataErrorStatusAsync(String, E)
+  nameWithType: R_IProcessJobAsync<T, E>.R_InitDataErrorStatusAsync(String, E)
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_InitDataErrorStatusAsync(System.String, E)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InitDataErrorStatusAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+    startLine: 11
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: Task R_InitDataErrorStatusAsync(string poKey, E poException)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poException
+      type: '{E}'
+    return:
+      type: Task
+    content.vb: Function R_InitDataErrorStatusAsync(poKey As String, poException As E) As Task
+  overload: R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataErrorStatusAsync*
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_InitDataErrorStatusAsync(String, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_InitDataErrorStatusAsync(System.String, E)
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_StatusAsync(System.String,System.String)
+  commentId: M:R_ProcessorJob.R_IProcessJobAsync`2.R_StatusAsync(System.String,System.String)
+  id: R_StatusAsync(System.String,System.String)
+  parent: R_ProcessorJob.R_IProcessJobAsync`2
+  langs:
+  - csharp
+  - vb
+  name: R_StatusAsync(String, String)
+  nameWithType: R_IProcessJobAsync<T, E>.R_StatusAsync(String, String)
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_StatusAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_StatusAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+    startLine: 13
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: Task R_StatusAsync(string poKey, string pcMessage)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: pcMessage
+      type: System.String
+    return:
+      type: Task
+    content.vb: Function R_StatusAsync(poKey As String, pcMessage As String) As Task
+  overload: R_ProcessorJob.R_IProcessJobAsync`2.R_StatusAsync*
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_StatusAsync(String, String)
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_StatusAsync(System.String, System.String)
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_SingleErrorStatusAsync(System.String,`0,`1)
+  commentId: M:R_ProcessorJob.R_IProcessJobAsync`2.R_SingleErrorStatusAsync(System.String,`0,`1)
+  id: R_SingleErrorStatusAsync(System.String,`0,`1)
+  parent: R_ProcessorJob.R_IProcessJobAsync`2
+  langs:
+  - csharp
+  - vb
+  name: R_SingleErrorStatusAsync(String, T, E)
+  nameWithType: R_IProcessJobAsync<T, E>.R_SingleErrorStatusAsync(String, T, E)
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_SingleErrorStatusAsync(System.String, T, E)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SingleErrorStatusAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+    startLine: 14
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: Task R_SingleErrorStatusAsync(string poKey, T poParameter, E poException)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poParameter
+      type: '{T}'
+    - id: poException
+      type: '{E}'
+    return:
+      type: Task
+    content.vb: Function R_SingleErrorStatusAsync(poKey As String, poParameter As T, poException As E) As Task
+  overload: R_ProcessorJob.R_IProcessJobAsync`2.R_SingleErrorStatusAsync*
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_SingleErrorStatusAsync(String, T, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_SingleErrorStatusAsync(System.String, T, E)
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_SingleSuccessStatusAsync(System.String,`0)
+  commentId: M:R_ProcessorJob.R_IProcessJobAsync`2.R_SingleSuccessStatusAsync(System.String,`0)
+  id: R_SingleSuccessStatusAsync(System.String,`0)
+  parent: R_ProcessorJob.R_IProcessJobAsync`2
+  langs:
+  - csharp
+  - vb
+  name: R_SingleSuccessStatusAsync(String, T)
+  nameWithType: R_IProcessJobAsync<T, E>.R_SingleSuccessStatusAsync(String, T)
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_SingleSuccessStatusAsync(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_SingleSuccessStatusAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+    startLine: 15
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: Task R_SingleSuccessStatusAsync(string poKey, T poParameter)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poParameter
+      type: '{T}'
+    return:
+      type: Task
+    content.vb: Function R_SingleSuccessStatusAsync(poKey As String, poParameter As T) As Task
+  overload: R_ProcessorJob.R_IProcessJobAsync`2.R_SingleSuccessStatusAsync*
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_SingleSuccessStatusAsync(String, T)
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_SingleSuccessStatusAsync(System.String, T)
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_ProcessCompleteStatusAsync(System.String,List{`1})
+  commentId: M:R_ProcessorJob.R_IProcessJobAsync`2.R_ProcessCompleteStatusAsync(System.String,List{`1})
+  id: R_ProcessCompleteStatusAsync(System.String,List{`1})
+  parent: R_ProcessorJob.R_IProcessJobAsync`2
+  langs:
+  - csharp
+  - vb
+  name: R_ProcessCompleteStatusAsync(String, List<E>)
+  nameWithType: R_IProcessJobAsync<T, E>.R_ProcessCompleteStatusAsync(String, List<E>)
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_ProcessCompleteStatusAsync(System.String, List<E>)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ProcessCompleteStatusAsync
+    path: Microservices/R_ProcessorJob/R_IProcessJobAsync.cs
+    startLine: 16
+  assemblies:
+  - R_ProcessorJob
+  namespace: R_ProcessorJob
+  syntax:
+    content: Task R_ProcessCompleteStatusAsync(string poKey, List<E> poExceptions)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: poExceptions
+      type: List{{E}}
+    return:
+      type: Task
+    content.vb: Function R_ProcessCompleteStatusAsync(poKey As String, poExceptions As List(Of E)) As Task
+  overload: R_ProcessorJob.R_IProcessJobAsync`2.R_ProcessCompleteStatusAsync*
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_ProcessCompleteStatusAsync(String, List(Of E))
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_ProcessCompleteStatusAsync(System.String, List(Of E))
+  name.vb: R_ProcessCompleteStatusAsync(String, List(Of E))
+references:
+- uid: R_ProcessorJob
+  commentId: N:R_ProcessorJob
+  name: R_ProcessorJob
+  nameWithType: R_ProcessorJob
+  fullName: R_ProcessorJob
+- uid: R_ProcessorJob.R_IProcessJobBase{{T},{E}}.R_SingleProcessAsync(System.String,{T})
+  commentId: M:R_ProcessorJob.R_IProcessJobBase{`0,`1}.R_SingleProcessAsync(System.String,`0)
+  parent: R_ProcessorJob.R_IProcessJobBase{{T},{E}}
+  definition: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+  name: R_SingleProcessAsync(String, T)
+  nameWithType: R_IProcessJobBase<T, E>.R_SingleProcessAsync(String, T)
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>.R_SingleProcessAsync(System.String, T)
+  nameWithType.vb: R_IProcessJobBase(Of T, E).R_SingleProcessAsync(String, T)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E).R_SingleProcessAsync(System.String, T)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+    name: R_SingleProcessAsync
+    nameWithType: R_IProcessJobBase<T, E>.R_SingleProcessAsync
+    fullName: R_ProcessorJob.R_IProcessJobBase<T, E>.R_SingleProcessAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+    name: R_SingleProcessAsync
+    nameWithType: R_IProcessJobBase(Of T, E).R_SingleProcessAsync
+    fullName: R_ProcessorJob.R_IProcessJobBase(Of T, E).R_SingleProcessAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+  commentId: M:R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+  isExternal: true
+  name: R_SingleProcessAsync(String, T)
+  nameWithType: R_IProcessJobBase<T, E>.R_SingleProcessAsync(String, T)
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>.R_SingleProcessAsync(System.String, T)
+  nameWithType.vb: R_IProcessJobBase(Of T, E).R_SingleProcessAsync(String, T)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E).R_SingleProcessAsync(System.String, T)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+    name: R_SingleProcessAsync
+    nameWithType: R_IProcessJobBase<T, E>.R_SingleProcessAsync
+    fullName: R_ProcessorJob.R_IProcessJobBase<T, E>.R_SingleProcessAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2.R_SingleProcessAsync(System.String,`0)
+    name: R_SingleProcessAsync
+    nameWithType: R_IProcessJobBase(Of T, E).R_SingleProcessAsync
+    fullName: R_ProcessorJob.R_IProcessJobBase(Of T, E).R_SingleProcessAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobBase{{T},{E}}
+  commentId: T:R_ProcessorJob.R_IProcessJobBase{`0,`1}
+  parent: R_ProcessorJob
+  definition: R_ProcessorJob.R_IProcessJobBase`2
+  name: R_IProcessJobBase<T, E>
+  nameWithType: R_IProcessJobBase<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>
+  nameWithType.vb: R_IProcessJobBase(Of T, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E)
+  name.vb: R_IProcessJobBase(Of T, E)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobBase`2
+  commentId: T:R_ProcessorJob.R_IProcessJobBase`2
+  name: R_IProcessJobBase<T, E>
+  nameWithType: R_IProcessJobBase<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>
+  nameWithType.vb: R_IProcessJobBase(Of T, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E)
+  name.vb: R_IProcessJobBase(Of T, E)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataAsync*
+  commentId: Overload:R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataAsync
+  name: R_InitDataAsync
+  nameWithType: R_IProcessJobAsync<T, E>.R_InitDataAsync
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_InitDataAsync
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_InitDataAsync
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_InitDataAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{List{{T}}}
+  commentId: '!:Task{List{`0}}'
+  definition: Task`1
+  name: Task<List<T>>
+  nameWithType: Task<List<T>>
+  fullName: Task<List<T>>
+  nameWithType.vb: Task(Of List(Of T))
+  fullName.vb: Task(Of List(Of T))
+  name.vb: Task(Of List(Of T))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataErrorStatusAsync*
+  commentId: Overload:R_ProcessorJob.R_IProcessJobAsync`2.R_InitDataErrorStatusAsync
+  name: R_InitDataErrorStatusAsync
+  nameWithType: R_IProcessJobAsync<T, E>.R_InitDataErrorStatusAsync
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_InitDataErrorStatusAsync
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_InitDataErrorStatusAsync
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_InitDataErrorStatusAsync
+- uid: '{E}'
+  commentId: '!:E'
+  definition: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_StatusAsync*
+  commentId: Overload:R_ProcessorJob.R_IProcessJobAsync`2.R_StatusAsync
+  name: R_StatusAsync
+  nameWithType: R_IProcessJobAsync<T, E>.R_StatusAsync
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_StatusAsync
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_StatusAsync
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_StatusAsync
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_SingleErrorStatusAsync*
+  commentId: Overload:R_ProcessorJob.R_IProcessJobAsync`2.R_SingleErrorStatusAsync
+  name: R_SingleErrorStatusAsync
+  nameWithType: R_IProcessJobAsync<T, E>.R_SingleErrorStatusAsync
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_SingleErrorStatusAsync
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_SingleErrorStatusAsync
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_SingleErrorStatusAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_SingleSuccessStatusAsync*
+  commentId: Overload:R_ProcessorJob.R_IProcessJobAsync`2.R_SingleSuccessStatusAsync
+  name: R_SingleSuccessStatusAsync
+  nameWithType: R_IProcessJobAsync<T, E>.R_SingleSuccessStatusAsync
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_SingleSuccessStatusAsync
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_SingleSuccessStatusAsync
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_SingleSuccessStatusAsync
+- uid: R_ProcessorJob.R_IProcessJobAsync`2.R_ProcessCompleteStatusAsync*
+  commentId: Overload:R_ProcessorJob.R_IProcessJobAsync`2.R_ProcessCompleteStatusAsync
+  name: R_ProcessCompleteStatusAsync
+  nameWithType: R_IProcessJobAsync<T, E>.R_ProcessCompleteStatusAsync
+  fullName: R_ProcessorJob.R_IProcessJobAsync<T, E>.R_ProcessCompleteStatusAsync
+  nameWithType.vb: R_IProcessJobAsync(Of T, E).R_ProcessCompleteStatusAsync
+  fullName.vb: R_ProcessorJob.R_IProcessJobAsync(Of T, E).R_ProcessCompleteStatusAsync
+- uid: List{{E}}
+  commentId: '!:List{`1}'
+  definition: List`1
+  name: List<E>
+  nameWithType: List<E>
+  fullName: List<E>
+  nameWithType.vb: List(Of E)
+  fullName.vb: List(Of E)
+  name.vb: List(Of E)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

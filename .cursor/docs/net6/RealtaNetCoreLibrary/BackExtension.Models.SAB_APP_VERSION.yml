@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.SAB_APP_VERSION
+  commentId: T:BackExtension.Models.SAB_APP_VERSION
+  id: SAB_APP_VERSION
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID
+  - BackExtension.Models.SAB_APP_VERSION.CREVISION
+  - BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK
+  - BackExtension.Models.SAB_APP_VERSION.CVERSION
+  langs:
+  - csharp
+  - vb
+  name: SAB_APP_VERSION
+  nameWithType: SAB_APP_VERSION
+  fullName: BackExtension.Models.SAB_APP_VERSION
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SAB_APP_VERSION
+    path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+    startLine: 2
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class SAB_APP_VERSION : object'
+    content.vb: >-
+      Public Class SAB_APP_VERSION
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID
+  commentId: P:BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID
+  id: CAPPLICATION_ID
+  parent: BackExtension.Models.SAB_APP_VERSION
+  langs:
+  - csharp
+  - vb
+  name: CAPPLICATION_ID
+  nameWithType: SAB_APP_VERSION.CAPPLICATION_ID
+  fullName: BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CAPPLICATION_ID
+    path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CAPPLICATION_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CAPPLICATION_ID As String
+  overload: BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAB_APP_VERSION.CVERSION
+  commentId: P:BackExtension.Models.SAB_APP_VERSION.CVERSION
+  id: CVERSION
+  parent: BackExtension.Models.SAB_APP_VERSION
+  langs:
+  - csharp
+  - vb
+  name: CVERSION
+  nameWithType: SAB_APP_VERSION.CVERSION
+  fullName: BackExtension.Models.SAB_APP_VERSION.CVERSION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CVERSION
+    path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+    startLine: 5
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CVERSION { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CVERSION As String?
+  overload: BackExtension.Models.SAB_APP_VERSION.CVERSION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAB_APP_VERSION.CREVISION
+  commentId: P:BackExtension.Models.SAB_APP_VERSION.CREVISION
+  id: CREVISION
+  parent: BackExtension.Models.SAB_APP_VERSION
+  langs:
+  - csharp
+  - vb
+  name: CREVISION
+  nameWithType: SAB_APP_VERSION.CREVISION
+  fullName: BackExtension.Models.SAB_APP_VERSION.CREVISION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CREVISION
+    path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CREVISION { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CREVISION As String?
+  overload: BackExtension.Models.SAB_APP_VERSION.CREVISION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK
+  commentId: P:BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK
+  id: CSERVICE_PACK
+  parent: BackExtension.Models.SAB_APP_VERSION
+  langs:
+  - csharp
+  - vb
+  name: CSERVICE_PACK
+  nameWithType: SAB_APP_VERSION.CSERVICE_PACK
+  fullName: BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSERVICE_PACK
+    path: Library Back/BackExtension/Models/SAB_APP_VERSION.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CSERVICE_PACK { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CSERVICE_PACK As String?
+  overload: BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID*
+  commentId: Overload:BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID
+  name: CAPPLICATION_ID
+  nameWithType: SAB_APP_VERSION.CAPPLICATION_ID
+  fullName: BackExtension.Models.SAB_APP_VERSION.CAPPLICATION_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.SAB_APP_VERSION.CVERSION*
+  commentId: Overload:BackExtension.Models.SAB_APP_VERSION.CVERSION
+  name: CVERSION
+  nameWithType: SAB_APP_VERSION.CVERSION
+  fullName: BackExtension.Models.SAB_APP_VERSION.CVERSION
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAB_APP_VERSION.CREVISION*
+  commentId: Overload:BackExtension.Models.SAB_APP_VERSION.CREVISION
+  name: CREVISION
+  nameWithType: SAB_APP_VERSION.CREVISION
+  fullName: BackExtension.Models.SAB_APP_VERSION.CREVISION
+- uid: BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK*
+  commentId: Overload:BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK
+  name: CSERVICE_PACK
+  nameWithType: SAB_APP_VERSION.CSERVICE_PACK
+  fullName: BackExtension.Models.SAB_APP_VERSION.CSERVICE_PACK

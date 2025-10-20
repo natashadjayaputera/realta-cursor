@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.SAM_TOKEN
+  commentId: T:BackExtension.Models.SAM_TOKEN
+  id: SAM_TOKEN
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN
+  - BackExtension.Models.SAM_TOKEN.CTOKEN_ID
+  - BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS
+  - BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+  - BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+  langs:
+  - csharp
+  - vb
+  name: SAM_TOKEN
+  nameWithType: SAM_TOKEN
+  fullName: BackExtension.Models.SAM_TOKEN
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SAM_TOKEN
+    path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class SAM_TOKEN : object'
+    content.vb: >-
+      Public Class SAM_TOKEN
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.SAM_TOKEN.CTOKEN_ID
+  commentId: P:BackExtension.Models.SAM_TOKEN.CTOKEN_ID
+  id: CTOKEN_ID
+  parent: BackExtension.Models.SAM_TOKEN
+  langs:
+  - csharp
+  - vb
+  name: CTOKEN_ID
+  nameWithType: SAM_TOKEN.CTOKEN_ID
+  fullName: BackExtension.Models.SAM_TOKEN.CTOKEN_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTOKEN_ID
+    path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CTOKEN_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CTOKEN_ID As String
+  overload: BackExtension.Models.SAM_TOKEN.CTOKEN_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN
+  commentId: P:BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN
+  id: CREFRESH_TOKEN
+  parent: BackExtension.Models.SAM_TOKEN
+  langs:
+  - csharp
+  - vb
+  name: CREFRESH_TOKEN
+  nameWithType: SAM_TOKEN.CREFRESH_TOKEN
+  fullName: BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CREFRESH_TOKEN
+    path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CREFRESH_TOKEN { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CREFRESH_TOKEN As String?
+  overload: BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+  commentId: P:BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+  id: DREFRESH_TOKEN_UTC_CREATED
+  parent: BackExtension.Models.SAM_TOKEN
+  langs:
+  - csharp
+  - vb
+  name: DREFRESH_TOKEN_UTC_CREATED
+  nameWithType: SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+  fullName: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DREFRESH_TOKEN_UTC_CREATED
+    path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime DREFRESH_TOKEN_UTC_CREATED { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property DREFRESH_TOKEN_UTC_CREATED As DateTime
+  overload: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+  commentId: P:BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+  id: DREFRESH_TOKEN_UTC_EXPIRES
+  parent: BackExtension.Models.SAM_TOKEN
+  langs:
+  - csharp
+  - vb
+  name: DREFRESH_TOKEN_UTC_EXPIRES
+  nameWithType: SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+  fullName: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DREFRESH_TOKEN_UTC_EXPIRES
+    path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime DREFRESH_TOKEN_UTC_EXPIRES { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property DREFRESH_TOKEN_UTC_EXPIRES As DateTime
+  overload: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS
+  commentId: P:BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS
+  id: CTOKEN_IP_ADDRESS
+  parent: BackExtension.Models.SAM_TOKEN
+  langs:
+  - csharp
+  - vb
+  name: CTOKEN_IP_ADDRESS
+  nameWithType: SAM_TOKEN.CTOKEN_IP_ADDRESS
+  fullName: BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTOKEN_IP_ADDRESS
+    path: Library Back/BackExtension/Models/SAM_TOKEN.cs
+    startLine: 10
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CTOKEN_IP_ADDRESS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CTOKEN_IP_ADDRESS As String
+  overload: BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.SAM_TOKEN.CTOKEN_ID*
+  commentId: Overload:BackExtension.Models.SAM_TOKEN.CTOKEN_ID
+  name: CTOKEN_ID
+  nameWithType: SAM_TOKEN.CTOKEN_ID
+  fullName: BackExtension.Models.SAM_TOKEN.CTOKEN_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN*
+  commentId: Overload:BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN
+  name: CREFRESH_TOKEN
+  nameWithType: SAM_TOKEN.CREFRESH_TOKEN
+  fullName: BackExtension.Models.SAM_TOKEN.CREFRESH_TOKEN
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED*
+  commentId: Overload:BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+  name: DREFRESH_TOKEN_UTC_CREATED
+  nameWithType: SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+  fullName: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_CREATED
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES*
+  commentId: Overload:BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+  name: DREFRESH_TOKEN_UTC_EXPIRES
+  nameWithType: SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+  fullName: BackExtension.Models.SAM_TOKEN.DREFRESH_TOKEN_UTC_EXPIRES
+- uid: BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS*
+  commentId: Overload:BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS
+  name: CTOKEN_IP_ADDRESS
+  nameWithType: SAM_TOKEN.CTOKEN_IP_ADDRESS
+  fullName: BackExtension.Models.SAM_TOKEN.CTOKEN_IP_ADDRESS

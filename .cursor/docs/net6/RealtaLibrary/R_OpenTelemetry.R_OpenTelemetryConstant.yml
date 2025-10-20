@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_OpenTelemetry.R_OpenTelemetryConstant
+  commentId: T:R_OpenTelemetry.R_OpenTelemetryConstant
+  id: R_OpenTelemetryConstant
+  parent: R_OpenTelemetry
+  children:
+  - R_OpenTelemetry.R_OpenTelemetryConstant.R_LIBRARY_GENERAL
+  langs:
+  - csharp
+  - vb
+  name: R_OpenTelemetryConstant
+  nameWithType: R_OpenTelemetryConstant
+  fullName: R_OpenTelemetry.R_OpenTelemetryConstant
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_OpenTelemetry/R_OpenTelemetryConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_OpenTelemetryConstant
+    path: Microservices/R_OpenTelemetry/R_OpenTelemetryConstant.cs
+    startLine: 8
+  assemblies:
+  - R_OpenTelemetry
+  namespace: R_OpenTelemetry
+  syntax:
+    content: 'public class R_OpenTelemetryConstant : object'
+    content.vb: >-
+      Public Class R_OpenTelemetryConstant
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_OpenTelemetry.R_OpenTelemetryConstant.R_LIBRARY_GENERAL
+  commentId: F:R_OpenTelemetry.R_OpenTelemetryConstant.R_LIBRARY_GENERAL
+  id: R_LIBRARY_GENERAL
+  parent: R_OpenTelemetry.R_OpenTelemetryConstant
+  langs:
+  - csharp
+  - vb
+  name: R_LIBRARY_GENERAL
+  nameWithType: R_OpenTelemetryConstant.R_LIBRARY_GENERAL
+  fullName: R_OpenTelemetry.R_OpenTelemetryConstant.R_LIBRARY_GENERAL
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_OpenTelemetry/R_OpenTelemetryConstant.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_LIBRARY_GENERAL
+    path: Microservices/R_OpenTelemetry/R_OpenTelemetryConstant.cs
+    startLine: 10
+  assemblies:
+  - R_OpenTelemetry
+  namespace: R_OpenTelemetry
+  syntax:
+    content: public const String R_LIBRARY_GENERAL = null
+    return:
+      type: String
+    content.vb: Public Const R_LIBRARY_GENERAL As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_OpenTelemetry
+  commentId: N:R_OpenTelemetry
+  name: R_OpenTelemetry
+  nameWithType: R_OpenTelemetry
+  fullName: R_OpenTelemetry
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: String
+  commentId: '!:String'
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: String

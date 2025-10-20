@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions
+  commentId: T:R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: R_BlazorFrontEnd.Tenant.Extensions
+  children:
+  - R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy(IServiceCollection)
+  - R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes(IServiceProvider)
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/Extensions/ServiceCollectionExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ServiceCollectionExtensions
+    path: Library/R_BlazorFrontEnd.Tenant/Extensions/ServiceCollectionExtensions.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant.Extensions
+  summary: "\nService Collection Extensions\n"
+  example: []
+  syntax:
+    content: 'public static class ServiceCollectionExtensions : object'
+    content.vb: >-
+      Public Module ServiceCollectionExtensions
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy(IServiceCollection)
+  commentId: M:R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy(IServiceCollection)
+  id: AddMultiTenantancy(IServiceCollection)
+  isExtensionMethod: true
+  parent: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMultiTenantancy(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddMultiTenantancy(IServiceCollection)
+  fullName: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy(IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/Extensions/ServiceCollectionExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AddMultiTenantancy
+    path: Library/R_BlazorFrontEnd.Tenant/Extensions/ServiceCollectionExtensions.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant.Extensions
+  syntax:
+    content: public static IServiceCollection AddMultiTenantancy(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: IServiceCollection
+    return:
+      type: IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddMultiTenantancy(services As IServiceCollection) As IServiceCollection
+  overload: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes(IServiceProvider)
+  commentId: M:R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes(IServiceProvider)
+  id: AddServiceProviderToTenantRoutes(IServiceProvider)
+  isExtensionMethod: true
+  parent: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddServiceProviderToTenantRoutes(IServiceProvider)
+  nameWithType: ServiceCollectionExtensions.AddServiceProviderToTenantRoutes(IServiceProvider)
+  fullName: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes(IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Tenant/Extensions/ServiceCollectionExtensions.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AddServiceProviderToTenantRoutes
+    path: Library/R_BlazorFrontEnd.Tenant/Extensions/ServiceCollectionExtensions.cs
+    startLine: 23
+  assemblies:
+  - R_BlazorFrontEnd.Tenant
+  namespace: R_BlazorFrontEnd.Tenant.Extensions
+  summary: "\nAdd the service provider to the route context (required)\n"
+  example: []
+  syntax:
+    content: public static void AddServiceProviderToTenantRoutes(this IServiceProvider serviceProvider)
+    parameters:
+    - id: serviceProvider
+      type: IServiceProvider
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddServiceProviderToTenantRoutes(serviceProvider As IServiceProvider)
+  overload: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorFrontEnd.Tenant.Extensions
+  commentId: N:R_BlazorFrontEnd.Tenant.Extensions
+  name: R_BlazorFrontEnd.Tenant.Extensions
+  nameWithType: R_BlazorFrontEnd.Tenant.Extensions
+  fullName: R_BlazorFrontEnd.Tenant.Extensions
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy
+  name: AddMultiTenantancy
+  nameWithType: ServiceCollectionExtensions.AddMultiTenantancy
+  fullName: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddMultiTenantancy
+- uid: IServiceCollection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: IServiceCollection
+- uid: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes*
+  commentId: Overload:R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes
+  name: AddServiceProviderToTenantRoutes
+  nameWithType: ServiceCollectionExtensions.AddServiceProviderToTenantRoutes
+  fullName: R_BlazorFrontEnd.Tenant.Extensions.ServiceCollectionExtensions.AddServiceProviderToTenantRoutes
+- uid: IServiceProvider
+  commentId: '!:IServiceProvider'
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider

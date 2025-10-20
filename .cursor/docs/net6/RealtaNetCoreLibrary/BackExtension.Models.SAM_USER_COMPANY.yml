@@ -1,0 +1,1128 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.SAM_USER_COMPANY
+  commentId: T:BackExtension.Models.SAM_USER_COMPANY
+  id: SAM_USER_COMPANY
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID
+  - BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY
+  - BackExtension.Models.SAM_USER_COMPANY.CEND_DATE
+  - BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE
+  - BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID
+  - BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY
+  - BackExtension.Models.SAM_USER_COMPANY.CUSER_ID
+  - BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD
+  - BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+  - BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE
+  - BackExtension.Models.SAM_USER_COMPANY.DEND_DATE
+  - BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT
+  - BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+  - BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE
+  - BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE
+  - BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL
+  - BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST
+  - BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION
+  - BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT
+  langs:
+  - csharp
+  - vb
+  name: SAM_USER_COMPANY
+  nameWithType: SAM_USER_COMPANY
+  fullName: BackExtension.Models.SAM_USER_COMPANY
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SAM_USER_COMPANY
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class SAM_USER_COMPANY : object'
+    content.vb: >-
+      Public Class SAM_USER_COMPANY
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.SAM_USER_COMPANY.CUSER_ID
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CUSER_ID
+  id: CUSER_ID
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CUSER_ID
+  nameWithType: SAM_USER_COMPANY.CUSER_ID
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CUSER_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_ID
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CUSER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CUSER_ID As String
+  overload: BackExtension.Models.SAM_USER_COMPANY.CUSER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: SAM_USER_COMPANY.CCOMPANY_ID
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION
+  id: LTIME_LIMITATION
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: LTIME_LIMITATION
+  nameWithType: SAM_USER_COMPANY.LTIME_LIMITATION
+  fullName: BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LTIME_LIMITATION
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool? LTIME_LIMITATION { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property LTIME_LIMITATION As Boolean?
+  overload: BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST
+  id: LENABLE_BROADCAST
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: LENABLE_BROADCAST
+  nameWithType: SAM_USER_COMPANY.LENABLE_BROADCAST
+  fullName: BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LENABLE_BROADCAST
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LENABLE_BROADCAST { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LENABLE_BROADCAST As Boolean
+  overload: BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE
+  id: CSTART_DATE
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CSTART_DATE
+  nameWithType: SAM_USER_COMPANY.CSTART_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CSTART_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 10
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CSTART_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CSTART_DATE As String?
+  overload: BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.CEND_DATE
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CEND_DATE
+  id: CEND_DATE
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CEND_DATE
+  nameWithType: SAM_USER_COMPANY.CEND_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CEND_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CEND_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 11
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CEND_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CEND_DATE As String?
+  overload: BackExtension.Models.SAM_USER_COMPANY.CEND_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE
+  id: DSTART_DATE
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: DSTART_DATE
+  nameWithType: SAM_USER_COMPANY.DSTART_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DSTART_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 12
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DSTART_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DSTART_DATE As DateTime?
+  overload: BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.DEND_DATE
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.DEND_DATE
+  id: DEND_DATE
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: DEND_DATE
+  nameWithType: SAM_USER_COMPANY.DEND_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DEND_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DEND_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 13
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DEND_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DEND_DATE As DateTime?
+  overload: BackExtension.Models.SAM_USER_COMPANY.DEND_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL
+  id: IUSER_LEVEL
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: IUSER_LEVEL
+  nameWithType: SAM_USER_COMPANY.IUSER_LEVEL
+  fullName: BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IUSER_LEVEL
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 14
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? IUSER_LEVEL { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property IUSER_LEVEL As Integer?
+  overload: BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+  id: DLAST_UPDATE_PSWD
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: DLAST_UPDATE_PSWD
+  nameWithType: SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DLAST_UPDATE_PSWD
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 15
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DLAST_UPDATE_PSWD { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DLAST_UPDATE_PSWD As DateTime?
+  overload: BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+  id: DACCOUNT_LOCKOUT
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: DACCOUNT_LOCKOUT
+  nameWithType: SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DACCOUNT_LOCKOUT
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 16
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DACCOUNT_LOCKOUT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DACCOUNT_LOCKOUT As DateTime?
+  overload: BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT
+  id: DFAILED_ATTEMPT
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: DFAILED_ATTEMPT
+  nameWithType: SAM_USER_COMPANY.DFAILED_ATTEMPT
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DFAILED_ATTEMPT
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 17
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DFAILED_ATTEMPT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DFAILED_ATTEMPT As DateTime?
+  overload: BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT
+  id: NFAILED_ATTEMPT
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: NFAILED_ATTEMPT
+  nameWithType: SAM_USER_COMPANY.NFAILED_ATTEMPT
+  fullName: BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NFAILED_ATTEMPT
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 18
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int? NFAILED_ATTEMPT { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property NFAILED_ATTEMPT As Integer?
+  overload: BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD
+  id: CUSER_PASSWORD
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CUSER_PASSWORD
+  nameWithType: SAM_USER_COMPANY.CUSER_PASSWORD
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUSER_PASSWORD
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 19
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CUSER_PASSWORD { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CUSER_PASSWORD As String?
+  overload: BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY
+  id: CUPDATE_BY
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CUPDATE_BY
+  nameWithType: SAM_USER_COMPANY.CUPDATE_BY
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CUPDATE_BY
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 20
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CUPDATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CUPDATE_BY As String?
+  overload: BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE
+  id: DUPDATE_DATE
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: DUPDATE_DATE
+  nameWithType: SAM_USER_COMPANY.DUPDATE_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DUPDATE_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 21
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DUPDATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DUPDATE_DATE As DateTime?
+  overload: BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY
+  id: CCREATE_BY
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CCREATE_BY
+  nameWithType: SAM_USER_COMPANY.CCREATE_BY
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCREATE_BY
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 22
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CCREATE_BY { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CCREATE_BY As String?
+  overload: BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE
+  id: DCREATE_DATE
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: DCREATE_DATE
+  nameWithType: SAM_USER_COMPANY.DCREATE_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DCREATE_DATE
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 23
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public DateTime? DCREATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{DateTime}
+    content.vb: Public Property DCREATE_DATE As DateTime?
+  overload: BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID
+  commentId: P:BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID
+  id: CTOKEN_ID
+  parent: BackExtension.Models.SAM_USER_COMPANY
+  langs:
+  - csharp
+  - vb
+  name: CTOKEN_ID
+  nameWithType: SAM_USER_COMPANY.CTOKEN_ID
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CTOKEN_ID
+    path: Library Back/BackExtension/Models/SAM_USER_COMPANY.cs
+    startLine: 24
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string? CTOKEN_ID { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Property CTOKEN_ID As String?
+  overload: BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.SAM_USER_COMPANY.CUSER_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CUSER_ID
+  name: CUSER_ID
+  nameWithType: SAM_USER_COMPANY.CUSER_ID
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CUSER_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: SAM_USER_COMPANY.CCOMPANY_ID
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CCOMPANY_ID
+- uid: BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION
+  name: LTIME_LIMITATION
+  nameWithType: SAM_USER_COMPANY.LTIME_LIMITATION
+  fullName: BackExtension.Models.SAM_USER_COMPANY.LTIME_LIMITATION
+- uid: System.Nullable{System.Boolean}
+  commentId: '!:System.Nullable{System.Boolean}'
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST
+  name: LENABLE_BROADCAST
+  nameWithType: SAM_USER_COMPANY.LENABLE_BROADCAST
+  fullName: BackExtension.Models.SAM_USER_COMPANY.LENABLE_BROADCAST
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE
+  name: CSTART_DATE
+  nameWithType: SAM_USER_COMPANY.CSTART_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CSTART_DATE
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_COMPANY.CEND_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CEND_DATE
+  name: CEND_DATE
+  nameWithType: SAM_USER_COMPANY.CEND_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CEND_DATE
+- uid: BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE
+  name: DSTART_DATE
+  nameWithType: SAM_USER_COMPANY.DSTART_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DSTART_DATE
+- uid: System.Nullable{DateTime}
+  commentId: '!:System.Nullable{DateTime}'
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_COMPANY.DEND_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.DEND_DATE
+  name: DEND_DATE
+  nameWithType: SAM_USER_COMPANY.DEND_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DEND_DATE
+- uid: BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL
+  name: IUSER_LEVEL
+  nameWithType: SAM_USER_COMPANY.IUSER_LEVEL
+  fullName: BackExtension.Models.SAM_USER_COMPANY.IUSER_LEVEL
+- uid: System.Nullable{System.Int32}
+  commentId: '!:System.Nullable{System.Int32}'
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+  name: DLAST_UPDATE_PSWD
+  nameWithType: SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DLAST_UPDATE_PSWD
+- uid: BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+  name: DACCOUNT_LOCKOUT
+  nameWithType: SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DACCOUNT_LOCKOUT
+- uid: BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT
+  name: DFAILED_ATTEMPT
+  nameWithType: SAM_USER_COMPANY.DFAILED_ATTEMPT
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DFAILED_ATTEMPT
+- uid: BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT
+  name: NFAILED_ATTEMPT
+  nameWithType: SAM_USER_COMPANY.NFAILED_ATTEMPT
+  fullName: BackExtension.Models.SAM_USER_COMPANY.NFAILED_ATTEMPT
+- uid: BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD
+  name: CUSER_PASSWORD
+  nameWithType: SAM_USER_COMPANY.CUSER_PASSWORD
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CUSER_PASSWORD
+- uid: BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY
+  name: CUPDATE_BY
+  nameWithType: SAM_USER_COMPANY.CUPDATE_BY
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CUPDATE_BY
+- uid: BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE
+  name: DUPDATE_DATE
+  nameWithType: SAM_USER_COMPANY.DUPDATE_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DUPDATE_DATE
+- uid: BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY
+  name: CCREATE_BY
+  nameWithType: SAM_USER_COMPANY.CCREATE_BY
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CCREATE_BY
+- uid: BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE
+  name: DCREATE_DATE
+  nameWithType: SAM_USER_COMPANY.DCREATE_DATE
+  fullName: BackExtension.Models.SAM_USER_COMPANY.DCREATE_DATE
+- uid: BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID*
+  commentId: Overload:BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID
+  name: CTOKEN_ID
+  nameWithType: SAM_USER_COMPANY.CTOKEN_ID
+  fullName: BackExtension.Models.SAM_USER_COMPANY.CTOKEN_ID

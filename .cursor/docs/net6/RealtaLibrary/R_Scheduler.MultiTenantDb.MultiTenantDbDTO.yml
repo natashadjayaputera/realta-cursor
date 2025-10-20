@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+  commentId: T:R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+  id: MultiTenantDbDTO
+  parent: R_Scheduler.MultiTenantDb
+  children:
+  - R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME
+  - R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING
+  - R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD
+  - R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantDbDTO
+  nameWithType: MultiTenantDbDTO
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantDbDTO
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+    startLine: 3
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: 'public class MultiTenantDbDTO : object'
+    content.vb: >-
+      Public Class MultiTenantDbDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME
+  commentId: P:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME
+  id: CCONNECTION_NAME
+  parent: R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+  langs:
+  - csharp
+  - vb
+  name: CCONNECTION_NAME
+  nameWithType: MultiTenantDbDTO.CCONNECTION_NAME
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCONNECTION_NAME
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+    startLine: 5
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public string CCONNECTION_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCONNECTION_NAME As String
+  overload: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING
+  commentId: P:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING
+  id: CCONNECTIONSTRING
+  parent: R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+  langs:
+  - csharp
+  - vb
+  name: CCONNECTIONSTRING
+  nameWithType: MultiTenantDbDTO.CCONNECTIONSTRING
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCONNECTIONSTRING
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+    startLine: 6
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public string CCONNECTIONSTRING { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCONNECTIONSTRING As String
+  overload: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME
+  commentId: P:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME
+  id: CPROVIDER_NAME
+  parent: R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+  langs:
+  - csharp
+  - vb
+  name: CPROVIDER_NAME
+  nameWithType: MultiTenantDbDTO.CPROVIDER_NAME
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CPROVIDER_NAME
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+    startLine: 7
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public string CPROVIDER_NAME { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CPROVIDER_NAME As String
+  overload: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD
+  commentId: P:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD
+  id: CKEYWORD_FOR_PASSWORD
+  parent: R_Scheduler.MultiTenantDb.MultiTenantDbDTO
+  langs:
+  - csharp
+  - vb
+  name: CKEYWORD_FOR_PASSWORD
+  nameWithType: MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CKEYWORD_FOR_PASSWORD
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantDbDTO.cs
+    startLine: 8
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public string CKEYWORD_FOR_PASSWORD { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CKEYWORD_FOR_PASSWORD As String
+  overload: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_Scheduler.MultiTenantDb
+  commentId: N:R_Scheduler.MultiTenantDb
+  name: R_Scheduler.MultiTenantDb
+  nameWithType: R_Scheduler.MultiTenantDb
+  fullName: R_Scheduler.MultiTenantDb
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME
+  name: CCONNECTION_NAME
+  nameWithType: MultiTenantDbDTO.CCONNECTION_NAME
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTION_NAME
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING
+  name: CCONNECTIONSTRING
+  nameWithType: MultiTenantDbDTO.CCONNECTIONSTRING
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CCONNECTIONSTRING
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME
+  name: CPROVIDER_NAME
+  nameWithType: MultiTenantDbDTO.CPROVIDER_NAME
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CPROVIDER_NAME
+- uid: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD
+  name: CKEYWORD_FOR_PASSWORD
+  nameWithType: MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantDbDTO.CKEYWORD_FOR_PASSWORD

@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn
+  commentId: T:R_CommonFrontBackAPI.R_MonitoringReturn
+  id: R_MonitoringReturn
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_MonitoringReturn.IStep
+  - R_CommonFrontBackAPI.R_MonitoringReturn.lFinish
+  - R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus
+  langs:
+  - csharp
+  - vb
+  name: R_MonitoringReturn
+  nameWithType: R_MonitoringReturn
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_MonitoringReturn
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+    startLine: 2
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_MonitoringReturn : object'
+    content.vb: >-
+      Public Class R_MonitoringReturn
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn.IStep
+  commentId: P:R_CommonFrontBackAPI.R_MonitoringReturn.IStep
+  id: IStep
+  parent: R_CommonFrontBackAPI.R_MonitoringReturn
+  langs:
+  - csharp
+  - vb
+  name: IStep
+  nameWithType: R_MonitoringReturn.IStep
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn.IStep
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: IStep
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public int IStep { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IStep As Integer
+  overload: R_CommonFrontBackAPI.R_MonitoringReturn.IStep*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn.lFinish
+  commentId: P:R_CommonFrontBackAPI.R_MonitoringReturn.lFinish
+  id: lFinish
+  parent: R_CommonFrontBackAPI.R_MonitoringReturn
+  langs:
+  - csharp
+  - vb
+  name: lFinish
+  nameWithType: R_MonitoringReturn.lFinish
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn.lFinish
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: lFinish
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public int lFinish { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property lFinish As Integer
+  overload: R_CommonFrontBackAPI.R_MonitoringReturn.lFinish*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus
+  commentId: P:R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus
+  id: ProcessStatus
+  parent: R_CommonFrontBackAPI.R_MonitoringReturn
+  langs:
+  - csharp
+  - vb
+  name: ProcessStatus
+  nameWithType: R_MonitoringReturn.ProcessStatus
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ProcessStatus
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/Monitoring/R_MonitoringReturn.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string ProcessStatus { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProcessStatus As String
+  overload: R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn.IStep*
+  commentId: Overload:R_CommonFrontBackAPI.R_MonitoringReturn.IStep
+  name: IStep
+  nameWithType: R_MonitoringReturn.IStep
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn.IStep
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn.lFinish*
+  commentId: Overload:R_CommonFrontBackAPI.R_MonitoringReturn.lFinish
+  name: lFinish
+  nameWithType: R_MonitoringReturn.lFinish
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn.lFinish
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus*
+  commentId: Overload:R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus
+  name: ProcessStatus
+  nameWithType: R_MonitoringReturn.ProcessStatus
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn.ProcessStatus
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

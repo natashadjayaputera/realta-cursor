@@ -1,0 +1,292 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.CloudStorageJobConst
+  commentId: T:CloudStorageJob.CloudStorageJobConst
+  id: CloudStorageJobConst
+  parent: CloudStorageJob
+  children:
+  - CloudStorageJob.CloudStorageJobConst.COMPANY_ID
+  - CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_AZURE
+  - CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_GOOGLE
+  - CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_AZURE
+  - CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+  - CloudStorageJob.CloudStorageJobConst.RECORD_PER_PROCESS
+  - CloudStorageJob.CloudStorageJobConst.SETTING_NAME
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageJobConst
+  nameWithType: CloudStorageJobConst
+  fullName: CloudStorageJob.CloudStorageJobConst
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageJobConst
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 4
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class CloudStorageJobConst : R_SchedulerSettingConstant'
+    content.vb: >-
+      Public Class CloudStorageJobConst
+          Inherits R_SchedulerSettingConstant
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CloudStorageJob.CloudStorageJobConst.SETTING_NAME
+  commentId: F:CloudStorageJob.CloudStorageJobConst.SETTING_NAME
+  id: SETTING_NAME
+  parent: CloudStorageJob.CloudStorageJobConst
+  langs:
+  - csharp
+  - vb
+  name: SETTING_NAME
+  nameWithType: CloudStorageJobConst.SETTING_NAME
+  fullName: CloudStorageJob.CloudStorageJobConst.SETTING_NAME
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SETTING_NAME
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 6
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public const string SETTING_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const SETTING_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CloudStorageJob.CloudStorageJobConst.COMPANY_ID
+  commentId: F:CloudStorageJob.CloudStorageJobConst.COMPANY_ID
+  id: COMPANY_ID
+  parent: CloudStorageJob.CloudStorageJobConst
+  langs:
+  - csharp
+  - vb
+  name: COMPANY_ID
+  nameWithType: CloudStorageJobConst.COMPANY_ID
+  fullName: CloudStorageJob.CloudStorageJobConst.COMPANY_ID
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: COMPANY_ID
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 7
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public const string COMPANY_ID = null
+    return:
+      type: System.String
+    content.vb: Public Const COMPANY_ID As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CloudStorageJob.CloudStorageJobConst.RECORD_PER_PROCESS
+  commentId: F:CloudStorageJob.CloudStorageJobConst.RECORD_PER_PROCESS
+  id: RECORD_PER_PROCESS
+  parent: CloudStorageJob.CloudStorageJobConst
+  langs:
+  - csharp
+  - vb
+  name: RECORD_PER_PROCESS
+  nameWithType: CloudStorageJobConst.RECORD_PER_PROCESS
+  fullName: CloudStorageJob.CloudStorageJobConst.RECORD_PER_PROCESS
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: RECORD_PER_PROCESS
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 8
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public const string RECORD_PER_PROCESS = null
+    return:
+      type: System.String
+    content.vb: Public Const RECORD_PER_PROCESS As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_AZURE
+  commentId: F:CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_AZURE
+  id: CREDENTIAL_BASE64_FOR_AZURE
+  parent: CloudStorageJob.CloudStorageJobConst
+  langs:
+  - csharp
+  - vb
+  name: CREDENTIAL_BASE64_FOR_AZURE
+  nameWithType: CloudStorageJobConst.CREDENTIAL_BASE64_FOR_AZURE
+  fullName: CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_AZURE
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CREDENTIAL_BASE64_FOR_AZURE
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 9
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public const string CREDENTIAL_BASE64_FOR_AZURE = null
+    return:
+      type: System.String
+    content.vb: Public Const CREDENTIAL_BASE64_FOR_AZURE As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_GOOGLE
+  commentId: F:CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_GOOGLE
+  id: CREDENTIAL_BASE64_FOR_GOOGLE
+  parent: CloudStorageJob.CloudStorageJobConst
+  langs:
+  - csharp
+  - vb
+  name: CREDENTIAL_BASE64_FOR_GOOGLE
+  nameWithType: CloudStorageJobConst.CREDENTIAL_BASE64_FOR_GOOGLE
+  fullName: CloudStorageJob.CloudStorageJobConst.CREDENTIAL_BASE64_FOR_GOOGLE
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CREDENTIAL_BASE64_FOR_GOOGLE
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 10
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public const string CREDENTIAL_BASE64_FOR_GOOGLE = null
+    return:
+      type: System.String
+    content.vb: Public Const CREDENTIAL_BASE64_FOR_GOOGLE As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_AZURE
+  commentId: F:CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_AZURE
+  id: ENABLE_PRIVATE_ACCESS_FOR_AZURE
+  parent: CloudStorageJob.CloudStorageJobConst
+  langs:
+  - csharp
+  - vb
+  name: ENABLE_PRIVATE_ACCESS_FOR_AZURE
+  nameWithType: CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_AZURE
+  fullName: CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_AZURE
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ENABLE_PRIVATE_ACCESS_FOR_AZURE
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 11
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public const string ENABLE_PRIVATE_ACCESS_FOR_AZURE = null
+    return:
+      type: System.String
+    content.vb: Public Const ENABLE_PRIVATE_ACCESS_FOR_AZURE As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+  commentId: F:CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+  id: ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+  parent: CloudStorageJob.CloudStorageJobConst
+  langs:
+  - csharp
+  - vb
+  name: ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+  nameWithType: CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+  fullName: CloudStorageJob.CloudStorageJobConst.ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+  type: Field
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ENABLE_PRIVATE_ACCESS_FOR_GOOGLE
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobConst.cs
+    startLine: 12
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public const string ENABLE_PRIVATE_ACCESS_FOR_GOOGLE = null
+    return:
+      type: System.String
+    content.vb: Public Const ENABLE_PRIVATE_ACCESS_FOR_GOOGLE As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

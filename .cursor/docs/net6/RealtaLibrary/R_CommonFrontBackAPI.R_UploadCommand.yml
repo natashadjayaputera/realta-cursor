@@ -1,0 +1,356 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_UploadCommand
+  commentId: T:R_CommonFrontBackAPI.R_UploadCommand
+  id: R_UploadCommand
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_UploadCommand.ClassName
+  - R_CommonFrontBackAPI.R_UploadCommand.File
+  - R_CommonFrontBackAPI.R_UploadCommand.Key
+  - R_CommonFrontBackAPI.R_UploadCommand.UploadType
+  - R_CommonFrontBackAPI.R_UploadCommand.UserParameters
+  langs:
+  - csharp
+  - vb
+  name: R_UploadCommand
+  nameWithType: R_UploadCommand
+  fullName: R_CommonFrontBackAPI.R_UploadCommand
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_UploadCommand
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_UploadCommand : object'
+    content.vb: >-
+      Public Class R_UploadCommand
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_UploadCommand.Key
+  commentId: P:R_CommonFrontBackAPI.R_UploadCommand.Key
+  id: Key
+  parent: R_CommonFrontBackAPI.R_UploadCommand
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: R_UploadCommand.Key
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.Key
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Key
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public R_UploadAndProcessKey Key { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_UploadAndProcessKey
+    content.vb: Public Property Key As R_UploadAndProcessKey
+  overload: R_CommonFrontBackAPI.R_UploadCommand.Key*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_UploadCommand.File
+  commentId: P:R_CommonFrontBackAPI.R_UploadCommand.File
+  id: File
+  parent: R_CommonFrontBackAPI.R_UploadCommand
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: R_UploadCommand.File
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.File
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: File
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public R_File File { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_File
+    content.vb: Public Property File As R_File
+  overload: R_CommonFrontBackAPI.R_UploadCommand.File*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_UploadCommand.UploadType
+  commentId: P:R_CommonFrontBackAPI.R_UploadCommand.UploadType
+  id: UploadType
+  parent: R_CommonFrontBackAPI.R_UploadCommand
+  langs:
+  - csharp
+  - vb
+  name: UploadType
+  nameWithType: R_UploadCommand.UploadType
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.UploadType
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: UploadType
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public eUploadType UploadType { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.eUploadType
+    content.vb: Public Property UploadType As eUploadType
+  overload: R_CommonFrontBackAPI.R_UploadCommand.UploadType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_UploadCommand.ClassName
+  commentId: P:R_CommonFrontBackAPI.R_UploadCommand.ClassName
+  id: ClassName
+  parent: R_CommonFrontBackAPI.R_UploadCommand
+  langs:
+  - csharp
+  - vb
+  name: ClassName
+  nameWithType: R_UploadCommand.ClassName
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.ClassName
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ClassName
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+    startLine: 11
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string ClassName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClassName As String
+  overload: R_CommonFrontBackAPI.R_UploadCommand.ClassName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_UploadCommand.UserParameters
+  commentId: P:R_CommonFrontBackAPI.R_UploadCommand.UserParameters
+  id: UserParameters
+  parent: R_CommonFrontBackAPI.R_UploadCommand
+  langs:
+  - csharp
+  - vb
+  name: UserParameters
+  nameWithType: R_UploadCommand.UserParameters
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.UserParameters
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: UserParameters
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadCommand.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public List<R_KeyValue> UserParameters { get; set; }
+    parameters: []
+    return:
+      type: List{R_CommonFrontBackAPI.R_KeyValue}
+    content.vb: Public Property UserParameters As List(Of R_KeyValue)
+  overload: R_CommonFrontBackAPI.R_UploadCommand.UserParameters*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_UploadCommand.Key*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadCommand.Key
+  name: Key
+  nameWithType: R_UploadCommand.Key
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.Key
+- uid: R_CommonFrontBackAPI.R_UploadAndProcessKey
+  commentId: T:R_CommonFrontBackAPI.R_UploadAndProcessKey
+  parent: R_CommonFrontBackAPI
+  name: R_UploadAndProcessKey
+  nameWithType: R_UploadAndProcessKey
+  fullName: R_CommonFrontBackAPI.R_UploadAndProcessKey
+- uid: R_CommonFrontBackAPI.R_UploadCommand.File*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadCommand.File
+  name: File
+  nameWithType: R_UploadCommand.File
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.File
+- uid: R_CommonFrontBackAPI.R_File
+  commentId: T:R_CommonFrontBackAPI.R_File
+  parent: R_CommonFrontBackAPI
+  name: R_File
+  nameWithType: R_File
+  fullName: R_CommonFrontBackAPI.R_File
+- uid: R_CommonFrontBackAPI.R_UploadCommand.UploadType*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadCommand.UploadType
+  name: UploadType
+  nameWithType: R_UploadCommand.UploadType
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.UploadType
+- uid: R_CommonFrontBackAPI.eUploadType
+  commentId: T:R_CommonFrontBackAPI.eUploadType
+  parent: R_CommonFrontBackAPI
+  name: eUploadType
+  nameWithType: eUploadType
+  fullName: R_CommonFrontBackAPI.eUploadType
+- uid: R_CommonFrontBackAPI.R_UploadCommand.ClassName*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadCommand.ClassName
+  name: ClassName
+  nameWithType: R_UploadCommand.ClassName
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.ClassName
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_UploadCommand.UserParameters*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadCommand.UserParameters
+  name: UserParameters
+  nameWithType: R_UploadCommand.UserParameters
+  fullName: R_CommonFrontBackAPI.R_UploadCommand.UserParameters
+- uid: List{R_CommonFrontBackAPI.R_KeyValue}
+  commentId: '!:List{R_CommonFrontBackAPI.R_KeyValue}'
+  definition: List`1
+  name: List<R_KeyValue>
+  nameWithType: List<R_KeyValue>
+  fullName: List<R_CommonFrontBackAPI.R_KeyValue>
+  nameWithType.vb: List(Of R_KeyValue)
+  fullName.vb: List(Of R_CommonFrontBackAPI.R_KeyValue)
+  name.vb: List(Of R_KeyValue)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_KeyValue
+    name: R_KeyValue
+    nameWithType: R_KeyValue
+    fullName: R_CommonFrontBackAPI.R_KeyValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_KeyValue
+    name: R_KeyValue
+    nameWithType: R_KeyValue
+    fullName: R_CommonFrontBackAPI.R_KeyValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

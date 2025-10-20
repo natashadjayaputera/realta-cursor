@@ -1,0 +1,544 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  id: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.eCRUDMode
+  - R_CommonFrontBackAPI.eCulture
+  - R_CommonFrontBackAPI.eProcessResultMode
+  - R_CommonFrontBackAPI.eUploadType
+  - R_CommonFrontBackAPI.R_CommonConstant
+  - R_CommonFrontBackAPI.R_ConfigurationUtility
+  - R_CommonFrontBackAPI.R_Culture
+  - R_CommonFrontBackAPI.R_DownloadFileResultDTO
+  - R_CommonFrontBackAPI.R_EmailEngineBackFile
+  - R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  - R_CommonFrontBackAPI.R_EmailEngineDataPar
+  - R_CommonFrontBackAPI.R_EmailEngineKey
+  - R_CommonFrontBackAPI.R_EmailEngineMessage
+  - R_CommonFrontBackAPI.R_ErrorStatusReturn
+  - R_CommonFrontBackAPI.R_File
+  - R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+  - R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+  - R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+  - R_CommonFrontBackAPI.R_IServiceEmailEngine
+  - R_CommonFrontBackAPI.R_IServiceLocking
+  - R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  - R_CommonFrontBackAPI.R_KeyValue
+  - R_CommonFrontBackAPI.R_MonitoringReturn
+  - R_CommonFrontBackAPI.R_NameValue
+  - R_CommonFrontBackAPI.R_NetCoreUtility
+  - R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+  - R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  - R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+  - R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  - R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+  - R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  - R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+  - R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  - R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  - R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  - R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  - R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+  - R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  - R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  - R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  - R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  - R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  - R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+  - R_CommonFrontBackAPI.R_UploadAndProcessKey
+  - R_CommonFrontBackAPI.R_UploadCommand
+  - R_CommonFrontBackAPI.R_UploadData
+  langs:
+  - csharp
+  - vb
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+  type: Namespace
+  assemblies:
+  - R_CommonFrontBackAPI
+references:
+- uid: R_CommonFrontBackAPI.eCulture
+  commentId: T:R_CommonFrontBackAPI.eCulture
+  parent: R_CommonFrontBackAPI
+  name: eCulture
+  nameWithType: eCulture
+  fullName: R_CommonFrontBackAPI.eCulture
+- uid: R_CommonFrontBackAPI.eCRUDMode
+  commentId: T:R_CommonFrontBackAPI.eCRUDMode
+  parent: R_CommonFrontBackAPI
+  name: eCRUDMode
+  nameWithType: eCRUDMode
+  fullName: R_CommonFrontBackAPI.eCRUDMode
+- uid: R_CommonFrontBackAPI.R_CommonConstant
+  commentId: T:R_CommonFrontBackAPI.R_CommonConstant
+  name: R_CommonConstant
+  nameWithType: R_CommonConstant
+  fullName: R_CommonFrontBackAPI.R_CommonConstant
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility
+  commentId: T:R_CommonFrontBackAPI.R_ConfigurationUtility
+  name: R_ConfigurationUtility
+  nameWithType: R_ConfigurationUtility
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility
+- uid: R_CommonFrontBackAPI.R_Culture
+  commentId: T:R_CommonFrontBackAPI.R_Culture
+  name: R_Culture
+  nameWithType: R_Culture
+  fullName: R_CommonFrontBackAPI.R_Culture
+- uid: R_CommonFrontBackAPI.R_DownloadFileResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_DownloadFileResultDTO
+  name: R_DownloadFileResultDTO
+  nameWithType: R_DownloadFileResultDTO
+  fullName: R_CommonFrontBackAPI.R_DownloadFileResultDTO
+- uid: R_CommonFrontBackAPI.R_NameValue
+  commentId: T:R_CommonFrontBackAPI.R_NameValue
+  name: R_NameValue
+  nameWithType: R_NameValue
+  fullName: R_CommonFrontBackAPI.R_NameValue
+- uid: R_CommonFrontBackAPI.R_NetCoreUtility
+  commentId: T:R_CommonFrontBackAPI.R_NetCoreUtility
+  name: R_NetCoreUtility
+  nameWithType: R_NetCoreUtility
+  fullName: R_CommonFrontBackAPI.R_NetCoreUtility
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+  name: R_ServiceDeleteParameterDTO<E>
+  nameWithType: R_ServiceDeleteParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO<E>
+  nameWithType.vb: R_ServiceDeleteParameterDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO(Of E)
+  name.vb: R_ServiceDeleteParameterDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO`1
+    name: R_ServiceDeleteParameterDTO
+    nameWithType: R_ServiceDeleteParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceDeleteParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceDeleteResultDTO
+  nameWithType: R_ServiceDeleteResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteResultDTO
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+  name: R_ServiceGetRecordParameterDTO<E>
+  nameWithType: R_ServiceGetRecordParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO<E>
+  nameWithType.vb: R_ServiceGetRecordParameterDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO(Of E)
+  name.vb: R_ServiceGetRecordParameterDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO`1
+    name: R_ServiceGetRecordParameterDTO
+    nameWithType: R_ServiceGetRecordParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+  name: R_ServiceGetRecordResultDTO<E>
+  nameWithType: R_ServiceGetRecordResultDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO<E>
+  nameWithType.vb: R_ServiceGetRecordResultDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO(Of E)
+  name.vb: R_ServiceGetRecordResultDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO`1
+    name: R_ServiceGetRecordResultDTO
+    nameWithType: R_ServiceGetRecordResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceGetRecordResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+  name: R_ServiceSaveParameterDTO<E>
+  nameWithType: R_ServiceSaveParameterDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO<E>
+  nameWithType.vb: R_ServiceSaveParameterDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO(Of E)
+  name.vb: R_ServiceSaveParameterDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO`1
+    name: R_ServiceSaveParameterDTO
+    nameWithType: R_ServiceSaveParameterDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveParameterDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  name: R_ServiceSaveResultDTO<E>
+  nameWithType: R_ServiceSaveResultDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO<E>
+  nameWithType.vb: R_ServiceSaveResultDTO(Of E)
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveResultDTO(Of E)
+  name.vb: R_ServiceSaveResultDTO(Of E)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+    name: R_ServiceSaveResultDTO
+    nameWithType: R_ServiceSaveResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+  commentId: T:R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+  name: R_IServiceCRUDAsyncBase<EntityDTO>
+  nameWithType: R_IServiceCRUDAsyncBase<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase<EntityDTO>
+  nameWithType.vb: R_IServiceCRUDAsyncBase(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase(Of EntityDTO)
+  name.vb: R_IServiceCRUDAsyncBase(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+    name: R_IServiceCRUDAsyncBase
+    nameWithType: R_IServiceCRUDAsyncBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase`1
+    name: R_IServiceCRUDAsyncBase
+    nameWithType: R_IServiceCRUDAsyncBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDAsyncBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+  commentId: T:R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+  name: R_IServiceCRUDBase<EntityDTO>
+  nameWithType: R_IServiceCRUDBase<EntityDTO>
+  fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase<EntityDTO>
+  nameWithType.vb: R_IServiceCRUDBase(Of EntityDTO)
+  fullName.vb: R_CommonFrontBackAPI.R_IServiceCRUDBase(Of EntityDTO)
+  name.vb: R_IServiceCRUDBase(Of EntityDTO)
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+    name: R_IServiceCRUDBase
+    nameWithType: R_IServiceCRUDBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_IServiceCRUDBase`1
+    name: R_IServiceCRUDBase
+    nameWithType: R_IServiceCRUDBase
+    fullName: R_CommonFrontBackAPI.R_IServiceCRUDBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: EntityDTO
+    nameWithType: EntityDTO
+    fullName: EntityDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI.R_EmailEngineBackFile
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineBackFile
+  name: R_EmailEngineBackFile
+  nameWithType: R_EmailEngineBackFile
+  fullName: R_CommonFrontBackAPI.R_EmailEngineBackFile
+- uid: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineCommandPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineCommandPar
+  nameWithType: R_EmailEngineCommandPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineCommandPar
+- uid: R_CommonFrontBackAPI.R_EmailEngineDataPar
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineDataPar
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineDataPar
+  nameWithType: R_EmailEngineDataPar
+  fullName: R_CommonFrontBackAPI.R_EmailEngineDataPar
+- uid: R_CommonFrontBackAPI.R_EmailEngineKey
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineKey
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineKey
+  nameWithType: R_EmailEngineKey
+  fullName: R_CommonFrontBackAPI.R_EmailEngineKey
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineMessage
+  parent: R_CommonFrontBackAPI
+  name: R_EmailEngineMessage
+  nameWithType: R_EmailEngineMessage
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceEmailEngineLoadDataResultDTO
+  nameWithType: R_ServiceEmailEngineLoadDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineLoadDataResultDTO
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceEmailEngineProcessDataResultDTO
+  nameWithType: R_ServiceEmailEngineProcessDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataResultDTO
+- uid: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+  commentId: T:R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceEmailEngineProcessDataData
+  nameWithType: R_ServiceEmailEngineProcessDataData
+  fullName: R_CommonFrontBackAPI.R_ServiceEmailEngineProcessDataData
+- uid: R_CommonFrontBackAPI.R_IServiceEmailEngine
+  commentId: T:R_CommonFrontBackAPI.R_IServiceEmailEngine
+  parent: R_CommonFrontBackAPI
+  name: R_IServiceEmailEngine
+  nameWithType: R_IServiceEmailEngine
+  fullName: R_CommonFrontBackAPI.R_IServiceEmailEngine
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceLockingGeneralResultDTO
+  nameWithType: R_ServiceLockingGeneralResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceLockingGeneralResultData
+  nameWithType: R_ServiceLockingGeneralResultData
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+- uid: R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceLockingLockParameterDTO
+  nameWithType: R_ServiceLockingLockParameterDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceLockingUnLockParameterDTO
+  nameWithType: R_ServiceLockingUnLockParameterDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+- uid: R_CommonFrontBackAPI.R_IServiceLocking
+  commentId: T:R_CommonFrontBackAPI.R_IServiceLocking
+  parent: R_CommonFrontBackAPI
+  name: R_IServiceLocking
+  nameWithType: R_IServiceLocking
+  fullName: R_CommonFrontBackAPI.R_IServiceLocking
+- uid: R_CommonFrontBackAPI.R_File
+  commentId: T:R_CommonFrontBackAPI.R_File
+  parent: R_CommonFrontBackAPI
+  name: R_File
+  nameWithType: R_File
+  fullName: R_CommonFrontBackAPI.R_File
+- uid: R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceDeleteUploadResultDTO
+  nameWithType: R_ServiceDeleteUploadResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceDeleteUploadResultDTO
+- uid: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceProcessDataResultDTO
+  nameWithType: R_ServiceProcessDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceProcessDataResultDTO
+- uid: R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceUploadDataResultDTO
+  nameWithType: R_ServiceUploadDataResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceUploadDataResultDTO
+- uid: R_CommonFrontBackAPI.R_KeyValue
+  commentId: T:R_CommonFrontBackAPI.R_KeyValue
+  name: R_KeyValue
+  nameWithType: R_KeyValue
+  fullName: R_CommonFrontBackAPI.R_KeyValue
+- uid: R_CommonFrontBackAPI.eUploadType
+  commentId: T:R_CommonFrontBackAPI.eUploadType
+  parent: R_CommonFrontBackAPI
+  name: eUploadType
+  nameWithType: eUploadType
+  fullName: R_CommonFrontBackAPI.eUploadType
+- uid: R_CommonFrontBackAPI.eProcessResultMode
+  commentId: T:R_CommonFrontBackAPI.eProcessResultMode
+  parent: R_CommonFrontBackAPI
+  name: eProcessResultMode
+  nameWithType: eProcessResultMode
+  fullName: R_CommonFrontBackAPI.eProcessResultMode
+- uid: R_CommonFrontBackAPI.R_UploadAndProcessKey
+  commentId: T:R_CommonFrontBackAPI.R_UploadAndProcessKey
+  parent: R_CommonFrontBackAPI
+  name: R_UploadAndProcessKey
+  nameWithType: R_UploadAndProcessKey
+  fullName: R_CommonFrontBackAPI.R_UploadAndProcessKey
+- uid: R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+  commentId: T:R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+  parent: R_CommonFrontBackAPI
+  name: R_GetErrorWithMultiLanguageParameter
+  nameWithType: R_GetErrorWithMultiLanguageParameter
+  fullName: R_CommonFrontBackAPI.R_GetErrorWithMultiLanguageParameter
+- uid: R_CommonFrontBackAPI.R_ErrorStatusReturn
+  commentId: T:R_CommonFrontBackAPI.R_ErrorStatusReturn
+  name: R_ErrorStatusReturn
+  nameWithType: R_ErrorStatusReturn
+  fullName: R_CommonFrontBackAPI.R_ErrorStatusReturn
+- uid: R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceGetErrorProcessResultDTO
+  nameWithType: R_ServiceGetErrorProcessResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceGetErrorProcessResultDTO
+- uid: R_CommonFrontBackAPI.R_MonitoringReturn
+  commentId: T:R_CommonFrontBackAPI.R_MonitoringReturn
+  parent: R_CommonFrontBackAPI
+  name: R_MonitoringReturn
+  nameWithType: R_MonitoringReturn
+  fullName: R_CommonFrontBackAPI.R_MonitoringReturn
+- uid: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceMonitoringProcessResultDTO
+  nameWithType: R_ServiceMonitoringProcessResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceMonitoringProcessResultDTO
+- uid: R_CommonFrontBackAPI.R_UploadCommand
+  commentId: T:R_CommonFrontBackAPI.R_UploadCommand
+  parent: R_CommonFrontBackAPI
+  name: R_UploadCommand
+  nameWithType: R_UploadCommand
+  fullName: R_CommonFrontBackAPI.R_UploadCommand
+- uid: R_CommonFrontBackAPI.R_UploadData
+  commentId: T:R_CommonFrontBackAPI.R_UploadData
+  parent: R_CommonFrontBackAPI
+  name: R_UploadData
+  nameWithType: R_UploadData
+  fullName: R_CommonFrontBackAPI.R_UploadData
+- uid: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  commentId: T:R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+  parent: R_CommonFrontBackAPI
+  name: R_IServiceProcessAndUpload
+  nameWithType: R_IServiceProcessAndUpload
+  fullName: R_CommonFrontBackAPI.R_IServiceProcessAndUpload
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI

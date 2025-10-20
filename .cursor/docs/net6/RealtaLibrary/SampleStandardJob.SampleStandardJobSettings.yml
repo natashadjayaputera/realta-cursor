@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.SampleStandardJobSettings
+  commentId: T:SampleStandardJob.SampleStandardJobSettings
+  id: SampleStandardJobSettings
+  parent: SampleStandardJob
+  children:
+  - SampleStandardJob.SampleStandardJobSettings.GetSettings
+  - SampleStandardJob.SampleStandardJobSettings.Settings
+  langs:
+  - csharp
+  - vb
+  name: SampleStandardJobSettings
+  nameWithType: SampleStandardJobSettings
+  fullName: SampleStandardJob.SampleStandardJobSettings
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SampleStandardJobSettings
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSettings.cs
+    startLine: 10
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: 'public class SampleStandardJobSettings : R_SchedulerSettingsDTO'
+    content.vb: >-
+      Public Class SampleStandardJobSettings
+          Inherits R_SchedulerSettingsDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SampleStandardJob.SampleStandardJobSettings.Settings
+  commentId: P:SampleStandardJob.SampleStandardJobSettings.Settings
+  id: Settings
+  parent: SampleStandardJob.SampleStandardJobSettings
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: SampleStandardJobSettings.Settings
+  fullName: SampleStandardJob.SampleStandardJobSettings.Settings
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Settings
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSettings.cs
+    startLine: 12
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public List<SampleStandardJobSetting> Settings { get; set; }
+    parameters: []
+    return:
+      type: List{SampleStandardJob.SampleStandardJobSetting}
+    content.vb: Public Property Settings As List(Of SampleStandardJobSetting)
+  overload: SampleStandardJob.SampleStandardJobSettings.Settings*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SampleStandardJob.SampleStandardJobSettings.GetSettings
+  commentId: M:SampleStandardJob.SampleStandardJobSettings.GetSettings
+  id: GetSettings
+  parent: SampleStandardJob.SampleStandardJobSettings
+  langs:
+  - csharp
+  - vb
+  name: GetSettings()
+  nameWithType: SampleStandardJobSettings.GetSettings()
+  fullName: SampleStandardJob.SampleStandardJobSettings.GetSettings()
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetSettings
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobSettings.cs
+    startLine: 13
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public override IList GetSettings()
+    return:
+      type: IList
+    content.vb: Public Overrides Function GetSettings As IList
+  overload: SampleStandardJob.SampleStandardJobSettings.GetSettings*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: SampleStandardJob
+  commentId: N:SampleStandardJob
+  name: SampleStandardJob
+  nameWithType: SampleStandardJob
+  fullName: SampleStandardJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SampleStandardJob.SampleStandardJobSettings.Settings*
+  commentId: Overload:SampleStandardJob.SampleStandardJobSettings.Settings
+  name: Settings
+  nameWithType: SampleStandardJobSettings.Settings
+  fullName: SampleStandardJob.SampleStandardJobSettings.Settings
+- uid: List{SampleStandardJob.SampleStandardJobSetting}
+  commentId: '!:List{SampleStandardJob.SampleStandardJobSetting}'
+  definition: List`1
+  name: List<SampleStandardJobSetting>
+  nameWithType: List<SampleStandardJobSetting>
+  fullName: List<SampleStandardJob.SampleStandardJobSetting>
+  nameWithType.vb: List(Of SampleStandardJobSetting)
+  fullName.vb: List(Of SampleStandardJob.SampleStandardJobSetting)
+  name.vb: List(Of SampleStandardJobSetting)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SampleStandardJob.SampleStandardJobSetting
+    name: SampleStandardJobSetting
+    nameWithType: SampleStandardJobSetting
+    fullName: SampleStandardJob.SampleStandardJobSetting
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SampleStandardJob.SampleStandardJobSetting
+    name: SampleStandardJobSetting
+    nameWithType: SampleStandardJobSetting
+    fullName: SampleStandardJob.SampleStandardJobSetting
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SampleStandardJob.SampleStandardJobSettings.GetSettings*
+  commentId: Overload:SampleStandardJob.SampleStandardJobSettings.GetSettings
+  name: GetSettings
+  nameWithType: SampleStandardJobSettings.GetSettings
+  fullName: SampleStandardJob.SampleStandardJobSettings.GetSettings
+- uid: IList
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: IList

@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_OpenTelemetry.R_LibraryActivity
+  commentId: T:R_OpenTelemetry.R_LibraryActivity
+  id: R_LibraryActivity
+  parent: R_OpenTelemetry
+  children:
+  - R_OpenTelemetry.R_LibraryActivity._Instance
+  - R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource
+  langs:
+  - csharp
+  - vb
+  name: R_LibraryActivity
+  nameWithType: R_LibraryActivity
+  fullName: R_OpenTelemetry.R_LibraryActivity
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_OpenTelemetry/R_LibraryActivity.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_LibraryActivity
+    path: Microservices/R_OpenTelemetry/R_LibraryActivity.cs
+    startLine: 9
+  assemblies:
+  - R_OpenTelemetry
+  namespace: R_OpenTelemetry
+  syntax:
+    content: 'public class R_LibraryActivity : object'
+    content.vb: >-
+      Public Class R_LibraryActivity
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_OpenTelemetry.R_LibraryActivity._Instance
+  commentId: F:R_OpenTelemetry.R_LibraryActivity._Instance
+  id: _Instance
+  parent: R_OpenTelemetry.R_LibraryActivity
+  langs:
+  - csharp
+  - vb
+  name: _Instance
+  nameWithType: R_LibraryActivity._Instance
+  fullName: R_OpenTelemetry.R_LibraryActivity._Instance
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_OpenTelemetry/R_LibraryActivity.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _Instance
+    path: Microservices/R_OpenTelemetry/R_LibraryActivity.cs
+    startLine: 11
+  assemblies:
+  - R_OpenTelemetry
+  namespace: R_OpenTelemetry
+  syntax:
+    content: protected static ActivitySource _Instance
+    return:
+      type: ActivitySource
+    content.vb: Protected Shared _Instance As ActivitySource
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource
+  commentId: M:R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource
+  id: R_GetInstanceActivitySource
+  parent: R_OpenTelemetry.R_LibraryActivity
+  langs:
+  - csharp
+  - vb
+  name: R_GetInstanceActivitySource()
+  nameWithType: R_LibraryActivity.R_GetInstanceActivitySource()
+  fullName: R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_OpenTelemetry/R_LibraryActivity.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetInstanceActivitySource
+    path: Microservices/R_OpenTelemetry/R_LibraryActivity.cs
+    startLine: 12
+  assemblies:
+  - R_OpenTelemetry
+  namespace: R_OpenTelemetry
+  syntax:
+    content: public static ActivitySource R_GetInstanceActivitySource()
+    return:
+      type: ActivitySource
+    content.vb: Public Shared Function R_GetInstanceActivitySource As ActivitySource
+  overload: R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_OpenTelemetry
+  commentId: N:R_OpenTelemetry
+  name: R_OpenTelemetry
+  nameWithType: R_OpenTelemetry
+  fullName: R_OpenTelemetry
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ActivitySource
+  isExternal: true
+  name: ActivitySource
+  nameWithType: ActivitySource
+  fullName: ActivitySource
+- uid: R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource*
+  commentId: Overload:R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource
+  name: R_GetInstanceActivitySource
+  nameWithType: R_LibraryActivity.R_GetInstanceActivitySource
+  fullName: R_OpenTelemetry.R_LibraryActivity.R_GetInstanceActivitySource

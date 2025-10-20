@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.CloudStorageJobLogKeyDTO
+  commentId: T:CloudStorageJob.CloudStorageJobLogKeyDTO
+  id: CloudStorageJobLogKeyDTO
+  parent: CloudStorageJob
+  children:
+  - CloudStorageJob.CloudStorageJobLogKeyDTO.JobName
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageJobLogKeyDTO
+  nameWithType: CloudStorageJobLogKeyDTO
+  fullName: CloudStorageJob.CloudStorageJobLogKeyDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageJobLogKeyDTO
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobLogKeyDTO.cs
+    startLine: 4
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class CloudStorageJobLogKeyDTO : R_NetCoreLogKeyDTO'
+    content.vb: >-
+      Public Class CloudStorageJobLogKeyDTO
+          Inherits R_NetCoreLogKeyDTO
+  inheritance:
+  - System.Object
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  inheritedMembers:
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  - R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CloudStorageJob.CloudStorageJobLogKeyDTO.JobName
+  commentId: P:CloudStorageJob.CloudStorageJobLogKeyDTO.JobName
+  id: JobName
+  parent: CloudStorageJob.CloudStorageJobLogKeyDTO
+  langs:
+  - csharp
+  - vb
+  name: JobName
+  nameWithType: CloudStorageJobLogKeyDTO.JobName
+  fullName: CloudStorageJob.CloudStorageJobLogKeyDTO.JobName
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobLogKeyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: JobName
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobLogKeyDTO.cs
+    startLine: 6
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public string JobName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property JobName As String
+  overload: CloudStorageJob.CloudStorageJobLogKeyDTO.JobName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  commentId: T:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  parent: R_CommonFrontBackAPI.Log
+  name: R_NetCoreLogKeyDTO
+  nameWithType: R_NetCoreLogKeyDTO
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: CORRELATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.CORRELATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.CORRELATION_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: APPLICATION_ID
+  nameWithType: R_NetCoreLogKeyDTO.APPLICATION_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.APPLICATION_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: TENANT_ID
+  nameWithType: R_NetCoreLogKeyDTO.TENANT_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.TENANT_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: COMPANY_ID
+  nameWithType: R_NetCoreLogKeyDTO.COMPANY_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.COMPANY_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: PROGRAM_ID
+  nameWithType: R_NetCoreLogKeyDTO.PROGRAM_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.PROGRAM_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: USER_ID
+  nameWithType: R_NetCoreLogKeyDTO.USER_ID
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_ID
+- uid: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  commentId: P:R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+  parent: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO
+  name: USER_NAME
+  nameWithType: R_NetCoreLogKeyDTO.USER_NAME
+  fullName: R_CommonFrontBackAPI.Log.R_NetCoreLogKeyDTO.USER_NAME
+- uid: R_CommonFrontBackAPI.Log
+  commentId: N:R_CommonFrontBackAPI.Log
+  name: R_CommonFrontBackAPI.Log
+  nameWithType: R_CommonFrontBackAPI.Log
+  fullName: R_CommonFrontBackAPI.Log
+- uid: CloudStorageJob.CloudStorageJobLogKeyDTO.JobName*
+  commentId: Overload:CloudStorageJob.CloudStorageJobLogKeyDTO.JobName
+  name: JobName
+  nameWithType: CloudStorageJobLogKeyDTO.JobName
+  fullName: CloudStorageJob.CloudStorageJobLogKeyDTO.JobName
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,346 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage
+  commentId: T:R_CommonFrontBackAPI.R_EmailEngineMessage
+  id: R_EmailEngineMessage
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC
+  - R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY
+  - R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC
+  - R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM
+  - R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT
+  - R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO
+  - R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML
+  langs:
+  - csharp
+  - vb
+  name: R_EmailEngineMessage
+  nameWithType: R_EmailEngineMessage
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_EmailEngineMessage
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_EmailEngineMessage : object'
+    content.vb: >-
+      Public Class R_EmailEngineMessage
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM
+  id: EMAIL_FROM
+  parent: R_CommonFrontBackAPI.R_EmailEngineMessage
+  langs:
+  - csharp
+  - vb
+  name: EMAIL_FROM
+  nameWithType: R_EmailEngineMessage.EMAIL_FROM
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EMAIL_FROM
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string EMAIL_FROM { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EMAIL_FROM As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO
+  id: EMAIL_TO
+  parent: R_CommonFrontBackAPI.R_EmailEngineMessage
+  langs:
+  - csharp
+  - vb
+  name: EMAIL_TO
+  nameWithType: R_EmailEngineMessage.EMAIL_TO
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EMAIL_TO
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string EMAIL_TO { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EMAIL_TO As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC
+  id: EMAIL_CC
+  parent: R_CommonFrontBackAPI.R_EmailEngineMessage
+  langs:
+  - csharp
+  - vb
+  name: EMAIL_CC
+  nameWithType: R_EmailEngineMessage.EMAIL_CC
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EMAIL_CC
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string EMAIL_CC { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EMAIL_CC As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC
+  id: EMAIL_BCC
+  parent: R_CommonFrontBackAPI.R_EmailEngineMessage
+  langs:
+  - csharp
+  - vb
+  name: EMAIL_BCC
+  nameWithType: R_EmailEngineMessage.EMAIL_BCC
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EMAIL_BCC
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 11
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string EMAIL_BCC { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EMAIL_BCC As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT
+  id: EMAIL_SUBJECT
+  parent: R_CommonFrontBackAPI.R_EmailEngineMessage
+  langs:
+  - csharp
+  - vb
+  name: EMAIL_SUBJECT
+  nameWithType: R_EmailEngineMessage.EMAIL_SUBJECT
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EMAIL_SUBJECT
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string EMAIL_SUBJECT { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EMAIL_SUBJECT As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY
+  id: EMAIL_BODY
+  parent: R_CommonFrontBackAPI.R_EmailEngineMessage
+  langs:
+  - csharp
+  - vb
+  name: EMAIL_BODY
+  nameWithType: R_EmailEngineMessage.EMAIL_BODY
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EMAIL_BODY
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 13
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string EMAIL_BODY { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EMAIL_BODY As String
+  overload: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML
+  commentId: P:R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML
+  id: FLAG_HTML
+  parent: R_CommonFrontBackAPI.R_EmailEngineMessage
+  langs:
+  - csharp
+  - vb
+  name: FLAG_HTML
+  nameWithType: R_EmailEngineMessage.FLAG_HTML
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: FLAG_HTML
+    path: Microservices/R_CommonFrontBackAPI/Service/Email/DTO/R_EmailEngineMessage.cs
+    startLine: 14
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public bool FLAG_HTML { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FLAG_HTML As Boolean
+  overload: R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM
+  name: EMAIL_FROM
+  nameWithType: R_EmailEngineMessage.EMAIL_FROM
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_FROM
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO
+  name: EMAIL_TO
+  nameWithType: R_EmailEngineMessage.EMAIL_TO
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_TO
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC
+  name: EMAIL_CC
+  nameWithType: R_EmailEngineMessage.EMAIL_CC
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_CC
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC
+  name: EMAIL_BCC
+  nameWithType: R_EmailEngineMessage.EMAIL_BCC
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BCC
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT
+  name: EMAIL_SUBJECT
+  nameWithType: R_EmailEngineMessage.EMAIL_SUBJECT
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_SUBJECT
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY
+  name: EMAIL_BODY
+  nameWithType: R_EmailEngineMessage.EMAIL_BODY
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.EMAIL_BODY
+- uid: R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML*
+  commentId: Overload:R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML
+  name: FLAG_HTML
+  nameWithType: R_EmailEngineMessage.FLAG_HTML
+  fullName: R_CommonFrontBackAPI.R_EmailEngineMessage.FLAG_HTML
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

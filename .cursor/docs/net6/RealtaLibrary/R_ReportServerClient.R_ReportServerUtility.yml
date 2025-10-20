@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_ReportServerClient.R_ReportServerUtility
+  commentId: T:R_ReportServerClient.R_ReportServerUtility
+  id: R_ReportServerUtility
+  parent: R_ReportServerClient
+  children:
+  - R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte(HttpClient,System.String,R_GenerateReportParameter)
+  - R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile(HttpClient,System.String,System.String,R_GenerateReportParameter)
+  - R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream(HttpClient,System.String,R_GenerateReportParameter)
+  langs:
+  - csharp
+  - vb
+  name: R_ReportServerUtility
+  nameWithType: R_ReportServerUtility
+  fullName: R_ReportServerClient.R_ReportServerUtility
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ReportServerUtility
+    path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+    startLine: 13
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: 'public class R_ReportServerUtility : object'
+    content.vb: >-
+      Public Class R_ReportServerUtility
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile(HttpClient,System.String,System.String,R_GenerateReportParameter)
+  commentId: M:R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile(HttpClient,System.String,System.String,R_GenerateReportParameter)
+  id: R_GenerateReportFile(HttpClient,System.String,System.String,R_GenerateReportParameter)
+  parent: R_ReportServerClient.R_ReportServerUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GenerateReportFile(HttpClient, String, String, R_GenerateReportParameter)
+  nameWithType: R_ReportServerUtility.R_GenerateReportFile(HttpClient, String, String, R_GenerateReportParameter)
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile(HttpClient, System.String, System.String, R_GenerateReportParameter)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GenerateReportFile
+    path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+    startLine: 15
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public static Task R_GenerateReportFile(HttpClient poHttpClient, string pcReportPath, string pcUrl, R_GenerateReportParameter poReportParameter)
+    parameters:
+    - id: poHttpClient
+      type: HttpClient
+    - id: pcReportPath
+      type: System.String
+    - id: pcUrl
+      type: System.String
+    - id: poReportParameter
+      type: R_GenerateReportParameter
+    return:
+      type: Task
+    content.vb: Public Shared Function R_GenerateReportFile(poHttpClient As HttpClient, pcReportPath As String, pcUrl As String, poReportParameter As R_GenerateReportParameter) As Task
+  overload: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte(HttpClient,System.String,R_GenerateReportParameter)
+  commentId: M:R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte(HttpClient,System.String,R_GenerateReportParameter)
+  id: R_GenerateReportByte(HttpClient,System.String,R_GenerateReportParameter)
+  parent: R_ReportServerClient.R_ReportServerUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GenerateReportByte(HttpClient, String, R_GenerateReportParameter)
+  nameWithType: R_ReportServerUtility.R_GenerateReportByte(HttpClient, String, R_GenerateReportParameter)
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte(HttpClient, System.String, R_GenerateReportParameter)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GenerateReportByte
+    path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+    startLine: 82
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public static Task<byte[]> R_GenerateReportByte(HttpClient poHttpClient, string pcUrl, R_GenerateReportParameter poReportParameter)
+    parameters:
+    - id: poHttpClient
+      type: HttpClient
+    - id: pcUrl
+      type: System.String
+    - id: poReportParameter
+      type: R_GenerateReportParameter
+    return:
+      type: Task{System.Byte[]}
+    content.vb: Public Shared Function R_GenerateReportByte(poHttpClient As HttpClient, pcUrl As String, poReportParameter As R_GenerateReportParameter) As Task(Of Byte())
+  overload: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream(HttpClient,System.String,R_GenerateReportParameter)
+  commentId: M:R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream(HttpClient,System.String,R_GenerateReportParameter)
+  id: R_GenerateReportStream(HttpClient,System.String,R_GenerateReportParameter)
+  parent: R_ReportServerClient.R_ReportServerUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GenerateReportStream(HttpClient, String, R_GenerateReportParameter)
+  nameWithType: R_ReportServerUtility.R_GenerateReportStream(HttpClient, String, R_GenerateReportParameter)
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream(HttpClient, System.String, R_GenerateReportParameter)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GenerateReportStream
+    path: Microservices/R_ReportServerClient/R_ReportServerUtility.cs
+    startLine: 152
+  assemblies:
+  - R_ReportServerClient
+  namespace: R_ReportServerClient
+  syntax:
+    content: public static Task<Stream> R_GenerateReportStream(HttpClient poHttpClient, string pcUrl, R_GenerateReportParameter poReportParameter)
+    parameters:
+    - id: poHttpClient
+      type: HttpClient
+    - id: pcUrl
+      type: System.String
+    - id: poReportParameter
+      type: R_GenerateReportParameter
+    return:
+      type: Task{Stream}
+    content.vb: Public Shared Function R_GenerateReportStream(poHttpClient As HttpClient, pcUrl As String, poReportParameter As R_GenerateReportParameter) As Task(Of Stream)
+  overload: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_ReportServerClient
+  commentId: N:R_ReportServerClient
+  name: R_ReportServerClient
+  nameWithType: R_ReportServerClient
+  fullName: R_ReportServerClient
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile*
+  commentId: Overload:R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile
+  name: R_GenerateReportFile
+  nameWithType: R_ReportServerUtility.R_GenerateReportFile
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportFile
+- uid: HttpClient
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_GenerateReportParameter
+  isExternal: true
+  name: R_GenerateReportParameter
+  nameWithType: R_GenerateReportParameter
+  fullName: R_GenerateReportParameter
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte*
+  commentId: Overload:R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte
+  name: R_GenerateReportByte
+  nameWithType: R_ReportServerUtility.R_GenerateReportByte
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportByte
+- uid: Task{System.Byte[]}
+  commentId: '!:Task{System.Byte[]}'
+  definition: Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream*
+  commentId: Overload:R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream
+  name: R_GenerateReportStream
+  nameWithType: R_ReportServerUtility.R_GenerateReportStream
+  fullName: R_ReportServerClient.R_ReportServerUtility.R_GenerateReportStream
+- uid: Task{Stream}
+  commentId: '!:Task{Stream}'
+  definition: Task`1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: Task<Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: Task(Of Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

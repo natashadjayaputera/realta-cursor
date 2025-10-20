@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_LockingServiceFront.R_LockingFrontResult
+  commentId: T:R_LockingServiceFront.R_LockingFrontResult
+  id: R_LockingFrontResult
+  parent: R_LockingServiceFront
+  children:
+  - R_LockingServiceFront.R_LockingFrontResult.Exception
+  - R_LockingServiceFront.R_LockingFrontResult.IsSuccess
+  langs:
+  - csharp
+  - vb
+  name: R_LockingFrontResult
+  nameWithType: R_LockingFrontResult
+  fullName: R_LockingServiceFront.R_LockingFrontResult
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_LockingServiceFront/DTO/R_LockingFrontResult.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_LockingFrontResult
+    path: Microservices/R_LockingServiceFront/DTO/R_LockingFrontResult.cs
+    startLine: 7
+  assemblies:
+  - R_LockingServiceFront
+  namespace: R_LockingServiceFront
+  syntax:
+    content: 'public class R_LockingFrontResult : object'
+    content.vb: >-
+      Public Class R_LockingFrontResult
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_LockingServiceFront.R_LockingFrontResult.IsSuccess
+  commentId: P:R_LockingServiceFront.R_LockingFrontResult.IsSuccess
+  id: IsSuccess
+  parent: R_LockingServiceFront.R_LockingFrontResult
+  langs:
+  - csharp
+  - vb
+  name: IsSuccess
+  nameWithType: R_LockingFrontResult.IsSuccess
+  fullName: R_LockingServiceFront.R_LockingFrontResult.IsSuccess
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_LockingServiceFront/DTO/R_LockingFrontResult.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: IsSuccess
+    path: Microservices/R_LockingServiceFront/DTO/R_LockingFrontResult.cs
+    startLine: 9
+  assemblies:
+  - R_LockingServiceFront
+  namespace: R_LockingServiceFront
+  syntax:
+    content: public Boolean IsSuccess { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property IsSuccess As Boolean
+  overload: R_LockingServiceFront.R_LockingFrontResult.IsSuccess*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_LockingServiceFront.R_LockingFrontResult.Exception
+  commentId: P:R_LockingServiceFront.R_LockingFrontResult.Exception
+  id: Exception
+  parent: R_LockingServiceFront.R_LockingFrontResult
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: R_LockingFrontResult.Exception
+  fullName: R_LockingServiceFront.R_LockingFrontResult.Exception
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_LockingServiceFront/DTO/R_LockingFrontResult.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Exception
+    path: Microservices/R_LockingServiceFront/DTO/R_LockingFrontResult.cs
+    startLine: 10
+  assemblies:
+  - R_LockingServiceFront
+  namespace: R_LockingServiceFront
+  syntax:
+    content: public R_APIException Exception { get; set; }
+    parameters: []
+    return:
+      type: R_APIException
+    content.vb: Public Property Exception As R_APIException
+  overload: R_LockingServiceFront.R_LockingFrontResult.Exception*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_LockingServiceFront
+  commentId: N:R_LockingServiceFront
+  name: R_LockingServiceFront
+  nameWithType: R_LockingServiceFront
+  fullName: R_LockingServiceFront
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_LockingServiceFront.R_LockingFrontResult.IsSuccess*
+  commentId: Overload:R_LockingServiceFront.R_LockingFrontResult.IsSuccess
+  name: IsSuccess
+  nameWithType: R_LockingFrontResult.IsSuccess
+  fullName: R_LockingServiceFront.R_LockingFrontResult.IsSuccess
+- uid: Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: Boolean
+- uid: R_LockingServiceFront.R_LockingFrontResult.Exception*
+  commentId: Overload:R_LockingServiceFront.R_LockingFrontResult.Exception
+  name: Exception
+  nameWithType: R_LockingFrontResult.Exception
+  fullName: R_LockingServiceFront.R_LockingFrontResult.Exception
+- uid: R_APIException
+  isExternal: true
+  name: R_APIException
+  nameWithType: R_APIException
+  fullName: R_APIException

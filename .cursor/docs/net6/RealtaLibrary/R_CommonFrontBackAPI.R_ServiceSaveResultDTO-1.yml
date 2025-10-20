@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  commentId: T:R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  id: R_ServiceSaveResultDTO`1
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1.data
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceSaveResultDTO<E>
+  nameWithType: R_ServiceSaveResultDTO<E>
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO<E>
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceSaveResultDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveResultDTO.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceSaveResultDTO<E> : R_APIResultBaseDTO'
+    typeParameters:
+    - id: E
+    content.vb: >-
+      Public Class R_ServiceSaveResultDTO(Of E)
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  nameWithType.vb: R_ServiceSaveResultDTO(Of E)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveResultDTO(Of E)
+  name.vb: R_ServiceSaveResultDTO(Of E)
+- uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1.data
+  commentId: P:R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1.data
+  id: data
+  parent: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: R_ServiceSaveResultDTO<E>.data
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO<E>.data
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: data
+    path: Microservices/R_CommonFrontBackAPI/Service/CRUD/DTO/R_ServiceSaveResultDTO.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public E data { get; set; }
+    parameters: []
+    return:
+      type: '{E}'
+    content.vb: Public Property data As E
+  overload: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1.data*
+  nameWithType.vb: R_ServiceSaveResultDTO(Of E).data
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveResultDTO(Of E).data
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1.data*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceSaveResultDTO`1.data
+  name: data
+  nameWithType: R_ServiceSaveResultDTO<E>.data
+  fullName: R_CommonFrontBackAPI.R_ServiceSaveResultDTO<E>.data
+  nameWithType.vb: R_ServiceSaveResultDTO(Of E).data
+  fullName.vb: R_CommonFrontBackAPI.R_ServiceSaveResultDTO(Of E).data
+- uid: '{E}'
+  commentId: '!:E'
+  definition: E
+  name: E
+  nameWithType: E
+  fullName: E
+- uid: E
+  name: E
+  nameWithType: E
+  fullName: E

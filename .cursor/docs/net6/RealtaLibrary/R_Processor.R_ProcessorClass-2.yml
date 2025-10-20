@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_Processor.R_ProcessorClass`2
+  commentId: T:R_Processor.R_ProcessorClass`2
+  id: R_ProcessorClass`2
+  parent: R_Processor
+  children:
+  - R_Processor.R_ProcessorClass`2.#ctor(R_ProcessorJob.R_IProcessJobBase{`0,`1})
+  - R_Processor.R_ProcessorClass`2.R_ProcessAsync(System.String,System.Int32,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: R_ProcessorClass<T, E>
+  nameWithType: R_ProcessorClass<T, E>
+  fullName: R_Processor.R_ProcessorClass<T, E>
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_Processor/R_ProcessorClass.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ProcessorClass
+    path: Microservices/R_Processor/R_ProcessorClass.cs
+    startLine: 13
+  assemblies:
+  - R_Processor
+  namespace: R_Processor
+  syntax:
+    content: 'public class R_ProcessorClass<T, E> : object where E : R_IException, new()'
+    typeParameters:
+    - id: T
+    - id: E
+    content.vb: >-
+      Public Class R_ProcessorClass(Of T, E As {R_IException, New})
+          Inherits Object
+  inheritance:
+  - System.Object
+  nameWithType.vb: R_ProcessorClass(Of T, E)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: R_Processor.R_ProcessorClass(Of T, E)
+  name.vb: R_ProcessorClass(Of T, E)
+- uid: R_Processor.R_ProcessorClass`2.#ctor(R_ProcessorJob.R_IProcessJobBase{`0,`1})
+  commentId: M:R_Processor.R_ProcessorClass`2.#ctor(R_ProcessorJob.R_IProcessJobBase{`0,`1})
+  id: '#ctor(R_ProcessorJob.R_IProcessJobBase{`0,`1})'
+  parent: R_Processor.R_ProcessorClass`2
+  langs:
+  - csharp
+  - vb
+  name: R_ProcessorClass(R_IProcessJobBase<T, E>)
+  nameWithType: R_ProcessorClass<T, E>.R_ProcessorClass(R_IProcessJobBase<T, E>)
+  fullName: R_Processor.R_ProcessorClass<T, E>.R_ProcessorClass(R_ProcessorJob.R_IProcessJobBase<T, E>)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_Processor/R_ProcessorClass.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_Processor/R_ProcessorClass.cs
+    startLine: 25
+  assemblies:
+  - R_Processor
+  namespace: R_Processor
+  syntax:
+    content: public R_ProcessorClass(R_IProcessJobBase<T, E> poProcessJob)
+    parameters:
+    - id: poProcessJob
+      type: R_ProcessorJob.R_IProcessJobBase{{T},{E}}
+    content.vb: Public Sub New(poProcessJob As R_IProcessJobBase(Of T, E))
+  overload: R_Processor.R_ProcessorClass`2.#ctor*
+  nameWithType.vb: R_ProcessorClass(Of T, E).R_ProcessorClass(R_IProcessJobBase(Of T, E))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_Processor.R_ProcessorClass(Of T, E).R_ProcessorClass(R_ProcessorJob.R_IProcessJobBase(Of T, E))
+  name.vb: R_ProcessorClass(R_IProcessJobBase(Of T, E))
+- uid: R_Processor.R_ProcessorClass`2.R_ProcessAsync(System.String,System.Int32,System.Int32,System.Int32)
+  commentId: M:R_Processor.R_ProcessorClass`2.R_ProcessAsync(System.String,System.Int32,System.Int32,System.Int32)
+  id: R_ProcessAsync(System.String,System.Int32,System.Int32,System.Int32)
+  parent: R_Processor.R_ProcessorClass`2
+  langs:
+  - csharp
+  - vb
+  name: R_ProcessAsync(String, Int32, Int32, Int32)
+  nameWithType: R_ProcessorClass<T, E>.R_ProcessAsync(String, Int32, Int32, Int32)
+  fullName: R_Processor.R_ProcessorClass<T, E>.R_ProcessAsync(System.String, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_Processor/R_ProcessorClass.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ProcessAsync
+    path: Microservices/R_Processor/R_ProcessorClass.cs
+    startLine: 30
+  assemblies:
+  - R_Processor
+  namespace: R_Processor
+  syntax:
+    content: public Task R_ProcessAsync(string poKey, int pnBatchThread = 0, int pnMinimumBatchThread = null, int pnMaximumBatchThread = null)
+    parameters:
+    - id: poKey
+      type: System.String
+    - id: pnBatchThread
+      type: System.Int32
+    - id: pnMinimumBatchThread
+      type: System.Int32
+    - id: pnMaximumBatchThread
+      type: System.Int32
+    return:
+      type: Task
+    content.vb: Public Function R_ProcessAsync(poKey As String, pnBatchThread As Integer = 0, pnMinimumBatchThread As Integer = Nothing, pnMaximumBatchThread As Integer = Nothing) As Task
+  overload: R_Processor.R_ProcessorClass`2.R_ProcessAsync*
+  nameWithType.vb: R_ProcessorClass(Of T, E).R_ProcessAsync(String, Int32, Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_Processor.R_ProcessorClass(Of T, E).R_ProcessAsync(System.String, System.Int32, System.Int32, System.Int32)
+references:
+- uid: R_Processor
+  commentId: N:R_Processor
+  name: R_Processor
+  nameWithType: R_Processor
+  fullName: R_Processor
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_Processor.R_ProcessorClass`2.#ctor*
+  commentId: Overload:R_Processor.R_ProcessorClass`2.#ctor
+  name: R_ProcessorClass
+  nameWithType: R_ProcessorClass<T, E>.R_ProcessorClass
+  fullName: R_Processor.R_ProcessorClass<T, E>.R_ProcessorClass
+  nameWithType.vb: R_ProcessorClass(Of T, E).R_ProcessorClass
+  fullName.vb: R_Processor.R_ProcessorClass(Of T, E).R_ProcessorClass
+- uid: R_ProcessorJob.R_IProcessJobBase{{T},{E}}
+  commentId: T:R_ProcessorJob.R_IProcessJobBase{`0,`1}
+  parent: R_ProcessorJob
+  definition: R_ProcessorJob.R_IProcessJobBase`2
+  name: R_IProcessJobBase<T, E>
+  nameWithType: R_IProcessJobBase<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>
+  nameWithType.vb: R_IProcessJobBase(Of T, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E)
+  name.vb: R_IProcessJobBase(Of T, E)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob.R_IProcessJobBase`2
+  commentId: T:R_ProcessorJob.R_IProcessJobBase`2
+  name: R_IProcessJobBase<T, E>
+  nameWithType: R_IProcessJobBase<T, E>
+  fullName: R_ProcessorJob.R_IProcessJobBase<T, E>
+  nameWithType.vb: R_IProcessJobBase(Of T, E)
+  fullName.vb: R_ProcessorJob.R_IProcessJobBase(Of T, E)
+  name.vb: R_IProcessJobBase(Of T, E)
+  spec.csharp:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_ProcessorJob.R_IProcessJobBase`2
+    name: R_IProcessJobBase
+    nameWithType: R_IProcessJobBase
+    fullName: R_ProcessorJob.R_IProcessJobBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_ProcessorJob
+  commentId: N:R_ProcessorJob
+  name: R_ProcessorJob
+  nameWithType: R_ProcessorJob
+  fullName: R_ProcessorJob
+- uid: R_Processor.R_ProcessorClass`2.R_ProcessAsync*
+  commentId: Overload:R_Processor.R_ProcessorClass`2.R_ProcessAsync
+  name: R_ProcessAsync
+  nameWithType: R_ProcessorClass<T, E>.R_ProcessAsync
+  fullName: R_Processor.R_ProcessorClass<T, E>.R_ProcessAsync
+  nameWithType.vb: R_ProcessorClass(Of T, E).R_ProcessAsync
+  fullName.vb: R_Processor.R_ProcessorClass(Of T, E).R_ProcessAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.eCulture
+  commentId: T:R_CommonFrontBackAPI.eCulture
+  id: eCulture
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.eCulture.English
+  - R_CommonFrontBackAPI.eCulture.Indonesian
+  - R_CommonFrontBackAPI.eCulture.Japan
+  langs:
+  - csharp
+  - vb
+  name: eCulture
+  nameWithType: eCulture
+  fullName: R_CommonFrontBackAPI.eCulture
+  type: Enum
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: eCulture
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public enum eCulture : int'
+    content.vb: Public Enum eCulture As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_CommonFrontBackAPI.eCulture.English
+  commentId: F:R_CommonFrontBackAPI.eCulture.English
+  id: English
+  parent: R_CommonFrontBackAPI.eCulture
+  langs:
+  - csharp
+  - vb
+  name: English
+  nameWithType: eCulture.English
+  fullName: R_CommonFrontBackAPI.eCulture.English
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: English
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: English = null
+    return:
+      type: R_CommonFrontBackAPI.eCulture
+    content.vb: English = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.eCulture.Indonesian
+  commentId: F:R_CommonFrontBackAPI.eCulture.Indonesian
+  id: Indonesian
+  parent: R_CommonFrontBackAPI.eCulture
+  langs:
+  - csharp
+  - vb
+  name: Indonesian
+  nameWithType: eCulture.Indonesian
+  fullName: R_CommonFrontBackAPI.eCulture.Indonesian
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Indonesian
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 9
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: Indonesian = null
+    return:
+      type: R_CommonFrontBackAPI.eCulture
+    content.vb: Indonesian = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_CommonFrontBackAPI.eCulture.Japan
+  commentId: F:R_CommonFrontBackAPI.eCulture.Japan
+  id: Japan
+  parent: R_CommonFrontBackAPI.eCulture
+  langs:
+  - csharp
+  - vb
+  name: Japan
+  nameWithType: eCulture.Japan
+  fullName: R_CommonFrontBackAPI.eCulture.Japan
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Japan
+    path: Microservices/R_CommonFrontBackAPI/CommonEnumerator.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: Japan = null
+    return:
+      type: R_CommonFrontBackAPI.eCulture
+    content.vb: Japan = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: R_CommonFrontBackAPI.eCulture
+  commentId: T:R_CommonFrontBackAPI.eCulture
+  parent: R_CommonFrontBackAPI
+  name: eCulture
+  nameWithType: eCulture
+  fullName: R_CommonFrontBackAPI.eCulture

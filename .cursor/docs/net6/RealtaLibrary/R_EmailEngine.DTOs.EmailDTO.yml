@@ -1,0 +1,917 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.DTOs.EmailDTO
+  commentId: T:R_EmailEngine.DTOs.EmailDTO
+  id: EmailDTO
+  parent: R_EmailEngine.DTOs
+  children:
+  - R_EmailEngine.DTOs.EmailDTO.Attachments
+  - R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID
+  - R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE
+  - R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC
+  - R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY
+  - R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC
+  - R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM
+  - R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID
+  - R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT
+  - R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO
+  - R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE
+  - R_EmailEngine.DTOs.EmailDTO.CSMTP_ID
+  - R_EmailEngine.DTOs.EmailDTO.CSTATUS
+  - R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL
+  - R_EmailEngine.DTOs.EmailDTO.Embeddeds
+  - R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE
+  - R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR
+  - R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML
+  langs:
+  - csharp
+  - vb
+  name: EmailDTO
+  nameWithType: EmailDTO
+  fullName: R_EmailEngine.DTOs.EmailDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailDTO
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 4
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: 'public class EmailDTO : object'
+    content.vb: >-
+      Public Class EmailDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID
+  id: CEMAIL_ID
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_ID
+  nameWithType: EmailDTO.CEMAIL_ID
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_ID
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_ID As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM
+  id: CEMAIL_FROM
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_FROM
+  nameWithType: EmailDTO.CEMAIL_FROM
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_FROM
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 7
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_FROM { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_FROM As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO
+  id: CEMAIL_TO
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_TO
+  nameWithType: EmailDTO.CEMAIL_TO
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_TO
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 8
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_TO { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_TO As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC
+  id: CEMAIL_CC
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_CC
+  nameWithType: EmailDTO.CEMAIL_CC
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_CC
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 9
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_CC { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_CC As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC
+  id: CEMAIL_BCC
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_BCC
+  nameWithType: EmailDTO.CEMAIL_BCC
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_BCC
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 10
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_BCC { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_BCC As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT
+  id: CEMAIL_SUBJECT
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_SUBJECT
+  nameWithType: EmailDTO.CEMAIL_SUBJECT
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_SUBJECT
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 11
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_SUBJECT { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_SUBJECT As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY
+  id: CEMAIL_BODY
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_BODY
+  nameWithType: EmailDTO.CEMAIL_BODY
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_BODY
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 12
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_BODY { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_BODY As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML
+  id: LFLAG_HTML
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: LFLAG_HTML
+  nameWithType: EmailDTO.LFLAG_HTML
+  fullName: R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LFLAG_HTML
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 13
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public bool LFLAG_HTML { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LFLAG_HTML As Boolean
+  overload: R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.Attachments
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.Attachments
+  id: Attachments
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: Attachments
+  nameWithType: EmailDTO.Attachments
+  fullName: R_EmailEngine.DTOs.EmailDTO.Attachments
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Attachments
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 15
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public List<EmailAttachmentDTO> Attachments { get; set; }
+    parameters: []
+    return:
+      type: List{R_EmailEngine.DTOs.EmailAttachmentDTO}
+    content.vb: Public Property Attachments As List(Of EmailAttachmentDTO)
+  overload: R_EmailEngine.DTOs.EmailDTO.Attachments*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.Embeddeds
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.Embeddeds
+  id: Embeddeds
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: Embeddeds
+  nameWithType: EmailDTO.Embeddeds
+  fullName: R_EmailEngine.DTOs.EmailDTO.Embeddeds
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Embeddeds
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 16
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public List<EmailEmbeddedDTO> Embeddeds { get; set; }
+    parameters: []
+    return:
+      type: List{R_EmailEngine.DTOs.EmailEmbeddedDTO}
+    content.vb: Public Property Embeddeds As List(Of EmailEmbeddedDTO)
+  overload: R_EmailEngine.DTOs.EmailDTO.Embeddeds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: EmailDTO.CCOMPANY_ID
+  fullName: R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCOMPANY_ID
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 18
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL
+  id: CVALID_UNTIL
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CVALID_UNTIL
+  nameWithType: EmailDTO.CVALID_UNTIL
+  fullName: R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CVALID_UNTIL
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 19
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CVALID_UNTIL { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CVALID_UNTIL As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE
+  id: LFLAG_ACTIVE
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: LFLAG_ACTIVE
+  nameWithType: EmailDTO.LFLAG_ACTIVE
+  fullName: R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LFLAG_ACTIVE
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 20
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public bool LFLAG_ACTIVE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LFLAG_ACTIVE As Boolean
+  overload: R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE
+  id: CCREATE_DATE
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CCREATE_DATE
+  nameWithType: EmailDTO.CCREATE_DATE
+  fullName: R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCREATE_DATE
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 21
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CCREATE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCREATE_DATE As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR
+  id: LFLAG_ERROR
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: LFLAG_ERROR
+  nameWithType: EmailDTO.LFLAG_ERROR
+  fullName: R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LFLAG_ERROR
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 22
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public bool LFLAG_ERROR { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LFLAG_ERROR As Boolean
+  overload: R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CSTATUS
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CSTATUS
+  id: CSTATUS
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CSTATUS
+  nameWithType: EmailDTO.CSTATUS
+  fullName: R_EmailEngine.DTOs.EmailDTO.CSTATUS
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSTATUS
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 23
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CSTATUS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSTATUS As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CSTATUS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE
+  id: CPROCESS_DATE
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CPROCESS_DATE
+  nameWithType: EmailDTO.CPROCESS_DATE
+  fullName: R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CPROCESS_DATE
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 24
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CPROCESS_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CPROCESS_DATE As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailDTO.CSMTP_ID
+  commentId: P:R_EmailEngine.DTOs.EmailDTO.CSMTP_ID
+  id: CSMTP_ID
+  parent: R_EmailEngine.DTOs.EmailDTO
+  langs:
+  - csharp
+  - vb
+  name: CSMTP_ID
+  nameWithType: EmailDTO.CSMTP_ID
+  fullName: R_EmailEngine.DTOs.EmailDTO.CSMTP_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CSMTP_ID
+    path: Microservices/R_EmailEngine/DTOs/EmailDTO.cs
+    startLine: 25
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CSMTP_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CSMTP_ID As String
+  overload: R_EmailEngine.DTOs.EmailDTO.CSMTP_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngine.DTOs
+  commentId: N:R_EmailEngine.DTOs
+  name: R_EmailEngine.DTOs
+  nameWithType: R_EmailEngine.DTOs
+  fullName: R_EmailEngine.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID
+  name: CEMAIL_ID
+  nameWithType: EmailDTO.CEMAIL_ID
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM
+  name: CEMAIL_FROM
+  nameWithType: EmailDTO.CEMAIL_FROM
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_FROM
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO
+  name: CEMAIL_TO
+  nameWithType: EmailDTO.CEMAIL_TO
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_TO
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC
+  name: CEMAIL_CC
+  nameWithType: EmailDTO.CEMAIL_CC
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_CC
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC
+  name: CEMAIL_BCC
+  nameWithType: EmailDTO.CEMAIL_BCC
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BCC
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT
+  name: CEMAIL_SUBJECT
+  nameWithType: EmailDTO.CEMAIL_SUBJECT
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_SUBJECT
+- uid: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY
+  name: CEMAIL_BODY
+  nameWithType: EmailDTO.CEMAIL_BODY
+  fullName: R_EmailEngine.DTOs.EmailDTO.CEMAIL_BODY
+- uid: R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML
+  name: LFLAG_HTML
+  nameWithType: EmailDTO.LFLAG_HTML
+  fullName: R_EmailEngine.DTOs.EmailDTO.LFLAG_HTML
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_EmailEngine.DTOs.EmailDTO.Attachments*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.Attachments
+  name: Attachments
+  nameWithType: EmailDTO.Attachments
+  fullName: R_EmailEngine.DTOs.EmailDTO.Attachments
+- uid: List{R_EmailEngine.DTOs.EmailAttachmentDTO}
+  commentId: '!:List{R_EmailEngine.DTOs.EmailAttachmentDTO}'
+  definition: List`1
+  name: List<EmailAttachmentDTO>
+  nameWithType: List<EmailAttachmentDTO>
+  fullName: List<R_EmailEngine.DTOs.EmailAttachmentDTO>
+  nameWithType.vb: List(Of EmailAttachmentDTO)
+  fullName.vb: List(Of R_EmailEngine.DTOs.EmailAttachmentDTO)
+  name.vb: List(Of EmailAttachmentDTO)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_EmailEngine.DTOs.EmailAttachmentDTO
+    name: EmailAttachmentDTO
+    nameWithType: EmailAttachmentDTO
+    fullName: R_EmailEngine.DTOs.EmailAttachmentDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_EmailEngine.DTOs.EmailAttachmentDTO
+    name: EmailAttachmentDTO
+    nameWithType: EmailAttachmentDTO
+    fullName: R_EmailEngine.DTOs.EmailAttachmentDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_EmailEngine.DTOs.EmailDTO.Embeddeds*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.Embeddeds
+  name: Embeddeds
+  nameWithType: EmailDTO.Embeddeds
+  fullName: R_EmailEngine.DTOs.EmailDTO.Embeddeds
+- uid: List{R_EmailEngine.DTOs.EmailEmbeddedDTO}
+  commentId: '!:List{R_EmailEngine.DTOs.EmailEmbeddedDTO}'
+  definition: List`1
+  name: List<EmailEmbeddedDTO>
+  nameWithType: List<EmailEmbeddedDTO>
+  fullName: List<R_EmailEngine.DTOs.EmailEmbeddedDTO>
+  nameWithType.vb: List(Of EmailEmbeddedDTO)
+  fullName.vb: List(Of R_EmailEngine.DTOs.EmailEmbeddedDTO)
+  name.vb: List(Of EmailEmbeddedDTO)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_EmailEngine.DTOs.EmailEmbeddedDTO
+    name: EmailEmbeddedDTO
+    nameWithType: EmailEmbeddedDTO
+    fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_EmailEngine.DTOs.EmailEmbeddedDTO
+    name: EmailEmbeddedDTO
+    nameWithType: EmailEmbeddedDTO
+    fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: EmailDTO.CCOMPANY_ID
+  fullName: R_EmailEngine.DTOs.EmailDTO.CCOMPANY_ID
+- uid: R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL
+  name: CVALID_UNTIL
+  nameWithType: EmailDTO.CVALID_UNTIL
+  fullName: R_EmailEngine.DTOs.EmailDTO.CVALID_UNTIL
+- uid: R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE
+  name: LFLAG_ACTIVE
+  nameWithType: EmailDTO.LFLAG_ACTIVE
+  fullName: R_EmailEngine.DTOs.EmailDTO.LFLAG_ACTIVE
+- uid: R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE
+  name: CCREATE_DATE
+  nameWithType: EmailDTO.CCREATE_DATE
+  fullName: R_EmailEngine.DTOs.EmailDTO.CCREATE_DATE
+- uid: R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR
+  name: LFLAG_ERROR
+  nameWithType: EmailDTO.LFLAG_ERROR
+  fullName: R_EmailEngine.DTOs.EmailDTO.LFLAG_ERROR
+- uid: R_EmailEngine.DTOs.EmailDTO.CSTATUS*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CSTATUS
+  name: CSTATUS
+  nameWithType: EmailDTO.CSTATUS
+  fullName: R_EmailEngine.DTOs.EmailDTO.CSTATUS
+- uid: R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE
+  name: CPROCESS_DATE
+  nameWithType: EmailDTO.CPROCESS_DATE
+  fullName: R_EmailEngine.DTOs.EmailDTO.CPROCESS_DATE
+- uid: R_EmailEngine.DTOs.EmailDTO.CSMTP_ID*
+  commentId: Overload:R_EmailEngine.DTOs.EmailDTO.CSMTP_ID
+  name: CSMTP_ID
+  nameWithType: EmailDTO.CSMTP_ID
+  fullName: R_EmailEngine.DTOs.EmailDTO.CSMTP_ID

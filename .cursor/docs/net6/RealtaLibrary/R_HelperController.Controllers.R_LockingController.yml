@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_HelperController.Controllers.R_LockingController
+  commentId: T:R_HelperController.Controllers.R_LockingController
+  id: R_LockingController
+  parent: R_HelperController.Controllers
+  children:
+  - R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  - R_HelperController.Controllers.R_LockingController.R_ServiceLocking(R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO)
+  - R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  langs:
+  - csharp
+  - vb
+  name: R_LockingController
+  nameWithType: R_LockingController
+  fullName: R_HelperController.Controllers.R_LockingController
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_LockingController
+    path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+    startLine: 8
+  assemblies:
+  - R_HelperController
+  namespace: R_HelperController.Controllers
+  syntax:
+    content: 'public class R_LockingController : ControllerBase, R_IServiceLockingAsync'
+    content.vb: >-
+      Public Class R_LockingController
+          Inherits ControllerBase
+          Implements R_IServiceLockingAsync
+  inheritance:
+  - System.Object
+  implements:
+  - R_IServiceLockingAsync
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  commentId: M:R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  id: R_ServiceGetLockBy(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  parent: R_HelperController.Controllers.R_LockingController
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetLockBy(R_ServiceLockingUnLockParameterDTO)
+  nameWithType: R_LockingController.R_ServiceGetLockBy(R_ServiceLockingUnLockParameterDTO)
+  fullName: R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceGetLockBy
+    path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+    startLine: 12
+  assemblies:
+  - R_HelperController
+  namespace: R_HelperController.Controllers
+  syntax:
+    content: public Task<R_ServiceLockingGeneralResultDTO> R_ServiceGetLockBy(R_ServiceLockingUnLockParameterDTO poUnLockPar)
+    parameters:
+    - id: poUnLockPar
+      type: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO}
+    content.vb: Public Function R_ServiceGetLockBy(poUnLockPar As R_ServiceLockingUnLockParameterDTO) As Task(Of R_ServiceLockingGeneralResultDTO)
+  overload: R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_HelperController.Controllers.R_LockingController.R_ServiceLocking(R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO)
+  commentId: M:R_HelperController.Controllers.R_LockingController.R_ServiceLocking(R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO)
+  id: R_ServiceLocking(R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO)
+  parent: R_HelperController.Controllers.R_LockingController
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceLocking(R_ServiceLockingLockParameterDTO)
+  nameWithType: R_LockingController.R_ServiceLocking(R_ServiceLockingLockParameterDTO)
+  fullName: R_HelperController.Controllers.R_LockingController.R_ServiceLocking(R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceLocking
+    path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+    startLine: 32
+  assemblies:
+  - R_HelperController
+  namespace: R_HelperController.Controllers
+  syntax:
+    content: public Task<R_ServiceLockingGeneralResultDTO> R_ServiceLocking(R_ServiceLockingLockParameterDTO poLockPar)
+    parameters:
+    - id: poLockPar
+      type: R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO}
+    content.vb: Public Function R_ServiceLocking(poLockPar As R_ServiceLockingLockParameterDTO) As Task(Of R_ServiceLockingGeneralResultDTO)
+  overload: R_HelperController.Controllers.R_LockingController.R_ServiceLocking*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  commentId: M:R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  id: R_ServiceUnLocking(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  parent: R_HelperController.Controllers.R_LockingController
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceUnLocking(R_ServiceLockingUnLockParameterDTO)
+  nameWithType: R_LockingController.R_ServiceUnLocking(R_ServiceLockingUnLockParameterDTO)
+  fullName: R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking(R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceUnLocking
+    path: Microservices/R_HelperController/Controllers/R_LockingController.cs
+    startLine: 52
+  assemblies:
+  - R_HelperController
+  namespace: R_HelperController.Controllers
+  syntax:
+    content: public Task<R_ServiceLockingGeneralResultDTO> R_ServiceUnLocking(R_ServiceLockingUnLockParameterDTO poUnLockPar)
+    parameters:
+    - id: poUnLockPar
+      type: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+    return:
+      type: Task{R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO}
+    content.vb: Public Function R_ServiceUnLocking(poUnLockPar As R_ServiceLockingUnLockParameterDTO) As Task(Of R_ServiceLockingGeneralResultDTO)
+  overload: R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_HelperController.Controllers
+  commentId: N:R_HelperController.Controllers
+  name: R_HelperController.Controllers
+  nameWithType: R_HelperController.Controllers
+  fullName: R_HelperController.Controllers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_IServiceLockingAsync
+  commentId: '!:R_IServiceLockingAsync'
+  isExternal: true
+  name: R_IServiceLockingAsync
+  nameWithType: R_IServiceLockingAsync
+  fullName: R_IServiceLockingAsync
+- uid: R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy*
+  commentId: Overload:R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy
+  name: R_ServiceGetLockBy
+  nameWithType: R_LockingController.R_ServiceGetLockBy
+  fullName: R_HelperController.Controllers.R_LockingController.R_ServiceGetLockBy
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceLockingUnLockParameterDTO
+  nameWithType: R_ServiceLockingUnLockParameterDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+- uid: Task{R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO}
+  commentId: '!:Task{R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO}'
+  definition: Task`1
+  name: Task<R_ServiceLockingGeneralResultDTO>
+  nameWithType: Task<R_ServiceLockingGeneralResultDTO>
+  fullName: Task<R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO>
+  nameWithType.vb: Task(Of R_ServiceLockingGeneralResultDTO)
+  fullName.vb: Task(Of R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO)
+  name.vb: Task(Of R_ServiceLockingGeneralResultDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+    name: R_ServiceLockingGeneralResultDTO
+    nameWithType: R_ServiceLockingGeneralResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+    name: R_ServiceLockingGeneralResultDTO
+    nameWithType: R_ServiceLockingGeneralResultDTO
+    fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_HelperController.Controllers.R_LockingController.R_ServiceLocking*
+  commentId: Overload:R_HelperController.Controllers.R_LockingController.R_ServiceLocking
+  name: R_ServiceLocking
+  nameWithType: R_LockingController.R_ServiceLocking
+  fullName: R_HelperController.Controllers.R_LockingController.R_ServiceLocking
+- uid: R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceLockingLockParameterDTO
+  nameWithType: R_ServiceLockingLockParameterDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO
+- uid: R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking*
+  commentId: Overload:R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking
+  name: R_ServiceUnLocking
+  nameWithType: R_LockingController.R_ServiceUnLocking
+  fullName: R_HelperController.Controllers.R_LockingController.R_ServiceUnLocking

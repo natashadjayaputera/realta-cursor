@@ -1,0 +1,1044 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Excel.R_Excel
+  commentId: T:R_BlazorFrontEnd.Excel.R_Excel
+  id: R_Excel
+  parent: R_BlazorFrontEnd.Excel
+  children:
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[])
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[])
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],DataSet,System.String[],System.String,System.Boolean)
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],System.String,System.Boolean,System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}})
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],System.String[],System.Boolean)
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+  - R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[],System.String[])
+  - R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataSet)
+  - R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataTable)
+  langs:
+  - csharp
+  - vb
+  name: R_Excel
+  nameWithType: R_Excel
+  fullName: R_BlazorFrontEnd.Excel.R_Excel
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_Excel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: 'public class R_Excel : object, R_IExcel'
+    content.vb: >-
+      Public Class R_Excel
+          Inherits Object
+          Implements R_IExcel
+  inheritance:
+  - System.Object
+  implements:
+  - R_BlazorFrontEnd.R_IExcel
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],System.String[],System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],System.String[],System.Boolean)
+  id: R_ReadFromExcel(System.Byte[],System.String[],System.Boolean)
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadFromExcel(Byte[], String[], Boolean)
+  nameWithType: R_Excel.R_ReadFromExcel(Byte[], String[], Boolean)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[], System.String[], System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadFromExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public DataSet R_ReadFromExcel(byte[] poFileByte, string[] pcTableNames = null, bool plWithHeader = true)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: pcTableNames
+      type: System.String[]
+    - id: plWithHeader
+      type: System.Boolean
+    return:
+      type: DataSet
+    content.vb: Public Function R_ReadFromExcel(poFileByte As Byte(), pcTableNames As String() = Nothing, plWithHeader As Boolean = True) As DataSet
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel*
+  nameWithType.vb: R_Excel.R_ReadFromExcel(Byte(), String(), Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte(), System.String(), System.Boolean)
+  name.vb: R_ReadFromExcel(Byte(), String(), Boolean)
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],DataSet,System.String[],System.String,System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],DataSet,System.String[],System.String,System.Boolean)
+  id: R_ReadFromExcel(System.Byte[],DataSet,System.String[],System.String,System.Boolean)
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadFromExcel(Byte[], DataSet, String[], String, Boolean)
+  nameWithType: R_Excel.R_ReadFromExcel(Byte[], DataSet, String[], String, Boolean)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[], DataSet, System.String[], System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadFromExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 23
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public DataSet R_ReadFromExcel(byte[] poFileByte, DataSet poDataSet, string[] pcTableNames = null, string pcRange = "", bool plWithHeader = true)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: poDataSet
+      type: DataSet
+    - id: pcTableNames
+      type: System.String[]
+    - id: pcRange
+      type: System.String
+    - id: plWithHeader
+      type: System.Boolean
+    return:
+      type: DataSet
+    content.vb: Public Function R_ReadFromExcel(poFileByte As Byte(), poDataSet As DataSet, pcTableNames As String() = Nothing, pcRange As String = "", plWithHeader As Boolean = True) As DataSet
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel*
+  nameWithType.vb: R_Excel.R_ReadFromExcel(Byte(), DataSet, String(), String, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte(), DataSet, System.String(), System.String, System.Boolean)
+  name.vb: R_ReadFromExcel(Byte(), DataSet, String(), String, Boolean)
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],System.String,System.Boolean,System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}})
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[],System.String,System.Boolean,System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}})
+  id: R_ReadFromExcel(System.Byte[],System.String,System.Boolean,System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}})
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadFromExcel(Byte[], String, Boolean, Nullable<List<R_DataColumnMapping>>)
+  nameWithType: R_Excel.R_ReadFromExcel(Byte[], String, Boolean, Nullable<List<R_DataColumnMapping>>)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte[], System.String, System.Boolean, System.Nullable<List<R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping>>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadFromExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 103
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public DataTable R_ReadFromExcel(byte[] poFileByte, string pcRange, bool plWithHeader = true, List<R_DataColumnMapping>? poColumnMappings = null)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: pcRange
+      type: System.String
+    - id: plWithHeader
+      type: System.Boolean
+    - id: poColumnMappings
+      type: System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}}
+    return:
+      type: DataTable
+    content.vb: Public Function R_ReadFromExcel(poFileByte As Byte(), pcRange As String, plWithHeader As Boolean = True, poColumnMappings As List(Of R_DataColumnMapping)? = Nothing) As DataTable
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel*
+  nameWithType.vb: R_Excel.R_ReadFromExcel(Byte(), String, Boolean, Nullable(Of List(Of R_DataColumnMapping)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel(System.Byte(), System.String, System.Boolean, System.Nullable(Of List(Of R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping)))
+  name.vb: R_ReadFromExcel(Byte(), String, Boolean, Nullable(Of List(Of R_DataColumnMapping)))
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataSet)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataSet)
+  id: R_WriteToExcel(DataSet)
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_WriteToExcel(DataSet)
+  nameWithType: R_Excel.R_WriteToExcel(DataSet)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataSet)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_WriteToExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 179
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public byte[] R_WriteToExcel(DataSet poDataSet)
+    parameters:
+    - id: poDataSet
+      type: DataSet
+    return:
+      type: System.Byte[]
+    content.vb: Public Function R_WriteToExcel(poDataSet As DataSet) As Byte()
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataTable)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataTable)
+  id: R_WriteToExcel(DataTable)
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_WriteToExcel(DataTable)
+  nameWithType: R_Excel.R_WriteToExcel(DataTable)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel(DataTable)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_WriteToExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 212
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public byte[] R_WriteToExcel(DataTable poDataTable)
+    parameters:
+    - id: poDataTable
+      type: DataTable
+    return:
+      type: System.Byte[]
+    content.vb: Public Function R_WriteToExcel(poDataTable As DataTable) As Byte()
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+  id: R_ReadValueCellFromExcel(System.Byte[],System.String)
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadValueCellFromExcel(Byte[], String)
+  nameWithType: R_Excel.R_ReadValueCellFromExcel(Byte[], String)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[], System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadValueCellFromExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 244
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public object R_ReadValueCellFromExcel(byte[] poFileByte, string pcCell)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: pcCell
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function R_ReadValueCellFromExcel(poFileByte As Byte(), pcCell As String) As Object
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel*
+  implements:
+  - R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+  nameWithType.vb: R_Excel.R_ReadValueCellFromExcel(Byte(), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte(), System.String)
+  name.vb: R_ReadValueCellFromExcel(Byte(), String)
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[],System.String[])
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[],System.String[])
+  id: R_ReadValueCellFromExcel(System.Byte[],System.String[])
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadValueCellFromExcel(Byte[], String[])
+  nameWithType: R_Excel.R_ReadValueCellFromExcel(Byte[], String[])
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte[], System.String[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadValueCellFromExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 251
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public Dictionary<string, object> R_ReadValueCellFromExcel(byte[] poFileByte, string[] pcCellList)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: pcCellList
+      type: System.String[]
+    return:
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Function R_ReadValueCellFromExcel(poFileByte As Byte(), pcCellList As String()) As Dictionary(Of String, Object)
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel*
+  nameWithType.vb: R_Excel.R_ReadValueCellFromExcel(Byte(), String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel(System.Byte(), System.String())
+  name.vb: R_ReadValueCellFromExcel(Byte(), String())
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[])
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[])
+  id: R_ReadExcel(System.Byte[])
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadExcel(Byte[])
+  nameWithType: R_Excel.R_ReadExcel(Byte[])
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 290
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public DataSet R_ReadExcel(byte[] poFileByte)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    return:
+      type: DataSet
+    content.vb: Public Function R_ReadExcel(poFileByte As Byte()) As DataSet
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel*
+  nameWithType.vb: R_Excel.R_ReadExcel(Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte())
+  name.vb: R_ReadExcel(Byte())
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  id: R_ReadExcel(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadExcel(Byte[], Action<R_ReadFromExcelOption>)
+  nameWithType: R_Excel.R_ReadExcel(Byte[], Action<R_ReadFromExcelOption>)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte[], Action<R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadExcel
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 295
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public DataSet R_ReadExcel(byte[] poFileByte, Action<R_ReadFromExcelOption> poAction)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: poAction
+      type: Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption}
+    return:
+      type: DataSet
+    content.vb: Public Function R_ReadExcel(poFileByte As Byte(), poAction As Action(Of R_ReadFromExcelOption)) As DataSet
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel*
+  nameWithType.vb: R_Excel.R_ReadExcel(Byte(), Action(Of R_ReadFromExcelOption))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel(System.Byte(), Action(Of R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption))
+  name.vb: R_ReadExcel(Byte(), Action(Of R_ReadFromExcelOption))
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[])
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[])
+  id: R_ReadExcelToDataTable(System.Byte[])
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadExcelToDataTable(Byte[])
+  nameWithType: R_Excel.R_ReadExcelToDataTable(Byte[])
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadExcelToDataTable
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 377
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public DataTable R_ReadExcelToDataTable(byte[] poFileByte)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    return:
+      type: DataTable
+    content.vb: Public Function R_ReadExcelToDataTable(poFileByte As Byte()) As DataTable
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable*
+  nameWithType.vb: R_Excel.R_ReadExcelToDataTable(Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte())
+  name.vb: R_ReadExcelToDataTable(Byte())
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  commentId: M:R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  id: R_ReadExcelToDataTable(System.Byte[],Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption})
+  parent: R_BlazorFrontEnd.Excel.R_Excel
+  langs:
+  - csharp
+  - vb
+  name: R_ReadExcelToDataTable(Byte[], Action<R_ReadFromExcelOption>)
+  nameWithType: R_Excel.R_ReadExcelToDataTable(Byte[], Action<R_ReadFromExcelOption>)
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte[], Action<R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ReadExcelToDataTable
+    path: Library/R_BlazorFrontEnd.Excel/R_Excel.cs
+    startLine: 382
+  assemblies:
+  - R_BlazorFrontEnd.Excel
+  namespace: R_BlazorFrontEnd.Excel
+  syntax:
+    content: public DataTable R_ReadExcelToDataTable(byte[] poFileByte, Action<R_ReadFromExcelOption> poAction)
+    parameters:
+    - id: poFileByte
+      type: System.Byte[]
+    - id: poAction
+      type: Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption}
+    return:
+      type: DataTable
+    content.vb: Public Function R_ReadExcelToDataTable(poFileByte As Byte(), poAction As Action(Of R_ReadFromExcelOption)) As DataTable
+  overload: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable*
+  nameWithType.vb: R_Excel.R_ReadExcelToDataTable(Byte(), Action(Of R_ReadFromExcelOption))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable(System.Byte(), Action(Of R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption))
+  name.vb: R_ReadExcelToDataTable(Byte(), Action(Of R_ReadFromExcelOption))
+references:
+- uid: R_BlazorFrontEnd.Excel
+  commentId: N:R_BlazorFrontEnd.Excel
+  name: R_BlazorFrontEnd.Excel
+  nameWithType: R_BlazorFrontEnd.Excel
+  fullName: R_BlazorFrontEnd.Excel
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.R_IExcel
+  commentId: T:R_BlazorFrontEnd.R_IExcel
+  parent: R_BlazorFrontEnd
+  name: R_IExcel
+  nameWithType: R_IExcel
+  fullName: R_BlazorFrontEnd.R_IExcel
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd
+  commentId: N:R_BlazorFrontEnd
+  name: R_BlazorFrontEnd
+  nameWithType: R_BlazorFrontEnd
+  fullName: R_BlazorFrontEnd
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel*
+  commentId: Overload:R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel
+  name: R_ReadFromExcel
+  nameWithType: R_Excel.R_ReadFromExcel
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadFromExcel
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DataSet
+  isExternal: true
+  name: DataSet
+  nameWithType: DataSet
+  fullName: DataSet
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}}
+  commentId: '!:System.Nullable{List{R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping}}'
+  definition: System.Nullable`1
+  name: Nullable<List<R_DataColumnMapping>>
+  nameWithType: Nullable<List<R_DataColumnMapping>>
+  fullName: System.Nullable<List<R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping>>
+  nameWithType.vb: Nullable(Of List(Of R_DataColumnMapping))
+  fullName.vb: System.Nullable(Of List(Of R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping))
+  name.vb: Nullable(Of List(Of R_DataColumnMapping))
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+    name: R_DataColumnMapping
+    nameWithType: R_DataColumnMapping
+    fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+    name: R_DataColumnMapping
+    nameWithType: R_DataColumnMapping
+    fullName: R_BlazorFrontEnd.Excel.Mappings.R_DataColumnMapping
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DataTable
+  isExternal: true
+  name: DataTable
+  nameWithType: DataTable
+  fullName: DataTable
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel*
+  commentId: Overload:R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel
+  name: R_WriteToExcel
+  nameWithType: R_Excel.R_WriteToExcel
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_WriteToExcel
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel*
+  commentId: Overload:R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel
+  name: R_ReadValueCellFromExcel
+  nameWithType: R_Excel.R_ReadValueCellFromExcel
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadValueCellFromExcel
+- uid: R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+  commentId: M:R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+  parent: R_BlazorFrontEnd.R_IExcel
+  isExternal: true
+  name: R_ReadValueCellFromExcel(Byte[], String)
+  nameWithType: R_IExcel.R_ReadValueCellFromExcel(Byte[], String)
+  fullName: R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel(System.Byte[], System.String)
+  nameWithType.vb: R_IExcel.R_ReadValueCellFromExcel(Byte(), String)
+  fullName.vb: R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel(System.Byte(), System.String)
+  name.vb: R_ReadValueCellFromExcel(Byte(), String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+    name: R_ReadValueCellFromExcel
+    nameWithType: R_IExcel.R_ReadValueCellFromExcel
+    fullName: R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel(System.Byte[],System.String)
+    name: R_ReadValueCellFromExcel
+    nameWithType: R_IExcel.R_ReadValueCellFromExcel
+    fullName: R_BlazorFrontEnd.R_IExcel.R_ReadValueCellFromExcel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary{System.String,System.Object}
+  commentId: '!:Dictionary{System.String,System.Object}'
+  definition: Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel*
+  commentId: Overload:R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel
+  name: R_ReadExcel
+  nameWithType: R_Excel.R_ReadExcel
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcel
+- uid: Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption}
+  commentId: '!:Action{R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption}'
+  definition: Action`1
+  name: Action<R_ReadFromExcelOption>
+  nameWithType: Action<R_ReadFromExcelOption>
+  fullName: Action<R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption>
+  nameWithType.vb: Action(Of R_ReadFromExcelOption)
+  fullName.vb: Action(Of R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption)
+  name.vb: Action(Of R_ReadFromExcelOption)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+    name: R_ReadFromExcelOption
+    nameWithType: R_ReadFromExcelOption
+    fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+    name: R_ReadFromExcelOption
+    nameWithType: R_ReadFromExcelOption
+    fullName: R_BlazorFrontEnd.Excel.Mappings.R_ReadFromExcelOption
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable*
+  commentId: Overload:R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable
+  name: R_ReadExcelToDataTable
+  nameWithType: R_Excel.R_ReadExcelToDataTable
+  fullName: R_BlazorFrontEnd.Excel.R_Excel.R_ReadExcelToDataTable

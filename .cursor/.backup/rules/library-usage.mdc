@@ -1,0 +1,47 @@
+---
+alwaysApply: true
+---
+
+# Internal Library Usage
+
+Always follow these steps when working with internal Realta libraries or modules.
+
+## 1. Read Documentation First
+- For .NET 6: read `.cursor/docs/net6/RealtaLibrary/` and `.cursor/docs/net6/RealtaNetCoreLibrary/`.
+- For .NET Framework 4: read `.cursor/docs/net4/Realta-Library/`.
+- Never generate code before checking these folders.
+
+## 2. Usage Guidelines
+- Use `.cursor/docs/net6` for Blazor, REST APIs, async code, and microservices.
+- Use `.cursor/docs/net4` for WinForms, WCF, synchronous logic, and NHibernate.
+- Match namespaces, class names, and signatures exactly as documented.
+- Do not re-invent or modify existing library patterns.
+
+## 3. Common Base Classes
+- .NET 6 → `R_BusinessObjectAsync<T>`, `R_HTTPClient`, `R_APIException`, `R_TokenRepository`, `R_APIResultBaseDTO`
+- .NET 4 → `R_BusinessObject<T>`, `R_FormBase`, `R_Context`, `R_Exception`, `R_NHDBContext`
+
+## 4. Module Structures
+- .NET 6: `{Module}Common`, `{Module}Back`, `{Module}Service`, `{Module}Front`, `{Module}Model`
+- .NET 4: `{Module}Back`, `{Module}Common`, `{Module}Front`, `{Module}FrontResources`
+
+## 5. Coding Rules
+- .NET 6 → always use `async/await`; default API method is POST.
+- .NET 4 → use `TransactionScope` and dispose DB contexts properly.
+- Never create new helper or base classes if they exist in docs.
+
+## 6. Migration Mapping
+| From (.NET 4) | To (.NET 6) |
+| -------------- | ----------- |
+| `R_BusinessObject<T>` | `R_BusinessObjectAsync<T>` |
+| `R_Exception` | `R_APIException` |
+| `CallContext` | HTTP headers |
+| WinForms | Blazor |
+| WCF | REST API |
+
+## 7. Response Behavior
+When generating code:
+- Reference the related `.cursor/docs` file.
+- Reuse documented classes and patterns.
+- Warn about framework-specific differences.
+- Apply existing conventions; don’t improvise.

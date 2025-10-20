@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Enums.R_eConductorMode
+  commentId: T:R_BlazorFrontEnd.Enums.R_eConductorMode
+  id: R_eConductorMode
+  parent: R_BlazorFrontEnd.Enums
+  children:
+  - R_BlazorFrontEnd.Enums.R_eConductorMode.Add
+  - R_BlazorFrontEnd.Enums.R_eConductorMode.Edit
+  - R_BlazorFrontEnd.Enums.R_eConductorMode.Normal
+  langs:
+  - csharp
+  - vb
+  name: R_eConductorMode
+  nameWithType: R_eConductorMode
+  fullName: R_BlazorFrontEnd.Enums.R_eConductorMode
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eConductorMode
+    path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: 'public enum R_eConductorMode : int'
+    content.vb: Public Enum R_eConductorMode As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R_BlazorFrontEnd.Enums.R_eConductorMode.Normal
+  commentId: F:R_BlazorFrontEnd.Enums.R_eConductorMode.Normal
+  id: Normal
+  parent: R_BlazorFrontEnd.Enums.R_eConductorMode
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: R_eConductorMode.Normal
+  fullName: R_BlazorFrontEnd.Enums.R_eConductorMode.Normal
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Normal
+    path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Normal = null
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eConductorMode
+    content.vb: Normal = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eConductorMode.Add
+  commentId: F:R_BlazorFrontEnd.Enums.R_eConductorMode.Add
+  id: Add
+  parent: R_BlazorFrontEnd.Enums.R_eConductorMode
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: R_eConductorMode.Add
+  fullName: R_BlazorFrontEnd.Enums.R_eConductorMode.Add
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Add
+    path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Add = null
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eConductorMode
+    content.vb: Add = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R_BlazorFrontEnd.Enums.R_eConductorMode.Edit
+  commentId: F:R_BlazorFrontEnd.Enums.R_eConductorMode.Edit
+  id: Edit
+  parent: R_BlazorFrontEnd.Enums.R_eConductorMode
+  langs:
+  - csharp
+  - vb
+  name: Edit
+  nameWithType: R_eConductorMode.Edit
+  fullName: R_BlazorFrontEnd.Enums.R_eConductorMode.Edit
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Edit
+    path: Library/R_BlazorFrontEnd/Enums/R_eConductorMode.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Edit = null
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eConductorMode
+    content.vb: Edit = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R_BlazorFrontEnd.Enums
+  commentId: N:R_BlazorFrontEnd.Enums
+  name: R_BlazorFrontEnd.Enums
+  nameWithType: R_BlazorFrontEnd.Enums
+  fullName: R_BlazorFrontEnd.Enums
+- uid: R_BlazorFrontEnd.Enums.R_eConductorMode
+  commentId: T:R_BlazorFrontEnd.Enums.R_eConductorMode
+  parent: R_BlazorFrontEnd.Enums
+  name: R_eConductorMode
+  nameWithType: R_eConductorMode
+  fullName: R_BlazorFrontEnd.Enums.R_eConductorMode

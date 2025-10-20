@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Helpers.R_DeployUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_DeployUtility
+  id: R_DeployUtility
+  parent: R_BlazorFrontEnd.Helpers
+  children:
+  - R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc(System.String,System.Byte[])
+  - R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject(System.String,System.String,System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: R_DeployUtility
+  nameWithType: R_DeployUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_DeployUtility
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_DeployUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_DeployUtility
+    path: Library/R_BlazorFrontEnd/Helpers/R_DeployUtility.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: 'public static class R_DeployUtility : object'
+    content.vb: >-
+      Public Module R_DeployUtility
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject(System.String,System.String,System.String,System.Object[])
+  commentId: M:R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject(System.String,System.String,System.String,System.Object[])
+  id: R_DynamicLoadObject(System.String,System.String,System.String,System.Object[])
+  parent: R_BlazorFrontEnd.Helpers.R_DeployUtility
+  langs:
+  - csharp
+  - vb
+  name: R_DynamicLoadObject(String, String, String, Object[])
+  nameWithType: R_DeployUtility.R_DynamicLoadObject(String, String, String, Object[])
+  fullName: R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject(System.String, System.String, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_DeployUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_DynamicLoadObject
+    path: Library/R_BlazorFrontEnd/Helpers/R_DeployUtility.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static object R_DynamicLoadObject(string pcDllName, string pcNameSpace = "", string pcObjectName = "", object[] paParameters = null)
+    parameters:
+    - id: pcDllName
+      type: System.String
+    - id: pcNameSpace
+      type: System.String
+    - id: pcObjectName
+      type: System.String
+    - id: paParameters
+      type: System.Object[]
+    return:
+      type: System.Object
+    content.vb: Public Shared Function R_DynamicLoadObject(pcDllName As String, pcNameSpace As String = "", pcObjectName As String = "", paParameters As Object() = Nothing) As Object
+  overload: R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject*
+  nameWithType.vb: R_DeployUtility.R_DynamicLoadObject(String, String, String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject(System.String, System.String, System.String, System.Object())
+  name.vb: R_DynamicLoadObject(String, String, String, Object())
+- uid: R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc(System.String,System.Byte[])
+  commentId: M:R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc(System.String,System.Byte[])
+  id: GetBase64ImageSrc(System.String,System.Byte[])
+  parent: R_BlazorFrontEnd.Helpers.R_DeployUtility
+  langs:
+  - csharp
+  - vb
+  name: GetBase64ImageSrc(String, Byte[])
+  nameWithType: R_DeployUtility.GetBase64ImageSrc(String, Byte[])
+  fullName: R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc(System.String, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Helpers/R_DeployUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetBase64ImageSrc
+    path: Library/R_BlazorFrontEnd/Helpers/R_DeployUtility.cs
+    startLine: 48
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Helpers
+  syntax:
+    content: public static string GetBase64ImageSrc(string filename, byte[] data)
+    parameters:
+    - id: filename
+      type: System.String
+    - id: data
+      type: System.Byte[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetBase64ImageSrc(filename As String, data As Byte()) As String
+  overload: R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc*
+  nameWithType.vb: R_DeployUtility.GetBase64ImageSrc(String, Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc(System.String, System.Byte())
+  name.vb: GetBase64ImageSrc(String, Byte())
+references:
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject
+  name: R_DynamicLoadObject
+  nameWithType: R_DeployUtility.R_DynamicLoadObject
+  fullName: R_BlazorFrontEnd.Helpers.R_DeployUtility.R_DynamicLoadObject
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc*
+  commentId: Overload:R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc
+  name: GetBase64ImageSrc
+  nameWithType: R_DeployUtility.GetBase64ImageSrc
+  fullName: R_BlazorFrontEnd.Helpers.R_DeployUtility.GetBase64ImageSrc
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

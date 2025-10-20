@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSetting
+  commentId: T:RolesSynchronizerJob.RolesSynchronizerJobSetting
+  id: RolesSynchronizerJobSetting
+  parent: RolesSynchronizerJob
+  children:
+  - RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId
+  langs:
+  - csharp
+  - vb
+  name: RolesSynchronizerJobSetting
+  nameWithType: RolesSynchronizerJobSetting
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSetting
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: RolesSynchronizerJobSetting
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSetting.cs
+    startLine: 4
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: 'public class RolesSynchronizerJobSetting : R_SchedulerSettingDTO'
+    content.vb: >-
+      Public Class RolesSynchronizerJobSetting
+          Inherits R_SchedulerSettingDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId
+  commentId: P:RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId
+  id: ForApplicationId
+  parent: RolesSynchronizerJob.RolesSynchronizerJobSetting
+  langs:
+  - csharp
+  - vb
+  name: ForApplicationId
+  nameWithType: RolesSynchronizerJobSetting.ForApplicationId
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSetting.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: ForApplicationId
+    path: Engine/Jobs/RolesSynchronizerJob/RolesSynchronizerJobSetting.cs
+    startLine: 6
+  assemblies:
+  - RolesSynchronizerJob
+  namespace: RolesSynchronizerJob
+  syntax:
+    content: public string ForApplicationId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ForApplicationId As String
+  overload: RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: RolesSynchronizerJob
+  commentId: N:RolesSynchronizerJob
+  name: RolesSynchronizerJob
+  nameWithType: RolesSynchronizerJob
+  fullName: RolesSynchronizerJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId*
+  commentId: Overload:RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId
+  name: ForApplicationId
+  nameWithType: RolesSynchronizerJobSetting.ForApplicationId
+  fullName: RolesSynchronizerJob.RolesSynchronizerJobSetting.ForApplicationId
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

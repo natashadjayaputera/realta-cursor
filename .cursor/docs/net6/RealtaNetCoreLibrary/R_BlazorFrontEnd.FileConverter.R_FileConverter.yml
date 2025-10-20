@@ -1,0 +1,854 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  commentId: T:R_BlazorFrontEnd.FileConverter.R_FileConverter
+  id: R_FileConverter
+  parent: R_BlazorFrontEnd.FileConverter
+  children:
+  - R_BlazorFrontEnd.FileConverter.R_FileConverter.defaultTimeout
+  - R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+  - R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString(System.String)
+  - R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+  - R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString(System.String)
+  - R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString(System.String)
+  - R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: R_FileConverter
+  nameWithType: R_FileConverter
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FileConverter
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: 'public class R_FileConverter : object, R_IFileConverter'
+    content.vb: >-
+      Public Class R_FileConverter
+          Inherits Object
+          Implements R_IFileConverter
+  inheritance:
+  - System.Object
+  implements:
+  - R_BlazorFrontEnd.R_IFileConverter
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.defaultTimeout
+  commentId: F:R_BlazorFrontEnd.FileConverter.R_FileConverter.defaultTimeout
+  id: defaultTimeout
+  parent: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  langs:
+  - csharp
+  - vb
+  name: defaultTimeout
+  nameWithType: R_FileConverter.defaultTimeout
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.defaultTimeout
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: defaultTimeout
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 16
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: public static TimeSpan defaultTimeout
+    return:
+      type: TimeSpan
+    content.vb: Public Shared defaultTimeout As TimeSpan
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte(System.Byte[])
+  commentId: M:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte(System.Byte[])
+  id: R_GetStringFromByte(System.Byte[])
+  parent: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  langs:
+  - csharp
+  - vb
+  name: R_GetStringFromByte(Byte[])
+  nameWithType: R_FileConverter.R_GetStringFromByte(Byte[])
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetStringFromByte
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 17
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: public string R_GetStringFromByte(byte[] poByteFile)
+    parameters:
+    - id: poByteFile
+      type: System.Byte[]
+    return:
+      type: System.String
+    content.vb: Public Function R_GetStringFromByte(poByteFile As Byte()) As String
+  overload: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte*
+  implements:
+  - R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
+  nameWithType.vb: R_FileConverter.R_GetStringFromByte(Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte(System.Byte())
+  name.vb: R_GetStringFromByte(Byte())
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString(System.String)
+  commentId: M:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString(System.String)
+  id: R_GetRtfStringFromHtmlString(System.String)
+  parent: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  langs:
+  - csharp
+  - vb
+  name: R_GetRtfStringFromHtmlString(String)
+  nameWithType: R_FileConverter.R_GetRtfStringFromHtmlString(String)
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetRtfStringFromHtmlString
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 21
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: public string? R_GetRtfStringFromHtmlString(string pcHtmlContent)
+    parameters:
+    - id: pcHtmlContent
+      type: System.String
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Function R_GetRtfStringFromHtmlString(pcHtmlContent As String) As String?
+  overload: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString*
+  implements:
+  - R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString(System.String)
+  commentId: M:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString(System.String)
+  id: R_GetHtmlStringFromRtfString(System.String)
+  parent: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  langs:
+  - csharp
+  - vb
+  name: R_GetHtmlStringFromRtfString(String)
+  nameWithType: R_FileConverter.R_GetHtmlStringFromRtfString(String)
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetHtmlStringFromRtfString
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 40
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: public string? R_GetHtmlStringFromRtfString(string pcRtfContent)
+    parameters:
+    - id: pcRtfContent
+      type: System.String
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Function R_GetHtmlStringFromRtfString(pcRtfContent As String) As String?
+  overload: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString*
+  implements:
+  - R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+  commentId: M:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+  id: R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+  parent: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  langs:
+  - csharp
+  - vb
+  name: R_GetHtmlStringFromByte(Byte[], R_eDocumentType)
+  nameWithType: R_FileConverter.R_GetHtmlStringFromByte(Byte[], R_eDocumentType)
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte(System.Byte[], R_BlazorFrontEnd.Enums.R_eDocumentType)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetHtmlStringFromByte
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 65
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: public string? R_GetHtmlStringFromByte(byte[] poByteFile, R_eDocumentType peDocumentType)
+    parameters:
+    - id: poByteFile
+      type: System.Byte[]
+    - id: peDocumentType
+      type: R_BlazorFrontEnd.Enums.R_eDocumentType
+    return:
+      type: System.Nullable{System.String}
+    content.vb: Public Function R_GetHtmlStringFromByte(poByteFile As Byte(), peDocumentType As R_eDocumentType) As String?
+  overload: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte*
+  implements:
+  - R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+  nameWithType.vb: R_FileConverter.R_GetHtmlStringFromByte(Byte(), R_eDocumentType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte(System.Byte(), R_BlazorFrontEnd.Enums.R_eDocumentType)
+  name.vb: R_GetHtmlStringFromByte(Byte(), R_eDocumentType)
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString(System.String)
+  commentId: M:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString(System.String)
+  id: R_GetByteFromString(System.String)
+  parent: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  langs:
+  - csharp
+  - vb
+  name: R_GetByteFromString(String)
+  nameWithType: R_FileConverter.R_GetByteFromString(String)
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetByteFromString
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 98
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: public byte[] R_GetByteFromString(string pcHtmlContent)
+    parameters:
+    - id: pcHtmlContent
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Public Function R_GetByteFromString(pcHtmlContent As String) As Byte()
+  overload: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString*
+  implements:
+  - R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+  commentId: M:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+  id: R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+  parent: R_BlazorFrontEnd.FileConverter.R_FileConverter
+  langs:
+  - csharp
+  - vb
+  name: R_GetByteFromHtmlString(String, R_eDocumentType)
+  nameWithType: R_FileConverter.R_GetByteFromHtmlString(String, R_eDocumentType)
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString(System.String, R_BlazorFrontEnd.Enums.R_eDocumentType)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetByteFromHtmlString
+    path: Library/R_BlazorFrontEnd.FileConverter/R_FileConverter.cs
+    startLine: 103
+  assemblies:
+  - R_BlazorFrontEnd.FileConverter
+  namespace: R_BlazorFrontEnd.FileConverter
+  syntax:
+    content: public byte[] R_GetByteFromHtmlString(string pcHtmlContent, R_eDocumentType peDocumentType)
+    parameters:
+    - id: pcHtmlContent
+      type: System.String
+    - id: peDocumentType
+      type: R_BlazorFrontEnd.Enums.R_eDocumentType
+    return:
+      type: System.Byte[]
+    content.vb: Public Function R_GetByteFromHtmlString(pcHtmlContent As String, peDocumentType As R_eDocumentType) As Byte()
+  overload: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString*
+  implements:
+  - R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorFrontEnd.FileConverter
+  commentId: N:R_BlazorFrontEnd.FileConverter
+  name: R_BlazorFrontEnd.FileConverter
+  nameWithType: R_BlazorFrontEnd.FileConverter
+  fullName: R_BlazorFrontEnd.FileConverter
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_BlazorFrontEnd.R_IFileConverter
+  commentId: T:R_BlazorFrontEnd.R_IFileConverter
+  parent: R_BlazorFrontEnd
+  name: R_IFileConverter
+  nameWithType: R_IFileConverter
+  fullName: R_BlazorFrontEnd.R_IFileConverter
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd
+  commentId: N:R_BlazorFrontEnd
+  name: R_BlazorFrontEnd
+  nameWithType: R_BlazorFrontEnd
+  fullName: R_BlazorFrontEnd
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: TimeSpan
+  commentId: '!:TimeSpan'
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte*
+  commentId: Overload:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte
+  name: R_GetStringFromByte
+  nameWithType: R_FileConverter.R_GetStringFromByte
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetStringFromByte
+- uid: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
+  commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
+  parent: R_BlazorFrontEnd.R_IFileConverter
+  isExternal: true
+  name: R_GetStringFromByte(Byte[])
+  nameWithType: R_IFileConverter.R_GetStringFromByte(Byte[])
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
+  nameWithType.vb: R_IFileConverter.R_GetStringFromByte(Byte())
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte())
+  name.vb: R_GetStringFromByte(Byte())
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
+    name: R_GetStringFromByte
+    nameWithType: R_IFileConverter.R_GetStringFromByte
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
+    name: R_GetStringFromByte
+    nameWithType: R_IFileConverter.R_GetStringFromByte
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString*
+  commentId: Overload:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString
+  name: R_GetRtfStringFromHtmlString
+  nameWithType: R_FileConverter.R_GetRtfStringFromHtmlString
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetRtfStringFromHtmlString
+- uid: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
+  commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
+  parent: R_BlazorFrontEnd.R_IFileConverter
+  isExternal: true
+  name: R_GetRtfStringFromHtmlString(String)
+  nameWithType: R_IFileConverter.R_GetRtfStringFromHtmlString(String)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
+    name: R_GetRtfStringFromHtmlString
+    nameWithType: R_IFileConverter.R_GetRtfStringFromHtmlString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
+    name: R_GetRtfStringFromHtmlString
+    nameWithType: R_IFileConverter.R_GetRtfStringFromHtmlString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{System.String}
+  commentId: '!:System.Nullable{System.String}'
+  definition: System.Nullable`1
+  name: Nullable<String>
+  nameWithType: Nullable<String>
+  fullName: System.Nullable<System.String>
+  nameWithType.vb: Nullable(Of String)
+  fullName.vb: System.Nullable(Of System.String)
+  name.vb: Nullable(Of String)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString*
+  commentId: Overload:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString
+  name: R_GetHtmlStringFromRtfString
+  nameWithType: R_FileConverter.R_GetHtmlStringFromRtfString
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromRtfString
+- uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
+  commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
+  parent: R_BlazorFrontEnd.R_IFileConverter
+  isExternal: true
+  name: R_GetHtmlStringFromRtfString(String)
+  nameWithType: R_IFileConverter.R_GetHtmlStringFromRtfString(String)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
+    name: R_GetHtmlStringFromRtfString
+    nameWithType: R_IFileConverter.R_GetHtmlStringFromRtfString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
+    name: R_GetHtmlStringFromRtfString
+    nameWithType: R_IFileConverter.R_GetHtmlStringFromRtfString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte*
+  commentId: Overload:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte
+  name: R_GetHtmlStringFromByte
+  nameWithType: R_FileConverter.R_GetHtmlStringFromByte
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetHtmlStringFromByte
+- uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+  commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+  parent: R_BlazorFrontEnd.R_IFileConverter
+  isExternal: true
+  name: R_GetHtmlStringFromByte(Byte[], R_eDocumentType)
+  nameWithType: R_IFileConverter.R_GetHtmlStringFromByte(Byte[], R_eDocumentType)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[], R_BlazorFrontEnd.Enums.R_eDocumentType)
+  nameWithType.vb: R_IFileConverter.R_GetHtmlStringFromByte(Byte(), R_eDocumentType)
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte(), R_BlazorFrontEnd.Enums.R_eDocumentType)
+  name.vb: R_GetHtmlStringFromByte(Byte(), R_eDocumentType)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+    name: R_GetHtmlStringFromByte
+    nameWithType: R_IFileConverter.R_GetHtmlStringFromByte
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+    name: R_eDocumentType
+    nameWithType: R_eDocumentType
+    fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
+    name: R_GetHtmlStringFromByte
+    nameWithType: R_IFileConverter.R_GetHtmlStringFromByte
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+    name: R_eDocumentType
+    nameWithType: R_eDocumentType
+    fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+  commentId: T:R_BlazorFrontEnd.Enums.R_eDocumentType
+  parent: R_BlazorFrontEnd.Enums
+  name: R_eDocumentType
+  nameWithType: R_eDocumentType
+  fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
+- uid: R_BlazorFrontEnd.Enums
+  commentId: N:R_BlazorFrontEnd.Enums
+  name: R_BlazorFrontEnd.Enums
+  nameWithType: R_BlazorFrontEnd.Enums
+  fullName: R_BlazorFrontEnd.Enums
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString*
+  commentId: Overload:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString
+  name: R_GetByteFromString
+  nameWithType: R_FileConverter.R_GetByteFromString
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromString
+- uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
+  commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
+  parent: R_BlazorFrontEnd.R_IFileConverter
+  isExternal: true
+  name: R_GetByteFromString(String)
+  nameWithType: R_IFileConverter.R_GetByteFromString(String)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
+    name: R_GetByteFromString
+    nameWithType: R_IFileConverter.R_GetByteFromString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
+    name: R_GetByteFromString
+    nameWithType: R_IFileConverter.R_GetByteFromString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString*
+  commentId: Overload:R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString
+  name: R_GetByteFromHtmlString
+  nameWithType: R_FileConverter.R_GetByteFromHtmlString
+  fullName: R_BlazorFrontEnd.FileConverter.R_FileConverter.R_GetByteFromHtmlString
+- uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+  commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+  parent: R_BlazorFrontEnd.R_IFileConverter
+  isExternal: true
+  name: R_GetByteFromHtmlString(String, R_eDocumentType)
+  nameWithType: R_IFileConverter.R_GetByteFromHtmlString(String, R_eDocumentType)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String, R_BlazorFrontEnd.Enums.R_eDocumentType)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+    name: R_GetByteFromHtmlString
+    nameWithType: R_IFileConverter.R_GetByteFromHtmlString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+    name: R_eDocumentType
+    nameWithType: R_eDocumentType
+    fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
+    name: R_GetByteFromHtmlString
+    nameWithType: R_IFileConverter.R_GetByteFromHtmlString
+    fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
+    name: R_eDocumentType
+    nameWithType: R_eDocumentType
+    fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
+  - name: )
+    nameWithType: )
+    fullName: )

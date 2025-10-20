@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.CompanyDBDTO
+  commentId: T:CloudStorageJob.CompanyDBDTO
+  id: CompanyDBDTO
+  parent: CloudStorageJob
+  children:
+  - CloudStorageJob.CompanyDBDTO.CCOMPANY_ID
+  langs:
+  - csharp
+  - vb
+  name: CompanyDBDTO
+  nameWithType: CompanyDBDTO
+  fullName: CloudStorageJob.CompanyDBDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CompanyDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CompanyDBDTO
+    path: Engine/Jobs/CloudStorageJob/CompanyDBDTO.cs
+    startLine: 8
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class CompanyDBDTO : object'
+    content.vb: >-
+      Public Class CompanyDBDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CloudStorageJob.CompanyDBDTO.CCOMPANY_ID
+  commentId: P:CloudStorageJob.CompanyDBDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: CloudStorageJob.CompanyDBDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: CompanyDBDTO.CCOMPANY_ID
+  fullName: CloudStorageJob.CompanyDBDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CompanyDBDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCOMPANY_ID
+    path: Engine/Jobs/CloudStorageJob/CompanyDBDTO.cs
+    startLine: 10
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: CloudStorageJob.CompanyDBDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CloudStorageJob.CompanyDBDTO.CCOMPANY_ID*
+  commentId: Overload:CloudStorageJob.CompanyDBDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: CompanyDBDTO.CCOMPANY_ID
+  fullName: CloudStorageJob.CompanyDBDTO.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

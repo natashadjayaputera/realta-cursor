@@ -1,0 +1,447 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  commentId: T:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  id: R_IAssemblyLoadContext
+  parent: R_BlazorFrontEnd.Deployment.Interfaces
+  children:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(AssemblyName)
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+  langs:
+  - csharp
+  - vb
+  name: R_IAssemblyLoadContext
+  nameWithType: R_IAssemblyLoadContext
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IAssemblyLoadContext
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: 'public interface R_IAssemblyLoadContext : IDisposable'
+    content.vb: >-
+      Public Interface R_IAssemblyLoadContext
+          Inherits IDisposable
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+  commentId: P:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+  id: AllAssemblies
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: AllAssemblies
+  nameWithType: R_IAssemblyLoadContext.AllAssemblies
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AllAssemblies
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: ICollection<Assembly> AllAssemblies { get; }
+    parameters: []
+    return:
+      type: ICollection{Assembly}
+    content.vb: ReadOnly Property AllAssemblies As ICollection(Of Assembly)
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+  commentId: P:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+  id: OwnAssemblies
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: OwnAssemblies
+  nameWithType: R_IAssemblyLoadContext.OwnAssemblies
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OwnAssemblies
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: ICollection<Assembly> OwnAssemblies { get; }
+    parameters: []
+    return:
+      type: ICollection{Assembly}
+    content.vb: ReadOnly Property OwnAssemblies As ICollection(Of Assembly)
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  id: Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: Load(AssemblyData)
+  nameWithType: R_IAssemblyLoadContext.Load(AssemblyData)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Load
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: Assembly? Load(AssemblyData assemblyData)
+    parameters:
+    - id: assemblyData
+      type: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+    return:
+      type: System.Nullable{Assembly}
+    content.vb: Function Load(assemblyData As AssemblyData) As Assembly?
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load*
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(AssemblyName)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(AssemblyName)
+  id: Load(AssemblyName)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: Load(AssemblyName)
+  nameWithType: R_IAssemblyLoadContext.Load(AssemblyName)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Load
+    path: Library/R_BlazorFrontEnd/Deployment/Interfaces/R_IAssemblyLoadContext.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd.Deployment.Interfaces
+  syntax:
+    content: Assembly? Load(AssemblyName assemblyName)
+    parameters:
+    - id: assemblyName
+      type: AssemblyName
+    return:
+      type: System.Nullable{Assembly}
+    content.vb: Function Load(assemblyName As AssemblyName) As Assembly?
+  overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load*
+references:
+- uid: R_BlazorFrontEnd.Deployment.Interfaces
+  commentId: N:R_BlazorFrontEnd.Deployment.Interfaces
+  name: R_BlazorFrontEnd.Deployment.Interfaces
+  nameWithType: R_BlazorFrontEnd.Deployment.Interfaces
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+  name: AllAssemblies
+  nameWithType: R_IAssemblyLoadContext.AllAssemblies
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+- uid: ICollection{Assembly}
+  commentId: '!:ICollection{Assembly}'
+  definition: ICollection`1
+  name: ICollection<Assembly>
+  nameWithType: ICollection<Assembly>
+  fullName: ICollection<Assembly>
+  nameWithType.vb: ICollection(Of Assembly)
+  fullName.vb: ICollection(Of Assembly)
+  name.vb: ICollection(Of Assembly)
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ICollection`1
+  isExternal: true
+  name: ICollection<>
+  nameWithType: ICollection<>
+  fullName: ICollection<>
+  nameWithType.vb: ICollection(Of )
+  fullName.vb: ICollection(Of )
+  name.vb: ICollection(Of )
+  spec.csharp:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+  name: OwnAssemblies
+  nameWithType: R_IAssemblyLoadContext.OwnAssemblies
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load*
+  commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load
+  name: Load
+  nameWithType: R_IAssemblyLoadContext.Load
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load
+- uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  commentId: T:R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  parent: R_BlazorFrontEnd.Deployment.Models
+  name: AssemblyData
+  nameWithType: AssemblyData
+  fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+- uid: System.Nullable{Assembly}
+  commentId: '!:System.Nullable{Assembly}'
+  definition: System.Nullable`1
+  name: Nullable<Assembly>
+  nameWithType: Nullable<Assembly>
+  fullName: System.Nullable<Assembly>
+  nameWithType.vb: Nullable(Of Assembly)
+  fullName.vb: System.Nullable(Of Assembly)
+  name.vb: Nullable(Of Assembly)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Deployment.Models
+  commentId: N:R_BlazorFrontEnd.Deployment.Models
+  name: R_BlazorFrontEnd.Deployment.Models
+  nameWithType: R_BlazorFrontEnd.Deployment.Models
+  fullName: R_BlazorFrontEnd.Deployment.Models
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AssemblyName
+  isExternal: true
+  name: AssemblyName
+  nameWithType: AssemblyName
+  fullName: AssemblyName

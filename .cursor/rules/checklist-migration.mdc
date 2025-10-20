@@ -1,0 +1,186 @@
+---
+alwaysApply: true
+---
+
+# MIGRATION CHECKLIST - Use for every new program
+
+## Pre-Migration
+- [ ] Read `.cursor/docs/net6/` for all target libraries
+- [ ] Review `.cursor/docs/net4/` for original patterns (reference only)
+- [ ] Check `critical-patterns-learned.md` for .NET 6 structure
+- [ ] Identify all Stored Procedures and SQL queries (MUST NOT change)
+
+## Project 1: {ProgramName}Common
+- [ ] All DTOs moved to Common project
+- [ ] All enums consolidated here
+- [ ] Interface `I{ProgramName}` using `R_IServiceCRUDAsyncBase`
+- [ ] Request/Parameter DTOs created
+- [ ] Result DTOs created
+- [ ] No business logic in Common
+
+## Project 2: {ProgramName}BackResources
+- [ ] Created in root: `BACK/{module}/{ProgramName}BackResources/`
+- [ ] All error message keys defined (e.g., `ERR_INVALID_COMPANY_ID`)
+- [ ] All success messages defined
+- [ ] Default `.resx` file (English)
+- [ ] Indonesian `.id.resx` file
+- [ ] `Resources_Dummy_Class.cs` created
+- [ ] No code logic in this project
+
+## Project 3: {ProgramName}Back
+- [ ] `Logger{ProgramName}` class inheriting `R_NetCoreLoggerBase` (Back only)
+- [ ] `{ProgramName}Activity` class inheriting `R_ActivitySourceBase` (Back only)
+- [ ] `{ProgramName}Cls` class inheriting `R_BusinessObjectAsync`
+- [ ] All methods using correct database pattern with `using var`
+- [ ] All methods logging start/end with method name
+- [ ] All exception messages from resources (via `GetError()`)
+- [ ] No SQL text modified
+- [ ] No SP names changed
+- [ ] All parameters passed using `loDb.R_AddCommandParameter()`
+
+## Project 4: {ProgramName}Service
+- [ ] `{ProgramName}Controller` inheriting `ControllerBase, I{ProgramName}`
+- [ ] Logger initialized in constructor
+- [ ] Activity source initialized in constructor
+- [ ] All methods decorated with `[HttpPost]`
+- [ ] Route pattern: `[Route("api/[controller]/[action]")]`
+- [ ] List methods returning `async IAsyncEnumerable<>`
+- [ ] Other methods returning `async Task<{ProgramName}ResultDTO<>>`
+- [ ] Using `R_BackGlobalVar.COMPANY_ID` for IClientHelper data
+- [ ] Using `R_Utility.R_GetStreamingContext()` for custom parameters
+- [ ] R_APIBackEnd reference added to .csproj
+- [ ] Using correct Microsoft.NET.Sdk + FrameworkReference (not Web SDK)
+
+## Project 5: {ProgramName}FrontResources
+- [ ] Created in root: `FRONT/{ProgramName}FrontResources/`
+- [ ] All UI labels and messages defined
+- [ ] All validation messages defined
+- [ ] Default `.resx` file (English)
+- [ ] Indonesian `.id.resx` file
+- [ ] `Resources_Dummy_Class.cs` created
+
+## Project 6: {ProgramName}Model
+- [ ] `{ProgramName}Model` class inheriting `R_BusinessObjectServiceClientBase`
+- [ ] Constants: `DEFAULT_HTTP_NAME`, `DEFAULT_SERVICEPOINT_NAME`, `DEFAULT_MODULE`
+- [ ] Interface methods implemented
+- [ ] List methods with `IAsyncEnumerable` return (interface compliance)
+- [ ] List async methods with `Task<ResultDTO<List<>>>` return (actual implementation)
+- [ ] Using `R_HTTPClientWrapper.R_APIRequestStreamingObject<>()`
+- [ ] Using `R_HTTPClientWrapper.R_APIRequestObject<>()`
+
+## Project 7: {ProgramName}Front
+- [ ] `{ProgramName}.razor` main page created
+- [ ] `{ProgramName}.razor.cs` code-behind created
+- [ ] All components using correct navigation patterns
+- [ ] Conductor source correctly assigned (Grid/Form/None)
+- [ ] IClientHelper injected in code-behind (not in ViewModel)
+- [ ] All resource strings using `@_localizer["key"]`
+
+## Project 8: ViewModels
+- [ ] All ViewModels in `{ProgramName}Model/VMs/` folder
+- [ ] All methods accepting parameters (no R_FrontGlobalVar usage)
+- [ ] List methods using `R_FrontContext.R_SetStreamingContext()` pattern
+- [ ] Error handling with `R_Exception`
+- [ ] Logging where appropriate
+- [ ] Public properties using CamelCase (no underscore prefix)
+- [ ] Private fields using `_snakeCase` (no type prefix)
+
+## .CSPROJ VALIDATION (Rule #22 - MUST COMPLETE BEFORE BUILD)
+
+**Verify ALL projects have exact PropertyGroup settings:**
+
+### Common Project .csproj
+```xml
+
+  netstandard2.1
+  10.0
+  enable
+  disable
+
+```
+Status: [ ] ✓ VERIFIED
+
+### Back Project .csproj
+```xml
+
+  net6.0
+  10.0
+  enable
+  disable
+
+```
+Status: [ ] ✓ VERIFIED
+
+### BackResources Project .csproj
+```xml
+
+  net6.0
+  10.0
+  enable
+  disable
+
+```
+Status: [ ] ✓ VERIFIED
+
+### Service Project .csproj
+```xml
+
+  net6.0
+  10.0
+  enable
+  disable
+
+
+  
+
+```
+Status: [ ] ✓ VERIFIED
+
+### Model Project .csproj
+```xml
+
+  netstandard2.1
+  10.0
+  enable
+  disable
+
+```
+Status: [ ] ✓ VERIFIED
+
+### FrontResources Project .csproj
+```xml
+
+  net6.0
+  10.0
+  enable
+  disable
+
+```
+Status: [ ] ✓ VERIFIED
+
+### Front Project .csproj (Blazor)
+```xml
+
+  net6.0
+  10.0
+  enable
+  disable
+
+```
+Status: [ ] ✓ VERIFIED
+
+**ALL .csproj files must be verified BEFORE attempting build.**
+
+## Final Checks
+- [ ] All projects reference correct DLLs from `.cursor/docs/net6/`
+- [ ] All .csproj files validated for correct structure
+- [ ] Build order followed: Common → Back/Resources → Service → Front
+- [ ] No compilation errors
+- [ ] No hardcoded error messages (all from resources)
+- [ ] No SQL queries modified
+- [ ] No SP names changed
+- [ ] Behavioral parity confirmed with original .NET 4 code
+- [ ] All unit tests pass
+- [ ] All integration tests pass
+
+---

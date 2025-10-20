@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.DateInterval
+  commentId: T:BackExtension.DateInterval
+  id: DateInterval
+  parent: BackExtension
+  children:
+  - BackExtension.DateInterval.Day
+  - BackExtension.DateInterval.Minute
+  langs:
+  - csharp
+  - vb
+  name: DateInterval
+  nameWithType: DateInterval
+  fullName: BackExtension.DateInterval
+  type: Enum
+  source:
+    remote:
+      path: Library Back/BackExtension/DateTimeUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DateInterval
+    path: Library Back/BackExtension/DateTimeUtility.cs
+    startLine: 54
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: 'public enum DateInterval : int'
+    content.vb: Public Enum DateInterval As Integer
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BackExtension.DateInterval.Minute
+  commentId: F:BackExtension.DateInterval.Minute
+  id: Minute
+  parent: BackExtension.DateInterval
+  langs:
+  - csharp
+  - vb
+  name: Minute
+  nameWithType: DateInterval.Minute
+  fullName: BackExtension.DateInterval.Minute
+  type: Field
+  source:
+    remote:
+      path: Library Back/BackExtension/DateTimeUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Minute
+    path: Library Back/BackExtension/DateTimeUtility.cs
+    startLine: 56
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: Minute = 0
+    return:
+      type: BackExtension.DateInterval
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BackExtension.DateInterval.Day
+  commentId: F:BackExtension.DateInterval.Day
+  id: Day
+  parent: BackExtension.DateInterval
+  langs:
+  - csharp
+  - vb
+  name: Day
+  nameWithType: DateInterval.Day
+  fullName: BackExtension.DateInterval.Day
+  type: Field
+  source:
+    remote:
+      path: Library Back/BackExtension/DateTimeUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Day
+    path: Library Back/BackExtension/DateTimeUtility.cs
+    startLine: 57
+  assemblies:
+  - BackExtension
+  namespace: BackExtension
+  syntax:
+    content: Day = 1
+    return:
+      type: BackExtension.DateInterval
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BackExtension
+  commentId: N:BackExtension
+  name: BackExtension
+  nameWithType: BackExtension
+  fullName: BackExtension
+- uid: BackExtension.DateInterval
+  commentId: T:BackExtension.DateInterval
+  parent: BackExtension
+  name: DateInterval
+  nameWithType: DateInterval
+  fullName: BackExtension.DateInterval

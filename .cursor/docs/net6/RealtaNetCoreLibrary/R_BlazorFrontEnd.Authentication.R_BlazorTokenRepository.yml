@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  commentId: T:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  id: R_BlazorTokenRepository
+  parent: R_BlazorFrontEnd.Authentication
+  children:
+  - R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.#ctor(R_BlazorFrontEnd.Interfaces.R_ILocalStorage,R_BlazorFrontEnd.Interfaces.R_IEnvironment)
+  - R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken
+  - R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest
+  - R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken
+  - R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired
+  - R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken(System.String)
+  - R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_BlazorTokenRepository
+  nameWithType: R_BlazorTokenRepository
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_BlazorTokenRepository
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: 'public class R_BlazorTokenRepository : object, R_ITokenRepository'
+    content.vb: >-
+      Public Class R_BlazorTokenRepository
+          Inherits Object
+          Implements R_ITokenRepository
+  inheritance:
+  - System.Object
+  implements:
+  - R_AuthenticationEnumAndInterface.R_ITokenRepository
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.#ctor(R_BlazorFrontEnd.Interfaces.R_ILocalStorage,R_BlazorFrontEnd.Interfaces.R_IEnvironment)
+  commentId: M:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.#ctor(R_BlazorFrontEnd.Interfaces.R_ILocalStorage,R_BlazorFrontEnd.Interfaces.R_IEnvironment)
+  id: '#ctor(R_BlazorFrontEnd.Interfaces.R_ILocalStorage,R_BlazorFrontEnd.Interfaces.R_IEnvironment)'
+  parent: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_BlazorTokenRepository(R_ILocalStorage, R_IEnvironment)
+  nameWithType: R_BlazorTokenRepository.R_BlazorTokenRepository(R_ILocalStorage, R_IEnvironment)
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_BlazorTokenRepository(R_BlazorFrontEnd.Interfaces.R_ILocalStorage, R_BlazorFrontEnd.Interfaces.R_IEnvironment)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 17
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: public R_BlazorTokenRepository(R_ILocalStorage localStorageService, R_IEnvironment environment)
+    parameters:
+    - id: localStorageService
+      type: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+    - id: environment
+      type: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+    content.vb: Public Sub New(localStorageService As R_ILocalStorage, environment As R_IEnvironment)
+  overload: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken(System.String)
+  commentId: M:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken(System.String)
+  id: R_SetToken(System.String)
+  parent: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_SetToken(String)
+  nameWithType: R_BlazorTokenRepository.R_SetToken(String)
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetToken
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 25
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: public void R_SetToken(string pcToken)
+    parameters:
+    - id: pcToken
+      type: System.String
+    content.vb: Public Sub R_SetToken(pcToken As String)
+  overload: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken*
+  implements:
+  - R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest
+  commentId: M:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest
+  id: R_GetRefreshTokenRequest
+  parent: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_GetRefreshTokenRequest()
+  nameWithType: R_BlazorTokenRepository.R_GetRefreshTokenRequest()
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetRefreshTokenRequest
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 30
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: public string R_GetRefreshTokenRequest()
+    return:
+      type: System.String
+    content.vb: Public Function R_GetRefreshTokenRequest As String
+  overload: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest*
+  implements:
+  - R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired
+  commentId: M:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired
+  id: R_IsTokenExpired
+  parent: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_IsTokenExpired()
+  nameWithType: R_BlazorTokenRepository.R_IsTokenExpired()
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IsTokenExpired
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 38
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: public bool R_IsTokenExpired()
+    return:
+      type: System.Boolean
+    content.vb: Public Function R_IsTokenExpired As Boolean
+  overload: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired*
+  implements:
+  - R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken
+  commentId: M:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken
+  id: R_GetToken
+  parent: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_GetToken()
+  nameWithType: R_BlazorTokenRepository.R_GetToken()
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetToken
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 48
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: public string R_GetToken()
+    return:
+      type: System.String
+    content.vb: Public Function R_GetToken As String
+  overload: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken*
+  implements:
+  - R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken(System.String)
+  commentId: M:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken(System.String)
+  id: R_SetRefreshToken(System.String)
+  parent: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_SetRefreshToken(String)
+  nameWithType: R_BlazorTokenRepository.R_SetRefreshToken(String)
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken(System.String)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetRefreshToken
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 53
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: public void R_SetRefreshToken(string pcRefreshToken)
+    parameters:
+    - id: pcRefreshToken
+      type: System.String
+    content.vb: Public Sub R_SetRefreshToken(pcRefreshToken As String)
+  overload: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken*
+  implements:
+  - R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken
+  commentId: M:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken
+  id: R_GetRefreshToken
+  parent: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository
+  langs:
+  - csharp
+  - vb
+  name: R_GetRefreshToken()
+  nameWithType: R_BlazorTokenRepository.R_GetRefreshToken()
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetRefreshToken
+    path: Library/R_BlazorFrontEnd.Authentication/R_BlazorTokenRepository.cs
+    startLine: 58
+  assemblies:
+  - R_BlazorFrontEnd.Authentication
+  namespace: R_BlazorFrontEnd.Authentication
+  syntax:
+    content: public string R_GetRefreshToken()
+    return:
+      type: System.String
+    content.vb: Public Function R_GetRefreshToken As String
+  overload: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken*
+  implements:
+  - R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_BlazorFrontEnd.Authentication
+  commentId: N:R_BlazorFrontEnd.Authentication
+  name: R_BlazorFrontEnd.Authentication
+  nameWithType: R_BlazorFrontEnd.Authentication
+  fullName: R_BlazorFrontEnd.Authentication
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_AuthenticationEnumAndInterface.R_ITokenRepository
+  commentId: T:R_AuthenticationEnumAndInterface.R_ITokenRepository
+  parent: R_AuthenticationEnumAndInterface
+  isExternal: true
+  name: R_ITokenRepository
+  nameWithType: R_ITokenRepository
+  fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_AuthenticationEnumAndInterface
+  commentId: N:R_AuthenticationEnumAndInterface
+  isExternal: true
+  name: R_AuthenticationEnumAndInterface
+  nameWithType: R_AuthenticationEnumAndInterface
+  fullName: R_AuthenticationEnumAndInterface
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.#ctor
+  name: R_BlazorTokenRepository
+  nameWithType: R_BlazorTokenRepository.R_BlazorTokenRepository
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_BlazorTokenRepository
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+  parent: R_BlazorFrontEnd.Interfaces
+  name: R_ILocalStorage
+  nameWithType: R_ILocalStorage
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+- uid: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  commentId: T:R_BlazorFrontEnd.Interfaces.R_IEnvironment
+  parent: R_BlazorFrontEnd.Interfaces
+  name: R_IEnvironment
+  nameWithType: R_IEnvironment
+  fullName: R_BlazorFrontEnd.Interfaces.R_IEnvironment
+- uid: R_BlazorFrontEnd.Interfaces
+  commentId: N:R_BlazorFrontEnd.Interfaces
+  name: R_BlazorFrontEnd.Interfaces
+  nameWithType: R_BlazorFrontEnd.Interfaces
+  fullName: R_BlazorFrontEnd.Interfaces
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken*
+  commentId: Overload:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken
+  name: R_SetToken
+  nameWithType: R_BlazorTokenRepository.R_SetToken
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetToken
+- uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken(System.String)
+  commentId: M:R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken(System.String)
+  parent: R_AuthenticationEnumAndInterface.R_ITokenRepository
+  isExternal: true
+  name: R_SetToken(String)
+  nameWithType: R_ITokenRepository.R_SetToken(String)
+  fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken(System.String)
+  spec.csharp:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken(System.String)
+    name: R_SetToken
+    nameWithType: R_ITokenRepository.R_SetToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken(System.String)
+    name: R_SetToken
+    nameWithType: R_ITokenRepository.R_SetToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest*
+  commentId: Overload:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest
+  name: R_GetRefreshTokenRequest
+  nameWithType: R_BlazorTokenRepository.R_GetRefreshTokenRequest
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshTokenRequest
+- uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest
+  commentId: M:R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest
+  parent: R_AuthenticationEnumAndInterface.R_ITokenRepository
+  isExternal: true
+  name: R_GetRefreshTokenRequest()
+  nameWithType: R_ITokenRepository.R_GetRefreshTokenRequest()
+  fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest()
+  spec.csharp:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest
+    name: R_GetRefreshTokenRequest
+    nameWithType: R_ITokenRepository.R_GetRefreshTokenRequest
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest
+    name: R_GetRefreshTokenRequest
+    nameWithType: R_ITokenRepository.R_GetRefreshTokenRequest
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshTokenRequest
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired*
+  commentId: Overload:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired
+  name: R_IsTokenExpired
+  nameWithType: R_BlazorTokenRepository.R_IsTokenExpired
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_IsTokenExpired
+- uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired
+  commentId: M:R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired
+  parent: R_AuthenticationEnumAndInterface.R_ITokenRepository
+  isExternal: true
+  name: R_IsTokenExpired()
+  nameWithType: R_ITokenRepository.R_IsTokenExpired()
+  fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired()
+  spec.csharp:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired
+    name: R_IsTokenExpired
+    nameWithType: R_ITokenRepository.R_IsTokenExpired
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired
+    name: R_IsTokenExpired
+    nameWithType: R_ITokenRepository.R_IsTokenExpired
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_IsTokenExpired
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken*
+  commentId: Overload:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken
+  name: R_GetToken
+  nameWithType: R_BlazorTokenRepository.R_GetToken
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetToken
+- uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken
+  commentId: M:R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken
+  parent: R_AuthenticationEnumAndInterface.R_ITokenRepository
+  isExternal: true
+  name: R_GetToken()
+  nameWithType: R_ITokenRepository.R_GetToken()
+  fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken()
+  spec.csharp:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken
+    name: R_GetToken
+    nameWithType: R_ITokenRepository.R_GetToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken
+    name: R_GetToken
+    nameWithType: R_ITokenRepository.R_GetToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken*
+  commentId: Overload:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken
+  name: R_SetRefreshToken
+  nameWithType: R_BlazorTokenRepository.R_SetRefreshToken
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_SetRefreshToken
+- uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken(System.String)
+  commentId: M:R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken(System.String)
+  parent: R_AuthenticationEnumAndInterface.R_ITokenRepository
+  isExternal: true
+  name: R_SetRefreshToken(String)
+  nameWithType: R_ITokenRepository.R_SetRefreshToken(String)
+  fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken(System.String)
+  spec.csharp:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken(System.String)
+    name: R_SetRefreshToken
+    nameWithType: R_ITokenRepository.R_SetRefreshToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken(System.String)
+    name: R_SetRefreshToken
+    nameWithType: R_ITokenRepository.R_SetRefreshToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_SetRefreshToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken*
+  commentId: Overload:R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken
+  name: R_GetRefreshToken
+  nameWithType: R_BlazorTokenRepository.R_GetRefreshToken
+  fullName: R_BlazorFrontEnd.Authentication.R_BlazorTokenRepository.R_GetRefreshToken
+- uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken
+  commentId: M:R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken
+  parent: R_AuthenticationEnumAndInterface.R_ITokenRepository
+  isExternal: true
+  name: R_GetRefreshToken()
+  nameWithType: R_ITokenRepository.R_GetRefreshToken()
+  fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken()
+  spec.csharp:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken
+    name: R_GetRefreshToken
+    nameWithType: R_ITokenRepository.R_GetRefreshToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken
+    name: R_GetRefreshToken
+    nameWithType: R_ITokenRepository.R_GetRefreshToken
+    fullName: R_AuthenticationEnumAndInterface.R_ITokenRepository.R_GetRefreshToken
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

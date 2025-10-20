@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: CloudStorageJob.CloudStorageJobSettings
+  commentId: T:CloudStorageJob.CloudStorageJobSettings
+  id: CloudStorageJobSettings
+  parent: CloudStorageJob
+  children:
+  - CloudStorageJob.CloudStorageJobSettings.GetSettings
+  - CloudStorageJob.CloudStorageJobSettings.Settings
+  langs:
+  - csharp
+  - vb
+  name: CloudStorageJobSettings
+  nameWithType: CloudStorageJobSettings
+  fullName: CloudStorageJob.CloudStorageJobSettings
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CloudStorageJobSettings
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSettings.cs
+    startLine: 5
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: 'public class CloudStorageJobSettings : R_SchedulerSettingsDTO'
+    content.vb: >-
+      Public Class CloudStorageJobSettings
+          Inherits R_SchedulerSettingsDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CloudStorageJob.CloudStorageJobSettings.Settings
+  commentId: P:CloudStorageJob.CloudStorageJobSettings.Settings
+  id: Settings
+  parent: CloudStorageJob.CloudStorageJobSettings
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: CloudStorageJobSettings.Settings
+  fullName: CloudStorageJob.CloudStorageJobSettings.Settings
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Settings
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSettings.cs
+    startLine: 7
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public List<CloudStorageJobRawSetting> Settings { get; set; }
+    parameters: []
+    return:
+      type: List{CloudStorageJob.CloudStorageJobRawSetting}
+    content.vb: Public Property Settings As List(Of CloudStorageJobRawSetting)
+  overload: CloudStorageJob.CloudStorageJobSettings.Settings*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CloudStorageJob.CloudStorageJobSettings.GetSettings
+  commentId: M:CloudStorageJob.CloudStorageJobSettings.GetSettings
+  id: GetSettings
+  parent: CloudStorageJob.CloudStorageJobSettings
+  langs:
+  - csharp
+  - vb
+  name: GetSettings()
+  nameWithType: CloudStorageJobSettings.GetSettings()
+  fullName: CloudStorageJob.CloudStorageJobSettings.GetSettings()
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/CloudStorageJob/CloudStorageJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetSettings
+    path: Engine/Jobs/CloudStorageJob/CloudStorageJobSettings.cs
+    startLine: 8
+  assemblies:
+  - CloudStorageJob
+  namespace: CloudStorageJob
+  syntax:
+    content: public override IList GetSettings()
+    return:
+      type: IList
+    content.vb: Public Overrides Function GetSettings As IList
+  overload: CloudStorageJob.CloudStorageJobSettings.GetSettings*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: CloudStorageJob
+  commentId: N:CloudStorageJob
+  name: CloudStorageJob
+  nameWithType: CloudStorageJob
+  fullName: CloudStorageJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CloudStorageJob.CloudStorageJobSettings.Settings*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSettings.Settings
+  name: Settings
+  nameWithType: CloudStorageJobSettings.Settings
+  fullName: CloudStorageJob.CloudStorageJobSettings.Settings
+- uid: List{CloudStorageJob.CloudStorageJobRawSetting}
+  commentId: '!:List{CloudStorageJob.CloudStorageJobRawSetting}'
+  definition: List`1
+  name: List<CloudStorageJobRawSetting>
+  nameWithType: List<CloudStorageJobRawSetting>
+  fullName: List<CloudStorageJob.CloudStorageJobRawSetting>
+  nameWithType.vb: List(Of CloudStorageJobRawSetting)
+  fullName.vb: List(Of CloudStorageJob.CloudStorageJobRawSetting)
+  name.vb: List(Of CloudStorageJobRawSetting)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CloudStorageJob.CloudStorageJobRawSetting
+    name: CloudStorageJobRawSetting
+    nameWithType: CloudStorageJobRawSetting
+    fullName: CloudStorageJob.CloudStorageJobRawSetting
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CloudStorageJob.CloudStorageJobRawSetting
+    name: CloudStorageJobRawSetting
+    nameWithType: CloudStorageJobRawSetting
+    fullName: CloudStorageJob.CloudStorageJobRawSetting
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CloudStorageJob.CloudStorageJobSettings.GetSettings*
+  commentId: Overload:CloudStorageJob.CloudStorageJobSettings.GetSettings
+  name: GetSettings
+  nameWithType: CloudStorageJobSettings.GetSettings
+  fullName: CloudStorageJob.CloudStorageJobSettings.GetSettings
+- uid: IList
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: IList

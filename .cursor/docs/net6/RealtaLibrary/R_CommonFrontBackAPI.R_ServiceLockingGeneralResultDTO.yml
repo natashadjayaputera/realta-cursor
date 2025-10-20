@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  id: R_ServiceLockingGeneralResultDTO
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceLockingGeneralResultDTO
+  nameWithType: R_ServiceLockingGeneralResultDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceLockingGeneralResultDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceLockingGeneralResultDTO : R_APIResultBaseDTO'
+    content.vb: >-
+      Public Class R_ServiceLockingGeneralResultDTO
+          Inherits R_APIResultBaseDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data
+  id: data
+  parent: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: R_ServiceLockingGeneralResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: data
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public R_ServiceLockingGeneralResultData data { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+    content.vb: Public Property data As R_ServiceLockingGeneralResultData
+  overload: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data
+  name: data
+  nameWithType: R_ServiceLockingGeneralResultDTO.data
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultDTO.data
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  parent: R_CommonFrontBackAPI
+  name: R_ServiceLockingGeneralResultData
+  nameWithType: R_ServiceLockingGeneralResultData
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData

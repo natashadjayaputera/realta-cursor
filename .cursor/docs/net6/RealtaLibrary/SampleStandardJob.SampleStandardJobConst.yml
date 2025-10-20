@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.SampleStandardJobConst
+  commentId: T:SampleStandardJob.SampleStandardJobConst
+  id: SampleStandardJobConst
+  parent: SampleStandardJob
+  children:
+  - SampleStandardJob.SampleStandardJobConst.SETTING_NAME
+  langs:
+  - csharp
+  - vb
+  name: SampleStandardJobConst
+  nameWithType: SampleStandardJobConst
+  fullName: SampleStandardJob.SampleStandardJobConst
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SampleStandardJobConst
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobConst.cs
+    startLine: 4
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: 'public class SampleStandardJobConst : R_SchedulerSettingConstant'
+    content.vb: >-
+      Public Class SampleStandardJobConst
+          Inherits R_SchedulerSettingConstant
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SampleStandardJob.SampleStandardJobConst.SETTING_NAME
+  commentId: F:SampleStandardJob.SampleStandardJobConst.SETTING_NAME
+  id: SETTING_NAME
+  parent: SampleStandardJob.SampleStandardJobConst
+  langs:
+  - csharp
+  - vb
+  name: SETTING_NAME
+  nameWithType: SampleStandardJobConst.SETTING_NAME
+  fullName: SampleStandardJob.SampleStandardJobConst.SETTING_NAME
+  type: Field
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/SampleStandardJobConst.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SETTING_NAME
+    path: Engine/SampleJob/SampleStandardJob/SampleStandardJobConst.cs
+    startLine: 6
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob
+  syntax:
+    content: public const string SETTING_NAME = null
+    return:
+      type: System.String
+    content.vb: Public Const SETTING_NAME As String = Nothing
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: SampleStandardJob
+  commentId: N:SampleStandardJob
+  name: SampleStandardJob
+  nameWithType: SampleStandardJob
+  fullName: SampleStandardJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: EmailEngineJob.EmailEngineJobSettings
+  commentId: T:EmailEngineJob.EmailEngineJobSettings
+  id: EmailEngineJobSettings
+  parent: EmailEngineJob
+  children:
+  - EmailEngineJob.EmailEngineJobSettings.GetSettings
+  - EmailEngineJob.EmailEngineJobSettings.Settings
+  langs:
+  - csharp
+  - vb
+  name: EmailEngineJobSettings
+  nameWithType: EmailEngineJobSettings
+  fullName: EmailEngineJob.EmailEngineJobSettings
+  type: Class
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailEngineJobSettings
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobSettings.cs
+    startLine: 5
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: 'public class EmailEngineJobSettings : R_SchedulerSettingsDTO'
+    content.vb: >-
+      Public Class EmailEngineJobSettings
+          Inherits R_SchedulerSettingsDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: EmailEngineJob.EmailEngineJobSettings.Settings
+  commentId: P:EmailEngineJob.EmailEngineJobSettings.Settings
+  id: Settings
+  parent: EmailEngineJob.EmailEngineJobSettings
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: EmailEngineJobSettings.Settings
+  fullName: EmailEngineJob.EmailEngineJobSettings.Settings
+  type: Property
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Settings
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobSettings.cs
+    startLine: 7
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: public List<EmailEngineJobSetting> Settings { get; set; }
+    parameters: []
+    return:
+      type: List{EmailEngineJob.EmailEngineJobSetting}
+    content.vb: Public Property Settings As List(Of EmailEngineJobSetting)
+  overload: EmailEngineJob.EmailEngineJobSettings.Settings*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: EmailEngineJob.EmailEngineJobSettings.GetSettings
+  commentId: M:EmailEngineJob.EmailEngineJobSettings.GetSettings
+  id: GetSettings
+  parent: EmailEngineJob.EmailEngineJobSettings
+  langs:
+  - csharp
+  - vb
+  name: GetSettings()
+  nameWithType: EmailEngineJobSettings.GetSettings()
+  fullName: EmailEngineJob.EmailEngineJobSettings.GetSettings()
+  type: Method
+  source:
+    remote:
+      path: Engine/Jobs/EmailEngineJob/EmailEngineJobSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetSettings
+    path: Engine/Jobs/EmailEngineJob/EmailEngineJobSettings.cs
+    startLine: 8
+  assemblies:
+  - EmailEngineJob
+  namespace: EmailEngineJob
+  syntax:
+    content: public override IList GetSettings()
+    return:
+      type: IList
+    content.vb: Public Overrides Function GetSettings As IList
+  overload: EmailEngineJob.EmailEngineJobSettings.GetSettings*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: EmailEngineJob
+  commentId: N:EmailEngineJob
+  name: EmailEngineJob
+  nameWithType: EmailEngineJob
+  fullName: EmailEngineJob
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: EmailEngineJob.EmailEngineJobSettings.Settings*
+  commentId: Overload:EmailEngineJob.EmailEngineJobSettings.Settings
+  name: Settings
+  nameWithType: EmailEngineJobSettings.Settings
+  fullName: EmailEngineJob.EmailEngineJobSettings.Settings
+- uid: List{EmailEngineJob.EmailEngineJobSetting}
+  commentId: '!:List{EmailEngineJob.EmailEngineJobSetting}'
+  definition: List`1
+  name: List<EmailEngineJobSetting>
+  nameWithType: List<EmailEngineJobSetting>
+  fullName: List<EmailEngineJob.EmailEngineJobSetting>
+  nameWithType.vb: List(Of EmailEngineJobSetting)
+  fullName.vb: List(Of EmailEngineJob.EmailEngineJobSetting)
+  name.vb: List(Of EmailEngineJobSetting)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: EmailEngineJob.EmailEngineJobSetting
+    name: EmailEngineJobSetting
+    nameWithType: EmailEngineJobSetting
+    fullName: EmailEngineJob.EmailEngineJobSetting
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: EmailEngineJob.EmailEngineJobSetting
+    name: EmailEngineJobSetting
+    nameWithType: EmailEngineJobSetting
+    fullName: EmailEngineJob.EmailEngineJobSetting
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EmailEngineJob.EmailEngineJobSettings.GetSettings*
+  commentId: Overload:EmailEngineJob.EmailEngineJobSettings.GetSettings
+  name: GetSettings
+  nameWithType: EmailEngineJobSettings.GetSettings
+  fullName: EmailEngineJob.EmailEngineJobSettings.GetSettings
+- uid: IList
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: IList

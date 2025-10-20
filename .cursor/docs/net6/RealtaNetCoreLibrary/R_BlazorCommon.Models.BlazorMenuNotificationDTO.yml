@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  commentId: T:R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  id: BlazorMenuNotificationDTO
+  parent: R_BlazorCommon.Models
+  children:
+  - R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author
+  - R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage
+  - R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived
+  - R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead
+  - R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message
+  - R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate
+  langs:
+  - csharp
+  - vb
+  name: BlazorMenuNotificationDTO
+  nameWithType: BlazorMenuNotificationDTO
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  type: Class
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: BlazorMenuNotificationDTO
+    path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Models
+  syntax:
+    content: 'public class BlazorMenuNotificationDTO : object'
+    content.vb: >-
+      Public Class BlazorMenuNotificationDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author
+  commentId: P:R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author
+  id: Author
+  parent: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  langs:
+  - csharp
+  - vb
+  name: Author
+  nameWithType: BlazorMenuNotificationDTO.Author
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Author
+    path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Models
+  syntax:
+    content: public string Author { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Author As String
+  overload: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message
+  commentId: P:R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message
+  id: Message
+  parent: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: BlazorMenuNotificationDTO.Message
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Message
+    path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Models
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate
+  commentId: P:R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate
+  id: MessageDate
+  parent: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  langs:
+  - csharp
+  - vb
+  name: MessageDate
+  nameWithType: BlazorMenuNotificationDTO.MessageDate
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: MessageDate
+    path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Models
+  syntax:
+    content: public DateTime MessageDate { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property MessageDate As DateTime
+  overload: R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived
+  commentId: P:R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived
+  id: IsJustArrived
+  parent: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  langs:
+  - csharp
+  - vb
+  name: IsJustArrived
+  nameWithType: BlazorMenuNotificationDTO.IsJustArrived
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsJustArrived
+    path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Models
+  syntax:
+    content: public bool IsJustArrived { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsJustArrived As Boolean
+  overload: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead
+  commentId: P:R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead
+  id: IsRead
+  parent: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  langs:
+  - csharp
+  - vb
+  name: IsRead
+  nameWithType: BlazorMenuNotificationDTO.IsRead
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsRead
+    path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Models
+  syntax:
+    content: public bool IsRead { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRead As Boolean
+  overload: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage
+  commentId: P:R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage
+  id: HtmlMessage
+  parent: R_BlazorCommon.Models.BlazorMenuNotificationDTO
+  langs:
+  - csharp
+  - vb
+  name: HtmlMessage
+  nameWithType: BlazorMenuNotificationDTO.HtmlMessage
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage
+  type: Property
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HtmlMessage
+    path: Library Back/R_BlazorCommon/Models/BlazorMenuNotificationDTO.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Models
+  syntax:
+    content: public string HtmlMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property HtmlMessage As String
+  overload: R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: R_BlazorCommon.Models
+  commentId: N:R_BlazorCommon.Models
+  name: R_BlazorCommon.Models
+  nameWithType: R_BlazorCommon.Models
+  fullName: R_BlazorCommon.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author*
+  commentId: Overload:R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author
+  name: Author
+  nameWithType: BlazorMenuNotificationDTO.Author
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Author
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message*
+  commentId: Overload:R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message
+  name: Message
+  nameWithType: BlazorMenuNotificationDTO.Message
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.Message
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate*
+  commentId: Overload:R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate
+  name: MessageDate
+  nameWithType: BlazorMenuNotificationDTO.MessageDate
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.MessageDate
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived*
+  commentId: Overload:R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived
+  name: IsJustArrived
+  nameWithType: BlazorMenuNotificationDTO.IsJustArrived
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsJustArrived
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead*
+  commentId: Overload:R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead
+  name: IsRead
+  nameWithType: BlazorMenuNotificationDTO.IsRead
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.IsRead
+- uid: R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage*
+  commentId: Overload:R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage
+  name: HtmlMessage
+  nameWithType: BlazorMenuNotificationDTO.HtmlMessage
+  fullName: R_BlazorCommon.Models.BlazorMenuNotificationDTO.HtmlMessage

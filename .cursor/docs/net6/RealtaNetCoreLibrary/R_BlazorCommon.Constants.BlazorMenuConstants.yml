@@ -1,0 +1,50 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorCommon.Constants.BlazorMenuConstants
+  commentId: T:R_BlazorCommon.Constants.BlazorMenuConstants
+  id: BlazorMenuConstants
+  parent: R_BlazorCommon.Constants
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: BlazorMenuConstants
+  nameWithType: BlazorMenuConstants
+  fullName: R_BlazorCommon.Constants.BlazorMenuConstants
+  type: Class
+  source:
+    remote:
+      path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: BlazorMenuConstants
+    path: Library Back/R_BlazorCommon/Constants/BlazorMenuConstants.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorCommon
+  namespace: R_BlazorCommon.Constants
+  syntax:
+    content: 'public static class BlazorMenuConstants : object'
+    content.vb: >-
+      Public Module BlazorMenuConstants
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+references:
+- uid: R_BlazorCommon.Constants
+  commentId: N:R_BlazorCommon.Constants
+  name: R_BlazorCommon.Constants
+  nameWithType: R_BlazorCommon.Constants
+  fullName: R_BlazorCommon.Constants
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object

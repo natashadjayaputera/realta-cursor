@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_Culture
+  commentId: T:R_CommonFrontBackAPI.R_Culture
+  id: R_Culture
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures
+  - R_CommonFrontBackAPI.R_Culture.R_GetCulture(R_CommonFrontBackAPI.eCulture)
+  - R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum(System.String)
+  - R_CommonFrontBackAPI.R_Culture.R_GetCultureId(R_CommonFrontBackAPI.eCulture)
+  langs:
+  - csharp
+  - vb
+  name: R_Culture
+  nameWithType: R_Culture
+  fullName: R_CommonFrontBackAPI.R_Culture
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_Culture
+    path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_Culture : object'
+    content.vb: >-
+      Public Class R_Culture
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetCultureId(R_CommonFrontBackAPI.eCulture)
+  commentId: M:R_CommonFrontBackAPI.R_Culture.R_GetCultureId(R_CommonFrontBackAPI.eCulture)
+  id: R_GetCultureId(R_CommonFrontBackAPI.eCulture)
+  parent: R_CommonFrontBackAPI.R_Culture
+  langs:
+  - csharp
+  - vb
+  name: R_GetCultureId(eCulture)
+  nameWithType: R_Culture.R_GetCultureId(eCulture)
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetCultureId(R_CommonFrontBackAPI.eCulture)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetCultureId
+    path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static string R_GetCultureId(eCulture peCulture)
+    parameters:
+    - id: peCulture
+      type: R_CommonFrontBackAPI.eCulture
+    return:
+      type: System.String
+    content.vb: Public Shared Function R_GetCultureId(peCulture As eCulture) As String
+  overload: R_CommonFrontBackAPI.R_Culture.R_GetCultureId*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetCulture(R_CommonFrontBackAPI.eCulture)
+  commentId: M:R_CommonFrontBackAPI.R_Culture.R_GetCulture(R_CommonFrontBackAPI.eCulture)
+  id: R_GetCulture(R_CommonFrontBackAPI.eCulture)
+  parent: R_CommonFrontBackAPI.R_Culture
+  langs:
+  - csharp
+  - vb
+  name: R_GetCulture(eCulture)
+  nameWithType: R_Culture.R_GetCulture(eCulture)
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetCulture(R_CommonFrontBackAPI.eCulture)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetCulture
+    path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+    startLine: 36
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static CultureInfo R_GetCulture(eCulture peCulture)
+    parameters:
+    - id: peCulture
+      type: R_CommonFrontBackAPI.eCulture
+    return:
+      type: CultureInfo
+    content.vb: Public Shared Function R_GetCulture(peCulture As eCulture) As CultureInfo
+  overload: R_CommonFrontBackAPI.R_Culture.R_GetCulture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures
+  commentId: M:R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures
+  id: R_GetAvailableCultures
+  parent: R_CommonFrontBackAPI.R_Culture
+  langs:
+  - csharp
+  - vb
+  name: R_GetAvailableCultures()
+  nameWithType: R_Culture.R_GetAvailableCultures()
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetAvailableCultures
+    path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+    startLine: 40
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static R_NameValue[] R_GetAvailableCultures()
+    return:
+      type: R_CommonFrontBackAPI.R_NameValue[]
+    content.vb: Public Shared Function R_GetAvailableCultures As R_NameValue()
+  overload: R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum(System.String)
+  commentId: M:R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum(System.String)
+  id: R_GetCultureEnum(System.String)
+  parent: R_CommonFrontBackAPI.R_Culture
+  langs:
+  - csharp
+  - vb
+  name: R_GetCultureEnum(String)
+  nameWithType: R_Culture.R_GetCultureEnum(String)
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetCultureEnum
+    path: Microservices/R_CommonFrontBackAPI/R_Culture.cs
+    startLine: 49
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static eCulture R_GetCultureEnum(string pcCultureId)
+    parameters:
+    - id: pcCultureId
+      type: System.String
+    return:
+      type: R_CommonFrontBackAPI.eCulture
+    content.vb: Public Shared Function R_GetCultureEnum(pcCultureId As String) As eCulture
+  overload: R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetCultureId*
+  commentId: Overload:R_CommonFrontBackAPI.R_Culture.R_GetCultureId
+  name: R_GetCultureId
+  nameWithType: R_Culture.R_GetCultureId
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetCultureId
+- uid: R_CommonFrontBackAPI.eCulture
+  commentId: T:R_CommonFrontBackAPI.eCulture
+  parent: R_CommonFrontBackAPI
+  name: eCulture
+  nameWithType: eCulture
+  fullName: R_CommonFrontBackAPI.eCulture
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetCulture*
+  commentId: Overload:R_CommonFrontBackAPI.R_Culture.R_GetCulture
+  name: R_GetCulture
+  nameWithType: R_Culture.R_GetCulture
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetCulture
+- uid: CultureInfo
+  commentId: '!:CultureInfo'
+  isExternal: true
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: CultureInfo
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures*
+  commentId: Overload:R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures
+  name: R_GetAvailableCultures
+  nameWithType: R_Culture.R_GetAvailableCultures
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetAvailableCultures
+- uid: R_CommonFrontBackAPI.R_NameValue[]
+  isExternal: true
+  name: R_NameValue[]
+  nameWithType: R_NameValue[]
+  fullName: R_CommonFrontBackAPI.R_NameValue[]
+  nameWithType.vb: R_NameValue()
+  fullName.vb: R_CommonFrontBackAPI.R_NameValue()
+  name.vb: R_NameValue()
+  spec.csharp:
+  - uid: R_CommonFrontBackAPI.R_NameValue
+    name: R_NameValue
+    nameWithType: R_NameValue
+    fullName: R_CommonFrontBackAPI.R_NameValue
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: R_CommonFrontBackAPI.R_NameValue
+    name: R_NameValue
+    nameWithType: R_NameValue
+    fullName: R_CommonFrontBackAPI.R_NameValue
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum*
+  commentId: Overload:R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum
+  name: R_GetCultureEnum
+  nameWithType: R_Culture.R_GetCultureEnum
+  fullName: R_CommonFrontBackAPI.R_Culture.R_GetCultureEnum

@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  id: R_ServiceLockingGeneralResultData
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess
+  - R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy
+  - R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceLockingGeneralResultData
+  nameWithType: R_ServiceLockingGeneralResultData
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceLockingGeneralResultData
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+    startLine: 10
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceLockingGeneralResultData : object'
+    content.vb: >-
+      Public Class R_ServiceLockingGeneralResultData
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess
+  id: IsSuccess
+  parent: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  langs:
+  - csharp
+  - vb
+  name: IsSuccess
+  nameWithType: R_ServiceLockingGeneralResultData.IsSuccess
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: IsSuccess
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+    startLine: 12
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public Boolean IsSuccess { get; set; }
+    parameters: []
+    return:
+      type: Boolean
+    content.vb: Public Property IsSuccess As Boolean
+  overload: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy
+  id: LockBy
+  parent: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  langs:
+  - csharp
+  - vb
+  name: LockBy
+  nameWithType: R_ServiceLockingGeneralResultData.LockBy
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: LockBy
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+    startLine: 13
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string LockBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LockBy As String
+  overload: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message
+  id: Message
+  parent: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: R_ServiceLockingGeneralResultData.Message
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Message
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingGeneralResultDTO.cs
+    startLine: 14
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess
+  name: IsSuccess
+  nameWithType: R_ServiceLockingGeneralResultData.IsSuccess
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.IsSuccess
+- uid: Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: Boolean
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy
+  name: LockBy
+  nameWithType: R_ServiceLockingGeneralResultData.LockBy
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.LockBy
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message
+  name: Message
+  nameWithType: R_ServiceLockingGeneralResultData.Message
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingGeneralResultData.Message

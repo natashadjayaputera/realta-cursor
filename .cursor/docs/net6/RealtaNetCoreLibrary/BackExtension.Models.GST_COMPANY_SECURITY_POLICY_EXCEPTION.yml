@@ -1,0 +1,1210 @@
+### YamlMime:ManagedReference
+items:
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  commentId: T:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  id: GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  parent: BackExtension.Models
+  children:
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  - BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  langs:
+  - csharp
+  - vb
+  name: GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  type: Class
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GST_COMPANY_SECURITY_POLICY_EXCEPTION
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 2
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: 'public class GST_COMPANY_SECURITY_POLICY_EXCEPTION : object'
+    content.vb: >-
+      Public Class GST_COMPANY_SECURITY_POLICY_EXCEPTION
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CCOMPANY_ID
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 4
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  id: LMINIMUM_PASSWORD_LENGTH
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LMINIMUM_PASSWORD_LENGTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LMINIMUM_PASSWORD_LENGTH
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 5
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LMINIMUM_PASSWORD_LENGTH { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LMINIMUM_PASSWORD_LENGTH As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  id: IMINIMUM_PASSWORD_LENGTH
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IMINIMUM_PASSWORD_LENGTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMINIMUM_PASSWORD_LENGTH
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 6
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IMINIMUM_PASSWORD_LENGTH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMINIMUM_PASSWORD_LENGTH As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  id: LMINIMUM_PASSWORD_AGE
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LMINIMUM_PASSWORD_AGE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LMINIMUM_PASSWORD_AGE
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 7
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LMINIMUM_PASSWORD_AGE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LMINIMUM_PASSWORD_AGE As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  id: IMINIMUM_PASSWORD_AGE
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IMINIMUM_PASSWORD_AGE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMINIMUM_PASSWORD_AGE
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 8
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IMINIMUM_PASSWORD_AGE { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMINIMUM_PASSWORD_AGE As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  id: LMAXIMUM_PASSWORD_AGE
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LMAXIMUM_PASSWORD_AGE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LMAXIMUM_PASSWORD_AGE
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 9
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LMAXIMUM_PASSWORD_AGE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LMAXIMUM_PASSWORD_AGE As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  id: CMAXIMUM_PASSWORD_AGE_OPTION
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: CMAXIMUM_PASSWORD_AGE_OPTION
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CMAXIMUM_PASSWORD_AGE_OPTION
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 10
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CMAXIMUM_PASSWORD_AGE_OPTION { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CMAXIMUM_PASSWORD_AGE_OPTION As String
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  id: IMAXIMUM_PASSWORD_AGE_DAYS
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IMAXIMUM_PASSWORD_AGE_DAYS
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMAXIMUM_PASSWORD_AGE_DAYS
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 11
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IMAXIMUM_PASSWORD_AGE_DAYS { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMAXIMUM_PASSWORD_AGE_DAYS As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  id: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 12
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  id: IMAXIMUM_PASSWORD_AGE_MONTH
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IMAXIMUM_PASSWORD_AGE_MONTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IMAXIMUM_PASSWORD_AGE_MONTH
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 13
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IMAXIMUM_PASSWORD_AGE_MONTH { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IMAXIMUM_PASSWORD_AGE_MONTH As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  id: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 14
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public string CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE As String
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  id: LENFORCE_PASSWORD_HISTORY
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LENFORCE_PASSWORD_HISTORY
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LENFORCE_PASSWORD_HISTORY
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 15
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LENFORCE_PASSWORD_HISTORY { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LENFORCE_PASSWORD_HISTORY As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  id: IENFORCE_PASSWORD_HISTORY
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IENFORCE_PASSWORD_HISTORY
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IENFORCE_PASSWORD_HISTORY
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 16
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IENFORCE_PASSWORD_HISTORY { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IENFORCE_PASSWORD_HISTORY As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  id: LCOMPLEXITY
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LCOMPLEXITY
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LCOMPLEXITY
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 17
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LCOMPLEXITY { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LCOMPLEXITY As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  id: LINCLUDE_LETTER
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_LETTER
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_LETTER
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 18
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LINCLUDE_LETTER { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_LETTER As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  id: LINCLUDE_UPPERCASE
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_UPPERCASE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_UPPERCASE
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 19
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LINCLUDE_UPPERCASE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_UPPERCASE As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  id: LINCLUDE_LOWERCASE
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_LOWERCASE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_LOWERCASE
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 20
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LINCLUDE_LOWERCASE { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_LOWERCASE As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  id: LINCLUDE_NUMBER
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_NUMBER
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_NUMBER
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 21
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LINCLUDE_NUMBER { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_NUMBER As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  id: LINCLUDE_SPECIAL_CHARACTER
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LINCLUDE_SPECIAL_CHARACTER
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LINCLUDE_SPECIAL_CHARACTER
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 22
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LINCLUDE_SPECIAL_CHARACTER { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LINCLUDE_SPECIAL_CHARACTER As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  id: LCANNOT_CONTAIN_USER_ID
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LCANNOT_CONTAIN_USER_ID
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LCANNOT_CONTAIN_USER_ID
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 23
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LCANNOT_CONTAIN_USER_ID { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LCANNOT_CONTAIN_USER_ID As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  id: LACCOUNT_LOCKOUT_DURATION
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LACCOUNT_LOCKOUT_DURATION
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LACCOUNT_LOCKOUT_DURATION
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 24
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LACCOUNT_LOCKOUT_DURATION { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LACCOUNT_LOCKOUT_DURATION As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  id: IACCOUNT_LOCKOUT_DURATION
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IACCOUNT_LOCKOUT_DURATION
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IACCOUNT_LOCKOUT_DURATION
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 25
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IACCOUNT_LOCKOUT_DURATION { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IACCOUNT_LOCKOUT_DURATION As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  id: LACCOUNT_LOCKOUT_THRESHOLD
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LACCOUNT_LOCKOUT_THRESHOLD
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 26
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LACCOUNT_LOCKOUT_THRESHOLD As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  id: IACCOUNT_LOCKOUT_THRESHOLD
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IACCOUNT_LOCKOUT_THRESHOLD
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 27
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IACCOUNT_LOCKOUT_THRESHOLD As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  id: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 28
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public bool LRESET_ACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LRESET_ACCOUNT_LOCKOUT_THRESHOLD As Boolean
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  id: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  parent: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION
+  langs:
+  - csharp
+  - vb
+  name: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  type: Property
+  source:
+    remote:
+      path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+    path: Library Back/BackExtension/Models/GST_COMPANY_SECURITY_POLICY_EXCEPTION.cs
+    startLine: 29
+  assemblies:
+  - BackExtension
+  namespace: BackExtension.Models
+  syntax:
+    content: public int IRESET_ACCOUNT_LOCKOUT_THRESHOLD { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IRESET_ACCOUNT_LOCKOUT_THRESHOLD As Integer
+  overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: BackExtension.Models
+  commentId: N:BackExtension.Models
+  name: BackExtension.Models
+  nameWithType: BackExtension.Models
+  fullName: BackExtension.Models
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  name: LMINIMUM_PASSWORD_LENGTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  name: IMINIMUM_PASSWORD_LENGTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  name: LMINIMUM_PASSWORD_AGE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  name: IMINIMUM_PASSWORD_AGE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  name: LMAXIMUM_PASSWORD_AGE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  name: CMAXIMUM_PASSWORD_AGE_OPTION
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  name: IMAXIMUM_PASSWORD_AGE_DAYS
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  name: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  name: IMAXIMUM_PASSWORD_AGE_MONTH
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  name: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  name: LENFORCE_PASSWORD_HISTORY
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  name: IENFORCE_PASSWORD_HISTORY
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  name: LCOMPLEXITY
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  name: LINCLUDE_LETTER
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  name: LINCLUDE_UPPERCASE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  name: LINCLUDE_LOWERCASE
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  name: LINCLUDE_NUMBER
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  name: LINCLUDE_SPECIAL_CHARACTER
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  name: LCANNOT_CONTAIN_USER_ID
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  name: LACCOUNT_LOCKOUT_DURATION
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  name: IACCOUNT_LOCKOUT_DURATION
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  name: LACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  name: IACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  name: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+- uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
+  commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  name: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD

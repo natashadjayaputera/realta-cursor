@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_APIClient
+  commentId: N:R_APIClient
+  id: R_APIClient
+  children:
+  - R_APIClient.R_HTTPClient
+  - R_APIClient.R_HTTPClient.E_APIMethod
+  - R_APIClient.R_HTTPClientWrapper
+  - R_APIClient.R_INotify`1
+  - R_APIClient.R_MultiPartFileParameter
+  langs:
+  - csharp
+  - vb
+  name: R_APIClient
+  nameWithType: R_APIClient
+  fullName: R_APIClient
+  type: Namespace
+  assemblies:
+  - R_APIClient
+references:
+- uid: R_APIClient.R_HTTPClient
+  commentId: T:R_APIClient.R_HTTPClient
+  parent: R_APIClient
+  name: R_HTTPClient
+  nameWithType: R_HTTPClient
+  fullName: R_APIClient.R_HTTPClient
+- uid: R_APIClient.R_HTTPClient.E_APIMethod
+  commentId: T:R_APIClient.R_HTTPClient.E_APIMethod
+  parent: R_APIClient
+  name: R_HTTPClient.E_APIMethod
+  nameWithType: R_HTTPClient.E_APIMethod
+  fullName: R_APIClient.R_HTTPClient.E_APIMethod
+- uid: R_APIClient.R_HTTPClientWrapper
+  commentId: T:R_APIClient.R_HTTPClientWrapper
+  name: R_HTTPClientWrapper
+  nameWithType: R_HTTPClientWrapper
+  fullName: R_APIClient.R_HTTPClientWrapper
+- uid: R_APIClient.R_INotify`1
+  commentId: T:R_APIClient.R_INotify`1
+  name: R_INotify<E>
+  nameWithType: R_INotify<E>
+  fullName: R_APIClient.R_INotify<E>
+  nameWithType.vb: R_INotify(Of E)
+  fullName.vb: R_APIClient.R_INotify(Of E)
+  name.vb: R_INotify(Of E)
+  spec.csharp:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: R_APIClient.R_INotify`1
+    name: R_INotify
+    nameWithType: R_INotify
+    fullName: R_APIClient.R_INotify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: E
+    nameWithType: E
+    fullName: E
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_APIClient.R_MultiPartFileParameter
+  commentId: T:R_APIClient.R_MultiPartFileParameter
+  name: R_MultiPartFileParameter
+  nameWithType: R_MultiPartFileParameter
+  fullName: R_APIClient.R_MultiPartFileParameter
+- uid: R_APIClient
+  commentId: N:R_APIClient
+  name: R_APIClient
+  nameWithType: R_APIClient
+  fullName: R_APIClient

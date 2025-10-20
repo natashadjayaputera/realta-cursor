@@ -1,0 +1,459 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.R_FrontContext
+  commentId: T:R_BlazorFrontEnd.R_FrontContext
+  id: R_FrontContext
+  parent: R_BlazorFrontEnd
+  children:
+  - R_BlazorFrontEnd.R_FrontContext.#ctor(R_ContextFrontEnd.R_Context)
+  - R_BlazorFrontEnd.R_FrontContext.R_SetContext(Dictionary{System.String,System.Object})
+  - R_BlazorFrontEnd.R_FrontContext.R_SetContext(System.String,System.Object)
+  - R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(Dictionary{System.String,System.Object})
+  - R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: R_FrontContext
+  nameWithType: R_FrontContext
+  fullName: R_BlazorFrontEnd.R_FrontContext
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FrontContext
+    path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: 'public class R_FrontContext : object'
+    content.vb: >-
+      Public Class R_FrontContext
+          Inherits Object
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_BlazorFrontEnd.R_FrontContext.#ctor(R_ContextFrontEnd.R_Context)
+  commentId: M:R_BlazorFrontEnd.R_FrontContext.#ctor(R_ContextFrontEnd.R_Context)
+  id: '#ctor(R_ContextFrontEnd.R_Context)'
+  parent: R_BlazorFrontEnd.R_FrontContext
+  langs:
+  - csharp
+  - vb
+  name: R_FrontContext(R_Context)
+  nameWithType: R_FrontContext.R_FrontContext(R_Context)
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_FrontContext(R_ContextFrontEnd.R_Context)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public R_FrontContext(R_Context poContext)
+    parameters:
+    - id: poContext
+      type: R_ContextFrontEnd.R_Context
+    content.vb: Public Sub New(poContext As R_Context)
+  overload: R_BlazorFrontEnd.R_FrontContext.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(Dictionary{System.String,System.Object})
+  commentId: M:R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(Dictionary{System.String,System.Object})
+  id: R_SetStreamingContext(Dictionary{System.String,System.Object})
+  parent: R_BlazorFrontEnd.R_FrontContext
+  langs:
+  - csharp
+  - vb
+  name: R_SetStreamingContext(Dictionary<String, Object>)
+  nameWithType: R_FrontContext.R_SetStreamingContext(Dictionary<String, Object>)
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(Dictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetStreamingContext
+    path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public static void R_SetStreamingContext(Dictionary<string, object> poData)
+    parameters:
+    - id: poData
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Shared Sub R_SetStreamingContext(poData As Dictionary(Of String, Object))
+  overload: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext*
+  nameWithType.vb: R_FrontContext.R_SetStreamingContext(Dictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(Dictionary(Of System.String, System.Object))
+  name.vb: R_SetStreamingContext(Dictionary(Of String, Object))
+- uid: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(System.String,System.Object)
+  commentId: M:R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(System.String,System.Object)
+  id: R_SetStreamingContext(System.String,System.Object)
+  parent: R_BlazorFrontEnd.R_FrontContext
+  langs:
+  - csharp
+  - vb
+  name: R_SetStreamingContext(String, Object)
+  nameWithType: R_FrontContext.R_SetStreamingContext(String, Object)
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetStreamingContext
+    path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+    startLine: 20
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public static void R_SetStreamingContext(string pcKey, object poObject)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poObject
+      type: System.Object
+    content.vb: Public Shared Sub R_SetStreamingContext(pcKey As String, poObject As Object)
+  overload: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_BlazorFrontEnd.R_FrontContext.R_SetContext(Dictionary{System.String,System.Object})
+  commentId: M:R_BlazorFrontEnd.R_FrontContext.R_SetContext(Dictionary{System.String,System.Object})
+  id: R_SetContext(Dictionary{System.String,System.Object})
+  parent: R_BlazorFrontEnd.R_FrontContext
+  langs:
+  - csharp
+  - vb
+  name: R_SetContext(Dictionary<String, Object>)
+  nameWithType: R_FrontContext.R_SetContext(Dictionary<String, Object>)
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_SetContext(Dictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetContext
+    path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+    startLine: 27
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public static void R_SetContext(Dictionary<string, object> poData)
+    parameters:
+    - id: poData
+      type: Dictionary{System.String,System.Object}
+    content.vb: Public Shared Sub R_SetContext(poData As Dictionary(Of String, Object))
+  overload: R_BlazorFrontEnd.R_FrontContext.R_SetContext*
+  nameWithType.vb: R_FrontContext.R_SetContext(Dictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_BlazorFrontEnd.R_FrontContext.R_SetContext(Dictionary(Of System.String, System.Object))
+  name.vb: R_SetContext(Dictionary(Of String, Object))
+- uid: R_BlazorFrontEnd.R_FrontContext.R_SetContext(System.String,System.Object)
+  commentId: M:R_BlazorFrontEnd.R_FrontContext.R_SetContext(System.String,System.Object)
+  id: R_SetContext(System.String,System.Object)
+  parent: R_BlazorFrontEnd.R_FrontContext
+  langs:
+  - csharp
+  - vb
+  name: R_SetContext(String, Object)
+  nameWithType: R_FrontContext.R_SetContext(String, Object)
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_SetContext(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SetContext
+    path: Library/R_BlazorFrontEnd/Context/R_FrontContext.cs
+    startLine: 32
+  assemblies:
+  - R_BlazorFrontEnd
+  namespace: R_BlazorFrontEnd
+  syntax:
+    content: public static void R_SetContext(string pcKey, object poObject)
+    parameters:
+    - id: pcKey
+      type: System.String
+    - id: poObject
+      type: System.Object
+    content.vb: Public Shared Sub R_SetContext(pcKey As String, poObject As Object)
+  overload: R_BlazorFrontEnd.R_FrontContext.R_SetContext*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_BlazorFrontEnd
+  commentId: N:R_BlazorFrontEnd
+  name: R_BlazorFrontEnd
+  nameWithType: R_BlazorFrontEnd
+  fullName: R_BlazorFrontEnd
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  name: ThrowIfNull()
+  nameWithType: R_FrontExtensions.ThrowIfNull()
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  name: ThrowIfNull(Object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    nameWithType: R_FrontExtensions.ThrowIfNull
+    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+- uid: R_BlazorFrontEnd.R_FrontContext.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.R_FrontContext.#ctor
+  name: R_FrontContext
+  nameWithType: R_FrontContext.R_FrontContext
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_FrontContext
+- uid: R_ContextFrontEnd.R_Context
+  commentId: T:R_ContextFrontEnd.R_Context
+  parent: R_ContextFrontEnd
+  isExternal: true
+  name: R_Context
+  nameWithType: R_Context
+  fullName: R_ContextFrontEnd.R_Context
+- uid: R_ContextFrontEnd
+  commentId: N:R_ContextFrontEnd
+  isExternal: true
+  name: R_ContextFrontEnd
+  nameWithType: R_ContextFrontEnd
+  fullName: R_ContextFrontEnd
+- uid: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext*
+  commentId: Overload:R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext
+  name: R_SetStreamingContext
+  nameWithType: R_FrontContext.R_SetStreamingContext
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_SetStreamingContext
+- uid: Dictionary{System.String,System.Object}
+  commentId: '!:Dictionary{System.String,System.Object}'
+  definition: Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_BlazorFrontEnd.R_FrontContext.R_SetContext*
+  commentId: Overload:R_BlazorFrontEnd.R_FrontContext.R_SetContext
+  name: R_SetContext
+  nameWithType: R_FrontContext.R_SetContext
+  fullName: R_BlazorFrontEnd.R_FrontContext.R_SetContext

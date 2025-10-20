@@ -1,0 +1,493 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  commentId: T:R_Scheduler.MultiTenantDb.MultiTenantHelper
+  id: MultiTenantHelper
+  parent: R_Scheduler.MultiTenantDb
+  children:
+  - R_Scheduler.MultiTenantDb.MultiTenantHelper.#ctor(IMemoryCache)
+  - R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  - R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  - R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants
+  - R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString(System.String,System.Boolean,System.Int32)
+  - R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync(System.String,System.Boolean,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantHelper
+  nameWithType: MultiTenantHelper
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: MultiTenantHelper
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+    startLine: 12
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: 'public class MultiTenantHelper : R_ILocalCacheMultiTenantFromDb'
+    content.vb: >-
+      Public Class MultiTenantHelper
+          Inherits R_ILocalCacheMultiTenantFromDb
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.#ctor(IMemoryCache)
+  commentId: M:R_Scheduler.MultiTenantDb.MultiTenantHelper.#ctor(IMemoryCache)
+  id: '#ctor(IMemoryCache)'
+  parent: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  langs:
+  - csharp
+  - vb
+  name: MultiTenantHelper(IMemoryCache)
+  nameWithType: MultiTenantHelper.MultiTenantHelper(IMemoryCache)
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.MultiTenantHelper(IMemoryCache)
+  type: Constructor
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: .ctor
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+    startLine: 18
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public MultiTenantHelper(IMemoryCache poMemoryCache)
+    parameters:
+    - id: poMemoryCache
+      type: IMemoryCache
+    content.vb: Public Sub New(poMemoryCache As IMemoryCache)
+  overload: R_Scheduler.MultiTenantDb.MultiTenantHelper.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  commentId: M:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  id: R_GetConnectionNameByTenant(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  parent: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  langs:
+  - csharp
+  - vb
+  name: R_GetConnectionNameByTenant(String, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  nameWithType: MultiTenantHelper.R_GetConnectionNameByTenant(String, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant(System.String, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetConnectionNameByTenant
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+    startLine: 24
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public string R_GetConnectionNameByTenant(string pcTenantId, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType peConnectionType)
+    parameters:
+    - id: pcTenantId
+      type: System.String
+    - id: peConnectionType
+      type: R_MultiTenantDbEnumerationConstant.eDbConnectionStringType
+    return:
+      type: System.String
+    content.vb: Public Function R_GetConnectionNameByTenant(pcTenantId As String, peConnectionType As R_MultiTenantDbEnumerationConstant.eDbConnectionStringType) As String
+  overload: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants
+  commentId: M:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants
+  id: R_GetTenants
+  parent: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  langs:
+  - csharp
+  - vb
+  name: R_GetTenants()
+  nameWithType: MultiTenantHelper.R_GetTenants()
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetTenants
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+    startLine: 52
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public List<R_TenantDTO> R_GetTenants()
+    return:
+      type: List{R_TenantDTO}
+    content.vb: Public Function R_GetTenants As List(Of R_TenantDTO)
+  overload: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString(System.String,System.Boolean,System.Int32)
+  commentId: M:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString(System.String,System.Boolean,System.Int32)
+  id: R_InjectMultiTenantConnectionString(System.String,System.Boolean,System.Int32)
+  parent: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  langs:
+  - csharp
+  - vb
+  name: R_InjectMultiTenantConnectionString(String, Boolean, Int32)
+  nameWithType: MultiTenantHelper.R_InjectMultiTenantConnectionString(String, Boolean, Int32)
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString(System.String, System.Boolean, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InjectMultiTenantConnectionString
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+    startLine: 57
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public void R_InjectMultiTenantConnectionString(string pcConnectionMultiName, bool plIncludeMultiConnection, int pnCacheTimeoutInMinutes = 0)
+    parameters:
+    - id: pcConnectionMultiName
+      type: System.String
+    - id: plIncludeMultiConnection
+      type: System.Boolean
+    - id: pnCacheTimeoutInMinutes
+      type: System.Int32
+    content.vb: Public Sub R_InjectMultiTenantConnectionString(pcConnectionMultiName As String, plIncludeMultiConnection As Boolean, pnCacheTimeoutInMinutes As Integer = 0)
+  overload: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  commentId: M:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  id: R_GetConnectionNameByTenantAsync(System.String,R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  parent: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  langs:
+  - csharp
+  - vb
+  name: R_GetConnectionNameByTenantAsync(String, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  nameWithType: MultiTenantHelper.R_GetConnectionNameByTenantAsync(String, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync(System.String, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetConnectionNameByTenantAsync
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+    startLine: 193
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public Task<string> R_GetConnectionNameByTenantAsync(string pcTenantId, R_MultiTenantDbEnumerationConstant.eDbConnectionStringType peConnectionType)
+    parameters:
+    - id: pcTenantId
+      type: System.String
+    - id: peConnectionType
+      type: R_MultiTenantDbEnumerationConstant.eDbConnectionStringType
+    return:
+      type: Task{System.String}
+    content.vb: Public Function R_GetConnectionNameByTenantAsync(pcTenantId As String, peConnectionType As R_MultiTenantDbEnumerationConstant.eDbConnectionStringType) As Task(Of String)
+  overload: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync(System.String,System.Boolean,System.Int32)
+  commentId: M:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync(System.String,System.Boolean,System.Int32)
+  id: R_InjectMultiTenantConnectionStringAsync(System.String,System.Boolean,System.Int32)
+  parent: R_Scheduler.MultiTenantDb.MultiTenantHelper
+  langs:
+  - csharp
+  - vb
+  name: R_InjectMultiTenantConnectionStringAsync(String, Boolean, Int32)
+  nameWithType: MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync(String, Boolean, Int32)
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync(System.String, System.Boolean, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_InjectMultiTenantConnectionStringAsync
+    path: Microservices/R_Scheduler.MultiTenantDb/MultiTenantHelper/MultiTenantHelper.cs
+    startLine: 221
+  assemblies:
+  - R_Scheduler.MultiTenantDb
+  namespace: R_Scheduler.MultiTenantDb
+  syntax:
+    content: public Task R_InjectMultiTenantConnectionStringAsync(string pcConnectionMultiName, bool plIncludeMultiConnection, int pnCacheTimeoutInMinutes = 0)
+    parameters:
+    - id: pcConnectionMultiName
+      type: System.String
+    - id: plIncludeMultiConnection
+      type: System.Boolean
+    - id: pnCacheTimeoutInMinutes
+      type: System.Int32
+    return:
+      type: Task
+    content.vb: Public Function R_InjectMultiTenantConnectionStringAsync(pcConnectionMultiName As String, plIncludeMultiConnection As Boolean, pnCacheTimeoutInMinutes As Integer = 0) As Task
+  overload: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R_Scheduler.MultiTenantDb
+  commentId: N:R_Scheduler.MultiTenantDb
+  name: R_Scheduler.MultiTenantDb
+  nameWithType: R_Scheduler.MultiTenantDb
+  fullName: R_Scheduler.MultiTenantDb
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.#ctor*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantHelper.#ctor
+  name: MultiTenantHelper
+  nameWithType: MultiTenantHelper.MultiTenantHelper
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.MultiTenantHelper
+- uid: IMemoryCache
+  commentId: '!:IMemoryCache'
+  isExternal: true
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: IMemoryCache
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant
+  name: R_GetConnectionNameByTenant
+  nameWithType: MultiTenantHelper.R_GetConnectionNameByTenant
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenant
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_MultiTenantDbEnumerationConstant.eDbConnectionStringType
+  isExternal: true
+  name: R_MultiTenantDbEnumerationConstant.eDbConnectionStringType
+  nameWithType: R_MultiTenantDbEnumerationConstant.eDbConnectionStringType
+  fullName: R_MultiTenantDbEnumerationConstant.eDbConnectionStringType
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants
+  name: R_GetTenants
+  nameWithType: MultiTenantHelper.R_GetTenants
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetTenants
+- uid: List{R_TenantDTO}
+  commentId: '!:List{R_TenantDTO}'
+  definition: List`1
+  name: List<R_TenantDTO>
+  nameWithType: List<R_TenantDTO>
+  fullName: List<R_TenantDTO>
+  nameWithType.vb: List(Of R_TenantDTO)
+  fullName.vb: List(Of R_TenantDTO)
+  name.vb: List(Of R_TenantDTO)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_TenantDTO
+    name: R_TenantDTO
+    nameWithType: R_TenantDTO
+    fullName: R_TenantDTO
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_TenantDTO
+    name: R_TenantDTO
+    nameWithType: R_TenantDTO
+    fullName: R_TenantDTO
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString
+  name: R_InjectMultiTenantConnectionString
+  nameWithType: MultiTenantHelper.R_InjectMultiTenantConnectionString
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionString
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync
+  name: R_GetConnectionNameByTenantAsync
+  nameWithType: MultiTenantHelper.R_GetConnectionNameByTenantAsync
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_GetConnectionNameByTenantAsync
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync*
+  commentId: Overload:R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync
+  name: R_InjectMultiTenantConnectionStringAsync
+  nameWithType: MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync
+  fullName: R_Scheduler.MultiTenantDb.MultiTenantHelper.R_InjectMultiTenantConnectionStringAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

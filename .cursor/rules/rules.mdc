@@ -1,0 +1,252 @@
+---
+alwaysApply: true
+priority: CRITICAL
+nonNegotiable: true
+---
+
+# CRITICAL RULES - NON-NEGOTIABLE
+
+## RULE 1: ALWAYS Read Documentation FIRST
+- Before ANY code generation, check `.cursor/docs/net6/` for equivalents
+- Never guess class names, namespaces, or DLL references
+- If documentation is unclear, ask the user - never invent
+- Search `.cursor/docs/net4/` only to understand OLD patterns, not for code generation
+
+## RULE 2: Project Structure is MANDATORY
+Follow the exact structure from `critical-patterns-learned.md`:
+```
+BACK/{module}/{ProgramName}Back/
+BACK/{module}/{ProgramName}BackResources/
+COMMON/{module}/{ProgramName}Common/
+SERVICE/{module}/{ProgramName}Service/
+FRONT/{ProgramName}Model/
+FRONT/{ProgramName}FrontResources/
+FRONT/{ProgramName}Front/
+```
+**VIOLATIONS:** Stop work, ask user for clarification.
+
+## RULE 3: Logger & Activity PLACEMENT is STRICT
+- Logger: **Back project ONLY**, inherit `R_NetCoreLoggerBase<Logger{ProgramName}>`
+- Activity: **Back project ONLY**, inherit `R_ActivitySourceBase`
+- **NEVER** put in Common project
+- **NEVER** create custom implementations
+- **VIOLATIONS:** Reject code generation, cite rule
+
+## RULE 4: DLL References are VERIFIED
+- All references must exist in `.cursor/docs/net6/`
+- Use exact names: `R_APIBackEnd`, `R_CommonFrontBackAPI`, etc.
+- **NEVER** invent new DLL names
+- Validate in `.csproj` files before suggesting code
+
+## RULE 5: Variable Naming is NON-NEGOTIABLE
+- `[Inject]` properties: `private IType PropertyName { get; set; } = default!;` (CamelCase)
+- Private fields: `private Type _propertyName;` (underscore + snake_case, NO type prefix)
+- Public properties: `public Type PropertyName { get; set; }` (CamelCase)
+- Local variables: `Type l{typePrefix}VariableName;` (always)
+- Method parameters: `Type p{typePrefix}ParameterName;`
+- **VIOLATIONS:** Correct immediately or refuse to proceed
+
+## RULE 6: Resource Files LOCATION
+- All resources in **root folder** of resource projects
+- **NEVER** in subfolders
+- Consolidated: Multiple programs share same resource files
+- **VIOLATIONS:** Flag and request correction
+
+## RULE 7: Interface Pattern is MANDATORY
+- Use `R_IServiceCRUDAsyncBase<{ProgramName}DTO>` - NEVER `R_IServiceCRUDBase`
+- Pattern: `GetList()` returns `IAsyncEnumerable<DTO>`
+- Pattern: `GetAnything()` returns `Task<{ProgramName}ResultDTO<DTO>>`
+- **VIOLATIONS:** Reject code, cite exact pattern from rules
+
+## RULE 8: Streaming Context REQUIRED for List Methods
+- Frontend: Use `R_FrontContext.R_SetStreamingContext()` for custom parameters
+- Backend: Use `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)`
+- Method naming: `GetList{Description}()` (interface), `GetList{Description}Async()` (impl)
+- **VIOLATIONS:** Reject code pattern, enforce correct usage
+
+## RULE 9: No R_FrontGlobalVar in ViewModels
+- **NEVER** use `R_FrontGlobalVar` in ViewModel classes
+- Inject `IClientHelper` in .razor.cs ONLY
+- Pass values as parameters to ViewModel methods
+- **VIOLATIONS:** Reject code, enforce IClientHelper pattern
+
+## RULE 10: Conductor Source DEPENDS on Control
+- Grid CRUD operations: `R_ConductorGridSource="@_conductorGridRef"`
+- Form access control: `R_ConductorSource="@_conductorRef"`
+- No source: Component always enabled (independent functionality)
+- **VIOLATIONS:** Explain correct usage, refuse wrong pattern
+
+## RULE 11: Database Connection Pattern
+```csharp
+R_Db? loDb = null;
+try
+{
+    loDb = new R_Db();
+    using var loConn = await loDb.GetConnectionAsync();
+    using var loCmd = loDb.GetCommand();
+    loDb.R_AddCommandParameter(loCmd, "@PARAM", DbType.String, size, value);
+    var loDataTable = await loDb.SqlExecQueryAsync(loConn, loCmd, true);
+}
+finally
+{
+    if (loDb != null) { loDb = null; }
+}
+```
+- **MUST use:** `using var` for connections/commands
+- **MUST use:** `loDb.R_AddCommandParameter()` - never `AddDbCommandParameter`
+- **MUST have:** `loDb = null` in finally block
+- **VIOLATIONS:** Reject code pattern, enforce compliance
+
+## RULE 12: Sub-Programs are INTEGRATED
+- SAM00110 does NOT get separate projects
+- Same `SAM00100Model/`, `SAM00100Front/`, `SAM00100FrontResources/`
+- Share Common project: `SAM00100Common/`
+- **Wrong:** Creating `SAM00110Model/`, `SAM00110Front/` separate projects
+- **VIOLATIONS:** Stop, explain consolidation requirement
+
+## RULE 13: Navigation Components CORRECT USAGE
+- `R_PredefinedDock`: Shown on page load, cannot close
+- `R_Detail`: On click, can close
+- `R_Popup`: For R_Page components in modals ONLY
+- `R_Lookup`: For lookup pattern (selecting records)
+- `R_Find`: For finding/selecting records
+- MessageBox: Use `MessageBoxService`, NOT `R_Popup`
+- **NEVER use R_Button for navigation**
+- **VIOLATIONS:** Reject code, explain correct component
+
+## RULE 14: Service Layer R_BackGlobalVar CORRECT USAGE
+- IClientHelper data automatically set by `R_BackGlobalVar`
+- **DO:** `var lcCompanyId = R_BackGlobalVar.COMPANY_ID;`
+- **DON'T:** Set R_BackGlobalVar manually
+- **DON'T:** Use streaming context for IClientHelper data
+- Custom parameters only: Use streaming context in Controller/ViewModel
+- **VIOLATIONS:** Reject pattern, enforce correct approach
+
+## RULE 15: No Hardcoded Error Messages
+- Retrieve errors from resource files
+- Pattern: `R_Utility.R_GetError(typeof(Resources_Dummy_Class), pcErrorId)`
+- Store all messages in `.resx` files
+- **VIOLATIONS:** Flag all hardcoded messages, require resource-based approach
+
+## RULE 16: Build Order is MANDATORY
+Backend:
+```
+1. {ProgramName}Common
+2. {ProgramName}BackResources
+3. {ProgramName}Back
+4. {ProgramName}Service
+5. BIMASAKTI_GS_API
+```
+Frontend:
+```
+1. {ProgramName}Common
+2. {ProgramName}FrontResources
+3. {ProgramName}Model
+4. {ProgramName}Front
+5. BlazorMenu
+```
+- **VIOLATIONS:** Warn about compilation failures if order violated
+
+## RULE 17: Batch Processing REQUIREMENTS
+- Implement `R_IProcessProgressStatus`
+- Deserialize with: `R_NetCoreUtility.R_DeserializeObjectFromByte<T>()`
+- **NEVER:** `R_Utility.Deserialize<T>()`
+- Add references: `R_BlazorFrontEnd.Excel`, `R_ProcessAndUploadFront`
+- **VIOLATIONS:** Reject incomplete batch implementation
+
+## RULE 18: R_SaveBatch Location is STRICT
+- Call on `R_Grid` component: `await _gridRef.R_SaveBatch();`
+- **NEVER** on `R_ConductorGrid`
+- **VIOLATIONS:** Flag error, explain correct component
+
+## RULE 19: Code Generation Workflow
+1. **ALWAYS** check `.cursor/docs/net6/` first
+2. If not found, check `.cursor/docs/net4/` for understanding only
+3. If still unclear, **ASK THE USER** - never invent
+4. Generate code matching documented patterns exactly
+5. Include citations: `// Based on pattern from critical-patterns-learned.md`
+
+## RULE 20: Error Handling for AI Assistant
+- **First attempt:** Fix straightforward errors (missing using, typos)
+- **Second attempt:** Try alternative approaches (references, syntax)
+- **Third attempt:** ASK THE USER for solution
+- **NEVER:** Comment out code as "fix"
+- **VIOLATIONS:** Maintain code quality standards
+
+## RULE 21: MANDATORY BUILD VALIDATION - NON-NEGOTIABLE
+**CRITICAL:** After generating/modifying ANY code, ALWAYS build to verify no errors
+
+### Build Requirements by Project Type
+**Backend Build Order:**
+```bash
+dotnet build "{ProgramName}Common"
+dotnet build "{ProgramName}BackResources"
+dotnet build "{ProgramName}Back"
+dotnet build "{ProgramName}Service"
+dotnet build "BIMASAKTI_GS_API"
+```
+
+**Frontend Build Order:**
+```bash
+dotnet build "{ProgramName}Common"
+dotnet build "{ProgramName}FrontResources"
+dotnet build "{ProgramName}Model"
+dotnet build "{ProgramName}Front"
+dotnet build "BlazorMenu"
+```
+
+### Build Validation Steps
+1. **Before claiming code is complete:** Must execute build command
+2. **If build succeeds:** Report "✓ Build successful - no errors"
+3. **If build fails:** Report ALL error messages verbatim
+4. **If build fails 1st time:** Attempt fix (Rule #20, Attempt 1)
+5. **If build fails 2nd time:** Try alternative approach (Rule #20, Attempt 2)
+6. **If build fails 3rd time:** ASK USER for solution (Rule #20, Attempt 3)
+
+### Error Reporting Format
+```
+BUILD FAILURE - Project: {ProjectName}
+
+Error CS####: {Full error message}
+  Location: {FileName}:{LineNumber}:{ColumnNumber}
+  Details: {Description}
+
+Fix attempted: {What was tried}
+Status: [FIXED] [AWAITING USER INPUT]
+```
+
+### What MUST Be Checked
+- [ ] No compilation errors (CS####)
+- [ ] No missing using statements
+- [ ] No missing DLL references
+- [ ] No type mismatches
+- [ ] All projects in correct build order
+- [ ] No syntax errors
+- [ ] No missing project references in .csproj
+
+### When Build Validation FAILS
+- **Do NOT:** Say "code is ready" without building
+- **Do NOT:** Claim "should work" without verifying
+- **Do NOT:** Suggest "user will fix the errors"
+- **MUST:** Build first, report results, fix or ask
+
+### Build Validation is MANDATORY for:
+- All new file generation
+- All code modifications
+- All .csproj changes
+- All reference additions
+- All pattern implementations
+- Final code submission
+---
+
+# ENFORCEMENT ACTIONS
+
+When rules are violated:
+
+1. **Stop code generation immediately**
+2. **Cite the specific rule number**
+3. **Explain the violation**
+4. **Provide correct pattern from documentation**
+5. **Ask for user confirmation before proceeding**
+
+**Non-negotiable = NO EXCEPTIONS, NO SHORTCUTS**

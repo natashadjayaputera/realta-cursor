@@ -1,0 +1,280 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility
+  commentId: T:R_CommonFrontBackAPI.R_ConfigurationUtility
+  id: R_ConfigurationUtility
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ConfigurationUtility._Configuration
+  - R_CommonFrontBackAPI.R_ConfigurationUtility.Configure(IConfiguration)
+  - R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings``1(System.String)
+  - R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration
+  - R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: R_ConfigurationUtility
+  nameWithType: R_ConfigurationUtility
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ConfigurationUtility
+    path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ConfigurationUtility : object'
+    content.vb: >-
+      Public Class R_ConfigurationUtility
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility._Configuration
+  commentId: F:R_CommonFrontBackAPI.R_ConfigurationUtility._Configuration
+  id: _Configuration
+  parent: R_CommonFrontBackAPI.R_ConfigurationUtility
+  langs:
+  - csharp
+  - vb
+  name: _Configuration
+  nameWithType: R_ConfigurationUtility._Configuration
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility._Configuration
+  type: Field
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: _Configuration
+    path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static IConfiguration _Configuration
+    return:
+      type: IConfiguration
+    content.vb: Public Shared _Configuration As IConfiguration
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.Configure(IConfiguration)
+  commentId: M:R_CommonFrontBackAPI.R_ConfigurationUtility.Configure(IConfiguration)
+  id: Configure(IConfiguration)
+  parent: R_CommonFrontBackAPI.R_ConfigurationUtility
+  langs:
+  - csharp
+  - vb
+  name: Configure(IConfiguration)
+  nameWithType: R_ConfigurationUtility.Configure(IConfiguration)
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.Configure(IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Configure
+    path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static void Configure(IConfiguration poConfiguration)
+    parameters:
+    - id: poConfiguration
+      type: IConfiguration
+    content.vb: Public Shared Sub Configure(poConfiguration As IConfiguration)
+  overload: R_CommonFrontBackAPI.R_ConfigurationUtility.Configure*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection``1(System.String)
+  commentId: M:R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection``1(System.String)
+  id: R_GetSection``1(System.String)
+  parent: R_CommonFrontBackAPI.R_ConfigurationUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetSection<T>(String)
+  nameWithType: R_ConfigurationUtility.R_GetSection<T>(String)
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetSection
+    path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+    startLine: 13
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static T R_GetSection<T>(string pcSection)
+    parameters:
+    - id: pcSection
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function R_GetSection(Of T)(pcSection As String) As T
+  overload: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection*
+  nameWithType.vb: R_ConfigurationUtility.R_GetSection(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection(Of T)(System.String)
+  name.vb: R_GetSection(Of T)(String)
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings``1(System.String)
+  commentId: M:R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings``1(System.String)
+  id: R_GetAppSettings``1(System.String)
+  parent: R_CommonFrontBackAPI.R_ConfigurationUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetAppSettings<T>(String)
+  nameWithType: R_ConfigurationUtility.R_GetAppSettings<T>(String)
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetAppSettings
+    path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+    startLine: 17
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static T R_GetAppSettings<T>(string pcKey)
+    parameters:
+    - id: pcKey
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function R_GetAppSettings(Of T)(pcKey As String) As T
+  overload: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings*
+  nameWithType.vb: R_ConfigurationUtility.R_GetAppSettings(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings(Of T)(System.String)
+  name.vb: R_GetAppSettings(Of T)(String)
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration
+  commentId: M:R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration
+  id: R_GetConfiguration
+  parent: R_CommonFrontBackAPI.R_ConfigurationUtility
+  langs:
+  - csharp
+  - vb
+  name: R_GetConfiguration()
+  nameWithType: R_ConfigurationUtility.R_GetConfiguration()
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration()
+  type: Method
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_GetConfiguration
+    path: Microservices/R_CommonFrontBackAPI/R_ConfigurationUtility.cs
+    startLine: 24
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public static IConfiguration R_GetConfiguration()
+    return:
+      type: IConfiguration
+    content.vb: Public Shared Function R_GetConfiguration As IConfiguration
+  overload: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.Configure*
+  commentId: Overload:R_CommonFrontBackAPI.R_ConfigurationUtility.Configure
+  name: Configure
+  nameWithType: R_ConfigurationUtility.Configure
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.Configure
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection*
+  commentId: Overload:R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection
+  name: R_GetSection
+  nameWithType: R_ConfigurationUtility.R_GetSection
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetSection
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings*
+  commentId: Overload:R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings
+  name: R_GetAppSettings
+  nameWithType: R_ConfigurationUtility.R_GetAppSettings
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetAppSettings
+- uid: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration*
+  commentId: Overload:R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration
+  name: R_GetConfiguration
+  nameWithType: R_ConfigurationUtility.R_GetConfiguration
+  fullName: R_CommonFrontBackAPI.R_ConfigurationUtility.R_GetConfiguration

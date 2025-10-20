@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls
+  commentId: T:R_SecurityPolicyBack.R_SecurityPolicyCls
+  id: R_SecurityPolicyCls
+  parent: R_SecurityPolicyBack
+  children:
+  - R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync(R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO)
+  - R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync(System.String,System.String)
+  - R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync(System.String,System.String)
+  - R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync(System.Nullable{DbConnection})
+  - R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  - R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  - R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync(R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO)
+  langs:
+  - csharp
+  - vb
+  name: R_SecurityPolicyCls
+  nameWithType: R_SecurityPolicyCls
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls
+  type: Class
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SecurityPolicyCls
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 14
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: 'public static class R_SecurityPolicyCls : object'
+    content.vb: >-
+      Public Module R_SecurityPolicyCls
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync(System.Nullable{DbConnection})
+  commentId: M:R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync(System.Nullable{DbConnection})
+  id: R_GetSecurityPolicyParameterAsync(System.Nullable{DbConnection})
+  parent: R_SecurityPolicyBack.R_SecurityPolicyCls
+  langs:
+  - csharp
+  - vb
+  name: R_GetSecurityPolicyParameterAsync(Nullable<DbConnection>)
+  nameWithType: R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync(Nullable<DbConnection>)
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync(System.Nullable<DbConnection>)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GetSecurityPolicyParameterAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 16
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task<R_SecurityPolicyParameterDTO> R_GetSecurityPolicyParameterAsync(DbConnection? poDbConnection = null)
+    parameters:
+    - id: poDbConnection
+      type: System.Nullable{DbConnection}
+    return:
+      type: Task{R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO}
+    content.vb: Public Shared Function R_GetSecurityPolicyParameterAsync(poDbConnection As DbConnection? = Nothing) As Task(Of R_SecurityPolicyParameterDTO)
+  overload: R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync*
+  nameWithType.vb: R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync(Nullable(Of DbConnection))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync(System.Nullable(Of DbConnection))
+  name.vb: R_GetSecurityPolicyParameterAsync(Nullable(Of DbConnection))
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  commentId: M:R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  id: R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  parent: R_SecurityPolicyBack.R_SecurityPolicyCls
+  langs:
+  - csharp
+  - vb
+  name: R_SecurityPolicyLogonAsync(SecurityPolicyLogonParameterDTO)
+  nameWithType: R_SecurityPolicyCls.R_SecurityPolicyLogonAsync(SecurityPolicyLogonParameterDTO)
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SecurityPolicyLogonAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 83
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task<bool> R_SecurityPolicyLogonAsync(SecurityPolicyLogonParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Shared Function R_SecurityPolicyLogonAsync(poParameter As SecurityPolicyLogonParameterDTO) As Task(Of Boolean)
+  overload: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync(System.String,System.String)
+  commentId: M:R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync(System.String,System.String)
+  id: GetMenuAccessAsync(System.String,System.String)
+  parent: R_SecurityPolicyBack.R_SecurityPolicyCls
+  langs:
+  - csharp
+  - vb
+  name: GetMenuAccessAsync(String, String)
+  nameWithType: R_SecurityPolicyCls.GetMenuAccessAsync(String, String)
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetMenuAccessAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 327
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task<string> GetMenuAccessAsync(string pcCompanyId, string pcUserId)
+    parameters:
+    - id: pcCompanyId
+      type: System.String
+    - id: pcUserId
+      type: System.String
+    return:
+      type: Task{System.String}
+    content.vb: Public Shared Function GetMenuAccessAsync(pcCompanyId As String, pcUserId As String) As Task(Of String)
+  overload: R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  commentId: M:R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  id: R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  parent: R_SecurityPolicyBack.R_SecurityPolicyCls
+  langs:
+  - csharp
+  - vb
+  name: R_SecurityPolicyLogoutAsync(SecurityPolicyLogoutParameterDTO)
+  nameWithType: R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync(SecurityPolicyLogoutParameterDTO)
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync(R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_SecurityPolicyLogoutAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 360
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task R_SecurityPolicyLogoutAsync(SecurityPolicyLogoutParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+    return:
+      type: Task
+    content.vb: Public Shared Function R_SecurityPolicyLogoutAsync(poParameter As SecurityPolicyLogoutParameterDTO) As Task
+  overload: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync(System.String,System.String)
+  commentId: M:R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync(System.String,System.String)
+  id: GetSecurityPolicyAsync(System.String,System.String)
+  parent: R_SecurityPolicyBack.R_SecurityPolicyCls
+  langs:
+  - csharp
+  - vb
+  name: GetSecurityPolicyAsync(String, String)
+  nameWithType: R_SecurityPolicyCls.GetSecurityPolicyAsync(String, String)
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetSecurityPolicyAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 414
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task<GetSecurityPolicyDTO> GetSecurityPolicyAsync(string pcUserId, string pcCompanyId)
+    parameters:
+    - id: pcUserId
+      type: System.String
+    - id: pcCompanyId
+      type: System.String
+    return:
+      type: Task{R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO}
+    content.vb: Public Shared Function GetSecurityPolicyAsync(pcUserId As String, pcCompanyId As String) As Task(Of GetSecurityPolicyDTO)
+  overload: R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync(R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO)
+  commentId: M:R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync(R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO)
+  id: CheckPasswordHistoryAsync(R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO)
+  parent: R_SecurityPolicyBack.R_SecurityPolicyCls
+  langs:
+  - csharp
+  - vb
+  name: CheckPasswordHistoryAsync(CheckPasswordHistoryParameterDTO)
+  nameWithType: R_SecurityPolicyCls.CheckPasswordHistoryAsync(CheckPasswordHistoryParameterDTO)
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync(R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CheckPasswordHistoryAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 584
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task<bool> CheckPasswordHistoryAsync(CheckPasswordHistoryParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Shared Function CheckPasswordHistoryAsync(poParameter As CheckPasswordHistoryParameterDTO) As Task(Of Boolean)
+  overload: R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync(R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO)
+  commentId: M:R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync(R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO)
+  id: UpdatePasswordAsync(R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO)
+  parent: R_SecurityPolicyBack.R_SecurityPolicyCls
+  langs:
+  - csharp
+  - vb
+  name: UpdatePasswordAsync(UpdatePasswordParameterDTO)
+  nameWithType: R_SecurityPolicyCls.UpdatePasswordAsync(UpdatePasswordParameterDTO)
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync(R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO)
+  type: Method
+  source:
+    remote:
+      path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: UpdatePasswordAsync
+    path: R_SecurityPolicy/R_SecurityPolicyBack/R_SecurityPolicyCls.cs
+    startLine: 640
+  assemblies:
+  - R_SecurityPolicyBack
+  namespace: R_SecurityPolicyBack
+  syntax:
+    content: public static Task UpdatePasswordAsync(UpdatePasswordParameterDTO poParameter)
+    parameters:
+    - id: poParameter
+      type: R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO
+    return:
+      type: Task
+    content.vb: Public Shared Function UpdatePasswordAsync(poParameter As UpdatePasswordParameterDTO) As Task
+  overload: R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: R_SecurityPolicyBack
+  commentId: N:R_SecurityPolicyBack
+  name: R_SecurityPolicyBack
+  nameWithType: R_SecurityPolicyBack
+  fullName: R_SecurityPolicyBack
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync
+  name: R_GetSecurityPolicyParameterAsync
+  nameWithType: R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.R_GetSecurityPolicyParameterAsync
+- uid: System.Nullable{DbConnection}
+  commentId: '!:System.Nullable{DbConnection}'
+  definition: System.Nullable`1
+  name: Nullable<DbConnection>
+  nameWithType: Nullable<DbConnection>
+  fullName: System.Nullable<DbConnection>
+  nameWithType.vb: Nullable(Of DbConnection)
+  fullName.vb: System.Nullable(Of DbConnection)
+  name.vb: Nullable(Of DbConnection)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DbConnection
+    name: DbConnection
+    nameWithType: DbConnection
+    fullName: DbConnection
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DbConnection
+    name: DbConnection
+    nameWithType: DbConnection
+    fullName: DbConnection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO}
+  commentId: '!:Task{R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO}'
+  definition: Task`1
+  name: Task<R_SecurityPolicyParameterDTO>
+  nameWithType: Task<R_SecurityPolicyParameterDTO>
+  fullName: Task<R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO>
+  nameWithType.vb: Task(Of R_SecurityPolicyParameterDTO)
+  fullName.vb: Task(Of R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO)
+  name.vb: Task(Of R_SecurityPolicyParameterDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO
+    name: R_SecurityPolicyParameterDTO
+    nameWithType: R_SecurityPolicyParameterDTO
+    fullName: R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO
+    name: R_SecurityPolicyParameterDTO
+    nameWithType: R_SecurityPolicyParameterDTO
+    fullName: R_SecurityPolicyCommon.DTOs.R_SecurityPolicyParameterDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  nameWithType: Nullable<>
+  fullName: System.Nullable<>
+  nameWithType.vb: Nullable(Of )
+  fullName.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync
+  name: R_SecurityPolicyLogonAsync
+  nameWithType: R_SecurityPolicyCls.R_SecurityPolicyLogonAsync
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogonAsync
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: SecurityPolicyLogonParameterDTO
+  nameWithType: SecurityPolicyLogonParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyCommon.DTOs
+  commentId: N:R_SecurityPolicyCommon.DTOs
+  name: R_SecurityPolicyCommon.DTOs
+  nameWithType: R_SecurityPolicyCommon.DTOs
+  fullName: R_SecurityPolicyCommon.DTOs
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync
+  name: GetMenuAccessAsync
+  nameWithType: R_SecurityPolicyCls.GetMenuAccessAsync
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.GetMenuAccessAsync
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync
+  name: R_SecurityPolicyLogoutAsync
+  nameWithType: R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.R_SecurityPolicyLogoutAsync
+- uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: SecurityPolicyLogoutParameterDTO
+  nameWithType: SecurityPolicyLogoutParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync
+  name: GetSecurityPolicyAsync
+  nameWithType: R_SecurityPolicyCls.GetSecurityPolicyAsync
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.GetSecurityPolicyAsync
+- uid: Task{R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO}
+  commentId: '!:Task{R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO}'
+  definition: Task`1
+  name: Task<GetSecurityPolicyDTO>
+  nameWithType: Task<GetSecurityPolicyDTO>
+  fullName: Task<R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO>
+  nameWithType.vb: Task(Of GetSecurityPolicyDTO)
+  fullName.vb: Task(Of R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO)
+  name.vb: Task(Of GetSecurityPolicyDTO)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+    name: GetSecurityPolicyDTO
+    nameWithType: GetSecurityPolicyDTO
+    fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+    name: GetSecurityPolicyDTO
+    nameWithType: GetSecurityPolicyDTO
+    fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync
+  name: CheckPasswordHistoryAsync
+  nameWithType: R_SecurityPolicyCls.CheckPasswordHistoryAsync
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.CheckPasswordHistoryAsync
+- uid: R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: CheckPasswordHistoryParameterDTO
+  nameWithType: CheckPasswordHistoryParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.CheckPasswordHistoryParameterDTO
+- uid: R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync*
+  commentId: Overload:R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync
+  name: UpdatePasswordAsync
+  nameWithType: R_SecurityPolicyCls.UpdatePasswordAsync
+  fullName: R_SecurityPolicyBack.R_SecurityPolicyCls.UpdatePasswordAsync
+- uid: R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO
+  commentId: T:R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO
+  parent: R_SecurityPolicyCommon.DTOs
+  name: UpdatePasswordParameterDTO
+  nameWithType: UpdatePasswordParameterDTO
+  fullName: R_SecurityPolicyCommon.DTOs.UpdatePasswordParameterDTO

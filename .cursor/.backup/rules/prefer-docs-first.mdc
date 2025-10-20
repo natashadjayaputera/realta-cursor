@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+---
+
+# Prefer Documentation
+
+Always use `.cursor/docs` as the first source of truth.
+
+- Search `.cursor/docs/` before generating or modifying code.
+- Reuse existing documented classes, functions, and modules.
+- Do not reimplement or modify documented code unless explicitly instructed.
+- Only generate new code if no relevant documentation exists.

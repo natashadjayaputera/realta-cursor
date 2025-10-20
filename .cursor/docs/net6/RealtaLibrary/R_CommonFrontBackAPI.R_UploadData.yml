@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_UploadData
+  commentId: T:R_CommonFrontBackAPI.R_UploadData
+  id: R_UploadData
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_UploadData.DATA
+  - R_CommonFrontBackAPI.R_UploadData.Key
+  - R_CommonFrontBackAPI.R_UploadData.SEQ_NO
+  langs:
+  - csharp
+  - vb
+  name: R_UploadData
+  nameWithType: R_UploadData
+  fullName: R_CommonFrontBackAPI.R_UploadData
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_UploadData
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_UploadData : object'
+    content.vb: >-
+      Public Class R_UploadData
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_UploadData.Key
+  commentId: P:R_CommonFrontBackAPI.R_UploadData.Key
+  id: Key
+  parent: R_CommonFrontBackAPI.R_UploadData
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: R_UploadData.Key
+  fullName: R_CommonFrontBackAPI.R_UploadData.Key
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Key
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public R_UploadAndProcessKey Key { get; set; }
+    parameters: []
+    return:
+      type: R_CommonFrontBackAPI.R_UploadAndProcessKey
+    content.vb: Public Property Key As R_UploadAndProcessKey
+  overload: R_CommonFrontBackAPI.R_UploadData.Key*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_UploadData.SEQ_NO
+  commentId: P:R_CommonFrontBackAPI.R_UploadData.SEQ_NO
+  id: SEQ_NO
+  parent: R_CommonFrontBackAPI.R_UploadData
+  langs:
+  - csharp
+  - vb
+  name: SEQ_NO
+  nameWithType: R_UploadData.SEQ_NO
+  fullName: R_CommonFrontBackAPI.R_UploadData.SEQ_NO
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: SEQ_NO
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public int SEQ_NO { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SEQ_NO As Integer
+  overload: R_CommonFrontBackAPI.R_UploadData.SEQ_NO*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_UploadData.DATA
+  commentId: P:R_CommonFrontBackAPI.R_UploadData.DATA
+  id: DATA
+  parent: R_CommonFrontBackAPI.R_UploadData
+  langs:
+  - csharp
+  - vb
+  name: DATA
+  nameWithType: R_UploadData.DATA
+  fullName: R_CommonFrontBackAPI.R_UploadData.DATA
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: DATA
+    path: Microservices/R_CommonFrontBackAPI/Service/ProcessAndUpload/DTO/R_UploadData.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public byte[] DATA { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property DATA As Byte()
+  overload: R_CommonFrontBackAPI.R_UploadData.DATA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_UploadData.Key*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadData.Key
+  name: Key
+  nameWithType: R_UploadData.Key
+  fullName: R_CommonFrontBackAPI.R_UploadData.Key
+- uid: R_CommonFrontBackAPI.R_UploadAndProcessKey
+  commentId: T:R_CommonFrontBackAPI.R_UploadAndProcessKey
+  parent: R_CommonFrontBackAPI
+  name: R_UploadAndProcessKey
+  nameWithType: R_UploadAndProcessKey
+  fullName: R_CommonFrontBackAPI.R_UploadAndProcessKey
+- uid: R_CommonFrontBackAPI.R_UploadData.SEQ_NO*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadData.SEQ_NO
+  name: SEQ_NO
+  nameWithType: R_UploadData.SEQ_NO
+  fullName: R_CommonFrontBackAPI.R_UploadData.SEQ_NO
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R_CommonFrontBackAPI.R_UploadData.DATA*
+  commentId: Overload:R_CommonFrontBackAPI.R_UploadData.DATA
+  name: DATA
+  nameWithType: R_UploadData.DATA
+  fullName: R_CommonFrontBackAPI.R_UploadData.DATA
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

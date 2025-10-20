@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  commentId: T:R_EmailEngine.DTOs.EmailEmbeddedDTO
+  id: EmailEmbeddedDTO
+  parent: R_EmailEngine.DTOs
+  children:
+  - R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID
+  - R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION
+  - R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID
+  - R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE
+  langs:
+  - csharp
+  - vb
+  name: EmailEmbeddedDTO
+  nameWithType: EmailEmbeddedDTO
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: EmailEmbeddedDTO
+    path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+    startLine: 2
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: 'public class EmailEmbeddedDTO : object'
+    content.vb: >-
+      Public Class EmailEmbeddedDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID
+  commentId: P:R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID
+  id: CEMAIL_ID
+  parent: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  langs:
+  - csharp
+  - vb
+  name: CEMAIL_ID
+  nameWithType: EmailEmbeddedDTO.CEMAIL_ID
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CEMAIL_ID
+    path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+    startLine: 4
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CEMAIL_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CEMAIL_ID As String
+  overload: R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID
+  commentId: P:R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID
+  id: CFILE_ID
+  parent: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  langs:
+  - csharp
+  - vb
+  name: CFILE_ID
+  nameWithType: EmailEmbeddedDTO.CFILE_ID
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CFILE_ID
+    path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+    startLine: 5
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CFILE_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CFILE_ID As String
+  overload: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION
+  commentId: P:R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION
+  id: CFILE_EXTENSION
+  parent: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  langs:
+  - csharp
+  - vb
+  name: CFILE_EXTENSION
+  nameWithType: EmailEmbeddedDTO.CFILE_EXTENSION
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CFILE_EXTENSION
+    path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+    startLine: 6
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public string CFILE_EXTENSION { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CFILE_EXTENSION As String
+  overload: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE
+  commentId: P:R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE
+  id: OFILE
+  parent: R_EmailEngine.DTOs.EmailEmbeddedDTO
+  langs:
+  - csharp
+  - vb
+  name: OFILE
+  nameWithType: EmailEmbeddedDTO.OFILE
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: OFILE
+    path: Microservices/R_EmailEngine/DTOs/EmailEmbeddedDTO.cs
+    startLine: 7
+  assemblies:
+  - R_EmailEngine
+  namespace: R_EmailEngine.DTOs
+  syntax:
+    content: public byte[] OFILE { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property OFILE As Byte()
+  overload: R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_EmailEngine.DTOs
+  commentId: N:R_EmailEngine.DTOs
+  name: R_EmailEngine.DTOs
+  nameWithType: R_EmailEngine.DTOs
+  fullName: R_EmailEngine.DTOs
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID*
+  commentId: Overload:R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID
+  name: CEMAIL_ID
+  nameWithType: EmailEmbeddedDTO.CEMAIL_ID
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.CEMAIL_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID*
+  commentId: Overload:R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID
+  name: CFILE_ID
+  nameWithType: EmailEmbeddedDTO.CFILE_ID
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_ID
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION*
+  commentId: Overload:R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION
+  name: CFILE_EXTENSION
+  nameWithType: EmailEmbeddedDTO.CFILE_EXTENSION
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.CFILE_EXTENSION
+- uid: R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE*
+  commentId: Overload:R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE
+  name: OFILE
+  nameWithType: EmailEmbeddedDTO.OFILE
+  fullName: R_EmailEngine.DTOs.EmailEmbeddedDTO.OFILE
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

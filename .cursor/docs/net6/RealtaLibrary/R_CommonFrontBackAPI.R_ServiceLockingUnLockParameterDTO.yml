@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  commentId: T:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  id: R_ServiceLockingUnLockParameterDTO
+  parent: R_CommonFrontBackAPI
+  children:
+  - R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id
+  - R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value
+  - R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id
+  - R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name
+  - R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceLockingUnLockParameterDTO
+  nameWithType: R_ServiceLockingUnLockParameterDTO
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  type: Class
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: R_ServiceLockingUnLockParameterDTO
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+    startLine: 2
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: 'public class R_ServiceLockingUnLockParameterDTO : object'
+    content.vb: >-
+      Public Class R_ServiceLockingUnLockParameterDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id
+  id: Company_Id
+  parent: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: Company_Id
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Company_Id
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Company_Id
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+    startLine: 4
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Company_Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Company_Id As String
+  overload: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id
+  id: User_Id
+  parent: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: User_Id
+  nameWithType: R_ServiceLockingUnLockParameterDTO.User_Id
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: User_Id
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+    startLine: 5
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string User_Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property User_Id As String
+  overload: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id
+  id: Program_Id
+  parent: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: Program_Id
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Program_Id
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Program_Id
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+    startLine: 6
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Program_Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Program_Id As String
+  overload: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name
+  id: Table_Name
+  parent: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: Table_Name
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Table_Name
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Table_Name
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+    startLine: 7
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Table_Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Table_Name As String
+  overload: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value
+  commentId: P:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value
+  id: Key_Value
+  parent: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO
+  langs:
+  - csharp
+  - vb
+  name: Key_Value
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Key_Value
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value
+  type: Property
+  source:
+    remote:
+      path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Key_Value
+    path: Microservices/R_CommonFrontBackAPI/Service/Locking/DTO/R_ServiceLockingUnLockParameterDTO.cs
+    startLine: 8
+  assemblies:
+  - R_CommonFrontBackAPI
+  namespace: R_CommonFrontBackAPI
+  syntax:
+    content: public string Key_Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Key_Value As String
+  overload: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: R_CommonFrontBackAPI
+  commentId: N:R_CommonFrontBackAPI
+  name: R_CommonFrontBackAPI
+  nameWithType: R_CommonFrontBackAPI
+  fullName: R_CommonFrontBackAPI
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id
+  name: Company_Id
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Company_Id
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Company_Id
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id
+  name: User_Id
+  nameWithType: R_ServiceLockingUnLockParameterDTO.User_Id
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.User_Id
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id
+  name: Program_Id
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Program_Id
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Program_Id
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name
+  name: Table_Name
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Table_Name
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Table_Name
+- uid: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value*
+  commentId: Overload:R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value
+  name: Key_Value
+  nameWithType: R_ServiceLockingUnLockParameterDTO.Key_Value
+  fullName: R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.Key_Value

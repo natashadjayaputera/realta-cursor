@@ -1,0 +1,34 @@
+{
+  "$schema": "https://cursor.sh/schemas/v1.json",
+  "context": {
+    "include": [
+      "net6/**",
+      "net4/**",
+      ".cursor/docs/**",
+      ".cursor/memories/**"
+    ],
+    "exclude": [
+      "bin/**",
+      "obj/**",
+      "node_modules/**",
+      ".git/**"
+    ]
+  },
+  "docs": {
+    "directories": [
+      ".cursor/docs/net6",
+      ".cursor/docs/net4"
+    ],
+    "priority": "high"
+  },
+  "rules": {
+    "directories": [
+      ".cursor/rules"
+    ]
+  },
+  "memory": {
+    "directories": [
+      ".cursor/memories"
+    ]
+  }
+}

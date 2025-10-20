@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: SampleStandardJob.DTO.CompanyDTO
+  commentId: T:SampleStandardJob.DTO.CompanyDTO
+  id: CompanyDTO
+  parent: SampleStandardJob.DTO
+  children:
+  - SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID
+  langs:
+  - csharp
+  - vb
+  name: CompanyDTO
+  nameWithType: CompanyDTO
+  fullName: SampleStandardJob.DTO.CompanyDTO
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/CompanyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CompanyDTO
+    path: Engine/SampleJob/SampleStandardJob/DTO/CompanyDTO.cs
+    startLine: 9
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: 'public class CompanyDTO : object'
+    content.vb: >-
+      Public Class CompanyDTO
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID
+  commentId: P:SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID
+  id: CCOMPANY_ID
+  parent: SampleStandardJob.DTO.CompanyDTO
+  langs:
+  - csharp
+  - vb
+  name: CCOMPANY_ID
+  nameWithType: CompanyDTO.CCOMPANY_ID
+  fullName: SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/SampleStandardJob/DTO/CompanyDTO.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: CCOMPANY_ID
+    path: Engine/SampleJob/SampleStandardJob/DTO/CompanyDTO.cs
+    startLine: 11
+  assemblies:
+  - SampleStandardJob
+  namespace: SampleStandardJob.DTO
+  syntax:
+    content: public string CCOMPANY_ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CCOMPANY_ID As String
+  overload: SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: SampleStandardJob.DTO
+  commentId: N:SampleStandardJob.DTO
+  name: SampleStandardJob.DTO
+  nameWithType: SampleStandardJob.DTO
+  fullName: SampleStandardJob.DTO
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID*
+  commentId: Overload:SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID
+  name: CCOMPANY_ID
+  nameWithType: CompanyDTO.CCOMPANY_ID
+  fullName: SampleStandardJob.DTO.CompanyDTO.CCOMPANY_ID
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

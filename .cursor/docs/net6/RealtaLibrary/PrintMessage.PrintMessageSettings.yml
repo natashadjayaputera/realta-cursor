@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: PrintMessage.PrintMessageSettings
+  commentId: T:PrintMessage.PrintMessageSettings
+  id: PrintMessageSettings
+  parent: PrintMessage
+  children:
+  - PrintMessage.PrintMessageSettings.GetSettings
+  - PrintMessage.PrintMessageSettings.Settings
+  langs:
+  - csharp
+  - vb
+  name: PrintMessageSettings
+  nameWithType: PrintMessageSettings
+  fullName: PrintMessage.PrintMessageSettings
+  type: Class
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: PrintMessageSettings
+    path: Engine/SampleJob/PrintMessage/PrintMessageSettings.cs
+    startLine: 10
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: 'public class PrintMessageSettings : R_SchedulerSettingsDTO'
+    content.vb: >-
+      Public Class PrintMessageSettings
+          Inherits R_SchedulerSettingsDTO
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PrintMessage.PrintMessageSettings.Settings
+  commentId: P:PrintMessage.PrintMessageSettings.Settings
+  id: Settings
+  parent: PrintMessage.PrintMessageSettings
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: PrintMessageSettings.Settings
+  fullName: PrintMessage.PrintMessageSettings.Settings
+  type: Property
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: Settings
+    path: Engine/SampleJob/PrintMessage/PrintMessageSettings.cs
+    startLine: 12
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: public List<PrintMessageSetting> Settings { get; set; }
+    parameters: []
+    return:
+      type: List{PrintMessage.PrintMessageSetting}
+    content.vb: Public Property Settings As List(Of PrintMessageSetting)
+  overload: PrintMessage.PrintMessageSettings.Settings*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: PrintMessage.PrintMessageSettings.GetSettings
+  commentId: M:PrintMessage.PrintMessageSettings.GetSettings
+  id: GetSettings
+  parent: PrintMessage.PrintMessageSettings
+  langs:
+  - csharp
+  - vb
+  name: GetSettings()
+  nameWithType: PrintMessageSettings.GetSettings()
+  fullName: PrintMessage.PrintMessageSettings.GetSettings()
+  type: Method
+  source:
+    remote:
+      path: Engine/SampleJob/PrintMessage/PrintMessageSettings.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaLibrary.git
+    id: GetSettings
+    path: Engine/SampleJob/PrintMessage/PrintMessageSettings.cs
+    startLine: 13
+  assemblies:
+  - PrintMessage
+  namespace: PrintMessage
+  syntax:
+    content: public override IList GetSettings()
+    return:
+      type: IList
+    content.vb: Public Overrides Function GetSettings As IList
+  overload: PrintMessage.PrintMessageSettings.GetSettings*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: PrintMessage
+  commentId: N:PrintMessage
+  name: PrintMessage
+  nameWithType: PrintMessage
+  fullName: PrintMessage
+- uid: System.Object
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PrintMessage.PrintMessageSettings.Settings*
+  commentId: Overload:PrintMessage.PrintMessageSettings.Settings
+  name: Settings
+  nameWithType: PrintMessageSettings.Settings
+  fullName: PrintMessage.PrintMessageSettings.Settings
+- uid: List{PrintMessage.PrintMessageSetting}
+  commentId: '!:List{PrintMessage.PrintMessageSetting}'
+  definition: List`1
+  name: List<PrintMessageSetting>
+  nameWithType: List<PrintMessageSetting>
+  fullName: List<PrintMessage.PrintMessageSetting>
+  nameWithType.vb: List(Of PrintMessageSetting)
+  fullName.vb: List(Of PrintMessage.PrintMessageSetting)
+  name.vb: List(Of PrintMessageSetting)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PrintMessage.PrintMessageSetting
+    name: PrintMessageSetting
+    nameWithType: PrintMessageSetting
+    fullName: PrintMessage.PrintMessageSetting
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PrintMessage.PrintMessageSetting
+    name: PrintMessageSetting
+    nameWithType: PrintMessageSetting
+    fullName: PrintMessage.PrintMessageSetting
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PrintMessage.PrintMessageSettings.GetSettings*
+  commentId: Overload:PrintMessage.PrintMessageSettings.GetSettings
+  name: GetSettings
+  nameWithType: PrintMessageSettings.GetSettings
+  fullName: PrintMessage.PrintMessageSettings.GetSettings
+- uid: IList
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: IList
