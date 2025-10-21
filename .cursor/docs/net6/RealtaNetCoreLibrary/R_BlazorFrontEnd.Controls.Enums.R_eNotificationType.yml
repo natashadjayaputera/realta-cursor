@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  id: R_eNotificationType
+  parent: R_BlazorFrontEnd.Controls.Enums
+  children:
+  - R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Error
+  - R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Info
+  - R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Success
+  - R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Warning
+  langs:
+  - csharp
+  - vb
+  name: R_eNotificationType
+  nameWithType: R_eNotificationType
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eNotificationType
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: public enum R_eNotificationType
+    content.vb: Public Enum R_eNotificationType
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Info
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Info
+  id: Info
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: R_eNotificationType.Info
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Info
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Info
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Info = 0
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Success
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Success
+  id: Success
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: R_eNotificationType.Success
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Success
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Success
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Success = 1
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Warning
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Warning
+  id: Warning
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: R_eNotificationType.Warning
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Warning
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Warning
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Warning = 2
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Error
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Error
+  id: Error
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: R_eNotificationType.Error
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.Error
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Error
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eNotificationType.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Error = 3
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+references:
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType.html
+  name: R_eNotificationType
+  nameWithType: R_eNotificationType
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType

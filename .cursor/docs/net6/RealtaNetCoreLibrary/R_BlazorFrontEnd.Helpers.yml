@@ -22,37 +22,61 @@ items:
 references:
 - uid: R_BlazorFrontEnd.Helpers.R_AsyncHelper
   commentId: T:R_BlazorFrontEnd.Helpers.R_AsyncHelper
+  href: R_BlazorFrontEnd.Helpers.R_AsyncHelper.html
   name: R_AsyncHelper
   nameWithType: R_AsyncHelper
   fullName: R_BlazorFrontEnd.Helpers.R_AsyncHelper
 - uid: R_BlazorFrontEnd.Helpers.R_DeployUtility
   commentId: T:R_BlazorFrontEnd.Helpers.R_DeployUtility
+  href: R_BlazorFrontEnd.Helpers.R_DeployUtility.html
   name: R_DeployUtility
   nameWithType: R_DeployUtility
   fullName: R_BlazorFrontEnd.Helpers.R_DeployUtility
 - uid: R_BlazorFrontEnd.Helpers.R_FileDownloader
   commentId: T:R_BlazorFrontEnd.Helpers.R_FileDownloader
+  href: R_BlazorFrontEnd.Helpers.R_FileDownloader.html
   name: R_FileDownloader
   nameWithType: R_FileDownloader
   fullName: R_BlazorFrontEnd.Helpers.R_FileDownloader
 - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
   commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
   name: R_FrontUtility
   nameWithType: R_FrontUtility
   fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Helpers.R_GlobalVar
   commentId: T:R_BlazorFrontEnd.Helpers.R_GlobalVar
   parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_GlobalVar.html
   name: R_GlobalVar
   nameWithType: R_GlobalVar
   fullName: R_BlazorFrontEnd.Helpers.R_GlobalVar
 - uid: R_BlazorFrontEnd.Helpers.R_HtmlUtility
   commentId: T:R_BlazorFrontEnd.Helpers.R_HtmlUtility
+  href: R_BlazorFrontEnd.Helpers.R_HtmlUtility.html
   name: R_HtmlUtility
   nameWithType: R_HtmlUtility
   fullName: R_BlazorFrontEnd.Helpers.R_HtmlUtility
 - uid: R_BlazorFrontEnd.Helpers
   commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Helpers
   nameWithType: R_BlazorFrontEnd.Helpers
   fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html

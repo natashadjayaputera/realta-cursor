@@ -25,9 +25,7 @@ items:
   namespace: BlazorClientHelper
   syntax:
     content: 'public interface IClientHelper : R_IGlobalVarInitiator'
-    content.vb: >-
-      Public Interface IClientHelper
-          Inherits R_IGlobalVarInitiator
+    content.vb: Public Interface IClientHelper Inherits R_IGlobalVarInitiator
   inheritedMembers:
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.CompanyId
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserId
@@ -41,63 +39,66 @@ items:
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(System.String)
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(System.String)
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId
-  - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(NumberFormatInfo,DateTimeFormatInfo)
+  - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(System.Globalization.NumberFormatInfo,System.Globalization.DateTimeFormatInfo)
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI(R_CommonFrontBackAPI.eCulture)
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(System.String)
   - R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(System.String)
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 references:
 - uid: BlazorClientHelper
   commentId: N:BlazorClientHelper
+  href: BlazorClientHelper.html
   name: BlazorClientHelper
   nameWithType: BlazorClientHelper
   fullName: BlazorClientHelper
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.CompanyId
   commentId: P:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.CompanyId
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_CompanyId
   name: CompanyId
   nameWithType: R_IGlobalVarInitiator.CompanyId
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.CompanyId
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserId
   commentId: P:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserId
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_UserId
   name: UserId
   nameWithType: R_IGlobalVarInitiator.UserId
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserId
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.CultureUI
   commentId: P:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.CultureUI
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_CultureUI
   name: CultureUI
   nameWithType: R_IGlobalVarInitiator.CultureUI
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.CultureUI
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Culture
   commentId: P:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Culture
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Culture
   name: Culture
   nameWithType: R_IGlobalVarInitiator.Culture
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Culture
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.ReportCulture
   commentId: P:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.ReportCulture
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_ReportCulture
   name: ReportCulture
   nameWithType: R_IGlobalVarInitiator.ReportCulture
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.ReportCulture
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserRole
   commentId: P:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserRole
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_UserRole
   name: UserRole
   nameWithType: R_IGlobalVarInitiator.UserRole
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserRole
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserName
   commentId: P:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserName
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_UserName
   name: UserName
   nameWithType: R_IGlobalVarInitiator.UserName
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.UserName
@@ -105,444 +106,503 @@ references:
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId(System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
-  name: Set_UserId(String)
-  nameWithType: R_IGlobalVarInitiator.Set_UserId(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId(System.String)
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserId_System_String_
+  name: Set_UserId(string)
+  nameWithType: R_IGlobalVarInitiator.Set_UserId(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId(string)
+  nameWithType.vb: R_IGlobalVarInitiator.Set_UserId(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId(String)
+  name.vb: Set_UserId(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId(System.String)
     name: Set_UserId
-    nameWithType: R_IGlobalVarInitiator.Set_UserId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserId_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId(System.String)
     name: Set_UserId
-    nameWithType: R_IGlobalVarInitiator.Set_UserId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserId_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName(System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
-  name: Set_UserName(String)
-  nameWithType: R_IGlobalVarInitiator.Set_UserName(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName(System.String)
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserName_System_String_
+  name: Set_UserName(string)
+  nameWithType: R_IGlobalVarInitiator.Set_UserName(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName(string)
+  nameWithType.vb: R_IGlobalVarInitiator.Set_UserName(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName(String)
+  name.vb: Set_UserName(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName(System.String)
     name: Set_UserName
-    nameWithType: R_IGlobalVarInitiator.Set_UserName
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserName_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName(System.String)
     name: Set_UserName
-    nameWithType: R_IGlobalVarInitiator.Set_UserName
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserName
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserName_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
-  name: Set_CompanyId(String)
-  nameWithType: R_IGlobalVarInitiator.Set_CompanyId(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(System.String)
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_CompanyId_System_String_
+  name: Set_CompanyId(string)
+  nameWithType: R_IGlobalVarInitiator.Set_CompanyId(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(string)
+  nameWithType.vb: R_IGlobalVarInitiator.Set_CompanyId(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(String)
+  name.vb: Set_CompanyId(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(System.String)
     name: Set_CompanyId
-    nameWithType: R_IGlobalVarInitiator.Set_CompanyId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_CompanyId_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId(System.String)
     name: Set_CompanyId
-    nameWithType: R_IGlobalVarInitiator.Set_CompanyId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CompanyId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_CompanyId_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
-  name: Set_ProgramId(String)
-  nameWithType: R_IGlobalVarInitiator.Set_ProgramId(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(System.String)
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ProgramId_System_String_
+  name: Set_ProgramId(string)
+  nameWithType: R_IGlobalVarInitiator.Set_ProgramId(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(string)
+  nameWithType.vb: R_IGlobalVarInitiator.Set_ProgramId(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(String)
+  name.vb: Set_ProgramId(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(System.String)
     name: Set_ProgramId
-    nameWithType: R_IGlobalVarInitiator.Set_ProgramId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ProgramId_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId(System.String)
     name: Set_ProgramId
-    nameWithType: R_IGlobalVarInitiator.Set_ProgramId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ProgramId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ProgramId_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ComputerId
   name: Set_ComputerId()
   nameWithType: R_IGlobalVarInitiator.Set_ComputerId()
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId()
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId
     name: Set_ComputerId
-    nameWithType: R_IGlobalVarInitiator.Set_ComputerId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ComputerId
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId
     name: Set_ComputerId
-    nameWithType: R_IGlobalVarInitiator.Set_ComputerId
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ComputerId
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ComputerId
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(NumberFormatInfo,DateTimeFormatInfo)
-  commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(NumberFormatInfo,DateTimeFormatInfo)
+- uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(System.Globalization.NumberFormatInfo,System.Globalization.DateTimeFormatInfo)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(System.Globalization.NumberFormatInfo,System.Globalization.DateTimeFormatInfo)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_Culture_System_Globalization_NumberFormatInfo_System_Globalization_DateTimeFormatInfo_
   name: Set_Culture(NumberFormatInfo, DateTimeFormatInfo)
   nameWithType: R_IGlobalVarInitiator.Set_Culture(NumberFormatInfo, DateTimeFormatInfo)
-  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(NumberFormatInfo, DateTimeFormatInfo)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(System.Globalization.NumberFormatInfo, System.Globalization.DateTimeFormatInfo)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(NumberFormatInfo,DateTimeFormatInfo)
+  - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(System.Globalization.NumberFormatInfo,System.Globalization.DateTimeFormatInfo)
     name: Set_Culture
-    nameWithType: R_IGlobalVarInitiator.Set_Culture
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_Culture_System_Globalization_NumberFormatInfo_System_Globalization_DateTimeFormatInfo_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: NumberFormatInfo
+  - uid: System.Globalization.NumberFormatInfo
     name: NumberFormatInfo
-    nameWithType: NumberFormatInfo
-    fullName: NumberFormatInfo
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: DateTimeFormatInfo
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.numberformatinfo
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.DateTimeFormatInfo
     name: DateTimeFormatInfo
-    nameWithType: DateTimeFormatInfo
-    fullName: DateTimeFormatInfo
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.datetimeformatinfo
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(NumberFormatInfo,DateTimeFormatInfo)
+  - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture(System.Globalization.NumberFormatInfo,System.Globalization.DateTimeFormatInfo)
     name: Set_Culture
-    nameWithType: R_IGlobalVarInitiator.Set_Culture
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_Culture
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_Culture_System_Globalization_NumberFormatInfo_System_Globalization_DateTimeFormatInfo_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: NumberFormatInfo
+  - uid: System.Globalization.NumberFormatInfo
     name: NumberFormatInfo
-    nameWithType: NumberFormatInfo
-    fullName: NumberFormatInfo
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: DateTimeFormatInfo
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.numberformatinfo
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.DateTimeFormatInfo
     name: DateTimeFormatInfo
-    nameWithType: DateTimeFormatInfo
-    fullName: DateTimeFormatInfo
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.datetimeformatinfo
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI(R_CommonFrontBackAPI.eCulture)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI(R_CommonFrontBackAPI.eCulture)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_CultureUI_R_CommonFrontBackAPI_eCulture_
   name: Set_CultureUI(eCulture)
   nameWithType: R_IGlobalVarInitiator.Set_CultureUI(eCulture)
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI(R_CommonFrontBackAPI.eCulture)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI(R_CommonFrontBackAPI.eCulture)
     name: Set_CultureUI
-    nameWithType: R_IGlobalVarInitiator.Set_CultureUI
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_CultureUI_R_CommonFrontBackAPI_eCulture_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: R_CommonFrontBackAPI.eCulture
     name: eCulture
-    nameWithType: eCulture
-    fullName: R_CommonFrontBackAPI.eCulture
     isExternal: true
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI(R_CommonFrontBackAPI.eCulture)
     name: Set_CultureUI
-    nameWithType: R_IGlobalVarInitiator.Set_CultureUI
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_CultureUI
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_CultureUI_R_CommonFrontBackAPI_eCulture_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: R_CommonFrontBackAPI.eCulture
     name: eCulture
-    nameWithType: eCulture
-    fullName: R_CommonFrontBackAPI.eCulture
     isExternal: true
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
-  name: Set_ReportCulture(String)
-  nameWithType: R_IGlobalVarInitiator.Set_ReportCulture(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(System.String)
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ReportCulture_System_String_
+  name: Set_ReportCulture(string)
+  nameWithType: R_IGlobalVarInitiator.Set_ReportCulture(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(string)
+  nameWithType.vb: R_IGlobalVarInitiator.Set_ReportCulture(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(String)
+  name.vb: Set_ReportCulture(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(System.String)
     name: Set_ReportCulture
-    nameWithType: R_IGlobalVarInitiator.Set_ReportCulture
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ReportCulture_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture(System.String)
     name: Set_ReportCulture
-    nameWithType: R_IGlobalVarInitiator.Set_ReportCulture
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_ReportCulture
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_ReportCulture_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   isExternal: true
-  name: Set_UserRole(String)
-  nameWithType: R_IGlobalVarInitiator.Set_UserRole(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(System.String)
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserRole_System_String_
+  name: Set_UserRole(string)
+  nameWithType: R_IGlobalVarInitiator.Set_UserRole(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(string)
+  nameWithType.vb: R_IGlobalVarInitiator.Set_UserRole(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(String)
+  name.vb: Set_UserRole(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(System.String)
     name: Set_UserRole
-    nameWithType: R_IGlobalVarInitiator.Set_UserRole
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserRole_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole(System.String)
     name: Set_UserRole
-    nameWithType: R_IGlobalVarInitiator.Set_UserRole
-    fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.Set_UserRole
+    href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html#R_BlazorFrontEnd_Interfaces_R_IGlobalVarInitiator_Set_UserRole_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   commentId: T:R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
   parent: R_BlazorFrontEnd.Interfaces
+  href: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.html
   name: R_IGlobalVarInitiator
   nameWithType: R_IGlobalVarInitiator
   fullName: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Interfaces
   commentId: N:R_BlazorFrontEnd.Interfaces
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Interfaces
   nameWithType: R_BlazorFrontEnd.Interfaces
   fullName: R_BlazorFrontEnd.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html

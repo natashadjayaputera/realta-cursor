@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  commentId: T:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  id: StyleBuilder
+  parent: R_BlazorFrontEnd.Controls.Helpers
+  children:
+  - R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.#ctor(System.String)
+  - R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(System.String)
+  - R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(System.String,System.Boolean)
+  - R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build
+  - R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString
+  langs:
+  - csharp
+  - vb
+  name: StyleBuilder
+  nameWithType: StyleBuilder
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  type: Struct
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: StyleBuilder
+    path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Helpers
+  syntax:
+    content: public struct StyleBuilder
+    content.vb: Public Structure StyleBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.#ctor(System.String)
+  commentId: M:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  langs:
+  - csharp
+  - vb
+  name: StyleBuilder(string)
+  nameWithType: StyleBuilder.StyleBuilder(string)
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.StyleBuilder(string)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Helpers
+  syntax:
+    content: public StyleBuilder(string value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Public Sub New(value As String)
+  overload: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.#ctor*
+  nameWithType.vb: StyleBuilder.New(String)
+  fullName.vb: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.New(String)
+  name.vb: New(String)
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(System.String)
+  commentId: M:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(System.String)
+  id: AddStyle(System.String)
+  parent: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddStyle(string)
+  nameWithType: StyleBuilder.AddStyle(string)
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(string)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AddStyle
+    path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Helpers
+  syntax:
+    content: public StyleBuilder AddStyle(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+    content.vb: Public Function AddStyle(value As String) As StyleBuilder
+  overload: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle*
+  nameWithType.vb: StyleBuilder.AddStyle(String)
+  fullName.vb: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(String)
+  name.vb: AddStyle(String)
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(System.String,System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(System.String,System.Boolean)
+  id: AddStyle(System.String,System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  langs:
+  - csharp
+  - vb
+  name: AddStyle(string, bool)
+  nameWithType: StyleBuilder.AddStyle(string, bool)
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(string, bool)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AddStyle
+    path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+    startLine: 16
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Helpers
+  syntax:
+    content: public StyleBuilder AddStyle(string value, bool when = true)
+    parameters:
+    - id: value
+      type: System.String
+    - id: when
+      type: System.Boolean
+    return:
+      type: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+    content.vb: Public Function AddStyle(value As String, [when] As Boolean = True) As StyleBuilder
+  overload: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle*
+  nameWithType.vb: StyleBuilder.AddStyle(String, Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle(String, Boolean)
+  name.vb: AddStyle(String, Boolean)
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build
+  commentId: M:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build
+  id: Build
+  parent: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: StyleBuilder.Build()
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Build
+    path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+    startLine: 18
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Helpers
+  syntax:
+    content: public string Build()
+    return:
+      type: System.String
+    content.vb: Public Function Build() As String
+  overload: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build*
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString
+  commentId: M:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString
+  id: ToString
+  parent: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StyleBuilder.ToString()
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ToString
+    path: Library/R_BlazorFrontEnd.Controls/Helpers/StyleBuilder.cs
+    startLine: 23
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Helpers
+  summary: Returns the fully qualified type name of this instance.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The fully qualified type name.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString*
+references:
+- uid: R_BlazorFrontEnd.Controls.Helpers
+  commentId: N:R_BlazorFrontEnd.Controls.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Helpers
+  nameWithType: R_BlazorFrontEnd.Controls.Helpers
+  fullName: R_BlazorFrontEnd.Controls.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Controls.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Controls.Helpers.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.#ctor
+  href: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.html#R_BlazorFrontEnd_Controls_Helpers_StyleBuilder__ctor_System_String_
+  name: StyleBuilder
+  nameWithType: StyleBuilder.StyleBuilder
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.StyleBuilder
+  nameWithType.vb: StyleBuilder.New
+  fullName.vb: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle
+  href: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.html#R_BlazorFrontEnd_Controls_Helpers_StyleBuilder_AddStyle_System_String_
+  name: AddStyle
+  nameWithType: StyleBuilder.AddStyle
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.AddStyle
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  commentId: T:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+  parent: R_BlazorFrontEnd.Controls.Helpers
+  href: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.html
+  name: StyleBuilder
+  nameWithType: StyleBuilder
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build
+  href: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.html#R_BlazorFrontEnd_Controls_Helpers_StyleBuilder_Build
+  name: Build
+  nameWithType: StyleBuilder.Build
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.Build
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString
+  href: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.html#R_BlazorFrontEnd_Controls_Helpers_StyleBuilder_ToString
+  name: ToString
+  nameWithType: StyleBuilder.ToString
+  fullName: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder.ToString

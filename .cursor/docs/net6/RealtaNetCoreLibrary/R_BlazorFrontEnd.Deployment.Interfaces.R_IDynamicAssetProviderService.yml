@@ -31,12 +31,7 @@ items:
     content.vb: Public Interface R_IDynamicAssetProviderService
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
   commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
   id: InitAssetAsync
@@ -62,8 +57,8 @@ items:
   syntax:
     content: Task InitAssetAsync()
     return:
-      type: Task
-    content.vb: Function InitAssetAsync As Task
+      type: System.Threading.Tasks.Task
+    content.vb: Function InitAssetAsync() As Task
   overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync*
 - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(System.String)
   commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(System.String)
@@ -72,9 +67,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetAssetAsync(String)
-  nameWithType: R_IDynamicAssetProviderService.GetAssetAsync(String)
-  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(System.String)
+  name: GetAssetAsync(string)
+  nameWithType: R_IDynamicAssetProviderService.GetAssetAsync(string)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(string)
   type: Method
   source:
     remote:
@@ -88,14 +83,17 @@ items:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd.Deployment.Interfaces
   syntax:
-    content: Task<byte[]> GetAssetAsync(string assetName)
+    content: Task<byte[]?> GetAssetAsync(string assetName)
     parameters:
     - id: assetName
       type: System.String
     return:
-      type: Task{System.Byte[]}
+      type: System.Threading.Tasks.Task{System.Byte[]}
     content.vb: Function GetAssetAsync(assetName As String) As Task(Of Byte())
   overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync*
+  nameWithType.vb: R_IDynamicAssetProviderService.GetAssetAsync(String)
+  fullName.vb: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync(String)
+  name.vb: GetAssetAsync(String)
 - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(System.String)
   commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(System.String)
   id: GetAssetNameAsync(System.String)
@@ -103,9 +101,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetAssetNameAsync(String)
-  nameWithType: R_IDynamicAssetProviderService.GetAssetNameAsync(String)
-  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(System.String)
+  name: GetAssetNameAsync(string)
+  nameWithType: R_IDynamicAssetProviderService.GetAssetNameAsync(string)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(string)
   type: Method
   source:
     remote:
@@ -127,199 +125,389 @@ items:
       type: System.String
     content.vb: Function GetAssetNameAsync(assetName As String) As String
   overload: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync*
+  nameWithType.vb: R_IDynamicAssetProviderService.GetAssetNameAsync(String)
+  fullName.vb: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync(String)
+  name.vb: GetAssetNameAsync(String)
 references:
 - uid: R_BlazorFrontEnd.Deployment.Interfaces
   commentId: N:R_BlazorFrontEnd.Deployment.Interfaces
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Deployment.Interfaces
   nameWithType: R_BlazorFrontEnd.Deployment.Interfaces
   fullName: R_BlazorFrontEnd.Deployment.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Deployment.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Deployment.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Deployment.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Deployment.Interfaces.html
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync*
   commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
+  href: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.html#R_BlazorFrontEnd_Deployment_Interfaces_R_IDynamicAssetProviderService_InitAssetAsync
   name: InitAssetAsync
   nameWithType: R_IDynamicAssetProviderService.InitAssetAsync
   fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.InitAssetAsync
-- uid: Task
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
   name: Task
   nameWithType: Task
-  fullName: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync*
   commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync
+  href: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.html#R_BlazorFrontEnd_Deployment_Interfaces_R_IDynamicAssetProviderService_GetAssetAsync_System_String_
   name: GetAssetAsync
   nameWithType: R_IDynamicAssetProviderService.GetAssetAsync
   fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetAsync
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: Task{System.Byte[]}
-  commentId: '!:Task{System.Byte[]}'
-  definition: Task`1
-  name: Task<Byte[]>
-  nameWithType: Task<Byte[]>
-  fullName: Task<System.Byte[]>
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<byte[]>
+  nameWithType: Task<byte[]>
+  fullName: System.Threading.Tasks.Task<byte[]>
   nameWithType.vb: Task(Of Byte())
-  fullName.vb: Task(Of System.Byte())
+  fullName.vb: System.Threading.Tasks.Task(Of Byte())
   name.vb: Task(Of Byte())
   spec.csharp:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.Byte
-    name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
+    name: byte
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.Byte
     name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: Task`1
+  - name: )
+- uid: System
+  commentId: N:System
   isExternal: true
-  name: Task<>
-  nameWithType: Task<>
-  fullName: Task<>
-  nameWithType.vb: Task(Of )
-  fullName.vb: Task(Of )
-  name.vb: Task(Of )
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
   spec.csharp:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TResult
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync*
   commentId: Overload:R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync
+  href: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.html#R_BlazorFrontEnd_Deployment_Interfaces_R_IDynamicAssetProviderService_GetAssetNameAsync_System_String_
   name: GetAssetNameAsync
   nameWithType: R_IDynamicAssetProviderService.GetAssetNameAsync
   fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IDynamicAssetProviderService.GetAssetNameAsync

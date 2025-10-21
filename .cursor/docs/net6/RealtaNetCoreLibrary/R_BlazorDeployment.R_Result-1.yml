@@ -8,20 +8,20 @@ items:
   - R_BlazorDeployment.R_Result`1.#ctor
   - R_BlazorDeployment.R_Result`1.Data
   - R_BlazorDeployment.R_Result`1.Fail
-  - R_BlazorDeployment.R_Result`1.Fail(List{System.String})
+  - R_BlazorDeployment.R_Result`1.Fail(System.Collections.Generic.List{System.String})
   - R_BlazorDeployment.R_Result`1.Fail(System.String)
   - R_BlazorDeployment.R_Result`1.FailAsync
-  - R_BlazorDeployment.R_Result`1.FailAsync(List{System.String})
+  - R_BlazorDeployment.R_Result`1.FailAsync(System.Collections.Generic.List{System.String})
   - R_BlazorDeployment.R_Result`1.FailAsync(System.String)
   - R_BlazorDeployment.R_Result`1.Success
-  - R_BlazorDeployment.R_Result`1.Success(`0)
-  - R_BlazorDeployment.R_Result`1.Success(`0,List{System.String})
-  - R_BlazorDeployment.R_Result`1.Success(`0,System.String)
   - R_BlazorDeployment.R_Result`1.Success(System.String)
+  - R_BlazorDeployment.R_Result`1.Success(`0)
+  - R_BlazorDeployment.R_Result`1.Success(`0,System.Collections.Generic.List{System.String})
+  - R_BlazorDeployment.R_Result`1.Success(`0,System.String)
   - R_BlazorDeployment.R_Result`1.SuccessAsync
+  - R_BlazorDeployment.R_Result`1.SuccessAsync(System.String)
   - R_BlazorDeployment.R_Result`1.SuccessAsync(`0)
   - R_BlazorDeployment.R_Result`1.SuccessAsync(`0,System.String)
-  - R_BlazorDeployment.R_Result`1.SuccessAsync(System.String)
   langs:
   - csharp
   - vb
@@ -44,10 +44,7 @@ items:
     content: 'public class R_Result<T> : R_Result, R_IResult<T>, R_IResult'
     typeParameters:
     - id: T
-    content.vb: >-
-      Public Class R_Result(Of T)
-          Inherits R_Result
-          Implements R_IResult(Of T), R_IResult
+    content.vb: Public Class R_Result(Of T) Inherits R_Result Implements R_IResult(Of T), R_IResult
   inheritance:
   - System.Object
   - R_BlazorDeployment.R_Result
@@ -57,15 +54,17 @@ items:
   inheritedMembers:
   - R_BlazorDeployment.R_Result.Messages
   - R_BlazorDeployment.R_Result.Succeeded
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
   nameWithType.vb: R_Result(Of T)
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
   fullName.vb: R_BlazorDeployment.R_Result(Of T)
   name.vb: R_Result(Of T)
 - uid: R_BlazorDeployment.R_Result`1.#ctor
@@ -92,14 +91,11 @@ items:
   namespace: R_BlazorDeployment
   syntax:
     content: public R_Result()
-    content.vb: Public Sub New
+    content.vb: Public Sub New()
   overload: R_BlazorDeployment.R_Result`1.#ctor*
-  nameWithType.vb: R_Result(Of T).R_Result()
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).R_Result()
+  nameWithType.vb: R_Result(Of T).New()
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).New()
+  name.vb: New()
 - uid: R_BlazorDeployment.R_Result`1.Data
   commentId: P:R_BlazorDeployment.R_Result`1.Data
   id: Data
@@ -122,8 +118,9 @@ items:
   assemblies:
   - R_BlazorDeployment
   namespace: R_BlazorDeployment
+  example: []
   syntax:
-    content: public T Data { get; set; }
+    content: public T? Data { get; set; }
     parameters: []
     return:
       type: '{T}'
@@ -132,12 +129,6 @@ items:
   implements:
   - R_BlazorDeployment.R_IResult{{T}}.Data
   nameWithType.vb: R_Result(Of T).Data
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
   fullName.vb: R_BlazorDeployment.R_Result(Of T).Data
 - uid: R_BlazorDeployment.R_Result`1.Fail
   commentId: M:R_BlazorDeployment.R_Result`1.Fail
@@ -165,15 +156,9 @@ items:
     content: public static R_Result<T> Fail()
     return:
       type: R_BlazorDeployment.R_Result`1
-    content.vb: Public Shared Function Fail As R_Result(Of T)
+    content.vb: Public Shared Function Fail() As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Fail*
   nameWithType.vb: R_Result(Of T).Fail()
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
   fullName.vb: R_BlazorDeployment.R_Result(Of T).Fail()
 - uid: R_BlazorDeployment.R_Result`1.Fail(System.String)
   commentId: M:R_BlazorDeployment.R_Result`1.Fail(System.String)
@@ -182,9 +167,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Fail(String)
-  nameWithType: R_Result<T>.Fail(String)
-  fullName: R_BlazorDeployment.R_Result<T>.Fail(System.String)
+  name: Fail(string)
+  nameWithType: R_Result<T>.Fail(string)
+  fullName: R_BlazorDeployment.R_Result<T>.Fail(string)
   type: Method
   source:
     remote:
@@ -207,23 +192,18 @@ items:
     content.vb: Public Shared Function Fail(message As String) As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Fail*
   nameWithType.vb: R_Result(Of T).Fail(String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).Fail(System.String)
-- uid: R_BlazorDeployment.R_Result`1.Fail(List{System.String})
-  commentId: M:R_BlazorDeployment.R_Result`1.Fail(List{System.String})
-  id: Fail(List{System.String})
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).Fail(String)
+  name.vb: Fail(String)
+- uid: R_BlazorDeployment.R_Result`1.Fail(System.Collections.Generic.List{System.String})
+  commentId: M:R_BlazorDeployment.R_Result`1.Fail(System.Collections.Generic.List{System.String})
+  id: Fail(System.Collections.Generic.List{System.String})
   parent: R_BlazorDeployment.R_Result`1
   langs:
   - csharp
   - vb
-  name: Fail(List<String>)
-  nameWithType: R_Result<T>.Fail(List<String>)
-  fullName: R_BlazorDeployment.R_Result<T>.Fail(List<System.String>)
+  name: Fail(List<string>)
+  nameWithType: R_Result<T>.Fail(List<string>)
+  fullName: R_BlazorDeployment.R_Result<T>.Fail(System.Collections.Generic.List<string>)
   type: Method
   source:
     remote:
@@ -240,19 +220,13 @@ items:
     content: public static R_Result<T> Fail(List<string> messages)
     parameters:
     - id: messages
-      type: List{System.String}
+      type: System.Collections.Generic.List{System.String}
     return:
       type: R_BlazorDeployment.R_Result`1
     content.vb: Public Shared Function Fail(messages As List(Of String)) As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Fail*
   nameWithType.vb: R_Result(Of T).Fail(List(Of String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).Fail(List(Of System.String))
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).Fail(System.Collections.Generic.List(Of String))
   name.vb: Fail(List(Of String))
 - uid: R_BlazorDeployment.R_Result`1.FailAsync
   commentId: M:R_BlazorDeployment.R_Result`1.FailAsync
@@ -279,16 +253,10 @@ items:
   syntax:
     content: public static Task<R_Result<T>> FailAsync()
     return:
-      type: Task{R_BlazorDeployment.R_Result`1}
-    content.vb: Public Shared Function FailAsync As Task(Of R_Result(Of T))
+      type: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
+    content.vb: Public Shared Function FailAsync() As Task(Of R_Result(Of T))
   overload: R_BlazorDeployment.R_Result`1.FailAsync*
   nameWithType.vb: R_Result(Of T).FailAsync()
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
   fullName.vb: R_BlazorDeployment.R_Result(Of T).FailAsync()
 - uid: R_BlazorDeployment.R_Result`1.FailAsync(System.String)
   commentId: M:R_BlazorDeployment.R_Result`1.FailAsync(System.String)
@@ -297,9 +265,9 @@ items:
   langs:
   - csharp
   - vb
-  name: FailAsync(String)
-  nameWithType: R_Result<T>.FailAsync(String)
-  fullName: R_BlazorDeployment.R_Result<T>.FailAsync(System.String)
+  name: FailAsync(string)
+  nameWithType: R_Result<T>.FailAsync(string)
+  fullName: R_BlazorDeployment.R_Result<T>.FailAsync(string)
   type: Method
   source:
     remote:
@@ -318,27 +286,22 @@ items:
     - id: message
       type: System.String
     return:
-      type: Task{R_BlazorDeployment.R_Result`1}
+      type: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
     content.vb: Public Shared Function FailAsync(message As String) As Task(Of R_Result(Of T))
   overload: R_BlazorDeployment.R_Result`1.FailAsync*
   nameWithType.vb: R_Result(Of T).FailAsync(String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).FailAsync(System.String)
-- uid: R_BlazorDeployment.R_Result`1.FailAsync(List{System.String})
-  commentId: M:R_BlazorDeployment.R_Result`1.FailAsync(List{System.String})
-  id: FailAsync(List{System.String})
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).FailAsync(String)
+  name.vb: FailAsync(String)
+- uid: R_BlazorDeployment.R_Result`1.FailAsync(System.Collections.Generic.List{System.String})
+  commentId: M:R_BlazorDeployment.R_Result`1.FailAsync(System.Collections.Generic.List{System.String})
+  id: FailAsync(System.Collections.Generic.List{System.String})
   parent: R_BlazorDeployment.R_Result`1
   langs:
   - csharp
   - vb
-  name: FailAsync(List<String>)
-  nameWithType: R_Result<T>.FailAsync(List<String>)
-  fullName: R_BlazorDeployment.R_Result<T>.FailAsync(List<System.String>)
+  name: FailAsync(List<string>)
+  nameWithType: R_Result<T>.FailAsync(List<string>)
+  fullName: R_BlazorDeployment.R_Result<T>.FailAsync(System.Collections.Generic.List<string>)
   type: Method
   source:
     remote:
@@ -355,19 +318,13 @@ items:
     content: public static Task<R_Result<T>> FailAsync(List<string> messages)
     parameters:
     - id: messages
-      type: List{System.String}
+      type: System.Collections.Generic.List{System.String}
     return:
-      type: Task{R_BlazorDeployment.R_Result`1}
+      type: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
     content.vb: Public Shared Function FailAsync(messages As List(Of String)) As Task(Of R_Result(Of T))
   overload: R_BlazorDeployment.R_Result`1.FailAsync*
   nameWithType.vb: R_Result(Of T).FailAsync(List(Of String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).FailAsync(List(Of System.String))
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).FailAsync(System.Collections.Generic.List(Of String))
   name.vb: FailAsync(List(Of String))
 - uid: R_BlazorDeployment.R_Result`1.Success
   commentId: M:R_BlazorDeployment.R_Result`1.Success
@@ -395,15 +352,9 @@ items:
     content: public static R_Result<T> Success()
     return:
       type: R_BlazorDeployment.R_Result`1
-    content.vb: Public Shared Function Success As R_Result(Of T)
+    content.vb: Public Shared Function Success() As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Success*
   nameWithType.vb: R_Result(Of T).Success()
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
   fullName.vb: R_BlazorDeployment.R_Result(Of T).Success()
 - uid: R_BlazorDeployment.R_Result`1.Success(System.String)
   commentId: M:R_BlazorDeployment.R_Result`1.Success(System.String)
@@ -412,9 +363,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Success(String)
-  nameWithType: R_Result<T>.Success(String)
-  fullName: R_BlazorDeployment.R_Result<T>.Success(System.String)
+  name: Success(string)
+  nameWithType: R_Result<T>.Success(string)
+  fullName: R_BlazorDeployment.R_Result<T>.Success(string)
   type: Method
   source:
     remote:
@@ -437,13 +388,8 @@ items:
     content.vb: Public Shared Function Success(message As String) As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Success*
   nameWithType.vb: R_Result(Of T).Success(String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).Success(System.String)
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).Success(String)
+  name.vb: Success(String)
 - uid: R_BlazorDeployment.R_Result`1.Success(`0)
   commentId: M:R_BlazorDeployment.R_Result`1.Success(`0)
   id: Success(`0)
@@ -476,12 +422,6 @@ items:
     content.vb: Public Shared Function Success(data As T) As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Success*
   nameWithType.vb: R_Result(Of T).Success(T)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
   fullName.vb: R_BlazorDeployment.R_Result(Of T).Success(T)
 - uid: R_BlazorDeployment.R_Result`1.Success(`0,System.String)
   commentId: M:R_BlazorDeployment.R_Result`1.Success(`0,System.String)
@@ -490,9 +430,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Success(T, String)
-  nameWithType: R_Result<T>.Success(T, String)
-  fullName: R_BlazorDeployment.R_Result<T>.Success(T, System.String)
+  name: Success(T, string)
+  nameWithType: R_Result<T>.Success(T, string)
+  fullName: R_BlazorDeployment.R_Result<T>.Success(T, string)
   type: Method
   source:
     remote:
@@ -517,23 +457,18 @@ items:
     content.vb: Public Shared Function Success(data As T, message As String) As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Success*
   nameWithType.vb: R_Result(Of T).Success(T, String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).Success(T, System.String)
-- uid: R_BlazorDeployment.R_Result`1.Success(`0,List{System.String})
-  commentId: M:R_BlazorDeployment.R_Result`1.Success(`0,List{System.String})
-  id: Success(`0,List{System.String})
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).Success(T, String)
+  name.vb: Success(T, String)
+- uid: R_BlazorDeployment.R_Result`1.Success(`0,System.Collections.Generic.List{System.String})
+  commentId: M:R_BlazorDeployment.R_Result`1.Success(`0,System.Collections.Generic.List{System.String})
+  id: Success(`0,System.Collections.Generic.List{System.String})
   parent: R_BlazorDeployment.R_Result`1
   langs:
   - csharp
   - vb
-  name: Success(T, List<String>)
-  nameWithType: R_Result<T>.Success(T, List<String>)
-  fullName: R_BlazorDeployment.R_Result<T>.Success(T, List<System.String>)
+  name: Success(T, List<string>)
+  nameWithType: R_Result<T>.Success(T, List<string>)
+  fullName: R_BlazorDeployment.R_Result<T>.Success(T, System.Collections.Generic.List<string>)
   type: Method
   source:
     remote:
@@ -552,19 +487,13 @@ items:
     - id: data
       type: '{T}'
     - id: messages
-      type: List{System.String}
+      type: System.Collections.Generic.List{System.String}
     return:
       type: R_BlazorDeployment.R_Result`1
     content.vb: Public Shared Function Success(data As T, messages As List(Of String)) As R_Result(Of T)
   overload: R_BlazorDeployment.R_Result`1.Success*
   nameWithType.vb: R_Result(Of T).Success(T, List(Of String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).Success(T, List(Of System.String))
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).Success(T, System.Collections.Generic.List(Of String))
   name.vb: Success(T, List(Of String))
 - uid: R_BlazorDeployment.R_Result`1.SuccessAsync
   commentId: M:R_BlazorDeployment.R_Result`1.SuccessAsync
@@ -591,16 +520,10 @@ items:
   syntax:
     content: public static Task<R_Result<T>> SuccessAsync()
     return:
-      type: Task{R_BlazorDeployment.R_Result`1}
-    content.vb: Public Shared Function SuccessAsync As Task(Of R_Result(Of T))
+      type: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
+    content.vb: Public Shared Function SuccessAsync() As Task(Of R_Result(Of T))
   overload: R_BlazorDeployment.R_Result`1.SuccessAsync*
   nameWithType.vb: R_Result(Of T).SuccessAsync()
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
   fullName.vb: R_BlazorDeployment.R_Result(Of T).SuccessAsync()
 - uid: R_BlazorDeployment.R_Result`1.SuccessAsync(System.String)
   commentId: M:R_BlazorDeployment.R_Result`1.SuccessAsync(System.String)
@@ -609,9 +532,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SuccessAsync(String)
-  nameWithType: R_Result<T>.SuccessAsync(String)
-  fullName: R_BlazorDeployment.R_Result<T>.SuccessAsync(System.String)
+  name: SuccessAsync(string)
+  nameWithType: R_Result<T>.SuccessAsync(string)
+  fullName: R_BlazorDeployment.R_Result<T>.SuccessAsync(string)
   type: Method
   source:
     remote:
@@ -630,17 +553,12 @@ items:
     - id: message
       type: System.String
     return:
-      type: Task{R_BlazorDeployment.R_Result`1}
+      type: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
     content.vb: Public Shared Function SuccessAsync(message As String) As Task(Of R_Result(Of T))
   overload: R_BlazorDeployment.R_Result`1.SuccessAsync*
   nameWithType.vb: R_Result(Of T).SuccessAsync(String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).SuccessAsync(System.String)
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).SuccessAsync(String)
+  name.vb: SuccessAsync(String)
 - uid: R_BlazorDeployment.R_Result`1.SuccessAsync(`0)
   commentId: M:R_BlazorDeployment.R_Result`1.SuccessAsync(`0)
   id: SuccessAsync(`0)
@@ -669,16 +587,10 @@ items:
     - id: data
       type: '{T}'
     return:
-      type: Task{R_BlazorDeployment.R_Result`1}
+      type: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
     content.vb: Public Shared Function SuccessAsync(data As T) As Task(Of R_Result(Of T))
   overload: R_BlazorDeployment.R_Result`1.SuccessAsync*
   nameWithType.vb: R_Result(Of T).SuccessAsync(T)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
   fullName.vb: R_BlazorDeployment.R_Result(Of T).SuccessAsync(T)
 - uid: R_BlazorDeployment.R_Result`1.SuccessAsync(`0,System.String)
   commentId: M:R_BlazorDeployment.R_Result`1.SuccessAsync(`0,System.String)
@@ -687,9 +599,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SuccessAsync(T, String)
-  nameWithType: R_Result<T>.SuccessAsync(T, String)
-  fullName: R_BlazorDeployment.R_Result<T>.SuccessAsync(T, System.String)
+  name: SuccessAsync(T, string)
+  nameWithType: R_Result<T>.SuccessAsync(T, string)
+  fullName: R_BlazorDeployment.R_Result<T>.SuccessAsync(T, string)
   type: Method
   source:
     remote:
@@ -710,31 +622,34 @@ items:
     - id: message
       type: System.String
     return:
-      type: Task{R_BlazorDeployment.R_Result`1}
+      type: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
     content.vb: Public Shared Function SuccessAsync(data As T, message As String) As Task(Of R_Result(Of T))
   overload: R_BlazorDeployment.R_Result`1.SuccessAsync*
   nameWithType.vb: R_Result(Of T).SuccessAsync(T, String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).SuccessAsync(T, System.String)
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).SuccessAsync(T, String)
+  name.vb: SuccessAsync(T, String)
 references:
 - uid: R_BlazorDeployment
   commentId: N:R_BlazorDeployment
+  href: R_BlazorDeployment.html
   name: R_BlazorDeployment
   nameWithType: R_BlazorDeployment
   fullName: R_BlazorDeployment
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: R_BlazorDeployment.R_Result
   commentId: T:R_BlazorDeployment.R_Result
   parent: R_BlazorDeployment
+  href: R_BlazorDeployment.R_Result.html
   name: R_Result
   nameWithType: R_Result
   fullName: R_BlazorDeployment.R_Result
@@ -742,6 +657,7 @@ references:
   commentId: T:R_BlazorDeployment.R_IResult{`0}
   parent: R_BlazorDeployment
   definition: R_BlazorDeployment.R_IResult`1
+  href: R_BlazorDeployment.R_IResult-1.html
   name: R_IResult<T>
   nameWithType: R_IResult<T>
   fullName: R_BlazorDeployment.R_IResult<T>
@@ -751,80 +667,343 @@ references:
   spec.csharp:
   - uid: R_BlazorDeployment.R_IResult`1
     name: R_IResult
-    nameWithType: R_IResult
-    fullName: R_BlazorDeployment.R_IResult
+    href: R_BlazorDeployment.R_IResult-1.html
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: R_BlazorDeployment.R_IResult`1
     name: R_IResult
-    nameWithType: R_IResult
-    fullName: R_BlazorDeployment.R_IResult
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: R_BlazorDeployment.R_IResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorDeployment.R_IResult
   commentId: T:R_BlazorDeployment.R_IResult
   parent: R_BlazorDeployment
+  href: R_BlazorDeployment.R_IResult.html
   name: R_IResult
   nameWithType: R_IResult
   fullName: R_BlazorDeployment.R_IResult
 - uid: R_BlazorDeployment.R_Result.Messages
   commentId: P:R_BlazorDeployment.R_Result.Messages
   parent: R_BlazorDeployment.R_Result
+  href: R_BlazorDeployment.R_Result.html#R_BlazorDeployment_R_Result_Messages
   name: Messages
   nameWithType: R_Result.Messages
   fullName: R_BlazorDeployment.R_Result.Messages
 - uid: R_BlazorDeployment.R_Result.Succeeded
   commentId: P:R_BlazorDeployment.R_Result.Succeeded
   parent: R_BlazorDeployment.R_Result
+  href: R_BlazorDeployment.R_Result.html#R_BlazorDeployment_R_Result_Succeeded
   name: Succeeded
   nameWithType: R_Result.Succeeded
   fullName: R_BlazorDeployment.R_Result.Succeeded
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorDeployment.R_IResult`1
   commentId: T:R_BlazorDeployment.R_IResult`1
+  href: R_BlazorDeployment.R_IResult-1.html
   name: R_IResult<T>
   nameWithType: R_IResult<T>
   fullName: R_BlazorDeployment.R_IResult<T>
@@ -834,89 +1013,161 @@ references:
   spec.csharp:
   - uid: R_BlazorDeployment.R_IResult`1
     name: R_IResult
-    nameWithType: R_IResult
-    fullName: R_BlazorDeployment.R_IResult
+    href: R_BlazorDeployment.R_IResult-1.html
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: R_BlazorDeployment.R_IResult`1
     name: R_IResult
-    nameWithType: R_IResult
-    fullName: R_BlazorDeployment.R_IResult
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: R_BlazorDeployment.R_IResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorDeployment.R_Result`1.#ctor*
   commentId: Overload:R_BlazorDeployment.R_Result`1.#ctor
+  href: R_BlazorDeployment.R_Result-1.html#R_BlazorDeployment_R_Result_1__ctor
   name: R_Result
   nameWithType: R_Result<T>.R_Result
   fullName: R_BlazorDeployment.R_Result<T>.R_Result
-  nameWithType.vb: R_Result(Of T).R_Result
-  fullName.vb: R_BlazorDeployment.R_Result(Of T).R_Result
+  nameWithType.vb: R_Result(Of T).New
+  fullName.vb: R_BlazorDeployment.R_Result(Of T).New
+  name.vb: New
 - uid: R_BlazorDeployment.R_Result`1.Data*
   commentId: Overload:R_BlazorDeployment.R_Result`1.Data
+  href: R_BlazorDeployment.R_Result-1.html#R_BlazorDeployment_R_Result_1_Data
   name: Data
   nameWithType: R_Result<T>.Data
   fullName: R_BlazorDeployment.R_Result<T>.Data
@@ -926,6 +1177,7 @@ references:
   commentId: P:R_BlazorDeployment.R_IResult{`0}.Data
   parent: R_BlazorDeployment.R_IResult{{T}}
   definition: R_BlazorDeployment.R_IResult`1.Data
+  href: R_BlazorDeployment.R_IResult-1.html#R_BlazorDeployment_R_IResult_1_Data
   name: Data
   nameWithType: R_IResult<T>.Data
   fullName: R_BlazorDeployment.R_IResult<T>.Data
@@ -939,6 +1191,7 @@ references:
   fullName: T
 - uid: R_BlazorDeployment.R_IResult`1.Data
   commentId: P:R_BlazorDeployment.R_IResult`1.Data
+  href: R_BlazorDeployment.R_IResult-1.html#R_BlazorDeployment_R_IResult_1_Data
   name: Data
   nameWithType: R_IResult<T>.Data
   fullName: R_BlazorDeployment.R_IResult<T>.Data
@@ -950,6 +1203,7 @@ references:
   fullName: T
 - uid: R_BlazorDeployment.R_Result`1.Fail*
   commentId: Overload:R_BlazorDeployment.R_Result`1.Fail
+  href: R_BlazorDeployment.R_Result-1.html#R_BlazorDeployment_R_Result_1_Fail
   name: Fail
   nameWithType: R_Result<T>.Fail
   fullName: R_BlazorDeployment.R_Result<T>.Fail
@@ -958,6 +1212,7 @@ references:
 - uid: R_BlazorDeployment.R_Result`1
   commentId: T:R_BlazorDeployment.R_Result`1
   parent: R_BlazorDeployment
+  href: R_BlazorDeployment.R_Result-1.html
   name: R_Result<T>
   nameWithType: R_Result<T>
   fullName: R_BlazorDeployment.R_Result<T>
@@ -967,223 +1222,247 @@ references:
   spec.csharp:
   - uid: R_BlazorDeployment.R_Result`1
     name: R_Result
-    nameWithType: R_Result
-    fullName: R_BlazorDeployment.R_Result
+    href: R_BlazorDeployment.R_Result-1.html
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: R_BlazorDeployment.R_Result`1
     name: R_Result
-    nameWithType: R_Result
-    fullName: R_BlazorDeployment.R_Result
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: R_BlazorDeployment.R_Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: List{System.String}
-  commentId: '!:List{System.String}'
-  definition: List`1
-  name: List<String>
-  nameWithType: List<String>
-  fullName: List<System.String>
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
   nameWithType.vb: List(Of String)
-  fullName.vb: List(Of System.String)
+  fullName.vb: System.Collections.Generic.List(Of String)
   name.vb: List(Of String)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: List`1
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: R_BlazorDeployment.R_Result`1.FailAsync*
   commentId: Overload:R_BlazorDeployment.R_Result`1.FailAsync
+  href: R_BlazorDeployment.R_Result-1.html#R_BlazorDeployment_R_Result_1_FailAsync
   name: FailAsync
   nameWithType: R_Result<T>.FailAsync
   fullName: R_BlazorDeployment.R_Result<T>.FailAsync
   nameWithType.vb: R_Result(Of T).FailAsync
   fullName.vb: R_BlazorDeployment.R_Result(Of T).FailAsync
-- uid: Task{R_BlazorDeployment.R_Result`1}
-  commentId: '!:Task{R_BlazorDeployment.R_Result`1}'
-  definition: Task`1
+- uid: System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
+  commentId: T:System.Threading.Tasks.Task{R_BlazorDeployment.R_Result`1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   name: Task<R_Result<T>>
   nameWithType: Task<R_Result<T>>
-  fullName: Task<R_BlazorDeployment.R_Result<T>>
+  fullName: System.Threading.Tasks.Task<R_BlazorDeployment.R_Result<T>>
   nameWithType.vb: Task(Of R_Result(Of T))
-  fullName.vb: Task(Of R_BlazorDeployment.R_Result(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of R_BlazorDeployment.R_Result(Of T))
   name.vb: Task(Of R_Result(Of T))
   spec.csharp:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: R_BlazorDeployment.R_Result`1
     name: R_Result
-    nameWithType: R_Result
-    fullName: R_BlazorDeployment.R_Result
+    href: R_BlazorDeployment.R_Result-1.html
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: R_BlazorDeployment.R_Result`1
     name: R_Result
-    nameWithType: R_Result
-    fullName: R_BlazorDeployment.R_Result
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: R_BlazorDeployment.R_Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: Task`1
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
   isExternal: true
-  name: Task<>
-  nameWithType: Task<>
-  fullName: Task<>
-  nameWithType.vb: Task(Of )
-  fullName.vb: Task(Of )
-  name.vb: Task(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
   spec.csharp:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TResult
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: R_BlazorDeployment.R_Result`1.Success*
   commentId: Overload:R_BlazorDeployment.R_Result`1.Success
+  href: R_BlazorDeployment.R_Result-1.html#R_BlazorDeployment_R_Result_1_Success
   name: Success
   nameWithType: R_Result<T>.Success
   fullName: R_BlazorDeployment.R_Result<T>.Success
@@ -1191,6 +1470,7 @@ references:
   fullName.vb: R_BlazorDeployment.R_Result(Of T).Success
 - uid: R_BlazorDeployment.R_Result`1.SuccessAsync*
   commentId: Overload:R_BlazorDeployment.R_Result`1.SuccessAsync
+  href: R_BlazorDeployment.R_Result-1.html#R_BlazorDeployment_R_Result_1_SuccessAsync
   name: SuccessAsync
   nameWithType: R_Result<T>.SuccessAsync
   fullName: R_BlazorDeployment.R_Result<T>.SuccessAsync

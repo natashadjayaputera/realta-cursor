@@ -1,0 +1,2973 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1
+  commentId: T:R_BlazorFrontEnd.Controls.R_TreeView`1
+  id: R_TreeView`1
+  parent: R_BlazorFrontEnd.Controls
+  children:
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.AfterAddBehaviour
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.ClassName
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.CollapseAll
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedData
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedRowIndex
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.DivClassName
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandAll
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandRoot
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.FocusAsync
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.HasChildrenField
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.Height
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.Id
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.IdField
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.OnInitializedAsync
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.ParentIdField
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.R_ConductorSource
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.R_FilterTreeView(System.String,R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator)
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.R_RefreshTree(System.Object)
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.R_ServiceGetListRecord
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem(System.Int32,System.Collections.Generic.IEnumerable{System.Object})
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem(System.Object)
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.ShowBorder
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.ShowFilter
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.StyleName
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.TextField
+  - R_BlazorFrontEnd.Controls.R_TreeView`1.Width
+  langs:
+  - csharp
+  - vb
+  name: R_TreeView<TModel>
+  nameWithType: R_TreeView<TModel>
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>
+  type: Class
+  source:
+    id: R_TreeView
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\TreeView_R_TreeView_razor.g.cs
+    startLine: 193
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: 'public class R_TreeView<TModel> : R_ControlBase, IComponent, IHandleEvent, IHandleAfterRender, IAsyncDisposable, R_IEnableControl where TModel : R_TreeViewItemBase, new()'
+    typeParameters:
+    - id: TModel
+    content.vb: Public Class R_TreeView(Of TModel As {R_TreeViewItemBase, New}) Inherits R_ControlBase Implements IComponent, IHandleEvent, IHandleAfterRender, IAsyncDisposable, R_IEnableControl
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Components.ComponentBase
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent
+  - Microsoft.AspNetCore.Components.IHandleEvent
+  - Microsoft.AspNetCore.Components.IHandleAfterRender
+  - System.IAsyncDisposable
+  - R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  inheritedMembers:
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+  - Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+  - Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  - Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  nameWithType.vb: R_TreeView(Of TModel)
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel)
+  name.vb: R_TreeView(Of TModel)
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.Id
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.Id
+  id: Id
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: R_TreeView<TModel>.Id
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.Id
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Id
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 20
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  example: []
+  syntax:
+    content: >-
+      [Parameter]
+
+      public override string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Overrides Property Id As String
+  overridden: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Id
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.Id*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).Id
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).Id
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.TextField
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.TextField
+  id: TextField
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: TextField
+  nameWithType: R_TreeView<TModel>.TextField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.TextField
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: TextField
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 21
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public string TextField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property TextField As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.TextField*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).TextField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).TextField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.IdField
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.IdField
+  id: IdField
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: IdField
+  nameWithType: R_TreeView<TModel>.IdField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.IdField
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IdField
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 22
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public string IdField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property IdField As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.IdField*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).IdField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).IdField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ParentIdField
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.ParentIdField
+  id: ParentIdField
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: ParentIdField
+  nameWithType: R_TreeView<TModel>.ParentIdField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ParentIdField
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ParentIdField
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 23
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public string ParentIdField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property ParentIdField As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.ParentIdField*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).ParentIdField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ParentIdField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.HasChildrenField
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.HasChildrenField
+  id: HasChildrenField
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: HasChildrenField
+  nameWithType: R_TreeView<TModel>.HasChildrenField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.HasChildrenField
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HasChildrenField
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 24
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public string HasChildrenField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property HasChildrenField As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.HasChildrenField*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).HasChildrenField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).HasChildrenField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.Height
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.Height
+  id: Height
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: R_TreeView<TModel>.Height
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.Height
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Height
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 25
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public string Height { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Property Height As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.Height*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).Height
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).Height
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.Width
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.Width
+  id: Width
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: R_TreeView<TModel>.Width
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.Width
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Width
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 26
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public string Width { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Property Width As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.Width*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).Width
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).Width
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ShowBorder
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.ShowBorder
+  id: ShowBorder
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: ShowBorder
+  nameWithType: R_TreeView<TModel>.ShowBorder
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ShowBorder
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ShowBorder
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 27
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public bool ShowBorder { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Parameter>
+
+      Public Property ShowBorder As Boolean
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.ShowBorder*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).ShowBorder
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ShowBorder
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ShowFilter
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.ShowFilter
+  id: ShowFilter
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: ShowFilter
+  nameWithType: R_TreeView<TModel>.ShowFilter
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ShowFilter
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ShowFilter
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 28
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      [Obsolete("Use R_FilterTreeView method instead.")]
+
+      public bool ShowFilter { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Parameter>
+
+      <Obsolete("Use R_FilterTreeView method instead.")>
+
+      Public Property ShowFilter As Boolean
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.ShowFilter*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use R_FilterTreeView method instead.
+  nameWithType.vb: R_TreeView(Of TModel).ShowFilter
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ShowFilter
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_ServiceGetListRecord
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.R_ServiceGetListRecord
+  id: R_ServiceGetListRecord
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: R_ServiceGetListRecord
+  nameWithType: R_TreeView<TModel>.R_ServiceGetListRecord
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_ServiceGetListRecord
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ServiceGetListRecord
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 29
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public EventCallback<R_ServiceGetListRecordEventArgs> R_ServiceGetListRecord { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs}
+    content.vb: >-
+      <Parameter>
+
+      Public Property R_ServiceGetListRecord As EventCallback(Of R_ServiceGetListRecordEventArgs)
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.R_ServiceGetListRecord*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).R_ServiceGetListRecord
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_ServiceGetListRecord
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.AfterAddBehaviour
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.AfterAddBehaviour
+  id: AfterAddBehaviour
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: AfterAddBehaviour
+  nameWithType: R_TreeView<TModel>.AfterAddBehaviour
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.AfterAddBehaviour
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AfterAddBehaviour
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 30
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public R_eTreeviewAfterAddBehaviour AfterAddBehaviour { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewAfterAddBehaviour
+    content.vb: >-
+      <Parameter>
+
+      Public Property AfterAddBehaviour As R_eTreeviewAfterAddBehaviour
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.AfterAddBehaviour*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).AfterAddBehaviour
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).AfterAddBehaviour
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_ConductorSource
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.R_ConductorSource
+  id: R_ConductorSource
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: R_ConductorSource
+  nameWithType: R_TreeView<TModel>.R_ConductorSource
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_ConductorSource
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ConductorSource
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 33
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public R_Conductor? R_ConductorSource { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.DataControls.R_Conductor
+    content.vb: >-
+      <Parameter>
+
+      Public Property R_ConductorSource As R_Conductor
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.R_ConductorSource*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TreeView(Of TModel).R_ConductorSource
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_ConductorSource
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedData
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedData
+  id: CurrentSelectedData
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: CurrentSelectedData
+  nameWithType: R_TreeView<TModel>.CurrentSelectedData
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.CurrentSelectedData
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CurrentSelectedData
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 48
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public object? CurrentSelectedData { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property CurrentSelectedData As Object
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedData*
+  nameWithType.vb: R_TreeView(Of TModel).CurrentSelectedData
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).CurrentSelectedData
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedRowIndex
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedRowIndex
+  id: CurrentSelectedRowIndex
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: CurrentSelectedRowIndex
+  nameWithType: R_TreeView<TModel>.CurrentSelectedRowIndex
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.CurrentSelectedRowIndex
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CurrentSelectedRowIndex
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 49
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public int CurrentSelectedRowIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CurrentSelectedRowIndex As Integer
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedRowIndex*
+  nameWithType.vb: R_TreeView(Of TModel).CurrentSelectedRowIndex
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).CurrentSelectedRowIndex
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.StyleName
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.StyleName
+  id: StyleName
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: StyleName
+  nameWithType: R_TreeView<TModel>.StyleName
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.StyleName
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: StyleName
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 60
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: protected string StyleName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly Property StyleName As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.StyleName*
+  nameWithType.vb: R_TreeView(Of TModel).StyleName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).StyleName
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ClassName
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.ClassName
+  id: ClassName
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: ClassName
+  nameWithType: R_TreeView<TModel>.ClassName
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ClassName
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ClassName
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 68
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: protected string ClassName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly Property ClassName As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.ClassName*
+  nameWithType.vb: R_TreeView(Of TModel).ClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ClassName
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.DivClassName
+  commentId: P:R_BlazorFrontEnd.Controls.R_TreeView`1.DivClassName
+  id: DivClassName
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: DivClassName
+  nameWithType: R_TreeView<TModel>.DivClassName
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.DivClassName
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DivClassName
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 75
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: protected string DivClassName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly Property DivClassName As String
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.DivClassName*
+  nameWithType.vb: R_TreeView(Of TModel).DivClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).DivClassName
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.OnInitializedAsync
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.OnInitializedAsync
+  id: OnInitializedAsync
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: OnInitializedAsync()
+  nameWithType: R_TreeView<TModel>.OnInitializedAsync()
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.OnInitializedAsync()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OnInitializedAsync
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 80
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  summary: >-
+    Method invoked when the component is ready to start, having received its
+
+    initial parameters from its parent in the render tree.
+
+
+    Override this method if you will perform an asynchronous operation and
+
+    want the component to refresh when that operation is completed.
+  example: []
+  syntax:
+    content: protected override Task OnInitializedAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing any asynchronous operation.
+    content.vb: Protected Overrides Function OnInitializedAsync() As Task
+  overridden: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.OnInitializedAsync*
+  nameWithType.vb: R_TreeView(Of TModel).OnInitializedAsync()
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).OnInitializedAsync()
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.FocusAsync
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.FocusAsync
+  id: FocusAsync
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: FocusAsync()
+  nameWithType: R_TreeView<TModel>.FocusAsync()
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.FocusAsync()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: FocusAsync
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 87
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  example: []
+  syntax:
+    content: public override Task FocusAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function FocusAsync() As Task
+  overridden: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.FocusAsync*
+  nameWithType.vb: R_TreeView(Of TModel).FocusAsync()
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).FocusAsync()
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_RefreshTree(System.Object)
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.R_RefreshTree(System.Object)
+  id: R_RefreshTree(System.Object)
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: R_RefreshTree(object?)
+  nameWithType: R_TreeView<TModel>.R_RefreshTree(object?)
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_RefreshTree(object?)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_RefreshTree
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 251
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public Task R_RefreshTree(object? poParameter)
+    parameters:
+    - id: poParameter
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function R_RefreshTree(poParameter As Object) As Task
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.R_RefreshTree*
+  nameWithType.vb: R_TreeView(Of TModel).R_RefreshTree(Object)
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_RefreshTree(Object)
+  name.vb: R_RefreshTree(Object)
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem(System.Object)
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem(System.Object)
+  id: SelectItem(System.Object)
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: SelectItem(object)
+  nameWithType: R_TreeView<TModel>.SelectItem(object)
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.SelectItem(object)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SelectItem
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 301
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public Task SelectItem(object poItem)
+    parameters:
+    - id: poItem
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SelectItem(poItem As Object) As Task
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem*
+  nameWithType.vb: R_TreeView(Of TModel).SelectItem(Object)
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).SelectItem(Object)
+  name.vb: SelectItem(Object)
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem(System.Int32,System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem(System.Int32,System.Collections.Generic.IEnumerable{System.Object})
+  id: SelectItem(System.Int32,System.Collections.Generic.IEnumerable{System.Object})
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: SelectItem(int, IEnumerable<object>?)
+  nameWithType: R_TreeView<TModel>.SelectItem(int, IEnumerable<object>?)
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.SelectItem(int, System.Collections.Generic.IEnumerable<object>?)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SelectItem
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 307
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public Task SelectItem(int piRowIndex, IEnumerable<object>? poList = null)
+    parameters:
+    - id: piRowIndex
+      type: System.Int32
+    - id: poList
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SelectItem(piRowIndex As Integer, poList As IEnumerable(Of Object) = Nothing) As Task
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem*
+  nameWithType.vb: R_TreeView(Of TModel).SelectItem(Integer, IEnumerable(Of Object))
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).SelectItem(Integer, System.Collections.Generic.IEnumerable(Of Object))
+  name.vb: SelectItem(Integer, IEnumerable(Of Object))
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandAll
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandAll
+  id: ExpandAll
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: ExpandAll()
+  nameWithType: R_TreeView<TModel>.ExpandAll()
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ExpandAll()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ExpandAll
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 344
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public void ExpandAll()
+    content.vb: Public Sub ExpandAll()
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandAll*
+  nameWithType.vb: R_TreeView(Of TModel).ExpandAll()
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ExpandAll()
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandRoot
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandRoot
+  id: ExpandRoot
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: ExpandRoot()
+  nameWithType: R_TreeView<TModel>.ExpandRoot()
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ExpandRoot()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ExpandRoot
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 358
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public void ExpandRoot()
+    content.vb: Public Sub ExpandRoot()
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandRoot*
+  nameWithType.vb: R_TreeView(Of TModel).ExpandRoot()
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ExpandRoot()
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.CollapseAll
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.CollapseAll
+  id: CollapseAll
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: CollapseAll()
+  nameWithType: R_TreeView<TModel>.CollapseAll()
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.CollapseAll()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CollapseAll
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 369
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public void CollapseAll()
+    content.vb: Public Sub CollapseAll()
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.CollapseAll*
+  nameWithType.vb: R_TreeView(Of TModel).CollapseAll()
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).CollapseAll()
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_FilterTreeView(System.String,R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator)
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.R_FilterTreeView(System.String,R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator)
+  id: R_FilterTreeView(System.String,R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator)
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: R_FilterTreeView(string, R_eTreeviewFilterOperator)
+  nameWithType: R_TreeView<TModel>.R_FilterTreeView(string, R_eTreeviewFilterOperator)
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_FilterTreeView(string, R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_FilterTreeView
+    path: Library/R_BlazorFrontEnd.Controls/TreeView/R_TreeView.razor.cs
+    startLine: 469
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public void R_FilterTreeView(string pcText, R_eTreeviewFilterOperator peFilterOperator = R_eTreeviewFilterOperator.Contains)
+    parameters:
+    - id: pcText
+      type: System.String
+    - id: peFilterOperator
+      type: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator
+    content.vb: Public Sub R_FilterTreeView(pcText As String, peFilterOperator As R_eTreeviewFilterOperator = R_eTreeviewFilterOperator.Contains)
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.R_FilterTreeView*
+  nameWithType.vb: R_TreeView(Of TModel).R_FilterTreeView(String, R_eTreeviewFilterOperator)
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_FilterTreeView(String, R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator)
+  name.vb: R_FilterTreeView(String, R_eTreeviewFilterOperator)
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:R_BlazorFrontEnd.Controls.R_TreeView`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  id: BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: R_BlazorFrontEnd.Controls.R_TreeView`1
+  langs:
+  - csharp
+  - vb
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: R_TreeView<TModel>.BuildRenderTree(RenderTreeBuilder)
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  type: Method
+  source:
+    id: BuildRenderTree
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\TreeView_R_TreeView_razor.g.cs
+    startLine: 196
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  summary: Renders the component to the supplied <xref href="Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override void BuildRenderTree(RenderTreeBuilder __builder)
+    parameters:
+    - id: __builder
+      type: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    content.vb: Protected Overrides Sub BuildRenderTree(__builder As RenderTreeBuilder)
+  overridden: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  overload: R_BlazorFrontEnd.Controls.R_TreeView`1.BuildRenderTree*
+  nameWithType.vb: R_TreeView(Of TModel).BuildRenderTree(RenderTreeBuilder)
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+references:
+- uid: R_BlazorFrontEnd.Controls
+  commentId: N:R_BlazorFrontEnd.Controls
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls
+  nameWithType: R_BlazorFrontEnd.Controls
+  fullName: R_BlazorFrontEnd.Controls
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Components.ComponentBase
+  commentId: T:Microsoft.AspNetCore.Components.ComponentBase
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase
+  name: ComponentBase
+  nameWithType: ComponentBase
+  fullName: Microsoft.AspNetCore.Components.ComponentBase
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  parent: R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html
+  name: R_BaseComponent
+  nameWithType: R_BaseComponent
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  parent: R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html
+  name: R_ControlBase
+  nameWithType: R_ControlBase
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+- uid: Microsoft.AspNetCore.Components.IComponent
+  commentId: T:Microsoft.AspNetCore.Components.IComponent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Microsoft.AspNetCore.Components.IComponent
+- uid: Microsoft.AspNetCore.Components.IHandleEvent
+  commentId: T:Microsoft.AspNetCore.Components.IHandleEvent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent
+  name: IHandleEvent
+  nameWithType: IHandleEvent
+  fullName: Microsoft.AspNetCore.Components.IHandleEvent
+- uid: Microsoft.AspNetCore.Components.IHandleAfterRender
+  commentId: T:Microsoft.AspNetCore.Components.IHandleAfterRender
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender
+  name: IHandleAfterRender
+  nameWithType: IHandleAfterRender
+  fullName: Microsoft.AspNetCore.Components.IHandleAfterRender
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  commentId: T:R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  parent: R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl.html
+  name: R_IEnableControl
+  nameWithType: R_IEnableControl
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_Enabled
+  name: Enabled
+  nameWithType: R_ControlBase.Enabled
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_TabIndex
+  name: TabIndex
+  nameWithType: R_ControlBase.TabIndex
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_Tooltip
+  name: Tooltip
+  nameWithType: R_ControlBase.Tooltip
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_R_FindPage
+  name: R_FindPage()
+  nameWithType: R_ControlBase.R_FindPage()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+    name: R_FindPage
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_R_FindPage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+    name: R_FindPage
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_R_FindPage
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_CallAfterRender_System_Func_System_Threading_Tasks_Task__
+  name: CallAfterRender(Func<Task>)
+  nameWithType: R_BaseComponent.CallAfterRender(Func<Task>)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func<System.Threading.Tasks.Task>)
+  nameWithType.vb: R_BaseComponent.CallAfterRender(Func(Of Task))
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func(Of System.Threading.Tasks.Task))
+  name.vb: CallAfterRender(Func(Of Task))
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+    name: CallAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_CallAfterRender_System_Func_System_Threading_Tasks_Task__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+    name: CallAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_CallAfterRender_System_Func_System_Threading_Tasks_Task__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Parent
+  name: Parent
+  nameWithType: R_BaseComponent.Parent
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_AdditionalAttributes
+  name: AdditionalAttributes
+  nameWithType: R_BaseComponent.AdditionalAttributes
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Controls
+  name: Controls
+  nameWithType: R_BaseComponent.Controls
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Class
+  name: Class
+  nameWithType: R_BaseComponent.Class
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Style
+  name: Style
+  nameWithType: R_BaseComponent.Style
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Tag
+  name: Tag
+  nameWithType: R_BaseComponent.Tag
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnDisposed
+  name: OnDisposed
+  nameWithType: R_BaseComponent.OnDisposed
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRender_System_Boolean_
+  name: OnAfterRender(bool)
+  nameWithType: R_BaseComponent.OnAfterRender(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(bool)
+  nameWithType.vb: R_BaseComponent.OnAfterRender(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(Boolean)
+  name.vb: OnAfterRender(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRenderAsync_System_Boolean_
+  name: OnAfterRenderAsync(bool)
+  nameWithType: R_BaseComponent.OnAfterRenderAsync(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(bool)
+  nameWithType.vb: R_BaseComponent.OnAfterRenderAsync(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(Boolean)
+  name.vb: OnAfterRenderAsync(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRenderAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRenderAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRenderAsync
+  name: OnFirstAfterRenderAsync()
+  nameWithType: R_BaseComponent.OnFirstAfterRenderAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+    name: OnFirstAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRenderAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+    name: OnFirstAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRenderAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRender
+  name: OnFirstAfterRender()
+  nameWithType: R_BaseComponent.OnFirstAfterRender()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+    name: OnFirstAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRender
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+    name: OnFirstAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRender
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnParametersSet
+  name: OnParametersSet()
+  nameWithType: R_BaseComponent.OnParametersSet()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+    name: OnParametersSet
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnParametersSet
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+    name: OnParametersSet
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnParametersSet
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetShouldRender_System_Boolean_
+  name: SetShouldRender(bool)
+  nameWithType: R_BaseComponent.SetShouldRender(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(bool)
+  nameWithType.vb: R_BaseComponent.SetShouldRender(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(Boolean)
+  name.vb: SetShouldRender(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_ShouldRender
+  name: ShouldRender()
+  nameWithType: R_BaseComponent.ShouldRender()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_ShouldRender
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_ShouldRender
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
+  name: SetParametersAsync(ParameterView)
+  nameWithType: R_BaseComponent.SetParametersAsync(ParameterView)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: R_BaseComponent.Dispose(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(bool)
+  nameWithType.vb: R_BaseComponent.Dispose(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: R_BaseComponent.DisposeAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_DisposeAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+  commentId: E:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_BubbledEvent
+  name: BubbledEvent
+  nameWithType: R_BaseComponent.BubbledEvent
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnBubbledEvent_System_Object_System_EventArgs_
+  name: OnBubbledEvent(object, EventArgs)
+  nameWithType: R_BaseComponent.OnBubbledEvent(object, EventArgs)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(object, System.EventArgs)
+  nameWithType.vb: R_BaseComponent.OnBubbledEvent(Object, EventArgs)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(Object, System.EventArgs)
+  name.vb: OnBubbledEvent(Object, EventArgs)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+    name: OnBubbledEvent
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnBubbledEvent_System_Object_System_EventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+    name: OnBubbledEvent
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnBubbledEvent_System_Object_System_EventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized
+  name: OnInitialized()
+  nameWithType: ComponentBase.OnInitialized()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+    name: OnInitialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+    name: OnInitialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  name: OnParametersSetAsync()
+  nameWithType: ComponentBase.OnParametersSetAsync()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+    name: OnParametersSetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+    name: OnParametersSetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  name: StateHasChanged()
+  nameWithType: ComponentBase.StateHasChanged()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  name: InvokeAsync(Action)
+  nameWithType: ComponentBase.InvokeAsync(Action)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  name: InvokeAsync(Func<Task>)
+  nameWithType: ComponentBase.InvokeAsync(Func<Task>)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func<System.Threading.Tasks.Task>)
+  nameWithType.vb: ComponentBase.InvokeAsync(Func(Of Task))
+  fullName.vb: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func(Of System.Threading.Tasks.Task))
+  name.vb: InvokeAsync(Func(Of Task))
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+- uid: R_BlazorFrontEnd.Controls.Base
+  commentId: N:R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Base
+  nameWithType: R_BlazorFrontEnd.Controls.Base
+  fullName: R_BlazorFrontEnd.Controls.Base
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+- uid: R_BlazorFrontEnd.Controls.Interfaces
+  commentId: N:R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Interfaces
+  nameWithType: R_BlazorFrontEnd.Controls.Interfaces
+  fullName: R_BlazorFrontEnd.Controls.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_ControlBase.Id
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_Id
+  name: Id
+  nameWithType: R_ControlBase.Id
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Id
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.Id*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.Id
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_Id
+  name: Id
+  nameWithType: R_TreeView<TModel>.Id
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.Id
+  nameWithType.vb: R_TreeView(Of TModel).Id
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.TextField*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.TextField
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_TextField
+  name: TextField
+  nameWithType: R_TreeView<TModel>.TextField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.TextField
+  nameWithType.vb: R_TreeView(Of TModel).TextField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).TextField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.IdField*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.IdField
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_IdField
+  name: IdField
+  nameWithType: R_TreeView<TModel>.IdField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.IdField
+  nameWithType.vb: R_TreeView(Of TModel).IdField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).IdField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ParentIdField*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.ParentIdField
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_ParentIdField
+  name: ParentIdField
+  nameWithType: R_TreeView<TModel>.ParentIdField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ParentIdField
+  nameWithType.vb: R_TreeView(Of TModel).ParentIdField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ParentIdField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.HasChildrenField*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.HasChildrenField
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_HasChildrenField
+  name: HasChildrenField
+  nameWithType: R_TreeView<TModel>.HasChildrenField
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.HasChildrenField
+  nameWithType.vb: R_TreeView(Of TModel).HasChildrenField
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).HasChildrenField
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.Height*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.Height
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_Height
+  name: Height
+  nameWithType: R_TreeView<TModel>.Height
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.Height
+  nameWithType.vb: R_TreeView(Of TModel).Height
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).Height
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.Width*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.Width
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_Width
+  name: Width
+  nameWithType: R_TreeView<TModel>.Width
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.Width
+  nameWithType.vb: R_TreeView(Of TModel).Width
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).Width
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ShowBorder*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.ShowBorder
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_ShowBorder
+  name: ShowBorder
+  nameWithType: R_TreeView<TModel>.ShowBorder
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ShowBorder
+  nameWithType.vb: R_TreeView(Of TModel).ShowBorder
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ShowBorder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ShowFilter*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.ShowFilter
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_ShowFilter
+  name: ShowFilter
+  nameWithType: R_TreeView<TModel>.ShowFilter
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ShowFilter
+  nameWithType.vb: R_TreeView(Of TModel).ShowFilter
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ShowFilter
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_ServiceGetListRecord*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.R_ServiceGetListRecord
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_R_ServiceGetListRecord
+  name: R_ServiceGetListRecord
+  nameWithType: R_TreeView<TModel>.R_ServiceGetListRecord
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_ServiceGetListRecord
+  nameWithType.vb: R_TreeView(Of TModel).R_ServiceGetListRecord
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_ServiceGetListRecord
+- uid: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs}
+  commentId: T:Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.EventCallback`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  name: EventCallback<R_ServiceGetListRecordEventArgs>
+  nameWithType: EventCallback<R_ServiceGetListRecordEventArgs>
+  fullName: Microsoft.AspNetCore.Components.EventCallback<R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs>
+  nameWithType.vb: EventCallback(Of R_ServiceGetListRecordEventArgs)
+  fullName.vb: Microsoft.AspNetCore.Components.EventCallback(Of R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs)
+  name.vb: EventCallback(Of R_ServiceGetListRecordEventArgs)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: <
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs
+    name: R_ServiceGetListRecordEventArgs
+    href: R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs
+    name: R_ServiceGetListRecordEventArgs
+    href: R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs.html
+  - name: )
+- uid: Microsoft.AspNetCore.Components.EventCallback`1
+  commentId: T:Microsoft.AspNetCore.Components.EventCallback`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  name: EventCallback<TValue>
+  nameWithType: EventCallback<TValue>
+  fullName: Microsoft.AspNetCore.Components.EventCallback<TValue>
+  nameWithType.vb: EventCallback(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Components.EventCallback(Of TValue)
+  name.vb: EventCallback(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.AfterAddBehaviour*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.AfterAddBehaviour
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_AfterAddBehaviour
+  name: AfterAddBehaviour
+  nameWithType: R_TreeView<TModel>.AfterAddBehaviour
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.AfterAddBehaviour
+  nameWithType.vb: R_TreeView(Of TModel).AfterAddBehaviour
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).AfterAddBehaviour
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewAfterAddBehaviour
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eTreeviewAfterAddBehaviour
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewAfterAddBehaviour.html
+  name: R_eTreeviewAfterAddBehaviour
+  nameWithType: R_eTreeviewAfterAddBehaviour
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewAfterAddBehaviour
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_ConductorSource*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.R_ConductorSource
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_R_ConductorSource
+  name: R_ConductorSource
+  nameWithType: R_TreeView<TModel>.R_ConductorSource
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_ConductorSource
+  nameWithType.vb: R_TreeView(Of TModel).R_ConductorSource
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_ConductorSource
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_Conductor
+  commentId: T:R_BlazorFrontEnd.Controls.DataControls.R_Conductor
+  parent: R_BlazorFrontEnd.Controls.DataControls
+  href: R_BlazorFrontEnd.Controls.DataControls.R_Conductor.html
+  name: R_Conductor
+  nameWithType: R_Conductor
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_Conductor
+- uid: R_BlazorFrontEnd.Controls.DataControls
+  commentId: N:R_BlazorFrontEnd.Controls.DataControls
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.DataControls
+  nameWithType: R_BlazorFrontEnd.Controls.DataControls
+  fullName: R_BlazorFrontEnd.Controls.DataControls
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.DataControls
+    name: DataControls
+    href: R_BlazorFrontEnd.Controls.DataControls.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.DataControls
+    name: DataControls
+    href: R_BlazorFrontEnd.Controls.DataControls.html
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedData*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedData
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_CurrentSelectedData
+  name: CurrentSelectedData
+  nameWithType: R_TreeView<TModel>.CurrentSelectedData
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.CurrentSelectedData
+  nameWithType.vb: R_TreeView(Of TModel).CurrentSelectedData
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).CurrentSelectedData
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedRowIndex*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.CurrentSelectedRowIndex
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_CurrentSelectedRowIndex
+  name: CurrentSelectedRowIndex
+  nameWithType: R_TreeView<TModel>.CurrentSelectedRowIndex
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.CurrentSelectedRowIndex
+  nameWithType.vb: R_TreeView(Of TModel).CurrentSelectedRowIndex
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).CurrentSelectedRowIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.StyleName*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.StyleName
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_StyleName
+  name: StyleName
+  nameWithType: R_TreeView<TModel>.StyleName
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.StyleName
+  nameWithType.vb: R_TreeView(Of TModel).StyleName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).StyleName
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ClassName*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.ClassName
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_ClassName
+  name: ClassName
+  nameWithType: R_TreeView<TModel>.ClassName
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ClassName
+  nameWithType.vb: R_TreeView(Of TModel).ClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ClassName
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.DivClassName*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.DivClassName
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_DivClassName
+  name: DivClassName
+  nameWithType: R_TreeView<TModel>.DivClassName
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.DivClassName
+  nameWithType.vb: R_TreeView(Of TModel).DivClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).DivClassName
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnInitializedAsync
+  name: OnInitializedAsync()
+  nameWithType: R_BaseComponent.OnInitializedAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+    name: OnInitializedAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnInitializedAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+    name: OnInitializedAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnInitializedAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.OnInitializedAsync*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.OnInitializedAsync
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_OnInitializedAsync
+  name: OnInitializedAsync
+  nameWithType: R_TreeView<TModel>.OnInitializedAsync
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.OnInitializedAsync
+  nameWithType.vb: R_TreeView(Of TModel).OnInitializedAsync
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).OnInitializedAsync
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_FocusAsync
+  name: FocusAsync()
+  nameWithType: R_ControlBase.FocusAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+    name: FocusAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_FocusAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+    name: FocusAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_FocusAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.FocusAsync*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.FocusAsync
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_FocusAsync
+  name: FocusAsync
+  nameWithType: R_TreeView<TModel>.FocusAsync
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.FocusAsync
+  nameWithType.vb: R_TreeView(Of TModel).FocusAsync
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).FocusAsync
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_RefreshTree*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.R_RefreshTree
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_R_RefreshTree_System_Object_
+  name: R_RefreshTree
+  nameWithType: R_TreeView<TModel>.R_RefreshTree
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_RefreshTree
+  nameWithType.vb: R_TreeView(Of TModel).R_RefreshTree
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_RefreshTree
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.SelectItem
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_SelectItem_System_Object_
+  name: SelectItem
+  nameWithType: R_TreeView<TModel>.SelectItem
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.SelectItem
+  nameWithType.vb: R_TreeView(Of TModel).SelectItem
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).SelectItem
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandAll*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandAll
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_ExpandAll
+  name: ExpandAll
+  nameWithType: R_TreeView<TModel>.ExpandAll
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ExpandAll
+  nameWithType.vb: R_TreeView(Of TModel).ExpandAll
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ExpandAll
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandRoot*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.ExpandRoot
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_ExpandRoot
+  name: ExpandRoot
+  nameWithType: R_TreeView<TModel>.ExpandRoot
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.ExpandRoot
+  nameWithType.vb: R_TreeView(Of TModel).ExpandRoot
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).ExpandRoot
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.CollapseAll*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.CollapseAll
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_CollapseAll
+  name: CollapseAll
+  nameWithType: R_TreeView<TModel>.CollapseAll
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.CollapseAll
+  nameWithType.vb: R_TreeView(Of TModel).CollapseAll
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).CollapseAll
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.R_FilterTreeView*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.R_FilterTreeView
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_R_FilterTreeView_System_String_R_BlazorFrontEnd_Controls_Enums_R_eTreeviewFilterOperator_
+  name: R_FilterTreeView
+  nameWithType: R_TreeView<TModel>.R_FilterTreeView
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.R_FilterTreeView
+  nameWithType.vb: R_TreeView(Of TModel).R_FilterTreeView
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).R_FilterTreeView
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator.html
+  name: R_eTreeviewFilterOperator
+  nameWithType: R_eTreeviewFilterOperator
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator
+- uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  commentId: T:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  parent: Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  name: RenderTreeBuilder
+  nameWithType: RenderTreeBuilder
+  fullName: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+- uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: ComponentBase.BuildRenderTree(RenderTreeBuilder)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_TreeView`1.BuildRenderTree*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TreeView`1.BuildRenderTree
+  href: R_BlazorFrontEnd.Controls.R_TreeView-1.html#R_BlazorFrontEnd_Controls_R_TreeView_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  name: BuildRenderTree
+  nameWithType: R_TreeView<TModel>.BuildRenderTree
+  fullName: R_BlazorFrontEnd.Controls.R_TreeView<TModel>.BuildRenderTree
+  nameWithType.vb: R_TreeView(Of TModel).BuildRenderTree
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TreeView(Of TModel).BuildRenderTree
+- uid: Microsoft.AspNetCore.Components.Rendering
+  commentId: N:Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components.Rendering
+  nameWithType: Microsoft.AspNetCore.Components.Rendering
+  fullName: Microsoft.AspNetCore.Components.Rendering
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering

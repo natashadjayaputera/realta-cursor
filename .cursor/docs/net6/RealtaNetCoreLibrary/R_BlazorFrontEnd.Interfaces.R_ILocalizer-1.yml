@@ -28,22 +28,15 @@ items:
     content: 'public interface R_ILocalizer<T> : R_ILocalizer'
     typeParameters:
     - id: T
-    content.vb: >-
-      Public Interface R_ILocalizer(Of T)
-          Inherits R_ILocalizer
+    content.vb: Public Interface R_ILocalizer(Of T) Inherits R_ILocalizer
   inheritedMembers:
-  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
-  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
-  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(System.Type,System.String,System.Globalization.CultureInfo,System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(System.Type,System.String,System.Globalization.CultureInfo,System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(System.Type,System.String,System.Globalization.CultureInfo,System.String)
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
   nameWithType.vb: R_ILocalizer(Of T)
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
   fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer(Of T)
   name.vb: R_ILocalizer(Of T)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer`1.Item(System.String)
@@ -53,9 +46,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Item[String]
-  nameWithType: R_ILocalizer<T>.Item[String]
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer<T>.Item[System.String]
+  name: this[string]
+  nameWithType: R_ILocalizer<T>.this[string]
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer<T>.this[string]
   type: Property
   source:
     remote:
@@ -75,450 +68,468 @@ items:
       type: System.String
     return:
       type: System.String
-    content.vb: ReadOnly Property Item(pcResourceId As String) As String
+    content.vb: ReadOnly Default Property this[](pcResourceId As String) As String
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalizer`1.Item*
-  nameWithType.vb: R_ILocalizer(Of T).Item(String)
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer(Of T).Item(System.String)
-  name.vb: Item(String)
+  nameWithType.vb: R_ILocalizer(Of T).this[](String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer(Of T).this[](String)
+  name.vb: this[](String)
 references:
 - uid: R_BlazorFrontEnd.Interfaces
   commentId: N:R_BlazorFrontEnd.Interfaces
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Interfaces
   nameWithType: R_BlazorFrontEnd.Interfaces
   fullName: R_BlazorFrontEnd.Interfaces
-- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
-  commentId: P:R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(System.Type,System.String,System.Globalization.CultureInfo,System.String)
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(System.Type,System.String,System.Globalization.CultureInfo,System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_ILocalizer
   isExternal: true
-  name: Item[Type, String, Nullable<CultureInfo>, String]
-  nameWithType: R_ILocalizer.Item[Type, String, Nullable<CultureInfo>, String]
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item[Type, System.String, System.Nullable<CultureInfo>, System.String]
-  nameWithType.vb: R_ILocalizer.Item(Type, String, Nullable(Of CultureInfo), String)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type, System.String, System.Nullable(Of CultureInfo), System.String)
-  name.vb: Item(Type, String, Nullable(Of CultureInfo), String)
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: this[Type, string, CultureInfo, string]
+  nameWithType: R_ILocalizer.this[Type, string, CultureInfo, string]
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.this[System.Type, string, System.Globalization.CultureInfo, string]
+  nameWithType.vb: R_ILocalizer.this[](Type, String, CultureInfo, String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.this[](System.Type, String, System.Globalization.CultureInfo, String)
+  name.vb: this[](Type, String, CultureInfo, String)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
-    name: Item
-    nameWithType: R_ILocalizer.Item
-    fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item
+  - name: this
   - name: '['
-    nameWithType: '['
-    fullName: '['
-  - uid: Type
+  - uid: System.Type
     name: Type
-    nameWithType: Type
-    fullName: Type
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: CultureInfo
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
     name: CultureInfo
-    nameWithType: CultureInfo
-    fullName: CultureInfo
     isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ']'
-    nameWithType: ']'
-    fullName: ']'
   spec.vb:
-  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(Type,System.String,System.Nullable{CultureInfo},System.String)
-    name: Item
-    nameWithType: R_ILocalizer.Item
-    fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.Item(System.Type,System.String,System.Globalization.CultureInfo,System.String)
+    name: this[]
+    href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_Item_System_Type_System_String_System_Globalization_CultureInfo_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Type
+  - uid: System.Type
     name: Type
-    nameWithType: Type
-    fullName: Type
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: CultureInfo
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
     name: CultureInfo
-    nameWithType: CultureInfo
-    fullName: CultureInfo
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
-  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(System.Type,System.String,System.Globalization.CultureInfo,System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(System.Type,System.String,System.Globalization.CultureInfo,System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_ILocalizer
   isExternal: true
-  name: R_GetError(Type, String, Nullable<CultureInfo>, String)
-  nameWithType: R_ILocalizer.R_GetError(Type, String, Nullable<CultureInfo>, String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type, System.String, System.Nullable<CultureInfo>, System.String)
-  nameWithType.vb: R_ILocalizer.R_GetError(Type, String, Nullable(Of CultureInfo), String)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type, System.String, System.Nullable(Of CultureInfo), System.String)
-  name.vb: R_GetError(Type, String, Nullable(Of CultureInfo), String)
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_R_GetError_System_Type_System_String_System_Globalization_CultureInfo_System_String_
+  name: R_GetError(Type, string, CultureInfo, string)
+  nameWithType: R_ILocalizer.R_GetError(Type, string, CultureInfo, string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(System.Type, string, System.Globalization.CultureInfo, string)
+  nameWithType.vb: R_ILocalizer.R_GetError(Type, String, CultureInfo, String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(System.Type, String, System.Globalization.CultureInfo, String)
+  name.vb: R_GetError(Type, String, CultureInfo, String)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(System.Type,System.String,System.Globalization.CultureInfo,System.String)
     name: R_GetError
-    nameWithType: R_ILocalizer.R_GetError
-    fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError
+    href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_R_GetError_System_Type_System_String_System_Globalization_CultureInfo_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Type
+  - uid: System.Type
     name: Type
-    nameWithType: Type
-    fullName: Type
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: CultureInfo
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
     name: CultureInfo
-    nameWithType: CultureInfo
-    fullName: CultureInfo
     isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError(System.Type,System.String,System.Globalization.CultureInfo,System.String)
     name: R_GetError
-    nameWithType: R_ILocalizer.R_GetError
-    fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetError
+    href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_R_GetError_System_Type_System_String_System_Globalization_CultureInfo_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Type
+  - uid: System.Type
     name: Type
-    nameWithType: Type
-    fullName: Type
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: CultureInfo
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
     name: CultureInfo
-    nameWithType: CultureInfo
-    fullName: CultureInfo
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
-  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+- uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(System.Type,System.String,System.Globalization.CultureInfo,System.String)
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(System.Type,System.String,System.Globalization.CultureInfo,System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_ILocalizer
   isExternal: true
-  name: R_GetErrorDetail(Type, String, Nullable<CultureInfo>, String)
-  nameWithType: R_ILocalizer.R_GetErrorDetail(Type, String, Nullable<CultureInfo>, String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type, System.String, System.Nullable<CultureInfo>, System.String)
-  nameWithType.vb: R_ILocalizer.R_GetErrorDetail(Type, String, Nullable(Of CultureInfo), String)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type, System.String, System.Nullable(Of CultureInfo), System.String)
-  name.vb: R_GetErrorDetail(Type, String, Nullable(Of CultureInfo), String)
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_R_GetErrorDetail_System_Type_System_String_System_Globalization_CultureInfo_System_String_
+  name: R_GetErrorDetail(Type, string, CultureInfo, string)
+  nameWithType: R_ILocalizer.R_GetErrorDetail(Type, string, CultureInfo, string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(System.Type, string, System.Globalization.CultureInfo, string)
+  nameWithType.vb: R_ILocalizer.R_GetErrorDetail(Type, String, CultureInfo, String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(System.Type, String, System.Globalization.CultureInfo, String)
+  name.vb: R_GetErrorDetail(Type, String, CultureInfo, String)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(System.Type,System.String,System.Globalization.CultureInfo,System.String)
     name: R_GetErrorDetail
-    nameWithType: R_ILocalizer.R_GetErrorDetail
-    fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail
+    href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_R_GetErrorDetail_System_Type_System_String_System_Globalization_CultureInfo_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Type
+  - uid: System.Type
     name: Type
-    nameWithType: Type
-    fullName: Type
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: CultureInfo
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
     name: CultureInfo
-    nameWithType: CultureInfo
-    fullName: CultureInfo
     isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(Type,System.String,System.Nullable{CultureInfo},System.String)
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail(System.Type,System.String,System.Globalization.CultureInfo,System.String)
     name: R_GetErrorDetail
-    nameWithType: R_ILocalizer.R_GetErrorDetail
-    fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer.R_GetErrorDetail
+    href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_R_GetErrorDetail_System_Type_System_String_System_Globalization_CultureInfo_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Type
+  - uid: System.Type
     name: Type
-    nameWithType: Type
-    fullName: Type
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: CultureInfo
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Globalization.CultureInfo
     name: CultureInfo
-    nameWithType: CultureInfo
-    fullName: CultureInfo
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer
   commentId: T:R_BlazorFrontEnd.Interfaces.R_ILocalizer
   parent: R_BlazorFrontEnd.Interfaces
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalizer.html
   name: R_ILocalizer
   nameWithType: R_ILocalizer
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer`1.Item*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalizer`1.Item
-  name: Item
-  nameWithType: R_ILocalizer<T>.Item
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer<T>.Item
-  nameWithType.vb: R_ILocalizer(Of T).Item
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer(Of T).Item
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalizer-1.html#R_BlazorFrontEnd_Interfaces_R_ILocalizer_1_Item_System_String_
+  name: this
+  nameWithType: R_ILocalizer<T>.this
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalizer<T>.this
+  nameWithType.vb: R_ILocalizer(Of T).this[]
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalizer(Of T).this[]
+  name.vb: this[]
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

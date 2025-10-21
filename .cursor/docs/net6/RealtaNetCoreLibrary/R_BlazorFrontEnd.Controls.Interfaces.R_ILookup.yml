@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+  commentId: T:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+  id: R_ILookup
+  parent: R_BlazorFrontEnd.Controls.Interfaces
+  children:
+  - R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id
+  - R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService
+  - R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup
+  - R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup
+  langs:
+  - csharp
+  - vb
+  name: R_ILookup
+  nameWithType: R_ILookup
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_ILookup
+    path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Interfaces
+  syntax:
+    content: public interface R_ILookup
+    content.vb: Public Interface R_ILookup
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id
+  id: Id
+  parent: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: R_ILookup.Id
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Id
+    path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Interfaces
+  syntax:
+    content: string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Id As String
+  overload: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id*
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup
+  commentId: P:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup
+  id: R_Before_Open_Lookup
+  parent: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+  langs:
+  - csharp
+  - vb
+  name: R_Before_Open_Lookup
+  nameWithType: R_ILookup.R_Before_Open_Lookup
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_Before_Open_Lookup
+    path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Interfaces
+  syntax:
+    content: EventCallback<R_BeforeOpenLookupEventArgs> R_Before_Open_Lookup { get; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs}
+    content.vb: ReadOnly Property R_Before_Open_Lookup As EventCallback(Of R_BeforeOpenLookupEventArgs)
+  overload: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup*
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup
+  commentId: P:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup
+  id: R_After_Open_Lookup
+  parent: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+  langs:
+  - csharp
+  - vb
+  name: R_After_Open_Lookup
+  nameWithType: R_ILookup.R_After_Open_Lookup
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_After_Open_Lookup
+    path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Interfaces
+  syntax:
+    content: EventCallback<R_AfterOpenLookupEventArgs> R_After_Open_Lookup { get; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs}
+    content.vb: ReadOnly Property R_After_Open_Lookup As EventCallback(Of R_AfterOpenLookupEventArgs)
+  overload: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup*
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService
+  commentId: P:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService
+  id: PopupService
+  parent: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+  langs:
+  - csharp
+  - vb
+  name: PopupService
+  nameWithType: R_ILookup.PopupService
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: PopupService
+    path: Library/R_BlazorFrontEnd.Controls/Interfaces/R_ILookup.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Interfaces
+  syntax:
+    content: R_PopupService PopupService { get; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.Popup.R_PopupService
+    content.vb: ReadOnly Property PopupService As R_PopupService
+  overload: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService*
+references:
+- uid: R_BlazorFrontEnd.Controls.Interfaces
+  commentId: N:R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Interfaces
+  nameWithType: R_BlazorFrontEnd.Controls.Interfaces
+  fullName: R_BlazorFrontEnd.Controls.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.html#R_BlazorFrontEnd_Controls_Interfaces_R_ILookup_Id
+  name: Id
+  nameWithType: R_ILookup.Id
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.html#R_BlazorFrontEnd_Controls_Interfaces_R_ILookup_R_Before_Open_Lookup
+  name: R_Before_Open_Lookup
+  nameWithType: R_ILookup.R_Before_Open_Lookup
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_Before_Open_Lookup
+- uid: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs}
+  commentId: T:Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.EventCallback`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  name: EventCallback<R_BeforeOpenLookupEventArgs>
+  nameWithType: EventCallback<R_BeforeOpenLookupEventArgs>
+  fullName: Microsoft.AspNetCore.Components.EventCallback<R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs>
+  nameWithType.vb: EventCallback(Of R_BeforeOpenLookupEventArgs)
+  fullName.vb: Microsoft.AspNetCore.Components.EventCallback(Of R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs)
+  name.vb: EventCallback(Of R_BeforeOpenLookupEventArgs)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: <
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs
+    name: R_BeforeOpenLookupEventArgs
+    href: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs
+    name: R_BeforeOpenLookupEventArgs
+    href: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs.html
+  - name: )
+- uid: Microsoft.AspNetCore.Components.EventCallback`1
+  commentId: T:Microsoft.AspNetCore.Components.EventCallback`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  name: EventCallback<TValue>
+  nameWithType: EventCallback<TValue>
+  fullName: Microsoft.AspNetCore.Components.EventCallback<TValue>
+  nameWithType.vb: EventCallback(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Components.EventCallback(Of TValue)
+  name.vb: EventCallback(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.html#R_BlazorFrontEnd_Controls_Interfaces_R_ILookup_R_After_Open_Lookup
+  name: R_After_Open_Lookup
+  nameWithType: R_ILookup.R_After_Open_Lookup
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.R_After_Open_Lookup
+- uid: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs}
+  commentId: T:Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.EventCallback`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  name: EventCallback<R_AfterOpenLookupEventArgs>
+  nameWithType: EventCallback<R_AfterOpenLookupEventArgs>
+  fullName: Microsoft.AspNetCore.Components.EventCallback<R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs>
+  nameWithType.vb: EventCallback(Of R_AfterOpenLookupEventArgs)
+  fullName.vb: Microsoft.AspNetCore.Components.EventCallback(Of R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs)
+  name.vb: EventCallback(Of R_AfterOpenLookupEventArgs)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: <
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs
+    name: R_AfterOpenLookupEventArgs
+    href: R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
+    name: EventCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs
+    name: R_AfterOpenLookupEventArgs
+    href: R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs.html
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.html#R_BlazorFrontEnd_Controls_Interfaces_R_ILookup_PopupService
+  name: PopupService
+  nameWithType: R_ILookup.PopupService
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup.PopupService
+- uid: R_BlazorFrontEnd.Controls.Popup.R_PopupService
+  commentId: T:R_BlazorFrontEnd.Controls.Popup.R_PopupService
+  parent: R_BlazorFrontEnd.Controls.Popup
+  href: R_BlazorFrontEnd.Controls.Popup.R_PopupService.html
+  name: R_PopupService
+  nameWithType: R_PopupService
+  fullName: R_BlazorFrontEnd.Controls.Popup.R_PopupService
+- uid: R_BlazorFrontEnd.Controls.Popup
+  commentId: N:R_BlazorFrontEnd.Controls.Popup
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Popup
+  nameWithType: R_BlazorFrontEnd.Controls.Popup
+  fullName: R_BlazorFrontEnd.Controls.Popup
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Popup
+    name: Popup
+    href: R_BlazorFrontEnd.Controls.Popup.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Popup
+    name: Popup
+    href: R_BlazorFrontEnd.Controls.Popup.html

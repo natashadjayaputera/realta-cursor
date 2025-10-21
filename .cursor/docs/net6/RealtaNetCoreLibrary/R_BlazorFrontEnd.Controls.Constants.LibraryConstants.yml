@@ -1,0 +1,569 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  commentId: T:R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  id: LibraryConstants
+  parent: R_BlazorFrontEnd.Controls.Constants
+  children:
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPathParameter_FileName
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_CheckAssembly
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAllAsset
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAsset
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadFile
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Config_ApiVersion
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.IconFilePath
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.RequestHeader_VersionId
+  - R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Resource_TelerikBlazorResource
+  langs:
+  - csharp
+  - vb
+  name: LibraryConstants
+  nameWithType: LibraryConstants
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: LibraryConstants
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static class LibraryConstants
+    content.vb: Public Module LibraryConstants
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.RequestHeader_VersionId
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.RequestHeader_VersionId
+  id: RequestHeader_VersionId
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: RequestHeader_VersionId
+  nameWithType: LibraryConstants.RequestHeader_VersionId
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.RequestHeader_VersionId
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: RequestHeader_VersionId
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string RequestHeader_VersionId
+    return:
+      type: System.String
+    content.vb: Public Shared RequestHeader_VersionId As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Config_ApiVersion
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Config_ApiVersion
+  id: Config_ApiVersion
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: Config_ApiVersion
+  nameWithType: LibraryConstants.Config_ApiVersion
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Config_ApiVersion
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Config_ApiVersion
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string Config_ApiVersion
+    return:
+      type: System.String
+    content.vb: Public Shared Config_ApiVersion As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Resource_TelerikBlazorResource
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Resource_TelerikBlazorResource
+  id: Resource_TelerikBlazorResource
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: Resource_TelerikBlazorResource
+  nameWithType: LibraryConstants.Resource_TelerikBlazorResource
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.Resource_TelerikBlazorResource
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Resource_TelerikBlazorResource
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string Resource_TelerikBlazorResource
+    return:
+      type: System.String
+    content.vb: Public Shared Resource_TelerikBlazorResource As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.IconFilePath
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.IconFilePath
+  id: IconFilePath
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: IconFilePath
+  nameWithType: LibraryConstants.IconFilePath
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.IconFilePath
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IconFilePath
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string IconFilePath
+    return:
+      type: System.String
+    content.vb: Public Shared IconFilePath As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAsset
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAsset
+  id: ApiPath_DownloadAsset
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: ApiPath_DownloadAsset
+  nameWithType: LibraryConstants.ApiPath_DownloadAsset
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAsset
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ApiPath_DownloadAsset
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 18
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string ApiPath_DownloadAsset
+    return:
+      type: System.String
+    content.vb: Public Shared ApiPath_DownloadAsset As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAllAsset
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAllAsset
+  id: ApiPath_DownloadAllAsset
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: ApiPath_DownloadAllAsset
+  nameWithType: LibraryConstants.ApiPath_DownloadAllAsset
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadAllAsset
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ApiPath_DownloadAllAsset
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 19
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string ApiPath_DownloadAllAsset
+    return:
+      type: System.String
+    content.vb: Public Shared ApiPath_DownloadAllAsset As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadFile
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadFile
+  id: ApiPath_DownloadFile
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: ApiPath_DownloadFile
+  nameWithType: LibraryConstants.ApiPath_DownloadFile
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_DownloadFile
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ApiPath_DownloadFile
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 20
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string ApiPath_DownloadFile
+    return:
+      type: System.String
+    content.vb: Public Shared ApiPath_DownloadFile As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_CheckAssembly
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_CheckAssembly
+  id: ApiPath_CheckAssembly
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: ApiPath_CheckAssembly
+  nameWithType: LibraryConstants.ApiPath_CheckAssembly
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPath_CheckAssembly
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ApiPath_CheckAssembly
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 21
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string ApiPath_CheckAssembly
+    return:
+      type: System.String
+    content.vb: Public Shared ApiPath_CheckAssembly As String
+- uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPathParameter_FileName
+  commentId: F:R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPathParameter_FileName
+  id: ApiPathParameter_FileName
+  parent: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+  langs:
+  - csharp
+  - vb
+  name: ApiPathParameter_FileName
+  nameWithType: LibraryConstants.ApiPathParameter_FileName
+  fullName: R_BlazorFrontEnd.Controls.Constants.LibraryConstants.ApiPathParameter_FileName
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ApiPathParameter_FileName
+    path: Library/R_BlazorFrontEnd.Controls/Constants/LibraryConstants.cs
+    startLine: 22
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Constants
+  syntax:
+    content: public static string ApiPathParameter_FileName
+    return:
+      type: System.String
+    content.vb: Public Shared ApiPathParameter_FileName As String
+references:
+- uid: R_BlazorFrontEnd.Controls.Constants
+  commentId: N:R_BlazorFrontEnd.Controls.Constants
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Constants
+  nameWithType: R_BlazorFrontEnd.Controls.Constants
+  fullName: R_BlazorFrontEnd.Controls.Constants
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Constants
+    name: Constants
+    href: R_BlazorFrontEnd.Controls.Constants.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Constants
+    name: Constants
+    href: R_BlazorFrontEnd.Controls.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

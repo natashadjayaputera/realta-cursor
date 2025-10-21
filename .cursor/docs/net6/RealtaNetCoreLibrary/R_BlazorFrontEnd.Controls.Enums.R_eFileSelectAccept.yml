@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  id: R_eFileSelectAccept
+  parent: R_BlazorFrontEnd.Controls.Enums
+  children:
+  - R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Csv
+  - R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Doc
+  - R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Excel
+  - R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Image
+  - R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Pdf
+  - R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Rtf
+  langs:
+  - csharp
+  - vb
+  name: R_eFileSelectAccept
+  nameWithType: R_eFileSelectAccept
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eFileSelectAccept
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: public enum R_eFileSelectAccept
+    content.vb: Public Enum R_eFileSelectAccept
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Pdf
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Pdf
+  id: Pdf
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  langs:
+  - csharp
+  - vb
+  name: Pdf
+  nameWithType: R_eFileSelectAccept.Pdf
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Pdf
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Pdf
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Pdf = 0
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Image
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Image
+  id: Image
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: R_eFileSelectAccept.Image
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Image
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Image
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Image = 1
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Doc
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Doc
+  id: Doc
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  langs:
+  - csharp
+  - vb
+  name: Doc
+  nameWithType: R_eFileSelectAccept.Doc
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Doc
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Doc
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Doc = 2
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Excel
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Excel
+  id: Excel
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  langs:
+  - csharp
+  - vb
+  name: Excel
+  nameWithType: R_eFileSelectAccept.Excel
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Excel
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Excel
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Excel = 3
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Csv
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Csv
+  id: Csv
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  langs:
+  - csharp
+  - vb
+  name: Csv
+  nameWithType: R_eFileSelectAccept.Csv
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Csv
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Csv
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Csv = 4
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Rtf
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Rtf
+  id: Rtf
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  langs:
+  - csharp
+  - vb
+  name: Rtf
+  nameWithType: R_eFileSelectAccept.Rtf
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.Rtf
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Rtf
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eFileSelectAccept.cs
+    startLine: 16
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Rtf = 5
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+references:
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept.html
+  name: R_eFileSelectAccept
+  nameWithType: R_eFileSelectAccept
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept

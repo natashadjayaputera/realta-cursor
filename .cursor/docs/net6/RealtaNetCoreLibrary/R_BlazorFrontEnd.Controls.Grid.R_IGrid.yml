@@ -1,0 +1,571 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  id: R_IGrid
+  parent: R_BlazorFrontEnd.Controls.Grid
+  children:
+  - R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow
+  - R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow
+  - R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow
+  - R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock
+  - R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData
+  - R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType
+  langs:
+  - csharp
+  - vb
+  name: R_IGrid
+  nameWithType: R_IGrid
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IGrid
+    path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid
+  syntax:
+    content: public interface R_IGrid
+    content.vb: Public Interface R_IGrid
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock
+  id: GetLock
+  parent: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  langs:
+  - csharp
+  - vb
+  name: GetLock()
+  nameWithType: R_IGrid.GetLock()
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: GetLock
+    path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid
+  syntax:
+    content: SemaphoreSlim GetLock()
+    return:
+      type: System.Threading.SemaphoreSlim
+    content.vb: Function GetLock() As SemaphoreSlim
+  overload: R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock*
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow
+  id: AllowAddNewRow
+  parent: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  langs:
+  - csharp
+  - vb
+  name: AllowAddNewRow
+  nameWithType: R_IGrid.AllowAddNewRow
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AllowAddNewRow
+    path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid
+  syntax:
+    content: bool AllowAddNewRow { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AllowAddNewRow As Boolean
+  overload: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow*
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow
+  id: AllowEditRow
+  parent: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  langs:
+  - csharp
+  - vb
+  name: AllowEditRow
+  nameWithType: R_IGrid.AllowEditRow
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AllowEditRow
+    path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid
+  syntax:
+    content: bool AllowEditRow { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AllowEditRow As Boolean
+  overload: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow*
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow
+  id: AllowDeleteRow
+  parent: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  langs:
+  - csharp
+  - vb
+  name: AllowDeleteRow
+  nameWithType: R_IGrid.AllowDeleteRow
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AllowDeleteRow
+    path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid
+  syntax:
+    content: bool AllowDeleteRow { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AllowDeleteRow As Boolean
+  overload: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow*
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType
+  id: R_GridType
+  parent: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  langs:
+  - csharp
+  - vb
+  name: R_GridType
+  nameWithType: R_IGrid.R_GridType
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GridType
+    path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid
+  syntax:
+    content: R_eGridType R_GridType { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eGridType
+    content.vb: Property R_GridType As R_eGridType
+  overload: R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType*
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData
+  id: HasData
+  parent: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  langs:
+  - csharp
+  - vb
+  name: HasData
+  nameWithType: R_IGrid.HasData
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HasData
+    path: Library/R_BlazorFrontEnd.Controls/Grid/R_IGrid.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid
+  syntax:
+    content: bool HasData { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasData As Boolean
+  overload: R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData*
+references:
+- uid: R_BlazorFrontEnd.Controls.Grid
+  commentId: N:R_BlazorFrontEnd.Controls.Grid
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Grid
+  nameWithType: R_BlazorFrontEnd.Controls.Grid
+  fullName: R_BlazorFrontEnd.Controls.Grid
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock
+  href: R_BlazorFrontEnd.Controls.Grid.R_IGrid.html#R_BlazorFrontEnd_Controls_Grid_R_IGrid_GetLock
+  name: GetLock
+  nameWithType: R_IGrid.GetLock
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.GetLock
+- uid: System.Threading.SemaphoreSlim
+  commentId: T:System.Threading.SemaphoreSlim
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.semaphoreslim
+  name: SemaphoreSlim
+  nameWithType: SemaphoreSlim
+  fullName: System.Threading.SemaphoreSlim
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow
+  href: R_BlazorFrontEnd.Controls.Grid.R_IGrid.html#R_BlazorFrontEnd_Controls_Grid_R_IGrid_AllowAddNewRow
+  name: AllowAddNewRow
+  nameWithType: R_IGrid.AllowAddNewRow
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowAddNewRow
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow
+  href: R_BlazorFrontEnd.Controls.Grid.R_IGrid.html#R_BlazorFrontEnd_Controls_Grid_R_IGrid_AllowEditRow
+  name: AllowEditRow
+  nameWithType: R_IGrid.AllowEditRow
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowEditRow
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow
+  href: R_BlazorFrontEnd.Controls.Grid.R_IGrid.html#R_BlazorFrontEnd_Controls_Grid_R_IGrid_AllowDeleteRow
+  name: AllowDeleteRow
+  nameWithType: R_IGrid.AllowDeleteRow
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.AllowDeleteRow
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType
+  href: R_BlazorFrontEnd.Controls.Grid.R_IGrid.html#R_BlazorFrontEnd_Controls_Grid_R_IGrid_R_GridType
+  name: R_GridType
+  nameWithType: R_IGrid.R_GridType
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.R_GridType
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eGridType
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eGridType
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eGridType.html
+  name: R_eGridType
+  nameWithType: R_eGridType
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eGridType
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData
+  href: R_BlazorFrontEnd.Controls.Grid.R_IGrid.html#R_BlazorFrontEnd_Controls_Grid_R_IGrid_HasData
+  name: HasData
+  nameWithType: R_IGrid.HasData
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid.HasData

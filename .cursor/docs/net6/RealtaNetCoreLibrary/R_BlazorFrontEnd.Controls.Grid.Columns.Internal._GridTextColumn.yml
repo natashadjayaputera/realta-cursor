@@ -1,0 +1,2127 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  id: _GridTextColumn
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  children:
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync
+  langs:
+  - csharp
+  - vb
+  name: _GridTextColumn
+  nameWithType: _GridTextColumn
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  type: Class
+  source:
+    id: _GridTextColumn
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Grid_Columns_Internal__GridTextColumn_razor.g.cs
+    startLine: 172
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  syntax:
+    content: 'public class _GridTextColumn : _GridPrefixSuffixBase<string>, IComponent, IHandleEvent, IHandleAfterRender'
+    content.vb: Public Class _GridTextColumn Inherits _GridPrefixSuffixBase(Of String) Implements IComponent, IHandleEvent, IHandleAfterRender
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Components.ComponentBase
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent
+  - Microsoft.AspNetCore.Components.IHandleEvent
+  - Microsoft.AspNetCore.Components.IHandleAfterRender
+  inheritedMembers:
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.PrefixText
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.SuffixText
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreatePrefixTemplate
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreateSuffixTemplate
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChanged
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Value
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Context
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.FieldName
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Name
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.R_CellValueChanged
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.R_CellLostFocused
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.TextAlignment
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Grid
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._blurHandler
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._prevValue
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ClassName
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._pendingOnBlur
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnInitialized
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnParametersSetAsync
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnBlurHandler
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChangedHandler(System.String)
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ForceRenderAsync
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ShouldRender
+  - R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.SetShouldRender(System.Boolean)
+  - Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+  - Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  - Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+  - Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  - Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  id: BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  langs:
+  - csharp
+  - vb
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: _GridTextColumn.BuildRenderTree(RenderTreeBuilder)
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  type: Method
+  source:
+    id: BuildRenderTree
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Grid_Columns_Internal__GridTextColumn_razor.g.cs
+    startLine: 175
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  summary: Renders the component to the supplied <xref href="Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override void BuildRenderTree(RenderTreeBuilder __builder)
+    parameters:
+    - id: __builder
+      type: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    content.vb: Protected Overrides Sub BuildRenderTree(__builder As RenderTreeBuilder)
+  overridden: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  overload: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree*
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id
+  id: Id
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: _GridTextColumn.Id
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id
+  type: Property
+  source:
+    id: Id
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Grid_Columns_Internal__GridTextColumn_razor.g.cs
+    startLine: 274
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  syntax:
+    content: >-
+      [Parameter]
+
+      public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Property Id As String
+  overload: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength
+  id: MaxLength
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  langs:
+  - csharp
+  - vb
+  name: MaxLength
+  nameWithType: _GridTextColumn.MaxLength
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength
+  type: Property
+  source:
+    id: MaxLength
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Grid_Columns_Internal__GridTextColumn_razor.g.cs
+    startLine: 275
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  syntax:
+    content: >-
+      [Parameter]
+
+      public int? MaxLength { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <Parameter>
+
+      Public Property MaxLength As Integer?
+  overload: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing
+  id: CharacterCasing
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  langs:
+  - csharp
+  - vb
+  name: CharacterCasing
+  nameWithType: _GridTextColumn.CharacterCasing
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing
+  type: Property
+  source:
+    id: CharacterCasing
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Grid_Columns_Internal__GridTextColumn_razor.g.cs
+    startLine: 276
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  syntax:
+    content: >-
+      [Parameter]
+
+      public R_eCharacterCasing CharacterCasing { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+    content.vb: >-
+      <Parameter>
+
+      Public Property CharacterCasing As R_eCharacterCasing
+  overload: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync
+  id: OnInitializedAsync
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+  langs:
+  - csharp
+  - vb
+  name: OnInitializedAsync()
+  nameWithType: _GridTextColumn.OnInitializedAsync()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync()
+  type: Method
+  source:
+    id: OnInitializedAsync
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Grid_Columns_Internal__GridTextColumn_razor.g.cs
+    startLine: 280
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  summary: >-
+    Method invoked when the component is ready to start, having received its
+
+    initial parameters from its parent in the render tree.
+
+
+    Override this method if you will perform an asynchronous operation and
+
+    want the component to refresh when that operation is completed.
+  example: []
+  syntax:
+    content: protected override Task OnInitializedAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing any asynchronous operation.
+    content.vb: Protected Overrides Function OnInitializedAsync() As Task
+  overridden: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+  overload: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync*
+references:
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  commentId: N:R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  nameWithType: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns
+    name: Columns
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+    name: Internal
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns
+    name: Columns
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+    name: Internal
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Components.ComponentBase
+  commentId: T:Microsoft.AspNetCore.Components.ComponentBase
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase
+  name: ComponentBase
+  nameWithType: ComponentBase
+  fullName: Microsoft.AspNetCore.Components.ComponentBase
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html
+  name: _GridColumnBase<string>
+  nameWithType: _GridColumnBase<string>
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>
+  nameWithType.vb: _GridColumnBase(Of String)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String)
+  name.vb: _GridColumnBase(Of String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+    name: _GridColumnBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+    name: _GridColumnBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html
+  name: _GridPrefixSuffixBase<string>
+  nameWithType: _GridPrefixSuffixBase<string>
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<string>
+  nameWithType.vb: _GridPrefixSuffixBase(Of String)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of String)
+  name.vb: _GridPrefixSuffixBase(Of String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+    name: _GridPrefixSuffixBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+    name: _GridPrefixSuffixBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Components.IComponent
+  commentId: T:Microsoft.AspNetCore.Components.IComponent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Microsoft.AspNetCore.Components.IComponent
+- uid: Microsoft.AspNetCore.Components.IHandleEvent
+  commentId: T:Microsoft.AspNetCore.Components.IHandleEvent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent
+  name: IHandleEvent
+  nameWithType: IHandleEvent
+  fullName: Microsoft.AspNetCore.Components.IHandleEvent
+- uid: Microsoft.AspNetCore.Components.IHandleAfterRender
+  commentId: T:Microsoft.AspNetCore.Components.IHandleAfterRender
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender
+  name: IHandleAfterRender
+  nameWithType: IHandleAfterRender
+  fullName: Microsoft.AspNetCore.Components.IHandleAfterRender
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.PrefixText
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.PrefixText
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.PrefixText
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_PrefixText
+  name: PrefixText
+  nameWithType: _GridPrefixSuffixBase<string>.PrefixText
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<string>.PrefixText
+  nameWithType.vb: _GridPrefixSuffixBase(Of String).PrefixText
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of String).PrefixText
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.SuffixText
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.SuffixText
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.SuffixText
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_SuffixText
+  name: SuffixText
+  nameWithType: _GridPrefixSuffixBase<string>.SuffixText
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<string>.SuffixText
+  nameWithType.vb: _GridPrefixSuffixBase(Of String).SuffixText
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of String).SuffixText
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreatePrefixTemplate
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreatePrefixTemplate
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreatePrefixTemplate
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreatePrefixTemplate
+  name: CreatePrefixTemplate()
+  nameWithType: _GridPrefixSuffixBase<string>.CreatePrefixTemplate()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<string>.CreatePrefixTemplate()
+  nameWithType.vb: _GridPrefixSuffixBase(Of String).CreatePrefixTemplate()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of String).CreatePrefixTemplate()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreatePrefixTemplate
+    name: CreatePrefixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreatePrefixTemplate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreatePrefixTemplate
+    name: CreatePrefixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreatePrefixTemplate
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreateSuffixTemplate
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreateSuffixTemplate
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreateSuffixTemplate
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreateSuffixTemplate
+  name: CreateSuffixTemplate()
+  nameWithType: _GridPrefixSuffixBase<string>.CreateSuffixTemplate()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<string>.CreateSuffixTemplate()
+  nameWithType.vb: _GridPrefixSuffixBase(Of String).CreateSuffixTemplate()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of String).CreateSuffixTemplate()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreateSuffixTemplate
+    name: CreateSuffixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreateSuffixTemplate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.CreateSuffixTemplate
+    name: CreateSuffixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreateSuffixTemplate
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChanged
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChanged
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChanged
+  name: ValueChanged
+  nameWithType: _GridColumnBase<string>.ValueChanged
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.ValueChanged
+  nameWithType.vb: _GridColumnBase(Of String).ValueChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).ValueChanged
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Value
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Value
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Value
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Value
+  name: Value
+  nameWithType: _GridColumnBase<string>.Value
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.Value
+  nameWithType.vb: _GridColumnBase(Of String).Value
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).Value
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Context
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Context
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Context
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Context
+  name: Context
+  nameWithType: _GridColumnBase<string>.Context
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.Context
+  nameWithType.vb: _GridColumnBase(Of String).Context
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).Context
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.FieldName
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.FieldName
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.FieldName
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_FieldName
+  name: FieldName
+  nameWithType: _GridColumnBase<string>.FieldName
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.FieldName
+  nameWithType.vb: _GridColumnBase(Of String).FieldName
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).FieldName
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Name
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Name
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Name
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Name
+  name: Name
+  nameWithType: _GridColumnBase<string>.Name
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.Name
+  nameWithType.vb: _GridColumnBase(Of String).Name
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).Name
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.R_CellValueChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.R_CellValueChanged
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.R_CellValueChanged
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_R_CellValueChanged
+  name: R_CellValueChanged
+  nameWithType: _GridColumnBase<string>.R_CellValueChanged
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.R_CellValueChanged
+  nameWithType.vb: _GridColumnBase(Of String).R_CellValueChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).R_CellValueChanged
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.R_CellLostFocused
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.R_CellLostFocused
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.R_CellLostFocused
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_R_CellLostFocused
+  name: R_CellLostFocused
+  nameWithType: _GridColumnBase<string>.R_CellLostFocused
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.R_CellLostFocused
+  nameWithType.vb: _GridColumnBase(Of String).R_CellLostFocused
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).R_CellLostFocused
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.TextAlignment
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.TextAlignment
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.TextAlignment
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_TextAlignment
+  name: TextAlignment
+  nameWithType: _GridColumnBase<string>.TextAlignment
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.TextAlignment
+  nameWithType.vb: _GridColumnBase(Of String).TextAlignment
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).TextAlignment
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Grid
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.Grid
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Grid
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Grid
+  name: Grid
+  nameWithType: _GridColumnBase<string>.Grid
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.Grid
+  nameWithType.vb: _GridColumnBase(Of String).Grid
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).Grid
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._blurHandler
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._blurHandler
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._blurHandler
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1__blurHandler
+  name: _blurHandler
+  nameWithType: _GridColumnBase<string>._blurHandler
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>._blurHandler
+  nameWithType.vb: _GridColumnBase(Of String)._blurHandler
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String)._blurHandler
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._prevValue
+  commentId: F:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._prevValue
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._prevValue
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1__prevValue
+  name: _prevValue
+  nameWithType: _GridColumnBase<string>._prevValue
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>._prevValue
+  nameWithType.vb: _GridColumnBase(Of String)._prevValue
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String)._prevValue
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ClassName
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ClassName
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ClassName
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ClassName
+  name: ClassName
+  nameWithType: _GridColumnBase<string>.ClassName
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.ClassName
+  nameWithType.vb: _GridColumnBase(Of String).ClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).ClassName
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._pendingOnBlur
+  commentId: F:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}._pendingOnBlur
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._pendingOnBlur
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1__pendingOnBlur
+  name: _pendingOnBlur
+  nameWithType: _GridColumnBase<string>._pendingOnBlur
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>._pendingOnBlur
+  nameWithType.vb: _GridColumnBase(Of String)._pendingOnBlur
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String)._pendingOnBlur
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnInitialized
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnInitialized
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnInitialized
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnInitialized
+  name: OnInitialized()
+  nameWithType: _GridColumnBase<string>.OnInitialized()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.OnInitialized()
+  nameWithType.vb: _GridColumnBase(Of String).OnInitialized()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).OnInitialized()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnInitialized
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnInitialized
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnParametersSetAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnParametersSetAsync
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnParametersSetAsync
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnParametersSetAsync
+  name: OnParametersSetAsync()
+  nameWithType: _GridColumnBase<string>.OnParametersSetAsync()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.OnParametersSetAsync()
+  nameWithType.vb: _GridColumnBase(Of String).OnParametersSetAsync()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).OnParametersSetAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnParametersSetAsync
+    name: OnParametersSetAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnParametersSetAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnParametersSetAsync
+    name: OnParametersSetAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnParametersSetAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnBlurHandler
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnBlurHandler
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnBlurHandler
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnBlurHandler
+  name: OnBlurHandler()
+  nameWithType: _GridColumnBase<string>.OnBlurHandler()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.OnBlurHandler()
+  nameWithType.vb: _GridColumnBase(Of String).OnBlurHandler()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).OnBlurHandler()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnBlurHandler
+    name: OnBlurHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnBlurHandler
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.OnBlurHandler
+    name: OnBlurHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnBlurHandler
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChangedHandler(System.String)
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChangedHandler(System.String)
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChangedHandler(`0)
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChangedHandler__0_
+  name: ValueChangedHandler(string)
+  nameWithType: _GridColumnBase<string>.ValueChangedHandler(string)
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.ValueChangedHandler(string)
+  nameWithType.vb: _GridColumnBase(Of String).ValueChangedHandler(String)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).ValueChangedHandler(String)
+  name.vb: ValueChangedHandler(String)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChangedHandler(System.String)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChangedHandler__0_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ValueChangedHandler(System.String)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChangedHandler__0_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ForceRenderAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ForceRenderAsync
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ForceRenderAsync
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ForceRenderAsync
+  name: ForceRenderAsync()
+  nameWithType: _GridColumnBase<string>.ForceRenderAsync()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.ForceRenderAsync()
+  nameWithType.vb: _GridColumnBase(Of String).ForceRenderAsync()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).ForceRenderAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ForceRenderAsync
+    name: ForceRenderAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ForceRenderAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ForceRenderAsync
+    name: ForceRenderAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ForceRenderAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ShouldRender
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ShouldRender
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ShouldRender
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ShouldRender
+  name: ShouldRender()
+  nameWithType: _GridColumnBase<string>.ShouldRender()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.ShouldRender()
+  nameWithType.vb: _GridColumnBase(Of String).ShouldRender()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).ShouldRender()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ShouldRender
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ShouldRender
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.SetShouldRender(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.SetShouldRender(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.SetShouldRender(System.Boolean)
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_SetShouldRender_System_Boolean_
+  name: SetShouldRender(bool)
+  nameWithType: _GridColumnBase<string>.SetShouldRender(bool)
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<string>.SetShouldRender(bool)
+  nameWithType.vb: _GridColumnBase(Of String).SetShouldRender(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of String).SetShouldRender(Boolean)
+  name.vb: SetShouldRender(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase{System.String}.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset
+  name: OnParametersSet()
+  nameWithType: ComponentBase.OnParametersSet()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+    name: OnParametersSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+    name: OnParametersSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  name: StateHasChanged()
+  nameWithType: ComponentBase.StateHasChanged()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender
+  name: OnAfterRender(bool)
+  nameWithType: ComponentBase.OnAfterRender(bool)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(bool)
+  nameWithType.vb: ComponentBase.OnAfterRender(Boolean)
+  fullName.vb: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(Boolean)
+  name.vb: OnAfterRender(Boolean)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrenderasync
+  name: OnAfterRenderAsync(bool)
+  nameWithType: ComponentBase.OnAfterRenderAsync(bool)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(bool)
+  nameWithType.vb: ComponentBase.OnAfterRenderAsync(Boolean)
+  fullName.vb: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(Boolean)
+  name.vb: OnAfterRenderAsync(Boolean)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrenderasync
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrenderasync
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  name: InvokeAsync(Action)
+  nameWithType: ComponentBase.InvokeAsync(Action)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  name: InvokeAsync(Func<Task>)
+  nameWithType: ComponentBase.InvokeAsync(Func<Task>)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func<System.Threading.Tasks.Task>)
+  nameWithType.vb: ComponentBase.InvokeAsync(Func(Of Task))
+  fullName.vb: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func(Of System.Threading.Tasks.Task))
+  name.vb: InvokeAsync(Func(Of Task))
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync
+  name: SetParametersAsync(ParameterView)
+  nameWithType: ComponentBase.SetParametersAsync(ParameterView)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html
+  name: _GridColumnBase<TValue>
+  nameWithType: _GridColumnBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>
+  nameWithType.vb: _GridColumnBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue)
+  name.vb: _GridColumnBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+    name: _GridColumnBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+    name: _GridColumnBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html
+  name: _GridPrefixSuffixBase<TValue>
+  nameWithType: _GridPrefixSuffixBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<TValue>
+  nameWithType.vb: _GridPrefixSuffixBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of TValue)
+  name.vb: _GridPrefixSuffixBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+    name: _GridPrefixSuffixBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+    name: _GridPrefixSuffixBase
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.PrefixText
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.PrefixText
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_PrefixText
+  name: PrefixText
+  nameWithType: _GridPrefixSuffixBase<TValue>.PrefixText
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<TValue>.PrefixText
+  nameWithType.vb: _GridPrefixSuffixBase(Of TValue).PrefixText
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of TValue).PrefixText
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.SuffixText
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.SuffixText
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_SuffixText
+  name: SuffixText
+  nameWithType: _GridPrefixSuffixBase<TValue>.SuffixText
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<TValue>.SuffixText
+  nameWithType.vb: _GridPrefixSuffixBase(Of TValue).SuffixText
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of TValue).SuffixText
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreatePrefixTemplate
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreatePrefixTemplate
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreatePrefixTemplate
+  name: CreatePrefixTemplate()
+  nameWithType: _GridPrefixSuffixBase<TValue>.CreatePrefixTemplate()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<TValue>.CreatePrefixTemplate()
+  nameWithType.vb: _GridPrefixSuffixBase(Of TValue).CreatePrefixTemplate()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of TValue).CreatePrefixTemplate()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreatePrefixTemplate
+    name: CreatePrefixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreatePrefixTemplate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreatePrefixTemplate
+    name: CreatePrefixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreatePrefixTemplate
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreateSuffixTemplate
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreateSuffixTemplate
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreateSuffixTemplate
+  name: CreateSuffixTemplate()
+  nameWithType: _GridPrefixSuffixBase<TValue>.CreateSuffixTemplate()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<TValue>.CreateSuffixTemplate()
+  nameWithType.vb: _GridPrefixSuffixBase(Of TValue).CreateSuffixTemplate()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of TValue).CreateSuffixTemplate()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreateSuffixTemplate
+    name: CreateSuffixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreateSuffixTemplate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.CreateSuffixTemplate
+    name: CreateSuffixTemplate
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_CreateSuffixTemplate
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChanged
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChanged
+  name: ValueChanged
+  nameWithType: _GridColumnBase<TValue>.ValueChanged
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.ValueChanged
+  nameWithType.vb: _GridColumnBase(Of TValue).ValueChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).ValueChanged
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Value
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Value
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Value
+  name: Value
+  nameWithType: _GridColumnBase<TValue>.Value
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.Value
+  nameWithType.vb: _GridColumnBase(Of TValue).Value
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).Value
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Context
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Context
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Context
+  name: Context
+  nameWithType: _GridColumnBase<TValue>.Context
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.Context
+  nameWithType.vb: _GridColumnBase(Of TValue).Context
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).Context
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.FieldName
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.FieldName
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_FieldName
+  name: FieldName
+  nameWithType: _GridColumnBase<TValue>.FieldName
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.FieldName
+  nameWithType.vb: _GridColumnBase(Of TValue).FieldName
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).FieldName
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Name
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Name
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Name
+  name: Name
+  nameWithType: _GridColumnBase<TValue>.Name
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.Name
+  nameWithType.vb: _GridColumnBase(Of TValue).Name
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).Name
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.R_CellValueChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.R_CellValueChanged
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_R_CellValueChanged
+  name: R_CellValueChanged
+  nameWithType: _GridColumnBase<TValue>.R_CellValueChanged
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.R_CellValueChanged
+  nameWithType.vb: _GridColumnBase(Of TValue).R_CellValueChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).R_CellValueChanged
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.R_CellLostFocused
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.R_CellLostFocused
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_R_CellLostFocused
+  name: R_CellLostFocused
+  nameWithType: _GridColumnBase<TValue>.R_CellLostFocused
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.R_CellLostFocused
+  nameWithType.vb: _GridColumnBase(Of TValue).R_CellLostFocused
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).R_CellLostFocused
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.TextAlignment
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.TextAlignment
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_TextAlignment
+  name: TextAlignment
+  nameWithType: _GridColumnBase<TValue>.TextAlignment
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.TextAlignment
+  nameWithType.vb: _GridColumnBase(Of TValue).TextAlignment
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).TextAlignment
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Grid
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.Grid
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_Grid
+  name: Grid
+  nameWithType: _GridColumnBase<TValue>.Grid
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.Grid
+  nameWithType.vb: _GridColumnBase(Of TValue).Grid
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).Grid
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._blurHandler
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._blurHandler
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1__blurHandler
+  name: _blurHandler
+  nameWithType: _GridColumnBase<TValue>._blurHandler
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>._blurHandler
+  nameWithType.vb: _GridColumnBase(Of TValue)._blurHandler
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue)._blurHandler
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._prevValue
+  commentId: F:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._prevValue
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1__prevValue
+  name: _prevValue
+  nameWithType: _GridColumnBase<TValue>._prevValue
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>._prevValue
+  nameWithType.vb: _GridColumnBase(Of TValue)._prevValue
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue)._prevValue
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ClassName
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ClassName
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ClassName
+  name: ClassName
+  nameWithType: _GridColumnBase<TValue>.ClassName
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.ClassName
+  nameWithType.vb: _GridColumnBase(Of TValue).ClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).ClassName
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._pendingOnBlur
+  commentId: F:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1._pendingOnBlur
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1__pendingOnBlur
+  name: _pendingOnBlur
+  nameWithType: _GridColumnBase<TValue>._pendingOnBlur
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>._pendingOnBlur
+  nameWithType.vb: _GridColumnBase(Of TValue)._pendingOnBlur
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue)._pendingOnBlur
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnInitialized
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnInitialized
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnInitialized
+  name: OnInitialized()
+  nameWithType: _GridColumnBase<TValue>.OnInitialized()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.OnInitialized()
+  nameWithType.vb: _GridColumnBase(Of TValue).OnInitialized()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).OnInitialized()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnInitialized
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnInitialized
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnParametersSetAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnParametersSetAsync
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnParametersSetAsync
+  name: OnParametersSetAsync()
+  nameWithType: _GridColumnBase<TValue>.OnParametersSetAsync()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.OnParametersSetAsync()
+  nameWithType.vb: _GridColumnBase(Of TValue).OnParametersSetAsync()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).OnParametersSetAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnParametersSetAsync
+    name: OnParametersSetAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnParametersSetAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnParametersSetAsync
+    name: OnParametersSetAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnParametersSetAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnBlurHandler
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnBlurHandler
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnBlurHandler
+  name: OnBlurHandler()
+  nameWithType: _GridColumnBase<TValue>.OnBlurHandler()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.OnBlurHandler()
+  nameWithType.vb: _GridColumnBase(Of TValue).OnBlurHandler()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).OnBlurHandler()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnBlurHandler
+    name: OnBlurHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnBlurHandler
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.OnBlurHandler
+    name: OnBlurHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_OnBlurHandler
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChangedHandler(`0)
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChangedHandler(`0)
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChangedHandler__0_
+  name: ValueChangedHandler(TValue)
+  nameWithType: _GridColumnBase<TValue>.ValueChangedHandler(TValue)
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.ValueChangedHandler(TValue)
+  nameWithType.vb: _GridColumnBase(Of TValue).ValueChangedHandler(TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).ValueChangedHandler(TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChangedHandler(`0)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChangedHandler__0_
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ValueChangedHandler(`0)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ValueChangedHandler__0_
+  - name: (
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ForceRenderAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ForceRenderAsync
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ForceRenderAsync
+  name: ForceRenderAsync()
+  nameWithType: _GridColumnBase<TValue>.ForceRenderAsync()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.ForceRenderAsync()
+  nameWithType.vb: _GridColumnBase(Of TValue).ForceRenderAsync()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).ForceRenderAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ForceRenderAsync
+    name: ForceRenderAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ForceRenderAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ForceRenderAsync
+    name: ForceRenderAsync
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ForceRenderAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ShouldRender
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ShouldRender
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ShouldRender
+  name: ShouldRender()
+  nameWithType: _GridColumnBase<TValue>.ShouldRender()
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.ShouldRender()
+  nameWithType.vb: _GridColumnBase(Of TValue).ShouldRender()
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).ShouldRender()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ShouldRender
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_ShouldRender
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.SetShouldRender(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.SetShouldRender(System.Boolean)
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_SetShouldRender_System_Boolean_
+  name: SetShouldRender(bool)
+  nameWithType: _GridColumnBase<TValue>.SetShouldRender(bool)
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase<TValue>.SetShouldRender(bool)
+  nameWithType.vb: _GridColumnBase(Of TValue).SetShouldRender(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase(Of TValue).SetShouldRender(Boolean)
+  name.vb: SetShouldRender(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridColumnBase_1_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  commentId: T:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  parent: Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  name: RenderTreeBuilder
+  nameWithType: RenderTreeBuilder
+  fullName: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}
+  definition: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: _GridPrefixSuffixBase<string>.BuildRenderTree(RenderTreeBuilder)
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<string>.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType.vb: _GridPrefixSuffixBase(Of String).BuildRenderTree(RenderTreeBuilder)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of String).BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase{System.String}.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridTextColumn_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  name: BuildRenderTree
+  nameWithType: _GridTextColumn.BuildRenderTree
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.BuildRenderTree
+- uid: Microsoft.AspNetCore.Components.Rendering
+  commentId: N:Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components.Rendering
+  nameWithType: Microsoft.AspNetCore.Components.Rendering
+  fullName: Microsoft.AspNetCore.Components.Rendering
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: _GridPrefixSuffixBase<TValue>.BuildRenderTree(RenderTreeBuilder)
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase<TValue>.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  nameWithType.vb: _GridPrefixSuffixBase(Of TValue).BuildRenderTree(RenderTreeBuilder)
+  fullName.vb: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase(Of TValue).BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase-1.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridPrefixSuffixBase_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridTextColumn_Id
+  name: Id
+  nameWithType: _GridTextColumn.Id
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridTextColumn_MaxLength
+  name: MaxLength
+  nameWithType: _GridTextColumn.MaxLength
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.MaxLength
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridTextColumn_CharacterCasing
+  name: CharacterCasing
+  nameWithType: _GridTextColumn.CharacterCasing
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.CharacterCasing
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.html
+  name: R_eCharacterCasing
+  nameWithType: R_eCharacterCasing
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync
+  name: OnInitializedAsync()
+  nameWithType: ComponentBase.OnInitializedAsync()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+    name: OnInitializedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+    name: OnInitializedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.html#R_BlazorFrontEnd_Controls_Grid_Columns_Internal__GridTextColumn_OnInitializedAsync
+  name: OnInitializedAsync
+  nameWithType: _GridTextColumn.OnInitializedAsync
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn.OnInitializedAsync
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

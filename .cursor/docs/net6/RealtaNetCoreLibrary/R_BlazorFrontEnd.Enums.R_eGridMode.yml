@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Enums.R_eGridMode
+  commentId: T:R_BlazorFrontEnd.Enums.R_eGridMode
+  id: R_eGridMode
+  parent: R_BlazorFrontEnd.Enums
+  children:
+  - R_BlazorFrontEnd.Enums.R_eGridMode.Add
+  - R_BlazorFrontEnd.Enums.R_eGridMode.Edit
+  - R_BlazorFrontEnd.Enums.R_eGridMode.Normal
+  langs:
+  - csharp
+  - vb
+  name: R_eGridMode
+  nameWithType: R_eGridMode
+  fullName: R_BlazorFrontEnd.Enums.R_eGridMode
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eGridMode
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: public enum R_eGridMode
+    content.vb: Public Enum R_eGridMode
+- uid: R_BlazorFrontEnd.Enums.R_eGridMode.Normal
+  commentId: F:R_BlazorFrontEnd.Enums.R_eGridMode.Normal
+  id: Normal
+  parent: R_BlazorFrontEnd.Enums.R_eGridMode
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: R_eGridMode.Normal
+  fullName: R_BlazorFrontEnd.Enums.R_eGridMode.Normal
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Normal
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Normal = 0
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eGridMode
+- uid: R_BlazorFrontEnd.Enums.R_eGridMode.Add
+  commentId: F:R_BlazorFrontEnd.Enums.R_eGridMode.Add
+  id: Add
+  parent: R_BlazorFrontEnd.Enums.R_eGridMode
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: R_eGridMode.Add
+  fullName: R_BlazorFrontEnd.Enums.R_eGridMode.Add
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Add
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Add = 1
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eGridMode
+- uid: R_BlazorFrontEnd.Enums.R_eGridMode.Edit
+  commentId: F:R_BlazorFrontEnd.Enums.R_eGridMode.Edit
+  id: Edit
+  parent: R_BlazorFrontEnd.Enums.R_eGridMode
+  langs:
+  - csharp
+  - vb
+  name: Edit
+  nameWithType: R_eGridMode.Edit
+  fullName: R_BlazorFrontEnd.Enums.R_eGridMode.Edit
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Edit
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eGridMode.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Enums
+  syntax:
+    content: Edit = 2
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eGridMode
+references:
+- uid: R_BlazorFrontEnd.Enums
+  commentId: N:R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Enums
+  nameWithType: R_BlazorFrontEnd.Enums
+  fullName: R_BlazorFrontEnd.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html
+- uid: R_BlazorFrontEnd.Enums.R_eGridMode
+  commentId: T:R_BlazorFrontEnd.Enums.R_eGridMode
+  parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eGridMode.html
+  name: R_eGridMode
+  nameWithType: R_eGridMode
+  fullName: R_BlazorFrontEnd.Enums.R_eGridMode

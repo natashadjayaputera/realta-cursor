@@ -114,7 +114,7 @@ Status: [ ] ✓ VERIFIED
 ### BackResources Project .csproj
 ```xml
 <PropertyGroup>
-  <TargetFramework>net6.0</TargetFramework>
+  <TargetFramework>netstandard2.1</TargetFramework>
   <LangVersion>10.0</LangVersion>
   <Nullable>enable</Nullable>
   <ImplicitUsings>disable</ImplicitUsings>
@@ -151,7 +151,7 @@ Status: [ ] ✓ VERIFIED
 ### FrontResources Project .csproj
 ```xml
 <PropertyGroup>
-  <TargetFramework>net6.0</TargetFramework>
+  <TargetFramework>netstandard2.1</TargetFramework>
   <LangVersion>10.0</LangVersion>
   <Nullable>enable</Nullable>
   <ImplicitUsings>disable</ImplicitUsings>
@@ -171,6 +171,157 @@ Status: [ ] ✓ VERIFIED
 Status: [ ] ✓ VERIFIED
 
 **ALL .csproj files must be verified BEFORE attempting build.**
+
+## DLL REFERENCE VALIDATION (Rule #23 - CRITICAL)
+
+**All R_* library references MUST use HintPath file references, NOT PackageReference:**
+
+### ✅ CORRECT - HintPath Reference Pattern
+```xml
+<ItemGroup>
+  <Reference Include="R_APIBackEnd">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
+  </Reference>
+  <Reference Include="R_CommonFrontBackAPI">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+### ❌ WRONG - PackageReference Pattern
+```xml
+<ItemGroup>
+  <PackageReference Include="R_APIBackEnd" Version="1.0.0" />
+  <PackageReference Include="R_CommonFrontBackAPI" Version="1.0.0" />
+</ItemGroup>
+```
+
+**Validation Checklist:**
+- [ ] All R_* libraries use `<Reference Include="LibraryName">` with `<HintPath>`
+- [ ] NO PackageReference entries for R_* libraries
+- [ ] HintPath points to correct SYSTEM\SOURCE\LIBRARY directory
+- [ ] Back libraries point to `LIBRARY\Back\` folder
+- [ ] Front libraries point to `LIBRARY\Front\` folder
+- [ ] Menu libraries point to `LIBRARY\Menu\` folder
+- [ ] Relative path depth matches project location (../../../../..)
+
+**MINIMAL DLL References by Project Type:**
+
+### Common Project (netstandard2.1)
+```xml
+<ItemGroup>
+  <Reference Include="R_APICommonDTO">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommonDTO.dll</HintPath>
+  </Reference>
+  <Reference Include="R_CommonFrontBackAPI">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+### BackResources Project (netstandard2.1)
+```xml
+<!-- NO DLL references needed - resources only -->
+```
+
+### Back Project (net6.0)
+```xml
+<ItemGroup>
+  <Reference Include="R_APIBackEnd">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
+  </Reference>
+  <Reference Include="R_APICommon">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommon.dll</HintPath>
+  </Reference>
+  <Reference Include="R_APICommonDTO">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommonDTO.dll</HintPath>
+  </Reference>
+  <Reference Include="R_CommonFrontBackAPI">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
+  </Reference>
+  <Reference Include="R_OpenTelemetry">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_OpenTelemetry.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+### Service Project (net6.0)
+```xml
+<ItemGroup>
+  <Reference Include="R_APIBackEnd">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
+  </Reference>
+  <Reference Include="R_APICommon">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommon.dll</HintPath>
+  </Reference>
+  <Reference Include="R_APIStartUp">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIStartUp.dll</HintPath>
+  </Reference>
+  <Reference Include="R_CommonFrontBackAPI">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
+  </Reference>
+  <Reference Include="R_OpenTelemetry">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_OpenTelemetry.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+### FrontResources Project (netstandard2.1)
+```xml
+<!-- NO DLL references needed - resources only -->
+```
+
+### Model Project (netstandard2.1)
+```xml
+<ItemGroup>
+  <Reference Include="R_APIClient">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_APIClient.dll</HintPath>
+  </Reference>
+  <Reference Include="R_APICommonDTO">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_APICommonDTO.dll</HintPath>
+  </Reference>
+  <Reference Include="R_BusinessObjectFront">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BusinessObjectFront.dll</HintPath>
+  </Reference>
+  <Reference Include="R_CommonFrontBackAPI">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_CommonFrontBackAPI.dll</HintPath>
+  </Reference>
+  <Reference Include="R_BlazorFrontEnd">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.dll</HintPath>
+  </Reference>
+  <Reference Include="R_ContextFrontEnd">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_ContextFrontEnd.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+### Front Project (net6.0 Blazor)
+```xml
+<ItemGroup>
+  <Reference Include="R_APICommonDTO">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_APICommonDTO.dll</HintPath>
+  </Reference>
+  <Reference Include="R_CommonFrontBackAPI">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_CommonFrontBackAPI.dll</HintPath>
+  </Reference>
+  <Reference Include="R_BlazorFrontEnd">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.dll</HintPath>
+  </Reference>
+  <Reference Include="R_BlazorFrontEnd.Controls">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.Controls.dll</HintPath>
+  </Reference>
+  <Reference Include="BlazorClientHelper">
+    <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Menu\BlazorClientHelper.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+**Optional DLLs (add only if needed):**
+- **Back**: BackExtension (for menu integration)
+- **Model**: R_BlazorFrontEnd.Excel, R_ProcessAndUploadFront (for Excel/upload features)
+- **Front**: Additional R_BlazorFrontEnd.* libraries (for specific UI components)
+
+**ALL DLL references must be verified BEFORE attempting build.**
 
 ## UI/Data Binding Patterns (Critical - October 2025)
 
@@ -199,6 +350,60 @@ Status: [ ] ✓ VERIFIED
 - [ ] Numeric grid columns use explicit TValue (e.g., `TValue="decimal"`)
 - [ ] Correct component namespaces imported (R_BlazorFrontEnd.Controls)
 - [ ] Editor component types match column data types
+
+## Component Parameter Validation (Rule #24 - CRITICAL)
+
+### R_ComboBox Parameters
+- [ ] Uses `Data` (NOT `DataSource`)
+- [ ] Uses `@bind-Value` by default
+- [ ] Uses `Value` and `ValueChanged` event handler, if need extra logic on value changed
+- [ ] NO explicit `TItem`/`TValue` unless absolutely required
+- [ ] Check working examples before guessing parameters
+
+### R_Grid Parameters
+- [ ] Inquiry programs: `R_GridType="@R_eGridType.Original"` (NO conductor)
+- [ ] CRUD in Form programs: `R_GridType="@R_eGridType.Navigator"` `R_ConductorSource=@_conductorRef` (WITH conductor)
+- [ ] CRUD in Grid programs: `R_GridType="@R_eGridType.Original"` `R_ConductorGridSource=@_conductorGridRef` (WITH conductor)
+- [ ] Correct `R_ServiceGetListRecord` method signature
+- [ ] NO explicit `TModel`
+
+### R_Conductor Usage
+- [ ] ONLY used for CRUD operations in form (Add/Edit/Delete)
+- [ ] NOT used for inquiry-only programs
+
+## Exception Handling Validation (Rule #25 - MANDATORY)
+
+### Standard Pattern
+- [ ] Uses `var loEx = new R_Exception();`
+- [ ] Try/catch with `loEx.Add(ex);`
+- [ ] Ends with `loEx.ThrowExceptionIfErrors();`
+- [ ] NO custom exception handling patterns
+
+### Null Safety
+- [ ] Nullable reference types properly handled (`R_Grid? _gridRef`)
+- [ ] Null checks before method calls (`if (_gridRef != null)`)
+- [ ] No unnecessary casting or type conversions
+
+## Warning Handling Validation (Rule #26 - MANDATORY)
+
+### Warning Classification
+- [ ] All warnings identified and classified by type
+- [ ] Code warnings (CS####) fixed immediately
+- [ ] External warnings (NU####, MSB####) documented with explanation
+- [ ] Infrastructure warnings marked as acceptable with reason
+
+### Build Report Requirements
+- [ ] Warning count reported for each project
+- [ ] Warning types categorized (Code/External/Infrastructure)
+- [ ] External warnings explained why they cannot be fixed
+- [ ] NO claims of "warnings are fine" without analysis
+
+### Warning Response Protocol
+- [ ] First: Identify warning type and source
+- [ ] Code Warnings: Fix immediately - no exceptions
+- [ ] External Warnings: Document in build report with explanation
+- [ ] Never: Claim "warnings are acceptable" without classification
+- [ ] Always: Report warning count and types in build summary
 
 ## Final Checks
 - [ ] All projects reference correct DLLs from `.cursor/docs/net6/`

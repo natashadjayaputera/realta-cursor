@@ -14,15 +14,17 @@ items:
   fullName: Serilog
   type: Namespace
   assemblies:
-  - Serilog.AspNetCore.Ingestion
+  - Serilog.Sinks.BrowserHttp
 references:
-- uid: Serilog.ApplicationBuilderSerilogClientExtensions
-  commentId: T:Serilog.ApplicationBuilderSerilogClientExtensions
-  name: ApplicationBuilderSerilogClientExtensions
-  nameWithType: ApplicationBuilderSerilogClientExtensions
-  fullName: Serilog.ApplicationBuilderSerilogClientExtensions
 - uid: Serilog.LoggerConfigurationBrowserHttpExtensions
   commentId: T:Serilog.LoggerConfigurationBrowserHttpExtensions
+  href: Serilog.LoggerConfigurationBrowserHttpExtensions.html
   name: LoggerConfigurationBrowserHttpExtensions
   nameWithType: LoggerConfigurationBrowserHttpExtensions
   fullName: Serilog.LoggerConfigurationBrowserHttpExtensions
+- uid: Serilog.ApplicationBuilderSerilogClientExtensions
+  commentId: T:Serilog.ApplicationBuilderSerilogClientExtensions
+  href: Serilog.ApplicationBuilderSerilogClientExtensions.html
+  name: ApplicationBuilderSerilogClientExtensions
+  nameWithType: ApplicationBuilderSerilogClientExtensions
+  fullName: Serilog.ApplicationBuilderSerilogClientExtensions

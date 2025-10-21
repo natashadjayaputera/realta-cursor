@@ -1,0 +1,899 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  commentId: T:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  id: R_CellLostFocusedEventArgs
+  parent: R_BlazorFrontEnd.Controls.Events
+  children:
+  - R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.#ctor(System.Object,System.String,R_BlazorFrontEnd.Enums.R_eConductorMode,System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo},System.Object)
+  - R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName
+  - R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns
+  - R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode
+  - R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow
+  - R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value
+  langs:
+  - csharp
+  - vb
+  name: R_CellLostFocusedEventArgs
+  nameWithType: R_CellLostFocusedEventArgs
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_CellLostFocusedEventArgs
+    path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+    startLine: 109
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Events
+  syntax:
+    content: 'public class R_CellLostFocusedEventArgs : EventArgs'
+    content.vb: Public Class R_CellLostFocusedEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value
+  commentId: P:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value
+  id: Value
+  parent: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: R_CellLostFocusedEventArgs.Value
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Value
+    path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+    startLine: 111
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Events
+  syntax:
+    content: public object? Value { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property Value As Object
+  overload: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value*
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName
+  commentId: P:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName
+  id: ColumnName
+  parent: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ColumnName
+  nameWithType: R_CellLostFocusedEventArgs.ColumnName
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ColumnName
+    path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+    startLine: 112
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Events
+  syntax:
+    content: public string ColumnName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ColumnName As String
+  overload: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName*
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode
+  commentId: P:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode
+  id: ConductorMode
+  parent: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ConductorMode
+  nameWithType: R_CellLostFocusedEventArgs.ConductorMode
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ConductorMode
+    path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+    startLine: 113
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Events
+  syntax:
+    content: public R_eConductorMode ConductorMode { get; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Enums.R_eConductorMode
+    content.vb: Public ReadOnly Property ConductorMode As R_eConductorMode
+  overload: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode*
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns
+  commentId: P:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns
+  id: Columns
+  parent: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Columns
+  nameWithType: R_CellLostFocusedEventArgs.Columns
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Columns
+    path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+    startLine: 114
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Events
+  syntax:
+    content: public List<R_GridColumnInfo> Columns { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo}
+    content.vb: Public ReadOnly Property Columns As List(Of R_GridColumnInfo)
+  overload: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns*
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow
+  commentId: P:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow
+  id: CurrentRow
+  parent: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: CurrentRow
+  nameWithType: R_CellLostFocusedEventArgs.CurrentRow
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CurrentRow
+    path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+    startLine: 115
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Events
+  syntax:
+    content: public object CurrentRow { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property CurrentRow As Object
+  overload: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow*
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.#ctor(System.Object,System.String,R_BlazorFrontEnd.Enums.R_eConductorMode,System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo},System.Object)
+  commentId: M:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.#ctor(System.Object,System.String,R_BlazorFrontEnd.Enums.R_eConductorMode,System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo},System.Object)
+  id: '#ctor(System.Object,System.String,R_BlazorFrontEnd.Enums.R_eConductorMode,System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo},System.Object)'
+  parent: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: R_CellLostFocusedEventArgs(object?, string, R_eConductorMode, List<R_GridColumnInfo>, object)
+  nameWithType: R_CellLostFocusedEventArgs.R_CellLostFocusedEventArgs(object?, string, R_eConductorMode, List<R_GridColumnInfo>, object)
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.R_CellLostFocusedEventArgs(object?, string, R_BlazorFrontEnd.Enums.R_eConductorMode, System.Collections.Generic.List<R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo>, object)
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd.Controls/Events/R_GridEventArgs.cs
+    startLine: 117
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Events
+  syntax:
+    content: public R_CellLostFocusedEventArgs(object? poValue, string pcColumnName, R_eConductorMode peConductorMode, List<R_GridColumnInfo> poColumns, object currentRow)
+    parameters:
+    - id: poValue
+      type: System.Object
+    - id: pcColumnName
+      type: System.String
+    - id: peConductorMode
+      type: R_BlazorFrontEnd.Enums.R_eConductorMode
+    - id: poColumns
+      type: System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo}
+    - id: currentRow
+      type: System.Object
+    content.vb: Public Sub New(poValue As Object, pcColumnName As String, peConductorMode As R_eConductorMode, poColumns As List(Of R_GridColumnInfo), currentRow As Object)
+  overload: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.#ctor*
+  nameWithType.vb: R_CellLostFocusedEventArgs.New(Object, String, R_eConductorMode, List(Of R_GridColumnInfo), Object)
+  fullName.vb: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.New(Object, String, R_BlazorFrontEnd.Enums.R_eConductorMode, System.Collections.Generic.List(Of R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo), Object)
+  name.vb: New(Object, String, R_eConductorMode, List(Of R_GridColumnInfo), Object)
+references:
+- uid: R_BlazorFrontEnd.Controls.Events
+  commentId: N:R_BlazorFrontEnd.Controls.Events
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Events
+  nameWithType: R_BlazorFrontEnd.Controls.Events
+  fullName: R_BlazorFrontEnd.Controls.Events
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Events
+    name: Events
+    href: R_BlazorFrontEnd.Controls.Events.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Events
+    name: Events
+    href: R_BlazorFrontEnd.Controls.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value
+  href: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.html#R_BlazorFrontEnd_Controls_Events_R_CellLostFocusedEventArgs_Value
+  name: Value
+  nameWithType: R_CellLostFocusedEventArgs.Value
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Value
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName
+  href: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.html#R_BlazorFrontEnd_Controls_Events_R_CellLostFocusedEventArgs_ColumnName
+  name: ColumnName
+  nameWithType: R_CellLostFocusedEventArgs.ColumnName
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ColumnName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode
+  href: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.html#R_BlazorFrontEnd_Controls_Events_R_CellLostFocusedEventArgs_ConductorMode
+  name: ConductorMode
+  nameWithType: R_CellLostFocusedEventArgs.ConductorMode
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.ConductorMode
+- uid: R_BlazorFrontEnd.Enums.R_eConductorMode
+  commentId: T:R_BlazorFrontEnd.Enums.R_eConductorMode
+  parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eConductorMode.html
+  name: R_eConductorMode
+  nameWithType: R_eConductorMode
+  fullName: R_BlazorFrontEnd.Enums.R_eConductorMode
+- uid: R_BlazorFrontEnd.Enums
+  commentId: N:R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Enums
+  nameWithType: R_BlazorFrontEnd.Enums
+  fullName: R_BlazorFrontEnd.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns
+  href: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.html#R_BlazorFrontEnd_Controls_Events_R_CellLostFocusedEventArgs_Columns
+  name: Columns
+  nameWithType: R_CellLostFocusedEventArgs.Columns
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.Columns
+- uid: System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo}
+  commentId: T:System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<R_GridColumnInfo>
+  nameWithType: List<R_GridColumnInfo>
+  fullName: System.Collections.Generic.List<R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo>
+  nameWithType.vb: List(Of R_GridColumnInfo)
+  fullName.vb: System.Collections.Generic.List(Of R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo)
+  name.vb: List(Of R_GridColumnInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+    name: R_GridColumnInfo
+    href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+    name: R_GridColumnInfo
+    href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow
+  href: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.html#R_BlazorFrontEnd_Controls_Events_R_CellLostFocusedEventArgs_CurrentRow
+  name: CurrentRow
+  nameWithType: R_CellLostFocusedEventArgs.CurrentRow
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.CurrentRow
+- uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.#ctor
+  href: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.html#R_BlazorFrontEnd_Controls_Events_R_CellLostFocusedEventArgs__ctor_System_Object_System_String_R_BlazorFrontEnd_Enums_R_eConductorMode_System_Collections_Generic_List_R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo__System_Object_
+  name: R_CellLostFocusedEventArgs
+  nameWithType: R_CellLostFocusedEventArgs.R_CellLostFocusedEventArgs
+  fullName: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.R_CellLostFocusedEventArgs
+  nameWithType.vb: R_CellLostFocusedEventArgs.New
+  fullName.vb: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs.New
+  name.vb: New

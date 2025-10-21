@@ -6,6 +6,7 @@ items:
   children:
   - R_BlazorFrontEnd.Enums.R_eConductorMode
   - R_BlazorFrontEnd.Enums.R_eDocumentType
+  - R_BlazorFrontEnd.Enums.R_eGridMode
   - R_BlazorFrontEnd.Enums.R_eReportFileOutputType
   - R_BlazorFrontEnd.Enums.R_eRoundingMethod
   langs:
@@ -21,29 +22,57 @@ references:
 - uid: R_BlazorFrontEnd.Enums.R_eConductorMode
   commentId: T:R_BlazorFrontEnd.Enums.R_eConductorMode
   parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eConductorMode.html
   name: R_eConductorMode
   nameWithType: R_eConductorMode
   fullName: R_BlazorFrontEnd.Enums.R_eConductorMode
 - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
   commentId: T:R_BlazorFrontEnd.Enums.R_eDocumentType
   parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eDocumentType.html
   name: R_eDocumentType
   nameWithType: R_eDocumentType
   fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
 - uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
   commentId: T:R_BlazorFrontEnd.Enums.R_eReportFileOutputType
   parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eReportFileOutputType.html
   name: R_eReportFileOutputType
   nameWithType: R_eReportFileOutputType
   fullName: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
 - uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod
   commentId: T:R_BlazorFrontEnd.Enums.R_eRoundingMethod
   parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eRoundingMethod.html
   name: R_eRoundingMethod
   nameWithType: R_eRoundingMethod
   fullName: R_BlazorFrontEnd.Enums.R_eRoundingMethod
+- uid: R_BlazorFrontEnd.Enums.R_eGridMode
+  commentId: T:R_BlazorFrontEnd.Enums.R_eGridMode
+  parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eGridMode.html
+  name: R_eGridMode
+  nameWithType: R_eGridMode
+  fullName: R_BlazorFrontEnd.Enums.R_eGridMode
 - uid: R_BlazorFrontEnd.Enums
   commentId: N:R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Enums
   nameWithType: R_BlazorFrontEnd.Enums
   fullName: R_BlazorFrontEnd.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html

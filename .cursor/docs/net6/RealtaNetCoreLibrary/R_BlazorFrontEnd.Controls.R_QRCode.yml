@@ -1,0 +1,1739 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.R_QRCode
+  commentId: T:R_BlazorFrontEnd.Controls.R_QRCode
+  id: R_QRCode
+  parent: R_BlazorFrontEnd.Controls
+  children:
+  - R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  - R_BlazorFrontEnd.Controls.R_QRCode.ClassName
+  - R_BlazorFrontEnd.Controls.R_QRCode.Color
+  - R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage
+  - R_BlazorFrontEnd.Controls.R_QRCode.Height
+  - R_BlazorFrontEnd.Controls.R_QRCode.Refresh
+  - R_BlazorFrontEnd.Controls.R_QRCode.Size
+  - R_BlazorFrontEnd.Controls.R_QRCode.Value
+  - R_BlazorFrontEnd.Controls.R_QRCode.Width
+  langs:
+  - csharp
+  - vb
+  name: R_QRCode
+  nameWithType: R_QRCode
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode
+  type: Class
+  source:
+    id: R_QRCode
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 179
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: 'public class R_QRCode : BaseComponent, IComponent, IHandleEvent, IHandleAfterRender, IDisposable, IAsyncDisposable'
+    content.vb: Public Class R_QRCode Inherits BaseComponent Implements IComponent, IHandleEvent, IHandleAfterRender, IDisposable, IAsyncDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Components.ComponentBase
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent
+  - Microsoft.AspNetCore.Components.IHandleEvent
+  - Microsoft.AspNetCore.Components.IHandleAfterRender
+  - System.IDisposable
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.Class
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.Style
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.Attributes
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.JS
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.Id
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.ElementRef
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.Dispose(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.DisposeAsync(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.BaseComponent.ShowError(R_BlazorFrontEnd.Exceptions.R_Exception)
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Disposed
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.AsyncDisposed
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Rendered
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.ExecuteAfterRender(System.Func{System.Threading.Tasks.Task})
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.OnAfterRenderAsync(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Dispose
+  - R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.DisposeAsync
+  - Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+  - Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+  - Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+  - Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  - Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  - Microsoft.AspNetCore.Components.ComponentBase.ShouldRender
+  - Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  - Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  id: BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: R_QRCode.BuildRenderTree(RenderTreeBuilder)
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  type: Method
+  source:
+    id: BuildRenderTree
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 182
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  summary: Renders the component to the supplied <xref href="Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override void BuildRenderTree(RenderTreeBuilder __builder)
+    parameters:
+    - id: __builder
+      type: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    content.vb: Protected Overrides Sub BuildRenderTree(__builder As RenderTreeBuilder)
+  overridden: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree*
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Size
+  commentId: P:R_BlazorFrontEnd.Controls.R_QRCode.Size
+  id: Size
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: R_QRCode.Size
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Size
+  type: Property
+  source:
+    id: Size
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 267
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public string Size { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Property Size As String
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.Size*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Value
+  commentId: P:R_BlazorFrontEnd.Controls.R_QRCode.Value
+  id: Value
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: R_QRCode.Value
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Value
+  type: Property
+  source:
+    id: Value
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 268
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property Value As String
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.Value*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Width
+  commentId: P:R_BlazorFrontEnd.Controls.R_QRCode.Width
+  id: Width
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: R_QRCode.Width
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Width
+  type: Property
+  source:
+    id: Width
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 269
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public string? Width { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Property Width As String
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.Width*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Height
+  commentId: P:R_BlazorFrontEnd.Controls.R_QRCode.Height
+  id: Height
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: R_QRCode.Height
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Height
+  type: Property
+  source:
+    id: Height
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 270
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public string? Height { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Property Height As String
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.Height*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Color
+  commentId: P:R_BlazorFrontEnd.Controls.R_QRCode.Color
+  id: Color
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: R_QRCode.Color
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Color
+  type: Property
+  source:
+    id: Color
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 271
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public string Color { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Property Color As String
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.Color*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.ClassName
+  commentId: P:R_BlazorFrontEnd.Controls.R_QRCode.ClassName
+  id: ClassName
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: ClassName
+  nameWithType: R_QRCode.ClassName
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.ClassName
+  type: Property
+  source:
+    id: ClassName
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 273
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: protected string ClassName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly Property ClassName As String
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.ClassName*
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage
+  commentId: M:R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage
+  id: GetUrlImage
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: GetUrlImage()
+  nameWithType: R_QRCode.GetUrlImage()
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage()
+  type: Method
+  source:
+    id: GetUrlImage
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 289
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public Task<string> GetUrlImage()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function GetUrlImage() As Task(Of String)
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage*
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Refresh
+  commentId: M:R_BlazorFrontEnd.Controls.R_QRCode.Refresh
+  id: Refresh
+  parent: R_BlazorFrontEnd.Controls.R_QRCode
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: R_QRCode.Refresh()
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Refresh()
+  type: Method
+  source:
+    id: Refresh
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_QRCode_razor.g.cs
+    startLine: 303
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: public void Refresh()
+    content.vb: Public Sub Refresh()
+  overload: R_BlazorFrontEnd.Controls.R_QRCode.Refresh*
+references:
+- uid: R_BlazorFrontEnd.Controls
+  commentId: N:R_BlazorFrontEnd.Controls
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls
+  nameWithType: R_BlazorFrontEnd.Controls
+  fullName: R_BlazorFrontEnd.Controls
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Components.ComponentBase
+  commentId: T:Microsoft.AspNetCore.Components.ComponentBase
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase
+  name: ComponentBase
+  nameWithType: ComponentBase
+  fullName: Microsoft.AspNetCore.Components.ComponentBase
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  commentId: T:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  parent: R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html
+  name: BaseAfterRenderComponent
+  nameWithType: BaseAfterRenderComponent
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  commentId: T:R_BlazorFrontEnd.Controls.Base.BaseComponent
+  parent: R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html
+  name: BaseComponent
+  nameWithType: BaseComponent
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent
+- uid: Microsoft.AspNetCore.Components.IComponent
+  commentId: T:Microsoft.AspNetCore.Components.IComponent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Microsoft.AspNetCore.Components.IComponent
+- uid: Microsoft.AspNetCore.Components.IHandleEvent
+  commentId: T:Microsoft.AspNetCore.Components.IHandleEvent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent
+  name: IHandleEvent
+  nameWithType: IHandleEvent
+  fullName: Microsoft.AspNetCore.Components.IHandleEvent
+- uid: Microsoft.AspNetCore.Components.IHandleAfterRender
+  commentId: T:Microsoft.AspNetCore.Components.IHandleAfterRender
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender
+  name: IHandleAfterRender
+  nameWithType: IHandleAfterRender
+  fullName: Microsoft.AspNetCore.Components.IHandleAfterRender
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.Class
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseComponent.Class
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_Class
+  name: Class
+  nameWithType: BaseComponent.Class
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.Class
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.Style
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseComponent.Style
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_Style
+  name: Style
+  nameWithType: BaseComponent.Style
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.Style
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.Attributes
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseComponent.Attributes
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_Attributes
+  name: Attributes
+  nameWithType: BaseComponent.Attributes
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.Attributes
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.JS
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseComponent.JS
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_JS
+  name: JS
+  nameWithType: BaseComponent.JS
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.JS
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseComponent.Id
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_Id
+  name: Id
+  nameWithType: BaseComponent.Id
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.Id
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.ElementRef
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseComponent.ElementRef
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_ElementRef
+  name: ElementRef
+  nameWithType: BaseComponent.ElementRef
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.ElementRef
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.Dispose(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.BaseComponent.Dispose(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: BaseComponent.Dispose(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.Dispose(bool)
+  nameWithType.vb: BaseComponent.Dispose(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.BaseComponent.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.Dispose(System.Boolean)
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.Dispose(System.Boolean)
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.DisposeAsync(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.BaseComponent.DisposeAsync(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_DisposeAsync_System_Boolean_
+  name: DisposeAsync(bool)
+  nameWithType: BaseComponent.DisposeAsync(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.DisposeAsync(bool)
+  nameWithType.vb: BaseComponent.DisposeAsync(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.BaseComponent.DisposeAsync(Boolean)
+  name.vb: DisposeAsync(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.DisposeAsync(System.Boolean)
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_DisposeAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.DisposeAsync(System.Boolean)
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_DisposeAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.ShowError(R_BlazorFrontEnd.Exceptions.R_Exception)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.BaseComponent.ShowError(R_BlazorFrontEnd.Exceptions.R_Exception)
+  parent: R_BlazorFrontEnd.Controls.Base.BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_ShowError_R_BlazorFrontEnd_Exceptions_R_Exception_
+  name: ShowError(R_Exception)
+  nameWithType: BaseComponent.ShowError(R_Exception)
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseComponent.ShowError(R_BlazorFrontEnd.Exceptions.R_Exception)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.ShowError(R_BlazorFrontEnd.Exceptions.R_Exception)
+    name: ShowError
+    href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_ShowError_R_BlazorFrontEnd_Exceptions_R_Exception_
+  - name: (
+  - uid: R_BlazorFrontEnd.Exceptions.R_Exception
+    name: R_Exception
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseComponent.ShowError(R_BlazorFrontEnd.Exceptions.R_Exception)
+    name: ShowError
+    href: R_BlazorFrontEnd.Controls.Base.BaseComponent.html#R_BlazorFrontEnd_Controls_Base_BaseComponent_ShowError_R_BlazorFrontEnd_Exceptions_R_Exception_
+  - name: (
+  - uid: R_BlazorFrontEnd.Exceptions.R_Exception
+    name: R_Exception
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Disposed
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Disposed
+  parent: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_Disposed
+  name: Disposed
+  nameWithType: BaseAfterRenderComponent.Disposed
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Disposed
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.AsyncDisposed
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.AsyncDisposed
+  parent: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_AsyncDisposed
+  name: AsyncDisposed
+  nameWithType: BaseAfterRenderComponent.AsyncDisposed
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.AsyncDisposed
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Rendered
+  commentId: P:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Rendered
+  parent: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_Rendered
+  name: Rendered
+  nameWithType: BaseAfterRenderComponent.Rendered
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Rendered
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.ExecuteAfterRender(System.Func{System.Threading.Tasks.Task})
+  commentId: M:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.ExecuteAfterRender(System.Func{System.Threading.Tasks.Task})
+  parent: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_ExecuteAfterRender_System_Func_System_Threading_Tasks_Task__
+  name: ExecuteAfterRender(Func<Task>)
+  nameWithType: BaseAfterRenderComponent.ExecuteAfterRender(Func<Task>)
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.ExecuteAfterRender(System.Func<System.Threading.Tasks.Task>)
+  nameWithType.vb: BaseAfterRenderComponent.ExecuteAfterRender(Func(Of Task))
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.ExecuteAfterRender(System.Func(Of System.Threading.Tasks.Task))
+  name.vb: ExecuteAfterRender(Func(Of Task))
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.ExecuteAfterRender(System.Func{System.Threading.Tasks.Task})
+    name: ExecuteAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_ExecuteAfterRender_System_Func_System_Threading_Tasks_Task__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.ExecuteAfterRender(System.Func{System.Threading.Tasks.Task})
+    name: ExecuteAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_ExecuteAfterRender_System_Func_System_Threading_Tasks_Task__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.OnAfterRenderAsync(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.OnAfterRenderAsync(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_OnAfterRenderAsync_System_Boolean_
+  name: OnAfterRenderAsync(bool)
+  nameWithType: BaseAfterRenderComponent.OnAfterRenderAsync(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.OnAfterRenderAsync(bool)
+  nameWithType.vb: BaseAfterRenderComponent.OnAfterRenderAsync(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.OnAfterRenderAsync(Boolean)
+  name.vb: OnAfterRenderAsync(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_OnAfterRenderAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_OnAfterRenderAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Dispose
+  commentId: M:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Dispose
+  parent: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_Dispose
+  name: Dispose()
+  nameWithType: BaseAfterRenderComponent.Dispose()
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Dispose()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Dispose
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.Dispose
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_Dispose
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.DisposeAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.DisposeAsync
+  parent: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+  href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: BaseAfterRenderComponent.DisposeAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.DisposeAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.DisposeAsync
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.DisposeAsync
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent.html#R_BlazorFrontEnd_Controls_Base_BaseAfterRenderComponent_DisposeAsync
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized
+  name: OnInitialized()
+  nameWithType: ComponentBase.OnInitialized()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+    name: OnInitialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+    name: OnInitialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync
+  name: OnInitializedAsync()
+  nameWithType: ComponentBase.OnInitializedAsync()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+    name: OnInitializedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+    name: OnInitializedAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset
+  name: OnParametersSet()
+  nameWithType: ComponentBase.OnParametersSet()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+    name: OnParametersSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+    name: OnParametersSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparametersset
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  name: OnParametersSetAsync()
+  nameWithType: ComponentBase.OnParametersSetAsync()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+    name: OnParametersSetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+    name: OnParametersSetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  name: StateHasChanged()
+  nameWithType: ComponentBase.StateHasChanged()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.ShouldRender
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.ShouldRender
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender
+  name: ShouldRender()
+  nameWithType: ComponentBase.ShouldRender()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.ShouldRender()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.ShouldRender
+    name: ShouldRender
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.ShouldRender
+    name: ShouldRender
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender
+  name: OnAfterRender(bool)
+  nameWithType: ComponentBase.OnAfterRender(bool)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(bool)
+  nameWithType.vb: ComponentBase.OnAfterRender(Boolean)
+  fullName.vb: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(Boolean)
+  name.vb: OnAfterRender(Boolean)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onafterrender
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  name: InvokeAsync(Action)
+  nameWithType: ComponentBase.InvokeAsync(Action)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  name: InvokeAsync(Func<Task>)
+  nameWithType: ComponentBase.InvokeAsync(Func<Task>)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func<System.Threading.Tasks.Task>)
+  nameWithType.vb: ComponentBase.InvokeAsync(Func(Of Task))
+  fullName.vb: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func(Of System.Threading.Tasks.Task))
+  name.vb: InvokeAsync(Func(Of Task))
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync
+  name: SetParametersAsync(ParameterView)
+  nameWithType: ComponentBase.SetParametersAsync(ParameterView)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+- uid: R_BlazorFrontEnd.Controls.Base
+  commentId: N:R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Base
+  nameWithType: R_BlazorFrontEnd.Controls.Base
+  fullName: R_BlazorFrontEnd.Controls.Base
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  commentId: T:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  parent: Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  name: RenderTreeBuilder
+  nameWithType: RenderTreeBuilder
+  fullName: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+- uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: ComponentBase.BuildRenderTree(RenderTreeBuilder)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  name: BuildRenderTree
+  nameWithType: R_QRCode.BuildRenderTree
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.BuildRenderTree
+- uid: Microsoft.AspNetCore.Components.Rendering
+  commentId: N:Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components.Rendering
+  nameWithType: Microsoft.AspNetCore.Components.Rendering
+  fullName: Microsoft.AspNetCore.Components.Rendering
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Size*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.Size
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_Size
+  name: Size
+  nameWithType: R_QRCode.Size
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Size
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Value*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.Value
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_Value
+  name: Value
+  nameWithType: R_QRCode.Value
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Value
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Width*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.Width
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_Width
+  name: Width
+  nameWithType: R_QRCode.Width
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Width
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Height*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.Height
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_Height
+  name: Height
+  nameWithType: R_QRCode.Height
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Height
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Color*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.Color
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_Color
+  name: Color
+  nameWithType: R_QRCode.Color
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Color
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.ClassName*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.ClassName
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_ClassName
+  name: ClassName
+  nameWithType: R_QRCode.ClassName
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.ClassName
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_GetUrlImage
+  name: GetUrlImage
+  nameWithType: R_QRCode.GetUrlImage
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.GetUrlImage
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: R_BlazorFrontEnd.Controls.R_QRCode.Refresh*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_QRCode.Refresh
+  href: R_BlazorFrontEnd.Controls.R_QRCode.html#R_BlazorFrontEnd_Controls_R_QRCode_Refresh
+  name: Refresh
+  nameWithType: R_QRCode.Refresh
+  fullName: R_BlazorFrontEnd.Controls.R_QRCode.Refresh

@@ -1,4 +1,5 @@
 ### YamlMime:TableOfContent
+items:
 - uid: BackExtension
   name: BackExtension
   items:
@@ -91,12 +92,10 @@
     name: R_IResult
   - uid: R_BlazorDeployment.R_IResult`1
     name: R_IResult<T>
-    name.vb: R_IResult(Of T)
   - uid: R_BlazorDeployment.R_Result
     name: R_Result
   - uid: R_BlazorDeployment.R_Result`1
     name: R_Result<T>
-    name.vb: R_Result(Of T)
 - uid: R_BlazorFrontEnd
   name: R_BlazorFrontEnd
   items:
@@ -108,11 +107,10 @@
     name: R_IFileConverter
   - uid: R_BlazorFrontEnd.R_IViewModel
     name: R_IViewModel
-  - uid: R_BlazorFrontEnd.R_ViewModel`1
-    name: R_ViewModel<TModel>
-    name.vb: R_ViewModel(Of TModel)
   - uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
     name: R_ViewModelDataHasChangedEventArgs
+  - uid: R_BlazorFrontEnd.R_ViewModel`1
+    name: R_ViewModel<TModel>
 - uid: R_BlazorFrontEnd.Authentication
   name: R_BlazorFrontEnd.Authentication
   items:
@@ -127,6 +125,692 @@
     name: R_FrontConfig
   - uid: R_BlazorFrontEnd.Configurations.R_ServiceUrlSection
     name: R_ServiceUrlSection
+- uid: R_BlazorFrontEnd.Controls
+  name: R_BlazorFrontEnd.Controls
+  items:
+  - uid: R_BlazorFrontEnd.Controls.R_AutoComplete`1
+    name: R_AutoComplete<TItem>
+  - uid: R_BlazorFrontEnd.Controls.R_Barcode
+    name: R_Barcode
+  - uid: R_BlazorFrontEnd.Controls.R_BatchEditGrid`1
+    name: R_BatchEditGrid<TModel>
+  - uid: R_BlazorFrontEnd.Controls.R_Button
+    name: R_Button
+  - uid: R_BlazorFrontEnd.Controls.R_CheckBox
+    name: R_CheckBox
+  - uid: R_BlazorFrontEnd.Controls.R_ColorPicker
+    name: R_ColorPicker
+  - uid: R_BlazorFrontEnd.Controls.R_ComboBoxMultiSelect`2
+    name: R_ComboBoxMultiSelect<TItem, TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_ComboBox`2
+    name: R_ComboBox<TItem, TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_DateInput`1
+    name: R_DateInput<TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_DatePicker`1
+    name: R_DatePicker<TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_DateTimePicker`1
+    name: R_DateTimePicker<TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_Detail
+    name: R_Detail
+  - uid: R_BlazorFrontEnd.Controls.R_DropDownList`2
+    name: R_DropDownList<TItem, TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_Dropzone
+    name: R_Dropzone
+  - uid: R_BlazorFrontEnd.Controls.R_Find
+    name: R_Find
+  - uid: R_BlazorFrontEnd.Controls.R_GridBase`1
+    name: R_GridBase<TModel>
+  - uid: R_BlazorFrontEnd.Controls.R_Grid`1
+    name: R_Grid<TModel>
+  - uid: R_BlazorFrontEnd.Controls.R_GroupBox
+    name: R_GroupBox
+  - uid: R_BlazorFrontEnd.Controls.R_ImageBox
+    name: R_ImageBox
+  - uid: R_BlazorFrontEnd.Controls.R_InputFile
+    name: R_InputFile
+  - uid: R_BlazorFrontEnd.Controls.R_JsInterop
+    name: R_JsInterop
+  - uid: R_BlazorFrontEnd.Controls.R_Label
+    name: R_Label
+  - uid: R_BlazorFrontEnd.Controls.R_ListBox`1
+    name: R_ListBox<TModel>
+  - uid: R_BlazorFrontEnd.Controls.R_Lookup
+    name: R_Lookup
+  - uid: R_BlazorFrontEnd.Controls.R_NumericTextBox`1
+    name: R_NumericTextBox<TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_OpenFileDialogButton
+    name: R_OpenFileDialogButton
+  - uid: R_BlazorFrontEnd.Controls.R_Page
+    name: R_Page
+  - uid: R_BlazorFrontEnd.Controls.R_Popup
+    name: R_Popup
+  - uid: R_BlazorFrontEnd.Controls.R_PredefinedDock
+    name: R_PredefinedDock
+  - uid: R_BlazorFrontEnd.Controls.R_Preload
+    name: R_Preload
+  - uid: R_BlazorFrontEnd.Controls.R_PreloadService
+    name: R_PreloadService
+  - uid: R_BlazorFrontEnd.Controls.R_ProgressBar
+    name: R_ProgressBar
+  - uid: R_BlazorFrontEnd.Controls.R_QRCode
+    name: R_QRCode
+  - uid: R_BlazorFrontEnd.Controls.R_RadioGroup`2
+    name: R_RadioGroup<TItem, TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_SimpleToast
+    name: R_SimpleToast
+  - uid: R_BlazorFrontEnd.Controls.R_SplitButton
+    name: R_SplitButton
+  - uid: R_BlazorFrontEnd.Controls.R_Step
+    name: R_Step
+  - uid: R_BlazorFrontEnd.Controls.R_Stepper
+    name: R_Stepper
+  - uid: R_BlazorFrontEnd.Controls.R_TabStrip
+    name: R_TabStrip
+  - uid: R_BlazorFrontEnd.Controls.R_TabStripTab
+    name: R_TabStripTab
+  - uid: R_BlazorFrontEnd.Controls.R_TextArea
+    name: R_TextArea
+  - uid: R_BlazorFrontEnd.Controls.R_TextBox
+    name: R_TextBox
+  - uid: R_BlazorFrontEnd.Controls.R_TextEditor
+    name: R_TextEditor
+  - uid: R_BlazorFrontEnd.Controls.R_TimePicker`1
+    name: R_TimePicker<TValue>
+  - uid: R_BlazorFrontEnd.Controls.R_Toast
+    name: R_Toast
+  - uid: R_BlazorFrontEnd.Controls.R_ToastService
+    name: R_ToastService
+  - uid: R_BlazorFrontEnd.Controls.R_Toasts
+    name: R_Toasts
+  - uid: R_BlazorFrontEnd.Controls.R_Tooltip
+    name: R_Tooltip
+  - uid: R_BlazorFrontEnd.Controls.R_TreeView`1
+    name: R_TreeView<TModel>
+  - uid: R_BlazorFrontEnd.Controls._Imports
+    name: _Imports
+  - uid: R_BlazorFrontEnd.Controls._Step
+    name: _Step
+  - uid: R_BlazorFrontEnd.Controls._StepContent
+    name: _StepContent
+  - uid: R_BlazorFrontEnd.Controls._StepHeader
+    name: _StepHeader
+- uid: R_BlazorFrontEnd.Controls.Actions
+  name: R_BlazorFrontEnd.Controls.Actions
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Actions.R_LookupAction
+    name: R_LookupAction
+- uid: R_BlazorFrontEnd.Controls.Attributes
+  name: R_BlazorFrontEnd.Controls.Attributes
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Attributes.R_PageAttribute
+    name: R_PageAttribute
+- uid: R_BlazorFrontEnd.Controls.Base
+  name: R_BlazorFrontEnd.Controls.Base
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseAfterRenderComponent
+    name: BaseAfterRenderComponent
+  - uid: R_BlazorFrontEnd.Controls.Base.BaseComponent
+    name: BaseComponent
+  - uid: R_BlazorFrontEnd.Controls.Base.ControlBase
+    name: ControlBase
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+    name: R_BaseComponent
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseLayoutComponent
+    name: R_BaseLayoutComponent
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ButtonBase
+    name: R_ButtonBase
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase
+    name: R_ButtonDataControlBase
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+    name: R_ControlBase
+  - uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+    name: R_DateInputComponentBase<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Base.R_IPageBase
+    name: R_IPageBase
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+    name: R_InputComponentBase<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+    name: R_InputWithValidationComponentBase<TValue>
+- uid: R_BlazorFrontEnd.Controls.Captcha
+  name: R_BlazorFrontEnd.Controls.Captcha
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Captcha.R_Captcha
+    name: R_Captcha
+  - uid: R_BlazorFrontEnd.Controls.Captcha.Tools
+    name: Tools
+  - uid: R_BlazorFrontEnd.Controls.Captcha._Imports
+    name: _Imports
+- uid: R_BlazorFrontEnd.Controls.Constants
+  name: R_BlazorFrontEnd.Controls.Constants
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Constants.JsConstants
+    name: JsConstants
+  - uid: R_BlazorFrontEnd.Controls.Constants.LibraryConstants
+    name: LibraryConstants
+- uid: R_BlazorFrontEnd.Controls.Controls
+  name: R_BlazorFrontEnd.Controls.Controls
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Controls.R_RTFViewer
+    name: R_RTFViewer
+- uid: R_BlazorFrontEnd.Controls.Controls.Tab
+  name: R_BlazorFrontEnd.Controls.Controls.Tab
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Controls.Tab._TabContent
+    name: _TabContent
+- uid: R_BlazorFrontEnd.Controls.DataControls
+  name: R_BlazorFrontEnd.Controls.DataControls
+  items:
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_AddButton
+    name: R_AddButton
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_CancelButton
+    name: R_CancelButton
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_Conductor
+    name: R_Conductor
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid
+    name: R_ConductorGrid
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_DeleteButton
+    name: R_DeleteButton
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_EditButton
+    name: R_EditButton
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_IConductor
+    name: R_IConductor
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+    name: R_IEnableConductorControl
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_PrintButton
+    name: R_PrintButton
+  - uid: R_BlazorFrontEnd.Controls.DataControls.R_SaveButton
+    name: R_SaveButton
+- uid: R_BlazorFrontEnd.Controls.Deployment
+  name: R_BlazorFrontEnd.Controls.Deployment
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyDataProvider
+    name: R_AssemblyDataProvider
+  - uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+    name: R_AssemblyLoadContext
+  - uid: R_BlazorFrontEnd.Controls.Deployment.R_DynamicAssetProviderService
+    name: R_DynamicAssetProviderService
+- uid: R_BlazorFrontEnd.Controls.Dialogs
+  name: R_BlazorFrontEnd.Controls.Dialogs
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Dialogs.R_ConfirmDialog
+    name: R_ConfirmDialog
+  - uid: R_BlazorFrontEnd.Controls.Dialogs.R_ModalDialog
+    name: R_ModalDialog
+- uid: R_BlazorFrontEnd.Controls.Enums
+  name: R_BlazorFrontEnd.Controls.Enums
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eAlignItems
+    name: R_eAlignItems
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eBackgroundColor
+    name: R_eBackgroundColor
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eButtonType
+    name: R_eButtonType
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eCardActionLayout
+    name: R_eCardActionLayout
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+    name: R_eCharacterCasing
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eColorFormat
+    name: R_eColorFormat
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eCommandAction
+    name: R_eCommandAction
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus
+    name: R_eConductorStatus
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eDateInputFormat
+    name: R_eDateInputFormat
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eDatePickerFormat
+    name: R_eDatePickerFormat
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eDateTimePickerFormat
+    name: R_eDateTimePickerFormat
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eDropzonePreviewPosition
+    name: R_eDropzonePreviewPosition
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eFileSelectAccept
+    name: R_eFileSelectAccept
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eFillMode
+    name: R_eFillMode
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eFindModel
+    name: R_eFindModel
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eFontColor
+    name: R_eFontColor
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eFontStyle
+    name: R_eFontStyle
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eFormAccess
+    name: R_eFormAccess
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eFormModel
+    name: R_eFormModel
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eGridColumnType
+    name: R_eGridColumnType
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eGridDropPosition
+    name: R_eGridDropPosition
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eGridFilterMode
+    name: R_eGridFilterMode
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eGridType
+    name: R_eGridType
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eImageBoxType
+    name: R_eImageBoxType
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eImageObjectFit
+    name: R_eImageObjectFit
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eJustify
+    name: R_eJustify
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eLockUnlock
+    name: R_eLockUnlock
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eNotificationType
+    name: R_eNotificationType
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_ePrintMode
+    name: R_ePrintMode
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eRadioGroupLabelPosition
+    name: R_eRadioGroupLabelPosition
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eRadioGroupLayout
+    name: R_eRadioGroupLayout
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eTextAlignment
+    name: R_eTextAlignment
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eTextEditorToolMode
+    name: R_eTextEditorToolMode
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eThemeConstant
+    name: R_eThemeConstant
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eTimePickerFormat
+    name: R_eTimePickerFormat
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eToastType
+    name: R_eToastType
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eToastsPlacement
+    name: R_eToastsPlacement
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewAfterAddBehaviour
+    name: R_eTreeviewAfterAddBehaviour
+  - uid: R_BlazorFrontEnd.Controls.Enums.R_eTreeviewFilterOperator
+    name: R_eTreeviewFilterOperator
+- uid: R_BlazorFrontEnd.Controls.Events
+  name: R_BlazorFrontEnd.Controls.Events
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterAddEventArgs
+    name: R_AfterAddEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenDetailEventArgs
+    name: R_AfterOpenDetailEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenFindEventArgs
+    name: R_AfterOpenFindEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenGridLookupColumnEventArgs
+    name: R_AfterOpenGridLookupColumnEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs
+    name: R_AfterOpenLookupEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenPopupEventArgs
+    name: R_AfterOpenPopupEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenPredefinedDockEventArgs
+    name: R_AfterOpenPredefinedDockEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterOpenTabPageEventArgs
+    name: R_AfterOpenTabPageEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterSaveBatchEventArgs
+    name: R_AfterSaveBatchEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_AfterSaveEventArgs
+    name: R_AfterSaveEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeAddEventArgs
+    name: R_BeforeAddEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeCancelEventArgs
+    name: R_BeforeCancelEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeDeleteEventArgs
+    name: R_BeforeDeleteEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeEditCellEventArgs
+    name: R_BeforeEditCellEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeEditEventArgs
+    name: R_BeforeEditEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenDetailEventArgs
+    name: R_BeforeOpenDetailEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenFindEventArgs
+    name: R_BeforeOpenFindEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenGridLookupColumnEventArgs
+    name: R_BeforeOpenGridLookupColumnEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs
+    name: R_BeforeOpenLookupEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenModalEventArgsBase
+    name: R_BeforeOpenModalEventArgsBase
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenPopupEventArgs
+    name: R_BeforeOpenPopupEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenStepPageEventArgs
+    name: R_BeforeOpenStepPageEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeOpenTabPageEventArgs
+    name: R_BeforeOpenTabPageEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BeforeSaveBatchEventArgs
+    name: R_BeforeSaveBatchEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_BulkDeleteEventArgs
+    name: R_BulkDeleteEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs
+    name: R_CellLostFocusedEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CellValueChangedEventArgs
+    name: R_CellValueChangedEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckAddEventArgs
+    name: R_CheckAddEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectRenderEventArgs
+    name: R_CheckBoxSelectRenderEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectValueChangedEventArgs
+    name: R_CheckBoxSelectValueChangedEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectValueChangingEventArgs
+    name: R_CheckBoxSelectValueChangingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckDeleteEventArgs
+    name: R_CheckDeleteEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckEditEventArgs
+    name: R_CheckEditEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckGridEventArgs
+    name: R_CheckGridEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CheckPrintEventArgs
+    name: R_CheckPrintEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ColorPickerCloseEventArgs
+    name: R_ColorPickerCloseEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ColorPickerOpenEventArgs
+    name: R_ColorPickerOpenEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_CommandEventArgs
+    name: R_CommandEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ConvertToGridEntityEventArgs
+    name: R_ConvertToGridEntityEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_DisplayEventArgs
+    name: R_DisplayEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_FindModelEventArgs
+    name: R_FindModelEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_GridCellRenderEventArgs
+    name: R_GridCellRenderEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_GridDragDropAfterDropEventArgs`1
+    name: R_GridDragDropAfterDropEventArgs<TModel>
+  - uid: R_BlazorFrontEnd.Controls.Events.R_GridDragDropBeforeDropEventArgs`1
+    name: R_GridDragDropBeforeDropEventArgs<TModel>
+  - uid: R_BlazorFrontEnd.Controls.Events.R_GridRowDroppedEventArgs
+    name: R_GridRowDroppedEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_GridRowDroppingEventArgs
+    name: R_GridRowDroppingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_GridRowRenderEventArgs
+    name: R_GridRowRenderEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_InstantiateDockEventArgs
+    name: R_InstantiateDockEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_LockUnlockEventArgs
+    name: R_LockUnlockEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_LockingUnlockingEventArgs
+    name: R_LockingUnlockingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_PageClosingEventArgs
+    name: R_PageClosingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_RefreshTreeViewStateEventArgs
+    name: R_RefreshTreeViewStateEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_SaveBatchEventArgs
+    name: R_SaveBatchEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_SavingEventArgs
+    name: R_SavingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ServiceDeleteEventArgs
+    name: R_ServiceDeleteEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs
+    name: R_ServiceGetListRecordEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ServiceGetRecordEventArgs
+    name: R_ServiceGetRecordEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ServiceSaveBatchEventArgs
+    name: R_ServiceSaveBatchEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ServiceSaveEventArgs
+    name: R_ServiceSaveEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_SetAddGridColumnEventArgs
+    name: R_SetAddGridColumnEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_SetEditGridColumnEventArgs
+    name: R_SetEditGridColumnEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_SetEventArgs
+    name: R_SetEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_StepChangeEventArgs
+    name: R_StepChangeEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_TabStripActiveTabIndexChangingEventArgs
+    name: R_TabStripActiveTabIndexChangingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ToastEventArgs
+    name: R_ToastEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Events.R_ValidationEventArgs
+    name: R_ValidationEventArgs
+- uid: R_BlazorFrontEnd.Controls.Extensions
+  name: R_BlazorFrontEnd.Controls.Extensions
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Extensions.R_ControlExtensions
+    name: R_ControlExtensions
+  - uid: R_BlazorFrontEnd.Controls.Extensions.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+- uid: R_BlazorFrontEnd.Controls.Forms
+  name: R_BlazorFrontEnd.Controls.Forms
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Forms.R_ErrorBoundary
+    name: R_ErrorBoundary
+  - uid: R_BlazorFrontEnd.Controls.Forms.R_ErrorForm
+    name: R_ErrorForm
+  - uid: R_BlazorFrontEnd.Controls.Forms.R_ErrorHandler
+    name: R_ErrorHandler
+  - uid: R_BlazorFrontEnd.Controls.Forms.R_InputWrapper
+    name: R_InputWrapper
+  - uid: R_BlazorFrontEnd.Controls.Forms.R_LookupService
+    name: R_LookupService
+  - uid: R_BlazorFrontEnd.Controls.Forms.R_PredefinedDockContainer
+    name: R_PredefinedDockContainer
+- uid: R_BlazorFrontEnd.Controls.Grid
+  name: R_BlazorFrontEnd.Controls.Grid
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+    name: R_GridColumnInfo
+  - uid: R_BlazorFrontEnd.Controls.Grid.R_GridGroupDescriptor
+    name: R_GridGroupDescriptor
+  - uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+    name: R_IGrid
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns
+  name: R_BlazorFrontEnd.Controls.Grid.Columns
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxColumn
+    name: R_GridCheckBoxColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxSelectColumn
+    name: R_GridCheckBoxSelectColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridColumnBase
+    name: R_GridColumnBase
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridComboBoxColumn
+    name: R_GridComboBoxColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDatePickerColumn
+    name: R_GridDatePickerColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDateTimeColumnBase
+    name: R_GridDateTimeColumnBase
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDateTimePickerColumn
+    name: R_GridDateTimePickerColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDropDownListColumn
+    name: R_GridDropDownListColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridLookupColumn
+    name: R_GridLookupColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridMultiHeaderColumn
+    name: R_GridMultiHeaderColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridNumericColumn`1
+    name: R_GridNumericColumn<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.R_GridTextColumn
+    name: R_GridTextColumn
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  name: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo
+    name: R_GridMultiHeaderColumnInfo
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  name: R_BlazorFrontEnd.Controls.Grid.Columns.Internal
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridCheckBoxColumn`1
+    name: _GridCheckBoxColumn<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridCheckBoxSelectColumn`1
+    name: _GridCheckBoxSelectColumn<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridColumnBase`1
+    name: _GridColumnBase<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridComboBoxColumn`2
+    name: _GridComboBoxColumn<TItem, TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridDateColumnBase`1
+    name: _GridDateColumnBase<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridDatePickerColumn`1
+    name: _GridDatePickerColumn<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridDateTimePickerColumn`1
+    name: _GridDateTimePickerColumn<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridDropDownListColumn`2
+    name: _GridDropDownListColumn<TItem, TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridLookupColumn
+    name: _GridLookupColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridNumericColumn`1
+    name: _GridNumericColumn<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridNumericShortColumn
+    name: _GridNumericShortColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridPrefixSuffixBase`1
+    name: _GridPrefixSuffixBase<TValue>
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._GridTextColumn
+    name: _GridTextColumn
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.Internal._HeaderCheckBoxSelectColumn`1
+    name: _HeaderCheckBoxSelectColumn<TValue>
+- uid: R_BlazorFrontEnd.Controls.Helpers
+  name: R_BlazorFrontEnd.Controls.Helpers
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Helpers.CssBuilder
+    name: CssBuilder
+  - uid: R_BlazorFrontEnd.Controls.Helpers.IdGeneratorHelper
+    name: IdGeneratorHelper
+  - uid: R_BlazorFrontEnd.Controls.Helpers.StyleBuilder
+    name: StyleBuilder
+- uid: R_BlazorFrontEnd.Controls.Icons
+  name: R_BlazorFrontEnd.Controls.Icons
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Icons.R_eIcon
+    name: R_eIcon
+- uid: R_BlazorFrontEnd.Controls.Interfaces
+  name: R_BlazorFrontEnd.Controls.Interfaces
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Interfaces.R_IButtonAction
+    name: R_IButtonAction
+  - uid: R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl
+    name: R_IConductorControl
+  - uid: R_BlazorFrontEnd.Controls.Interfaces.R_IDetail
+    name: R_IDetail
+  - uid: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+    name: R_IEnableControl
+  - uid: R_BlazorFrontEnd.Controls.Interfaces.R_IFormAccess
+    name: R_IFormAccess
+  - uid: R_BlazorFrontEnd.Controls.Interfaces.R_ILookup
+    name: R_ILookup
+  - uid: R_BlazorFrontEnd.Controls.Interfaces.R_IPopup
+    name: R_IPopup
+- uid: R_BlazorFrontEnd.Controls.Layouts
+  name: R_BlazorFrontEnd.Controls.Layouts
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Layouts.R_InputGroup
+    name: R_InputGroup
+  - uid: R_BlazorFrontEnd.Controls.Layouts.R_ItemLayout
+    name: R_ItemLayout
+  - uid: R_BlazorFrontEnd.Controls.Layouts.R_StackLayout
+    name: R_StackLayout
+- uid: R_BlazorFrontEnd.Controls.Lookup
+  name: R_BlazorFrontEnd.Controls.Lookup
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Lookup.R_LookupSettings
+    name: R_LookupSettings
+- uid: R_BlazorFrontEnd.Controls.Menu
+  name: R_BlazorFrontEnd.Controls.Menu
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Menu.AsyncEventHandler`1
+    name: AsyncEventHandler<TEventArgs>
+  - uid: R_BlazorFrontEnd.Controls.Menu.R_IMainBody
+    name: R_IMainBody
+  - uid: R_BlazorFrontEnd.Controls.Menu.R_IMenuTab
+    name: R_IMenuTab
+  - uid: R_BlazorFrontEnd.Controls.Menu.R_IMenuTabSet
+    name: R_IMenuTabSet
+  - uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+    name: R_TabProgram
+- uid: R_BlazorFrontEnd.Controls.Menu.Tab
+  name: R_BlazorFrontEnd.Controls.Menu.Tab
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Menu.Tab.R_ActiveTabChangingEventArgs
+    name: R_ActiveTabChangingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Menu.Tab.R_Tab
+    name: R_Tab
+  - uid: R_BlazorFrontEnd.Controls.Menu.Tab.R_TabRemovingEventArgs
+    name: R_TabRemovingEventArgs
+  - uid: R_BlazorFrontEnd.Controls.Menu.Tab.R_Tabs
+    name: R_Tabs
+  - uid: R_BlazorFrontEnd.Controls.Menu.Tab._Tab
+    name: _Tab
+  - uid: R_BlazorFrontEnd.Controls.Menu.Tab._TabContent
+    name: _TabContent
+  - uid: R_BlazorFrontEnd.Controls.Menu.Tab._TabHeader
+    name: _TabHeader
+- uid: R_BlazorFrontEnd.Controls.MessageBox
+  name: R_BlazorFrontEnd.Controls.MessageBox
+  items:
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox
+    name: R_MessageBox
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxContainer
+    name: R_MessageBoxContainer
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+    name: R_MessageBoxService
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+    name: R_eMessageBoxButtonType
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+    name: R_eMessageBoxResult
+- uid: R_BlazorFrontEnd.Controls.Popup
+  name: R_BlazorFrontEnd.Controls.Popup
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Popup.R_PopupContainer
+    name: R_PopupContainer
+  - uid: R_BlazorFrontEnd.Controls.Popup.R_PopupModel
+    name: R_PopupModel
+  - uid: R_BlazorFrontEnd.Controls.Popup.R_PopupParameters
+    name: R_PopupParameters
+  - uid: R_BlazorFrontEnd.Controls.Popup.R_PopupResult
+    name: R_PopupResult
+  - uid: R_BlazorFrontEnd.Controls.Popup.R_PopupService
+    name: R_PopupService
+  - uid: R_BlazorFrontEnd.Controls.Popup.R_PopupSettings
+    name: R_PopupSettings
+- uid: R_BlazorFrontEnd.Controls.Resources
+  name: R_BlazorFrontEnd.Controls.Resources
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Resources.R_TelerikLocalizer
+    name: R_TelerikLocalizer
+- uid: R_BlazorFrontEnd.Controls.Router
+  name: R_BlazorFrontEnd.Controls.Router
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Router.MatchResult
+    name: MatchResult
+  - uid: R_BlazorFrontEnd.Controls.Router.NavigationContext
+    name: NavigationContext
+  - uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+    name: R_BasicRouter
+  - uid: R_BlazorFrontEnd.Controls.Router.Route
+    name: Route
+  - uid: R_BlazorFrontEnd.Controls.Router.RouteManager
+    name: RouteManager
+- uid: R_BlazorFrontEnd.Controls.Shared
+  name: R_BlazorFrontEnd.Controls.Shared
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Shared.MainLayout
+    name: MainLayout
+- uid: R_BlazorFrontEnd.Controls.SplitButton
+  name: R_BlazorFrontEnd.Controls.SplitButton
+  items:
+  - uid: R_BlazorFrontEnd.Controls.SplitButton.R_SplitButtonBase
+    name: R_SplitButtonBase
+  - uid: R_BlazorFrontEnd.Controls.SplitButton.R_SplitButtonItem
+    name: R_SplitButtonItem
+  - uid: R_BlazorFrontEnd.Controls.SplitButton.R_SplitButtonItemDetail
+    name: R_SplitButtonItemDetail
+  - uid: R_BlazorFrontEnd.Controls.SplitButton.R_SplitButtonItemPopup
+    name: R_SplitButtonItemPopup
+- uid: R_BlazorFrontEnd.Controls.Tab
+  name: R_BlazorFrontEnd.Controls.Tab
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Tab.R_ITabPage
+    name: R_ITabPage
+  - uid: R_BlazorFrontEnd.Controls.Tab.R_TabPage
+    name: R_TabPage
+  - uid: R_BlazorFrontEnd.Controls.Tab._Tab
+    name: _Tab
+  - uid: R_BlazorFrontEnd.Controls.Tab._TabHeader
+    name: _TabHeader
+- uid: R_BlazorFrontEnd.Controls.Toast
+  name: R_BlazorFrontEnd.Controls.Toast
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Toast.R_ToastMessage
+    name: R_ToastMessage
+- uid: R_BlazorFrontEnd.Controls.TreeView
+  name: R_BlazorFrontEnd.Controls.TreeView
+  items:
+  - uid: R_BlazorFrontEnd.Controls.TreeView.R_TreeViewItemBase
+    name: R_TreeViewItemBase
+- uid: R_BlazorFrontEnd.Controls.Validation
+  name: R_BlazorFrontEnd.Controls.Validation
+  items:
+  - uid: R_BlazorFrontEnd.Controls.Validation.R_ValidationAnnotation
+    name: R_ValidationAnnotation
+  - uid: R_BlazorFrontEnd.Controls.Validation.R_ValidationError
+    name: R_ValidationError
 - uid: R_BlazorFrontEnd.Deployment.Interfaces
   name: R_BlazorFrontEnd.Deployment.Interfaces
   items:
@@ -150,6 +834,8 @@
     name: R_eConductorMode
   - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
     name: R_eDocumentType
+  - uid: R_BlazorFrontEnd.Enums.R_eGridMode
+    name: R_eGridMode
   - uid: R_BlazorFrontEnd.Enums.R_eReportFileOutputType
     name: R_eReportFileOutputType
   - uid: R_BlazorFrontEnd.Enums.R_eRoundingMethod
@@ -222,13 +908,12 @@
     name: R_IFileDownloader
   - uid: R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator
     name: R_IGlobalVarInitiator
+  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
+    name: R_ILocalStorage
   - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer
     name: R_ILocalizer
   - uid: R_BlazorFrontEnd.Interfaces.R_ILocalizer`1
     name: R_ILocalizer<T>
-    name.vb: R_ILocalizer(Of T)
-  - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage
-    name: R_ILocalStorage
   - uid: R_BlazorFrontEnd.Interfaces.R_IReport
     name: R_IReport
   - uid: R_BlazorFrontEnd.Interfaces.R_IResourceLanguage
@@ -242,17 +927,11 @@
     name: R_ReportService
   - uid: R_BlazorFrontEnd.Report.R_TenantReportService
     name: R_TenantReportService
-- uid: R_BlazorFrontEnd.Spreadsheet
-  name: R_BlazorFrontEnd.Spreadsheet
-  items:
-  - uid: R_BlazorFrontEnd.Spreadsheet.R_Excel
-    name: R_Excel
 - uid: R_BlazorFrontEnd.State
   name: R_BlazorFrontEnd.State
   items:
   - uid: R_BlazorFrontEnd.State.R_StateContainer`1
     name: R_StateContainer<T>
-    name.vb: R_StateContainer(Of T)
 - uid: R_BlazorFrontEnd.Tenant
   name: R_BlazorFrontEnd.Tenant
   items:
@@ -315,7 +994,6 @@
     name: SecurityPolicyGenericResultDTO
   - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyGenericResultDTO`1
     name: SecurityPolicyGenericResultDTO<T>
-    name.vb: SecurityPolicyGenericResultDTO(Of T)
   - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogonParameterDTO
     name: SecurityPolicyLogonParameterDTO
   - uid: R_SecurityPolicyCommon.DTOs.SecurityPolicyLogoutParameterDTO
@@ -372,3 +1050,4 @@
   items:
   - uid: Serilog.AspNetCore.Ingestion.SerilogIngestionOptions
     name: SerilogIngestionOptions
+memberLayout: SamePage

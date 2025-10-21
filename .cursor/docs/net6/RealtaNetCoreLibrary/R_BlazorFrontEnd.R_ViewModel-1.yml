@@ -14,7 +14,7 @@ items:
   - R_BlazorFrontEnd.R_ViewModel`1.R_GetEmptyData
   - R_BlazorFrontEnd.R_ViewModel`1.R_GetValidationMessage(System.String)
   - R_BlazorFrontEnd.R_ViewModel`1.R_ResetValidationMessage
-  - R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData(System.Nullable{System.Object})
+  - R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData(System.Object)
   - R_BlazorFrontEnd.R_ViewModel`1.R_SetValidationMessage(System.String,System.String)
   langs:
   - csharp
@@ -35,26 +35,26 @@ items:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
   syntax:
-    content: 'public class R_ViewModel<TModel> : object, R_IViewModel where TModel : class, new()'
+    content: 'public class R_ViewModel<TModel> : R_IViewModel where TModel : class, new()'
     typeParameters:
     - id: TModel
-    content.vb: >-
-      Public Class R_ViewModel(Of TModel As {Class, New})
-          Inherits Object
-          Implements R_IViewModel
+    content.vb: Public Class R_ViewModel(Of TModel As {Class, New}) Implements R_IViewModel
   inheritance:
   - System.Object
   implements:
   - R_BlazorFrontEnd.R_IViewModel
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
   nameWithType.vb: R_ViewModel(Of TModel)
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel)
   name.vb: R_ViewModel(Of TModel)
 - uid: R_BlazorFrontEnd.R_ViewModel`1.HasValidationMessage
@@ -79,19 +79,16 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public bool HasValidationMessage()
     return:
       type: System.Boolean
-    content.vb: Public Function HasValidationMessage As Boolean
+    content.vb: Public Function HasValidationMessage() As Boolean
   overload: R_BlazorFrontEnd.R_ViewModel`1.HasValidationMessage*
   implements:
   - R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
   nameWithType.vb: R_ViewModel(Of TModel).HasValidationMessage()
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).HasValidationMessage()
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_GetValidationMessage(System.String)
   commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_GetValidationMessage(System.String)
@@ -100,9 +97,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_GetValidationMessage(String)
-  nameWithType: R_ViewModel<TModel>.R_GetValidationMessage(String)
-  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_GetValidationMessage(System.String)
+  name: R_GetValidationMessage(string)
+  nameWithType: R_ViewModel<TModel>.R_GetValidationMessage(string)
+  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_GetValidationMessage(string)
   type: Method
   source:
     remote:
@@ -115,23 +112,21 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public List<string> R_GetValidationMessage(string pcPropertyName)
     parameters:
     - id: pcPropertyName
       type: System.String
     return:
-      type: List{System.String}
+      type: System.Collections.Generic.List{System.String}
     content.vb: Public Function R_GetValidationMessage(pcPropertyName As String) As List(Of String)
   overload: R_BlazorFrontEnd.R_ViewModel`1.R_GetValidationMessage*
   implements:
   - R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
   nameWithType.vb: R_ViewModel(Of TModel).R_GetValidationMessage(String)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_GetValidationMessage(System.String)
+  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_GetValidationMessage(String)
+  name.vb: R_GetValidationMessage(String)
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_ResetValidationMessage
   commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_ResetValidationMessage
   id: R_ResetValidationMessage
@@ -154,17 +149,14 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public void R_ResetValidationMessage()
-    content.vb: Public Sub R_ResetValidationMessage
+    content.vb: Public Sub R_ResetValidationMessage()
   overload: R_BlazorFrontEnd.R_ViewModel`1.R_ResetValidationMessage*
   implements:
   - R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
   nameWithType.vb: R_ViewModel(Of TModel).R_ResetValidationMessage()
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_ResetValidationMessage()
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_SetValidationMessage(System.String,System.String)
   commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_SetValidationMessage(System.String,System.String)
@@ -173,9 +165,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_SetValidationMessage(String, String)
-  nameWithType: R_ViewModel<TModel>.R_SetValidationMessage(String, String)
-  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_SetValidationMessage(System.String, System.String)
+  name: R_SetValidationMessage(string, string)
+  nameWithType: R_ViewModel<TModel>.R_SetValidationMessage(string, string)
+  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_SetValidationMessage(string, string)
   type: Method
   source:
     remote:
@@ -188,6 +180,7 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public void R_SetValidationMessage(string pcPropertyName, string pcMessage)
     parameters:
@@ -200,11 +193,8 @@ items:
   implements:
   - R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String,System.String)
   nameWithType.vb: R_ViewModel(Of TModel).R_SetValidationMessage(String, String)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_SetValidationMessage(System.String, System.String)
+  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_SetValidationMessage(String, String)
+  name.vb: R_SetValidationMessage(String, String)
 - uid: R_BlazorFrontEnd.R_ViewModel`1.Data
   commentId: P:R_BlazorFrontEnd.R_ViewModel`1.Data
   id: Data
@@ -232,15 +222,9 @@ items:
     parameters: []
     return:
       type: '{TModel}'
-    content.vb: Public ReadOnly Property Data As TModel
+    content.vb: Public Property Data As TModel
   overload: R_BlazorFrontEnd.R_ViewModel`1.Data*
   nameWithType.vb: R_ViewModel(Of TModel).Data
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).Data
 - uid: R_BlazorFrontEnd.R_ViewModel`1.HasData
   commentId: P:R_BlazorFrontEnd.R_ViewModel`1.HasData
@@ -264,6 +248,7 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public bool HasData { get; }
     parameters: []
@@ -274,12 +259,6 @@ items:
   implements:
   - R_BlazorFrontEnd.R_IViewModel.HasData
   nameWithType.vb: R_ViewModel(Of TModel).HasData
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).HasData
 - uid: R_BlazorFrontEnd.R_ViewModel`1.DataHasChanged
   commentId: E:R_BlazorFrontEnd.R_ViewModel`1.DataHasChanged
@@ -303,16 +282,15 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public event EventHandler<R_ViewModelDataHasChangedEventArgs>? DataHasChanged
     return:
-      type: System.Nullable{EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}}
-    content.vb: Public Event DataHasChanged As EventHandler(Of R_ViewModelDataHasChangedEventArgs)?
+      type: System.EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}
+    content.vb: Public Event DataHasChanged As EventHandler(Of R_ViewModelDataHasChangedEventArgs)
+  implements:
+  - R_BlazorFrontEnd.R_IViewModel.DataHasChanged
   nameWithType.vb: R_ViewModel(Of TModel).DataHasChanged
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).DataHasChanged
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_GetCurrentData
   commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_GetCurrentData
@@ -336,30 +314,27 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public object R_GetCurrentData()
     return:
       type: System.Object
-    content.vb: Public Function R_GetCurrentData As Object
+    content.vb: Public Function R_GetCurrentData() As Object
   overload: R_BlazorFrontEnd.R_ViewModel`1.R_GetCurrentData*
   implements:
   - R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
   nameWithType.vb: R_ViewModel(Of TModel).R_GetCurrentData()
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_GetCurrentData()
-- uid: R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData(System.Nullable{System.Object})
-  commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData(System.Nullable{System.Object})
-  id: R_SetCurrentData(System.Nullable{System.Object})
+- uid: R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData(System.Object)
+  commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData(System.Object)
+  id: R_SetCurrentData(System.Object)
   parent: R_BlazorFrontEnd.R_ViewModel`1
   langs:
   - csharp
   - vb
-  name: R_SetCurrentData(Nullable<Object>)
-  nameWithType: R_ViewModel<TModel>.R_SetCurrentData(Nullable<Object>)
-  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_SetCurrentData(System.Nullable<System.Object>)
+  name: R_SetCurrentData(object?)
+  nameWithType: R_ViewModel<TModel>.R_SetCurrentData(object?)
+  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_SetCurrentData(object?)
   type: Method
   source:
     remote:
@@ -372,22 +347,19 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public void R_SetCurrentData(object? poEntity)
     parameters:
     - id: poEntity
-      type: System.Nullable{System.Object}
-    content.vb: Public Sub R_SetCurrentData(poEntity As Object?)
+      type: System.Object
+    content.vb: Public Sub R_SetCurrentData(poEntity As Object)
   overload: R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData*
   implements:
-  - R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
-  nameWithType.vb: R_ViewModel(Of TModel).R_SetCurrentData(Nullable(Of Object))
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_SetCurrentData(System.Nullable(Of System.Object))
-  name.vb: R_SetCurrentData(Nullable(Of Object))
+  - R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Object)
+  nameWithType.vb: R_ViewModel(Of TModel).R_SetCurrentData(Object)
+  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_SetCurrentData(Object)
+  name.vb: R_SetCurrentData(Object)
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_GetEmptyData
   commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_GetEmptyData
   id: R_GetEmptyData
@@ -410,19 +382,16 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public object R_GetEmptyData()
     return:
       type: System.Object
-    content.vb: Public Function R_GetEmptyData As Object
+    content.vb: Public Function R_GetEmptyData() As Object
   overload: R_BlazorFrontEnd.R_ViewModel`1.R_GetEmptyData*
   implements:
   - R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
   nameWithType.vb: R_ViewModel(Of TModel).R_GetEmptyData()
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_GetEmptyData()
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_ConvertToCurrentEntity(System.Object)
   commentId: M:R_BlazorFrontEnd.R_ViewModel`1.R_ConvertToCurrentEntity(System.Object)
@@ -431,9 +400,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_ConvertToCurrentEntity(Object)
-  nameWithType: R_ViewModel<TModel>.R_ConvertToCurrentEntity(Object)
-  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_ConvertToCurrentEntity(System.Object)
+  name: R_ConvertToCurrentEntity(object)
+  nameWithType: R_ViewModel<TModel>.R_ConvertToCurrentEntity(object)
+  fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_ConvertToCurrentEntity(object)
   type: Method
   source:
     remote:
@@ -446,120 +415,479 @@ items:
   assemblies:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
+  example: []
   syntax:
     content: public object? R_ConvertToCurrentEntity(object poEntity)
     parameters:
     - id: poEntity
       type: System.Object
     return:
-      type: System.Nullable{System.Object}
-    content.vb: Public Function R_ConvertToCurrentEntity(poEntity As Object) As Object?
+      type: System.Object
+    content.vb: Public Function R_ConvertToCurrentEntity(poEntity As Object) As Object
   overload: R_BlazorFrontEnd.R_ViewModel`1.R_ConvertToCurrentEntity*
   implements:
   - R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
   nameWithType.vb: R_ViewModel(Of TModel).R_ConvertToCurrentEntity(Object)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_ConvertToCurrentEntity(System.Object)
+  fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_ConvertToCurrentEntity(Object)
+  name.vb: R_ConvertToCurrentEntity(Object)
 references:
 - uid: R_BlazorFrontEnd
   commentId: N:R_BlazorFrontEnd
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd
   nameWithType: R_BlazorFrontEnd
   fullName: R_BlazorFrontEnd
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: R_BlazorFrontEnd.R_IViewModel
   commentId: T:R_BlazorFrontEnd.R_IViewModel
   parent: R_BlazorFrontEnd
+  href: R_BlazorFrontEnd.R_IViewModel.html
   name: R_IViewModel
   nameWithType: R_IViewModel
   fullName: R_BlazorFrontEnd.R_IViewModel
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.R_ViewModel`1.HasValidationMessage*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.HasValidationMessage
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_HasValidationMessage
   name: HasValidationMessage
   nameWithType: R_ViewModel<TModel>.HasValidationMessage
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.HasValidationMessage
@@ -568,38 +896,36 @@ references:
 - uid: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
   commentId: M:R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
   parent: R_BlazorFrontEnd.R_IViewModel
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_HasValidationMessage
   name: HasValidationMessage()
   nameWithType: R_IViewModel.HasValidationMessage()
   fullName: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage()
   spec.csharp:
   - uid: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
     name: HasValidationMessage
-    nameWithType: R_IViewModel.HasValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_HasValidationMessage
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
     name: HasValidationMessage
-    nameWithType: R_IViewModel.HasValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.HasValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_HasValidationMessage
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_GetValidationMessage*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.R_GetValidationMessage
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_R_GetValidationMessage_System_String_
   name: R_GetValidationMessage
   nameWithType: R_ViewModel<TModel>.R_GetValidationMessage
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_GetValidationMessage
@@ -609,129 +935,147 @@ references:
   commentId: M:R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
   parent: R_BlazorFrontEnd.R_IViewModel
   isExternal: true
-  name: R_GetValidationMessage(String)
-  nameWithType: R_IViewModel.R_GetValidationMessage(String)
-  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetValidationMessage_System_String_
+  name: R_GetValidationMessage(string)
+  nameWithType: R_IViewModel.R_GetValidationMessage(string)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(string)
+  nameWithType.vb: R_IViewModel.R_GetValidationMessage(String)
+  fullName.vb: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(String)
+  name.vb: R_GetValidationMessage(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
     name: R_GetValidationMessage
-    nameWithType: R_IViewModel.R_GetValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetValidationMessage_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage(System.String)
     name: R_GetValidationMessage
-    nameWithType: R_IViewModel.R_GetValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_GetValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetValidationMessage_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: List{System.String}
-  commentId: '!:List{System.String}'
-  definition: List`1
-  name: List<String>
-  nameWithType: List<String>
-  fullName: List<System.String>
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
   nameWithType.vb: List(Of String)
-  fullName.vb: List(Of System.String)
+  fullName.vb: System.Collections.Generic.List(Of String)
   name.vb: List(Of String)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: List`1
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_ResetValidationMessage*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.R_ResetValidationMessage
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_R_ResetValidationMessage
   name: R_ResetValidationMessage
   nameWithType: R_ViewModel<TModel>.R_ResetValidationMessage
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_ResetValidationMessage
@@ -740,33 +1084,25 @@ references:
 - uid: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
   commentId: M:R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
   parent: R_BlazorFrontEnd.R_IViewModel
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_ResetValidationMessage
   name: R_ResetValidationMessage()
   nameWithType: R_IViewModel.R_ResetValidationMessage()
   fullName: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage()
   spec.csharp:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
     name: R_ResetValidationMessage
-    nameWithType: R_IViewModel.R_ResetValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_ResetValidationMessage
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
     name: R_ResetValidationMessage
-    nameWithType: R_IViewModel.R_ResetValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_ResetValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_ResetValidationMessage
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_SetValidationMessage*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.R_SetValidationMessage
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_R_SetValidationMessage_System_String_System_String_
   name: R_SetValidationMessage
   nameWithType: R_ViewModel<TModel>.R_SetValidationMessage
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_SetValidationMessage
@@ -776,59 +1112,48 @@ references:
   commentId: M:R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String,System.String)
   parent: R_BlazorFrontEnd.R_IViewModel
   isExternal: true
-  name: R_SetValidationMessage(String, String)
-  nameWithType: R_IViewModel.R_SetValidationMessage(String, String)
-  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String, System.String)
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_SetValidationMessage_System_String_System_String_
+  name: R_SetValidationMessage(string, string)
+  nameWithType: R_IViewModel.R_SetValidationMessage(string, string)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(string, string)
+  nameWithType.vb: R_IViewModel.R_SetValidationMessage(String, String)
+  fullName.vb: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(String, String)
+  name.vb: R_SetValidationMessage(String, String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String,System.String)
     name: R_SetValidationMessage
-    nameWithType: R_IViewModel.R_SetValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_SetValidationMessage_System_String_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage(System.String,System.String)
     name: R_SetValidationMessage
-    nameWithType: R_IViewModel.R_SetValidationMessage
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_SetValidationMessage
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_SetValidationMessage_System_String_System_String_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.R_ViewModel`1.Data*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.Data
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_Data
   name: Data
   nameWithType: R_ViewModel<TModel>.Data
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.Data
@@ -841,12 +1166,12 @@ references:
   nameWithType: TModel
   fullName: TModel
 - uid: TModel
-  commentId: '!:TModel'
   name: TModel
   nameWithType: TModel
   fullName: TModel
 - uid: R_BlazorFrontEnd.R_ViewModel`1.HasData*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.HasData
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_HasData
   name: HasData
   nameWithType: R_ViewModel<TModel>.HasData
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.HasData
@@ -855,112 +1180,81 @@ references:
 - uid: R_BlazorFrontEnd.R_IViewModel.HasData
   commentId: P:R_BlazorFrontEnd.R_IViewModel.HasData
   parent: R_BlazorFrontEnd.R_IViewModel
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_HasData
   name: HasData
   nameWithType: R_IViewModel.HasData
   fullName: R_BlazorFrontEnd.R_IViewModel.HasData
-- uid: System.Nullable{EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}}
-  commentId: '!:System.Nullable{EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}}'
-  definition: System.Nullable`1
-  name: Nullable<EventHandler<R_ViewModelDataHasChangedEventArgs>>
-  nameWithType: Nullable<EventHandler<R_ViewModelDataHasChangedEventArgs>>
-  fullName: System.Nullable<EventHandler<R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs>>
-  nameWithType.vb: Nullable(Of EventHandler(Of R_ViewModelDataHasChangedEventArgs))
-  fullName.vb: System.Nullable(Of EventHandler(Of R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs))
-  name.vb: Nullable(Of EventHandler(Of R_ViewModelDataHasChangedEventArgs))
+- uid: R_BlazorFrontEnd.R_IViewModel.DataHasChanged
+  commentId: E:R_BlazorFrontEnd.R_IViewModel.DataHasChanged
+  parent: R_BlazorFrontEnd.R_IViewModel
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_DataHasChanged
+  name: DataHasChanged
+  nameWithType: R_IViewModel.DataHasChanged
+  fullName: R_BlazorFrontEnd.R_IViewModel.DataHasChanged
+- uid: System.EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}
+  commentId: T:System.EventHandler{R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<R_ViewModelDataHasChangedEventArgs>
+  nameWithType: EventHandler<R_ViewModelDataHasChangedEventArgs>
+  fullName: System.EventHandler<R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs>
+  nameWithType.vb: EventHandler(Of R_ViewModelDataHasChangedEventArgs)
+  fullName.vb: System.EventHandler(Of R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs)
+  name.vb: EventHandler(Of R_ViewModelDataHasChangedEventArgs)
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
-    nameWithType: EventHandler
-    fullName: EventHandler
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
     name: R_ViewModelDataHasChangedEventArgs
-    nameWithType: R_ViewModelDataHasChangedEventArgs
-    fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+    href: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.html
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
-    nameWithType: EventHandler
-    fullName: EventHandler
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
     name: R_ViewModelDataHasChangedEventArgs
-    nameWithType: R_ViewModelDataHasChangedEventArgs
-    fullName: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs
+    href: R_BlazorFrontEnd.R_ViewModelDataHasChangedEventArgs.html
   - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Nullable`1
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
   isExternal: true
-  name: Nullable<>
-  nameWithType: Nullable<>
-  fullName: System.Nullable<>
-  nameWithType.vb: Nullable(Of )
-  fullName.vb: System.Nullable(Of )
-  name.vb: Nullable(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
+  - uid: System.EventHandler`1
+    name: EventHandler
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TEventArgs
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
+  - uid: System.EventHandler`1
+    name: EventHandler
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_GetCurrentData*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.R_GetCurrentData
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_R_GetCurrentData
   name: R_GetCurrentData
   nameWithType: R_ViewModel<TModel>.R_GetCurrentData
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_GetCurrentData
@@ -969,147 +1263,64 @@ references:
 - uid: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
   commentId: M:R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
   parent: R_BlazorFrontEnd.R_IViewModel
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetCurrentData
   name: R_GetCurrentData()
   nameWithType: R_IViewModel.R_GetCurrentData()
   fullName: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData()
   spec.csharp:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
     name: R_GetCurrentData
-    nameWithType: R_IViewModel.R_GetCurrentData
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetCurrentData
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
     name: R_GetCurrentData
-    nameWithType: R_IViewModel.R_GetCurrentData
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_GetCurrentData
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetCurrentData
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.R_SetCurrentData
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_R_SetCurrentData_System_Object_
   name: R_SetCurrentData
   nameWithType: R_ViewModel<TModel>.R_SetCurrentData
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_SetCurrentData
   nameWithType.vb: R_ViewModel(Of TModel).R_SetCurrentData
   fullName.vb: R_BlazorFrontEnd.R_ViewModel(Of TModel).R_SetCurrentData
-- uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
-  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
+- uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Object)
+  commentId: M:R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Object)
   parent: R_BlazorFrontEnd.R_IViewModel
   isExternal: true
-  name: R_SetCurrentData(Nullable<Object>)
-  nameWithType: R_IViewModel.R_SetCurrentData(Nullable<Object>)
-  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable<System.Object>)
-  nameWithType.vb: R_IViewModel.R_SetCurrentData(Nullable(Of Object))
-  fullName.vb: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable(Of System.Object))
-  name.vb: R_SetCurrentData(Nullable(Of Object))
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_SetCurrentData_System_Object_
+  name: R_SetCurrentData(object)
+  nameWithType: R_IViewModel.R_SetCurrentData(object)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(object)
+  nameWithType.vb: R_IViewModel.R_SetCurrentData(Object)
+  fullName.vb: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(Object)
+  name.vb: R_SetCurrentData(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
+  - uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Object)
     name: R_SetCurrentData
-    nameWithType: R_IViewModel.R_SetCurrentData
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_SetCurrentData_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Nullable{System.Object})
+  - uid: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData(System.Object)
     name: R_SetCurrentData
-    nameWithType: R_IViewModel.R_SetCurrentData
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_SetCurrentData
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_SetCurrentData_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Nullable{System.Object}
-  commentId: '!:System.Nullable{System.Object}'
-  definition: System.Nullable`1
-  name: Nullable<Object>
-  nameWithType: Nullable<Object>
-  fullName: System.Nullable<System.Object>
-  nameWithType.vb: Nullable(Of Object)
-  fullName.vb: System.Nullable(Of System.Object)
-  name.vb: Nullable(Of Object)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_GetEmptyData*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.R_GetEmptyData
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_R_GetEmptyData
   name: R_GetEmptyData
   nameWithType: R_ViewModel<TModel>.R_GetEmptyData
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_GetEmptyData
@@ -1118,33 +1329,25 @@ references:
 - uid: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
   commentId: M:R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
   parent: R_BlazorFrontEnd.R_IViewModel
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetEmptyData
   name: R_GetEmptyData()
   nameWithType: R_IViewModel.R_GetEmptyData()
   fullName: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData()
   spec.csharp:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
     name: R_GetEmptyData
-    nameWithType: R_IViewModel.R_GetEmptyData
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetEmptyData
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
     name: R_GetEmptyData
-    nameWithType: R_IViewModel.R_GetEmptyData
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_GetEmptyData
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_GetEmptyData
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.R_ViewModel`1.R_ConvertToCurrentEntity*
   commentId: Overload:R_BlazorFrontEnd.R_ViewModel`1.R_ConvertToCurrentEntity
+  href: R_BlazorFrontEnd.R_ViewModel-1.html#R_BlazorFrontEnd_R_ViewModel_1_R_ConvertToCurrentEntity_System_Object_
   name: R_ConvertToCurrentEntity
   nameWithType: R_ViewModel<TModel>.R_ConvertToCurrentEntity
   fullName: R_BlazorFrontEnd.R_ViewModel<TModel>.R_ConvertToCurrentEntity
@@ -1154,38 +1357,30 @@ references:
   commentId: M:R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
   parent: R_BlazorFrontEnd.R_IViewModel
   isExternal: true
-  name: R_ConvertToCurrentEntity(Object)
-  nameWithType: R_IViewModel.R_ConvertToCurrentEntity(Object)
-  fullName: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
+  href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_ConvertToCurrentEntity_System_Object_
+  name: R_ConvertToCurrentEntity(object)
+  nameWithType: R_IViewModel.R_ConvertToCurrentEntity(object)
+  fullName: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(object)
+  nameWithType.vb: R_IViewModel.R_ConvertToCurrentEntity(Object)
+  fullName.vb: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(Object)
+  name.vb: R_ConvertToCurrentEntity(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
     name: R_ConvertToCurrentEntity
-    nameWithType: R_IViewModel.R_ConvertToCurrentEntity
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_ConvertToCurrentEntity_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity(System.Object)
     name: R_ConvertToCurrentEntity
-    nameWithType: R_IViewModel.R_ConvertToCurrentEntity
-    fullName: R_BlazorFrontEnd.R_IViewModel.R_ConvertToCurrentEntity
+    href: R_BlazorFrontEnd.R_IViewModel.html#R_BlazorFrontEnd_R_IViewModel_R_ConvertToCurrentEntity_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )

@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  commentId: T:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  id: R_eMessageBoxButtonType
+  parent: R_BlazorFrontEnd.Controls.MessageBox
+  children:
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OK
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OKCancel
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNo
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNoCancel
+  langs:
+  - csharp
+  - vb
+  name: R_eMessageBoxButtonType
+  nameWithType: R_eMessageBoxButtonType
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eMessageBoxButtonType
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 26
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: public enum R_eMessageBoxButtonType
+    content.vb: Public Enum R_eMessageBoxButtonType
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OK
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OK
+  id: OK
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  langs:
+  - csharp
+  - vb
+  name: OK
+  nameWithType: R_eMessageBoxButtonType.OK
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OK
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OK
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 28
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: OK = 1
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OKCancel
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OKCancel
+  id: OKCancel
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  langs:
+  - csharp
+  - vb
+  name: OKCancel
+  nameWithType: R_eMessageBoxButtonType.OKCancel
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.OKCancel
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OKCancel
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 29
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: OKCancel = 2
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNo
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNo
+  id: YesNo
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  langs:
+  - csharp
+  - vb
+  name: YesNo
+  nameWithType: R_eMessageBoxButtonType.YesNo
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNo
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: YesNo
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 30
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: YesNo = 3
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNoCancel
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNoCancel
+  id: YesNoCancel
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  langs:
+  - csharp
+  - vb
+  name: YesNoCancel
+  nameWithType: R_eMessageBoxButtonType.YesNoCancel
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.YesNoCancel
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: YesNoCancel
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 31
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: YesNoCancel = 4
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+references:
+- uid: R_BlazorFrontEnd.Controls.MessageBox
+  commentId: N:R_BlazorFrontEnd.Controls.MessageBox
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.MessageBox
+  nameWithType: R_BlazorFrontEnd.Controls.MessageBox
+  fullName: R_BlazorFrontEnd.Controls.MessageBox
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.MessageBox
+    name: MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.MessageBox
+    name: MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.html
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  commentId: T:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  parent: R_BlazorFrontEnd.Controls.MessageBox
+  href: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.html
+  name: R_eMessageBoxButtonType
+  nameWithType: R_eMessageBoxButtonType
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType

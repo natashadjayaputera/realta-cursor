@@ -55,20 +55,21 @@ items:
   - R_SecurityPolicyCommon
   namespace: R_SecurityPolicyCommon.DTOs
   syntax:
-    content: 'public class GetSecurityPolicyDTO : object'
-    content.vb: >-
-      Public Class GetSecurityPolicyDTO
-          Inherits Object
+    content: public class GetSecurityPolicyDTO
+    content.vb: Public Class GetSecurityPolicyDTO
   inheritance:
   - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
   id: LACCOUNT_LOCKOUT_THRESHOLD
@@ -98,12 +99,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LACCOUNT_LOCKOUT_THRESHOLD As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
   id: IACCOUNT_LOCKOUT_THRESHOLD
@@ -133,12 +128,6 @@ items:
       type: System.Int32
     content.vb: Public Property IACCOUNT_LOCKOUT_THRESHOLD As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   id: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
@@ -168,12 +157,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LRESET_ACCOUNT_LOCKOUT_THRESHOLD As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   id: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
@@ -203,12 +186,6 @@ items:
       type: System.Int32
     content.vb: Public Property IRESET_ACCOUNT_LOCKOUT_THRESHOLD As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
   id: LACCOUNT_LOCKOUT_DURATION
@@ -238,12 +215,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LACCOUNT_LOCKOUT_DURATION As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
   id: IACCOUNT_LOCKOUT_DURATION
@@ -273,12 +244,6 @@ items:
       type: System.Int32
     content.vb: Public Property IACCOUNT_LOCKOUT_DURATION As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
   id: LMAXIMUM_PASSWORD_AGE
@@ -308,12 +273,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LMAXIMUM_PASSWORD_AGE As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
   id: CMAXIMUM_PASSWORD_AGE_OPTION
@@ -343,12 +302,6 @@ items:
       type: System.String
     content.vb: Public Property CMAXIMUM_PASSWORD_AGE_OPTION As String
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
   id: IMAXIMUM_PASSWORD_AGE_DAYS
@@ -378,12 +331,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMAXIMUM_PASSWORD_AGE_DAYS As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   id: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
@@ -413,12 +360,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
   id: IMAXIMUM_PASSWORD_AGE_MONTH
@@ -448,12 +389,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMAXIMUM_PASSWORD_AGE_MONTH As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   id: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
@@ -483,12 +418,6 @@ items:
       type: System.String
     content.vb: Public Property CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE As String
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
   id: CNEXT_UPDATE_PASSWORD
@@ -518,12 +447,6 @@ items:
       type: System.String
     content.vb: Public Property CNEXT_UPDATE_PASSWORD As String
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
   id: CLAST_UPDATE_PASSWORD
@@ -553,12 +476,6 @@ items:
       type: System.String
     content.vb: Public Property CLAST_UPDATE_PASSWORD As String
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
   id: CCURRENT_DATE
@@ -588,12 +505,6 @@ items:
       type: System.String
     content.vb: Public Property CCURRENT_DATE As String
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
   id: CACCOUNT_LOCKOUT_DATE
@@ -623,12 +534,6 @@ items:
       type: System.String
     content.vb: Public Property CACCOUNT_LOCKOUT_DATE As String
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
   id: CFAILED_ATTEMPT_DATE
@@ -658,12 +563,6 @@ items:
       type: System.String
     content.vb: Public Property CFAILED_ATTEMPT_DATE As String
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
   id: NFAILED_ATTEMPT
@@ -693,12 +592,6 @@ items:
       type: System.Int32
     content.vb: Public Property NFAILED_ATTEMPT As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
   id: LMINIMUM_PASSWORD_LENGTH
@@ -728,12 +621,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LMINIMUM_PASSWORD_LENGTH As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
   id: IMINIMUM_PASSWORD_LENGTH
@@ -763,12 +650,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMINIMUM_PASSWORD_LENGTH As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
   id: LMINIMUM_PASSWORD_AGE
@@ -798,12 +679,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LMINIMUM_PASSWORD_AGE As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
   id: IMINIMUM_PASSWORD_AGE
@@ -833,12 +708,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMINIMUM_PASSWORD_AGE As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
   id: LENFORCE_PASSWORD_HISTORY
@@ -868,12 +737,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LENFORCE_PASSWORD_HISTORY As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
   id: IENFORCE_PASSWORD_HISTORY
@@ -903,12 +766,6 @@ items:
       type: System.Int32
     content.vb: Public Property IENFORCE_PASSWORD_HISTORY As Integer
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
   id: LCOMPLEXITY
@@ -938,12 +795,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LCOMPLEXITY As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
   id: LINCLUDE_LETTER
@@ -973,12 +824,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_LETTER As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
   id: LINCLUDE_UPPERCASE
@@ -1008,12 +853,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_UPPERCASE As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
   id: LINCLUDE_LOWERCASE
@@ -1043,12 +882,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_LOWERCASE As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
   id: LINCLUDE_NUMBER
@@ -1078,12 +911,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_NUMBER As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
   id: LINCLUDE_SPECIAL_CHARACTER
@@ -1113,12 +940,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_SPECIAL_CHARACTER As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
   commentId: P:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
   id: LCANNOT_CONTAIN_USER_ID
@@ -1148,268 +969,686 @@ items:
       type: System.Boolean
     content.vb: Public Property LCANNOT_CONTAIN_USER_ID As Boolean
   overload: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 references:
 - uid: R_SecurityPolicyCommon.DTOs
   commentId: N:R_SecurityPolicyCommon.DTOs
+  href: R_SecurityPolicyCommon.html
   name: R_SecurityPolicyCommon.DTOs
   nameWithType: R_SecurityPolicyCommon.DTOs
   fullName: R_SecurityPolicyCommon.DTOs
+  spec.csharp:
+  - uid: R_SecurityPolicyCommon
+    name: R_SecurityPolicyCommon
+    href: R_SecurityPolicyCommon.html
+  - name: .
+  - uid: R_SecurityPolicyCommon.DTOs
+    name: DTOs
+    href: R_SecurityPolicyCommon.DTOs.html
+  spec.vb:
+  - uid: R_SecurityPolicyCommon
+    name: R_SecurityPolicyCommon
+    href: R_SecurityPolicyCommon.html
+  - name: .
+  - uid: R_SecurityPolicyCommon.DTOs
+    name: DTOs
+    href: R_SecurityPolicyCommon.DTOs.html
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LACCOUNT_LOCKOUT_THRESHOLD
   name: LACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_THRESHOLD
 - uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IACCOUNT_LOCKOUT_THRESHOLD
   name: IACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_THRESHOLD
 - uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   name: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   name: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LACCOUNT_LOCKOUT_DURATION
   name: LACCOUNT_LOCKOUT_DURATION
   nameWithType: GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LACCOUNT_LOCKOUT_DURATION
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IACCOUNT_LOCKOUT_DURATION
   name: IACCOUNT_LOCKOUT_DURATION
   nameWithType: GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IACCOUNT_LOCKOUT_DURATION
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LMAXIMUM_PASSWORD_AGE
   name: LMAXIMUM_PASSWORD_AGE
   nameWithType: GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMAXIMUM_PASSWORD_AGE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_CMAXIMUM_PASSWORD_AGE_OPTION
   name: CMAXIMUM_PASSWORD_AGE_OPTION
   nameWithType: GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_OPTION
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IMAXIMUM_PASSWORD_AGE_DAYS
   name: IMAXIMUM_PASSWORD_AGE_DAYS
   nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_DAYS
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   name: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IMAXIMUM_PASSWORD_AGE_MONTH
   name: IMAXIMUM_PASSWORD_AGE_MONTH
   nameWithType: GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMAXIMUM_PASSWORD_AGE_MONTH
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   name: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   nameWithType: GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_CNEXT_UPDATE_PASSWORD
   name: CNEXT_UPDATE_PASSWORD
   nameWithType: GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CNEXT_UPDATE_PASSWORD
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_CLAST_UPDATE_PASSWORD
   name: CLAST_UPDATE_PASSWORD
   nameWithType: GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CLAST_UPDATE_PASSWORD
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_CCURRENT_DATE
   name: CCURRENT_DATE
   nameWithType: GetSecurityPolicyDTO.CCURRENT_DATE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CCURRENT_DATE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_CACCOUNT_LOCKOUT_DATE
   name: CACCOUNT_LOCKOUT_DATE
   nameWithType: GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CACCOUNT_LOCKOUT_DATE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_CFAILED_ATTEMPT_DATE
   name: CFAILED_ATTEMPT_DATE
   nameWithType: GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.CFAILED_ATTEMPT_DATE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_NFAILED_ATTEMPT
   name: NFAILED_ATTEMPT
   nameWithType: GetSecurityPolicyDTO.NFAILED_ATTEMPT
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.NFAILED_ATTEMPT
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LMINIMUM_PASSWORD_LENGTH
   name: LMINIMUM_PASSWORD_LENGTH
   nameWithType: GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_LENGTH
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IMINIMUM_PASSWORD_LENGTH
   name: IMINIMUM_PASSWORD_LENGTH
   nameWithType: GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_LENGTH
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LMINIMUM_PASSWORD_AGE
   name: LMINIMUM_PASSWORD_AGE
   nameWithType: GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LMINIMUM_PASSWORD_AGE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IMINIMUM_PASSWORD_AGE
   name: IMINIMUM_PASSWORD_AGE
   nameWithType: GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IMINIMUM_PASSWORD_AGE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LENFORCE_PASSWORD_HISTORY
   name: LENFORCE_PASSWORD_HISTORY
   nameWithType: GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LENFORCE_PASSWORD_HISTORY
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_IENFORCE_PASSWORD_HISTORY
   name: IENFORCE_PASSWORD_HISTORY
   nameWithType: GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.IENFORCE_PASSWORD_HISTORY
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LCOMPLEXITY
   name: LCOMPLEXITY
   nameWithType: GetSecurityPolicyDTO.LCOMPLEXITY
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCOMPLEXITY
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LINCLUDE_LETTER
   name: LINCLUDE_LETTER
   nameWithType: GetSecurityPolicyDTO.LINCLUDE_LETTER
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LETTER
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LINCLUDE_UPPERCASE
   name: LINCLUDE_UPPERCASE
   nameWithType: GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_UPPERCASE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LINCLUDE_LOWERCASE
   name: LINCLUDE_LOWERCASE
   nameWithType: GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_LOWERCASE
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LINCLUDE_NUMBER
   name: LINCLUDE_NUMBER
   nameWithType: GetSecurityPolicyDTO.LINCLUDE_NUMBER
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_NUMBER
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LINCLUDE_SPECIAL_CHARACTER
   name: LINCLUDE_SPECIAL_CHARACTER
   nameWithType: GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LINCLUDE_SPECIAL_CHARACTER
 - uid: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID*
   commentId: Overload:R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
+  href: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.html#R_SecurityPolicyCommon_DTOs_GetSecurityPolicyDTO_LCANNOT_CONTAIN_USER_ID
   name: LCANNOT_CONTAIN_USER_ID
   nameWithType: GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID
   fullName: R_SecurityPolicyCommon.DTOs.GetSecurityPolicyDTO.LCANNOT_CONTAIN_USER_ID

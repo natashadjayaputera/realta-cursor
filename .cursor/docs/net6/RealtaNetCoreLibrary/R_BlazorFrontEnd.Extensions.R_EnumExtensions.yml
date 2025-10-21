@@ -5,8 +5,8 @@ items:
   id: R_EnumExtensions
   parent: R_BlazorFrontEnd.Extensions
   children:
-  - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
-  - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
+  - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(System.Enum)
+  - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Collections.Generic.IEnumerable{``0},System.String)
   - R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum``1(System.String)
   langs:
   - csharp
@@ -27,22 +27,21 @@ items:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd.Extensions
   syntax:
-    content: 'public static class R_EnumExtensions : object'
-    content.vb: >-
-      Public Module R_EnumExtensions
-          Inherits Object
+    content: public static class R_EnumExtensions
+    content.vb: Public Module R_EnumExtensions
   inheritance:
   - System.Object
-  modifiers.csharp:
-  - public
-  - static
-  - class
-  modifiers.vb:
-  - Public
-  - Module
-- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
-  commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
-  id: ToDescription(Enum)
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(System.Enum)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(System.Enum)
+  id: ToDescription(System.Enum)
   isExtensionMethod: true
   parent: R_BlazorFrontEnd.Extensions.R_EnumExtensions
   langs:
@@ -50,7 +49,7 @@ items:
   - vb
   name: ToDescription(Enum)
   nameWithType: R_EnumExtensions.ToDescription(Enum)
-  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(Enum)
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription(System.Enum)
   type: Method
   source:
     remote:
@@ -67,20 +66,11 @@ items:
     content: public static string ToDescription(this Enum val)
     parameters:
     - id: val
-      type: Enum
+      type: System.Enum
     return:
       type: System.String
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function ToDescription(val As  Enum) As String
+    content.vb: Public Shared Function ToDescription(val As [Enum]) As String
   overload: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum``1(System.String)
   commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum``1(System.String)
   id: ToEnum``1(System.String)
@@ -89,9 +79,9 @@ items:
   langs:
   - csharp
   - vb
-  name: ToEnum<T>(String)
-  nameWithType: R_EnumExtensions.ToEnum<T>(String)
-  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum<T>(System.String)
+  name: ToEnum<T>(string)
+  nameWithType: R_EnumExtensions.ToEnum<T>(string)
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum<T>(string)
   type: Method
   source:
     remote:
@@ -105,9 +95,7 @@ items:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd.Extensions
   syntax:
-    content: >-
-      public static T ToEnum<T>(this string description)
-          where T : struct, Enum
+    content: 'public static T ToEnum<T>(this string description) where T : struct, Enum'
     parameters:
     - id: description
       type: System.String
@@ -115,31 +103,22 @@ items:
     - id: T
     return:
       type: '{T}'
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function ToEnum(Of T As {Structure,  Enum})(description As String) As T
+    content.vb: Public Shared Function ToEnum(Of T As {Structure, [Enum]})(description As String) As T
   overload: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum*
   nameWithType.vb: R_EnumExtensions.ToEnum(Of T)(String)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum(Of T)(System.String)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum(Of T)(String)
   name.vb: ToEnum(Of T)(String)
-- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
-  commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
-  id: ToDescriptions``1(System.Nullable{IEnumerable{``0}},System.Nullable{System.String})
+- uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  id: ToDescriptions``1(System.Collections.Generic.IEnumerable{``0},System.String)
   isExtensionMethod: true
   parent: R_BlazorFrontEnd.Extensions.R_EnumExtensions
   langs:
   - csharp
   - vb
-  name: ToDescriptions<TEnum>(Nullable<IEnumerable<TEnum>>, Nullable<String>)
-  nameWithType: R_EnumExtensions.ToDescriptions<TEnum>(Nullable<IEnumerable<TEnum>>, Nullable<String>)
-  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions<TEnum>(System.Nullable<IEnumerable<TEnum>>, System.Nullable<System.String>)
+  name: ToDescriptions<TEnum>(IEnumerable<TEnum>?, string?)
+  nameWithType: R_EnumExtensions.ToDescriptions<TEnum>(IEnumerable<TEnum>?, string?)
+  fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions<TEnum>(System.Collections.Generic.IEnumerable<TEnum>?, string?)
   type: Method
   source:
     remote:
@@ -153,60 +132,309 @@ items:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd.Extensions
   syntax:
-    content: >-
-      public static string ToDescriptions<TEnum>(this IEnumerable<TEnum>? enums, string? separator = null)
-          where TEnum : Enum
+    content: 'public static string ToDescriptions<TEnum>(this IEnumerable<TEnum>? enums, string? separator = ",") where TEnum : Enum'
     parameters:
     - id: enums
-      type: System.Nullable{IEnumerable{{TEnum}}}
+      type: System.Collections.Generic.IEnumerable{{TEnum}}
     - id: separator
-      type: System.Nullable{System.String}
+      type: System.String
     typeParameters:
     - id: TEnum
     return:
       type: System.String
-    content.vb: >-
-      <ExtensionAttribute>
-
-      Public Shared Function ToDescriptions(Of TEnum As  Enum)(enums As IEnumerable(Of TEnum)?, separator As String? = Nothing) As String
+    content.vb: Public Shared Function ToDescriptions(Of TEnum As [Enum])(enums As IEnumerable(Of TEnum), separator As String = ",") As String
   overload: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions*
-  nameWithType.vb: R_EnumExtensions.ToDescriptions(Of TEnum)(Nullable(Of IEnumerable(Of TEnum)), Nullable(Of String))
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions(Of TEnum)(System.Nullable(Of IEnumerable(Of TEnum)), System.Nullable(Of System.String))
-  name.vb: ToDescriptions(Of TEnum)(Nullable(Of IEnumerable(Of TEnum)), Nullable(Of String))
+  nameWithType.vb: R_EnumExtensions.ToDescriptions(Of TEnum)(IEnumerable(Of TEnum), String)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions(Of TEnum)(System.Collections.Generic.IEnumerable(Of TEnum), String)
+  name.vb: ToDescriptions(Of TEnum)(IEnumerable(Of TEnum), String)
 references:
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription*
   commentId: Overload:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription
+  href: R_BlazorFrontEnd.Extensions.R_EnumExtensions.html#R_BlazorFrontEnd_Extensions_R_EnumExtensions_ToDescription_System_Enum_
   name: ToDescription
   nameWithType: R_EnumExtensions.ToDescription
   fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescription
-- uid: Enum
+- uid: System.Enum
+  commentId: T:System.Enum
+  parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.enum
   name: Enum
   nameWithType: Enum
-  fullName: Enum
+  fullName: System.Enum
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum*
   commentId: Overload:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum
+  href: R_BlazorFrontEnd.Extensions.R_EnumExtensions.html#R_BlazorFrontEnd_Extensions_R_EnumExtensions_ToEnum__1_System_String_
   name: ToEnum
   nameWithType: R_EnumExtensions.ToEnum
   fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToEnum
@@ -222,148 +450,101 @@ references:
   fullName: T
 - uid: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions*
   commentId: Overload:R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions
+  href: R_BlazorFrontEnd.Extensions.R_EnumExtensions.html#R_BlazorFrontEnd_Extensions_R_EnumExtensions_ToDescriptions__1_System_Collections_Generic_IEnumerable___0__System_String_
   name: ToDescriptions
   nameWithType: R_EnumExtensions.ToDescriptions
   fullName: R_BlazorFrontEnd.Extensions.R_EnumExtensions.ToDescriptions
-- uid: System.Nullable{IEnumerable{{TEnum}}}
-  commentId: '!:System.Nullable{IEnumerable{``0}}'
-  definition: System.Nullable`1
-  name: Nullable<IEnumerable<TEnum>>
-  nameWithType: Nullable<IEnumerable<TEnum>>
-  fullName: System.Nullable<IEnumerable<TEnum>>
-  nameWithType.vb: Nullable(Of IEnumerable(Of TEnum))
-  fullName.vb: System.Nullable(Of IEnumerable(Of TEnum))
-  name.vb: Nullable(Of IEnumerable(Of TEnum))
+- uid: System.Collections.Generic.IEnumerable{{TEnum}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TEnum>
+  nameWithType: IEnumerable<TEnum>
+  fullName: System.Collections.Generic.IEnumerable<TEnum>
+  nameWithType.vb: IEnumerable(Of TEnum)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TEnum)
+  name.vb: IEnumerable(Of TEnum)
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: IEnumerable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: <
-    nameWithType: <
-    fullName: <
   - name: TEnum
-    nameWithType: TEnum
-    fullName: TEnum
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: IEnumerable
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
   - name: TEnum
-    nameWithType: TEnum
-    fullName: TEnum
   - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Nullable{System.String}
-  commentId: '!:System.Nullable{System.String}'
-  definition: System.Nullable`1
-  name: Nullable<String>
-  nameWithType: Nullable<String>
-  fullName: System.Nullable<System.String>
-  nameWithType.vb: Nullable(Of String)
-  fullName.vb: System.Nullable(Of System.String)
-  name.vb: Nullable(Of String)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Nullable`1
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
-  name: Nullable<>
-  nameWithType: Nullable<>
-  fullName: System.Nullable<>
-  nameWithType.vb: Nullable(Of )
-  fullName.vb: System.Nullable(Of )
-  name.vb: Nullable(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

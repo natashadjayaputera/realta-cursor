@@ -1,0 +1,740 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo
+  id: R_GridMultiHeaderColumnInfo
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  children:
+  - R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn
+  langs:
+  - csharp
+  - vb
+  name: R_GridMultiHeaderColumnInfo
+  nameWithType: R_GridMultiHeaderColumnInfo
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/Columns/ColumnInfo/R_GridMultiHeaderColumnInfo.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_GridMultiHeaderColumnInfo
+    path: Library/R_BlazorFrontEnd.Controls/Grid/Columns/ColumnInfo/R_GridMultiHeaderColumnInfo.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  syntax:
+    content: 'public sealed class R_GridMultiHeaderColumnInfo : R_GridColumnInfo'
+    content.vb: Public NotInheritable Class R_GridMultiHeaderColumnInfo Inherits R_GridColumnInfo
+  inheritance:
+  - System.Object
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  inheritedMembers:
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Id
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Name
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.FieldName
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.HeaderText
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Width
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.GridColumnType
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Enabled
+  - R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Index
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn
+  id: ChildColumn
+  parent: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo
+  langs:
+  - csharp
+  - vb
+  name: ChildColumn
+  nameWithType: R_GridMultiHeaderColumnInfo.ChildColumn
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Grid/Columns/ColumnInfo/R_GridMultiHeaderColumnInfo.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ChildColumn
+    path: Library/R_BlazorFrontEnd.Controls/Grid/Columns/ColumnInfo/R_GridMultiHeaderColumnInfo.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  syntax:
+    content: public List<R_GridColumnInfo> ChildColumn { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo}
+    content.vb: Public Property ChildColumn As List(Of R_GridColumnInfo)
+  overload: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn*
+references:
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  commentId: N:R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  nameWithType: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns
+    name: Columns
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+    name: ColumnInfo
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns
+    name: Columns
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo
+    name: ColumnInfo
+    href: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  parent: R_BlazorFrontEnd.Controls.Grid
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html
+  name: R_GridColumnInfo
+  nameWithType: R_GridColumnInfo
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Id
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_Id
+  name: Id
+  nameWithType: R_GridColumnInfo.Id
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Id
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Name
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Name
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_Name
+  name: Name
+  nameWithType: R_GridColumnInfo.Name
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Name
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.FieldName
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.FieldName
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_FieldName
+  name: FieldName
+  nameWithType: R_GridColumnInfo.FieldName
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.FieldName
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.HeaderText
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.HeaderText
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_HeaderText
+  name: HeaderText
+  nameWithType: R_GridColumnInfo.HeaderText
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.HeaderText
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Width
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Width
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_Width
+  name: Width
+  nameWithType: R_GridColumnInfo.Width
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Width
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.GridColumnType
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.GridColumnType
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_GridColumnType
+  name: GridColumnType
+  nameWithType: R_GridColumnInfo.GridColumnType
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.GridColumnType
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Enabled
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Enabled
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_Enabled
+  name: Enabled
+  nameWithType: R_GridColumnInfo.Enabled
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Enabled
+- uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Index
+  commentId: P:R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Index
+  parent: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+  href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_R_GridColumnInfo_Index
+  name: Index
+  nameWithType: R_GridColumnInfo.Index
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.Index
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Controls.Grid
+  commentId: N:R_BlazorFrontEnd.Controls.Grid
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Grid
+  nameWithType: R_BlazorFrontEnd.Controls.Grid
+  fullName: R_BlazorFrontEnd.Controls.Grid
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn
+  href: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.html#R_BlazorFrontEnd_Controls_Grid_Columns_ColumnInfo_R_GridMultiHeaderColumnInfo_ChildColumn
+  name: ChildColumn
+  nameWithType: R_GridMultiHeaderColumnInfo.ChildColumn
+  fullName: R_BlazorFrontEnd.Controls.Grid.Columns.ColumnInfo.R_GridMultiHeaderColumnInfo.ChildColumn
+- uid: System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo}
+  commentId: T:System.Collections.Generic.List{R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<R_GridColumnInfo>
+  nameWithType: List<R_GridColumnInfo>
+  fullName: System.Collections.Generic.List<R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo>
+  nameWithType.vb: List(Of R_GridColumnInfo)
+  fullName.vb: System.Collections.Generic.List(Of R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo)
+  name.vb: List(Of R_GridColumnInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+    name: R_GridColumnInfo
+    href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo
+    name: R_GridColumnInfo
+    href: R_BlazorFrontEnd.Controls.Grid.R_GridColumnInfo.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

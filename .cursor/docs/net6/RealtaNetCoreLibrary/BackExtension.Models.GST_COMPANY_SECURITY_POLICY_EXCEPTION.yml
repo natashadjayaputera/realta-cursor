@@ -50,20 +50,21 @@ items:
   - BackExtension
   namespace: BackExtension.Models
   syntax:
-    content: 'public class GST_COMPANY_SECURITY_POLICY_EXCEPTION : object'
-    content.vb: >-
-      Public Class GST_COMPANY_SECURITY_POLICY_EXCEPTION
-          Inherits Object
+    content: public class GST_COMPANY_SECURITY_POLICY_EXCEPTION
+    content.vb: Public Class GST_COMPANY_SECURITY_POLICY_EXCEPTION
   inheritance:
   - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
   id: CCOMPANY_ID
@@ -93,12 +94,6 @@ items:
       type: System.String
     content.vb: Public Property CCOMPANY_ID As String
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
   id: LMINIMUM_PASSWORD_LENGTH
@@ -128,12 +123,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LMINIMUM_PASSWORD_LENGTH As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
   id: IMINIMUM_PASSWORD_LENGTH
@@ -163,12 +152,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMINIMUM_PASSWORD_LENGTH As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
   id: LMINIMUM_PASSWORD_AGE
@@ -198,12 +181,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LMINIMUM_PASSWORD_AGE As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
   id: IMINIMUM_PASSWORD_AGE
@@ -233,12 +210,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMINIMUM_PASSWORD_AGE As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
   id: LMAXIMUM_PASSWORD_AGE
@@ -268,12 +239,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LMAXIMUM_PASSWORD_AGE As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
   id: CMAXIMUM_PASSWORD_AGE_OPTION
@@ -303,12 +268,6 @@ items:
       type: System.String
     content.vb: Public Property CMAXIMUM_PASSWORD_AGE_OPTION As String
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
   id: IMAXIMUM_PASSWORD_AGE_DAYS
@@ -338,12 +297,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMAXIMUM_PASSWORD_AGE_DAYS As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   id: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
@@ -373,12 +326,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
   id: IMAXIMUM_PASSWORD_AGE_MONTH
@@ -408,12 +355,6 @@ items:
       type: System.Int32
     content.vb: Public Property IMAXIMUM_PASSWORD_AGE_MONTH As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   id: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
@@ -443,12 +384,6 @@ items:
       type: System.String
     content.vb: Public Property CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE As String
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
   id: LENFORCE_PASSWORD_HISTORY
@@ -478,12 +413,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LENFORCE_PASSWORD_HISTORY As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
   id: IENFORCE_PASSWORD_HISTORY
@@ -513,12 +442,6 @@ items:
       type: System.Int32
     content.vb: Public Property IENFORCE_PASSWORD_HISTORY As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
   id: LCOMPLEXITY
@@ -548,12 +471,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LCOMPLEXITY As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
   id: LINCLUDE_LETTER
@@ -583,12 +500,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_LETTER As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
   id: LINCLUDE_UPPERCASE
@@ -618,12 +529,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_UPPERCASE As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
   id: LINCLUDE_LOWERCASE
@@ -653,12 +558,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_LOWERCASE As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
   id: LINCLUDE_NUMBER
@@ -688,12 +587,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_NUMBER As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
   id: LINCLUDE_SPECIAL_CHARACTER
@@ -723,12 +616,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LINCLUDE_SPECIAL_CHARACTER As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
   id: LCANNOT_CONTAIN_USER_ID
@@ -758,12 +645,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LCANNOT_CONTAIN_USER_ID As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
   id: LACCOUNT_LOCKOUT_DURATION
@@ -793,12 +674,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LACCOUNT_LOCKOUT_DURATION As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
   id: IACCOUNT_LOCKOUT_DURATION
@@ -828,12 +703,6 @@ items:
       type: System.Int32
     content.vb: Public Property IACCOUNT_LOCKOUT_DURATION As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
   id: LACCOUNT_LOCKOUT_THRESHOLD
@@ -863,12 +732,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LACCOUNT_LOCKOUT_THRESHOLD As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
   id: IACCOUNT_LOCKOUT_THRESHOLD
@@ -898,12 +761,6 @@ items:
       type: System.Int32
     content.vb: Public Property IACCOUNT_LOCKOUT_THRESHOLD As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   id: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
@@ -933,12 +790,6 @@ items:
       type: System.Boolean
     content.vb: Public Property LRESET_ACCOUNT_LOCKOUT_THRESHOLD As Boolean
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   commentId: P:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   id: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
@@ -968,243 +819,656 @@ items:
       type: System.Int32
     content.vb: Public Property IRESET_ACCOUNT_LOCKOUT_THRESHOLD As Integer
   overload: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 references:
 - uid: BackExtension.Models
   commentId: N:BackExtension.Models
+  href: BackExtension.html
   name: BackExtension.Models
   nameWithType: BackExtension.Models
   fullName: BackExtension.Models
+  spec.csharp:
+  - uid: BackExtension
+    name: BackExtension
+    href: BackExtension.html
+  - name: .
+  - uid: BackExtension.Models
+    name: Models
+    href: BackExtension.Models.html
+  spec.vb:
+  - uid: BackExtension
+    name: BackExtension
+    href: BackExtension.html
+  - name: .
+  - uid: BackExtension.Models
+    name: Models
+    href: BackExtension.Models.html
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_CCOMPANY_ID
   name: CCOMPANY_ID
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CCOMPANY_ID
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LMINIMUM_PASSWORD_LENGTH
   name: LMINIMUM_PASSWORD_LENGTH
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_LENGTH
 - uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IMINIMUM_PASSWORD_LENGTH
   name: IMINIMUM_PASSWORD_LENGTH
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_LENGTH
 - uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LMINIMUM_PASSWORD_AGE
   name: LMINIMUM_PASSWORD_AGE
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMINIMUM_PASSWORD_AGE
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IMINIMUM_PASSWORD_AGE
   name: IMINIMUM_PASSWORD_AGE
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMINIMUM_PASSWORD_AGE
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LMAXIMUM_PASSWORD_AGE
   name: LMAXIMUM_PASSWORD_AGE
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LMAXIMUM_PASSWORD_AGE
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_CMAXIMUM_PASSWORD_AGE_OPTION
   name: CMAXIMUM_PASSWORD_AGE_OPTION
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_OPTION
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IMAXIMUM_PASSWORD_AGE_DAYS
   name: IMAXIMUM_PASSWORD_AGE_DAYS
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_DAYS
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   name: IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_CERTAIN_DAY_OF_MONTH
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IMAXIMUM_PASSWORD_AGE_MONTH
   name: IMAXIMUM_PASSWORD_AGE_MONTH
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IMAXIMUM_PASSWORD_AGE_MONTH
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   name: CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.CMAXIMUM_PASSWORD_AGE_MONTH_EFFECTIVE_DATE
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LENFORCE_PASSWORD_HISTORY
   name: LENFORCE_PASSWORD_HISTORY
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LENFORCE_PASSWORD_HISTORY
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IENFORCE_PASSWORD_HISTORY
   name: IENFORCE_PASSWORD_HISTORY
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IENFORCE_PASSWORD_HISTORY
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LCOMPLEXITY
   name: LCOMPLEXITY
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCOMPLEXITY
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LINCLUDE_LETTER
   name: LINCLUDE_LETTER
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LETTER
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LINCLUDE_UPPERCASE
   name: LINCLUDE_UPPERCASE
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_UPPERCASE
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LINCLUDE_LOWERCASE
   name: LINCLUDE_LOWERCASE
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_LOWERCASE
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LINCLUDE_NUMBER
   name: LINCLUDE_NUMBER
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_NUMBER
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LINCLUDE_SPECIAL_CHARACTER
   name: LINCLUDE_SPECIAL_CHARACTER
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LINCLUDE_SPECIAL_CHARACTER
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LCANNOT_CONTAIN_USER_ID
   name: LCANNOT_CONTAIN_USER_ID
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LCANNOT_CONTAIN_USER_ID
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LACCOUNT_LOCKOUT_DURATION
   name: LACCOUNT_LOCKOUT_DURATION
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_DURATION
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IACCOUNT_LOCKOUT_DURATION
   name: IACCOUNT_LOCKOUT_DURATION
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_DURATION
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LACCOUNT_LOCKOUT_THRESHOLD
   name: LACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LACCOUNT_LOCKOUT_THRESHOLD
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IACCOUNT_LOCKOUT_THRESHOLD
   name: IACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IACCOUNT_LOCKOUT_THRESHOLD
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   name: LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.LRESET_ACCOUNT_LOCKOUT_THRESHOLD
 - uid: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD*
   commentId: Overload:BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
+  href: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.html#BackExtension_Models_GST_COMPANY_SECURITY_POLICY_EXCEPTION_IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   name: IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   nameWithType: GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD
   fullName: BackExtension.Models.GST_COMPANY_SECURITY_POLICY_EXCEPTION.IRESET_ACCOUNT_LOCKOUT_THRESHOLD

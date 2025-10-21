@@ -134,6 +134,120 @@ public class {ProgramName}Model : R_BusinessObjectServiceClientBase<{ProgramName
 }
 ```
 
+## Template 7: R_ComboBox Pattern (Correct Parameters)
+```razor
+<R_ComboBox Data="@viewModel.DataList"
+            @bind-Value="@viewModel.SelectedValue"
+            ValueField="@nameof(DTO.PropertyName)"
+            TextField="@nameof(DTO.DisplayName)">
+</R_ComboBox>
+```
+
+## Template 8: R_Grid Pattern (Inquiry - No Conductor)
+```razor
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_GridType="@R_eGridType.Original"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+    <R_GridColumns>
+        <R_GridTextColumn FieldName="@nameof(DTO.Property)" HeaderText="Header"></R_GridTextColumn>
+    </R_GridColumns>
+</R_Grid>
+```
+
+## Template 9: R_Grid Pattern (CRUD in Form - With Conductor)
+```razor
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_ConductorSource="@_conductorRef"
+        R_GridType="@R_eGridType.Navigator"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+    <R_GridColumns>
+        <R_GridTextColumn FieldName="@nameof(DTO.Property)" HeaderText="Header"></R_GridTextColumn>
+    </R_GridColumns>
+</R_Grid>
+```
+
+## Template 10: R_Grid Pattern (CRUD in Grid - With ConductorGrid)
+```razor
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_ConductorGridSource="@_conductorGridRef"
+        R_GridType="@R_eGridType.Original"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+    <R_GridColumns>
+        <R_GridTextColumn FieldName="@nameof(DTO.Property)" HeaderText="Header"></R_GridTextColumn>
+    </R_GridColumns>
+</R_Grid>
+```
+
+## Template 12: Exception Handling Pattern
+```csharp
+public async Task MethodName()
+{
+    var loEx = new R_Exception();
+    
+    try
+    {
+        // Your code here
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## Template 13: LostFocus Event Pattern (R_BlazorFrontEnd.Controls)
+```razor
+<!-- R_TextBox -->
+<R_TextBox @bind-Value="@viewModel.FieldValue"
+           OnLostFocused="OnFieldLostFocused"/>
+
+<!-- R_ComboBox -->
+<R_ComboBox Data="@viewModel.DataList"
+            @bind-Value="@viewModel.SelectedValue"
+            ValueField="@nameof(DTO.Code)"
+            TextField="@nameof(DTO.Name)"
+            OnLostFocused="OnComboBoxLostFocused"/>
+
+<!-- R_NumericTextBox -->
+<R_NumericTextBox TValue="int" 
+                  @bind-Value="@viewModel.NumericValue"
+                  OnLostFocused="OnNumericLostFocused"/>
+
+<!-- R_Grid (Cell Events) -->
+<R_Grid DataSource="@viewModel.DataList"
+        R_CellLostFocused="@OnCellLostFocused">
+</R_Grid>
+```
+
+**Event Handler Signatures:**
+```csharp
+// Input components
+public async Task OnFieldLostFocused() { }
+
+// Grid cell events
+public async Task OnCellLostFocused(R_CellLostFocusedEventArgs eventArgs) { }
+```
+
+## Template 13: Warning Handling Report Pattern
+```markdown
+BUILD SUMMARY - Project: {ProjectName}
+✓ Compilation: SUCCESS
+⚠ Warnings: {Count} found
+  - Code Warnings: {Count} (FIXED/NEEDS FIXING)
+  - External Warnings: {Count} (DOCUMENTED)
+  - Infrastructure Warnings: {Count} (ACCEPTABLE)
+
+DETAILED WARNING ANALYSIS:
+- CS####: {Description} - FIXED/NEEDS FIXING
+- NU####: {Description} - External dependency issue, cannot fix
+- MSB####: {Description} - SDK version conflict, acceptable
+```
+
 ---
 
 # NOTE: Copy-paste templates exactly. No variations allowed.

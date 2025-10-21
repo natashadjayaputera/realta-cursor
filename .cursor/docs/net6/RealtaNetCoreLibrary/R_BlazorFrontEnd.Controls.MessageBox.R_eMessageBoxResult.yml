@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  commentId: T:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  id: R_eMessageBoxResult
+  parent: R_BlazorFrontEnd.Controls.MessageBox
+  children:
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Cancel
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.No
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.OK
+  - R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Yes
+  langs:
+  - csharp
+  - vb
+  name: R_eMessageBoxResult
+  nameWithType: R_eMessageBoxResult
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eMessageBoxResult
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 34
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: public enum R_eMessageBoxResult
+    content.vb: Public Enum R_eMessageBoxResult
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.OK
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.OK
+  id: OK
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  langs:
+  - csharp
+  - vb
+  name: OK
+  nameWithType: R_eMessageBoxResult.OK
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.OK
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OK
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 36
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: OK = 1
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Cancel
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Cancel
+  id: Cancel
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  langs:
+  - csharp
+  - vb
+  name: Cancel
+  nameWithType: R_eMessageBoxResult.Cancel
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Cancel
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Cancel
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 37
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: Cancel = 2
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Yes
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Yes
+  id: Yes
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  langs:
+  - csharp
+  - vb
+  name: Yes
+  nameWithType: R_eMessageBoxResult.Yes
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.Yes
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Yes
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 38
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: Yes = 3
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.No
+  commentId: F:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.No
+  id: No
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  langs:
+  - csharp
+  - vb
+  name: No
+  nameWithType: R_eMessageBoxResult.No
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.No
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: No
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 39
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: No = 4
+    return:
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+references:
+- uid: R_BlazorFrontEnd.Controls.MessageBox
+  commentId: N:R_BlazorFrontEnd.Controls.MessageBox
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.MessageBox
+  nameWithType: R_BlazorFrontEnd.Controls.MessageBox
+  fullName: R_BlazorFrontEnd.Controls.MessageBox
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.MessageBox
+    name: MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.MessageBox
+    name: MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.html
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  commentId: T:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+  parent: R_BlazorFrontEnd.Controls.MessageBox
+  href: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.html
+  name: R_eMessageBoxResult
+  nameWithType: R_eMessageBoxResult
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult

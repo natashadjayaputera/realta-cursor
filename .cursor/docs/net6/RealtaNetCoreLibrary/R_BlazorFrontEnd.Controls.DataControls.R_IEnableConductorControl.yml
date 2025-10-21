@@ -1,0 +1,900 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  commentId: T:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  id: R_IEnableConductorControl
+  parent: R_BlazorFrontEnd.Controls.DataControls
+  children:
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID(R_BlazorFrontEnd.Controls.Grid.R_IGrid)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV(R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd(System.Boolean)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit(System.Boolean)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData(System.Boolean)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther(System.Boolean)
+  - R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV(R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: R_IEnableConductorControl
+  nameWithType: R_IEnableConductorControl
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  type: Interface
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_IEnableConductorControl
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: public interface R_IEnableConductorControl
+    content.vb: Public Interface R_IEnableConductorControl
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  id: CollectADD(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: CollectADD(R_IEnableControl)
+  nameWithType: R_IEnableConductorControl.CollectADD(R_IEnableControl)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CollectADD
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: void CollectADD(R_IEnableControl poControl)
+    parameters:
+    - id: poControl
+      type: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+    content.vb: Sub CollectADD(poControl As R_IEnableControl)
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD*
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  id: CollectEDIT(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: CollectEDIT(R_IEnableControl)
+  nameWithType: R_IEnableConductorControl.CollectEDIT(R_IEnableControl)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CollectEDIT
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: void CollectEDIT(R_IEnableControl poControl)
+    parameters:
+    - id: poControl
+      type: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+    content.vb: Sub CollectEDIT(poControl As R_IEnableControl)
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT*
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  id: CollectHASDATA(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: CollectHASDATA(R_IEnableControl)
+  nameWithType: R_IEnableConductorControl.CollectHASDATA(R_IEnableControl)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CollectHASDATA
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: void CollectHASDATA(R_IEnableControl poControl)
+    parameters:
+    - id: poControl
+      type: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+    content.vb: Sub CollectHASDATA(poControl As R_IEnableControl)
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA*
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  id: CollectOTHER(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: CollectOTHER(R_IEnableControl)
+  nameWithType: R_IEnableConductorControl.CollectOTHER(R_IEnableControl)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER(R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CollectOTHER
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: void CollectOTHER(R_IEnableControl poControl)
+    parameters:
+    - id: poControl
+      type: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+    content.vb: Sub CollectOTHER(poControl As R_IEnableControl)
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER*
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID(R_BlazorFrontEnd.Controls.Grid.R_IGrid)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID(R_BlazorFrontEnd.Controls.Grid.R_IGrid)
+  id: CollectGRID(R_BlazorFrontEnd.Controls.Grid.R_IGrid)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: CollectGRID(R_IGrid)
+  nameWithType: R_IEnableConductorControl.CollectGRID(R_IGrid)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID(R_BlazorFrontEnd.Controls.Grid.R_IGrid)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CollectGRID
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: void CollectGRID(R_IGrid poGrid)
+    parameters:
+    - id: poGrid
+      type: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+    content.vb: Sub CollectGRID(poGrid As R_IGrid)
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID*
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV(R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV(R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase)
+  id: CollectUPDSAV(R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: CollectUPDSAV(R_ButtonDataControlBase)
+  nameWithType: R_IEnableConductorControl.CollectUPDSAV(R_ButtonDataControlBase)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV(R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: CollectUPDSAV
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: void CollectUPDSAV(R_ButtonDataControlBase poButtonDataControlBase)
+    parameters:
+    - id: poButtonDataControlBase
+      type: R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase
+    content.vb: Sub CollectUPDSAV(poButtonDataControlBase As R_ButtonDataControlBase)
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV*
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd(System.Boolean)
+  id: SetCollectionAdd(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionAdd(bool)
+  nameWithType: R_IEnableConductorControl.SetCollectionAdd(bool)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd(bool)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetCollectionAdd
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 18
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: Task SetCollectionAdd(bool plStatus)
+    parameters:
+    - id: plStatus
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetCollectionAdd(plStatus As Boolean) As Task
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd*
+  nameWithType.vb: R_IEnableConductorControl.SetCollectionAdd(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd(Boolean)
+  name.vb: SetCollectionAdd(Boolean)
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit(System.Boolean)
+  id: SetCollectionEdit(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionEdit(bool)
+  nameWithType: R_IEnableConductorControl.SetCollectionEdit(bool)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit(bool)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetCollectionEdit
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 19
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: Task SetCollectionEdit(bool plStatus)
+    parameters:
+    - id: plStatus
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetCollectionEdit(plStatus As Boolean) As Task
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit*
+  nameWithType.vb: R_IEnableConductorControl.SetCollectionEdit(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit(Boolean)
+  name.vb: SetCollectionEdit(Boolean)
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData(System.Boolean)
+  id: SetCollectionHasData(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionHasData(bool)
+  nameWithType: R_IEnableConductorControl.SetCollectionHasData(bool)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData(bool)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetCollectionHasData
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 20
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: Task SetCollectionHasData(bool plStatus)
+    parameters:
+    - id: plStatus
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetCollectionHasData(plStatus As Boolean) As Task
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData*
+  nameWithType.vb: R_IEnableConductorControl.SetCollectionHasData(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData(Boolean)
+  name.vb: SetCollectionHasData(Boolean)
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther(System.Boolean)
+  id: SetCollectionOther(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionOther(bool)
+  nameWithType: R_IEnableConductorControl.SetCollectionOther(bool)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther(bool)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetCollectionOther
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 21
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: Task SetCollectionOther(bool plStatus)
+    parameters:
+    - id: plStatus
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetCollectionOther(plStatus As Boolean) As Task
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther*
+  nameWithType.vb: R_IEnableConductorControl.SetCollectionOther(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther(Boolean)
+  name.vb: SetCollectionOther(Boolean)
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV(R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus,System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV(R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus,System.Boolean)
+  id: SetCollectionUPDSAV(R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus,System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl
+  langs:
+  - csharp
+  - vb
+  name: SetCollectionUPDSAV(R_eConductorStatus, bool)
+  nameWithType: R_IEnableConductorControl.SetCollectionUPDSAV(R_eConductorStatus, bool)
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV(R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus, bool)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetCollectionUPDSAV
+    path: Library/R_BlazorFrontEnd.Controls/DataControls/R_IEnableConductorControl.cs
+    startLine: 22
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.DataControls
+  syntax:
+    content: Task SetCollectionUPDSAV(R_eConductorStatus peConductorStatus, bool plHasData)
+    parameters:
+    - id: peConductorStatus
+      type: R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus
+    - id: plHasData
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetCollectionUPDSAV(peConductorStatus As R_eConductorStatus, plHasData As Boolean) As Task
+  overload: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV*
+  nameWithType.vb: R_IEnableConductorControl.SetCollectionUPDSAV(R_eConductorStatus, Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV(R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus, Boolean)
+  name.vb: SetCollectionUPDSAV(R_eConductorStatus, Boolean)
+references:
+- uid: R_BlazorFrontEnd.Controls.DataControls
+  commentId: N:R_BlazorFrontEnd.Controls.DataControls
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.DataControls
+  nameWithType: R_BlazorFrontEnd.Controls.DataControls
+  fullName: R_BlazorFrontEnd.Controls.DataControls
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.DataControls
+    name: DataControls
+    href: R_BlazorFrontEnd.Controls.DataControls.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.DataControls
+    name: DataControls
+    href: R_BlazorFrontEnd.Controls.DataControls.html
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_CollectADD_R_BlazorFrontEnd_Controls_Interfaces_R_IEnableControl_
+  name: CollectADD
+  nameWithType: R_IEnableConductorControl.CollectADD
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectADD
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  commentId: T:R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  parent: R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl.html
+  name: R_IEnableControl
+  nameWithType: R_IEnableControl
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+- uid: R_BlazorFrontEnd.Controls.Interfaces
+  commentId: N:R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Interfaces
+  nameWithType: R_BlazorFrontEnd.Controls.Interfaces
+  fullName: R_BlazorFrontEnd.Controls.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_CollectEDIT_R_BlazorFrontEnd_Controls_Interfaces_R_IEnableControl_
+  name: CollectEDIT
+  nameWithType: R_IEnableConductorControl.CollectEDIT
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectEDIT
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_CollectHASDATA_R_BlazorFrontEnd_Controls_Interfaces_R_IEnableControl_
+  name: CollectHASDATA
+  nameWithType: R_IEnableConductorControl.CollectHASDATA
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectHASDATA
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_CollectOTHER_R_BlazorFrontEnd_Controls_Interfaces_R_IEnableControl_
+  name: CollectOTHER
+  nameWithType: R_IEnableConductorControl.CollectOTHER
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectOTHER
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_CollectGRID_R_BlazorFrontEnd_Controls_Grid_R_IGrid_
+  name: CollectGRID
+  nameWithType: R_IEnableConductorControl.CollectGRID
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectGRID
+- uid: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  commentId: T:R_BlazorFrontEnd.Controls.Grid.R_IGrid
+  parent: R_BlazorFrontEnd.Controls.Grid
+  href: R_BlazorFrontEnd.Controls.Grid.R_IGrid.html
+  name: R_IGrid
+  nameWithType: R_IGrid
+  fullName: R_BlazorFrontEnd.Controls.Grid.R_IGrid
+- uid: R_BlazorFrontEnd.Controls.Grid
+  commentId: N:R_BlazorFrontEnd.Controls.Grid
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Grid
+  nameWithType: R_BlazorFrontEnd.Controls.Grid
+  fullName: R_BlazorFrontEnd.Controls.Grid
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Grid
+    name: Grid
+    href: R_BlazorFrontEnd.Controls.Grid.html
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_CollectUPDSAV_R_BlazorFrontEnd_Controls_Base_R_ButtonDataControlBase_
+  name: CollectUPDSAV
+  nameWithType: R_IEnableConductorControl.CollectUPDSAV
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.CollectUPDSAV
+- uid: R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase
+  parent: R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase.html
+  name: R_ButtonDataControlBase
+  nameWithType: R_ButtonDataControlBase
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ButtonDataControlBase
+- uid: R_BlazorFrontEnd.Controls.Base
+  commentId: N:R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Base
+  nameWithType: R_BlazorFrontEnd.Controls.Base
+  fullName: R_BlazorFrontEnd.Controls.Base
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_SetCollectionAdd_System_Boolean_
+  name: SetCollectionAdd
+  nameWithType: R_IEnableConductorControl.SetCollectionAdd
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionAdd
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_SetCollectionEdit_System_Boolean_
+  name: SetCollectionEdit
+  nameWithType: R_IEnableConductorControl.SetCollectionEdit
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionEdit
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_SetCollectionHasData_System_Boolean_
+  name: SetCollectionHasData
+  nameWithType: R_IEnableConductorControl.SetCollectionHasData
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionHasData
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_SetCollectionOther_System_Boolean_
+  name: SetCollectionOther
+  nameWithType: R_IEnableConductorControl.SetCollectionOther
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionOther
+- uid: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV*
+  commentId: Overload:R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV
+  href: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.html#R_BlazorFrontEnd_Controls_DataControls_R_IEnableConductorControl_SetCollectionUPDSAV_R_BlazorFrontEnd_Controls_Enums_R_eConductorStatus_System_Boolean_
+  name: SetCollectionUPDSAV
+  nameWithType: R_IEnableConductorControl.SetCollectionUPDSAV
+  fullName: R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl.SetCollectionUPDSAV
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus.html
+  name: R_eConductorStatus
+  nameWithType: R_eConductorStatus
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html

@@ -6,8 +6,8 @@ items:
   parent: R_BlazorFrontEnd.Excel
   children:
   - R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
-  - R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
-  - R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  - R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(System.Collections.Generic.List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  - R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
   langs:
   - csharp
   - vb
@@ -27,20 +27,21 @@ items:
   - R_BlazorFrontEnd.Excel
   namespace: R_BlazorFrontEnd.Excel
   syntax:
-    content: 'public class R_Text : object'
-    content.vb: >-
-      Public Class R_Text
-          Inherits Object
+    content: public class R_Text
+    content.vb: Public Class R_Text
   inheritance:
   - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
   commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
   id: R_ReadFromCSV``1(System.Byte[],R_BlazorFrontEnd.Excel.R_TextConfiguration)
@@ -48,9 +49,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_ReadFromCSV<T>(Byte[], R_TextConfiguration)
-  nameWithType: R_Text.R_ReadFromCSV<T>(Byte[], R_TextConfiguration)
-  fullName: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV<T>(System.Byte[], R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  name: R_ReadFromCSV<T>(byte[], R_TextConfiguration?)
+  nameWithType: R_Text.R_ReadFromCSV<T>(byte[], R_TextConfiguration?)
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV<T>(byte[], R_BlazorFrontEnd.Excel.R_TextConfiguration?)
   type: Method
   source:
     remote:
@@ -64,7 +65,7 @@ items:
   - R_BlazorFrontEnd.Excel
   namespace: R_BlazorFrontEnd.Excel
   syntax:
-    content: public static List<T> R_ReadFromCSV<T>(byte[] poFileByte, R_TextConfiguration config = null)
+    content: public static List<T> R_ReadFromCSV<T>(byte[] poFileByte, R_TextConfiguration? config = null)
     parameters:
     - id: poFileByte
       type: System.Byte[]
@@ -73,28 +74,22 @@ items:
     typeParameters:
     - id: T
     return:
-      type: List{{T}}
+      type: System.Collections.Generic.List{{T}}
     content.vb: Public Shared Function R_ReadFromCSV(Of T)(poFileByte As Byte(), config As R_TextConfiguration = Nothing) As List(Of T)
   overload: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV*
   nameWithType.vb: R_Text.R_ReadFromCSV(Of T)(Byte(), R_TextConfiguration)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV(Of T)(System.Byte(), R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV(Of T)(Byte(), R_BlazorFrontEnd.Excel.R_TextConfiguration)
   name.vb: R_ReadFromCSV(Of T)(Byte(), R_TextConfiguration)
-- uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
-  commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
-  id: R_WriteToCSV``1(List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+- uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(System.Collections.Generic.List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(System.Collections.Generic.List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  id: R_WriteToCSV``1(System.Collections.Generic.List{``0},R_BlazorFrontEnd.Excel.R_TextConfiguration)
   parent: R_BlazorFrontEnd.Excel.R_Text
   langs:
   - csharp
   - vb
-  name: R_WriteToCSV<T>(List<T>, R_TextConfiguration)
-  nameWithType: R_Text.R_WriteToCSV<T>(List<T>, R_TextConfiguration)
-  fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV<T>(List<T>, R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  name: R_WriteToCSV<T>(List<T>, R_TextConfiguration?)
+  nameWithType: R_Text.R_WriteToCSV<T>(List<T>, R_TextConfiguration?)
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV<T>(System.Collections.Generic.List<T>, R_BlazorFrontEnd.Excel.R_TextConfiguration?)
   type: Method
   source:
     remote:
@@ -108,10 +103,10 @@ items:
   - R_BlazorFrontEnd.Excel
   namespace: R_BlazorFrontEnd.Excel
   syntax:
-    content: public static byte[] R_WriteToCSV<T>(List<T> poList, R_TextConfiguration config = null)
+    content: public static byte[] R_WriteToCSV<T>(List<T> poList, R_TextConfiguration? config = null)
     parameters:
     - id: poList
-      type: List{{T}}
+      type: System.Collections.Generic.List{{T}}
     - id: config
       type: R_BlazorFrontEnd.Excel.R_TextConfiguration
     typeParameters:
@@ -121,24 +116,18 @@ items:
     content.vb: Public Shared Function R_WriteToCSV(Of T)(poList As List(Of T), config As R_TextConfiguration = Nothing) As Byte()
   overload: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV*
   nameWithType.vb: R_Text.R_WriteToCSV(Of T)(List(Of T), R_TextConfiguration)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV(Of T)(List(Of T), R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV(Of T)(System.Collections.Generic.List(Of T), R_BlazorFrontEnd.Excel.R_TextConfiguration)
   name.vb: R_WriteToCSV(Of T)(List(Of T), R_TextConfiguration)
-- uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
-  commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
-  id: R_WriteToCSV``1(List{``0},List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+- uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  commentId: M:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  id: R_WriteToCSV``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter},R_BlazorFrontEnd.Excel.R_TextConfiguration)
   parent: R_BlazorFrontEnd.Excel.R_Text
   langs:
   - csharp
   - vb
-  name: R_WriteToCSV<T>(List<T>, List<R_DelimiterFieldParameter>, R_TextConfiguration)
-  nameWithType: R_Text.R_WriteToCSV<T>(List<T>, List<R_DelimiterFieldParameter>, R_TextConfiguration)
-  fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV<T>(List<T>, List<R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter>, R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  name: R_WriteToCSV<T>(List<T>, List<R_DelimiterFieldParameter>, R_TextConfiguration?)
+  nameWithType: R_Text.R_WriteToCSV<T>(List<T>, List<R_DelimiterFieldParameter>, R_TextConfiguration?)
+  fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV<T>(System.Collections.Generic.List<T>, System.Collections.Generic.List<R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter>, R_BlazorFrontEnd.Excel.R_TextConfiguration?)
   type: Method
   source:
     remote:
@@ -152,12 +141,12 @@ items:
   - R_BlazorFrontEnd.Excel
   namespace: R_BlazorFrontEnd.Excel
   syntax:
-    content: public static byte[] R_WriteToCSV<T>(List<T> poList, List<R_DelimiterFieldParameter> fieldParameters, R_TextConfiguration config = null)
+    content: public static byte[] R_WriteToCSV<T>(List<T> poList, List<R_DelimiterFieldParameter> fieldParameters, R_TextConfiguration? config = null)
     parameters:
     - id: poList
-      type: List{{T}}
+      type: System.Collections.Generic.List{{T}}
     - id: fieldParameters
-      type: List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}
+      type: System.Collections.Generic.List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}
     - id: config
       type: R_BlazorFrontEnd.Excel.R_TextConfiguration
     typeParameters:
@@ -167,260 +156,638 @@ items:
     content.vb: Public Shared Function R_WriteToCSV(Of T)(poList As List(Of T), fieldParameters As List(Of R_DelimiterFieldParameter), config As R_TextConfiguration = Nothing) As Byte()
   overload: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV*
   nameWithType.vb: R_Text.R_WriteToCSV(Of T)(List(Of T), List(Of R_DelimiterFieldParameter), R_TextConfiguration)
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
-  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV(Of T)(List(Of T), List(Of R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter), R_BlazorFrontEnd.Excel.R_TextConfiguration)
+  fullName.vb: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV(Of T)(System.Collections.Generic.List(Of T), System.Collections.Generic.List(Of R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter), R_BlazorFrontEnd.Excel.R_TextConfiguration)
   name.vb: R_WriteToCSV(Of T)(List(Of T), List(Of R_DelimiterFieldParameter), R_TextConfiguration)
 references:
 - uid: R_BlazorFrontEnd.Excel
   commentId: N:R_BlazorFrontEnd.Excel
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Excel
   nameWithType: R_BlazorFrontEnd.Excel
   fullName: R_BlazorFrontEnd.Excel
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Excel
+    name: Excel
+    href: R_BlazorFrontEnd.Excel.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Excel
+    name: Excel
+    href: R_BlazorFrontEnd.Excel.html
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV*
   commentId: Overload:R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV
+  href: R_BlazorFrontEnd.Excel.R_Text.html#R_BlazorFrontEnd_Excel_R_Text_R_ReadFromCSV__1_System_Byte___R_BlazorFrontEnd_Excel_R_TextConfiguration_
   name: R_ReadFromCSV
   nameWithType: R_Text.R_ReadFromCSV
   fullName: R_BlazorFrontEnd.Excel.R_Text.R_ReadFromCSV
 - uid: System.Byte[]
   isExternal: true
-  name: Byte[]
-  nameWithType: Byte[]
-  fullName: System.Byte[]
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
   nameWithType.vb: Byte()
-  fullName.vb: System.Byte()
+  fullName.vb: Byte()
   name.vb: Byte()
   spec.csharp:
   - uid: System.Byte
-    name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
+    name: byte
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: System.Byte
     name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
 - uid: R_BlazorFrontEnd.Excel.R_TextConfiguration
   commentId: T:R_BlazorFrontEnd.Excel.R_TextConfiguration
   parent: R_BlazorFrontEnd.Excel
+  href: R_BlazorFrontEnd.Excel.R_TextConfiguration.html
   name: R_TextConfiguration
   nameWithType: R_TextConfiguration
   fullName: R_BlazorFrontEnd.Excel.R_TextConfiguration
-- uid: List{{T}}
-  commentId: '!:List{``0}'
-  definition: List`1
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: List<T>
   nameWithType: List<T>
-  fullName: List<T>
+  fullName: System.Collections.Generic.List<T>
   nameWithType.vb: List(Of T)
-  fullName.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
   name.vb: List(Of T)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: List`1
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
   isExternal: true
-  name: List<>
-  nameWithType: List<>
-  fullName: List<>
-  nameWithType.vb: List(Of )
-  fullName.vb: List(Of )
-  name.vb: List(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV*
   commentId: Overload:R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV
+  href: R_BlazorFrontEnd.Excel.R_Text.html#R_BlazorFrontEnd_Excel_R_Text_R_WriteToCSV__1_System_Collections_Generic_List___0__R_BlazorFrontEnd_Excel_R_TextConfiguration_
   name: R_WriteToCSV
   nameWithType: R_Text.R_WriteToCSV
   fullName: R_BlazorFrontEnd.Excel.R_Text.R_WriteToCSV
-- uid: List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}
-  commentId: '!:List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}'
-  definition: List`1
+- uid: System.Collections.Generic.List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}
+  commentId: T:System.Collections.Generic.List{R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: List<R_DelimiterFieldParameter>
   nameWithType: List<R_DelimiterFieldParameter>
-  fullName: List<R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter>
+  fullName: System.Collections.Generic.List<R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter>
   nameWithType.vb: List(Of R_DelimiterFieldParameter)
-  fullName.vb: List(Of R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter)
+  fullName.vb: System.Collections.Generic.List(Of R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter)
   name.vb: List(Of R_DelimiterFieldParameter)
   spec.csharp:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
     name: R_DelimiterFieldParameter
-    nameWithType: R_DelimiterFieldParameter
-    fullName: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
+    href: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter.html
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: List`1
+  - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
     name: R_DelimiterFieldParameter
-    nameWithType: R_DelimiterFieldParameter
-    fullName: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter
+    href: R_BlazorFrontEnd.Excel.R_DelimiterFieldParameter.html
   - name: )
-    nameWithType: )
-    fullName: )

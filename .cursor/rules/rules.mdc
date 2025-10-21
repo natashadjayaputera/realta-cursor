@@ -173,7 +173,95 @@ Frontend:
 - **NEVER:** Comment out code as "fix"
 - **VIOLATIONS:** Maintain code quality standards
 
-## RULE 21: MANDATORY BUILD VALIDATION - NON-NEGOTIABLE
+## RULE 21: R_CONDUCTOR USAGE - CRITICAL DISTINCTION
+**CRITICAL:** R_Conductor is ONLY for CRUD operations, NOT for inquiry programs
+
+### When to Use R_Conductor
+- **CRUD Programs:** Add, Edit, Delete, Save, Cancel operations
+- **GridType.Navigator:** For grids with conductor-driven CRUD
+- **Form Controls:** When you need Add/Edit/Delete buttons
+
+### When NOT to Use R_Conductor
+- **Inquiry Programs:** Read-only data display (like FAI00120)
+- **GridType.Original:** For inquiry-only grids
+- **Simple Forms:** Just displaying and filtering data
+
+### R_Conductor Pattern
+```csharp
+// ONLY for CRUD programs
+<R_Conductor @ref="@_conductorRef"
+             R_ViewModel="@viewModel"
+             R_Display="Conductor_DisplayMethod"
+             R_IsHeader="true"
+             R_ServiceGetRecord="@Conductor_ServiceGetRecord">
+</R_Conductor>
+```
+
+### Inquiry Program Pattern (No Conductor)
+```csharp
+// For inquiry programs - NO R_Conductor needed
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_GridType="@R_eGridType.Original"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+</R_Grid>
+```
+
+**VIOLATIONS:** Using R_Conductor for inquiry programs, using GridType.Navigator without conductor
+
+## RULE 22: WARNING HANDLING - MANDATORY
+**CRITICAL:** Never ignore warnings in projects - address ALL warnings found
+
+### Warning Classification
+- **CODE WARNINGS:** Must be fixed (compiler, nullable, unused variables, etc.)
+- **EXTERNAL WARNINGS:** Document and explain why they cannot be fixed
+- **INFRASTRUCTURE WARNINGS:** Document as acceptable (NuGet connectivity, SDK conflicts)
+
+### Warning Response Protocol
+1. **First:** Identify warning type and source
+2. **Code Warnings:** Fix immediately - no exceptions
+3. **External Warnings:** Document in build report with explanation
+4. **Never:** Claim "warnings are acceptable" without classification
+5. **Always:** Report warning count and types in build summary
+
+## RULE 23: DATA STATE SEPARATION - MANDATORY
+**CRITICAL:** All data state must be in ViewModel, not in Razor.cs code-behind
+
+### State Management Rules
+- **UI State Only in Razor.cs:** Component references (`R_Grid? _gridRef`), UI-specific state
+- **Data State in ViewModel:** All business data, form state, tracking variables
+- **No Data State in Razor.cs:** Never store business data in code-behind
+
+### Correct Pattern
+```csharp
+// Razor.cs - UI state only
+private R_Grid<DTO>? _gridRef;
+private R_TextBox? _txtField;
+
+// ViewModel - All data state
+public string FieldValue { get; set; }
+public bool MustRefresh { get; set; }
+public string LastValue { get; set; }
+```
+
+### Violations
+- ❌ Storing form data in Razor.cs private fields
+- ❌ Business logic state in code-behind
+- ❌ Data tracking variables in Razor.cs
+
+### Build Report Format
+```
+BUILD SUMMARY - Project: {ProjectName}
+✓ Compilation: SUCCESS
+⚠ Warnings: {Count} found
+  - Code Warnings: {Count} (FIXED/NEEDS FIXING)
+  - External Warnings: {Count} (DOCUMENTED)
+  - Infrastructure Warnings: {Count} (ACCEPTABLE)
+```
+
+**VIOLATIONS:** Ignoring warnings, not classifying warning types, claiming "warnings are fine" without analysis
+
+## RULE 23: MANDATORY BUILD VALIDATION - NON-NEGOTIABLE
 **CRITICAL:** After generating/modifying ANY code, ALWAYS build to verify no errors
 
 ### Build Requirements by Project Type
@@ -250,3 +338,130 @@ When rules are violated:
 5. **Ask for user confirmation before proceeding**
 
 **Non-negotiable = NO EXCEPTIONS, NO SHORTCUTS**
+
+## RULE 27: DATA STATE SEPARATION - MANDATORY
+**CRITICAL:** All data state must be in ViewModel, not in Razor.cs code-behind
+
+### State Management Rules
+- **UI State Only in Razor.cs:** Component references (`R_Grid? _gridRef`), UI-specific state
+- **Data State in ViewModel:** All business data, form state, tracking variables
+- **No Data State in Razor.cs:** Never store business data in code-behind
+
+### Correct Pattern
+```csharp
+// Razor.cs - UI state only
+private R_Grid<DTO>? _gridRef;
+private R_TextBox? _txtField;
+
+// ViewModel - All data state
+public string FieldValue { get; set; }
+public bool MustRefresh { get; set; }
+public string LastValue { get; set; }
+```
+
+### Violations
+- ❌ Storing form data in Razor.cs private fields
+- ❌ Business logic state in code-behind
+- ❌ Data tracking variables in Razor.cs
+
+## RULE 28: GRID DATA BINDING PATTERN - MANDATORY
+**CRITICAL:** Grid data must flow through ViewModel properties, not return values
+
+### Correct Data Flow
+1. **Grid requests data** → `R_ServiceGetListRecord` is called
+2. **ViewModel populates property** → `GetDataAsync()` fills `DataList` property
+3. **Grid receives data** → `eventArgs.ListEntityResult = _viewModel.DataList`
+
+### ViewModel Method Pattern
+```csharp
+// ✅ CORRECT - Populate ViewModel property
+public async Task GetDataAsync(FilterRequest poRequest)
+{
+    var loResult = await _model.GetDataAsync(poRequest);
+    if (loResult.Data != null)
+    {
+        DataList.Clear();
+        DataList = new ObservableCollection<DTO>(loResult.Data);
+    }
+}
+
+// ❌ WRONG - Returning data
+public async Task<ObservableCollection<DTO>> GetDataAsync(FilterRequest poRequest)
+{
+    var loResult = await _model.GetDataAsync(poRequest);
+    return new ObservableCollection<DTO>(loResult.Data);
+}
+```
+
+### Grid Service Method Pattern
+```csharp
+// ✅ CORRECT - Assign from ViewModel property
+public async Task R_ServiceGetListRecord(R_ServiceGetListRecordEventArgs eventArgs)
+{
+    var loRequest = new FilterRequest { /* parameters */ };
+    await _viewModel.GetDataAsync(loRequest); // Populates ViewModel property
+    eventArgs.ListEntityResult = _viewModel.DataList; // Assign to grid
+}
+```
+
+### Violations
+- ❌ Returning collections instead of populating properties
+
+## RULE 29: STREAMING CONTEXT OPTIMIZATION - MANDATORY
+**CRITICAL:** Only use streaming context for custom parameters, not system parameters value from ClientHelper
+
+### System Parameters - ClientHelper (Auto-handled)
+- **CCOMPANY_ID:** Available via `R_BackGlobalVar.COMPANY_ID`
+- **CUSER_ID:** Available via `R_BackGlobalVar.USER_ID`
+- **CLANG_ID:** Available via `R_BackGlobalVar.CULTURE`
+
+### Custom Parameters (Use Streaming Context)
+- **CSOFT_PERIOD:** Use `R_Utility.R_GetStreamingContext<string>(ContextConstants.SOFT_PERIOD)`
+- **CTRANSACTION_CODE:** Use `R_Utility.R_GetStreamingContext<string>(ContextConstants.TRANSACTION_CODE)`
+- **CDEPT_CODE:** Use `R_Utility.R_GetStreamingContext<string>(ContextConstants.DEPT_CODE)`
+
+### Correct Pattern
+```csharp
+// Controller - Get system parameters from R_BackGlobalVar
+var lcCompanyId = R_BackGlobalVar.COMPANY_ID;
+var lcUserId = R_BackGlobalVar.USER_ID;
+var lcLangId = R_BackGlobalVar.CULTURE;
+
+// Get custom parameters from streaming context
+var lcSoftPeriod = R_Utility.R_GetStreamingContext<string>(ContextConstants.SOFT_PERIOD);
+var lcTransactionCode = R_Utility.R_GetStreamingContext<string>(ContextConstants.TRANSACTION_CODE);
+```
+
+### Violations
+- ❌ Setting CCOMPANY_ID, CUSER_ID, CLANG_ID in streaming context
+- ❌ Not using ContextConstants for custom parameters
+- ❌ Manual parameter passing instead of R_BackGlobalVar
+
+## RULE 30: BUILD VALIDATION - MANDATORY
+**CRITICAL:** Always build projects after code changes to catch issues immediately
+
+### Build Requirements
+- **All Projects:** Must compile with 0 errors
+- **Warning Classification:** Code warnings must be fixed, external warnings documented
+
+### Build Validation Steps
+1. **After any code change:** Run `dotnet build` on affected projects
+2. **If build fails:** Fix errors immediately before proceeding
+3. **If warnings found:** Classify and address code warnings
+4. **Document external warnings:** Explain why they cannot be fixed
+
+### Build Report Format
+```
+BUILD SUMMARY - Project: {ProjectName}
+✓ Compilation: SUCCESS
+⚠ Warnings: {Count} found
+  - Code Warnings: {Count} (FIXED/NEEDS FIXING)
+  - External Warnings: {Count} (DOCUMENTED)
+  - Infrastructure Warnings: {Count} (ACCEPTABLE)
+```
+
+### Violations
+- ❌ Claiming code is ready without building
+- ❌ Ignoring compilation errors
+- ❌ Not classifying warning types
+- ❌ Proceeding with build failures

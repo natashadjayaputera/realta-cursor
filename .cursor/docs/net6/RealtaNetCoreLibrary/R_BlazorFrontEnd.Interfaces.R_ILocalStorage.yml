@@ -5,16 +5,16 @@ items:
   id: R_ILocalStorage
   parent: R_BlazorFrontEnd.Interfaces
   children:
-  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem``1(System.String)
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync``1(System.String)
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync``1(System.String)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem``1(System.String)
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
-  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem``1(System.String,``0)
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync``1(System.String,``0)
   - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync``1(System.String,``0)
+  - R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem``1(System.String,``0)
   langs:
   - csharp
   - vb
@@ -38,12 +38,7 @@ items:
     content.vb: Public Interface R_ILocalStorage
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync``1(System.String,``0)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync``1(System.String,``0)
   id: SetItemAsync``1(System.String,``0)
@@ -51,9 +46,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SetItemAsync<TValue>(String, TValue)
-  nameWithType: R_ILocalStorage.SetItemAsync<TValue>(String, TValue)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync<TValue>(System.String, TValue)
+  name: SetItemAsync<TValue>(string, TValue)
+  nameWithType: R_ILocalStorage.SetItemAsync<TValue>(string, TValue)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync<TValue>(string, TValue)
   type: Method
   source:
     remote:
@@ -76,11 +71,11 @@ items:
     typeParameters:
     - id: TValue
     return:
-      type: ValueTask
+      type: System.Threading.Tasks.ValueTask
     content.vb: Function SetItemAsync(Of TValue)(pcKey As String, poValue As TValue) As ValueTask
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync*
   nameWithType.vb: R_ILocalStorage.SetItemAsync(Of TValue)(String, TValue)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync(Of TValue)(System.String, TValue)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync(Of TValue)(String, TValue)
   name.vb: SetItemAsync(Of TValue)(String, TValue)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem``1(System.String,``0)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem``1(System.String,``0)
@@ -89,9 +84,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SetItem<TValue>(String, TValue)
-  nameWithType: R_ILocalStorage.SetItem<TValue>(String, TValue)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem<TValue>(System.String, TValue)
+  name: SetItem<TValue>(string, TValue)
+  nameWithType: R_ILocalStorage.SetItem<TValue>(string, TValue)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem<TValue>(string, TValue)
   type: Method
   source:
     remote:
@@ -116,7 +111,7 @@ items:
     content.vb: Sub SetItem(Of TValue)(pcKey As String, poValue As TValue)
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem*
   nameWithType.vb: R_ILocalStorage.SetItem(Of TValue)(String, TValue)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem(Of TValue)(System.String, TValue)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem(Of TValue)(String, TValue)
   name.vb: SetItem(Of TValue)(String, TValue)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync``1(System.String,``0)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync``1(System.String,``0)
@@ -125,9 +120,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SetItemEncryptAsync<TValue>(String, TValue)
-  nameWithType: R_ILocalStorage.SetItemEncryptAsync<TValue>(String, TValue)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync<TValue>(System.String, TValue)
+  name: SetItemEncryptAsync<TValue>(string, TValue)
+  nameWithType: R_ILocalStorage.SetItemEncryptAsync<TValue>(string, TValue)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync<TValue>(string, TValue)
   type: Method
   source:
     remote:
@@ -150,11 +145,11 @@ items:
     typeParameters:
     - id: TValue
     return:
-      type: ValueTask
+      type: System.Threading.Tasks.ValueTask
     content.vb: Function SetItemEncryptAsync(Of TValue)(pcKey As String, poValue As TValue) As ValueTask
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync*
   nameWithType.vb: R_ILocalStorage.SetItemEncryptAsync(Of TValue)(String, TValue)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync(Of TValue)(System.String, TValue)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync(Of TValue)(String, TValue)
   name.vb: SetItemEncryptAsync(Of TValue)(String, TValue)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync``1(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync``1(System.String)
@@ -163,9 +158,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetItemAsync<TValue>(String)
-  nameWithType: R_ILocalStorage.GetItemAsync<TValue>(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync<TValue>(System.String)
+  name: GetItemAsync<TValue>(string)
+  nameWithType: R_ILocalStorage.GetItemAsync<TValue>(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync<TValue>(string)
   type: Method
   source:
     remote:
@@ -186,11 +181,11 @@ items:
     typeParameters:
     - id: TValue
     return:
-      type: ValueTask{{TValue}}
+      type: System.Threading.Tasks.ValueTask{{TValue}}
     content.vb: Function GetItemAsync(Of TValue)(pcKey As String) As ValueTask(Of TValue)
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync*
   nameWithType.vb: R_ILocalStorage.GetItemAsync(Of TValue)(String)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync(Of TValue)(System.String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync(Of TValue)(String)
   name.vb: GetItemAsync(Of TValue)(String)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem``1(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem``1(System.String)
@@ -199,9 +194,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetItem<TValue>(String)
-  nameWithType: R_ILocalStorage.GetItem<TValue>(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem<TValue>(System.String)
+  name: GetItem<TValue>(string)
+  nameWithType: R_ILocalStorage.GetItem<TValue>(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem<TValue>(string)
   type: Method
   source:
     remote:
@@ -226,7 +221,7 @@ items:
     content.vb: Function GetItem(Of TValue)(pcKey As String) As TValue
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem*
   nameWithType.vb: R_ILocalStorage.GetItem(Of TValue)(String)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem(Of TValue)(System.String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem(Of TValue)(String)
   name.vb: GetItem(Of TValue)(String)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync``1(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync``1(System.String)
@@ -235,9 +230,9 @@ items:
   langs:
   - csharp
   - vb
-  name: GetItemEncryptAsync<TValue>(String)
-  nameWithType: R_ILocalStorage.GetItemEncryptAsync<TValue>(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync<TValue>(System.String)
+  name: GetItemEncryptAsync<TValue>(string)
+  nameWithType: R_ILocalStorage.GetItemEncryptAsync<TValue>(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync<TValue>(string)
   type: Method
   source:
     remote:
@@ -258,11 +253,11 @@ items:
     typeParameters:
     - id: TValue
     return:
-      type: ValueTask{{TValue}}
+      type: System.Threading.Tasks.ValueTask{{TValue}}
     content.vb: Function GetItemEncryptAsync(Of TValue)(pcKey As String) As ValueTask(Of TValue)
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync*
   nameWithType.vb: R_ILocalStorage.GetItemEncryptAsync(Of TValue)(String)
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync(Of TValue)(System.String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync(Of TValue)(String)
   name.vb: GetItemEncryptAsync(Of TValue)(String)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
@@ -271,9 +266,9 @@ items:
   langs:
   - csharp
   - vb
-  name: RemoveItemAsync(String)
-  nameWithType: R_ILocalStorage.RemoveItemAsync(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(System.String)
+  name: RemoveItemAsync(string)
+  nameWithType: R_ILocalStorage.RemoveItemAsync(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(string)
   type: Method
   source:
     remote:
@@ -292,9 +287,12 @@ items:
     - id: pcKey
       type: System.String
     return:
-      type: ValueTask
+      type: System.Threading.Tasks.ValueTask
     content.vb: Function RemoveItemAsync(pcKey As String) As ValueTask
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync*
+  nameWithType.vb: R_ILocalStorage.RemoveItemAsync(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync(String)
+  name.vb: RemoveItemAsync(String)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
   id: RemoveItem(System.String)
@@ -302,9 +300,9 @@ items:
   langs:
   - csharp
   - vb
-  name: RemoveItem(String)
-  nameWithType: R_ILocalStorage.RemoveItem(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(System.String)
+  name: RemoveItem(string)
+  nameWithType: R_ILocalStorage.RemoveItem(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(string)
   type: Method
   source:
     remote:
@@ -324,6 +322,9 @@ items:
       type: System.String
     content.vb: Sub RemoveItem(pcKey As String)
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem*
+  nameWithType.vb: R_ILocalStorage.RemoveItem(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem(String)
+  name.vb: RemoveItem(String)
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
   id: RemoveItemsAsync(System.String[])
@@ -331,9 +332,9 @@ items:
   langs:
   - csharp
   - vb
-  name: RemoveItemsAsync(String[])
-  nameWithType: R_ILocalStorage.RemoveItemsAsync(String[])
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String[])
+  name: RemoveItemsAsync(string[])
+  nameWithType: R_ILocalStorage.RemoveItemsAsync(string[])
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(string[])
   type: Method
   source:
     remote:
@@ -352,11 +353,11 @@ items:
     - id: pcKey
       type: System.String[]
     return:
-      type: ValueTask
+      type: System.Threading.Tasks.ValueTask
     content.vb: Function RemoveItemsAsync(pcKey As String()) As ValueTask
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync*
   nameWithType.vb: R_ILocalStorage.RemoveItemsAsync(String())
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(System.String())
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync(String())
   name.vb: RemoveItemsAsync(String())
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
@@ -365,9 +366,9 @@ items:
   langs:
   - csharp
   - vb
-  name: RemoveItems(String[])
-  nameWithType: R_ILocalStorage.RemoveItems(String[])
-  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String[])
+  name: RemoveItems(string[])
+  nameWithType: R_ILocalStorage.RemoveItems(string[])
+  fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(string[])
   type: Method
   source:
     remote:
@@ -388,262 +389,445 @@ items:
     content.vb: Sub RemoveItems(pcKey As String())
   overload: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems*
   nameWithType.vb: R_ILocalStorage.RemoveItems(String())
-  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(System.String())
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems(String())
   name.vb: RemoveItems(String())
 references:
 - uid: R_BlazorFrontEnd.Interfaces
   commentId: N:R_BlazorFrontEnd.Interfaces
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Interfaces
   nameWithType: R_BlazorFrontEnd.Interfaces
   fullName: R_BlazorFrontEnd.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_SetItemAsync__1_System_String___0_
   name: SetItemAsync
   nameWithType: R_ILocalStorage.SetItemAsync
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemAsync
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: '{TValue}'
   commentId: '!:TValue'
   definition: TValue
   name: TValue
   nameWithType: TValue
   fullName: TValue
-- uid: ValueTask
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
   name: ValueTask
   nameWithType: ValueTask
-  fullName: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: TValue
   name: TValue
   nameWithType: TValue
   fullName: TValue
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_SetItem__1_System_String___0_
   name: SetItem
   nameWithType: R_ILocalStorage.SetItem
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItem
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_SetItemEncryptAsync__1_System_String___0_
   name: SetItemEncryptAsync
   nameWithType: R_ILocalStorage.SetItemEncryptAsync
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.SetItemEncryptAsync
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_GetItemAsync__1_System_String_
   name: GetItemAsync
   nameWithType: R_ILocalStorage.GetItemAsync
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemAsync
-- uid: ValueTask{{TValue}}
-  commentId: '!:ValueTask{``0}'
-  definition: ValueTask`1
+- uid: System.Threading.Tasks.ValueTask{{TValue}}
+  commentId: T:System.Threading.Tasks.ValueTask{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
   name: ValueTask<TValue>
   nameWithType: ValueTask<TValue>
-  fullName: ValueTask<TValue>
+  fullName: System.Threading.Tasks.ValueTask<TValue>
   nameWithType.vb: ValueTask(Of TValue)
-  fullName.vb: ValueTask(Of TValue)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TValue)
   name.vb: ValueTask(Of TValue)
   spec.csharp:
-  - uid: ValueTask`1
+  - uid: System.Threading.Tasks.ValueTask`1
     name: ValueTask
-    nameWithType: ValueTask
-    fullName: ValueTask
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
   - name: <
-    nameWithType: <
-    fullName: <
   - name: TValue
-    nameWithType: TValue
-    fullName: TValue
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: ValueTask`1
+  - uid: System.Threading.Tasks.ValueTask`1
     name: ValueTask
-    nameWithType: ValueTask
-    fullName: ValueTask
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
   - name: TValue
-    nameWithType: TValue
-    fullName: TValue
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: ValueTask`1
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
   isExternal: true
-  name: ValueTask<>
-  nameWithType: ValueTask<>
-  fullName: ValueTask<>
-  nameWithType.vb: ValueTask(Of )
-  fullName.vb: ValueTask(Of )
-  name.vb: ValueTask(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
   spec.csharp:
-  - uid: ValueTask`1
+  - uid: System.Threading.Tasks.ValueTask`1
     name: ValueTask
-    nameWithType: ValueTask
-    fullName: ValueTask
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TResult
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: ValueTask`1
+  - uid: System.Threading.Tasks.ValueTask`1
     name: ValueTask
-    nameWithType: ValueTask
-    fullName: ValueTask
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_GetItem__1_System_String_
   name: GetItem
   nameWithType: R_ILocalStorage.GetItem
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItem
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_GetItemEncryptAsync__1_System_String_
   name: GetItemEncryptAsync
   nameWithType: R_ILocalStorage.GetItemEncryptAsync
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.GetItemEncryptAsync
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_RemoveItemAsync_System_String_
   name: RemoveItemAsync
   nameWithType: R_ILocalStorage.RemoveItemAsync
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemAsync
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_RemoveItem_System_String_
   name: RemoveItem
   nameWithType: R_ILocalStorage.RemoveItem
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItem
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_RemoveItemsAsync_System_String___
   name: RemoveItemsAsync
   nameWithType: R_ILocalStorage.RemoveItemsAsync
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItemsAsync
 - uid: System.String[]
   isExternal: true
-  name: String[]
-  nameWithType: String[]
-  fullName: System.String[]
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
   nameWithType.vb: String()
-  fullName.vb: System.String()
+  fullName.vb: String()
   name.vb: String()
   spec.csharp:
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
 - uid: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems*
   commentId: Overload:R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems
+  href: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.html#R_BlazorFrontEnd_Interfaces_R_ILocalStorage_RemoveItems_System_String___
   name: RemoveItems
   nameWithType: R_ILocalStorage.RemoveItems
   fullName: R_BlazorFrontEnd.Interfaces.R_ILocalStorage.RemoveItems

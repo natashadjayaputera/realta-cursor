@@ -60,20 +60,21 @@ items:
   - BackExtension
   namespace: BackExtension.Models
   syntax:
-    content: 'public class SAM_COMPANIES : object'
-    content.vb: >-
-      Public Class SAM_COMPANIES
-          Inherits Object
+    content: public class SAM_COMPANIES
+    content.vb: Public Class SAM_COMPANIES
   inheritance:
   - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
   commentId: P:BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
   id: CCOMPANY_ID
@@ -103,12 +104,6 @@ items:
       type: System.String
     content.vb: Public Property CCOMPANY_ID As String
   overload: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
   commentId: P:BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
   id: CCOMPANY_NAME
@@ -138,12 +133,6 @@ items:
       type: System.String
     content.vb: Public Property CCOMPANY_NAME As String
   overload: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CSMTP_ID
   commentId: P:BackExtension.Models.SAM_COMPANIES.CSMTP_ID
   id: CSMTP_ID
@@ -173,12 +162,6 @@ items:
       type: System.String
     content.vb: Public Property CSMTP_ID As String
   overload: BackExtension.Models.SAM_COMPANIES.CSMTP_ID*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CADDRESS
   commentId: P:BackExtension.Models.SAM_COMPANIES.CADDRESS
   id: CADDRESS
@@ -205,15 +188,9 @@ items:
     content: public string? CADDRESS { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CADDRESS As String?
+      type: System.String
+    content.vb: Public Property CADDRESS As String
   overload: BackExtension.Models.SAM_COMPANIES.CADDRESS*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CZIP_CODE
   commentId: P:BackExtension.Models.SAM_COMPANIES.CZIP_CODE
   id: CZIP_CODE
@@ -240,15 +217,9 @@ items:
     content: public string? CZIP_CODE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CZIP_CODE As String?
+      type: System.String
+    content.vb: Public Property CZIP_CODE As String
   overload: BackExtension.Models.SAM_COMPANIES.CZIP_CODE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CCITY
   commentId: P:BackExtension.Models.SAM_COMPANIES.CCITY
   id: CCITY
@@ -275,15 +246,9 @@ items:
     content: public string? CCITY { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CCITY As String?
+      type: System.String
+    content.vb: Public Property CCITY As String
   overload: BackExtension.Models.SAM_COMPANIES.CCITY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CCOUNTRY
   commentId: P:BackExtension.Models.SAM_COMPANIES.CCOUNTRY
   id: CCOUNTRY
@@ -310,15 +275,9 @@ items:
     content: public string? CCOUNTRY { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CCOUNTRY As String?
+      type: System.String
+    content.vb: Public Property CCOUNTRY As String
   overload: BackExtension.Models.SAM_COMPANIES.CCOUNTRY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CPHONE_1
   commentId: P:BackExtension.Models.SAM_COMPANIES.CPHONE_1
   id: CPHONE_1
@@ -345,15 +304,9 @@ items:
     content: public string? CPHONE_1 { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CPHONE_1 As String?
+      type: System.String
+    content.vb: Public Property CPHONE_1 As String
   overload: BackExtension.Models.SAM_COMPANIES.CPHONE_1*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CPHONE_2
   commentId: P:BackExtension.Models.SAM_COMPANIES.CPHONE_2
   id: CPHONE_2
@@ -380,15 +333,9 @@ items:
     content: public string? CPHONE_2 { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CPHONE_2 As String?
+      type: System.String
+    content.vb: Public Property CPHONE_2 As String
   overload: BackExtension.Models.SAM_COMPANIES.CPHONE_2*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CFAX_NO
   commentId: P:BackExtension.Models.SAM_COMPANIES.CFAX_NO
   id: CFAX_NO
@@ -415,15 +362,9 @@ items:
     content: public string? CFAX_NO { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CFAX_NO As String?
+      type: System.String
+    content.vb: Public Property CFAX_NO As String
   overload: BackExtension.Models.SAM_COMPANIES.CFAX_NO*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CLOB_CODE
   commentId: P:BackExtension.Models.SAM_COMPANIES.CLOB_CODE
   id: CLOB_CODE
@@ -450,15 +391,9 @@ items:
     content: public string? CLOB_CODE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CLOB_CODE As String?
+      type: System.String
+    content.vb: Public Property CLOB_CODE As String
   overload: BackExtension.Models.SAM_COMPANIES.CLOB_CODE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CWEB_SITE
   commentId: P:BackExtension.Models.SAM_COMPANIES.CWEB_SITE
   id: CWEB_SITE
@@ -485,15 +420,9 @@ items:
     content: public string? CWEB_SITE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CWEB_SITE As String?
+      type: System.String
+    content.vb: Public Property CWEB_SITE As String
   overload: BackExtension.Models.SAM_COMPANIES.CWEB_SITE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_NAME
   commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_NAME
   id: CTAX_NAME
@@ -520,15 +449,9 @@ items:
     content: public string? CTAX_NAME { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CTAX_NAME As String?
+      type: System.String
+    content.vb: Public Property CTAX_NAME As String
   overload: BackExtension.Models.SAM_COMPANIES.CTAX_NAME*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
   commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
   id: CTAX_REGISTER_ID
@@ -555,15 +478,9 @@ items:
     content: public string? CTAX_REGISTER_ID { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CTAX_REGISTER_ID As String?
+      type: System.String
+    content.vb: Public Property CTAX_REGISTER_ID As String
   overload: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
   commentId: P:BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
   id: DTAX_REGISTER_DATE
@@ -590,15 +507,9 @@ items:
     content: public DateTime? DTAX_REGISTER_DATE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{DateTime}
-    content.vb: Public Property DTAX_REGISTER_DATE As DateTime?
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property DTAX_REGISTER_DATE As Date?
   overload: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
   commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
   id: CTAX_BUSINESS_TYPE
@@ -625,15 +536,9 @@ items:
     content: public string? CTAX_BUSINESS_TYPE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CTAX_BUSINESS_TYPE As String?
+      type: System.String
+    content.vb: Public Property CTAX_BUSINESS_TYPE As String
   overload: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
   commentId: P:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
   id: CTAX_BUSINESS_NAME
@@ -660,15 +565,9 @@ items:
     content: public string? CTAX_BUSINESS_NAME { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CTAX_BUSINESS_NAME As String?
+      type: System.String
+    content.vb: Public Property CTAX_BUSINESS_NAME As String
   overload: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
   commentId: P:BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
   id: CLOCAL_CURRENCY
@@ -695,15 +594,9 @@ items:
     content: public string? CLOCAL_CURRENCY { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CLOCAL_CURRENCY As String?
+      type: System.String
+    content.vb: Public Property CLOCAL_CURRENCY As String
   overload: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
   commentId: P:BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
   id: CBASE_CURRENCY
@@ -730,15 +623,9 @@ items:
     content: public string? CBASE_CURRENCY { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CBASE_CURRENCY As String?
+      type: System.String
+    content.vb: Public Property CBASE_CURRENCY As String
   overload: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
   commentId: P:BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
   id: OCOMPANY_LOGO
@@ -762,18 +649,12 @@ items:
   - BackExtension
   namespace: BackExtension.Models
   syntax:
-    content: public byte[] OCOMPANY_LOGO { get; set; }
+    content: public byte[]? OCOMPANY_LOGO { get; set; }
     parameters: []
     return:
       type: System.Byte[]
     content.vb: Public Property OCOMPANY_LOGO As Byte()
   overload: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
   commentId: P:BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
   id: CREPORT_CULTURE
@@ -800,15 +681,9 @@ items:
     content: public string? CREPORT_CULTURE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CREPORT_CULTURE As String?
+      type: System.String
+    content.vb: Public Property CREPORT_CULTURE As String
   overload: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
   commentId: P:BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
   id: CNUMBER_FORMAT
@@ -835,15 +710,9 @@ items:
     content: public string? CNUMBER_FORMAT { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CNUMBER_FORMAT As String?
+      type: System.String
+    content.vb: Public Property CNUMBER_FORMAT As String
   overload: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
   commentId: P:BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
   id: CDATE_LONG_FORMAT
@@ -870,15 +739,9 @@ items:
     content: public string? CDATE_LONG_FORMAT { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CDATE_LONG_FORMAT As String?
+      type: System.String
+    content.vb: Public Property CDATE_LONG_FORMAT As String
   overload: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
   commentId: P:BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
   id: CDATE_SHORT_FORMAT
@@ -905,15 +768,9 @@ items:
     content: public string? CDATE_SHORT_FORMAT { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CDATE_SHORT_FORMAT As String?
+      type: System.String
+    content.vb: Public Property CDATE_SHORT_FORMAT As String
   overload: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
   commentId: P:BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
   id: CTIME_LONG_FORMAT
@@ -940,15 +797,9 @@ items:
     content: public string? CTIME_LONG_FORMAT { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CTIME_LONG_FORMAT As String?
+      type: System.String
+    content.vb: Public Property CTIME_LONG_FORMAT As String
   overload: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
   commentId: P:BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
   id: CTIME_SHORT_FORMAT
@@ -975,15 +826,9 @@ items:
     content: public string? CTIME_SHORT_FORMAT { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CTIME_SHORT_FORMAT As String?
+      type: System.String
+    content.vb: Public Property CTIME_SHORT_FORMAT As String
   overload: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
   commentId: P:BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
   id: IDECIMAL_PLACES
@@ -1013,12 +858,6 @@ items:
       type: System.Nullable{System.Int32}
     content.vb: Public Property IDECIMAL_PLACES As Integer?
   overload: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
   commentId: P:BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
   id: IROUNDING_PLACES
@@ -1048,12 +887,6 @@ items:
       type: System.Nullable{System.Int32}
     content.vb: Public Property IROUNDING_PLACES As Integer?
   overload: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
   commentId: P:BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
   id: CROUNDING_METHOD
@@ -1080,15 +913,9 @@ items:
     content: public string? CROUNDING_METHOD { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CROUNDING_METHOD As String?
+      type: System.String
+    content.vb: Public Property CROUNDING_METHOD As String
   overload: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
   commentId: P:BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
   id: LENABLE_SAVE_CONFIRMATION
@@ -1118,12 +945,6 @@ items:
       type: System.Nullable{System.Boolean}
     content.vb: Public Property LENABLE_SAVE_CONFIRMATION As Boolean?
   overload: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
   commentId: P:BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
   id: CUPDATE_BY
@@ -1150,15 +971,9 @@ items:
     content: public string? CUPDATE_BY { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CUPDATE_BY As String?
+      type: System.String
+    content.vb: Public Property CUPDATE_BY As String
   overload: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
   commentId: P:BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
   id: DUPDATE_DATE
@@ -1185,15 +1000,9 @@ items:
     content: public DateTime? DUPDATE_DATE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{DateTime}
-    content.vb: Public Property DUPDATE_DATE As DateTime?
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property DUPDATE_DATE As Date?
   overload: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CCREATE_BY
   commentId: P:BackExtension.Models.SAM_COMPANIES.CCREATE_BY
   id: CCREATE_BY
@@ -1220,15 +1029,9 @@ items:
     content: public string? CCREATE_BY { get; set; }
     parameters: []
     return:
-      type: System.Nullable{System.String}
-    content.vb: Public Property CCREATE_BY As String?
+      type: System.String
+    content.vb: Public Property CCREATE_BY As String
   overload: BackExtension.Models.SAM_COMPANIES.CCREATE_BY*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
   commentId: P:BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
   id: DCREATE_DATE
@@ -1255,15 +1058,9 @@ items:
     content: public DateTime? DCREATE_DATE { get; set; }
     parameters: []
     return:
-      type: System.Nullable{DateTime}
-    content.vb: Public Property DCREATE_DATE As DateTime?
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property DCREATE_DATE As Date?
   overload: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.ITIMEZONE
   commentId: P:BackExtension.Models.SAM_COMPANIES.ITIMEZONE
   id: ITIMEZONE
@@ -1293,12 +1090,6 @@ items:
       type: System.Int32
     content.vb: Public Property ITIMEZONE As Integer
   overload: BackExtension.Models.SAM_COMPANIES.ITIMEZONE*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: BackExtension.Models.SAM_COMPANIES.CTKU
   commentId: P:BackExtension.Models.SAM_COMPANIES.CTKU
   id: CTKU
@@ -1328,524 +1119,825 @@ items:
       type: System.String
     content.vb: Public Property CTKU As String
   overload: BackExtension.Models.SAM_COMPANIES.CTKU*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 references:
 - uid: BackExtension.Models
   commentId: N:BackExtension.Models
+  href: BackExtension.html
   name: BackExtension.Models
   nameWithType: BackExtension.Models
   fullName: BackExtension.Models
+  spec.csharp:
+  - uid: BackExtension
+    name: BackExtension
+    href: BackExtension.html
+  - name: .
+  - uid: BackExtension.Models
+    name: Models
+    href: BackExtension.Models.html
+  spec.vb:
+  - uid: BackExtension
+    name: BackExtension
+    href: BackExtension.html
+  - name: .
+  - uid: BackExtension.Models
+    name: Models
+    href: BackExtension.Models.html
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CCOMPANY_ID
   name: CCOMPANY_ID
   nameWithType: SAM_COMPANIES.CCOMPANY_ID
   fullName: BackExtension.Models.SAM_COMPANIES.CCOMPANY_ID
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CCOMPANY_NAME
   name: CCOMPANY_NAME
   nameWithType: SAM_COMPANIES.CCOMPANY_NAME
   fullName: BackExtension.Models.SAM_COMPANIES.CCOMPANY_NAME
 - uid: BackExtension.Models.SAM_COMPANIES.CSMTP_ID*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CSMTP_ID
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CSMTP_ID
   name: CSMTP_ID
   nameWithType: SAM_COMPANIES.CSMTP_ID
   fullName: BackExtension.Models.SAM_COMPANIES.CSMTP_ID
 - uid: BackExtension.Models.SAM_COMPANIES.CADDRESS*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CADDRESS
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CADDRESS
   name: CADDRESS
   nameWithType: SAM_COMPANIES.CADDRESS
   fullName: BackExtension.Models.SAM_COMPANIES.CADDRESS
-- uid: System.Nullable{System.String}
-  commentId: '!:System.Nullable{System.String}'
-  definition: System.Nullable`1
-  name: Nullable<String>
-  nameWithType: Nullable<String>
-  fullName: System.Nullable<System.String>
-  nameWithType.vb: Nullable(Of String)
-  fullName.vb: System.Nullable(Of System.String)
-  name.vb: Nullable(Of String)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Nullable`1
-  isExternal: true
-  name: Nullable<>
-  nameWithType: Nullable<>
-  fullName: System.Nullable<>
-  nameWithType.vb: Nullable(Of )
-  fullName.vb: System.Nullable(Of )
-  name.vb: Nullable(Of )
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: BackExtension.Models.SAM_COMPANIES.CZIP_CODE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CZIP_CODE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CZIP_CODE
   name: CZIP_CODE
   nameWithType: SAM_COMPANIES.CZIP_CODE
   fullName: BackExtension.Models.SAM_COMPANIES.CZIP_CODE
 - uid: BackExtension.Models.SAM_COMPANIES.CCITY*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCITY
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CCITY
   name: CCITY
   nameWithType: SAM_COMPANIES.CCITY
   fullName: BackExtension.Models.SAM_COMPANIES.CCITY
 - uid: BackExtension.Models.SAM_COMPANIES.CCOUNTRY*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCOUNTRY
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CCOUNTRY
   name: CCOUNTRY
   nameWithType: SAM_COMPANIES.CCOUNTRY
   fullName: BackExtension.Models.SAM_COMPANIES.CCOUNTRY
 - uid: BackExtension.Models.SAM_COMPANIES.CPHONE_1*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CPHONE_1
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CPHONE_1
   name: CPHONE_1
   nameWithType: SAM_COMPANIES.CPHONE_1
   fullName: BackExtension.Models.SAM_COMPANIES.CPHONE_1
 - uid: BackExtension.Models.SAM_COMPANIES.CPHONE_2*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CPHONE_2
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CPHONE_2
   name: CPHONE_2
   nameWithType: SAM_COMPANIES.CPHONE_2
   fullName: BackExtension.Models.SAM_COMPANIES.CPHONE_2
 - uid: BackExtension.Models.SAM_COMPANIES.CFAX_NO*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CFAX_NO
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CFAX_NO
   name: CFAX_NO
   nameWithType: SAM_COMPANIES.CFAX_NO
   fullName: BackExtension.Models.SAM_COMPANIES.CFAX_NO
 - uid: BackExtension.Models.SAM_COMPANIES.CLOB_CODE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CLOB_CODE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CLOB_CODE
   name: CLOB_CODE
   nameWithType: SAM_COMPANIES.CLOB_CODE
   fullName: BackExtension.Models.SAM_COMPANIES.CLOB_CODE
 - uid: BackExtension.Models.SAM_COMPANIES.CWEB_SITE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CWEB_SITE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CWEB_SITE
   name: CWEB_SITE
   nameWithType: SAM_COMPANIES.CWEB_SITE
   fullName: BackExtension.Models.SAM_COMPANIES.CWEB_SITE
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_NAME*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_NAME
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CTAX_NAME
   name: CTAX_NAME
   nameWithType: SAM_COMPANIES.CTAX_NAME
   fullName: BackExtension.Models.SAM_COMPANIES.CTAX_NAME
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CTAX_REGISTER_ID
   name: CTAX_REGISTER_ID
   nameWithType: SAM_COMPANIES.CTAX_REGISTER_ID
   fullName: BackExtension.Models.SAM_COMPANIES.CTAX_REGISTER_ID
 - uid: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_DTAX_REGISTER_DATE
   name: DTAX_REGISTER_DATE
   nameWithType: SAM_COMPANIES.DTAX_REGISTER_DATE
   fullName: BackExtension.Models.SAM_COMPANIES.DTAX_REGISTER_DATE
-- uid: System.Nullable{DateTime}
-  commentId: '!:System.Nullable{DateTime}'
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
   definition: System.Nullable`1
-  name: Nullable<DateTime>
-  nameWithType: Nullable<DateTime>
-  fullName: System.Nullable<DateTime>
-  nameWithType.vb: Nullable(Of DateTime)
-  fullName.vb: System.Nullable(Of DateTime)
-  name.vb: Nullable(Of DateTime)
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
   spec.csharp:
   - uid: System.Nullable`1
     name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - uid: DateTime
-    name: DateTime
-    nameWithType: DateTime
-    fullName: DateTime
-    isExternal: true
+  - name: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Nullable`1
     name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: DateTime
-    name: DateTime
-    nameWithType: DateTime
-    fullName: DateTime
-    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CTAX_BUSINESS_TYPE
   name: CTAX_BUSINESS_TYPE
   nameWithType: SAM_COMPANIES.CTAX_BUSINESS_TYPE
   fullName: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_TYPE
 - uid: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CTAX_BUSINESS_NAME
   name: CTAX_BUSINESS_NAME
   nameWithType: SAM_COMPANIES.CTAX_BUSINESS_NAME
   fullName: BackExtension.Models.SAM_COMPANIES.CTAX_BUSINESS_NAME
 - uid: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CLOCAL_CURRENCY
   name: CLOCAL_CURRENCY
   nameWithType: SAM_COMPANIES.CLOCAL_CURRENCY
   fullName: BackExtension.Models.SAM_COMPANIES.CLOCAL_CURRENCY
 - uid: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CBASE_CURRENCY
   name: CBASE_CURRENCY
   nameWithType: SAM_COMPANIES.CBASE_CURRENCY
   fullName: BackExtension.Models.SAM_COMPANIES.CBASE_CURRENCY
 - uid: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_OCOMPANY_LOGO
   name: OCOMPANY_LOGO
   nameWithType: SAM_COMPANIES.OCOMPANY_LOGO
   fullName: BackExtension.Models.SAM_COMPANIES.OCOMPANY_LOGO
 - uid: System.Byte[]
   isExternal: true
-  name: Byte[]
-  nameWithType: Byte[]
-  fullName: System.Byte[]
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
   nameWithType.vb: Byte()
-  fullName.vb: System.Byte()
+  fullName.vb: Byte()
   name.vb: Byte()
   spec.csharp:
   - uid: System.Byte
-    name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
+    name: byte
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: System.Byte
     name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
 - uid: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CREPORT_CULTURE
   name: CREPORT_CULTURE
   nameWithType: SAM_COMPANIES.CREPORT_CULTURE
   fullName: BackExtension.Models.SAM_COMPANIES.CREPORT_CULTURE
 - uid: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CNUMBER_FORMAT
   name: CNUMBER_FORMAT
   nameWithType: SAM_COMPANIES.CNUMBER_FORMAT
   fullName: BackExtension.Models.SAM_COMPANIES.CNUMBER_FORMAT
 - uid: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CDATE_LONG_FORMAT
   name: CDATE_LONG_FORMAT
   nameWithType: SAM_COMPANIES.CDATE_LONG_FORMAT
   fullName: BackExtension.Models.SAM_COMPANIES.CDATE_LONG_FORMAT
 - uid: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CDATE_SHORT_FORMAT
   name: CDATE_SHORT_FORMAT
   nameWithType: SAM_COMPANIES.CDATE_SHORT_FORMAT
   fullName: BackExtension.Models.SAM_COMPANIES.CDATE_SHORT_FORMAT
 - uid: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CTIME_LONG_FORMAT
   name: CTIME_LONG_FORMAT
   nameWithType: SAM_COMPANIES.CTIME_LONG_FORMAT
   fullName: BackExtension.Models.SAM_COMPANIES.CTIME_LONG_FORMAT
 - uid: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CTIME_SHORT_FORMAT
   name: CTIME_SHORT_FORMAT
   nameWithType: SAM_COMPANIES.CTIME_SHORT_FORMAT
   fullName: BackExtension.Models.SAM_COMPANIES.CTIME_SHORT_FORMAT
 - uid: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_IDECIMAL_PLACES
   name: IDECIMAL_PLACES
   nameWithType: SAM_COMPANIES.IDECIMAL_PLACES
   fullName: BackExtension.Models.SAM_COMPANIES.IDECIMAL_PLACES
 - uid: System.Nullable{System.Int32}
-  commentId: '!:System.Nullable{System.Int32}'
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
   definition: System.Nullable`1
-  name: Nullable<Int32>
-  nameWithType: Nullable<Int32>
-  fullName: System.Nullable<System.Int32>
-  nameWithType.vb: Nullable(Of Int32)
-  fullName.vb: System.Nullable(Of System.Int32)
-  name.vb: Nullable(Of Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: int
     isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
   - uid: System.Int32
-    name: Int32
-    nameWithType: Int32
-    fullName: System.Int32
+    name: Integer
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
 - uid: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_IROUNDING_PLACES
   name: IROUNDING_PLACES
   nameWithType: SAM_COMPANIES.IROUNDING_PLACES
   fullName: BackExtension.Models.SAM_COMPANIES.IROUNDING_PLACES
 - uid: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CROUNDING_METHOD
   name: CROUNDING_METHOD
   nameWithType: SAM_COMPANIES.CROUNDING_METHOD
   fullName: BackExtension.Models.SAM_COMPANIES.CROUNDING_METHOD
 - uid: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_LENABLE_SAVE_CONFIRMATION
   name: LENABLE_SAVE_CONFIRMATION
   nameWithType: SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
   fullName: BackExtension.Models.SAM_COMPANIES.LENABLE_SAVE_CONFIRMATION
 - uid: System.Nullable{System.Boolean}
-  commentId: '!:System.Nullable{System.Boolean}'
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
   definition: System.Nullable`1
-  name: Nullable<Boolean>
-  nameWithType: Nullable<Boolean>
-  fullName: System.Nullable<System.Boolean>
-  nameWithType.vb: Nullable(Of Boolean)
-  fullName.vb: System.Nullable(Of System.Boolean)
-  name.vb: Nullable(Of Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+    name: bool
     isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
   - uid: System.Boolean
     name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
 - uid: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CUPDATE_BY
   name: CUPDATE_BY
   nameWithType: SAM_COMPANIES.CUPDATE_BY
   fullName: BackExtension.Models.SAM_COMPANIES.CUPDATE_BY
 - uid: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_DUPDATE_DATE
   name: DUPDATE_DATE
   nameWithType: SAM_COMPANIES.DUPDATE_DATE
   fullName: BackExtension.Models.SAM_COMPANIES.DUPDATE_DATE
 - uid: BackExtension.Models.SAM_COMPANIES.CCREATE_BY*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CCREATE_BY
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CCREATE_BY
   name: CCREATE_BY
   nameWithType: SAM_COMPANIES.CCREATE_BY
   fullName: BackExtension.Models.SAM_COMPANIES.CCREATE_BY
 - uid: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_DCREATE_DATE
   name: DCREATE_DATE
   nameWithType: SAM_COMPANIES.DCREATE_DATE
   fullName: BackExtension.Models.SAM_COMPANIES.DCREATE_DATE
 - uid: BackExtension.Models.SAM_COMPANIES.ITIMEZONE*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.ITIMEZONE
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_ITIMEZONE
   name: ITIMEZONE
   nameWithType: SAM_COMPANIES.ITIMEZONE
   fullName: BackExtension.Models.SAM_COMPANIES.ITIMEZONE
 - uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
   isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: BackExtension.Models.SAM_COMPANIES.CTKU*
   commentId: Overload:BackExtension.Models.SAM_COMPANIES.CTKU
+  href: BackExtension.Models.SAM_COMPANIES.html#BackExtension_Models_SAM_COMPANIES_CTKU
   name: CTKU
   nameWithType: SAM_COMPANIES.CTKU
   fullName: BackExtension.Models.SAM_COMPANIES.CTKU

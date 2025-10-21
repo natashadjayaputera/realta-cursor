@@ -18,17 +18,36 @@ items:
 references:
 - uid: R_SecurityTokenCommon.DTOs.TokenDTO
   commentId: T:R_SecurityTokenCommon.DTOs.TokenDTO
+  href: R_SecurityTokenCommon.DTOs.TokenDTO.html
   name: TokenDTO
   nameWithType: TokenDTO
   fullName: R_SecurityTokenCommon.DTOs.TokenDTO
 - uid: R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
   commentId: T:R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
   parent: R_SecurityTokenCommon.DTOs
+  href: R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO.html
   name: UpdateRefreshTokenParameterDTO
   nameWithType: UpdateRefreshTokenParameterDTO
   fullName: R_SecurityTokenCommon.DTOs.UpdateRefreshTokenParameterDTO
 - uid: R_SecurityTokenCommon.DTOs
   commentId: N:R_SecurityTokenCommon.DTOs
+  href: R_SecurityTokenCommon.html
   name: R_SecurityTokenCommon.DTOs
   nameWithType: R_SecurityTokenCommon.DTOs
   fullName: R_SecurityTokenCommon.DTOs
+  spec.csharp:
+  - uid: R_SecurityTokenCommon
+    name: R_SecurityTokenCommon
+    href: R_SecurityTokenCommon.html
+  - name: .
+  - uid: R_SecurityTokenCommon.DTOs
+    name: DTOs
+    href: R_SecurityTokenCommon.DTOs.html
+  spec.vb:
+  - uid: R_SecurityTokenCommon
+    name: R_SecurityTokenCommon
+    href: R_SecurityTokenCommon.html
+  - name: .
+  - uid: R_SecurityTokenCommon.DTOs
+    name: DTOs
+    href: R_SecurityTokenCommon.DTOs.html

@@ -1,0 +1,1026 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  commentId: T:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  id: R_AssemblyLoadContext
+  parent: R_BlazorFrontEnd.Controls.Deployment
+  children:
+  - R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.#ctor
+  - R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies
+  - R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose
+  - R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  - R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  - R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies
+  langs:
+  - csharp
+  - vb
+  name: R_AssemblyLoadContext
+  nameWithType: R_AssemblyLoadContext
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_AssemblyLoadContext
+    path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Deployment
+  syntax:
+    content: 'public sealed class R_AssemblyLoadContext : R_IAssemblyLoadContext, IDisposable'
+    content.vb: Public NotInheritable Class R_AssemblyLoadContext Implements R_IAssemblyLoadContext, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.#ctor
+  commentId: M:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.#ctor
+  id: '#ctor'
+  parent: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: R_AssemblyLoadContext()
+  nameWithType: R_AssemblyLoadContext.R_AssemblyLoadContext()
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.R_AssemblyLoadContext()
+  type: Constructor
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: .ctor
+    path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Deployment
+  syntax:
+    content: public R_AssemblyLoadContext()
+    content.vb: Public Sub New()
+  overload: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.#ctor*
+  nameWithType.vb: R_AssemblyLoadContext.New()
+  fullName.vb: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.New()
+  name.vb: New()
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies
+  commentId: P:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies
+  id: OwnAssemblies
+  parent: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: OwnAssemblies
+  nameWithType: R_AssemblyLoadContext.OwnAssemblies
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OwnAssemblies
+    path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+    startLine: 17
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Deployment
+  example: []
+  syntax:
+    content: public ICollection<Assembly> OwnAssemblies { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.Reflection.Assembly}
+    content.vb: Public ReadOnly Property OwnAssemblies As ICollection(Of Assembly)
+  overload: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies*
+  implements:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies
+  commentId: P:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies
+  id: AllAssemblies
+  parent: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: AllAssemblies
+  nameWithType: R_AssemblyLoadContext.AllAssemblies
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AllAssemblies
+    path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+    startLine: 30
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Deployment
+  example: []
+  syntax:
+    content: public ICollection<Assembly> AllAssemblies { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.Reflection.Assembly}
+    content.vb: Public ReadOnly Property AllAssemblies As ICollection(Of Assembly)
+  overload: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies*
+  implements:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose
+  commentId: M:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose
+  id: Dispose
+  parent: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: R_AssemblyLoadContext.Dispose()
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Dispose
+    path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+    startLine: 40
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Deployment
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  commentId: M:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  id: Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  parent: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: Load(AssemblyData)
+  nameWithType: R_AssemblyLoadContext.Load(AssemblyData)
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Load
+    path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+    startLine: 54
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Deployment
+  example: []
+  syntax:
+    content: public Assembly? Load(AssemblyData assemblyData)
+    parameters:
+    - id: assemblyData
+      type: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+    return:
+      type: System.Reflection.Assembly
+    content.vb: Public Function Load(assemblyData As AssemblyData) As Assembly
+  overload: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load*
+  implements:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  commentId: M:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  id: Load(System.Reflection.AssemblyName)
+  parent: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext
+  langs:
+  - csharp
+  - vb
+  name: Load(AssemblyName)
+  nameWithType: R_AssemblyLoadContext.Load(AssemblyName)
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Load
+    path: Library/R_BlazorFrontEnd.Controls/Deployment/R_AssemblyLoadContext.cs
+    startLine: 77
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Deployment
+  example: []
+  syntax:
+    content: public Assembly? Load(AssemblyName assemblyName)
+    parameters:
+    - id: assemblyName
+      type: System.Reflection.AssemblyName
+    return:
+      type: System.Reflection.Assembly
+    content.vb: Public Function Load(assemblyName As AssemblyName) As Assembly
+  overload: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load*
+  implements:
+  - R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(System.Reflection.AssemblyName)
+references:
+- uid: R_BlazorFrontEnd.Controls.Deployment
+  commentId: N:R_BlazorFrontEnd.Controls.Deployment
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Deployment
+  nameWithType: R_BlazorFrontEnd.Controls.Deployment
+  fullName: R_BlazorFrontEnd.Controls.Deployment
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Controls.Deployment.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Controls.Deployment.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  commentId: T:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  parent: R_BlazorFrontEnd.Deployment.Interfaces
+  href: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.html
+  name: R_IAssemblyLoadContext
+  nameWithType: R_IAssemblyLoadContext
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Deployment.Interfaces
+  commentId: N:R_BlazorFrontEnd.Deployment.Interfaces
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Deployment.Interfaces
+  nameWithType: R_BlazorFrontEnd.Deployment.Interfaces
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Deployment.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Deployment.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Deployment.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Deployment.Interfaces.html
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.#ctor*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.#ctor
+  href: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.html#R_BlazorFrontEnd_Controls_Deployment_R_AssemblyLoadContext__ctor
+  name: R_AssemblyLoadContext
+  nameWithType: R_AssemblyLoadContext.R_AssemblyLoadContext
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.R_AssemblyLoadContext
+  nameWithType.vb: R_AssemblyLoadContext.New
+  fullName.vb: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.New
+  name.vb: New
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies
+  href: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.html#R_BlazorFrontEnd_Controls_Deployment_R_AssemblyLoadContext_OwnAssemblies
+  name: OwnAssemblies
+  nameWithType: R_AssemblyLoadContext.OwnAssemblies
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.OwnAssemblies
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+  commentId: P:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  name: OwnAssemblies
+  nameWithType: R_IAssemblyLoadContext.OwnAssemblies
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.OwnAssemblies
+- uid: System.Collections.Generic.ICollection{System.Reflection.Assembly}
+  commentId: T:System.Collections.Generic.ICollection{System.Reflection.Assembly}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<Assembly>
+  nameWithType: ICollection<Assembly>
+  fullName: System.Collections.Generic.ICollection<System.Reflection.Assembly>
+  nameWithType.vb: ICollection(Of Assembly)
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Reflection.Assembly)
+  name.vb: ICollection(Of Assembly)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies
+  href: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.html#R_BlazorFrontEnd_Controls_Deployment_R_AssemblyLoadContext_AllAssemblies
+  name: AllAssemblies
+  nameWithType: R_AssemblyLoadContext.AllAssemblies
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.AllAssemblies
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+  commentId: P:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  name: AllAssemblies
+  nameWithType: R_IAssemblyLoadContext.AllAssemblies
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.AllAssemblies
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose
+  href: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.html#R_BlazorFrontEnd_Controls_Deployment_R_AssemblyLoadContext_Dispose
+  name: Dispose
+  nameWithType: R_AssemblyLoadContext.Dispose
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load
+  href: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.html#R_BlazorFrontEnd_Controls_Deployment_R_AssemblyLoadContext_Load_R_BlazorFrontEnd_Deployment_Models_AssemblyData_
+  name: Load
+  nameWithType: R_AssemblyLoadContext.Load
+  fullName: R_BlazorFrontEnd.Controls.Deployment.R_AssemblyLoadContext.Load
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  name: Load(AssemblyData)
+  nameWithType: R_IAssemblyLoadContext.Load(AssemblyData)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+    name: Load
+  - name: (
+  - uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+    name: AssemblyData
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(R_BlazorFrontEnd.Deployment.Models.AssemblyData)
+    name: Load
+  - name: (
+  - uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+    name: AssemblyData
+  - name: )
+- uid: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  commentId: T:R_BlazorFrontEnd.Deployment.Models.AssemblyData
+  parent: R_BlazorFrontEnd.Deployment.Models
+  href: R_BlazorFrontEnd.Deployment.Models.AssemblyData.html
+  name: AssemblyData
+  nameWithType: AssemblyData
+  fullName: R_BlazorFrontEnd.Deployment.Models.AssemblyData
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: R_BlazorFrontEnd.Deployment.Models
+  commentId: N:R_BlazorFrontEnd.Deployment.Models
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Deployment.Models
+  nameWithType: R_BlazorFrontEnd.Deployment.Models
+  fullName: R_BlazorFrontEnd.Deployment.Models
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Deployment.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment.Models
+    name: Models
+    href: R_BlazorFrontEnd.Deployment.Models.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment
+    name: Deployment
+    href: R_BlazorFrontEnd.Deployment.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Deployment.Models
+    name: Models
+    href: R_BlazorFrontEnd.Deployment.Models.html
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  commentId: M:R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  parent: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname
+  name: Load(AssemblyName)
+  nameWithType: R_IAssemblyLoadContext.Load(AssemblyName)
+  fullName: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(System.Reflection.AssemblyName)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(System.Reflection.AssemblyName)
+    name: Load
+  - name: (
+  - uid: System.Reflection.AssemblyName
+    name: AssemblyName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Deployment.Interfaces.R_IAssemblyLoadContext.Load(System.Reflection.AssemblyName)
+    name: Load
+  - name: (
+  - uid: System.Reflection.AssemblyName
+    name: AssemblyName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname
+  - name: )
+- uid: System.Reflection.AssemblyName
+  commentId: T:System.Reflection.AssemblyName
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assemblyname
+  name: AssemblyName
+  nameWithType: AssemblyName
+  fullName: System.Reflection.AssemblyName

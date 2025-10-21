@@ -1,0 +1,1219 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  commentId: T:R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  id: R_TabProgram
+  parent: R_BlazorFrontEnd.Controls.Menu
+  children:
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title
+  - R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible
+  langs:
+  - csharp
+  - vb
+  name: R_TabProgram
+  nameWithType: R_TabProgram
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_TabProgram
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 5
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public class R_TabProgram
+    content.vb: Public Class R_TabProgram
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id
+  id: Id
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: R_TabProgram.Id
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Id
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 7
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive
+  id: IsActive
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: R_TabProgram.IsActive
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: IsActive
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsActive As Boolean
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title
+  id: Title
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: R_TabProgram.Title
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Title
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 9
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body
+  id: Body
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: Body
+  nameWithType: R_TabProgram.Body
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Body
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public RenderFragment? Body { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Components.RenderFragment
+    content.vb: Public Property Body As RenderFragment
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible
+  id: Visible
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: R_TabProgram.Visible
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Visible
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public bool Visible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Visible As Boolean
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing
+  id: Closing
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: Closing
+  nameWithType: R_TabProgram.Closing
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Closing
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public Func<Task<bool>>? Closing { get; set; }
+    parameters: []
+    return:
+      type: System.Func{System.Threading.Tasks.Task{System.Boolean}}
+    content.vb: Public Property Closing As Func(Of Task(Of Boolean))
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close
+  id: Close
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: Close
+  nameWithType: R_TabProgram.Close
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Close
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 13
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public Func<Task<object?>>? Close { get; set; }
+    parameters: []
+    return:
+      type: System.Func{System.Threading.Tasks.Task{System.Object}}
+    content.vb: Public Property Close As Func(Of Task(Of Object))
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage
+  id: ParentPage
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: ParentPage
+  nameWithType: R_TabProgram.ParentPage
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: ParentPage
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 14
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public R_Page? ParentPage { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.R_Page
+    content.vb: Public Property ParentPage As R_Page
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton
+  id: DetailButton
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: DetailButton
+  nameWithType: R_TabProgram.DetailButton
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: DetailButton
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 15
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public R_IDetail? DetailButton { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.Interfaces.R_IDetail
+    content.vb: Public Property DetailButton As R_IDetail
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock
+  id: PredefinedDock
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: PredefinedDock
+  nameWithType: R_TabProgram.PredefinedDock
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: PredefinedDock
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 16
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public R_PredefinedDock? PredefinedDock { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.R_PredefinedDock
+    content.vb: Public Property PredefinedDock As R_PredefinedDock
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled
+  id: HeaderEnabled
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: HeaderEnabled
+  nameWithType: R_TabProgram.HeaderEnabled
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: HeaderEnabled
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 17
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public bool HeaderEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HeaderEnabled As Boolean
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled*
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel
+  commentId: P:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel
+  id: Cancel
+  parent: R_BlazorFrontEnd.Controls.Menu.R_TabProgram
+  langs:
+  - csharp
+  - vb
+  name: Cancel
+  nameWithType: R_TabProgram.Cancel
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Cancel
+    path: Library/R_BlazorFrontEnd.Controls/Menu/R_TabProgram.cs
+    startLine: 18
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Menu
+  syntax:
+    content: public bool Cancel { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Cancel As Boolean
+  overload: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel*
+references:
+- uid: R_BlazorFrontEnd.Controls.Menu
+  commentId: N:R_BlazorFrontEnd.Controls.Menu
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Menu
+  nameWithType: R_BlazorFrontEnd.Controls.Menu
+  fullName: R_BlazorFrontEnd.Controls.Menu
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Menu
+    name: Menu
+    href: R_BlazorFrontEnd.Controls.Menu.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Menu
+    name: Menu
+    href: R_BlazorFrontEnd.Controls.Menu.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_Id
+  name: Id
+  nameWithType: R_TabProgram.Id
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_IsActive
+  name: IsActive
+  nameWithType: R_TabProgram.IsActive
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_Title
+  name: Title
+  nameWithType: R_TabProgram.Title
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_Body
+  name: Body
+  nameWithType: R_TabProgram.Body
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Body
+- uid: Microsoft.AspNetCore.Components.RenderFragment
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment
+  name: RenderFragment
+  nameWithType: RenderFragment
+  fullName: Microsoft.AspNetCore.Components.RenderFragment
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_Visible
+  name: Visible
+  nameWithType: R_TabProgram.Visible
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Visible
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_Closing
+  name: Closing
+  nameWithType: R_TabProgram.Closing
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Closing
+- uid: System.Func{System.Threading.Tasks.Task{System.Boolean}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{System.Boolean}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task<bool>>
+  nameWithType: Func<Task<bool>>
+  fullName: System.Func<System.Threading.Tasks.Task<bool>>
+  nameWithType.vb: Func(Of Task(Of Boolean))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of Boolean))
+  name.vb: Func(Of Task(Of Boolean))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_Close
+  name: Close
+  nameWithType: R_TabProgram.Close
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Close
+- uid: System.Func{System.Threading.Tasks.Task{System.Object}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{System.Object}}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Task<object>>
+  nameWithType: Func<Task<object>>
+  fullName: System.Func<System.Threading.Tasks.Task<object>>
+  nameWithType.vb: Func(Of Task(Of Object))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of Object))
+  name.vb: Func(Of Task(Of Object))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_ParentPage
+  name: ParentPage
+  nameWithType: R_TabProgram.ParentPage
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.ParentPage
+- uid: R_BlazorFrontEnd.Controls.R_Page
+  commentId: T:R_BlazorFrontEnd.Controls.R_Page
+  parent: R_BlazorFrontEnd.Controls
+  href: R_BlazorFrontEnd.Controls.R_Page.html
+  name: R_Page
+  nameWithType: R_Page
+  fullName: R_BlazorFrontEnd.Controls.R_Page
+- uid: R_BlazorFrontEnd.Controls
+  commentId: N:R_BlazorFrontEnd.Controls
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls
+  nameWithType: R_BlazorFrontEnd.Controls
+  fullName: R_BlazorFrontEnd.Controls
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_DetailButton
+  name: DetailButton
+  nameWithType: R_TabProgram.DetailButton
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.DetailButton
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_IDetail
+  commentId: T:R_BlazorFrontEnd.Controls.Interfaces.R_IDetail
+  parent: R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_IDetail.html
+  name: R_IDetail
+  nameWithType: R_IDetail
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_IDetail
+- uid: R_BlazorFrontEnd.Controls.Interfaces
+  commentId: N:R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Interfaces
+  nameWithType: R_BlazorFrontEnd.Controls.Interfaces
+  fullName: R_BlazorFrontEnd.Controls.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_PredefinedDock
+  name: PredefinedDock
+  nameWithType: R_TabProgram.PredefinedDock
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.PredefinedDock
+- uid: R_BlazorFrontEnd.Controls.R_PredefinedDock
+  commentId: T:R_BlazorFrontEnd.Controls.R_PredefinedDock
+  parent: R_BlazorFrontEnd.Controls
+  href: R_BlazorFrontEnd.Controls.R_PredefinedDock.html
+  name: R_PredefinedDock
+  nameWithType: R_PredefinedDock
+  fullName: R_BlazorFrontEnd.Controls.R_PredefinedDock
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_HeaderEnabled
+  name: HeaderEnabled
+  nameWithType: R_TabProgram.HeaderEnabled
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.HeaderEnabled
+- uid: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel
+  href: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.html#R_BlazorFrontEnd_Controls_Menu_R_TabProgram_Cancel
+  name: Cancel
+  nameWithType: R_TabProgram.Cancel
+  fullName: R_BlazorFrontEnd.Controls.Menu.R_TabProgram.Cancel

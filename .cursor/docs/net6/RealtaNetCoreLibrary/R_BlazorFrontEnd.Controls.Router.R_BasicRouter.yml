@@ -1,0 +1,1322 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  commentId: T:R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  id: R_BasicRouter
+  parent: R_BlazorFrontEnd.Controls.Router
+  children:
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync
+  - R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  langs:
+  - csharp
+  - vb
+  name: R_BasicRouter
+  nameWithType: R_BasicRouter
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_BasicRouter
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 12
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  syntax:
+    content: 'public class R_BasicRouter : IComponent, IHandleAfterRender, IDisposable'
+    content.vb: Public Class R_BasicRouter Implements IComponent, IHandleAfterRender, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent
+  - Microsoft.AspNetCore.Components.IHandleAfterRender
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly
+  commentId: P:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly
+  id: AppAssembly
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: AppAssembly
+  nameWithType: R_BasicRouter.AppAssembly
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AppAssembly
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 26
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public Assembly? AppAssembly { get; set; }
+    parameters: []
+    return:
+      type: System.Reflection.Assembly
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property AppAssembly As Assembly
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies
+  commentId: P:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies
+  id: AdditionalAssemblies
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: AdditionalAssemblies
+  nameWithType: R_BasicRouter.AdditionalAssemblies
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: AdditionalAssemblies
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 27
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  syntax:
+    content: >-
+      [Parameter]
+
+      public IEnumerable<Assembly> AdditionalAssemblies { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+    content.vb: >-
+      <Parameter>
+
+      Public Property AdditionalAssemblies As IEnumerable(Of Assembly)
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound
+  commentId: P:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound
+  id: NotFound
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: NotFound
+  nameWithType: R_BasicRouter.NotFound
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: NotFound
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 28
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public RenderFragment NotFound { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Components.RenderFragment
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property NotFound As RenderFragment
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found
+  commentId: P:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found
+  id: Found
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: Found
+  nameWithType: R_BasicRouter.Found
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found
+  type: Property
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Found
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 29
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  syntax:
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public RenderFragment<RouteData> Found { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Components.RenderFragment{Microsoft.AspNetCore.Components.RouteData}
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property Found As RenderFragment(Of RouteData)
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  commentId: M:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  id: Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: Attach(RenderHandle)
+  nameWithType: R_BasicRouter.Attach(RenderHandle)
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Attach
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 31
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  summary: Attaches the component to a <xref href="Microsoft.AspNetCore.Components.RenderHandle" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Attach(RenderHandle renderHandle)
+    parameters:
+    - id: renderHandle
+      type: Microsoft.AspNetCore.Components.RenderHandle
+      description: A <xref href="Microsoft.AspNetCore.Components.RenderHandle" data-throw-if-not-resolved="false"></xref> that allows the component to be rendered.
+    content.vb: Public Sub Attach(renderHandle As RenderHandle)
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach*
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  id: SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: SetParametersAsync(ParameterView)
+  nameWithType: R_BasicRouter.SetParametersAsync(ParameterView)
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: SetParametersAsync
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 38
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  summary: Sets parameters supplied by the component's parent in the render tree.
+  remarks: >-
+    The <xref href="Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)" data-throw-if-not-resolved="false"></xref> method should be passed the entire set of parameter values each
+
+    time <xref href="Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)" data-throw-if-not-resolved="false"></xref> is called. It not required that the caller supply a parameter
+
+    value for all parameters that are logically understood by the component.
+  example: []
+  syntax:
+    content: public Task SetParametersAsync(ParameterView parameters)
+    parameters:
+    - id: parameters
+      type: Microsoft.AspNetCore.Components.ParameterView
+      description: The parameters.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that completes when the component has finished updating and rendering itself.
+    content.vb: Public Function SetParametersAsync(parameters As ParameterView) As Task
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync*
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync
+  id: OnAfterRenderAsync
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: OnAfterRenderAsync()
+  nameWithType: R_BasicRouter.OnAfterRenderAsync()
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OnAfterRenderAsync
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 78
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  summary: Notifies the component that it has been rendered.
+  example: []
+  syntax:
+    content: public Task OnAfterRenderAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that represents the asynchronous event handling operation.
+    content.vb: Public Function OnAfterRenderAsync() As Task
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync*
+  implements:
+  - Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose
+  commentId: M:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose
+  id: Dispose
+  parent: R_BlazorFrontEnd.Controls.Router.R_BasicRouter
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: R_BasicRouter.Dispose()
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Dispose
+    path: Library/R_BlazorFrontEnd.Controls/Router/R_BasicRouter.cs
+    startLine: 89
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Router
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: R_BlazorFrontEnd.Controls.Router
+  commentId: N:R_BlazorFrontEnd.Controls.Router
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Router
+  nameWithType: R_BlazorFrontEnd.Controls.Router
+  fullName: R_BlazorFrontEnd.Controls.Router
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Router
+    name: Router
+    href: R_BlazorFrontEnd.Controls.Router.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Router
+    name: Router
+    href: R_BlazorFrontEnd.Controls.Router.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Components.IComponent
+  commentId: T:Microsoft.AspNetCore.Components.IComponent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Microsoft.AspNetCore.Components.IComponent
+- uid: Microsoft.AspNetCore.Components.IHandleAfterRender
+  commentId: T:Microsoft.AspNetCore.Components.IHandleAfterRender
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender
+  name: IHandleAfterRender
+  nameWithType: IHandleAfterRender
+  fullName: Microsoft.AspNetCore.Components.IHandleAfterRender
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_AppAssembly
+  name: AppAssembly
+  nameWithType: R_BasicRouter.AppAssembly
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AppAssembly
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_AdditionalAssemblies
+  name: AdditionalAssemblies
+  nameWithType: R_BasicRouter.AdditionalAssemblies
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.AdditionalAssemblies
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Assembly>
+  nameWithType: IEnumerable<Assembly>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.Assembly>
+  nameWithType.vb: IEnumerable(Of Assembly)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly)
+  name.vb: IEnumerable(Of Assembly)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_NotFound
+  name: NotFound
+  nameWithType: R_BasicRouter.NotFound
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.NotFound
+- uid: Microsoft.AspNetCore.Components.RenderFragment
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment
+  name: RenderFragment
+  nameWithType: RenderFragment
+  fullName: Microsoft.AspNetCore.Components.RenderFragment
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_Found
+  name: Found
+  nameWithType: R_BasicRouter.Found
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Found
+- uid: Microsoft.AspNetCore.Components.RenderFragment{Microsoft.AspNetCore.Components.RouteData}
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment{Microsoft.AspNetCore.Components.RouteData}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.RenderFragment`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  name: RenderFragment<RouteData>
+  nameWithType: RenderFragment<RouteData>
+  fullName: Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>
+  nameWithType.vb: RenderFragment(Of RouteData)
+  fullName.vb: Microsoft.AspNetCore.Components.RenderFragment(Of Microsoft.AspNetCore.Components.RouteData)
+  name.vb: RenderFragment(Of RouteData)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
+    name: RenderFragment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Components.RouteData
+    name: RouteData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.routedata
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
+    name: RenderFragment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Components.RouteData
+    name: RouteData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.routedata
+  - name: )
+- uid: Microsoft.AspNetCore.Components.RenderFragment`1
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  name: RenderFragment<TValue>
+  nameWithType: RenderFragment<TValue>
+  fullName: Microsoft.AspNetCore.Components.RenderFragment<TValue>
+  nameWithType.vb: RenderFragment(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Components.RenderFragment(Of TValue)
+  name.vb: RenderFragment(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
+    name: RenderFragment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
+    name: RenderFragment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Microsoft.AspNetCore.Components.RenderHandle
+  commentId: T:Microsoft.AspNetCore.Components.RenderHandle
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderhandle
+  name: RenderHandle
+  nameWithType: RenderHandle
+  fullName: Microsoft.AspNetCore.Components.RenderHandle
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_Attach_Microsoft_AspNetCore_Components_RenderHandle_
+  name: Attach
+  nameWithType: R_BasicRouter.Attach
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Attach
+- uid: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  commentId: M:Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  parent: Microsoft.AspNetCore.Components.IComponent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.attach
+  name: Attach(RenderHandle)
+  nameWithType: IComponent.Attach(RenderHandle)
+  fullName: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+    name: Attach
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.attach
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.RenderHandle
+    name: RenderHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderhandle
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+    name: Attach
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.attach
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.RenderHandle
+    name: RenderHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderhandle
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  parent: Microsoft.AspNetCore.Components.IComponent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.setparametersasync
+  name: SetParametersAsync(ParameterView)
+  nameWithType: IComponent.SetParametersAsync(ParameterView)
+  fullName: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
+  name: SetParametersAsync
+  nameWithType: R_BasicRouter.SetParametersAsync
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.SetParametersAsync
+- uid: Microsoft.AspNetCore.Components.ParameterView
+  commentId: T:Microsoft.AspNetCore.Components.ParameterView
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  name: ParameterView
+  nameWithType: ParameterView
+  fullName: Microsoft.AspNetCore.Components.ParameterView
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_OnAfterRenderAsync
+  name: OnAfterRenderAsync
+  nameWithType: R_BasicRouter.OnAfterRenderAsync
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.OnAfterRenderAsync
+- uid: Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync
+  commentId: M:Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync
+  parent: Microsoft.AspNetCore.Components.IHandleAfterRender
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender.onafterrenderasync
+  name: OnAfterRenderAsync()
+  nameWithType: IHandleAfterRender.OnAfterRenderAsync()
+  fullName: Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync
+    name: OnAfterRenderAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender.onafterrenderasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync
+    name: OnAfterRenderAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender.onafterrenderasync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose*
+  commentId: Overload:R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose
+  href: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.html#R_BlazorFrontEnd_Controls_Router_R_BasicRouter_Dispose
+  name: Dispose
+  nameWithType: R_BasicRouter.Dispose
+  fullName: R_BlazorFrontEnd.Controls.Router.R_BasicRouter.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

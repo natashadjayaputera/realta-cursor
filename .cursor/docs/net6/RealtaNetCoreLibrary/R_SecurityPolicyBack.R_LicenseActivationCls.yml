@@ -26,19 +26,18 @@ items:
   - R_SecurityPolicyBack
   namespace: R_SecurityPolicyBack
   syntax:
-    content: 'public static class R_LicenseActivationCls : object'
-    content.vb: >-
-      Public Module R_LicenseActivationCls
-          Inherits Object
+    content: public static class R_LicenseActivationCls
+    content.vb: Public Module R_LicenseActivationCls
   inheritance:
   - System.Object
-  modifiers.csharp:
-  - public
-  - static
-  - class
-  modifiers.vb:
-  - Public
-  - Module
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
   commentId: M:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
   id: R_CheckLicenseAsync(R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO)
@@ -67,15 +66,9 @@ items:
     - id: poParameter
       type: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
     return:
-      type: Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
+      type: System.Threading.Tasks.Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
     content.vb: Public Shared Function R_CheckLicenseAsync(poParameter As CheckLicenseParameterDTO) As Task(Of R_LicenseActivationResponse)
   overload: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
   commentId: M:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
   id: R_CheckActivationAsync(R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO)
@@ -104,129 +97,394 @@ items:
     - id: poParameter
       type: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
     return:
-      type: Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
+      type: System.Threading.Tasks.Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
     content.vb: Public Shared Function R_CheckActivationAsync(poParameter As CheckActivationParameterDTO) As Task(Of R_LicenseActivationResponse)
   overload: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 references:
 - uid: R_SecurityPolicyBack
   commentId: N:R_SecurityPolicyBack
+  href: R_SecurityPolicyBack.html
   name: R_SecurityPolicyBack
   nameWithType: R_SecurityPolicyBack
   fullName: R_SecurityPolicyBack
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync*
   commentId: Overload:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync
+  href: R_SecurityPolicyBack.R_LicenseActivationCls.html#R_SecurityPolicyBack_R_LicenseActivationCls_R_CheckLicenseAsync_R_SecurityPolicyCommon_DTOs_CheckLicenseParameterDTO_
   name: R_CheckLicenseAsync
   nameWithType: R_LicenseActivationCls.R_CheckLicenseAsync
   fullName: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckLicenseAsync
 - uid: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
   commentId: T:R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
   parent: R_SecurityPolicyCommon.DTOs
+  href: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO.html
   name: CheckLicenseParameterDTO
   nameWithType: CheckLicenseParameterDTO
   fullName: R_SecurityPolicyCommon.DTOs.CheckLicenseParameterDTO
-- uid: Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
-  commentId: '!:Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}'
-  definition: Task`1
+- uid: System.Threading.Tasks.Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
+  commentId: T:System.Threading.Tasks.Task{R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   name: Task<R_LicenseActivationResponse>
   nameWithType: Task<R_LicenseActivationResponse>
-  fullName: Task<R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse>
+  fullName: System.Threading.Tasks.Task<R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse>
   nameWithType.vb: Task(Of R_LicenseActivationResponse)
-  fullName.vb: Task(Of R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse)
   name.vb: Task(Of R_LicenseActivationResponse)
   spec.csharp:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
     name: R_LicenseActivationResponse
-    nameWithType: R_LicenseActivationResponse
-    fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: Task`1
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
     name: R_LicenseActivationResponse
-    nameWithType: R_LicenseActivationResponse
-    fullName: R_SecurityPolicyCommon.Responses.R_LicenseActivationResponse
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_SecurityPolicyCommon.DTOs
   commentId: N:R_SecurityPolicyCommon.DTOs
+  href: R_SecurityPolicyCommon.html
   name: R_SecurityPolicyCommon.DTOs
   nameWithType: R_SecurityPolicyCommon.DTOs
   fullName: R_SecurityPolicyCommon.DTOs
-- uid: Task`1
-  isExternal: true
-  name: Task<>
-  nameWithType: Task<>
-  fullName: Task<>
-  nameWithType.vb: Task(Of )
-  fullName.vb: Task(Of )
-  name.vb: Task(Of )
   spec.csharp:
-  - uid: Task`1
-    name: Task
-    nameWithType: Task
-    fullName: Task
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
+  - uid: R_SecurityPolicyCommon
+    name: R_SecurityPolicyCommon
+    href: R_SecurityPolicyCommon.html
+  - name: .
+  - uid: R_SecurityPolicyCommon.DTOs
+    name: DTOs
+    href: R_SecurityPolicyCommon.DTOs.html
   spec.vb:
-  - uid: Task`1
+  - uid: R_SecurityPolicyCommon
+    name: R_SecurityPolicyCommon
+    href: R_SecurityPolicyCommon.html
+  - name: .
+  - uid: R_SecurityPolicyCommon.DTOs
+    name: DTOs
+    href: R_SecurityPolicyCommon.DTOs.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
     name: Task
-    nameWithType: Task
-    fullName: Task
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync*
   commentId: Overload:R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync
+  href: R_SecurityPolicyBack.R_LicenseActivationCls.html#R_SecurityPolicyBack_R_LicenseActivationCls_R_CheckActivationAsync_R_SecurityPolicyCommon_DTOs_CheckActivationParameterDTO_
   name: R_CheckActivationAsync
   nameWithType: R_LicenseActivationCls.R_CheckActivationAsync
   fullName: R_SecurityPolicyBack.R_LicenseActivationCls.R_CheckActivationAsync
 - uid: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
   commentId: T:R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO
   parent: R_SecurityPolicyCommon.DTOs
+  href: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO.html
   name: CheckActivationParameterDTO
   nameWithType: CheckActivationParameterDTO
   fullName: R_SecurityPolicyCommon.DTOs.CheckActivationParameterDTO

@@ -1,0 +1,2673 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  commentId: T:R_BlazorFrontEnd.Controls.R_TimePicker`1
+  id: R_TimePicker`1
+  parent: R_BlazorFrontEnd.Controls
+  children:
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.ClassName
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.FocusAsync
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.Format
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.Id
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.OnInitialized
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.ShowTimePickerButton
+  - R_BlazorFrontEnd.Controls.R_TimePicker`1.TimePickerFormat
+  langs:
+  - csharp
+  - vb
+  name: R_TimePicker<TValue>
+  nameWithType: R_TimePicker<TValue>
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>
+  type: Class
+  source:
+    id: R_TimePicker
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 172
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: 'public class R_TimePicker<TValue> : R_DateInputComponentBase<TValue>, IComponent, IHandleEvent, IHandleAfterRender, IAsyncDisposable, R_IEnableControl, R_IConductorControl'
+    typeParameters:
+    - id: TValue
+    content.vb: Public Class R_TimePicker(Of TValue) Inherits R_DateInputComponentBase(Of TValue) Implements IComponent, IHandleEvent, IHandleAfterRender, IAsyncDisposable, R_IEnableControl, R_IConductorControl
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Components.ComponentBase
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  - R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}
+  - R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent
+  - Microsoft.AspNetCore.Components.IHandleEvent
+  - Microsoft.AspNetCore.Components.IHandleAfterRender
+  - System.IAsyncDisposable
+  - R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  - R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl
+  inheritedMembers:
+  - R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Width
+  - R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.ShowClearButton
+  - R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Min
+  - R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Max
+  - R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Placeholder
+  - R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.DebounceDelay
+  - R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.FieldName
+  - R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.ShowValidation
+  - R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.FloatingLabel
+  - R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.Label
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.Value
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnChanged
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ValueChanged
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnLostFocused
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ValueExpression
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ReadOnly
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.AutoComplete
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}._page
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnChangedHandler(System.Object)
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ValueChangedHandler({TValue})
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnLostFocusedHandler
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_ConductorSource
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_ConductorGridSource
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableAdd
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableEdit
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableOther
+  - R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableHasData
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+  - R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+  - R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+  - Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  - Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  - Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  nameWithType.vb: R_TimePicker(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue)
+  name.vb: R_TimePicker(Of TValue)
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:R_BlazorFrontEnd.Controls.R_TimePicker`1.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  id: BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: R_TimePicker<TValue>.BuildRenderTree(RenderTreeBuilder)
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  type: Method
+  source:
+    id: BuildRenderTree
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 175
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  summary: Renders the component to the supplied <xref href="Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override void BuildRenderTree(RenderTreeBuilder __builder)
+    parameters:
+    - id: __builder
+      type: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    content.vb: Protected Overrides Sub BuildRenderTree(__builder As RenderTreeBuilder)
+  overridden: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.BuildRenderTree*
+  nameWithType.vb: R_TimePicker(Of TValue).BuildRenderTree(RenderTreeBuilder)
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.Id
+  commentId: P:R_BlazorFrontEnd.Controls.R_TimePicker`1.Id
+  id: Id
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: R_TimePicker<TValue>.Id
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.Id
+  type: Property
+  source:
+    id: Id
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 420
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  example: []
+  syntax:
+    content: >-
+      [Parameter]
+
+      public override string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Overrides Property Id As String
+  overridden: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.Id
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.Id*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TimePicker(Of TValue).Id
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).Id
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.Format
+  commentId: P:R_BlazorFrontEnd.Controls.R_TimePicker`1.Format
+  id: Format
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: R_TimePicker<TValue>.Format
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.Format
+  type: Property
+  source:
+    id: Format
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 421
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  example: []
+  syntax:
+    content: >-
+      [Parameter]
+
+      public override string Format { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Parameter>
+
+      Public Overrides Property Format As String
+  overridden: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Format
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.Format*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TimePicker(Of TValue).Format
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).Format
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.TimePickerFormat
+  commentId: P:R_BlazorFrontEnd.Controls.R_TimePicker`1.TimePickerFormat
+  id: TimePickerFormat
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: TimePickerFormat
+  nameWithType: R_TimePicker<TValue>.TimePickerFormat
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.TimePickerFormat
+  type: Property
+  source:
+    id: TimePickerFormat
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 422
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public R_eTimePickerFormat TimePickerFormat { get; set; }
+    parameters: []
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eTimePickerFormat
+    content.vb: >-
+      <Parameter>
+
+      Public Property TimePickerFormat As R_eTimePickerFormat
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.TimePickerFormat*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TimePicker(Of TValue).TimePickerFormat
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).TimePickerFormat
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.ShowTimePickerButton
+  commentId: P:R_BlazorFrontEnd.Controls.R_TimePicker`1.ShowTimePickerButton
+  id: ShowTimePickerButton
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: ShowTimePickerButton
+  nameWithType: R_TimePicker<TValue>.ShowTimePickerButton
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.ShowTimePickerButton
+  type: Property
+  source:
+    id: ShowTimePickerButton
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 423
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: >-
+      [Parameter]
+
+      public bool ShowTimePickerButton { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Parameter>
+
+      Public Property ShowTimePickerButton As Boolean
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.ShowTimePickerButton*
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  nameWithType.vb: R_TimePicker(Of TValue).ShowTimePickerButton
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).ShowTimePickerButton
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.ClassName
+  commentId: P:R_BlazorFrontEnd.Controls.R_TimePicker`1.ClassName
+  id: ClassName
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: ClassName
+  nameWithType: R_TimePicker<TValue>.ClassName
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.ClassName
+  type: Property
+  source:
+    id: ClassName
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 427
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  syntax:
+    content: protected string ClassName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly Property ClassName As String
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.ClassName*
+  nameWithType.vb: R_TimePicker(Of TValue).ClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).ClassName
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.FocusAsync
+  commentId: M:R_BlazorFrontEnd.Controls.R_TimePicker`1.FocusAsync
+  id: FocusAsync
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: FocusAsync()
+  nameWithType: R_TimePicker<TValue>.FocusAsync()
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.FocusAsync()
+  type: Method
+  source:
+    id: FocusAsync
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 434
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  example: []
+  syntax:
+    content: public override Task FocusAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function FocusAsync() As Task
+  overridden: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.FocusAsync*
+  nameWithType.vb: R_TimePicker(Of TValue).FocusAsync()
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).FocusAsync()
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.OnInitialized
+  commentId: M:R_BlazorFrontEnd.Controls.R_TimePicker`1.OnInitialized
+  id: OnInitialized
+  parent: R_BlazorFrontEnd.Controls.R_TimePicker`1
+  langs:
+  - csharp
+  - vb
+  name: OnInitialized()
+  nameWithType: R_TimePicker<TValue>.OnInitialized()
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.OnInitialized()
+  type: Method
+  source:
+    id: OnInitialized
+    path: Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Controls_R_TimePicker_razor.g.cs
+    startLine: 439
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls
+  summary: >-
+    Method invoked when the component is ready to start, having received its
+
+    initial parameters from its parent in the render tree.
+  example: []
+  syntax:
+    content: protected override void OnInitialized()
+    content.vb: Protected Overrides Sub OnInitialized()
+  overridden: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnInitialized
+  overload: R_BlazorFrontEnd.Controls.R_TimePicker`1.OnInitialized*
+  nameWithType.vb: R_TimePicker(Of TValue).OnInitialized()
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).OnInitialized()
+references:
+- uid: R_BlazorFrontEnd.Controls
+  commentId: N:R_BlazorFrontEnd.Controls
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls
+  nameWithType: R_BlazorFrontEnd.Controls
+  fullName: R_BlazorFrontEnd.Controls
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Components.ComponentBase
+  commentId: T:Microsoft.AspNetCore.Components.ComponentBase
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase
+  name: ComponentBase
+  nameWithType: ComponentBase
+  fullName: Microsoft.AspNetCore.Components.ComponentBase
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  parent: R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html
+  name: R_BaseComponent
+  nameWithType: R_BaseComponent
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  parent: R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html
+  name: R_ControlBase
+  nameWithType: R_ControlBase
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}
+  parent: R_BlazorFrontEnd.Controls.Base
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html
+  name: R_InputComponentBase<TValue>
+  nameWithType: R_InputComponentBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>
+  nameWithType.vb: R_InputComponentBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue)
+  name.vb: R_InputComponentBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+    name: R_InputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+    name: R_InputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{`1}
+  parent: R_BlazorFrontEnd.Controls.Base
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html
+  name: R_InputWithValidationComponentBase<TValue>
+  nameWithType: R_InputWithValidationComponentBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue)
+  name.vb: R_InputWithValidationComponentBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+    name: R_InputWithValidationComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+    name: R_InputWithValidationComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}
+  parent: R_BlazorFrontEnd.Controls.Base
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html
+  name: R_DateInputComponentBase<TValue>
+  nameWithType: R_DateInputComponentBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>
+  nameWithType.vb: R_DateInputComponentBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue)
+  name.vb: R_DateInputComponentBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+    name: R_DateInputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+    name: R_DateInputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Microsoft.AspNetCore.Components.IComponent
+  commentId: T:Microsoft.AspNetCore.Components.IComponent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Microsoft.AspNetCore.Components.IComponent
+- uid: Microsoft.AspNetCore.Components.IHandleEvent
+  commentId: T:Microsoft.AspNetCore.Components.IHandleEvent
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent
+  name: IHandleEvent
+  nameWithType: IHandleEvent
+  fullName: Microsoft.AspNetCore.Components.IHandleEvent
+- uid: Microsoft.AspNetCore.Components.IHandleAfterRender
+  commentId: T:Microsoft.AspNetCore.Components.IHandleAfterRender
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender
+  name: IHandleAfterRender
+  nameWithType: IHandleAfterRender
+  fullName: Microsoft.AspNetCore.Components.IHandleAfterRender
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  commentId: T:R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+  parent: R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl.html
+  name: R_IEnableControl
+  nameWithType: R_IEnableControl
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl
+- uid: R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl
+  commentId: T:R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl
+  parent: R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl.html
+  name: R_IConductorControl
+  nameWithType: R_IConductorControl
+  fullName: R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Width
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}.Width
+  parent: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Width
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Width
+  name: Width
+  nameWithType: R_DateInputComponentBase<TValue>.Width
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Width
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Width
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Width
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.ShowClearButton
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}.ShowClearButton
+  parent: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.ShowClearButton
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_ShowClearButton
+  name: ShowClearButton
+  nameWithType: R_DateInputComponentBase<TValue>.ShowClearButton
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.ShowClearButton
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).ShowClearButton
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).ShowClearButton
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Min
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}.Min
+  parent: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Min
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Min
+  name: Min
+  nameWithType: R_DateInputComponentBase<TValue>.Min
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Min
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Min
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Min
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Max
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}.Max
+  parent: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Max
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Max
+  name: Max
+  nameWithType: R_DateInputComponentBase<TValue>.Max
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Max
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Max
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Max
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Placeholder
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}.Placeholder
+  parent: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Placeholder
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Placeholder
+  name: Placeholder
+  nameWithType: R_DateInputComponentBase<TValue>.Placeholder
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Placeholder
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Placeholder
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Placeholder
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.DebounceDelay
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}.DebounceDelay
+  parent: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.DebounceDelay
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_DebounceDelay
+  name: DebounceDelay
+  nameWithType: R_DateInputComponentBase<TValue>.DebounceDelay
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.DebounceDelay
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).DebounceDelay
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).DebounceDelay
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.FieldName
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{`1}.FieldName
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.FieldName
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_FieldName
+  name: FieldName
+  nameWithType: R_InputWithValidationComponentBase<TValue>.FieldName
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.FieldName
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).FieldName
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).FieldName
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.ShowValidation
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{`1}.ShowValidation
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.ShowValidation
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_ShowValidation
+  name: ShowValidation
+  nameWithType: R_InputWithValidationComponentBase<TValue>.ShowValidation
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.ShowValidation
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).ShowValidation
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).ShowValidation
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.FloatingLabel
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{`1}.FloatingLabel
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.FloatingLabel
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_FloatingLabel
+  name: FloatingLabel
+  nameWithType: R_InputWithValidationComponentBase<TValue>.FloatingLabel
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.FloatingLabel
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).FloatingLabel
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).FloatingLabel
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}.Label
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{`1}.Label
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.Label
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_Label
+  name: Label
+  nameWithType: R_InputWithValidationComponentBase<TValue>.Label
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.Label
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).Label
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).Label
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.Value
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.Value
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.Value
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_Value
+  name: Value
+  nameWithType: R_InputComponentBase<TValue>.Value
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.Value
+  nameWithType.vb: R_InputComponentBase(Of TValue).Value
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).Value
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnChanged
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChanged
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChanged
+  name: OnChanged
+  nameWithType: R_InputComponentBase<TValue>.OnChanged
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnChanged
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnChanged
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ValueChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.ValueChanged
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChanged
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChanged
+  name: ValueChanged
+  nameWithType: R_InputComponentBase<TValue>.ValueChanged
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ValueChanged
+  nameWithType.vb: R_InputComponentBase(Of TValue).ValueChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ValueChanged
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnLostFocused
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnLostFocused
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocused
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocused
+  name: OnLostFocused
+  nameWithType: R_InputComponentBase<TValue>.OnLostFocused
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnLostFocused
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnLostFocused
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnLostFocused
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ValueExpression
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.ValueExpression
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueExpression
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueExpression
+  name: ValueExpression
+  nameWithType: R_InputComponentBase<TValue>.ValueExpression
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ValueExpression
+  nameWithType.vb: R_InputComponentBase(Of TValue).ValueExpression
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ValueExpression
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ReadOnly
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.ReadOnly
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ReadOnly
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ReadOnly
+  name: ReadOnly
+  nameWithType: R_InputComponentBase<TValue>.ReadOnly
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ReadOnly
+  nameWithType.vb: R_InputComponentBase(Of TValue).ReadOnly
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ReadOnly
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.AutoComplete
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.AutoComplete
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.AutoComplete
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_AutoComplete
+  name: AutoComplete
+  nameWithType: R_InputComponentBase<TValue>.AutoComplete
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.AutoComplete
+  nameWithType.vb: R_InputComponentBase(Of TValue).AutoComplete
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).AutoComplete
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}._page
+  commentId: F:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}._page
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1._page
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1__page
+  name: _page
+  nameWithType: R_InputComponentBase<TValue>._page
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>._page
+  nameWithType.vb: R_InputComponentBase(Of TValue)._page
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue)._page
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnChangedHandler(System.Object)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnChangedHandler(System.Object)
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChangedHandler(System.Object)
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChangedHandler_System_Object_
+  name: OnChangedHandler(object)
+  nameWithType: R_InputComponentBase<TValue>.OnChangedHandler(object)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnChangedHandler(object)
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnChangedHandler(Object)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnChangedHandler(Object)
+  name.vb: OnChangedHandler(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnChangedHandler(System.Object)
+    name: OnChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChangedHandler_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnChangedHandler(System.Object)
+    name: OnChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChangedHandler_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.ValueChangedHandler({TValue})
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.ValueChangedHandler(`1)
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChangedHandler(`0)
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChangedHandler__0_
+  name: ValueChangedHandler(TValue)
+  nameWithType: R_InputComponentBase<TValue>.ValueChangedHandler(TValue)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ValueChangedHandler(TValue)
+  nameWithType.vb: R_InputComponentBase(Of TValue).ValueChangedHandler(TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ValueChangedHandler(TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.ValueChangedHandler(`1)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChangedHandler__0_
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.ValueChangedHandler(`1)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChangedHandler__0_
+  - name: (
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnLostFocusedHandler
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnLostFocusedHandler
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocusedHandler
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocusedHandler
+  name: OnLostFocusedHandler()
+  nameWithType: R_InputComponentBase<TValue>.OnLostFocusedHandler()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnLostFocusedHandler()
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnLostFocusedHandler()
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnLostFocusedHandler()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnLostFocusedHandler
+    name: OnLostFocusedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocusedHandler
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnLostFocusedHandler
+    name: OnLostFocusedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocusedHandler
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_ConductorSource
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.R_ConductorSource
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_ConductorSource
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_ConductorSource
+  name: R_ConductorSource
+  nameWithType: R_InputComponentBase<TValue>.R_ConductorSource
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_ConductorSource
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_ConductorSource
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_ConductorSource
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_ConductorGridSource
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.R_ConductorGridSource
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_ConductorGridSource
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_ConductorGridSource
+  name: R_ConductorGridSource
+  nameWithType: R_InputComponentBase<TValue>.R_ConductorGridSource
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_ConductorGridSource
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_ConductorGridSource
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_ConductorGridSource
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableAdd
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.R_EnableAdd
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableAdd
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableAdd
+  name: R_EnableAdd
+  nameWithType: R_InputComponentBase<TValue>.R_EnableAdd
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableAdd
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableAdd
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableAdd
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableEdit
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.R_EnableEdit
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableEdit
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableEdit
+  name: R_EnableEdit
+  nameWithType: R_InputComponentBase<TValue>.R_EnableEdit
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableEdit
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableEdit
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableEdit
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableOther
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.R_EnableOther
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableOther
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableOther
+  name: R_EnableOther
+  nameWithType: R_InputComponentBase<TValue>.R_EnableOther
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableOther
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableOther
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableOther
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.R_EnableHasData
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.R_EnableHasData
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableHasData
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableHasData
+  name: R_EnableHasData
+  nameWithType: R_InputComponentBase<TValue>.R_EnableHasData
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableHasData
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableHasData
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableHasData
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_Enabled
+  name: Enabled
+  nameWithType: R_ControlBase.Enabled
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Enabled
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_TabIndex
+  name: TabIndex
+  nameWithType: R_ControlBase.TabIndex
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.TabIndex
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_Tooltip
+  name: Tooltip
+  nameWithType: R_ControlBase.Tooltip
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.Tooltip
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_R_FindPage
+  name: R_FindPage()
+  nameWithType: R_ControlBase.R_FindPage()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+    name: R_FindPage
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_R_FindPage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.R_FindPage
+    name: R_FindPage
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_R_FindPage
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_CallAfterRender_System_Func_System_Threading_Tasks_Task__
+  name: CallAfterRender(Func<Task>)
+  nameWithType: R_BaseComponent.CallAfterRender(Func<Task>)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func<System.Threading.Tasks.Task>)
+  nameWithType.vb: R_BaseComponent.CallAfterRender(Func(Of Task))
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func(Of System.Threading.Tasks.Task))
+  name.vb: CallAfterRender(Func(Of Task))
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+    name: CallAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_CallAfterRender_System_Func_System_Threading_Tasks_Task__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.CallAfterRender(System.Func{System.Threading.Tasks.Task})
+    name: CallAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_CallAfterRender_System_Func_System_Threading_Tasks_Task__
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Parent
+  name: Parent
+  nameWithType: R_BaseComponent.Parent
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Parent
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_AdditionalAttributes
+  name: AdditionalAttributes
+  nameWithType: R_BaseComponent.AdditionalAttributes
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.AdditionalAttributes
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Controls
+  name: Controls
+  nameWithType: R_BaseComponent.Controls
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Controls
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Class
+  name: Class
+  nameWithType: R_BaseComponent.Class
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Class
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Style
+  name: Style
+  nameWithType: R_BaseComponent.Style
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Style
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Tag
+  name: Tag
+  nameWithType: R_BaseComponent.Tag
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Tag
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnDisposed
+  name: OnDisposed
+  nameWithType: R_BaseComponent.OnDisposed
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnDisposed
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnInitializedAsync
+  name: OnInitializedAsync()
+  nameWithType: R_BaseComponent.OnInitializedAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+    name: OnInitializedAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnInitializedAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnInitializedAsync
+    name: OnInitializedAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnInitializedAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRender_System_Boolean_
+  name: OnAfterRender(bool)
+  nameWithType: R_BaseComponent.OnAfterRender(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(bool)
+  nameWithType.vb: R_BaseComponent.OnAfterRender(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(Boolean)
+  name.vb: OnAfterRender(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRender(System.Boolean)
+    name: OnAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRenderAsync_System_Boolean_
+  name: OnAfterRenderAsync(bool)
+  nameWithType: R_BaseComponent.OnAfterRenderAsync(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(bool)
+  nameWithType.vb: R_BaseComponent.OnAfterRenderAsync(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(Boolean)
+  name.vb: OnAfterRenderAsync(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRenderAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnAfterRenderAsync(System.Boolean)
+    name: OnAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnAfterRenderAsync_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRenderAsync
+  name: OnFirstAfterRenderAsync()
+  nameWithType: R_BaseComponent.OnFirstAfterRenderAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+    name: OnFirstAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRenderAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRenderAsync
+    name: OnFirstAfterRenderAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRenderAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRender
+  name: OnFirstAfterRender()
+  nameWithType: R_BaseComponent.OnFirstAfterRender()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+    name: OnFirstAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRender
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnFirstAfterRender
+    name: OnFirstAfterRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnFirstAfterRender
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnParametersSet
+  name: OnParametersSet()
+  nameWithType: R_BaseComponent.OnParametersSet()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+    name: OnParametersSet
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnParametersSet
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnParametersSet
+    name: OnParametersSet
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnParametersSet
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetShouldRender_System_Boolean_
+  name: SetShouldRender(bool)
+  nameWithType: R_BaseComponent.SetShouldRender(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(bool)
+  nameWithType.vb: R_BaseComponent.SetShouldRender(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(Boolean)
+  name.vb: SetShouldRender(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetShouldRender(System.Boolean)
+    name: SetShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetShouldRender_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_ShouldRender
+  name: ShouldRender()
+  nameWithType: R_BaseComponent.ShouldRender()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_ShouldRender
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.ShouldRender
+    name: ShouldRender
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_ShouldRender
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
+  name: SetParametersAsync(ParameterView)
+  nameWithType: R_BaseComponent.SetParametersAsync(ParameterView)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: R_BaseComponent.Dispose(bool)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(bool)
+  nameWithType.vb: R_BaseComponent.Dispose(Boolean)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.Dispose(System.Boolean)
+    name: Dispose
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_DisposeAsync
+  name: DisposeAsync()
+  nameWithType: R_BaseComponent.DisposeAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_DisposeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.DisposeAsync
+    name: DisposeAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_DisposeAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+  commentId: E:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_BubbledEvent
+  name: BubbledEvent
+  nameWithType: R_BaseComponent.BubbledEvent
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.BubbledEvent
+- uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+  parent: R_BlazorFrontEnd.Controls.Base.R_BaseComponent
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnBubbledEvent_System_Object_System_EventArgs_
+  name: OnBubbledEvent(object, EventArgs)
+  nameWithType: R_BaseComponent.OnBubbledEvent(object, EventArgs)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(object, System.EventArgs)
+  nameWithType.vb: R_BaseComponent.OnBubbledEvent(Object, EventArgs)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(Object, System.EventArgs)
+  name.vb: OnBubbledEvent(Object, EventArgs)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+    name: OnBubbledEvent
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnBubbledEvent_System_Object_System_EventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.OnBubbledEvent(System.Object,System.EventArgs)
+    name: OnBubbledEvent
+    href: R_BlazorFrontEnd.Controls.Base.R_BaseComponent.html#R_BlazorFrontEnd_Controls_Base_R_BaseComponent_OnBubbledEvent_System_Object_System_EventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.EventArgs
+    name: EventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  name: OnParametersSetAsync()
+  nameWithType: ComponentBase.OnParametersSetAsync()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+    name: OnParametersSetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+    name: OnParametersSetAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.onparameterssetasync
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  name: StateHasChanged()
+  nameWithType: ComponentBase.StateHasChanged()
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    name: StateHasChanged
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  name: InvokeAsync(Action)
+  nameWithType: ComponentBase.InvokeAsync(Action)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  name: InvokeAsync(Func<Task>)
+  nameWithType: ComponentBase.InvokeAsync(Func<Task>)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func<System.Threading.Tasks.Task>)
+  nameWithType.vb: ComponentBase.InvokeAsync(Func(Of Task))
+  fullName.vb: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func(Of System.Threading.Tasks.Task))
+  name.vb: InvokeAsync(Func(Of Task))
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    name: InvokeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#microsoft-aspnetcore-components-componentbase-invokeasync(system-func((system-threading-tasks-task)))
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+- uid: R_BlazorFrontEnd.Controls.Base
+  commentId: N:R_BlazorFrontEnd.Controls.Base
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Base
+  nameWithType: R_BlazorFrontEnd.Controls.Base
+  fullName: R_BlazorFrontEnd.Controls.Base
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Base
+    name: Base
+    href: R_BlazorFrontEnd.Controls.Base.html
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html
+  name: R_InputComponentBase<TValue>
+  nameWithType: R_InputComponentBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>
+  nameWithType.vb: R_InputComponentBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue)
+  name.vb: R_InputComponentBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+    name: R_InputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1
+    name: R_InputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html
+  name: R_InputWithValidationComponentBase<TValue>
+  nameWithType: R_InputWithValidationComponentBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue)
+  name.vb: R_InputWithValidationComponentBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+    name: R_InputWithValidationComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1
+    name: R_InputWithValidationComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+  commentId: T:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html
+  name: R_DateInputComponentBase<TValue>
+  nameWithType: R_DateInputComponentBase<TValue>
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>
+  nameWithType.vb: R_DateInputComponentBase(Of TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue)
+  name.vb: R_DateInputComponentBase(Of TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+    name: R_DateInputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1
+    name: R_DateInputComponentBase
+    href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Interfaces
+  commentId: N:R_BlazorFrontEnd.Controls.Interfaces
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Interfaces
+  nameWithType: R_BlazorFrontEnd.Controls.Interfaces
+  fullName: R_BlazorFrontEnd.Controls.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Controls.Interfaces.html
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Width
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Width
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Width
+  name: Width
+  nameWithType: R_DateInputComponentBase<TValue>.Width
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Width
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Width
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Width
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.ShowClearButton
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.ShowClearButton
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_ShowClearButton
+  name: ShowClearButton
+  nameWithType: R_DateInputComponentBase<TValue>.ShowClearButton
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.ShowClearButton
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).ShowClearButton
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).ShowClearButton
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Min
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Min
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Min
+  name: Min
+  nameWithType: R_DateInputComponentBase<TValue>.Min
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Min
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Min
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Min
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Max
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Max
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Max
+  name: Max
+  nameWithType: R_DateInputComponentBase<TValue>.Max
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Max
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Max
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Max
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Placeholder
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Placeholder
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Placeholder
+  name: Placeholder
+  nameWithType: R_DateInputComponentBase<TValue>.Placeholder
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Placeholder
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Placeholder
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Placeholder
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.DebounceDelay
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.DebounceDelay
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_DebounceDelay
+  name: DebounceDelay
+  nameWithType: R_DateInputComponentBase<TValue>.DebounceDelay
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.DebounceDelay
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).DebounceDelay
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).DebounceDelay
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.FieldName
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.FieldName
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_FieldName
+  name: FieldName
+  nameWithType: R_InputWithValidationComponentBase<TValue>.FieldName
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.FieldName
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).FieldName
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).FieldName
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.ShowValidation
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.ShowValidation
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_ShowValidation
+  name: ShowValidation
+  nameWithType: R_InputWithValidationComponentBase<TValue>.ShowValidation
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.ShowValidation
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).ShowValidation
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).ShowValidation
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.FloatingLabel
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.FloatingLabel
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_FloatingLabel
+  name: FloatingLabel
+  nameWithType: R_InputWithValidationComponentBase<TValue>.FloatingLabel
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.FloatingLabel
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).FloatingLabel
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).FloatingLabel
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.Label
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase`1.Label
+  href: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputWithValidationComponentBase_1_Label
+  name: Label
+  nameWithType: R_InputWithValidationComponentBase<TValue>.Label
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase<TValue>.Label
+  nameWithType.vb: R_InputWithValidationComponentBase(Of TValue).Label
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputWithValidationComponentBase(Of TValue).Label
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.Value
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.Value
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_Value
+  name: Value
+  nameWithType: R_InputComponentBase<TValue>.Value
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.Value
+  nameWithType.vb: R_InputComponentBase(Of TValue).Value
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).Value
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChanged
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChanged
+  name: OnChanged
+  nameWithType: R_InputComponentBase<TValue>.OnChanged
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnChanged
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnChanged
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChanged
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChanged
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChanged
+  name: ValueChanged
+  nameWithType: R_InputComponentBase<TValue>.ValueChanged
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ValueChanged
+  nameWithType.vb: R_InputComponentBase(Of TValue).ValueChanged
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ValueChanged
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocused
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocused
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocused
+  name: OnLostFocused
+  nameWithType: R_InputComponentBase<TValue>.OnLostFocused
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnLostFocused
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnLostFocused
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnLostFocused
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueExpression
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueExpression
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueExpression
+  name: ValueExpression
+  nameWithType: R_InputComponentBase<TValue>.ValueExpression
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ValueExpression
+  nameWithType.vb: R_InputComponentBase(Of TValue).ValueExpression
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ValueExpression
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ReadOnly
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ReadOnly
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ReadOnly
+  name: ReadOnly
+  nameWithType: R_InputComponentBase<TValue>.ReadOnly
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ReadOnly
+  nameWithType.vb: R_InputComponentBase(Of TValue).ReadOnly
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ReadOnly
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.AutoComplete
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.AutoComplete
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_AutoComplete
+  name: AutoComplete
+  nameWithType: R_InputComponentBase<TValue>.AutoComplete
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.AutoComplete
+  nameWithType.vb: R_InputComponentBase(Of TValue).AutoComplete
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).AutoComplete
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1._page
+  commentId: F:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1._page
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1__page
+  name: _page
+  nameWithType: R_InputComponentBase<TValue>._page
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>._page
+  nameWithType.vb: R_InputComponentBase(Of TValue)._page
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue)._page
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChangedHandler(System.Object)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChangedHandler(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChangedHandler_System_Object_
+  name: OnChangedHandler(object)
+  nameWithType: R_InputComponentBase<TValue>.OnChangedHandler(object)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnChangedHandler(object)
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnChangedHandler(Object)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnChangedHandler(Object)
+  name.vb: OnChangedHandler(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChangedHandler(System.Object)
+    name: OnChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChangedHandler_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnChangedHandler(System.Object)
+    name: OnChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnChangedHandler_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChangedHandler(`0)
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChangedHandler(`0)
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChangedHandler__0_
+  name: ValueChangedHandler(TValue)
+  nameWithType: R_InputComponentBase<TValue>.ValueChangedHandler(TValue)
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.ValueChangedHandler(TValue)
+  nameWithType.vb: R_InputComponentBase(Of TValue).ValueChangedHandler(TValue)
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).ValueChangedHandler(TValue)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChangedHandler(`0)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChangedHandler__0_
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.ValueChangedHandler(`0)
+    name: ValueChangedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_ValueChangedHandler__0_
+  - name: (
+  - name: TValue
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocusedHandler
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocusedHandler
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocusedHandler
+  name: OnLostFocusedHandler()
+  nameWithType: R_InputComponentBase<TValue>.OnLostFocusedHandler()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnLostFocusedHandler()
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnLostFocusedHandler()
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnLostFocusedHandler()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocusedHandler
+    name: OnLostFocusedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocusedHandler
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnLostFocusedHandler
+    name: OnLostFocusedHandler
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnLostFocusedHandler
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_ConductorSource
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_ConductorSource
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_ConductorSource
+  name: R_ConductorSource
+  nameWithType: R_InputComponentBase<TValue>.R_ConductorSource
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_ConductorSource
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_ConductorSource
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_ConductorSource
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_ConductorGridSource
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_ConductorGridSource
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_ConductorGridSource
+  name: R_ConductorGridSource
+  nameWithType: R_InputComponentBase<TValue>.R_ConductorGridSource
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_ConductorGridSource
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_ConductorGridSource
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_ConductorGridSource
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableAdd
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableAdd
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableAdd
+  name: R_EnableAdd
+  nameWithType: R_InputComponentBase<TValue>.R_EnableAdd
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableAdd
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableAdd
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableAdd
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableEdit
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableEdit
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableEdit
+  name: R_EnableEdit
+  nameWithType: R_InputComponentBase<TValue>.R_EnableEdit
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableEdit
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableEdit
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableEdit
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableOther
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableOther
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableOther
+  name: R_EnableOther
+  nameWithType: R_InputComponentBase<TValue>.R_EnableOther
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableOther
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableOther
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableOther
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableHasData
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.R_EnableHasData
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_R_EnableHasData
+  name: R_EnableHasData
+  nameWithType: R_InputComponentBase<TValue>.R_EnableHasData
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.R_EnableHasData
+  nameWithType.vb: R_InputComponentBase(Of TValue).R_EnableHasData
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).R_EnableHasData
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  commentId: T:Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+  parent: Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  name: RenderTreeBuilder
+  nameWithType: RenderTreeBuilder
+  fullName: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+- uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  commentId: M:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  parent: Microsoft.AspNetCore.Components.ComponentBase
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  name: BuildRenderTree(RenderTreeBuilder)
+  nameWithType: ComponentBase.BuildRenderTree(RenderTreeBuilder)
+  fullName: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    name: BuildRenderTree
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder
+    name: RenderTreeBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering.rendertreebuilder
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.BuildRenderTree*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.BuildRenderTree
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_
+  name: BuildRenderTree
+  nameWithType: R_TimePicker<TValue>.BuildRenderTree
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.BuildRenderTree
+  nameWithType.vb: R_TimePicker(Of TValue).BuildRenderTree
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).BuildRenderTree
+- uid: Microsoft.AspNetCore.Components.Rendering
+  commentId: N:Microsoft.AspNetCore.Components.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components.Rendering
+  nameWithType: Microsoft.AspNetCore.Components.Rendering
+  fullName: Microsoft.AspNetCore.Components.Rendering
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.rendering
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.Id
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.Id
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_Id
+  name: Id
+  nameWithType: R_InputComponentBase<TValue>.Id
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.Id
+  nameWithType.vb: R_InputComponentBase(Of TValue).Id
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).Id
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.Id*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.Id
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_Id
+  name: Id
+  nameWithType: R_TimePicker<TValue>.Id
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.Id
+  nameWithType.vb: R_TimePicker(Of TValue).Id
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.Id
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.Id
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_Id
+  name: Id
+  nameWithType: R_InputComponentBase<TValue>.Id
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.Id
+  nameWithType.vb: R_InputComponentBase(Of TValue).Id
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).Id
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}.Format
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{`0}.Format
+  parent: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Format
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Format
+  name: Format
+  nameWithType: R_DateInputComponentBase<TValue>.Format
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Format
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Format
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Format
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.Format*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.Format
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_Format
+  name: Format
+  nameWithType: R_TimePicker<TValue>.Format
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.Format
+  nameWithType.vb: R_TimePicker(Of TValue).Format
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).Format
+- uid: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Format
+  commentId: P:R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase`1.Format
+  href: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_DateInputComponentBase_1_Format
+  name: Format
+  nameWithType: R_DateInputComponentBase<TValue>.Format
+  fullName: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase<TValue>.Format
+  nameWithType.vb: R_DateInputComponentBase(Of TValue).Format
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_DateInputComponentBase(Of TValue).Format
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.TimePickerFormat*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.TimePickerFormat
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_TimePickerFormat
+  name: TimePickerFormat
+  nameWithType: R_TimePicker<TValue>.TimePickerFormat
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.TimePickerFormat
+  nameWithType.vb: R_TimePicker(Of TValue).TimePickerFormat
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).TimePickerFormat
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eTimePickerFormat
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eTimePickerFormat
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eTimePickerFormat.html
+  name: R_eTimePickerFormat
+  nameWithType: R_eTimePickerFormat
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eTimePickerFormat
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.ShowTimePickerButton*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.ShowTimePickerButton
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_ShowTimePickerButton
+  name: ShowTimePickerButton
+  nameWithType: R_TimePicker<TValue>.ShowTimePickerButton
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.ShowTimePickerButton
+  nameWithType.vb: R_TimePicker(Of TValue).ShowTimePickerButton
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).ShowTimePickerButton
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.ClassName*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.ClassName
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_ClassName
+  name: ClassName
+  nameWithType: R_TimePicker<TValue>.ClassName
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.ClassName
+  nameWithType.vb: R_TimePicker(Of TValue).ClassName
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).ClassName
+- uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+  parent: R_BlazorFrontEnd.Controls.Base.R_ControlBase
+  href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_FocusAsync
+  name: FocusAsync()
+  nameWithType: R_ControlBase.FocusAsync()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+    name: FocusAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_FocusAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_ControlBase.FocusAsync
+    name: FocusAsync
+    href: R_BlazorFrontEnd.Controls.Base.R_ControlBase.html#R_BlazorFrontEnd_Controls_Base_R_ControlBase_FocusAsync
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.FocusAsync*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.FocusAsync
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_FocusAsync
+  name: FocusAsync
+  nameWithType: R_TimePicker<TValue>.FocusAsync
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.FocusAsync
+  nameWithType.vb: R_TimePicker(Of TValue).FocusAsync
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).FocusAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}.OnInitialized
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnInitialized
+  parent: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{{TValue}}
+  definition: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnInitialized
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnInitialized
+  name: OnInitialized()
+  nameWithType: R_InputComponentBase<TValue>.OnInitialized()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnInitialized()
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnInitialized()
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnInitialized()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnInitialized
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase{`1}.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnInitialized
+  - name: (
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.R_TimePicker`1.OnInitialized*
+  commentId: Overload:R_BlazorFrontEnd.Controls.R_TimePicker`1.OnInitialized
+  href: R_BlazorFrontEnd.Controls.R_TimePicker-1.html#R_BlazorFrontEnd_Controls_R_TimePicker_1_OnInitialized
+  name: OnInitialized
+  nameWithType: R_TimePicker<TValue>.OnInitialized
+  fullName: R_BlazorFrontEnd.Controls.R_TimePicker<TValue>.OnInitialized
+  nameWithType.vb: R_TimePicker(Of TValue).OnInitialized
+  fullName.vb: R_BlazorFrontEnd.Controls.R_TimePicker(Of TValue).OnInitialized
+- uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnInitialized
+  commentId: M:R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnInitialized
+  href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnInitialized
+  name: OnInitialized()
+  nameWithType: R_InputComponentBase<TValue>.OnInitialized()
+  fullName: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>.OnInitialized()
+  nameWithType.vb: R_InputComponentBase(Of TValue).OnInitialized()
+  fullName.vb: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase(Of TValue).OnInitialized()
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnInitialized
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase`1.OnInitialized
+    name: OnInitialized
+    href: R_BlazorFrontEnd.Controls.Base.R_InputComponentBase-1.html#R_BlazorFrontEnd_Controls_Base_R_InputComponentBase_1_OnInitialized
+  - name: (
+  - name: )

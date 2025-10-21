@@ -8,7 +8,7 @@ items:
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
-  - R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
@@ -16,7 +16,7 @@ items:
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
   - R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
-  - R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
+  - R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
   langs:
   - csharp
   - vb
@@ -35,27 +35,28 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nA component that supplies route data corresponding to the current navigation state.\n"
+  summary: A component that supplies route data corresponding to the current navigation state.
   example: []
   syntax:
     content: 'public class R_TenantRouter : IComponent, IHandleAfterRender, IDisposable'
-    content.vb: >-
-      Public Class R_TenantRouter
-          Inherits IComponent
-          Implements IHandleAfterRender, IDisposable
+    content.vb: Public Class R_TenantRouter Implements IComponent, IHandleAfterRender, IDisposable
   inheritance:
   - System.Object
   implements:
-  - IHandleAfterRender
-  - IDisposable
+  - Microsoft.AspNetCore.Components.IComponent
+  - Microsoft.AspNetCore.Components.IHandleAfterRender
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
   id: AppAssembly
@@ -78,21 +79,32 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets the assembly that should be searched for components matching the URI.\n"
+  summary: Gets or sets the assembly that should be searched for components matching the URI.
   example: []
   syntax:
-    content: public Assembly? AppAssembly { get; set; }
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public Assembly? AppAssembly { get; set; }
     parameters: []
     return:
-      type: System.Nullable{Assembly}
-    content.vb: Public Property AppAssembly As Assembly?
+      type: System.Reflection.Assembly
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property AppAssembly As Assembly
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
   id: AdditionalAssemblies
@@ -115,21 +127,28 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets a collection of additional assemblies that should be searched for components\nthat can match URIs.\n"
+  summary: >-
+    Gets or sets a collection of additional assemblies that should be searched for components
+
+    that can match URIs.
   example: []
   syntax:
-    content: public IEnumerable<Assembly> AdditionalAssemblies { get; set; }
+    content: >-
+      [Parameter]
+
+      public IEnumerable<Assembly> AdditionalAssemblies { get; set; }
     parameters: []
     return:
-      type: IEnumerable{Assembly}
-    content.vb: Public Property AdditionalAssemblies As IEnumerable(Of Assembly)
+      type: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+    content.vb: >-
+      <Parameter>
+
+      Public Property AdditionalAssemblies As IEnumerable(Of Assembly)
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
   id: NotFound
@@ -152,21 +171,32 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets the content to display when no match is found for the requested route.\n"
+  summary: Gets or sets the content to display when no match is found for the requested route.
   example: []
   syntax:
-    content: public RenderFragment? NotFound { get; set; }
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public RenderFragment? NotFound { get; set; }
     parameters: []
     return:
-      type: System.Nullable{RenderFragment}
-    content.vb: Public Property NotFound As RenderFragment?
+      type: Microsoft.AspNetCore.Components.RenderFragment
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property NotFound As RenderFragment
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
   id: Found
@@ -189,21 +219,32 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets the content to display when a match is found for the requested route.\n"
+  summary: Gets or sets the content to display when a match is found for the requested route.
   example: []
   syntax:
-    content: public RenderFragment<RouteData>? Found { get; set; }
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public RenderFragment<RouteData>? Found { get; set; }
     parameters: []
     return:
-      type: System.Nullable{RenderFragment{RouteData}}
-    content.vb: Public Property Found As RenderFragment(Of RouteData)?
+      type: Microsoft.AspNetCore.Components.RenderFragment{Microsoft.AspNetCore.Components.RouteData}
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property Found As RenderFragment(Of RouteData)
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
   id: Navigating
@@ -226,22 +267,26 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets the content to display when asynchronous navigation is in progress.\n"
+  summary: Gets or sets the content to display when asynchronous navigation is in progress.
   example: []
   syntax:
-    content: public RenderFragment? Navigating { get; set; }
+    content: >-
+      [Parameter]
+
+      public RenderFragment? Navigating { get; set; }
     parameters: []
     return:
-      type: System.Nullable{RenderFragment}
+      type: Microsoft.AspNetCore.Components.RenderFragment
       description: ''
-    content.vb: Public Property Navigating As RenderFragment?
+    content.vb: >-
+      <Parameter>
+
+      Public Property Navigating As RenderFragment
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
   id: NoTenant
@@ -264,22 +309,33 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets the content to display when no tenant id found for the requested route.\n"
+  summary: Gets or sets the content to display when no tenant id found for the requested route.
   example: []
   syntax:
-    content: public RenderFragment<string>? NoTenant { get; set; }
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public RenderFragment<string>? NoTenant { get; set; }
     parameters: []
     return:
-      type: System.Nullable{RenderFragment{System.String}}
+      type: Microsoft.AspNetCore.Components.RenderFragment{System.String}
       description: ''
-    content.vb: Public Property NoTenant As RenderFragment(Of String)?
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property NoTenant As RenderFragment(Of String)
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
   id: ApiError
@@ -303,18 +359,29 @@ items:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
   syntax:
-    content: public RenderFragment<HttpResponseMessage>? ApiError { get; set; }
+    content: >-
+      [Parameter]
+
+      [EditorRequired]
+
+      public RenderFragment<HttpResponseMessage>? ApiError { get; set; }
     parameters: []
     return:
-      type: System.Nullable{RenderFragment{HttpResponseMessage}}
-    content.vb: Public Property ApiError As RenderFragment(Of HttpResponseMessage)?
+      type: Microsoft.AspNetCore.Components.RenderFragment{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <Parameter>
+
+      <EditorRequired>
+
+      Public Property ApiError As RenderFragment(Of HttpResponseMessage)
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Components.EditorRequiredAttribute
+    ctor: Microsoft.AspNetCore.Components.EditorRequiredAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
   id: OnNavigateAsync
@@ -337,21 +404,25 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets a handler that should be called before navigating to a new page.\n"
+  summary: Gets or sets a handler that should be called before navigating to a new page.
   example: []
   syntax:
-    content: public EventCallback<TenantNavigationContext> OnNavigateAsync { get; set; }
+    content: >-
+      [Parameter]
+
+      public EventCallback<TenantNavigationContext> OnNavigateAsync { get; set; }
     parameters: []
     return:
-      type: EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}
-    content.vb: Public Property OnNavigateAsync As EventCallback(Of TenantNavigationContext)
+      type: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}
+    content.vb: >-
+      <Parameter>
+
+      Public Property OnNavigateAsync As EventCallback(Of TenantNavigationContext)
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
   commentId: P:R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
   id: PreferExactMatches
@@ -374,32 +445,48 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nGets or sets a flag to indicate whether route matching should prefer exact matches\nover wildcards.\n"
-  remarks: "\n<p>\nImportant: all applications should explicitly set this to true. The option to set it to false\n(or leave unset, which defaults to false) is only provided for backward compatibility.\nIn .NET 6, this option will be removed and the router will always prefer exact matches.\n</p>\n"
+  summary: >-
+    Gets or sets a flag to indicate whether route matching should prefer exact matches
+
+    over wildcards.
+  remarks: >-
+    <p>
+
+    Important: all applications should explicitly set this to true. The option to set it to false
+
+    (or leave unset, which defaults to false) is only provided for backward compatibility.
+
+    In .NET 6, this option will be removed and the router will always prefer exact matches.
+
+    </p>
   example: []
   syntax:
-    content: public bool PreferExactMatches { get; set; }
+    content: >-
+      [Parameter]
+
+      public bool PreferExactMatches { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property PreferExactMatches As Boolean
+    content.vb: >-
+      <Parameter>
+
+      Public Property PreferExactMatches As Boolean
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
-  commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
-  id: Attach(RenderHandle)
+  attributes:
+  - type: Microsoft.AspNetCore.Components.ParameterAttribute
+    ctor: Microsoft.AspNetCore.Components.ParameterAttribute.#ctor
+    arguments: []
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  id: Attach(Microsoft.AspNetCore.Components.RenderHandle)
   parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
   langs:
   - csharp
   - vb
   name: Attach(RenderHandle)
   nameWithType: R_TenantRouter.Attach(RenderHandle)
-  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(RenderHandle)
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach(Microsoft.AspNetCore.Components.RenderHandle)
   type: Method
   source:
     remote:
@@ -412,28 +499,28 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
+  summary: Attaches the component to a <xref href="Microsoft.AspNetCore.Components.RenderHandle" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public void Attach(RenderHandle renderHandle)
     parameters:
     - id: renderHandle
-      type: RenderHandle
+      type: Microsoft.AspNetCore.Components.RenderHandle
+      description: A <xref href="Microsoft.AspNetCore.Components.RenderHandle" data-throw-if-not-resolved="false"></xref> that allows the component to be rendered.
     content.vb: Public Sub Attach(renderHandle As RenderHandle)
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
-  commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
-  id: SetParametersAsync(ParameterView)
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+- uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  id: SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
   parent: R_BlazorFrontEnd.Tenant.R_TenantRouter
   langs:
   - csharp
   - vb
   name: SetParametersAsync(ParameterView)
   nameWithType: R_TenantRouter.SetParametersAsync(ParameterView)
-  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(ParameterView)
+  fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
   type: Method
   source:
     remote:
@@ -446,20 +533,27 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
+  summary: Sets parameters supplied by the component's parent in the render tree.
+  remarks: >-
+    The <xref href="Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)" data-throw-if-not-resolved="false"></xref> method should be passed the entire set of parameter values each
+
+    time <xref href="Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)" data-throw-if-not-resolved="false"></xref> is called. It not required that the caller supply a parameter
+
+    value for all parameters that are logically understood by the component.
   example: []
   syntax:
     content: public Task SetParametersAsync(ParameterView parameters)
     parameters:
     - id: parameters
-      type: ParameterView
+      type: Microsoft.AspNetCore.Components.ParameterView
+      description: The parameters.
     return:
-      type: Task
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that completes when the component has finished updating and rendering itself.
     content.vb: Public Function SetParametersAsync(parameters As ParameterView) As Task
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
+  implements:
+  - Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
   commentId: M:R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
   id: Dispose
@@ -482,674 +576,1099 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
   syntax:
     content: public void Dispose()
-    content.vb: Public Sub Dispose
+    content.vb: Public Sub Dispose()
   overload: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
+  implements:
+  - System.IDisposable.Dispose
 references:
 - uid: R_BlazorFrontEnd.Tenant
   commentId: N:R_BlazorFrontEnd.Tenant
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Tenant
   nameWithType: R_BlazorFrontEnd.Tenant
   fullName: R_BlazorFrontEnd.Tenant
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Tenant
+    name: Tenant
+    href: R_BlazorFrontEnd.Tenant.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Tenant
+    name: Tenant
+    href: R_BlazorFrontEnd.Tenant.html
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: IHandleAfterRender
-  commentId: '!:IHandleAfterRender'
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Components.IComponent
+  commentId: T:Microsoft.AspNetCore.Components.IComponent
+  parent: Microsoft.AspNetCore.Components
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Microsoft.AspNetCore.Components.IComponent
+- uid: Microsoft.AspNetCore.Components.IHandleAfterRender
+  commentId: T:Microsoft.AspNetCore.Components.IHandleAfterRender
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender
   name: IHandleAfterRender
   nameWithType: IHandleAfterRender
-  fullName: IHandleAfterRender
-- uid: IDisposable
+  fullName: Microsoft.AspNetCore.Components.IHandleAfterRender
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
   name: IDisposable
   nameWithType: IDisposable
-  fullName: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Components
+  commentId: N:Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components
+  nameWithType: Microsoft.AspNetCore.Components
+  fullName: Microsoft.AspNetCore.Components
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_AppAssembly
   name: AppAssembly
   nameWithType: R_TenantRouter.AppAssembly
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.AppAssembly
-- uid: System.Nullable{Assembly}
-  commentId: '!:System.Nullable{Assembly}'
-  definition: System.Nullable`1
-  name: Nullable<Assembly>
-  nameWithType: Nullable<Assembly>
-  fullName: System.Nullable<Assembly>
-  nameWithType.vb: Nullable(Of Assembly)
-  fullName.vb: System.Nullable(Of Assembly)
-  name.vb: Nullable(Of Assembly)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Assembly
-    name: Assembly
-    nameWithType: Assembly
-    fullName: Assembly
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Assembly
-    name: Assembly
-    nameWithType: Assembly
-    fullName: Assembly
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Nullable`1
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
   isExternal: true
-  name: Nullable<>
-  nameWithType: Nullable<>
-  fullName: System.Nullable<>
-  nameWithType.vb: Nullable(Of )
-  fullName.vb: System.Nullable(Of )
-  name.vb: Nullable(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
+  - uid: System
+    name: System
     isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
+  - uid: System
+    name: System
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: )
-    nameWithType: )
-    fullName: )
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_AdditionalAssemblies
   name: AdditionalAssemblies
   nameWithType: R_TenantRouter.AdditionalAssemblies
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.AdditionalAssemblies
-- uid: IEnumerable{Assembly}
-  commentId: '!:IEnumerable{Assembly}'
-  definition: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.Assembly}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   name: IEnumerable<Assembly>
   nameWithType: IEnumerable<Assembly>
-  fullName: IEnumerable<Assembly>
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.Assembly>
   nameWithType.vb: IEnumerable(Of Assembly)
-  fullName.vb: IEnumerable(Of Assembly)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly)
   name.vb: IEnumerable(Of Assembly)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: IEnumerable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Assembly
+  - uid: System.Reflection.Assembly
     name: Assembly
-    nameWithType: Assembly
-    fullName: Assembly
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: IEnumerable
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Assembly
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.Assembly
     name: Assembly
-    nameWithType: Assembly
-    fullName: Assembly
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: IEnumerable`1
-  commentId: '!:IEnumerable`1'
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
-  name: IEnumerable<>
-  nameWithType: IEnumerable<>
-  fullName: IEnumerable<>
-  nameWithType.vb: IEnumerable(Of )
-  fullName.vb: IEnumerable(Of )
-  name.vb: IEnumerable(Of )
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: IEnumerable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
-    nameWithType: IEnumerable
-    fullName: IEnumerable
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_NotFound
   name: NotFound
   nameWithType: R_TenantRouter.NotFound
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.NotFound
-- uid: System.Nullable{RenderFragment}
-  commentId: '!:System.Nullable{RenderFragment}'
-  definition: System.Nullable`1
-  name: Nullable<RenderFragment>
-  nameWithType: Nullable<RenderFragment>
-  fullName: System.Nullable<RenderFragment>
-  nameWithType.vb: Nullable(Of RenderFragment)
-  fullName.vb: System.Nullable(Of RenderFragment)
-  name.vb: Nullable(Of RenderFragment)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: RenderFragment
-    name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: RenderFragment
-    name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
+- uid: Microsoft.AspNetCore.Components.RenderFragment
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment
+  name: RenderFragment
+  nameWithType: RenderFragment
+  fullName: Microsoft.AspNetCore.Components.RenderFragment
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_Found
   name: Found
   nameWithType: R_TenantRouter.Found
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Found
-- uid: System.Nullable{RenderFragment{RouteData}}
-  commentId: '!:System.Nullable{RenderFragment{RouteData}}'
-  definition: System.Nullable`1
-  name: Nullable<RenderFragment<RouteData>>
-  nameWithType: Nullable<RenderFragment<RouteData>>
-  fullName: System.Nullable<RenderFragment<RouteData>>
-  nameWithType.vb: Nullable(Of RenderFragment(Of RouteData))
-  fullName.vb: System.Nullable(Of RenderFragment(Of RouteData))
-  name.vb: Nullable(Of RenderFragment(Of RouteData))
+- uid: Microsoft.AspNetCore.Components.RenderFragment{Microsoft.AspNetCore.Components.RouteData}
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment{Microsoft.AspNetCore.Components.RouteData}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.RenderFragment`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  name: RenderFragment<RouteData>
+  nameWithType: RenderFragment<RouteData>
+  fullName: Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>
+  nameWithType.vb: RenderFragment(Of RouteData)
+  fullName.vb: Microsoft.AspNetCore.Components.RenderFragment(Of Microsoft.AspNetCore.Components.RouteData)
+  name.vb: RenderFragment(Of RouteData)
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: RenderFragment`1
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
     name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - uid: RouteData
+  - uid: Microsoft.AspNetCore.Components.RouteData
     name: RouteData
-    nameWithType: RouteData
-    fullName: RouteData
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.routedata
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: RenderFragment`1
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
     name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: RouteData
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Components.RouteData
     name: RouteData
-    nameWithType: RouteData
-    fullName: RouteData
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.routedata
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: Microsoft.AspNetCore.Components.RenderFragment`1
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  name: RenderFragment<TValue>
+  nameWithType: RenderFragment<TValue>
+  fullName: Microsoft.AspNetCore.Components.RenderFragment<TValue>
+  nameWithType.vb: RenderFragment(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Components.RenderFragment(Of TValue)
+  name.vb: RenderFragment(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
+    name: RenderFragment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
+    name: RenderFragment
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_Navigating
   name: Navigating
   nameWithType: R_TenantRouter.Navigating
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Navigating
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_NoTenant
   name: NoTenant
   nameWithType: R_TenantRouter.NoTenant
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.NoTenant
-- uid: System.Nullable{RenderFragment{System.String}}
-  commentId: '!:System.Nullable{RenderFragment{System.String}}'
-  definition: System.Nullable`1
-  name: Nullable<RenderFragment<String>>
-  nameWithType: Nullable<RenderFragment<String>>
-  fullName: System.Nullable<RenderFragment<System.String>>
-  nameWithType.vb: Nullable(Of RenderFragment(Of String))
-  fullName.vb: System.Nullable(Of RenderFragment(Of System.String))
-  name.vb: Nullable(Of RenderFragment(Of String))
+- uid: Microsoft.AspNetCore.Components.RenderFragment{System.String}
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment{System.String}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.RenderFragment`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  name: RenderFragment<string>
+  nameWithType: RenderFragment<string>
+  fullName: Microsoft.AspNetCore.Components.RenderFragment<string>
+  nameWithType.vb: RenderFragment(Of String)
+  fullName.vb: Microsoft.AspNetCore.Components.RenderFragment(Of String)
+  name.vb: RenderFragment(Of String)
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: RenderFragment`1
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
     name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: RenderFragment`1
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
     name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_ApiError
   name: ApiError
   nameWithType: R_TenantRouter.ApiError
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.ApiError
-- uid: System.Nullable{RenderFragment{HttpResponseMessage}}
-  commentId: '!:System.Nullable{RenderFragment{HttpResponseMessage}}'
-  definition: System.Nullable`1
-  name: Nullable<RenderFragment<HttpResponseMessage>>
-  nameWithType: Nullable<RenderFragment<HttpResponseMessage>>
-  fullName: System.Nullable<RenderFragment<HttpResponseMessage>>
-  nameWithType.vb: Nullable(Of RenderFragment(Of HttpResponseMessage))
-  fullName.vb: System.Nullable(Of RenderFragment(Of HttpResponseMessage))
-  name.vb: Nullable(Of RenderFragment(Of HttpResponseMessage))
+- uid: Microsoft.AspNetCore.Components.RenderFragment{System.Net.Http.HttpResponseMessage}
+  commentId: T:Microsoft.AspNetCore.Components.RenderFragment{System.Net.Http.HttpResponseMessage}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.RenderFragment`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  name: RenderFragment<HttpResponseMessage>
+  nameWithType: RenderFragment<HttpResponseMessage>
+  fullName: Microsoft.AspNetCore.Components.RenderFragment<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: RenderFragment(Of HttpResponseMessage)
+  fullName.vb: Microsoft.AspNetCore.Components.RenderFragment(Of System.Net.Http.HttpResponseMessage)
+  name.vb: RenderFragment(Of HttpResponseMessage)
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: RenderFragment`1
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
     name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - uid: HttpResponseMessage
+  - uid: System.Net.Http.HttpResponseMessage
     name: HttpResponseMessage
-    nameWithType: HttpResponseMessage
-    fullName: HttpResponseMessage
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: RenderFragment`1
+  - uid: Microsoft.AspNetCore.Components.RenderFragment`1
     name: RenderFragment
-    nameWithType: RenderFragment
-    fullName: RenderFragment
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: HttpResponseMessage
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Net.Http.HttpResponseMessage
     name: HttpResponseMessage
-    nameWithType: HttpResponseMessage
-    fullName: HttpResponseMessage
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
   - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_OnNavigateAsync
   name: OnNavigateAsync
   nameWithType: R_TenantRouter.OnNavigateAsync
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.OnNavigateAsync
-- uid: EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}
-  commentId: '!:EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}'
-  definition: EventCallback`1
+- uid: Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}
+  commentId: T:Microsoft.AspNetCore.Components.EventCallback{R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext}
+  parent: Microsoft.AspNetCore.Components
+  definition: Microsoft.AspNetCore.Components.EventCallback`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
   name: EventCallback<TenantNavigationContext>
   nameWithType: EventCallback<TenantNavigationContext>
-  fullName: EventCallback<R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext>
+  fullName: Microsoft.AspNetCore.Components.EventCallback<R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext>
   nameWithType.vb: EventCallback(Of TenantNavigationContext)
-  fullName.vb: EventCallback(Of R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext)
+  fullName.vb: Microsoft.AspNetCore.Components.EventCallback(Of R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext)
   name.vb: EventCallback(Of TenantNavigationContext)
   spec.csharp:
-  - uid: EventCallback`1
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
     name: EventCallback
-    nameWithType: EventCallback
-    fullName: EventCallback
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
     name: TenantNavigationContext
-    nameWithType: TenantNavigationContext
-    fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+    href: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.html
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: EventCallback`1
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
     name: EventCallback
-    nameWithType: EventCallback
-    fullName: EventCallback
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
     name: TenantNavigationContext
-    nameWithType: TenantNavigationContext
-    fullName: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext
+    href: R_BlazorFrontEnd.Tenant.Internals.TenantNavigationContext.html
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: EventCallback`1
-  commentId: '!:EventCallback`1'
+- uid: Microsoft.AspNetCore.Components.EventCallback`1
+  commentId: T:Microsoft.AspNetCore.Components.EventCallback`1
   isExternal: true
-  name: EventCallback<>
-  nameWithType: EventCallback<>
-  fullName: EventCallback<>
-  nameWithType.vb: EventCallback(Of )
-  fullName.vb: EventCallback(Of )
-  name.vb: EventCallback(Of )
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  name: EventCallback<TValue>
+  nameWithType: EventCallback<TValue>
+  fullName: Microsoft.AspNetCore.Components.EventCallback<TValue>
+  nameWithType.vb: EventCallback(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Components.EventCallback(Of TValue)
+  name.vb: EventCallback(Of TValue)
   spec.csharp:
-  - uid: EventCallback`1
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
     name: EventCallback
-    nameWithType: EventCallback
-    fullName: EventCallback
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TValue
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: EventCallback`1
+  - uid: Microsoft.AspNetCore.Components.EventCallback`1
     name: EventCallback
-    nameWithType: EventCallback
-    fullName: EventCallback
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.eventcallback-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_PreferExactMatches
   name: PreferExactMatches
   nameWithType: R_TenantRouter.PreferExactMatches
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.PreferExactMatches
 - uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.AspNetCore.Components.RenderHandle
+  commentId: T:Microsoft.AspNetCore.Components.RenderHandle
+  parent: Microsoft.AspNetCore.Components
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderhandle
+  name: RenderHandle
+  nameWithType: RenderHandle
+  fullName: Microsoft.AspNetCore.Components.RenderHandle
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_Attach_Microsoft_AspNetCore_Components_RenderHandle_
   name: Attach
   nameWithType: R_TenantRouter.Attach
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Attach
-- uid: RenderHandle
-  commentId: '!:RenderHandle'
+- uid: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  commentId: M:Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  parent: Microsoft.AspNetCore.Components.IComponent
   isExternal: true
-  name: RenderHandle
-  nameWithType: RenderHandle
-  fullName: RenderHandle
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.attach
+  name: Attach(RenderHandle)
+  nameWithType: IComponent.Attach(RenderHandle)
+  fullName: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+    name: Attach
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.attach
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.RenderHandle
+    name: RenderHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderhandle
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)
+    name: Attach
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.attach
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.RenderHandle
+    name: RenderHandle
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderhandle
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  commentId: M:Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  parent: Microsoft.AspNetCore.Components.IComponent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.setparametersasync
+  name: SetParametersAsync(ParameterView)
+  nameWithType: IComponent.SetParametersAsync(ParameterView)
+  fullName: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Components.IComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
+    name: SetParametersAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent.setparametersasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Components.ParameterView
+    name: ParameterView
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
+  - name: )
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_
   name: SetParametersAsync
   nameWithType: R_TenantRouter.SetParametersAsync
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.SetParametersAsync
-- uid: ParameterView
-  commentId: '!:ParameterView'
+- uid: Microsoft.AspNetCore.Components.ParameterView
+  commentId: T:Microsoft.AspNetCore.Components.ParameterView
+  parent: Microsoft.AspNetCore.Components
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.parameterview
   name: ParameterView
   nameWithType: ParameterView
-  fullName: ParameterView
-- uid: Task
+  fullName: Microsoft.AspNetCore.Components.ParameterView
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
   isExternal: true
-  name: Task
-  nameWithType: Task
-  fullName: Task
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
+  href: R_BlazorFrontEnd.Tenant.R_TenantRouter.html#R_BlazorFrontEnd_Tenant_R_TenantRouter_Dispose
   name: Dispose
   nameWithType: R_TenantRouter.Dispose
   fullName: R_BlazorFrontEnd.Tenant.R_TenantRouter.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

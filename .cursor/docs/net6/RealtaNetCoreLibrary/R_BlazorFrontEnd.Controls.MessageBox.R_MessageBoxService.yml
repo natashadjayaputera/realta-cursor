@@ -1,0 +1,887 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+  commentId: T:R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+  id: R_MessageBoxService
+  parent: R_BlazorFrontEnd.Controls.MessageBox
+  children:
+  - R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.OnShowMessageBox
+  - R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String)
+  - R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String,System.String)
+  - R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String,System.String,R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType)
+  langs:
+  - csharp
+  - vb
+  name: R_MessageBoxService
+  nameWithType: R_MessageBoxService
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+  type: Class
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_MessageBoxService
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 2
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: public class R_MessageBoxService
+    content.vb: Public Class R_MessageBoxService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.OnShowMessageBox
+  commentId: E:R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.OnShowMessageBox
+  id: OnShowMessageBox
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: OnShowMessageBox
+  nameWithType: R_MessageBoxService.OnShowMessageBox
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.OnShowMessageBox
+  type: Event
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: OnShowMessageBox
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: public event Action<string, string, R_eMessageBoxButtonType, R_MessageBox>? OnShowMessageBox
+    return:
+      type: System.Action{System.String,System.String,R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType,R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox}
+    content.vb: Public Event OnShowMessageBox As Action(Of String, String, R_eMessageBoxButtonType, R_MessageBox)
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String)
+  commentId: M:R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String)
+  id: Show(System.String)
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: Show(string)
+  nameWithType: R_MessageBoxService.Show(string)
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(string)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Show
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: public Task<R_eMessageBoxResult> Show(string pcMessage)
+    parameters:
+    - id: pcMessage
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult}
+    content.vb: Public Function Show(pcMessage As String) As Task(Of R_eMessageBoxResult)
+  overload: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show*
+  nameWithType.vb: R_MessageBoxService.Show(String)
+  fullName.vb: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(String)
+  name.vb: Show(String)
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String,System.String)
+  commentId: M:R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String,System.String)
+  id: Show(System.String,System.String)
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: Show(string, string)
+  nameWithType: R_MessageBoxService.Show(string, string)
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(string, string)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Show
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 11
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: public Task<R_eMessageBoxResult> Show(string pcTitle, string pcMessage)
+    parameters:
+    - id: pcTitle
+      type: System.String
+    - id: pcMessage
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult}
+    content.vb: Public Function Show(pcTitle As String, pcMessage As String) As Task(Of R_eMessageBoxResult)
+  overload: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show*
+  nameWithType.vb: R_MessageBoxService.Show(String, String)
+  fullName.vb: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(String, String)
+  name.vb: Show(String, String)
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String,System.String,R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType)
+  commentId: M:R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(System.String,System.String,R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType)
+  id: Show(System.String,System.String,R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType)
+  parent: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: Show(string, string, R_eMessageBoxButtonType)
+  nameWithType: R_MessageBoxService.Show(string, string, R_eMessageBoxButtonType)
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(string, string, R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType)
+  type: Method
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Show
+    path: Library/R_BlazorFrontEnd.Controls/MessageBox/R_MessageBoxService.cs
+    startLine: 16
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.MessageBox
+  syntax:
+    content: public Task<R_eMessageBoxResult> Show(string pcTitle, string pcMessage, R_eMessageBoxButtonType peButtonType)
+    parameters:
+    - id: pcTitle
+      type: System.String
+    - id: pcMessage
+      type: System.String
+    - id: peButtonType
+      type: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+    return:
+      type: System.Threading.Tasks.Task{R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult}
+    content.vb: Public Function Show(pcTitle As String, pcMessage As String, peButtonType As R_eMessageBoxButtonType) As Task(Of R_eMessageBoxResult)
+  overload: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show*
+  nameWithType.vb: R_MessageBoxService.Show(String, String, R_eMessageBoxButtonType)
+  fullName.vb: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show(String, String, R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType)
+  name.vb: Show(String, String, R_eMessageBoxButtonType)
+references:
+- uid: R_BlazorFrontEnd.Controls.MessageBox
+  commentId: N:R_BlazorFrontEnd.Controls.MessageBox
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.MessageBox
+  nameWithType: R_BlazorFrontEnd.Controls.MessageBox
+  fullName: R_BlazorFrontEnd.Controls.MessageBox
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.MessageBox
+    name: MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.MessageBox
+    name: MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+    name: ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
+  parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
+  name: R_FrontExtensions
+  nameWithType: R_FrontExtensions
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
+- uid: R_BlazorFrontEnd.Extensions
+  commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Extensions
+  nameWithType: R_BlazorFrontEnd.Extensions
+  fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+- uid: System.Action{System.String,System.String,R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType,R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox}
+  commentId: T:System.Action{System.String,System.String,R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType,R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox}
+  parent: System
+  definition: System.Action`4
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<string, string, R_eMessageBoxButtonType, R_MessageBox>
+  nameWithType: Action<string, string, R_eMessageBoxButtonType, R_MessageBox>
+  fullName: System.Action<string, string, R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType, R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox>
+  nameWithType.vb: Action(Of String, String, R_eMessageBoxButtonType, R_MessageBox)
+  fullName.vb: System.Action(Of String, String, R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType, R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox)
+  name.vb: Action(Of String, String, R_eMessageBoxButtonType, R_MessageBox)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+    name: R_eMessageBoxButtonType
+    href: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.html
+  - name: ','
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox
+    name: R_MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+    name: R_eMessageBoxButtonType
+    href: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.html
+  - name: ','
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox
+    name: R_MessageBox
+    href: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox.html
+  - name: )
+- uid: System.Action`4
+  commentId: T:System.Action`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<T1, T2, T3, T4>
+  nameWithType: Action<T1, T2, T3, T4>
+  fullName: System.Action<T1, T2, T3, T4>
+  nameWithType.vb: Action(Of T1, T2, T3, T4)
+  fullName.vb: System.Action(Of T1, T2, T3, T4)
+  name.vb: Action(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show*
+  commentId: Overload:R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show
+  href: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.html#R_BlazorFrontEnd_Controls_MessageBox_R_MessageBoxService_Show_System_String_
+  name: Show
+  nameWithType: R_MessageBoxService.Show
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_MessageBoxService.Show
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult}
+  commentId: T:System.Threading.Tasks.Task{R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<R_eMessageBoxResult>
+  nameWithType: Task<R_eMessageBoxResult>
+  fullName: System.Threading.Tasks.Task<R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult>
+  nameWithType.vb: Task(Of R_eMessageBoxResult)
+  fullName.vb: System.Threading.Tasks.Task(Of R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult)
+  name.vb: Task(Of R_eMessageBoxResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+    name: R_eMessageBoxResult
+    href: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult
+    name: R_eMessageBoxResult
+    href: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxResult.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  commentId: T:R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType
+  parent: R_BlazorFrontEnd.Controls.MessageBox
+  href: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType.html
+  name: R_eMessageBoxButtonType
+  nameWithType: R_eMessageBoxButtonType
+  fullName: R_BlazorFrontEnd.Controls.MessageBox.R_eMessageBoxButtonType

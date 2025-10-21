@@ -17,6 +17,13 @@ priority: HIGH
 8. ❌ Using R_FrontGlobalVar in ViewModel → STOP, inject IClientHelper
 9. ❌ R_Popup for dialogs → STOP, use MessageBoxService
 10. ❌ R_Button for navigation → STOP, use R_Popup/R_Lookup/etc.
+11. ❌ R_Conductor for inquiry programs → STOP, conductor only for CRUD
+12. ❌ R_ComboBox with DataSource → STOP, use Data
+13. ❌ Adding TItem/TValue explicitly → STOP, check required parameters first in `.cursor\docs\net6`
+14. ❌ Ignoring warnings in projects → STOP, classify and address ALL warnings
+15. ❌ Claiming "warnings are acceptable" without analysis → STOP, document warning types
+16. ❌ Storing data state in Razor.cs → STOP, move to ViewModel
+17. ❌ Business logic state in code-behind → STOP, move to ViewModel
 
 ## FLAG & REFUSE (Do not continue)
 

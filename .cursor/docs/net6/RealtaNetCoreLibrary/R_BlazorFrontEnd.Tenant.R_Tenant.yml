@@ -6,11 +6,11 @@ items:
   parent: R_BlazorFrontEnd.Tenant
   children:
   - R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
-  - R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,IDictionary{System.String,System.String})
+  - R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
   - R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
   - R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
   - R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
-  - R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary{System.String,System.String})
+  - R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
   langs:
   - csharp
   - vb
@@ -29,26 +29,26 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nTenant\n"
+  summary: Tenant
   example: []
   syntax:
-    content: 'public class R_Tenant : object, R_ITenant'
-    content.vb: >-
-      Public Class R_Tenant
-          Inherits Object
-          Implements R_ITenant
+    content: 'public class R_Tenant : R_ITenant'
+    content.vb: Public Class R_Tenant Implements R_ITenant
   inheritance:
   - System.Object
   implements:
   - R_BlazorFrontEnd.Interfaces.R_ITenant
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
   commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
   id: '#ctor'
@@ -73,22 +73,21 @@ items:
   namespace: R_BlazorFrontEnd.Tenant
   syntax:
     content: public R_Tenant()
-    content.vb: Public Sub New
+    content.vb: Public Sub New()
   overload: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,IDictionary{System.String,System.String})
-  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,IDictionary{System.String,System.String})
-  id: '#ctor(System.String,IDictionary{System.String,System.String})'
+  nameWithType.vb: R_Tenant.New()
+  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.New()
+  name.vb: New()
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: '#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})'
   parent: R_BlazorFrontEnd.Tenant.R_Tenant
   langs:
   - csharp
   - vb
-  name: R_Tenant(String, IDictionary<String, String>)
-  nameWithType: R_Tenant.R_Tenant(String, IDictionary<String, String>)
-  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant(System.String, IDictionary<System.String, System.String>)
+  name: R_Tenant(string, IDictionary<string, string>)
+  nameWithType: R_Tenant.R_Tenant(string, IDictionary<string, string>)
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant(string, System.Collections.Generic.IDictionary<string, string>)
   type: Constructor
   source:
     remote:
@@ -101,7 +100,7 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nCtor\n"
+  summary: Ctor
   example: []
   syntax:
     content: public R_Tenant(string identifier, IDictionary<string, string> parameters)
@@ -110,17 +109,13 @@ items:
       type: System.String
       description: Identifier
     - id: parameters
-      type: IDictionary{System.String,System.String}
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
       description: Parameters (optional)
     content.vb: Public Sub New(identifier As String, parameters As IDictionary(Of String, String))
   overload: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor*
-  nameWithType.vb: R_Tenant.R_Tenant(String, IDictionary(Of String, String))
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant(System.String, IDictionary(Of System.String, System.String))
-  name.vb: R_Tenant(String, IDictionary(Of String, String))
+  nameWithType.vb: R_Tenant.New(String, IDictionary(Of String, String))
+  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.New(String, System.Collections.Generic.IDictionary(Of String, String))
+  name.vb: New(String, IDictionary(Of String, String))
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
   commentId: P:R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
   id: Identifier
@@ -143,7 +138,7 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nTenant URL Identifier\n"
+  summary: Tenant URL Identifier
   example: []
   syntax:
     content: public string Identifier { get; }
@@ -151,16 +146,10 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public ReadOnly Property Identifier As String
+    content.vb: Public Property Identifier As String
   overload: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier*
   implements:
   - R_BlazorFrontEnd.Interfaces.R_ITenant.Identifier
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
   commentId: P:R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
   id: Parameters
@@ -183,22 +172,18 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
-  summary: "\nTenant Parameters\n"
+  summary: Tenant Parameters
   example: []
   syntax:
     content: public IDictionary<string, string> Parameters { get; }
     parameters: []
     return:
-      type: IDictionary{System.String,System.String}
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
       description: ''
-    content.vb: Public ReadOnly Property Parameters As IDictionary(Of String, String)
+    content.vb: Public Property Parameters As IDictionary(Of String, String)
   overload: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters*
-  modifiers.csharp:
-  - public
-  - get
-  modifiers.vb:
-  - Public
-  - ReadOnly
+  implements:
+  - R_BlazorFrontEnd.Interfaces.R_ITenant.Parameters
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
   commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
   id: SetIdentifier(System.String)
@@ -206,9 +191,9 @@ items:
   langs:
   - csharp
   - vb
-  name: SetIdentifier(String)
-  nameWithType: R_Tenant.SetIdentifier(String)
-  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(System.String)
+  name: SetIdentifier(string)
+  nameWithType: R_Tenant.SetIdentifier(string)
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(string)
   type: Method
   source:
     remote:
@@ -221,6 +206,7 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
+  example: []
   syntax:
     content: public void SetIdentifier(string identifier)
     parameters:
@@ -230,20 +216,19 @@ items:
   overload: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier*
   implements:
   - R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary{System.String,System.String})
-  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary{System.String,System.String})
-  id: SetParameters(IDictionary{System.String,System.String})
+  nameWithType.vb: R_Tenant.SetIdentifier(String)
+  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier(String)
+  name.vb: SetIdentifier(String)
+- uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
+  id: SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
   parent: R_BlazorFrontEnd.Tenant.R_Tenant
   langs:
   - csharp
   - vb
-  name: SetParameters(IDictionary<String, String>)
-  nameWithType: R_Tenant.SetParameters(IDictionary<String, String>)
-  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary<System.String, System.String>)
+  name: SetParameters(IDictionary<string, string>)
+  nameWithType: R_Tenant.SetParameters(IDictionary<string, string>)
+  fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(System.Collections.Generic.IDictionary<string, string>)
   type: Method
   source:
     remote:
@@ -256,241 +241,653 @@ items:
   assemblies:
   - R_BlazorFrontEnd.Tenant
   namespace: R_BlazorFrontEnd.Tenant
+  example: []
   syntax:
     content: public void SetParameters(IDictionary<string, string> parameters)
     parameters:
     - id: parameters
-      type: IDictionary{System.String,System.String}
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
     content.vb: Public Sub SetParameters(parameters As IDictionary(Of String, String))
   overload: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters*
+  implements:
+  - R_BlazorFrontEnd.Interfaces.R_ITenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
   nameWithType.vb: R_Tenant.SetParameters(IDictionary(Of String, String))
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(IDictionary(Of System.String, System.String))
+  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters(System.Collections.Generic.IDictionary(Of String, String))
   name.vb: SetParameters(IDictionary(Of String, String))
 references:
 - uid: R_BlazorFrontEnd.Tenant
   commentId: N:R_BlazorFrontEnd.Tenant
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Tenant
   nameWithType: R_BlazorFrontEnd.Tenant
   fullName: R_BlazorFrontEnd.Tenant
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Tenant
+    name: Tenant
+    href: R_BlazorFrontEnd.Tenant.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Tenant
+    name: Tenant
+    href: R_BlazorFrontEnd.Tenant.html
 - uid: System.Object
+  commentId: T:System.Object
+  parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: R_BlazorFrontEnd.Interfaces.R_ITenant
   commentId: T:R_BlazorFrontEnd.Interfaces.R_ITenant
   parent: R_BlazorFrontEnd.Interfaces
+  href: R_BlazorFrontEnd.Interfaces.R_ITenant.html
   name: R_ITenant
   nameWithType: R_ITenant
   fullName: R_BlazorFrontEnd.Interfaces.R_ITenant
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.Interfaces
   commentId: N:R_BlazorFrontEnd.Interfaces
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Interfaces
   nameWithType: R_BlazorFrontEnd.Interfaces
   fullName: R_BlazorFrontEnd.Interfaces
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Interfaces
+    name: Interfaces
+    href: R_BlazorFrontEnd.Interfaces.html
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.#ctor*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.#ctor
+  href: R_BlazorFrontEnd.Tenant.R_Tenant.html#R_BlazorFrontEnd_Tenant_R_Tenant__ctor
   name: R_Tenant
   nameWithType: R_Tenant.R_Tenant
   fullName: R_BlazorFrontEnd.Tenant.R_Tenant.R_Tenant
+  nameWithType.vb: R_Tenant.New
+  fullName.vb: R_BlazorFrontEnd.Tenant.R_Tenant.New
+  name.vb: New
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: IDictionary{System.String,System.String}
-  commentId: '!:IDictionary{System.String,System.String}'
-  definition: IDictionary`2
-  name: IDictionary<String, String>
-  nameWithType: IDictionary<String, String>
-  fullName: IDictionary<System.String, System.String>
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
   nameWithType.vb: IDictionary(Of String, String)
-  fullName.vb: IDictionary(Of System.String, System.String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
   name.vb: IDictionary(Of String, String)
   spec.csharp:
-  - uid: IDictionary`2
+  - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
-    nameWithType: IDictionary
-    fullName: IDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: IDictionary`2
+  - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
-    nameWithType: IDictionary
-    fullName: IDictionary
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
-- uid: IDictionary`2
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
   isExternal: true
-  name: IDictionary<, >
-  nameWithType: IDictionary<, >
-  fullName: IDictionary<, >
-  nameWithType.vb: IDictionary(Of , )
-  fullName.vb: IDictionary(Of , )
-  name.vb: IDictionary(Of , )
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
   spec.csharp:
-  - uid: IDictionary`2
+  - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
-    nameWithType: IDictionary
-    fullName: IDictionary
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
   - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
-  - uid: IDictionary`2
+  - uid: System.Collections.Generic.IDictionary`2
     name: IDictionary
-    nameWithType: IDictionary
-    fullName: IDictionary
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
+  href: R_BlazorFrontEnd.Tenant.R_Tenant.html#R_BlazorFrontEnd_Tenant_R_Tenant_Identifier
   name: Identifier
   nameWithType: R_Tenant.Identifier
   fullName: R_BlazorFrontEnd.Tenant.R_Tenant.Identifier
@@ -502,11 +899,19 @@ references:
   fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.Identifier
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+  href: R_BlazorFrontEnd.Tenant.R_Tenant.html#R_BlazorFrontEnd_Tenant_R_Tenant_Parameters
   name: Parameters
   nameWithType: R_Tenant.Parameters
   fullName: R_BlazorFrontEnd.Tenant.R_Tenant.Parameters
+- uid: R_BlazorFrontEnd.Interfaces.R_ITenant.Parameters
+  commentId: P:R_BlazorFrontEnd.Interfaces.R_ITenant.Parameters
+  parent: R_BlazorFrontEnd.Interfaces.R_ITenant
+  name: Parameters
+  nameWithType: R_ITenant.Parameters
+  fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.Parameters
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier
+  href: R_BlazorFrontEnd.Tenant.R_Tenant.html#R_BlazorFrontEnd_Tenant_R_Tenant_SetIdentifier_System_String_
   name: SetIdentifier
   nameWithType: R_Tenant.SetIdentifier
   fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetIdentifier
@@ -514,43 +919,89 @@ references:
   commentId: M:R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
   parent: R_BlazorFrontEnd.Interfaces.R_ITenant
   isExternal: true
-  name: SetIdentifier(String)
-  nameWithType: R_ITenant.SetIdentifier(String)
-  fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetIdentifier(string)
+  nameWithType: R_ITenant.SetIdentifier(string)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(string)
+  nameWithType.vb: R_ITenant.SetIdentifier(String)
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(String)
+  name.vb: SetIdentifier(String)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
     name: SetIdentifier
-    nameWithType: R_ITenant.SetIdentifier
-    fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
+    name: string
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier(System.String)
     name: SetIdentifier
-    nameWithType: R_ITenant.SetIdentifier
-    fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetIdentifier
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.String
     name: String
-    nameWithType: String
-    fullName: System.String
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters*
   commentId: Overload:R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters
+  href: R_BlazorFrontEnd.Tenant.R_Tenant.html#R_BlazorFrontEnd_Tenant_R_Tenant_SetParameters_System_Collections_Generic_IDictionary_System_String_System_String__
   name: SetParameters
   nameWithType: R_Tenant.SetParameters
   fullName: R_BlazorFrontEnd.Tenant.R_Tenant.SetParameters
+- uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:R_BlazorFrontEnd.Interfaces.R_ITenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: R_BlazorFrontEnd.Interfaces.R_ITenant
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: SetParameters(IDictionary<string, string>)
+  nameWithType: R_ITenant.SetParameters(IDictionary<string, string>)
+  fullName: R_BlazorFrontEnd.Interfaces.R_ITenant.SetParameters(System.Collections.Generic.IDictionary<string, string>)
+  nameWithType.vb: R_ITenant.SetParameters(IDictionary(Of String, String))
+  fullName.vb: R_BlazorFrontEnd.Interfaces.R_ITenant.SetParameters(System.Collections.Generic.IDictionary(Of String, String))
+  name.vb: SetParameters(IDictionary(Of String, String))
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
+    name: SetParameters
+  - name: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Interfaces.R_ITenant.SetParameters(System.Collections.Generic.IDictionary{System.String,System.String})
+    name: SetParameters
+  - name: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )

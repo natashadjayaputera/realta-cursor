@@ -34,12 +34,7 @@ items:
     content.vb: Public Interface R_IFileConverter
   extensionMethods:
   - System.Object.R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
+  - System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
   commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
   id: R_GetStringFromByte(System.Byte[])
@@ -47,9 +42,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_GetStringFromByte(Byte[])
-  nameWithType: R_IFileConverter.R_GetStringFromByte(Byte[])
-  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte[])
+  name: R_GetStringFromByte(byte[])
+  nameWithType: R_IFileConverter.R_GetStringFromByte(byte[])
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(byte[])
   type: Method
   source:
     remote:
@@ -72,7 +67,7 @@ items:
     content.vb: Function R_GetStringFromByte(poByteFile As Byte()) As String
   overload: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte*
   nameWithType.vb: R_IFileConverter.R_GetStringFromByte(Byte())
-  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(System.Byte())
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte(Byte())
   name.vb: R_GetStringFromByte(Byte())
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
   commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[],R_BlazorFrontEnd.Enums.R_eDocumentType)
@@ -81,9 +76,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_GetHtmlStringFromByte(Byte[], R_eDocumentType)
-  nameWithType: R_IFileConverter.R_GetHtmlStringFromByte(Byte[], R_eDocumentType)
-  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte[], R_BlazorFrontEnd.Enums.R_eDocumentType)
+  name: R_GetHtmlStringFromByte(byte[], R_eDocumentType)
+  nameWithType: R_IFileConverter.R_GetHtmlStringFromByte(byte[], R_eDocumentType)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(byte[], R_BlazorFrontEnd.Enums.R_eDocumentType)
   type: Method
   source:
     remote:
@@ -104,11 +99,11 @@ items:
     - id: peDocumentType
       type: R_BlazorFrontEnd.Enums.R_eDocumentType
     return:
-      type: System.Nullable{System.String}
-    content.vb: Function R_GetHtmlStringFromByte(poByteFile As Byte(), peDocumentType As R_eDocumentType) As String?
+      type: System.String
+    content.vb: Function R_GetHtmlStringFromByte(poByteFile As Byte(), peDocumentType As R_eDocumentType) As String
   overload: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte*
   nameWithType.vb: R_IFileConverter.R_GetHtmlStringFromByte(Byte(), R_eDocumentType)
-  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(System.Byte(), R_BlazorFrontEnd.Enums.R_eDocumentType)
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte(Byte(), R_BlazorFrontEnd.Enums.R_eDocumentType)
   name.vb: R_GetHtmlStringFromByte(Byte(), R_eDocumentType)
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
   commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
@@ -117,9 +112,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_GetByteFromString(String)
-  nameWithType: R_IFileConverter.R_GetByteFromString(String)
-  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(System.String)
+  name: R_GetByteFromString(string)
+  nameWithType: R_IFileConverter.R_GetByteFromString(string)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(string)
   type: Method
   source:
     remote:
@@ -141,6 +136,9 @@ items:
       type: System.Byte[]
     content.vb: Function R_GetByteFromString(pcHtmlContent As String) As Byte()
   overload: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString*
+  nameWithType.vb: R_IFileConverter.R_GetByteFromString(String)
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString(String)
+  name.vb: R_GetByteFromString(String)
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
   commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
   id: R_GetByteFromHtmlString(System.String,R_BlazorFrontEnd.Enums.R_eDocumentType)
@@ -148,9 +146,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_GetByteFromHtmlString(String, R_eDocumentType)
-  nameWithType: R_IFileConverter.R_GetByteFromHtmlString(String, R_eDocumentType)
-  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(System.String, R_BlazorFrontEnd.Enums.R_eDocumentType)
+  name: R_GetByteFromHtmlString(string, R_eDocumentType)
+  nameWithType: R_IFileConverter.R_GetByteFromHtmlString(string, R_eDocumentType)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(string, R_BlazorFrontEnd.Enums.R_eDocumentType)
   type: Method
   source:
     remote:
@@ -164,7 +162,7 @@ items:
   - R_BlazorFrontEnd
   namespace: R_BlazorFrontEnd
   syntax:
-    content: byte[] R_GetByteFromHtmlString(string pcHtmlContent, R_eDocumentType peDocumentType)
+    content: byte[]? R_GetByteFromHtmlString(string pcHtmlContent, R_eDocumentType peDocumentType)
     parameters:
     - id: pcHtmlContent
       type: System.String
@@ -174,6 +172,9 @@ items:
       type: System.Byte[]
     content.vb: Function R_GetByteFromHtmlString(pcHtmlContent As String, peDocumentType As R_eDocumentType) As Byte()
   overload: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString*
+  nameWithType.vb: R_IFileConverter.R_GetByteFromHtmlString(String, R_eDocumentType)
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString(String, R_BlazorFrontEnd.Enums.R_eDocumentType)
+  name.vb: R_GetByteFromHtmlString(String, R_eDocumentType)
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
   commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
   id: R_GetRtfStringFromHtmlString(System.String)
@@ -181,9 +182,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_GetRtfStringFromHtmlString(String)
-  nameWithType: R_IFileConverter.R_GetRtfStringFromHtmlString(String)
-  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(System.String)
+  name: R_GetRtfStringFromHtmlString(string)
+  nameWithType: R_IFileConverter.R_GetRtfStringFromHtmlString(string)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(string)
   type: Method
   source:
     remote:
@@ -202,9 +203,12 @@ items:
     - id: pcHtmlContent
       type: System.String
     return:
-      type: System.Nullable{System.String}
-    content.vb: Function R_GetRtfStringFromHtmlString(pcHtmlContent As String) As String?
+      type: System.String
+    content.vb: Function R_GetRtfStringFromHtmlString(pcHtmlContent As String) As String
   overload: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString*
+  nameWithType.vb: R_IFileConverter.R_GetRtfStringFromHtmlString(String)
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString(String)
+  name.vb: R_GetRtfStringFromHtmlString(String)
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
   commentId: M:R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
   id: R_GetHtmlStringFromRtfString(System.String)
@@ -212,9 +216,9 @@ items:
   langs:
   - csharp
   - vb
-  name: R_GetHtmlStringFromRtfString(String)
-  nameWithType: R_IFileConverter.R_GetHtmlStringFromRtfString(String)
-  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(System.String)
+  name: R_GetHtmlStringFromRtfString(string)
+  nameWithType: R_IFileConverter.R_GetHtmlStringFromRtfString(string)
+  fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(string)
   type: Method
   source:
     remote:
@@ -233,12 +237,16 @@ items:
     - id: pcRtfContent
       type: System.String
     return:
-      type: System.Nullable{System.String}
-    content.vb: Function R_GetHtmlStringFromRtfString(pcRtfContent As String) As String?
+      type: System.String
+    content.vb: Function R_GetHtmlStringFromRtfString(pcRtfContent As String) As String
   overload: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString*
+  nameWithType.vb: R_IFileConverter.R_GetHtmlStringFromRtfString(String)
+  fullName.vb: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString(String)
+  name.vb: R_GetHtmlStringFromRtfString(String)
 references:
 - uid: R_BlazorFrontEnd
   commentId: N:R_BlazorFrontEnd
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd
   nameWithType: R_BlazorFrontEnd
   fullName: R_BlazorFrontEnd
@@ -246,230 +254,309 @@ references:
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   parent: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   definition: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
-  name: ThrowIfNull()
-  nameWithType: R_FrontExtensions.ThrowIfNull()
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull()
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
-  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+  - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
+- uid: System.Object.R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  parent: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  definition: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   commentId: M:R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
   isExternal: true
-  name: ThrowIfNull(Object)
-  nameWithType: R_FrontExtensions.ThrowIfNull(Object)
-  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
+  name: ThrowIfNull(object)
+  nameWithType: R_FrontExtensions.ThrowIfNull(object)
+  fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(object)
+  nameWithType.vb: R_FrontExtensions.ThrowIfNull(Object)
+  fullName.vb: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(Object)
+  name.vb: ThrowIfNull(Object)
   spec.csharp:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull(System.Object)
     name: ThrowIfNull
-    nameWithType: R_FrontExtensions.ThrowIfNull
-    fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions.ThrowIfNull
+    href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html#R_BlazorFrontEnd_Extensions_R_FrontExtensions_ThrowIfNull_System_Object_
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Extensions.R_FrontExtensions
   commentId: T:R_BlazorFrontEnd.Extensions.R_FrontExtensions
   parent: R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.Extensions.R_FrontExtensions.html
   name: R_FrontExtensions
   nameWithType: R_FrontExtensions
   fullName: R_BlazorFrontEnd.Extensions.R_FrontExtensions
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  commentId: M:R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+  isExternal: true
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  name: CompareObject(object, object)
+  nameWithType: R_FrontUtility.CompareObject(object, object)
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(object, object)
+  nameWithType.vb: R_FrontUtility.CompareObject(Object, Object)
+  fullName.vb: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(Object, Object)
+  name.vb: CompareObject(Object, Object)
+  spec.csharp:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: R_BlazorFrontEnd.Helpers.R_FrontUtility.CompareObject(System.Object,System.Object)
+    name: CompareObject
+    href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html#R_BlazorFrontEnd_Helpers_R_FrontUtility_CompareObject_System_Object_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: R_BlazorFrontEnd.Helpers.R_FrontUtility
+  commentId: T:R_BlazorFrontEnd.Helpers.R_FrontUtility
+  parent: R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.Helpers.R_FrontUtility.html
+  name: R_FrontUtility
+  nameWithType: R_FrontUtility
+  fullName: R_BlazorFrontEnd.Helpers.R_FrontUtility
 - uid: R_BlazorFrontEnd.Extensions
   commentId: N:R_BlazorFrontEnd.Extensions
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Extensions
   nameWithType: R_BlazorFrontEnd.Extensions
   fullName: R_BlazorFrontEnd.Extensions
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Extensions
+    name: Extensions
+    href: R_BlazorFrontEnd.Extensions.html
+- uid: R_BlazorFrontEnd.Helpers
+  commentId: N:R_BlazorFrontEnd.Helpers
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Helpers
+  nameWithType: R_BlazorFrontEnd.Helpers
+  fullName: R_BlazorFrontEnd.Helpers
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Helpers
+    name: Helpers
+    href: R_BlazorFrontEnd.Helpers.html
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte*
   commentId: Overload:R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte
+  href: R_BlazorFrontEnd.R_IFileConverter.html#R_BlazorFrontEnd_R_IFileConverter_R_GetStringFromByte_System_Byte___
   name: R_GetStringFromByte
   nameWithType: R_IFileConverter.R_GetStringFromByte
   fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetStringFromByte
 - uid: System.Byte[]
   isExternal: true
-  name: Byte[]
-  nameWithType: Byte[]
-  fullName: System.Byte[]
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
   nameWithType.vb: Byte()
-  fullName.vb: System.Byte()
+  fullName.vb: Byte()
   name.vb: Byte()
   spec.csharp:
   - uid: System.Byte
-    name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
+    name: byte
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: System.Byte
     name: Byte
-    nameWithType: Byte
-    fullName: System.Byte
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
 - uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte*
   commentId: Overload:R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte
+  href: R_BlazorFrontEnd.R_IFileConverter.html#R_BlazorFrontEnd_R_IFileConverter_R_GetHtmlStringFromByte_System_Byte___R_BlazorFrontEnd_Enums_R_eDocumentType_
   name: R_GetHtmlStringFromByte
   nameWithType: R_IFileConverter.R_GetHtmlStringFromByte
   fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromByte
 - uid: R_BlazorFrontEnd.Enums.R_eDocumentType
   commentId: T:R_BlazorFrontEnd.Enums.R_eDocumentType
   parent: R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.Enums.R_eDocumentType.html
   name: R_eDocumentType
   nameWithType: R_eDocumentType
   fullName: R_BlazorFrontEnd.Enums.R_eDocumentType
-- uid: System.Nullable{System.String}
-  commentId: '!:System.Nullable{System.String}'
-  definition: System.Nullable`1
-  name: Nullable<String>
-  nameWithType: Nullable<String>
-  fullName: System.Nullable<System.String>
-  nameWithType.vb: Nullable(Of String)
-  fullName.vb: System.Nullable(Of System.String)
-  name.vb: Nullable(Of String)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: R_BlazorFrontEnd.Enums
   commentId: N:R_BlazorFrontEnd.Enums
+  href: R_BlazorFrontEnd.html
   name: R_BlazorFrontEnd.Enums
   nameWithType: R_BlazorFrontEnd.Enums
   fullName: R_BlazorFrontEnd.Enums
-- uid: System.Nullable`1
-  isExternal: true
-  name: Nullable<>
-  nameWithType: Nullable<>
-  fullName: System.Nullable<>
-  nameWithType.vb: Nullable(Of )
-  fullName.vb: System.Nullable(Of )
-  name.vb: Nullable(Of )
   spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html
   spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    nameWithType: Nullable
-    fullName: System.Nullable
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
-  - name: )
-    nameWithType: )
-    fullName: )
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Enums.html
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString*
   commentId: Overload:R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString
+  href: R_BlazorFrontEnd.R_IFileConverter.html#R_BlazorFrontEnd_R_IFileConverter_R_GetByteFromString_System_String_
   name: R_GetByteFromString
   nameWithType: R_IFileConverter.R_GetByteFromString
   fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromString
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString*
   commentId: Overload:R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString
+  href: R_BlazorFrontEnd.R_IFileConverter.html#R_BlazorFrontEnd_R_IFileConverter_R_GetByteFromHtmlString_System_String_R_BlazorFrontEnd_Enums_R_eDocumentType_
   name: R_GetByteFromHtmlString
   nameWithType: R_IFileConverter.R_GetByteFromHtmlString
   fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetByteFromHtmlString
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString*
   commentId: Overload:R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString
+  href: R_BlazorFrontEnd.R_IFileConverter.html#R_BlazorFrontEnd_R_IFileConverter_R_GetRtfStringFromHtmlString_System_String_
   name: R_GetRtfStringFromHtmlString
   nameWithType: R_IFileConverter.R_GetRtfStringFromHtmlString
   fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetRtfStringFromHtmlString
 - uid: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString*
   commentId: Overload:R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString
+  href: R_BlazorFrontEnd.R_IFileConverter.html#R_BlazorFrontEnd_R_IFileConverter_R_GetHtmlStringFromRtfString_System_String_
   name: R_GetHtmlStringFromRtfString
   nameWithType: R_IFileConverter.R_GetHtmlStringFromRtfString
   fullName: R_BlazorFrontEnd.R_IFileConverter.R_GetHtmlStringFromRtfString

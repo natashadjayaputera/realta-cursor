@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  id: R_eCharacterCasing
+  parent: R_BlazorFrontEnd.Controls.Enums
+  children:
+  - R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Lower
+  - R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Normal
+  - R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Upper
+  langs:
+  - csharp
+  - vb
+  name: R_eCharacterCasing
+  nameWithType: R_eCharacterCasing
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  type: Enum
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: R_eCharacterCasing
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+    startLine: 4
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: public enum R_eCharacterCasing
+    content.vb: Public Enum R_eCharacterCasing
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Normal
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Normal
+  id: Normal
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: R_eCharacterCasing.Normal
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Normal
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Normal
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+    startLine: 6
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Normal = 0
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Upper
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Upper
+  id: Upper
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  langs:
+  - csharp
+  - vb
+  name: Upper
+  nameWithType: R_eCharacterCasing.Upper
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Upper
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Upper
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+    startLine: 8
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Upper = 1
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Lower
+  commentId: F:R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Lower
+  id: Lower
+  parent: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  langs:
+  - csharp
+  - vb
+  name: Lower
+  nameWithType: R_eCharacterCasing.Lower
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.Lower
+  type: Field
+  source:
+    remote:
+      path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+      branch: master
+      repo: git@github.com:siholsihol/RealtaNetCoreLibrary.git
+    id: Lower
+    path: Library/R_BlazorFrontEnd.Controls/Enums/R_eCharacterCasing.cs
+    startLine: 10
+  assemblies:
+  - R_BlazorFrontEnd.Controls
+  namespace: R_BlazorFrontEnd.Controls.Enums
+  syntax:
+    content: Lower = 2
+    return:
+      type: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+references:
+- uid: R_BlazorFrontEnd.Controls.Enums
+  commentId: N:R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.html
+  name: R_BlazorFrontEnd.Controls.Enums
+  nameWithType: R_BlazorFrontEnd.Controls.Enums
+  fullName: R_BlazorFrontEnd.Controls.Enums
+  spec.csharp:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+  spec.vb:
+  - uid: R_BlazorFrontEnd
+    name: R_BlazorFrontEnd
+    href: R_BlazorFrontEnd.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls
+    name: Controls
+    href: R_BlazorFrontEnd.Controls.html
+  - name: .
+  - uid: R_BlazorFrontEnd.Controls.Enums
+    name: Enums
+    href: R_BlazorFrontEnd.Controls.Enums.html
+- uid: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  commentId: T:R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
+  parent: R_BlazorFrontEnd.Controls.Enums
+  href: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing.html
+  name: R_eCharacterCasing
+  nameWithType: R_eCharacterCasing
+  fullName: R_BlazorFrontEnd.Controls.Enums.R_eCharacterCasing
