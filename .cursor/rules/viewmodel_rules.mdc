@@ -24,6 +24,26 @@ glob: "*ToCSharpViewModel*"
 - Private fields use `_snakeCase` (no type prefix)
 - **CRITICAL**: Model initialization pattern: `private readonly FAM00100Model _model = new FAM00100Model();`
 
+## Data Validation Rules - CRITICAL
+- **All validation logic MUST be in ViewModel**, never in Razor code-behind
+- **Validation methods return `R_Exception`** for consistent error handling
+- **Validation methods accept DTO parameters** for validation
+- **Resource-based error messages** using `R_FrontUtility.R_GetError()`
+- **Validation covers all business rules** and data integrity checks
+
+### Validation Method Pattern
+- **Method signature**: `public R_Exception Validate{EntityName}({EntityDTO} poEntity)`
+- **Return type**: `R_Exception` (not void)
+- **Parameter**: Entity DTO to validate
+- **Error handling**: Use `loEx.Add("", "ErrorKey")` for validation errors
+- **Resource messages**: All error messages from resource files
+
+### Validation Integration Rules
+- **Code-behind calls ViewModel validation** methods
+- **No inline validation** in Razor event handlers
+- **Validation results** passed back through `R_Exception`
+- **Consistent error handling** across all validation scenarios
+
 ## When CRUD Methods Are Needed
 - **Form-level CRUD**: ViewModels with `R_Conductor` (main forms)
 - **Grid-level CRUD**: ViewModels with `R_Grid` that have Add/Edit/Delete operations
@@ -46,3 +66,7 @@ glob: "*ToCSharpViewModel*"
 - ❌ **CRITICAL**: Assigning to Data property (it's read-only), use separate properties for CRUD results (not Data property)
 - ❌ **CRITICAL**: Missing CRUD methods for ViewModels with grids/conductors
 - ❌ **CRITICAL**: Not using separate properties for CRUD results
+- ❌ **CRITICAL**: Validation logic in Razor code-behind instead of ViewModel
+- ❌ **CRITICAL**: Validation methods returning void instead of R_Exception
+- ❌ **CRITICAL**: Hardcoded error messages instead of resource-based messages
+- ❌ **CRITICAL**: Missing validation methods for CRUD operations

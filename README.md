@@ -54,3 +54,11 @@ There are 4 folders inside:
 
 ---
 
+# Prompt Guide
+
+To migrate, use this prompt with mode **PLAN**
+Read ['Agents'](.cursor/agents/) - contains **ALL Agents** used to migrate
+
+```cmd
+/agents <AgentName> FAM00300 by default add todo to save the plan you generate to /plan/ folder as 1st item.
+```

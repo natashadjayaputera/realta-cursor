@@ -21,10 +21,16 @@ glob: "*ToCSharpBack*"
 - Files: `{ProgramName}BackResources_msgrsc.resx` (English), `{ProgramName}BackResources_msgrsc.id.resx` (Indonesian)
 - Pattern: `R_Utility.R_GetError(typeof(Resources_Dummy_Class), pcErrorId)`
 
+## Class Separation Pattern
+- **Main Business Logic**: `{ProgramName}Cls.cs` - Inherits R_BusinessObjectAsync (CRUD + Grid methods only)
+- **Print Operations**: `{ProgramName}PrintCls.cs` - Standalone class for print methods (NO inheritance)
+- **Batch Operations**: `{ProgramName}BatchCls.cs` - Standalone class for batch methods (NO inheritance)
+
 ## Rules
 - MUST: Use `GetError()` for all errors
 - MUST: Never modify SQL or SP names
 - MUST: Log method start/end and queries
+- MUST: Separate print/batch methods into dedicated classes
 
 ## Violations
 - ❌ Logger/Activity in Common project
@@ -38,3 +44,4 @@ glob: "*ToCSharpBack*"
 - ❌ Interface methods not matching business logic class methods
 - ❌ Skip `loDb = null` in finally
 - ❌ Execute queries without logging
+- ❌ Print/batch methods in main business logic class

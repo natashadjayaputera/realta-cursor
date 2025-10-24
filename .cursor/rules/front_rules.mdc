@@ -73,6 +73,19 @@ glob: "*ToCSharpFront*"
 - All @using statements in _Imports.razor
 - NO @using in .razor files
 
+## UI Architecture Rules
+- **Data Validation**: All validation logic MUST be in ViewModel, not in Razor code-behind
+- **Separation of Concerns**: 
+  - **ViewModel**: Business logic, validation, data state management
+  - **Code-behind**: UI events, component references, UI-specific logic only
+- **Component References**: Store only UI component references in code-behind (`R_Grid? _gridRef`)
+- **Data State**: All business data must be in ViewModel properties, never in Razor.cs fields
+
+## SDK and Project Configuration Rules
+- **CRITICAL**: Must use `Microsoft.NET.Sdk.Razor` for Blazor component libraries
+- **Required Elements**: `<SupportedPlatform Include="browser" />` is mandatory
+- **ItemGroup Order**: PropertyGroup → SupportedPlatform → PackageReference → DLL References → ProjectReferences
+
 ## Violations
 - ❌ R_Conductor for inquiry programs
 - ❌ Using `Text` parameter on R_Button
@@ -84,3 +97,7 @@ glob: "*ToCSharpFront*"
 - ❌ Data tracking variables in Razor.cs
 - ❌ `R_Button` for navigation
 - ❌ Explicit `TItem`/`TValue` unless required
+- ❌ **CRITICAL**: Data validation logic in Razor code-behind
+- ❌ **CRITICAL**: Wrong SDK template (`Microsoft.NET.Sdk` instead of `Microsoft.NET.Sdk.Razor`)
+- ❌ **CRITICAL**: Missing `<SupportedPlatform Include="browser" />` element
+- ❌ **CRITICAL**: Wrong ItemGroup ordering in .csproj file

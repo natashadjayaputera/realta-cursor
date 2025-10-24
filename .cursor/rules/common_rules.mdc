@@ -24,6 +24,7 @@ glob: "*ToCSharpCommon*"
 - Variables with "I" prefix use `int` not `short` (critical naming convention)
 - Consolidate all enums here
 - No Logger/Activity in Common
+- **IGNORE Print and Batch Functions**: Do NOT include print/report methods (GetPrintData, GetBatchData) in Common interfaces - these are Back-only operations
 
 ## Rules
 - MUST preserve exact function signatures and type safety

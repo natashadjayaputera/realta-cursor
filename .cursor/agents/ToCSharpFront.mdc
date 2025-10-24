@@ -31,11 +31,11 @@ primary:
 
 ## @csproj
 ### Front Project
+Sdk: Microsoft.NET.Sdk.Razor    # CRITICAL: Must use Razor SDK    
 TargetFramework: net6.0    
 LangVersion: 10.0    
 Nullable: enable    
 ImplicitUsings: disable    
-Sdk: Microsoft.NET.Sdk.Razor    # CRITICAL: Must use Razor SDK    
 SupportedPlatform: browser    # REQUIRED for Blazor    
 PackageReference: Microsoft.AspNetCore.Components.Web    # REQUIRED    
 Required DLLs:

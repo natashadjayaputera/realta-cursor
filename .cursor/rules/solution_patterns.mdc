@@ -1,0 +1,480 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*SolutionManager*"
+---
+
+# SOLUTION MANAGER PATTERNS
+
+## SOLUTION FILE STRUCTURE PATTERN
+
+### Project Definition Format
+```xml
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{ProjectName}", "{RelativePath}", "{GUID}"
+EndProject
+```
+
+### Build Configuration Format
+```xml
+{ProjectGUID}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{ProjectGUID}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{ProjectGUID}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{ProjectGUID}.Release|Any CPU.Build.0 = Release|Any CPU
+{ProjectGUID}.Report|Any CPU.ActiveCfg = Debug|Any CPU
+{ProjectGUID}.Report|Any CPU.Build.0 = Debug|Any CPU
+{ProjectGUID}.X|Any CPU.ActiveCfg = Debug|Any CPU
+{ProjectGUID}.X|Any CPU.Build.0 = Debug|Any CPU
+```
+
+### Nested Project Mapping Format
+```xml
+{ProjectGUID} = {SolutionFolderGUID}
+```
+
+## PROGRAM MODULE MAPPING PATTERN
+
+### Backend Module to Solution Mapping
+```csharp
+// FA Module (Fixed Assets) - Backend
+var faBackendModule = new ModuleMapping
+{
+    ModuleCode = "FA",
+    SolutionFile = "BIMASAKTI11_BACK.sln",
+    ApiProject = "BIMASAKTI_FA_API.csproj",
+    ApiPath = "API/FA/BIMASAKTI_FA_API/",
+    SolutionFolders = new Dictionary<string, string>
+    {
+        ["BACK"] = "{0E5BBE32-FD8C-4481-8300-B8EB34DCE62F}",
+        ["COMMON"] = "{687E2659-3C64-4F58-B79C-5C5014A437A6}",
+        ["SERVICE"] = "{B8ACD0AE-91DD-4B63-99EB-6EE8C1446361}"
+    }
+};
+
+// SA Module (System Admin) - Backend
+var saBackendModule = new ModuleMapping
+{
+    ModuleCode = "SA",
+    SolutionFile = "BIMASAKTI11_BACK.sln",
+    ApiProject = "BIMASAKTI_SA_API.csproj",
+    ApiPath = "API/SA/BIMASAKTI_SA_API/",
+    SolutionFolders = new Dictionary<string, string>
+    {
+        ["BACK"] = "{0E5BBE32-FD8C-4481-8300-B8EB34DCE62F}",
+        ["COMMON"] = "{687E2659-3C64-4F58-B79C-5C5014A437A6}",
+        ["SERVICE"] = "{B8ACD0AE-91DD-4B63-99EB-6EE8C1446361}"
+    }
+};
+```
+
+### Frontend Module to Solution Mapping
+```csharp
+// FA Module (Fixed Assets) - Frontend
+var faFrontendModule = new ModuleMapping
+{
+    ModuleCode = "FA",
+    SolutionFile = "BIMASAKTI11_FRONT.sln",
+    MenuProject = "BlazorMenu.csproj",
+    MenuPath = "SYSTEM/SOURCE/Menu/BlazorMenu/",
+    SolutionFolders = new Dictionary<string, string>
+    {
+        ["FRONT"] = "{2DAEA9AD-3F14-4C22-9BEC-607E522294FB}",
+        ["COMMON"] = "{95EE4528-4B19-465D-B245-0D50F2BFCBCB}",
+        ["MENU"] = "{930338A0-4003-4A9B-920A-529CFFC401C7}"
+    }
+};
+
+// SA Module (System Admin) - Frontend
+var saFrontendModule = new ModuleMapping
+{
+    ModuleCode = "SA",
+    SolutionFile = "BIMASAKTI11_FRONT.sln",
+    MenuProject = "BlazorMenu.csproj",
+    MenuPath = "SYSTEM/SOURCE/Menu/BlazorMenu/",
+    SolutionFolders = new Dictionary<string, string>
+    {
+        ["FRONT"] = "{2DAEA9AD-3F14-4C22-9BEC-607E522294FB}",
+        ["COMMON"] = "{95EE4528-4B19-465D-B245-0D50F2BFCBCB}",
+        ["MENU"] = "{930338A0-4003-4A9B-920A-529CFFC401C7}"
+    }
+};
+```
+
+## PROJECT LOADING PATTERN
+
+### Backend Project Loading Sequence
+```csharp
+public async Task LoadBackendProjectsToSolution(string programName, string moduleCode)
+{
+    var loEx = new R_Exception();
+    
+    try
+    {
+        // 1. Validate module mapping
+        var moduleMapping = GetBackendModuleMapping(moduleCode);
+        if (moduleMapping == null)
+        {
+            loEx.Add(new Exception($"Unknown module code: {moduleCode}"));
+            return;
+        }
+        
+        // 2. Generate unique GUIDs for all projects
+        var projectGuids = GenerateProjectGuids(programName);
+        
+        // 3. Load projects in dependency order
+        await LoadCommonProject(programName, moduleCode, projectGuids.Common);
+        await LoadBackResourcesProject(programName, moduleCode, projectGuids.BackResources);
+        await LoadBackProject(programName, moduleCode, projectGuids.Back);
+        await LoadServiceProject(programName, moduleCode, projectGuids.Service);
+        
+        // 4. Add to API project
+        await AddToApiProject(programName, moduleCode, moduleMapping);
+        
+        // 5. Build and validate
+        await BuildAndValidateSolution(moduleMapping.SolutionFile);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+### Frontend Project Loading Sequence
+```csharp
+public async Task LoadFrontendProjectsToSolution(string programName, string moduleCode)
+{
+    var loEx = new R_Exception();
+    
+    try
+    {
+        // 1. Validate module mapping
+        var moduleMapping = GetFrontendModuleMapping(moduleCode);
+        if (moduleMapping == null)
+        {
+            loEx.Add(new Exception($"Unknown module code: {moduleCode}"));
+            return;
+        }
+        
+        // 2. Generate unique GUIDs for all projects
+        var projectGuids = GenerateFrontendProjectGuids(programName);
+        
+        // 3. Load projects in dependency order
+        await LoadCommonProject(programName, moduleCode, projectGuids.Common);
+        await LoadFrontResourcesProject(programName, projectGuids.FrontResources);
+        await LoadModelProject(programName, projectGuids.Model);
+        await LoadFrontProject(programName, projectGuids.Front);
+        
+        // 4. Add to BlazorMenu project
+        await AddToBlazorMenuProject(programName, moduleMapping);
+        
+        // 5. Update App.razor assembly loading
+        await UpdateAppRazorAssembly(programName);
+        
+        // 6. Build and validate
+        await BuildAndValidateSolution(moduleMapping.SolutionFile);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## GUID GENERATION PATTERN
+
+### Backend GUID Generation
+```csharp
+public class BackendProjectGuids
+{
+    public string Common { get; set; }
+    public string BackResources { get; set; }
+    public string Back { get; set; }
+    public string Service { get; set; }
+}
+
+public BackendProjectGuids GenerateProjectGuids(string programName)
+{
+    // Generate GUIDs that follow existing solution pattern
+    var baseGuid = Guid.NewGuid().ToString("D").ToUpper();
+    var parts = baseGuid.Split('-');
+    
+    return new BackendProjectGuids
+    {
+        Common = $"{{{parts[0]}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}",
+        BackResources = $"{{{parts[0].Substring(0,1)}{(char)(parts[0][1] + 1)}{parts[0].Substring(2)}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}",
+        Back = $"{{{parts[0].Substring(0,2)}{(char)(parts[0][2] + 1)}{parts[0].Substring(3)}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}",
+        Service = $"{{{parts[0].Substring(0,3)}{(char)(parts[0][3] + 1)}{parts[0].Substring(4)}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}"
+    };
+}
+```
+
+### Frontend GUID Generation
+```csharp
+public class FrontendProjectGuids
+{
+    public string Common { get; set; }
+    public string FrontResources { get; set; }
+    public string Model { get; set; }
+    public string Front { get; set; }
+}
+
+public FrontendProjectGuids GenerateFrontendProjectGuids(string programName)
+{
+    // Generate GUIDs that follow existing solution pattern
+    var baseGuid = Guid.NewGuid().ToString("D").ToUpper();
+    var parts = baseGuid.Split('-');
+    
+    return new FrontendProjectGuids
+    {
+        Common = $"{{{parts[0]}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}",
+        FrontResources = $"{{{parts[0].Substring(0,1)}{(char)(parts[0][1] + 1)}{parts[0].Substring(2)}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}",
+        Model = $"{{{parts[0].Substring(0,2)}{(char)(parts[0][2] + 1)}{parts[0].Substring(3)}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}",
+        Front = $"{{{parts[0].Substring(0,3)}{(char)(parts[0][3] + 1)}{parts[0].Substring(4)}-{parts[1]}-{parts[2]}-{parts[3]}-{parts[4]}}}"
+    };
+}
+```
+
+## API PROJECT REFERENCE PATTERN
+
+### Backend API Integration
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\..\..\SERVICE\FA\FAI00020Service\FAI00020Service.csproj" />
+  <ProjectReference Include="..\..\..\SERVICE\FA\FAI00120Service\FAI00120Service.csproj" />
+  <ProjectReference Include="..\..\..\SERVICE\FA\FAI00130Service\FAI00130Service.csproj" />
+  <ProjectReference Include="..\..\..\SERVICE\FA\{ProgramName}Service\{ProgramName}Service.csproj" />
+</ItemGroup>
+```
+
+### Backend API Project Reference Management
+```csharp
+public async Task AddToApiProject(string programName, string moduleCode, ModuleMapping moduleMapping)
+{
+    var apiProjectPath = Path.Combine(moduleMapping.ApiPath, moduleMapping.ApiProject);
+    var serviceProjectPath = $"..\\..\\..\\SERVICE\\{moduleCode}\\{programName}Service\\{programName}Service.csproj";
+    
+    // Read current API project file
+    var apiProjectContent = await File.ReadAllTextAsync(apiProjectPath);
+    
+    // Add new project reference
+    var newReference = $"  <ProjectReference Include=\"{serviceProjectPath}\" />";
+    
+    // Insert in alphabetical order
+    var insertPosition = FindInsertPosition(apiProjectContent, programName);
+    var updatedContent = apiProjectContent.Insert(insertPosition, newReference + Environment.NewLine);
+    
+    // Write back to file
+    await File.WriteAllTextAsync(apiProjectPath, updatedContent);
+}
+```
+
+## FRONTEND MENU INTEGRATION PATTERN
+
+### BlazorMenu Project Reference Integration
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\..\..\..\BS Program\SOURCE\FRONT\FAI00020Front\FAI00020Front.csproj" />
+  <ProjectReference Include="..\..\..\..\BS Program\SOURCE\FRONT\FAI00120Front\FAI00120Front.csproj" />
+  <ProjectReference Include="..\..\..\..\BS Program\SOURCE\FRONT\FAI00130Front\FAI00130Front.csproj" />
+  <ProjectReference Include="..\..\..\..\BS Program\SOURCE\FRONT\{ProgramName}Front\{ProgramName}Front.csproj" />
+  <ProjectReference Include="..\..\..\..\BS Program\SOURCE\FRONT\SAM00100Front\SAM00100Front.csproj" />
+</ItemGroup>
+```
+
+### BlazorMenu Project Reference Management
+```csharp
+public async Task AddToBlazorMenuProject(string programName, ModuleMapping moduleMapping)
+{
+    var blazorMenuProjectPath = Path.Combine(moduleMapping.MenuPath, moduleMapping.MenuProject);
+    var frontProjectPath = $"..\\..\\..\\..\\BS Program\\SOURCE\\FRONT\\{programName}Front\\{programName}Front.csproj";
+    
+    // Read current BlazorMenu project file
+    var projectContent = await File.ReadAllTextAsync(blazorMenuProjectPath);
+    
+    // Add new project reference
+    var newReference = $"    <ProjectReference Include=\"{frontProjectPath}\" />";
+    
+    // Insert in alphabetical order
+    var insertPosition = FindProjectReferenceInsertPosition(projectContent, programName);
+    var updatedContent = projectContent.Insert(insertPosition, newReference + Environment.NewLine);
+    
+    // Write back to file
+    await File.WriteAllTextAsync(blazorMenuProjectPath, updatedContent);
+}
+```
+
+### App.razor Assembly Loading Integration
+```csharp
+public async Task UpdateAppRazorAssembly(string programName)
+{
+    var appRazorPath = "SYSTEM/SOURCE/Menu/BlazorMenu/App.razor";
+    
+    // Read current App.razor file
+    var appRazorContent = await File.ReadAllTextAsync(appRazorPath);
+    
+    // Add new assembly entry
+    var newAssemblyEntry = $"        typeof({programName}Front.{programName}).Assembly,";
+    
+    // Insert in alphabetical order
+    var insertPosition = FindAssemblyInsertPosition(appRazorContent, programName);
+    var updatedContent = appRazorContent.Insert(insertPosition, newAssemblyEntry + Environment.NewLine);
+    
+    // Write back to file
+    await File.WriteAllTextAsync(appRazorPath, updatedContent);
+}
+```
+
+## SOLUTION VALIDATION PATTERN
+
+### Build and Validation Sequence
+```csharp
+public async Task BuildAndValidateSolution(string solutionFile)
+{
+    var loEx = new R_Exception();
+    
+    try
+    {
+        // 1. Build solution
+        var buildResult = await RunDotNetBuild(solutionFile);
+        
+        // 2. Validate build results
+        if (buildResult.ExitCode != 0)
+        {
+            loEx.Add(new Exception($"Build failed: {buildResult.ErrorOutput}"));
+            return;
+        }
+        
+        // 3. Classify warnings
+        var warningAnalysis = ClassifyWarnings(buildResult.Output);
+        
+        // 4. Report results
+        ReportBuildResults(buildResult, warningAnalysis);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    
+    loEx.ThrowExceptionIfErrors();
+}
+
+private async Task<BuildResult> RunDotNetBuild(string solutionFile)
+{
+    var process = new Process
+    {
+        StartInfo = new ProcessStartInfo
+        {
+            FileName = "dotnet",
+            Arguments = $"build {solutionFile} --configuration Debug --verbosity quiet",
+            UseShellExecute = false,
+            RedirectStandardOutput = true,
+            RedirectStandardError = true
+        }
+    };
+    
+    process.Start();
+    var output = await process.StandardOutput.ReadToEndAsync();
+    var error = await process.StandardError.ReadToEndAsync();
+    await process.WaitForExitAsync();
+    
+    return new BuildResult
+    {
+        ExitCode = process.ExitCode,
+        Output = output,
+        ErrorOutput = error
+    };
+}
+```
+
+## ERROR HANDLING PATTERN
+
+### Solution Manager Error Handling
+```csharp
+public class SolutionManagerException : Exception
+{
+    public string ModuleCode { get; }
+    public string ProgramName { get; }
+    public string SolutionFile { get; }
+    
+    public SolutionManagerException(string message, string moduleCode, string programName, string solutionFile) 
+        : base(message)
+    {
+        ModuleCode = moduleCode;
+        ProgramName = programName;
+        SolutionFile = solutionFile;
+    }
+}
+
+public void HandleSolutionError(Exception ex, string context)
+{
+    switch (ex)
+    {
+        case SolutionManagerException smEx:
+            Console.WriteLine($"Solution Manager Error in {context}:");
+            Console.WriteLine($"  Module: {smEx.ModuleCode}");
+            Console.WriteLine($"  Program: {smEx.ProgramName}");
+            Console.WriteLine($"  Solution: {smEx.SolutionFile}");
+            Console.WriteLine($"  Error: {smEx.Message}");
+            break;
+            
+        case FileNotFoundException fnfEx:
+            Console.WriteLine($"File not found in {context}: {fnfEx.FileName}");
+            break;
+            
+        case UnauthorizedAccessException uaEx:
+            Console.WriteLine($"Access denied in {context}: {uaEx.Message}");
+            break;
+            
+        default:
+            Console.WriteLine($"Unexpected error in {context}: {ex.Message}");
+            break;
+    }
+}
+```
+
+## REPORTING PATTERN
+
+### Solution Loading Summary
+```csharp
+public class SolutionLoadingReport
+{
+    public string ProgramName { get; set; }
+    public string ModuleCode { get; set; }
+    public string SolutionFile { get; set; }
+    public List<string> LoadedProjects { get; set; }
+    public List<string> ApiReferences { get; set; }
+    public BuildResult BuildResult { get; set; }
+    public DateTime CompletionTime { get; set; }
+}
+
+public void GenerateSolutionReport(SolutionLoadingReport report)
+{
+    Console.WriteLine("=== SOLUTION LOADING REPORT ===");
+    Console.WriteLine($"Program: {report.ProgramName}");
+    Console.WriteLine($"Module: {report.ModuleCode}");
+    Console.WriteLine($"Solution: {report.SolutionFile}");
+    Console.WriteLine($"Completion Time: {report.CompletionTime:yyyy-MM-dd HH:mm:ss}");
+    
+    Console.WriteLine("\nLoaded Projects:");
+    foreach (var project in report.LoadedProjects)
+    {
+        Console.WriteLine($"  ✓ {project}");
+    }
+    
+    Console.WriteLine("\nAPI References Added:");
+    foreach (var reference in report.ApiReferences)
+    {
+        Console.WriteLine($"  ✓ {reference}");
+    }
+    
+    Console.WriteLine($"\nBuild Status: {(report.BuildResult.ExitCode == 0 ? "SUCCESS" : "FAILURE")}");
+    if (report.BuildResult.ExitCode != 0)
+    {
+        Console.WriteLine($"Build Errors: {report.BuildResult.ErrorOutput}");
+    }
+}
+```

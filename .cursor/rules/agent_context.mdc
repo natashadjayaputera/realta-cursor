@@ -70,6 +70,13 @@ priority: CRITICAL
 
 **Focus:** Build validation, quality gates, error reporting
 
+### SolutionManager Agent
+**Context Files:**
+- `.cursor/rules/solution_rules.mdc` (agent-specific)
+- `.cursor/rules/solution_patterns.mdc` (agent-specific)
+
+**Focus:** Load Projects to Solution, Add Service to API, Add Razor project to Blazor Menu, add Entry Points in app.razor
+
 ---
 
 # RULE HIERARCHY

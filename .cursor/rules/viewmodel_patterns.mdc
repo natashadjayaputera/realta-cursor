@@ -181,3 +181,70 @@ public async Task GetStreamingListAsync(GetStreamingListParameterDTO poParameter
 var lcErrorMessage = R_FrontUtility.R_GetError(typeof(Resources_Dummy_Class), "ERR_INVALID_COMPANY_ID");
 throw new R_Exception(lcErrorMessage);
 ```
+
+## Data Validation Patterns - CRITICAL
+
+### Validation Method Pattern
+**RULE**: All validation logic MUST be in ViewModel, return `R_Exception`, and use resource-based error messages
+
+#### ✅ CORRECT - Complete Validation Method
+```csharp
+/// <summary>
+/// Validate tax category data
+/// </summary>
+/// <param name="poEntity">Tax category entity to validate</param>
+/// <returns>R_Exception containing validation errors</returns>
+public R_Exception ValidateTaxCategory(FAM00300DTO poEntity)
+{
+    var loEx = new R_Exception();
+
+    // Validate Tax Category Code
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_CATEGORY_CODE))
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS001"));
+    }
+
+    // Validate Tax Type
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_TYPE))
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS002"));
+    }
+
+    // Validate Tax Category Description
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_CATEGORY_DESC))
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS003"));
+    }
+
+    // Additional business rule validations
+    if (!string.IsNullOrWhiteSpace(poEntity.CTAX_CATEGORY_CODE) && poEntity.CTAX_CATEGORY_CODE.Length > 8)
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS004"));
+    }
+
+    return loEx;
+}
+```
+
+### Validation Error Handling Pattern
+**RULE**: Always use `R_FrontUtility.R_GetError()` for resource-based error messages
+
+```csharp
+// ✅ CORRECT - Resource-based error messages using R_FrontUtility.R_GetError
+loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS001"));
+loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "ERR_INVALID_CODE"));
+
+// ✅ CORRECT - Field-specific error messages
+loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS001")); // Field-specific validation
+
+// ❌ WRONG - Hardcoded error messages
+loEx.Add("", "Tax Category Code is required"); // Hardcoded string
+loEx.Add("", "PS001"); // Resource key without R_FrontUtility.R_GetError
+```
+
+### Validation Method Naming Convention
+- **Pattern**: `Validate{EntityName}({EntityDTO} poEntity)`
+- **Examples**: 
+  - `ValidateTaxCategory(FAM00300DTO poEntity)`
+  - `ValidateCurrency(SAM00100DTO poEntity)`
+  - `ValidateProduct(PRO00100DTO poEntity)`

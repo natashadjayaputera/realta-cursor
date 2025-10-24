@@ -82,6 +82,86 @@ Based on R_MessageBoxContainer.razor:
 @using FAI00130FrontResources
 ```
 
+## UI Architecture Patterns - CRITICAL
+
+### Data Validation Pattern
+**RULE**: All data validation logic MUST be in ViewModel, not in Razor code-behind
+
+#### ✅ CORRECT - ViewModel Validation
+```csharp
+// In ViewModel
+public R_Exception ValidateTaxCategory(FAM00300DTO poEntity)
+{
+    var loEx = new R_Exception();
+
+    // Validate Tax Category Code
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_CATEGORY_CODE))
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS001"));
+    }
+
+    // Validate Tax Type
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_TYPE))
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS002"));
+    }
+
+    // Validate Tax Category Description
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_CATEGORY_DESC))
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS003"));
+    }
+
+    return loEx;
+}
+```
+
+#### ✅ CORRECT - Code-behind Usage
+```csharp
+// In Razor.cs - Only calls ViewModel validation
+private void Grid_R_Validation(R_ValidationEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+
+    try
+    {
+        var loData = R_FrontUtility.ConvertObjectToObject<FAM00300DTO>(eventArgs.Data) ?? new();
+
+        // Use ViewModel validation
+        var loValidationEx = _fam00300ViewModel.ValidateTaxCategory(loData);
+        loEx.Add(loValidationEx);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+### Project Configuration Pattern
+**RULE**: Must follow exact template structure for .csproj files
+
+#### ❌ WRONG - Missing Required Elements
+```xml
+<!-- ❌ WRONG - Missing SupportedPlatform -->
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+	</PropertyGroup>
+	<!-- Missing <SupportedPlatform Include="browser" /> -->
+</Project>
+
+<!-- ❌ WRONG - Wrong SDK -->
+<Project Sdk="Microsoft.NET.Sdk">
+	<!-- Wrong SDK for Blazor components -->
+</Project>
+```
+
 ## COLUMN LAYOUT VALIDATION - MANDATORY
 **CRITICAL:** Each R_StackLayout Row must have column sum ≤ 12
 
