@@ -10,51 +10,34 @@ color: "purple"
 Convert VB.NET UI into `{ProgramName}ViewModel`.
 
 Focus:
+- Part of `{ProgramName}Model.csproj` 
 - Create ViewModels in `VMs/`
 - Create `{ProgramName}FrontResources`
 - No `R_FrontGlobalVar` in ViewModels
+- `IClientHelper` is used in .razor.cs ONLY
 - Store data state in ViewModel, not Razor.cs
 - Get backend data from the already implemented `*Model.cs`
 - Lookup is Front Project only — do not create lookup-related functions in ViewModel
 - **CRITICAL**: All ViewModels MUST inherit from `R_ViewModel<T>`
 - The entity/data object is already available as the `Data` property in `R_ViewModel<T>`
+- Use `R_FrontContext.R_SetStreamingContext()` for custom parameters in all `*StreamingParameterDTO.cs`
 
 ## @context
 primary:
-- **viewmodel_rules.mdc** (Complete ViewModel patterns and examples)
-- rules.mdc (RULE #5, #8, #9, #27, #28, #29)
-- templates.mdc (Template #12)
-- checklist-migration.md (Project 5, 8)
-reference:
-- violations.mdc (STOP: R_FrontGlobalVar)
-- critical-patterns-learned.md (Sections 8–9)
+- viewmodel_rules.mdc
+- viewmodel_patterns.mdc
+- checklist_migration.md (Project 5, 8)
 
 ## @patterns
-**See `viewmodel_rules.mdc` for complete patterns and examples.**
-
-### Key Patterns Summary
-- **Inheritance**: All ViewModels MUST inherit from `R_ViewModel<T>`
-- **Data Property**: READ-ONLY - use separate properties like `CurrentRecord`
-- **CRUD Methods**: Required for ViewModels with grids/conductors
-- **Exception Handling**: Use `R_Exception` with try/catch pattern
-- **Resource Files**: `{ProgramName}FrontResources_msgrsc.resx` naming convention
+**See `viewmodel_patterns.mdc` for complete patterns and examples.**
 
 ## @rules
 **See `viewmodel_rules.mdc` for complete violation list.**
 
-### Critical Rules
-- MUST: All data state in ViewModel (not Razor.cs)
-- MUST: Inherit from R_ViewModel<T> for ALL ViewModels
-- MUST: Add CRUD methods for ViewModels with grids/conductors
-- MUST: Use separate properties for CRUD results (not Data property)
-- NEVER: Use `R_FrontGlobalVar` in ViewModel
-- NEVER: Assign to Data property (it's read-only)
-- NEVER: Skip CRUD methods for ViewModels with grids/conductors
-
 ## @csproj
 ### Resources
-- TargetFramework: netstandard2.1  
-- LangVersion: 10.0  
-- Nullable: enable  
-- ImplicitUsings: disable  
+- TargetFramework: netstandard2.1    
+- LangVersion: 10.0    
+- Nullable: enable    
+- ImplicitUsings: disable    
 - No DLLs required

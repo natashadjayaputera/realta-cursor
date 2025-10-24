@@ -1,0 +1,28 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ValidationAndBuild*"
+---
+
+# COMMON ERROR COMPILATIONS
+
+## EXAMPLE 1: Missing Using Statements
+**Error**: `CS0246: The type or namespace name 'X' could not be found`
+**Solution**: Add missing using statements to access classes from other projects
+
+```csharp
+// Common missing using statements
+using R_BackEnd;                    // For R_BackGlobalVar
+using R_CommonFrontBackAPI;         // For base classes
+```
+
+## EXAMPLE 2: R_BackGlobalVar Not Found in Service Layer
+**Error**: `CS0103: The name 'R_BackGlobalVar' does not exist in the current context`
+**Solution**: Add R_APIBackEnd reference to Service project
+
+```xml
+<!-- In Service .csproj -->
+<Reference Include="R_APIBackEnd">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
+</Reference>
+```

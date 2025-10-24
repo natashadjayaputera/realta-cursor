@@ -14,32 +14,27 @@ Focus:
 
 ## @context
 primary:
-- rules.mdc (RULE #5, #8)
-- templates.mdc (Template #6, #12)
-- checklist-migration.md (Project 6)
-reference:
-- violations.mdc (STOP: R_FrontGlobalVar)
-- critical-patterns-learned.md (Sections 7)
+- model_rules.mdc
+- model_patterns.mdc
+- checklist_migration.md (Project 6)
 
 ## @patterns
 ### Model
-- `{ProgramName}Model : R_BusinessObjectServiceClientBase<{ProgramName}DTO>, I{ProgramName}`
-- Use `R_HTTPClientWrapper` for all API calls
+**See `model_patterns.mdc` for complete patterns and examples.**
 
 ## @rules
-- MUST: Follow Model pattern from Template #6
-- NEVER: Use underscore prefix for public properties
+**See `model_rules.mdc` for complete violation list.**
 
 ## @csproj
 ### Model
-- TargetFramework: netstandard2.1  
-- LangVersion: 10.0  
-- Nullable: enable  
-- ImplicitUsings: disable  
-- Required DLLs:  
-  - R_APIClient  
-  - R_APICommonDTO  
-  - R_BusinessObjectFront  
-  - R_CommonFrontBackAPI  
-  - R_BlazorFrontEnd  
-  - R_ContextFrontEnd
+- TargetFramework: netstandard2.1    
+- LangVersion: 10.0    
+- Nullable: enable    
+- ImplicitUsings: disable    
+- Required DLLs:    
+    - R_APIClient    
+    - R_APICommonDTO    
+    - R_BusinessObjectFront    
+    - R_CommonFrontBackAPI    
+    - R_BlazorFrontEnd    
+    - R_ContextFrontEnd

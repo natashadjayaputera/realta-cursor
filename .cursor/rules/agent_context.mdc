@@ -10,47 +10,63 @@ priority: CRITICAL
 ### ToCSharpCommon Agent
 **Context Files:**
 - `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/core_patterns.mdc` (always)
 - `.cursor/rules/common_rules.mdc` (agent-specific)
+- `.cursor/rules/common_patterns.mdc` (agent-specific)
 
 **Focus:** DTOs, interfaces, enums, project structure
 
 ### ToCSharpBack Agent
 **Context Files:**
 - `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/core_patterns.mdc` (always)
 - `.cursor/rules/back_rules.mdc` (agent-specific)
+- `.cursor/rules/back_patterns.mdc` (agent-specific)
 
 **Focus:** Business logic, logging, database operations, resources
 
 ### ToCSharpService Agent
 **Context Files:**
 - `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/core_patterns.mdc` (always)
 - `.cursor/rules/service_rules.mdc` (agent-specific)
+- `.cursor/rules/service_patterns.mdc` (agent-specific)
+
+**Focus:** Controllers, API endpoints, streaming context
 
 ### ToCSharpModel Agent
 **Context Files:**
 - `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/core_patterns.mdc` (always)
 - `.cursor/rules/model_rules.mdc` (agent-specific)
+- `.cursor/rules/model_patterns.mdc` (agent-specific)
 
-**Focus:** Controllers, API endpoints, streaming context
+**Focus:** Service clients
 
 ### ToCSharpViewModel Agent
 **Context Files:**
 - `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/core_patterns.mdc` (always)
 - `.cursor/rules/viewmodel_rules.mdc` (agent-specific)
+- `.cursor/rules/viewmodel_patterns.mdc` (agent-specific)
 
-**Focus:** Service clients, ViewModels, data binding
+**Focus:** ViewModels, streaming context, data binding
 
 ### ToCSharpFront Agent
 **Context Files:**
 - `.cursor/rules/core_rules.mdc` (always)
-- `.cursor/rules/frontend_rules.mdc` (agent-specific)
+- `.cursor/rules/core_patterns.mdc` (always)
+- `.cursor/rules/front_rules.mdc` (agent-specific)
+- `.cursor/rules/front_patterns.mdc` (agent-specific)
 
 **Focus:** UI components, layouts, Blazor patterns
 
 ### ValidationAndBuild Agent
 **Context Files:**
 - `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/core_patterns.mdc` (always)
 - `.cursor/rules/validation_rules.mdc` (agent-specific)
+- `.cursor/rules/validation_patterns.mdc` (agent-specific)
 
 **Focus:** Build validation, quality gates, error reporting
 

@@ -1,0 +1,142 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ToCSharpBatch*"
+---
+
+# BATCH PATTERNS
+
+## Required Dependencies for Batch Processing 
+### `{ProgramName}Front.csproj`
+**RULE**: Always add these references for Excel batch processing
+
+```xml
+<!-- In .csproj file -->
+<Reference Include="R_BlazorFrontEnd.Excel">
+  <HintPath>..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.Excel.dll</HintPath>
+</Reference>
+<Reference Include="R_ProcessAndUploadFront">
+  <HintPath>..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_ProcessAndUploadFront.dll</HintPath>
+</Reference>
+```
+
+## Batch Process Implementation Patterns in `{ProgramName}BatchCls.cs`
+
+### R_IBatchProcess Interface Implementation in `{ProgramName}BatchCls.cs`
+**RULE**: Implement both sync and async methods for batch processing
+
+```csharp
+public class {ProgramName}Cls : R_BusinessObjectAsync<{ProgramName}DTO>, R_IBatchProcess
+{
+    // Sync method required by interface
+    public void R_BatchProcess(R_BatchProcessPar poBatchProcessPar)
+    {
+        var lcMethod = nameof(R_BatchProcess);
+        using var activity = _activitySource.StartActivity(lcMethod);
+        var loEx = new R_Exception();
+
+        try
+        {
+            _ = _BatchProcessAsync(poBatchProcessPar); // Run and forget
+        }
+        catch (Exception ex)
+        {
+            loEx.Add(ex);
+            _logger.LogError(loEx);
+        }
+
+        loEx.ThrowExceptionIfErrors();
+    }
+
+    // Async implementation for actual work
+    private async Task _BatchProcessAsync(R_BatchProcessPar poBatchProcessPar)
+    {
+        // Implementation details...
+    }
+}
+```
+
+### Batch Process Data Deserialization in `{ProgramName}BatchCls.cs`
+**RULE**: Use R_NetCoreUtility for deserializing batch data
+
+```csharp
+✅ CORRECT:
+var loObject = R_NetCoreUtility.R_DeserializeObjectFromByte<List<{ProgramName}ExcelDTO>>(poBatchProcessPar.BigObject);
+
+❌ WRONG:
+var loObject = R_Utility.Deserialize<List<{ProgramName}ExcelDTO>>(poBatchProcessPar.BigObject);
+```
+
+### Batch Process Transaction Management in `{ProgramName}BatchCls.cs`
+**RULE**: Use TransactionScope with async flow option for batch processing
+
+```csharp
+using var transScope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled);
+// ... batch operations ...
+transScope.Complete();
+```
+
+## Excel Batch Processing Pattern in `{ProgramName}BatchViewModel.cs`
+**RULE**: Always implement R_IProcessProgressStatus for batch processing
+
+```csharp
+public class UploadViewModel : R_IProcessProgressStatus
+{
+    public Action<DataSet> ShowErrorAction { get; set; }
+    public Action StateChangeAction { get; set; }
+    public Action ShowSuccessAction { get; set; }
+    public string Message { get; set; }
+    public int Percentage { get; set; }
+    public bool IsFileSelected { get; set; }
+    public long MaximumFileSize => 5 * 1024 * 1024; // 5MB
+
+    public async Task SaveBatchDataAsync(DataSet poExcelDataSet)
+    {
+        var loDataList = R_FrontUtility.R_ConvertTo<DataDTO>(poExcelDataSet.Tables[0]).ToList();
+        
+        var loCls = new R_ProcessAndUploadClient(
+            plSendWithContext: true,
+            plSendWithToken: true,
+            poProcessProgressStatus: this);
+
+        var loBatchPar = new R_BatchParameter();
+        loBatchPar.COMPANY_ID = R_FrontGlobalVar.COMPANY_ID;
+        loBatchPar.USER_ID = R_FrontGlobalVar.USER_ID;
+        loBatchPar.ClassName = "BackProject.ClassName";
+        loBatchPar.BigObject = loDataList;
+        
+        var lcGuid = await loCls.R_BatchProcess<List<DataDTO>>(loBatchPar, 10);
+    }
+
+    // Implement R_IProcessProgressStatus methods...
+}
+```
+
+### R_SaveBatch Method Usage Pattern in `{ProgramName}.razor.cs`
+**CRITICAL**: R_SaveBatch method is available on R_Grid, NOT on R_ConductorGrid
+
+```csharp
+// ✅ CORRECT - Use R_Grid reference
+private async Task OnProcess()
+{
+    R_Exception loException = new R_Exception();
+    try
+    {
+        await _gridUploadCurrencyRef.R_SaveBatch(); // R_Grid has R_SaveBatch
+    }
+    catch (Exception ex)
+    {
+        loException.Add(ex);
+    }
+    loException.ThrowExceptionIfErrors();
+}
+
+// ❌ WRONG - R_ConductorGrid does not have R_SaveBatch
+await _conductorGridRef.R_SaveBatch(); // This will cause compilation error
+```
+
+**Key Points:**
+- R_SaveBatch is a method of R_Grid component
+- R_ConductorGrid is used for conductor functionality, not batch operations
+- Always use the grid reference for batch save operations
+- Ensure proper error handling with R_Exception pattern

@@ -1,0 +1,161 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ToCSharpService*"
+---
+
+# SERVICE LAYER PATTERNS
+
+## DLL References (Minimal)
+```xml
+<ItemGroup>
+  <Reference Include="R_APIBackEnd">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
+  </Reference>
+  <Reference Include="R_APICommon">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommon.dll</HintPath>
+  </Reference>
+  <Reference Include="R_APIStartUp">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIStartUp.dll</HintPath>
+  </Reference>
+  <Reference Include="R_CommonFrontBackAPI">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
+  </Reference>
+  <Reference Include="R_OpenTelemetry">
+    <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_OpenTelemetry.dll</HintPath>
+  </Reference>
+</ItemGroup>
+```
+
+## Project References
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\..\..\BACK\{module}\{ProgramName}Back\{ProgramName}Back.csproj" />
+  <ProjectReference Include="..\..\..\COMMON\{module}\{ProgramName}Common\{ProgramName}Common.csproj" />
+</ItemGroup>
+```
+  
+## Controller Pattern
+```csharp
+// Streaming patterns - NO parameters
+// Must create GetStreamingListParameterDTO because it will be used by method in `{ProgramName}Cls.cs`
+[HttpPost]
+public async IAsyncEnumerable<GetStreamingListResultDTO> GetStreamingList()
+{
+    var lcMethod = nameof(GetStreamingList);
+    using var activity = _activitySource.StartActivity(lcMethod);
+    var loEx = new R_Exception();
+    var loCls = new {ProgramName}Cls();
+    List<GetStreamingListResultDTO> loResult = new List<GetStreamingListResultDTO>();
+
+    try
+    {
+        _logger.LogInfo("Start method GetStreamingList in {0}", lcMethod);
+
+        // Create parameter DTO internally
+        var loParam = new {ProgramName}GetStreamingListParameterDTO
+        {
+            CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID, // NOTE: Global Variable
+            CDEPT_CODE = R_Utility.R_GetStreamingContext<string>(ContextConstants.DEPT_CODE) ?? string.Empty,
+            CTRANSACTION_CODE = R_Utility.R_GetStreamingContext<string>(ContextConstants.TRANSACTION_CODE) ?? string.Empty
+        };
+
+        loResult = await loCls.GetStreamingList(loParam);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        _logger.LogError(loEx);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+
+    foreach (GetStreamingListResultDTO loItem in loResult)
+    {
+        yield return loItem;
+    }
+}
+
+// Non-streaming Patterns - WITH parameters
+[HttpPost]
+public async Task<{ProgramName}ResultDTO<GetNonStreamingResultDTO>> GetNonStreaming(GetNonStreamingParameterDTO poParameter)
+{
+    var lcMethod = nameof(GetStreamingList);
+    using var activity = _activitySource.StartActivity(lcMethod);
+    var loEx = new R_Exception();
+    var loCls = new {ProgramName}Cls();
+    {ProgramName}ResultDTO<GetNonStreamingResultDTO> loRtn = new {ProgramName}ResultDTO<GetNonStreamingResultDTO>();
+
+    try
+    {
+        _logger.LogInfo("Start method GetNonStreaming in {0}", lcMethod);
+
+        // Assign Global Variable directly from poParameter
+        // Custom parameter is passed from front end
+        poParameter.CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID; // NOTE: Global Variable
+
+        loRtn.Data = await loCls.GetNonStreaming(poParameter);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        _logger.LogError(loEx);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+
+    return loRtn;
+}
+
+// Non-streaming methods - WITHOUT parameters
+// Must create GetNonStreamingParameterDTO because it will be used by method in `{ProgramName}Cls.cs`
+// If all properties in GetNonStreamingParameterDTO are marked with `// NOTE: Global Variable`, then Controller and Interface do not need parameters.
+// These global variables are assigned directly before calling loCls.GetNonStreaming().[HttpPost]
+public async Task<{ProgramName}ResultDTO<GetNonStreamingResultDTO>> GetNonStreaming()
+{
+    var lcMethod = nameof(GetStreamingList);
+    using var activity = _activitySource.StartActivity(lcMethod);
+    var loEx = new R_Exception();
+    var loCls = new {ProgramName}Cls();
+    {ProgramName}ResultDTO<GetNonStreamingResultDTO> loRtn = new {ProgramName}ResultDTO<GetNonStreamingResultDTO>();
+
+    try
+    {
+        _logger.LogInfo("Start method GetNonStreaming in {0}", lcMethod);
+
+        // Create parameter DTO internally
+        var loParam = new GetNonStreamingParameterDTO() {
+          CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID, // NOTE: Global Variable
+        }
+
+        loRtn.Data = await loCls.GetNonStreaming(poParameter);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        _logger.LogError(loEx);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+
+    return loRtn;
+}
+```
+
+## Controller Constructor Pattern
+```csharp
+[ApiController]
+[Route("api/[controller]/[action]")]
+public class {ProgramName}Controller : ControllerBase, I{ProgramName}
+{
+    private readonly Logger{ProgramName} _logger;
+    private readonly ActivitySource _activitySource;
+
+    public {ProgramName}Controller(ILogger<Logger{ProgramName}> logger)
+    {
+        Logger{ProgramName}.R_InitializeLogger(logger);
+        _logger = Logger{ProgramName}.R_GetInstanceLogger();
+        _activitySource = {ProgramName}Activity.R_InitializeAndGetActivitySource(nameof({ProgramName}Controller));
+    }
+}
+```

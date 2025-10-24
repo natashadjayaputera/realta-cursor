@@ -27,6 +27,25 @@ glob: "*ValidationAndBuild*"
 3. If build fails: Report ALL error messages verbatim
 4. Fix or ask user after 3 attempts
 
+### Warning Handling Guidelines (CRITICAL)
+**RULE**: After successful build, when asked to fix compiler warnings:
+1. **Fix clear warnings**: Address straightforward warnings (unused variables, missing null checks, etc.)
+2. **Ask for ambiguous fixes**: If the fix approach is unclear or has multiple valid solutions, **ASK THE USER** for guidance
+3. **Never suppress warnings**: Do not use `#pragma warning disable` or similar suppression techniques
+4. **Maintain code quality**: Ensure fixes improve code quality and don't introduce new issues
+
+**Examples of clear warnings to fix:**
+- Unused variables/parameters
+- Missing null checks
+- Obsolete method usage
+- Unreachable code
+
+**Examples of ambiguous warnings to ask about:**
+- Multiple valid approaches to fix the same warning
+- Warnings that might require business logic decisions
+- Performance-related warnings with trade-offs
+- Warnings that might affect functionality
+
 ## Warning Classification
 - **CODE WARNINGS**: Must be fixed (compiler, nullable, unused variables)
 - **EXTERNAL WARNINGS**: Document and explain why cannot be fixed

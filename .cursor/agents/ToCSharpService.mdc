@@ -17,41 +17,26 @@ Focus:
 
 ## @context
 primary:
-- rules.mdc (RULE #8, #14, #16, #29, #31)
-- templates.mdc (Template #5, #15, #16)
-- checklist-migration.md (Project 4)
-reference:
-- constraints.mdc
-- violations.mdc
-- critical-patterns-learned.md (Controller + R_BackGlobalVar Pattern)
+- service_rules.mdc
+- service_patterns.mdc
+- checklist_migration.md (Project 4)
 
 ## @patterns
-- `{ProgramName}Controller : ControllerBase, I{ProgramName}`
-- `[HttpPost]` on all methods  
-- `[Route("api/[controller]/[action]")]`  
-- Async methods with correct return types  
-- Logger + Activity initialized in constructor  
-- Business logic in `{ProgramName}Cls`
+**See `service_patterns.mdc` for complete patterns and examples.**
 
 ## @rules
-- MUST: Use `R_BackGlobalVar` for IClientHelper
-- MUST: Follow Controller + Logger/Activity templates
-- MUST: Use `R_Utility.R_GetStreamingContext()` for custom params
-- MUST: `[HttpPost]` on all actions
-- NEVER: Set `R_BackGlobalVar` manually
-- NEVER: Put business logic in controllers
-- NEVER: Use streaming for system params
+**See `service_rules.mdc` for complete violation list.**
 
 ## @csproj
-TargetFramework: net6.0  
-LangVersion: 10.0  
-Nullable: enable  
-ImplicitUsings: disable  
-Sdk: Microsoft.NET.Sdk  
-FrameworkReference: Microsoft.AspNetCore.App  
-Required DLLs:  
-- R_APIBackEnd  
-- R_APICommon  
-- R_APIStartUp  
-- R_CommonFrontBackAPI  
+TargetFramework: net6.0    
+LangVersion: 10.0    
+Nullable: enable    
+ImplicitUsings: disable    
+Sdk: Microsoft.NET.Sdk    
+FrameworkReference: Microsoft.AspNetCore.App    
+Required DLLs:    
+- R_APIBackEnd    
+- R_APICommon    
+- R_APIStartUp    
+- R_CommonFrontBackAPI    
 - R_OpenTelemetry

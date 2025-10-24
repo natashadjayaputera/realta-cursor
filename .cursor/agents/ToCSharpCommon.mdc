@@ -18,36 +18,21 @@ Focus:
 
 ## @context
 primary:
-- rules.mdc (RULE #1, #2, #4, #5, #7)
-- templates.mdc (Template #3: Interface Pattern)
-- checklist-migration.md (Project 1: Common)
-reference:
-- constraints.mdc (Immutable Requirements)
-- violations.mdc (FLAG: DTOs in Back)
-- critical-patterns-learned.md (Service Interface Pattern)
+- common_rules.mdc
+- common_patterns.mdc
+- checklist_migration.md (Project 1: Common)
 
 ## @patterns
-- Interface: `R_IServiceCRUDAsyncBase<{ProgramName}DTO>`
-- Request/Parameter DTOs in Common
-- Result DTOs in Common
-- Consolidate all enums here
-- No Logger/Activity in Common
+**See `common_patterns.mdc` for complete patterns and examples.**
 
 ## @rules
-- MUST preserve exact function signatures and type safety
-- MUST follow variable naming (PascalCase properties, _snakeCase fields)
-- MUST use nullable references correctly
-- MUST convert Module → static class
-- NEVER add business logic in Common
-- NEVER include Logger/Activity (RULE #3)
-- NEVER use `R_IServiceCRUDBase` (use Async)
-- NEVER add parameters to `IAsyncEnumerable` (RULE #32)
+**See `common_rules.mdc` for complete violation list.**
 
 ## @csproj
-TargetFramework: netstandard2.1  
-LangVersion: 10.0  
-Nullable: enable  
-ImplicitUsings: disable  
-Required DLLs:  
-- R_APICommonDTO (HintPath)  
+TargetFramework: netstandard2.1    
+LangVersion: 10.0    
+Nullable: enable    
+ImplicitUsings: disable    
+Required DLLs:    
+- R_APICommonDTO (HintPath)    
 - R_CommonFrontBackAPI (HintPath)

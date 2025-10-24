@@ -11,43 +11,25 @@ glob: "*ToCSharpCommon*"
 - Target: `netstandard2.1`
 - Purpose: DTOs, enums, interfaces only
 
+## Interface Requirements
+- Must inherit: `R_IServiceCRUDAsyncBase<{ProgramName}DTO>`
+
 ## DTO Design Rules
-- Each method gets specific parameter DTO (not generic)
+- All methods that return `List` use streaming patterns (NON-NEGOTIABLE) 
+- Each method in `{ProgramName}*Cls.vb` will have its ParameterDTO and ResultDTO, except `R_*` methods 
+- Add `//NOTE: Global Variable` for properties that get value from R_BackGlobalVar.
 - Property naming matches VB.NET exactly (`CTRANS_DEPT_CODE`)
 - Use `string.Empty` for string defaults
 - All properties that VB.NET accesses must exist
 - Variables with "I" prefix use `int` not `short` (critical naming convention)
+- Consolidate all enums here
+- No Logger/Activity in Common
 
-## Interface Pattern
-```csharp
-public interface I{ProgramName} : R_IServiceCRUDAsyncBase<{ProgramName}DTO>
-{
-    // Streaming methods - NO parameters
-    IAsyncEnumerable<{GetListResultDTO}> GetList{Description}();
-    
-    // Non-streaming methods - WITH parameters
-    Task<{ProgramName}ResultDTO<{GetAnythingResultDTO}>> GetAnything({GetAnythingParameterDTO} poParameter);
-}
-```
-
-## DLL References (Minimal)
-```xml
-<Reference Include="R_APICommonDTO">
-  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommonDTO.dll</HintPath>
-</Reference>
-<Reference Include="R_CommonFrontBackAPI">
-  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
-</Reference>
-```
-
-## Context Constants
-```csharp
-public static class ContextConstants
-{
-    public const string SOFT_PERIOD = "{ProgramName}_CSOFT_PERIOD";
-    public const string DEPT_CODE = "{ProgramName}_CDEPT_CODE";
-}
-```
+## Rules
+- MUST preserve exact function signatures and type safety
+- MUST follow variable naming (PascalCase properties, _snakeCase fields)
+- MUST use nullable references correctly
+- MUST convert Module → static class
 
 ## Violations
 - ❌ Business logic in Common
@@ -55,3 +37,4 @@ public static class ContextConstants
 - ❌ Generic DTOs for all parameters
 - ❌ Missing properties that VB.NET accesses
 - ❌ Using `short` for variables with "I" prefix
+- ❌ Using `R_IServiceCRUDBase` for interface (use `R_IServiceCRUDAsyncBase`)

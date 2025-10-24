@@ -13,42 +13,20 @@ Focus:
 - Implement business logic classes
 - Create `{ProgramName}BackResources` for errors
 - Logger/Activity only in Back
-- Follow database pattern (RULE #11)
+- Follow database pattern
 - Never modify SQL/SP names
 
 ## @context
 primary:
-- rules.mdc (RULE #3, #11, #15, #16, #31)
-- templates.mdc (Template #1, #2, #4, #14, #15)
-- checklist-migration.md (Project 2, 3)
-reference:
-- constraints.mdc
-- violations.mdc
-- critical-patterns-learned.md (Sections 1, 2, 4, 10)
+- back_rules.mdc
+- back_patterns.mdc
+- checklist_migration.md (Project 2, 3)
 
 ## @patterns
-### Back Project
-- Logger pattern (`R_NetCoreLoggerBase`)
-- Activity pattern (`R_ActivitySourceBase`)
-- `{ProgramName}Cls` extends `R_BusinessObjectAsync`
-- Database pattern with `using var`
-- Always log query and parameters
-- `loDb = null` in finally
-
-### Resources Project
-- All error/success messages defined
-- English + Indonesian `.resx`
-- `Resources_Dummy_Class.cs`
+**See `back_patterns.mdc` for complete patterns and examples.**
 
 ## @rules
-- MUST: Logger/Activity only in Back
-- MUST: Follow exact Logger/Activity/DB patterns
-- MUST: Use `GetError()` for all errors
-- MUST: Never modify SQL or SP names
-- MUST: Log method start/end and queries
-- NEVER: Hardcode error messages
-- NEVER: Skip `loDb = null` in finally
-- NEVER: Execute queries without logging
+**See `back_rules.mdc` for complete violation list.**
 
 ## @csproj
 ### Back
