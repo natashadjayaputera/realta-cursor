@@ -24,6 +24,7 @@ priority: HIGH
 15. ❌ Claiming "warnings are acceptable" without analysis → STOP, document warning types
 16. ❌ Storing data state in Razor.cs → STOP, move to ViewModel
 17. ❌ Business logic state in code-behind → STOP, move to ViewModel
+18. ❌ IAsyncEnumerable methods with parameters → STOP, streaming pattern has NO parameters
 
 ## FLAG & REFUSE (Do not continue)
 
@@ -51,7 +52,7 @@ priority: HIGH
 VIOLATION DETECTED: Rule #5 - Variable Naming
 
 Your code uses:
-  private string _CompanyId;  ← CamelCase with underscore
+  private string _CompanyId;  ← PascalCase with underscore
 
 Correct pattern:
   private string _companyId;  ← snake_case after underscore

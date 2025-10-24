@@ -1,0 +1,76 @@
+---
+alwaysApply: true
+---
+
+# Quality Gates
+
+## Must Pass All
+All of the following validation gates must pass for a build or migration to be considered successful:
+
+- All .csproj files validated (RULE #24)
+- All DLL references use HintPath (RULE #4)
+- All projects build successfully (RULE #30)
+- All code warnings fixed (RULE #26)
+- No data state in Razor.cs (RULE #27)
+- No R_FrontGlobalVar in ViewModels (RULE #9)
+- No Logger/Activity in Common (RULE #3, Template #1, #2)
+- No modified SQL/SP (constraints.mdc)
+- R_BackGlobalVar used correctly for IClientHelper (RULE #14)
+- Streaming context optimized (RULE #29)
+- Query logging implemented before all SqlExecQueryAsync, SqlExecNonQueryAsync calls (RULE #33)
+- Streaming pattern NO parameters enforced (RULE #32, #37)
+- Front project .csproj uses Microsoft.NET.Sdk.Razor (RULE #38)
+- R_Button uses ChildContent pattern (RULE #39)
+- R_Lookup wrapped in R_ItemLayout auto='true' (RULE #40)
+- Column layout validation passed (RULE #41)
+- Using statements organized in _Imports.razor (RULE #42)
+- MessageBoxService implemented correctly (RULE #43)
+- Localizer integration complete (RULE #44)
+- Error messages from resources (RULE #45)
+- Behavioral parity confirmed
+
+---
+
+## Documentation Required
+All the following documentation must be included before final submission:
+
+- External warnings explanation
+- Infrastructure warnings justification
+- Build report with warning classification
+- Migration checklist completion status
+# Quality Gates
+
+## Must Pass All
+All of the following validation gates must pass for a build or migration to be considered successful:
+
+- All .csproj files validated (RULE #24)
+- All DLL references use HintPath (RULE #4)
+- All projects build successfully (RULE #30)
+- All code warnings fixed (RULE #26)
+- No data state in Razor.cs (RULE #27)
+- No R_FrontGlobalVar in ViewModels (RULE #9)
+- No Logger/Activity in Common (RULE #3, Template #1, #2)
+- No modified SQL/SP (constraints.mdc)
+- R_BackGlobalVar used correctly for IClientHelper (RULE #14)
+- Streaming context optimized (RULE #29)
+- Query logging implemented before all SqlExecQueryAsync, SqlExecNonQueryAsync calls (RULE #33)
+- Streaming pattern NO parameters enforced (RULE #32, #37)
+- Front project .csproj uses Microsoft.NET.Sdk.Razor (RULE #38)
+- R_Button uses ChildContent pattern (RULE #39)
+- R_Lookup wrapped in R_ItemLayout auto='true' (RULE #40)
+- Column layout validation passed (RULE #41)
+- Using statements organized in _Imports.razor (RULE #42)
+- MessageBoxService implemented correctly (RULE #43)
+- Localizer integration complete (RULE #44)
+- Error messages from resources (RULE #45)
+- Behavioral parity confirmed
+
+---
+
+## Documentation Required
+All the following documentation must be included before final submission:
+
+- External warnings explanation
+- Infrastructure warnings justification
+- Build report with warning classification
+- Migration checklist completion status

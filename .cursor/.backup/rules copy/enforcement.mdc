@@ -1,0 +1,79 @@
+---
+alwaysApply: true
+priority: CRITICAL
+nonNegotiable: true
+---
+
+# Enforcement Rules
+
+## On Violation
+When any violation is detected, the following enforcement actions apply immediately:
+- STOP code generation immediately.
+- Cite specific rule number from `rules.mdc`.
+- Cite specific template number from `templates.mdc`.
+- Explain the violation clearly.
+- Provide the correct pattern from `templates.mdc`.
+- Ask for user confirmation before proceeding.
+
+---
+
+## Non-Negotiable Rules
+The following rules are **strictly mandatory** and must be enforced under all circumstances:
+
+- RULE #0: Plan creation MANDATORY - ALWAYS create plan file in /plan/ directory BEFORE starting any work
+- RULE #1: Always read documentation FIRST
+- RULE #2: Project structure is mandatory
+- RULE #3: Logger/Activity ONLY in Back project (Template #1, #2)
+- RULE #4: DLL references are verified
+- RULE #5: Variable naming conventions (Template #11)
+- RULE #6: Resource files location - root folder only
+- RULE #7: Interface pattern R_IServiceCRUDAsyncBase (Template #3)
+- RULE #8: Streaming context for custom parameters (Template #17)
+- RULE #9: No R_FrontGlobalVar in ViewModels
+- RULE #10: Conductor source depends on control type
+- RULE #11: Database connection pattern (Template #4)
+- RULE #12: Sub-programs are integrated
+- RULE #13: Navigation components correct usage
+- RULE #14: R_BackGlobalVar for IClientHelper data
+- RULE #15: No hardcoded error messages
+- RULE #16: Build order is mandatory
+- RULE #17: Batch processing requirements
+- RULE #18: R_SaveBatch location is strict
+- RULE #19: Code generation workflow
+- RULE #20: Error handling for AI assistant
+- RULE #21: R_Conductor ONLY for CRUD
+- RULE #22: Warning handling mandatory (Template #13)
+- RULE #23: Data state separation mandatory
+- RULE #24: Build validation mandatory
+- RULE #25: Exception handling pattern mandatory
+- RULE #26: Grid data binding pattern mandatory
+- RULE #27: Streaming context optimization mandatory
+- RULE #28: Nullable reference handling mandatory
+- RULE #29: Context constants naming mandatory
+- RULE #30: Business logic preservation non-negotiable
+- RULE #31: DTO design patterns mandatory
+- RULE #32: Streaming pattern NO parameters mandatory
+- RULE #33: Query logging mandatory before SqlExecQueryAsync, SqlExecNonQueryAsync
+- RULE #34: Build and reference management mandatory
+- RULE #35: Don't modify SQL queries or stored procedure names
+- RULE #36: Don't change business logic calculations
+- RULE #37: Component parameter validation mandatory
+- RULE #38: Front project .csproj template mandatory
+- RULE #39: R_Button ChildContent pattern mandatory
+- RULE #40: R_Lookup layout pattern mandatory
+- RULE #41: Column layout validation mandatory
+- RULE #42: Using statements organization mandatory
+- RULE #43: MessageBoxService implementation mandatory
+- RULE #44: Localizer integration pattern mandatory
+- RULE #45: Error messages from resources mandatory
+
+---
+
+## Stop Conditions
+Stop work immediately under any of the following conditions:
+- RULE #0 VIOLATION: Starting work without creating plan file in /plan/ directory
+- `violations.mdc` INSTANT STOP items (#1-17)
+- Unknown DLL reference (ask user)
+- Unknown pattern (ask user)
+- SQL query change required (ask DB team approval)
+- 3rd build failure (ask user - RULE #20)

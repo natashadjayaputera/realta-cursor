@@ -1,0 +1,181 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ToCSharpBack*"
+---
+
+# BACK LAYER RULES
+
+## Project Structure
+- Location: `BACK/{module}/{ProgramName}Back/` and `BACK/{module}/{ProgramName}BackResources/`
+- Target: `net6.0`
+- Purpose: Business logic, logging, resources
+
+## Migration Validation
+- **Start with function count verification** - ensure VB.NET and C# have same method counts
+- **Interface must exactly match business logic class methods** - no extra methods
+- **All method signatures must align** between VB.NET original and C# implementation
+
+## Logger & Activity (Back ONLY)
+```csharp
+// Logger - Template 1
+using R_CommonFrontBackAPI.Log; // Required for R_NetCoreLoggerBase
+
+public class Logger{ProgramName} : R_NetCoreLoggerBase<Logger{ProgramName}>
+{
+    // Empty - base class provides all functionality
+}
+
+// Activity - Template 2
+using R_OpenTelemetry; // Required for R_ActivitySourceBase
+
+public class {ProgramName}Activity : R_ActivitySourceBase
+{
+    // Empty - base class provides all functionality
+}
+```
+
+## Business Logic Class Constructor Pattern
+```csharp
+public class {ProgramName}Cls : R_BusinessObjectAsync<{ProgramName}DTO>
+{
+    private readonly {ProgramName}BackResources.Resources_Dummy_Class loRsp = new();
+    private readonly Logger{ProgramName} _logger;
+    private readonly ActivitySource _activitySource;
+
+    public {ProgramName}Cls()
+    {
+        _logger = Logger{ProgramName}.R_GetInstanceLogger();
+        _activitySource = {ProgramName}Activity.R_GetInstanceActivitySource();
+    }
+}
+```
+
+## Database Pattern (Template 4 - ALL methods MUST follow)
+```csharp
+public async Task<ResultDTO> MethodNameAsync(ParameterDTO poParam)
+{
+    string lcMethod = nameof(MethodNameAsync);
+    using var activity = _activitySource.StartActivity(lcMethod);
+    _logger.LogInfo("START method {MethodName}", lcMethod);
+
+    var loEx = new R_Exception();
+    var loDb = new R_Db();
+    ResultDTO loResult = new();
+
+    try
+    {
+        using DbConnection loConn = await loDb.GetConnectionAsync();
+        using DbCommand loCmd = loDb.GetCommand();
+
+        loCmd.Parameters.Clear();
+        loCmd.CommandText = "SELECT ... FROM ... WHERE ... = @Param";
+        loDb.R_AddCommandParameter(loCmd, "@Param", DbType.String, 50, poParam.Value);
+
+        // CRITICAL: Log query and parameters BEFORE execution
+        var loDbParams = loCmd.Parameters.Cast<DbParameter>()
+            .Where(x => x != null && x.ParameterName.StartsWith("@"))
+            .ToDictionary(x => x.ParameterName, x => x.Value);
+
+        _logger.LogDebug("{@ObjectQuery} {@Parameter}", loCmd.CommandText, loDbParams);
+
+        var loDataTable = await loDb.SqlExecQueryAsync(loConn, loCmd, false);
+        loResult = R_Utility.R_ConvertTo<ResultDTO>(loDataTable).FirstOrDefault();
+        
+        // For List results, use .ToList() to convert IList to List
+        // var loResultList = R_Utility.R_ConvertTo<ResultDTO>(loDataTable).ToList();
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        _logger.LogError(loEx);
+    }
+    finally 
+    {
+        if (loDb != null) 
+            loDb = null;
+    }
+
+    loEx.ThrowExceptionIfErrors();
+    _logger.LogInfo("END method {MethodName}", lcMethod);
+
+    return loResult;
+}
+```
+
+## Exception Handling (Template 12)
+```csharp
+public async Task MethodName()
+{
+    var loEx = new R_Exception();
+    
+    try
+    {
+        // Your code here
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    
+    // CRITICAL: Use lowercase 'Haserror' property (not 'HasError')
+    if (!loEx.Haserror)
+    {
+        // Success logic here
+    }
+    
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## Resource Files
+- Location: Root folder of BackResources project
+- Files: `{ProgramName}BackResources_msgrsc.resx` (English), `{ProgramName}BackResources_msgrsc.id.resx` (Indonesian)
+- Pattern: `R_Utility.R_GetError(typeof(Resources_Dummy_Class), pcErrorId)`
+
+## Minimal Using Statements (MANDATORY)
+```csharp
+using System;                    // For basic types (Exception, DateTime, etc.)
+using System.Data;               // For DbType
+using System.Data.Common;        // For DbConnection, DbCommand, DbParameter
+using System.Threading.Tasks;    // For async/await
+using System.Collections.Generic; // For List<>, Dictionary<>
+using System.Linq;               // For LINQ operations (Cast, Where, ToDictionary)
+using R_BackEnd;                 // For R_BusinessObjectAsync, R_Db, R_Utility
+using R_Common;                  // For R_Exception
+using R_CommonFrontBackAPI;      // For eCRUDMode
+using {ProgramName}BackResources; // For resource access
+using {ProgramName}Common.DTOs;   // For DTOs
+using System.Transactions;       // For TransactionScope (if needed)
+using System.Diagnostics;        // For ActivitySource
+```
+
+## DLL References
+```xml
+<Reference Include="R_APIBackEnd">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
+</Reference>
+<Reference Include="R_APICommon">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommon.dll</HintPath>
+</Reference>
+<Reference Include="R_APICommonDTO">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommonDTO.dll</HintPath>
+</Reference>
+<Reference Include="R_CommonFrontBackAPI">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
+</Reference>
+<Reference Include="R_OpenTelemetry">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_OpenTelemetry.dll</HintPath>
+</Reference>
+```
+
+## Violations
+- ❌ Logger/Activity in Common project
+- ❌ Custom Logger/Activity implementations
+- ❌ Missing query logging before SqlExecQueryAsync
+- ❌ Missing START/END method logging
+- ❌ Hardcoded error messages
+- ❌ Manual connection disposal (not using 'using')
+- ❌ Batch processing implementation (must be commented out unless explicitly requested)
+- ❌ Different method counts between VB.NET and C# implementations
+- ❌ Interface methods not matching business logic class methods

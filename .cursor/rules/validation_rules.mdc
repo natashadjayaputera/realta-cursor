@@ -1,0 +1,65 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ValidationAndBuild*"
+---
+
+# VALIDATION & BUILD RULES
+
+## Build Order (Mandatory)
+**Backend:**
+1. {ProgramName}Common
+2. {ProgramName}BackResources
+3. {ProgramName}Back
+4. {ProgramName}Service
+5. BIMASAKTI_GS_API
+
+**Frontend:**
+1. {ProgramName}Common
+2. {ProgramName}FrontResources
+3. {ProgramName}Model
+4. {ProgramName}Front
+5. BlazorMenu
+
+## Build Validation Steps
+1. Execute build command before claiming code complete
+2. If build succeeds: Report "✓ Build successful - no errors"
+3. If build fails: Report ALL error messages verbatim
+4. Fix or ask user after 3 attempts
+
+## Warning Classification
+- **CODE WARNINGS**: Must be fixed (compiler, nullable, unused variables)
+- **EXTERNAL WARNINGS**: Document and explain why cannot be fixed
+- **INFRASTRUCTURE WARNINGS**: Document as acceptable (NuGet, SDK conflicts)
+
+## Build Report Format
+```
+BUILD SUMMARY - Project: {ProjectName}
+✓ Compilation: SUCCESS
+⚠ Warnings: {Count} found
+  - Code Warnings: {Count} (FIXED/NEEDS FIXING)
+  - External Warnings: {Count} (DOCUMENTED)
+  - Infrastructure Warnings: {Count} (ACCEPTABLE)
+
+DETAILED WARNING ANALYSIS:
+- CS####: {Description} - FIXED/NEEDS FIXING
+- NU####: {Description} - External dependency issue, cannot fix
+- MSB####: {Description} - SDK version conflict, acceptable
+```
+
+## Quality Gates
+- [ ] All .csproj files validated
+- [ ] All DLL references use HintPath
+- [ ] All projects build successfully
+- [ ] All code warnings fixed
+- [ ] No data state in Razor.cs
+- [ ] No R_FrontGlobalVar in ViewModels
+- [ ] No Logger/Activity in Common
+- [ ] No modified SQL/SP
+- [ ] Behavioral parity confirmed
+
+## Violations
+- ❌ Claiming "code is ready" without building
+- ❌ Ignoring warnings without classification
+- ❌ Building projects out of order
+- ❌ Not rebuilding Common after DTO changes

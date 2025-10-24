@@ -1,0 +1,85 @@
+---
+alwaysApply: true
+priority: CRITICAL
+---
+
+# AGENT CONTEXT CONFIGURATION
+
+## Agent-Specific Rule Loading
+
+### ToCSharpCommon Agent
+**Context Files:**
+- `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/common_rules.mdc` (agent-specific)
+
+**Focus:** DTOs, interfaces, enums, project structure
+
+### ToCSharpBack Agent
+**Context Files:**
+- `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/back_rules.mdc` (agent-specific)
+
+**Focus:** Business logic, logging, database operations, resources
+
+### ToCSharpService Agent
+**Context Files:**
+- `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/service_rules.mdc` (agent-specific)
+
+### ToCSharpModel Agent
+**Context Files:**
+- `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/model_rules.mdc` (agent-specific)
+
+**Focus:** Controllers, API endpoints, streaming context
+
+### ToCSharpViewModel Agent
+**Context Files:**
+- `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/viewmodel_rules.mdc` (agent-specific)
+
+**Focus:** Service clients, ViewModels, data binding
+
+### ToCSharpFront Agent
+**Context Files:**
+- `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/frontend_rules.mdc` (agent-specific)
+
+**Focus:** UI components, layouts, Blazor patterns
+
+### ValidationAndBuild Agent
+**Context Files:**
+- `.cursor/rules/core_rules.mdc` (always)
+- `.cursor/rules/validation_rules.mdc` (agent-specific)
+
+**Focus:** Build validation, quality gates, error reporting
+
+---
+
+# RULE HIERARCHY
+
+## Priority Order
+1. **Core Rules** - Universal, non-negotiable
+2. **Agent-Specific Rules** - Context-dependent (includes templates and violations)
+3. **Build and validate** - Final validation
+
+## Conflict Resolution
+- Core Rules override Agent Rules
+- Agent Rules include templates and violations
+- When in doubt: Ask user
+
+---
+
+# SIMPLIFIED DECISION FLOW
+
+## For Each Agent
+1. Load Core Rules (always)
+2. Load Agent-Specific Rules (includes templates and violations)
+3. Apply patterns for implementation
+4. Build and validate results
+
+## Escalation Path
+1. **First**: Check Core Rules
+2. **Second**: Check Agent Rules (includes templates and violations)
+3. **Third**: Ask user for clarification
+4. **Never**: Invent patterns or guess

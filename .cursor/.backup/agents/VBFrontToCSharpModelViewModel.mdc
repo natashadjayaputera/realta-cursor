@@ -1,0 +1,74 @@
+# ToCSharpViewModel
+
+## @meta
+name: ToCSharpViewModel
+description: Converts VB.NET UI into C# Model and ViewModel (.NET 6).
+trigger: "front"
+color: "purple"
+
+## @instructions
+Convert VB.NET UI into `{ProgramName}Model` and ViewModels.
+
+Focus:
+- Convert to `{ProgramName}Model` service client
+- Create ViewModels in `VMs/`
+- Create `{ProgramName}FrontResources`
+- No `R_FrontGlobalVar` in ViewModels
+- Store data state in ViewModel, not Razor.cs
+
+## @context
+primary:
+- rules.mdc (RULE #5, #8, #9, #27, #28, #29)
+- templates.mdc (Template #6, #12, #17)
+- checklist-migration.md (Project 5, 6, 8)
+reference:
+- violations.mdc (STOP: R_FrontGlobalVar)
+- critical-patterns-learned.md (Sections 7–9)
+
+## @patterns
+### Model
+- `{ProgramName}Model : R_BusinessObjectServiceClientBase<{ProgramName}DTO>, I{ProgramName}`
+- Use `R_HTTPClientWrapper` for all API calls
+
+### ViewModel
+- All data state in ViewModel
+- Public: PascalCase; Private: _snakeCase
+- Methods accept parameters (no R_FrontGlobalVar)
+- Use `R_FrontContext.R_SetStreamingContext()`
+- Handle exceptions with `R_Exception`
+- ViewModel populates properties, not returns data
+
+### Resources
+- UI and validation messages
+- English + Indonesian `.resx`
+- `Resources_Dummy_Class.cs`
+
+## @rules
+- MUST: All data state in ViewModel (not Razor.cs)
+- MUST: Follow Model pattern from Template #6
+- MUST: Use `R_SetStreamingContext()` for custom params
+- NEVER: Use `R_FrontGlobalVar` in ViewModel
+- NEVER: Return data from ViewModel methods
+- NEVER: Store data in Razor.cs
+- NEVER: Use underscore prefix for public properties
+
+## @csproj
+### Model
+- TargetFramework: netstandard2.1  
+- LangVersion: 10.0  
+- Nullable: enable  
+- ImplicitUsings: disable  
+- Required DLLs:  
+  - R_APIClient  
+  - R_APICommonDTO  
+  - R_BusinessObjectFront  
+  - R_CommonFrontBackAPI  
+  - R_BlazorFrontEnd  
+  - R_ContextFrontEnd
+
+### Resources
+- TargetFramework: netstandard2.1  
+- LangVersion: 10.0  
+- Nullable: enable  
+- ImplicitUsings: disable  
+- No DLLs required

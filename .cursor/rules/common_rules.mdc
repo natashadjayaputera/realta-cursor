@@ -1,0 +1,57 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ToCSharpCommon*"
+---
+
+# COMMON LAYER RULES
+
+## Project Structure
+- Location: `COMMON/{module}/{ProgramName}Common/`
+- Target: `netstandard2.1`
+- Purpose: DTOs, enums, interfaces only
+
+## DTO Design Rules
+- Each method gets specific parameter DTO (not generic)
+- Property naming matches VB.NET exactly (`CTRANS_DEPT_CODE`)
+- Use `string.Empty` for string defaults
+- All properties that VB.NET accesses must exist
+- Variables with "I" prefix use `int` not `short` (critical naming convention)
+
+## Interface Pattern
+```csharp
+public interface I{ProgramName} : R_IServiceCRUDAsyncBase<{ProgramName}DTO>
+{
+    // Streaming methods - NO parameters
+    IAsyncEnumerable<{GetListResultDTO}> GetList{Description}();
+    
+    // Non-streaming methods - WITH parameters
+    Task<{ProgramName}ResultDTO<{GetAnythingResultDTO}>> GetAnything({GetAnythingParameterDTO} poParameter);
+}
+```
+
+## DLL References (Minimal)
+```xml
+<Reference Include="R_APICommonDTO">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APICommonDTO.dll</HintPath>
+</Reference>
+<Reference Include="R_CommonFrontBackAPI">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_CommonFrontBackAPI.dll</HintPath>
+</Reference>
+```
+
+## Context Constants
+```csharp
+public static class ContextConstants
+{
+    public const string SOFT_PERIOD = "{ProgramName}_CSOFT_PERIOD";
+    public const string DEPT_CODE = "{ProgramName}_CDEPT_CODE";
+}
+```
+
+## Violations
+- ❌ Business logic in Common
+- ❌ Logger/Activity in Common
+- ❌ Generic DTOs for all parameters
+- ❌ Missing properties that VB.NET accesses
+- ❌ Using `short` for variables with "I" prefix

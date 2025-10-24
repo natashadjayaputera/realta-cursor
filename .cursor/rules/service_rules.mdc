@@ -1,0 +1,114 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ToCSharpService*"
+---
+
+# SERVICE LAYER RULES
+
+## Project Structure
+- Location: `SERVICE/{module}/{ProgramName}Service/`
+- Target: `net6.0`
+- Purpose: Controllers, API endpoints
+
+## Controller Pattern (Template 5)
+```csharp
+[HttpPost]
+public async IAsyncEnumerable<{ResultDTO}> GetList{Description}()
+{
+    var lcMethod = nameof(GetList{Description});
+    using var activity = _activitySource.StartActivity(lcMethod);
+    var loEx = new R_Exception();
+    var loCls = new {ProgramName}Cls();
+    List<{ResultDTO}> loResult = new List<{ResultDTO}>();
+
+    try
+    {
+        _logger.LogInfo("Start method GetList{Description}Async in {0}", lcMethod);
+
+        // Create parameter DTO internally
+        var loParam = new {ProgramName}GetList{Description}ParameterDTO
+        {
+            CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID,
+            CDEPT_CODE = R_Utility.R_GetStreamingContext<string>(ContextConstants.DEPT_CODE) ?? string.Empty,
+            CTRANSACTION_CODE = R_Utility.R_GetStreamingContext<string>(ContextConstants.TRANSACTION_CODE) ?? string.Empty
+        };
+
+        loResult = await loCls.GetList{Description}Async(loParam);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        _logger.LogError(loEx);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+
+    foreach ({ResultDTO} loItem in loResult)
+    {
+        yield return loItem;
+    }
+}
+```
+
+## Streaming Context Rules
+- **System Parameters**: Use `R_BackGlobalVar.COMPANY_ID`, `R_BackGlobalVar.USER_ID`
+- **Custom Parameters**: Use `R_Utility.R_GetStreamingContext<string>(ContextConstants.KEY)`
+- **NO Parameters**: IAsyncEnumerable methods have NO parameters in interface/controller
+
+## Controller Constructor Pattern
+```csharp
+[ApiController]
+[Route("api/[controller]/[action]")]
+public class {ProgramName}Controller : ControllerBase, I{ProgramName}
+{
+    private readonly Logger{ProgramName} _logger;
+    private readonly ActivitySource _activitySource;
+
+    public {ProgramName}Controller(ILogger<Logger{ProgramName}> logger)
+    {
+        Logger{ProgramName}.R_InitializeLogger(logger);
+        _logger = Logger{ProgramName}.R_GetInstanceLogger();
+        _activitySource = {ProgramName}Activity.R_InitializeAndGetActivitySource(nameof({ProgramName}Controller));
+    }
+}
+```
+
+## Controller Requirements
+- Inherit `ControllerBase, I{ProgramName}`
+- All methods decorated with `[HttpPost]`
+- Route pattern: `[Route("api/[controller]/[action]")]`
+- Logger and Activity initialized in constructor
+
+## Access Level Patterns
+- **Controllers call public methods** from `R_BusinessObjectAsync` base class:
+  - `R_GetRecordAsync()` (not `R_DisplayAsync`)
+  - `R_SaveAsync()` (not `R_SavingAsync`)
+  - `R_DeleteAsync()` (not `R_DeletingAsync`)
+- **Protected override methods** (`R_DisplayAsync`, `R_SavingAsync`) are internal to the business logic class
+
+## Parameter Passing Optimization
+- **When controller and business logic use the same DTO type, pass directly** - no need to create new instances
+- **Streaming methods are special** - they use `R_Utility.R_GetStreamingContext()` to get parameters, not method parameters
+- **Non-streaming methods use specific parameter DTOs** in both interface and implementation
+
+## DLL References
+```xml
+<Reference Include="R_APIBackEnd">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
+</Reference>
+<Reference Include="R_APIStartUp">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIStartUp.dll</HintPath>
+</Reference>
+<Reference Include="R_OpenTelemetry">
+  <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_OpenTelemetry.dll</HintPath>
+</Reference>
+```
+
+## Violations
+- ❌ IAsyncEnumerable methods with parameters
+- ❌ Setting system parameters in streaming context
+- ❌ Missing R_BackGlobalVar usage for IClientHelper data
+- ❌ Wrong route patterns
+- ❌ Calling protected methods (`R_DisplayAsync`, `R_SavingAsync`) from controllers
+- ❌ Creating unnecessary parameter DTOs when types match

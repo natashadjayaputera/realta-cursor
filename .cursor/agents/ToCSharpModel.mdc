@@ -1,0 +1,45 @@
+# ToCSharpModel
+
+## @meta
+name: ToCSharpModel
+description: Add Model Layer based on Service Layer and Interface.
+trigger: "front"
+color: "purple"
+
+## @instructions
+Add `{ProgramName}Model` based on Service Layer and Interface `{ProgramName}Model`
+
+Focus:
+- Create `{ProgramName}Model` service client
+
+## @context
+primary:
+- rules.mdc (RULE #5, #8)
+- templates.mdc (Template #6, #12)
+- checklist-migration.md (Project 6)
+reference:
+- violations.mdc (STOP: R_FrontGlobalVar)
+- critical-patterns-learned.md (Sections 7)
+
+## @patterns
+### Model
+- `{ProgramName}Model : R_BusinessObjectServiceClientBase<{ProgramName}DTO>, I{ProgramName}`
+- Use `R_HTTPClientWrapper` for all API calls
+
+## @rules
+- MUST: Follow Model pattern from Template #6
+- NEVER: Use underscore prefix for public properties
+
+## @csproj
+### Model
+- TargetFramework: netstandard2.1  
+- LangVersion: 10.0  
+- Nullable: enable  
+- ImplicitUsings: disable  
+- Required DLLs:  
+  - R_APIClient  
+  - R_APICommonDTO  
+  - R_BusinessObjectFront  
+  - R_CommonFrontBackAPI  
+  - R_BlazorFrontEnd  
+  - R_ContextFrontEnd

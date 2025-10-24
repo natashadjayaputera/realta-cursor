@@ -1,0 +1,52 @@
+---
+alwaysApply: true
+priority: CRITICAL
+nonNegotiable: true
+---
+
+# CORE RULES - UNIVERSAL
+
+## RULE 1: PLAN GENERATION
+- Create a to do in plan generation, to save plan according to the format and procedure defined in `plan_generation.mdc`.
+- No code generation is allowed before the plan is accepted and saved.
+
+## RULE 2: DOCUMENTATION FIRST
+- Check `.cursor/docs/net6/` for ALL target libraries before code generation
+- Never guess class names, namespaces, or DLL references
+- If unclear, ask user - never invent
+
+## RULE 3: PROJECT STRUCTURE
+```
+BACK/{module}/{ProgramName}Back/
+BACK/{module}/{ProgramName}BackResources/
+COMMON/{module}/{ProgramName}Common/
+SERVICE/{module}/{ProgramName}Service/
+FRONT/{ProgramName}Model/
+FRONT/{ProgramName}FrontResources/
+FRONT/{ProgramName}Front/
+```
+
+## RULE 4: BUSINESS LOGIC PRESERVATION
+- **NEVER** modify SQL queries or stored procedure names
+- **NEVER** change business logic calculations
+- Replicate VB.NET logic exactly (even bugs)
+- **NEVER** change data types from VB.NET conventions (e.g., "I" prefix = int, not short)
+
+## RULE 5: BUILD VALIDATION
+- Build after ANY code changes
+- Report ALL errors verbatim
+- Fix or ask user after 3 attempts
+
+## RULE 6: ERROR HANDLING
+- Use `var loEx = new R_Exception();` pattern
+- All error messages from resource files
+- Never hardcode error messages
+
+---
+
+# ENFORCEMENT
+When rules violated:
+1. Stop code generation immediately
+2. Cite specific rule number
+3. Explain violation
+4. Ask for user confirmation before proceeding

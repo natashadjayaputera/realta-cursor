@@ -1,0 +1,149 @@
+---
+alwaysApply: false
+priority: HIGH
+glob: "*ToCSharpViewModel*"
+---
+
+# MODEL & VIEWMODEL RULES
+
+## Project Structure
+- Location: `FRONT/{ProgramName}Model/` and `FRONT/{ProgramName}FrontResources/`
+- Target: `netstandard2.1`
+- Purpose: ViewModels, resources
+
+## ViewModel Inheritance Pattern - CRITICAL
+```csharp
+// ✅ CORRECT - All ViewModels MUST inherit from R_ViewModel<T>
+public class FAM00100ViewModel : R_ViewModel<FAM00100DTO>
+{
+    private readonly FAM00100Model _model = new FAM00100Model();
+    // Data property is inherited from R_ViewModel<T> - DO NOT declare manually
+    // Other properties and methods...
+}
+```
+
+## Required Using Statements
+```csharp
+using R_BlazorFrontEnd.Exceptions;
+using R_BlazorFrontEnd.Interfaces;
+using R_BlazorFrontEnd;  // Required for R_ViewModel<T>
+using R_CommonFrontBackAPI;
+```
+
+## Resource File Naming Convention - MANDATORY
+- **English**: `{ProgramName}FrontResources_msgrsc.resx`
+- **Indonesian**: `{ProgramName}FrontResources_msgrsc.id.resx`
+- **NOT**: `Resources.resx` or `Resources.id.resx`
+
+## ViewModel Rules
+- Location: `{ProgramName}Model/VMs/` folder
+- All methods accept parameters (no R_FrontGlobalVar usage)
+- List methods use `R_FrontContext.R_SetStreamingContext()` pattern
+- Public properties use PascalCase (no underscore prefix)
+- Private fields use `_snakeCase` (no type prefix)
+- **CRITICAL**: Model initialization pattern: `private readonly FAM00100Model _model = new FAM00100Model();`
+
+## CRUD Operations Pattern - MANDATORY
+```csharp
+// ✅ CORRECT - CRUD methods for ViewModels with grids/conductors
+public async Task GetRecordAsync(FAM00100DTO poEntity)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loResult = await _model.R_ServiceGetRecordAsync(poEntity);
+        CurrentRecord = loResult; // Store in separate property, NOT Data
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+
+public async Task SaveRecordAsync(FAM00100DTO poEntity, eCRUDMode peCRUDMode)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loResult = await _model.R_ServiceSaveAsync(poEntity, peCRUDMode);
+        CurrentRecord = loResult; // Store in separate property, NOT Data
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+
+public async Task DeleteRecordAsync(FAM00100DTO poEntity)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        await _model.R_ServiceDeleteAsync(poEntity);
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## Data Property Usage - CRITICAL
+```csharp
+// ✅ CORRECT - Data property is READ-ONLY, use separate properties
+public class FAM00100ViewModel : R_ViewModel<FAM00100DTO>
+{
+    // Data property is inherited and READ-ONLY - DO NOT assign to it
+    public FAM00100DTO CurrentRecord { get; set; } = new FAM00100DTO(); // ✅ Use this instead
+}
+
+// ❌ WRONG - Cannot assign to Data property
+Data = loResult; // CS0200: Property cannot be assigned to
+```
+
+## When CRUD Methods Are Needed
+- **Form-level CRUD**: ViewModels with `R_Conductor` (main forms)
+- **Grid-level CRUD**: ViewModels with `R_Grid` that have Add/Edit/Delete operations  
+- **Inquiry-only**: ViewModels for read-only grids (no CRUD needed)
+
+## Grid Data Binding Pattern
+```csharp
+// ✅ CORRECT - Populate ViewModel property
+public async Task GetDataAsync(FilterRequest poRequest)
+{
+    var loResult = await _model.GetDataAsync(poRequest);
+    if (loResult.Data != null)
+    {
+        DataList.Clear();
+        DataList = new ObservableCollection<DTO>(loResult.Data);
+    }
+}
+
+// Grid Service Method
+public async Task R_ServiceGetListRecord(R_ServiceGetListRecordEventArgs eventArgs)
+{
+    var loRequest = new FilterRequest { /* parameters */ };
+    await _viewModel.GetDataAsync(loRequest); // Populates ViewModel property
+    eventArgs.ListEntityResult = _viewModel.DataList; // Assign to grid
+}
+```
+
+## DLL References
+```xml
+<Reference Include="R_APIClient">
+  <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_APIClient.dll</HintPath>
+</Reference>
+<Reference Include="R_BusinessObjectFront">
+  <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BusinessObjectFront.dll</HintPath>
+</Reference>
+<Reference Include="R_BlazorFrontEnd">
+  <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.dll</HintPath>
+</Reference>
+```
+
+## Violations
+- ❌ Using R_FrontGlobalVar in ViewModels
+- ❌ Returning collections instead of populating properties
+- ❌ Data state in Razor.cs instead of ViewModel
+- ❌ Business logic in Front project
+- ❌ **CRITICAL**: Not inheriting from R_ViewModel<T>
+- ❌ **CRITICAL**: Declaring Data property manually (it's inherited)
+- ❌ **CRITICAL**: Wrong resource file naming convention
+- ❌ **CRITICAL**: Missing R_BlazorFrontEnd namespace for R_ViewModel<T>
+- ❌ **CRITICAL**: Assigning to Data property (it's read-only)
+- ❌ **CRITICAL**: Missing CRUD methods for ViewModels with grids/conductors
+- ❌ **CRITICAL**: Not using separate properties for CRUD results
