@@ -209,3 +209,56 @@ _logger.LogError(GetError("ERR_USER_NOT_FOUND"));
 - **NOT**: `loCmd.AddDbCommandParameter` (deprecated/incorrect)
 - **Always**: Call `loCmd.Parameters.Clear()` before reusing command objects
 - **Method signature**: 5 parameters - command object, parameter name, DbType, size (int), value
+
+## R_*Async Override Pattern
+**Important Notes:**
+- Must throw `NotImplementedException` (not return `Task.CompletedTask`)
+- All unused CRUD override methods (R_DeletingAsync, etc.) follow this pattern
+- This indicates the operation is not supported for this entity
+
+## Batch Process Placeholder Pattern
+When VB.NET class implements R_IBatchProcess:
+
+### Create BatchCls in Back/
+```csharp
+public class {ProgramName}BatchCls
+{
+    // TODO: Add logger and activity source when implementing
+    // TODO: Implement batch process logic
+}
+```
+
+## Resource Key Verification Pattern
+
+### Before Creating ANY Resource Key:
+
+**Step 1: Read VB.NET Source**
+```vb
+' Find in VB.NET code: R_Utility.R_GetError(GetType(Resources_Dummy_Class), "KEY_NAME")
+loEx.Add(R_Utility.R_GetError(GetType(Resources_Dummy_Class), "PS001"))
+```
+
+**Step 2: Find VB.NET .resx File**
+- Location: `net4/.../Back/{ProgramName}BackResources/{ProgramName}BackResources_msgrsc.resx`
+- Read ALL resource keys and messages
+- Note: Same key may be used in multiple methods
+
+**Step 3: Copy to C# .resx**
+```xml
+<data name="PS001" xml:space="preserve">
+  <value>Exact message from VB.NET resx</value>
+</data>
+```
+
+**Step 4: Use in C# Code**
+```csharp
+loEx.Add(GetError("PS001")); // Use EXACT same key as VB.NET
+```
+
+**Critical Rules:**
+- ✅ Use EXACT key names from VB.NET (e.g., PS001, ERR_001)
+- ✅ Copy EXACT error messages
+- ✅ If VB.NET reuses key (PS001 in multiple places), reuse in C#
+- ❌ NEVER invent new keys
+- ❌ NEVER change key names
+- ❌ NEVER change error messages

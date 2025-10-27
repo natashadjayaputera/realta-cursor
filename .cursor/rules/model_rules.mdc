@@ -15,5 +15,27 @@ glob: "*ToCSharpModel*"
 - Inherit `R_BusinessObjectServiceClientBase<{ProgramName}DTO>, I{ProgramName}`
 - Use `R_HTTPClientWrapper` for all API calls
 
+## 🎯 CRITICAL API PATTERN RULES
+
+### Non-Streaming Methods
+- **MUST** use `R_APIRequestObject<TResult, TParameter>()`
+- **MUST** assign directly to `loRtn` (NOT `loRtn.Data`)
+- **MUST** use complete ResultDTO type as TResult
+- **MUST** use ParameterDTO type as TParameter
+
+### Streaming Methods
+- **MUST** use `R_APIRequestStreamingObject<T>()`
+- **MUST** assign to `loRtn.Data` (NOT `loRtn`)
+- **MUST** use data type as generic parameter
+- **MUST** have interface method throw `NotImplementedException`
+
+### Generic Type Rules
+- **TResult**: Complete ResultDTO type (e.g., `FAM00100ResultDTO<int>`)
+- **TParameter**: ParameterDTO type (e.g., `FAM00100CheckDataParameterDTO`)
+- **NEVER** use inner data types as generic parameters
+
 ## Violations
 - ❌ Not following Model Pattern from `model_patterns.mdc`
+- ❌ Using `.Data` assignment for non-streaming methods
+- ❌ Using inner types instead of complete ResultDTO types
+- ❌ Missing 6th parameter for method disambiguation

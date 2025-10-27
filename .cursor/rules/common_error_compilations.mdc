@@ -26,3 +26,98 @@ using R_CommonFrontBackAPI;         // For base classes
   <HintPath>..\..\..\..\..\SYSTEM\SOURCE\LIBRARY\Back\R_APIBackEnd.dll</HintPath>
 </Reference>
 ```
+
+## EXAMPLE 3: Controller Not Implementing Interface Members
+**Error**: `CS0535: 'ControllerName' does not implement interface member 'R_IServiceCRUDAsyncBase<DTO>.R_ServiceGetRecord(...)'`
+**Solution**: Controllers must implement `R_ServiceGetRecord`, `R_ServiceSave`, `R_ServiceDelete` (NOT `R_GetRecordAsync`, `R_SaveAsync`, `R_DeleteAsync`)
+
+```csharp
+// ❌ WRONG - Using business logic method names directly
+[HttpPost]
+public async Task<ResultDTO<DTO>> R_GetRecordAsync(DTO poEntity) { }
+
+// ✅ CORRECT - Using service interface method names
+[HttpPost]
+public async Task<R_ServiceGetRecordResultDTO<DTO>> R_ServiceGetRecord(R_ServiceGetRecordParameterDTO<DTO> poParameter)
+{
+    var loCls = new BusinessCls();
+    loRtn.data = await loCls.R_GetRecordAsync(poParameter.Entity);
+    return loRtn;
+}
+```
+
+## EXAMPLE 4: CS0246 R_ContextFrontEnd not found
+**Error**: `CS0246: The type or namespace name 'R_ContextFrontEnd' could not be found`
+
+**Cause**: Missing DLL reference when using streaming context  
+**Solution**: Add to Model .csproj:
+```xml
+<Reference Include="R_ContextFrontEnd">
+  <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_ContextFrontEnd.dll</HintPath>
+</Reference>
+```
+
+---
+
+## EXAMPLE 5: CS0103 R_FrontUtility does not exist
+**Error**: `CS0103: The name 'R_FrontUtility' does not exist in the current context`
+
+**Cause**: Missing using statement  
+**Solution**: Add to ViewModel:
+```csharp
+using R_BlazorFrontEnd.Helpers;
+```
+
+---
+
+## EXAMPLE 6: CS0019 Operator '??' type mismatch
+**Error**: `CS0019: Operator '??' cannot be applied to operands of type 'List<XXXResultDTO>' and 'List<YYY DTO>'`
+
+**Cause**: ObservableCollection type doesn't match Model's ResultDTO type  
+**Solution**: Use exact ResultDTO type in ObservableCollection
+
+```csharp
+// ❌ WRONG
+public ObservableCollection<FAM0010002DTO> JournalGroupList { get; set; }
+
+// ✅ CORRECT
+public ObservableCollection<FAM0010002GetJournalGroupAssetCodeListResultDTO> JournalGroupList { get; set; }
+```
+
+---
+
+## EXAMPLE 7: CS0246 FrontResources not found
+**Error**: `CS0246: The type or namespace name 'FAM00100FrontResources' could not be found`
+
+**Cause**: FrontResources project not created or not referenced  
+**Solution**: 
+1. Create FrontResources project
+2. Add ProjectReference in Model .csproj
+3. Build FrontResources first
+
+---
+
+## EXAMPLE 8: CS1061 DTO property not found
+**Error**: `CS1061: 'FAM001000202DTO' does not contain a definition for 'CFROM_JRNGRP_CODE'`
+
+**Cause**: Referencing non-existent DTO property  
+**Solution**: Cross-check with old implementation. If old implementation use the property, add the property to the DTO, else if the old implementation does not use the property, remove invalid property references
+
+---
+
+## EXAMPLE 9: CS9008 Referenced project does not exist
+**Error**: `MSB9008: The referenced project ..\FAM00100FrontResources\FAM00100FrontResources.csproj does not exist`
+
+**Cause**: ProjectReference added before FrontResources project created  
+**Solution**: Expected during development. Create FrontResources project first.
+
+---
+
+## VIEWMODEL BUILD ERROR CHECKLIST
+1. **CS0246 R_ContextFrontEnd** → Add DLL reference
+2. **CS0103 R_FrontUtility** → Add `using R_BlazorFrontEnd.Helpers;`
+3. **CS0019 Type mismatch** → Fix ObservableCollection type
+4. **CS0246 FrontResources** → Create project and add reference
+5. **CS1061 Property not found** → Check DTO properties
+
+**Build Order**: FrontResources → Model → Everything else

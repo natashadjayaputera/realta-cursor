@@ -34,7 +34,23 @@ glob: "*ToCSharpService*"
   <ProjectReference Include="..\..\..\COMMON\{module}\{ProgramName}Common\{ProgramName}Common.csproj" />
 </ItemGroup>
 ```
-  
+
+## Minimal Using Statements (MANDATORY)
+```csharp
+using Microsoft.AspNetCore.Mvc;           // For [ApiController], ControllerBase
+using Microsoft.Extensions.Logging;       // For ILogger
+using R_BackEnd;                          // For R_BackGlobalVar
+using R_Common;                           // For R_Exception, R_Utility
+using R_CommonFrontBackAPI;               // For base interfaces and DTOs
+using {ProgramName}Common;                // For interfaces
+using {ProgramName}Common.DTOs;           // For DTOs
+using {ProgramName}Back;                  // For business logic classes
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;                 // For ActivitySource
+using System.Threading.Tasks;
+```
+
 ## Controller Pattern
 ```csharp
 // Streaming patterns - NO parameters

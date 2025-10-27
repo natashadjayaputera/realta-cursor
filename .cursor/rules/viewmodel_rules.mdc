@@ -6,15 +6,58 @@ glob: "*ToCSharpViewModel*"
 
 # VIEWMODEL LAYER RULES
 
+## CRITICAL PLANNING RULE - READ THIS FIRST
+### 1 ViewModel = 1 CRUD Entity Per Page
+- **MANDATORY**: Before creating any ViewModels, analyze ALL VB.NET forms to identify CRUD entities
+- **Check for**: `R_Conductor` (form-level CRUD) and `R_ConductorGrid` (grid-level CRUD) controls
+- **One page can have MULTIPLE CRUD entities** → Create SEPARATE ViewModel for EACH
+- **Example**: If FAM0010002.vb has 3 `R_ConductorGrid` controls → Create 3 separate ViewModels
+- **NEVER**: Combine multiple CRUD entities into one ViewModel
+- **Analysis Required**: Count ALL conductors/conductor grids before planning ViewModels
+
+### Planning Checklist Before Creating ViewModels
+- [ ] Read all VB.NET form files (*.vb) in the program
+- [ ] Identify all `R_Conductor` controls (form-level CRUD)
+- [ ] Identify all `R_ConductorGrid` controls (grid-level CRUD)
+- [ ] Map each CRUD control to its DTO entity
+- [ ] Create ViewModel count = Number of CRUD entities
+- [ ] Plan separate ViewModel for each CRUD entity
+
 ## Project Structure
 - Location: `FRONT/{ProgramName}Model/` and `FRONT/{ProgramName}FrontResources/`
 - Target: `netstandard2.1`
 - Purpose: ViewModels, resources
 
-## Resource Files
-- Location: Root folder of FrontResources project
-- Files: `{ProgramName}FrontResources_msgrsc.resx` (English), `{ProgramName}FrontResources_msgrsc.id.resx` (Indonesian)
-- Pattern: `R_FrontUtility.R_GetError(typeof(Resources_Dummy_Class), pcErrorId)`
+## Resource Files Project - MUST CREATE
+### Project Structure
+- **Location**: Root folder `FRONT/{ProgramName}FrontResources/`
+- **Target**: `netstandard2.1`
+- **NO DLL references needed** - resources only
+
+### Files Required (All in root folder):
+1. **{ProgramName}FrontResources.csproj** - Project file
+2. **{ProgramName}FrontResources_msgrsc.resx** - English resource file
+3. **{ProgramName}FrontResources_msgrsc.id.resx** - Indonesian resource file
+4. **{ProgramName}FrontResources_msgrsc.Designer.cs** - Auto-generated designer class
+5. **Resources_Dummy_Class.cs** - Dummy class for `typeof()` usage
+
+### Resource File Pattern
+```csharp
+// In validation methods:
+loEx.Add(R_FrontUtility.R_GetError(
+    typeof({ProgramName}FrontResources.Resources_Dummy_Class),
+    "ERROR_KEY"
+));
+```
+
+### Resource Creation Checklist
+- [ ] Create FrontResources project at root level (NOT in subfolder)
+- [ ] Add both .resx files (English and Indonesian)
+- [ ] Define all error message keys
+- [ ] Create Resources_Dummy_Class.cs
+- [ ] Build FrontResources project first
+- [ ] Add ProjectReference in Model .csproj to FrontResources
+- [ ] Verify resources are accessible from ViewModels
 
 ## ViewModel Rules
 - Location: `{ProgramName}Model/VMs/` folder
@@ -22,7 +65,49 @@ glob: "*ToCSharpViewModel*"
 - List methods use `R_FrontContext.R_SetStreamingContext()` pattern
 - Public properties use PascalCase (no underscore prefix)
 - Private fields use `_snakeCase` (no type prefix)
-- **CRITICAL**: Model initialization pattern: `private readonly FAM00100Model _model = new FAM00100Model();`
+- **CRITICAL**: Model initialization pattern: `private readonly {ProgramName}Model _model = new {ProgramName}Model();`
+
+**See viewmodel_patterns.mdc for:**
+- Required using statements
+- Required DLL references
+- Complete code patterns
+
+## Streaming Context Rules
+- **ONLY for streaming methods** (returns `IAsyncEnumerable` in Controller)
+- **ONLY for custom parameters** (NOT IClientHelper data like COMPANY_ID, USER_ID)
+- **Set in ViewModel** using `R_FrontContext.R_SetStreamingContext()` before calling Model
+- **IClientHelper parameters** (COMPANY_ID, USER_ID) handled automatically by framework
+
+**See viewmodel_patterns.mdc for:**
+- Complete streaming context pattern
+- How to identify custom parameters
+- Examples of custom vs IClientHelper parameters
+
+## ObservableCollection Type Matching Rules
+- **MUST use SAME type** as streaming method's return type (ResultDTO)
+- **NEVER use main DTO** for list properties
+- Check Model method return type to get exact ResultDTO name
+
+**See viewmodel_patterns.mdc for:**
+- Complete type matching pattern
+- Fix for CS0019 type mismatch errors
+- Type matching step-by-step guide
+
+## R_BackGlobalVar Usage - FORBIDDEN
+- **NEVER** use `R_BackGlobalVar.COMPANY_ID` in ViewModels
+- **NEVER** use `R_BackGlobalVar.USER_ID` in ViewModels
+- **NEVER** use `R_BackGlobalVar.CULTURE_UI` in ViewModels
+- **ALWAYS** expect these values to be passed as parameters from Controller layer
+- **DO NOT** assign or set COMPANY_ID, USER_ID, or any audit fields in ViewModel
+- **Controller layer** will populate these values before calling ViewModel methods
+- **ViewModel responsibility**: Business logic and data transformation only
+
+## Lookup and Description Handling - FORBIDDEN
+- **NEVER** add lookup description properties in ViewModel
+- **NEVER** implement `GetLookupCurrencyRateDescription()` or similar methods
+- **NEVER** add `CurrencyRateDescription`, `DepartmentDescription` lookup descriptions properties
+- **UI responsibility**: Lookup descriptions handled in Razor code-behind or UI layer
+- **ViewModel focus**: Business logic and data operations only
 
 ## Data Validation Rules - CRITICAL
 - **All validation logic MUST be in ViewModel**, never in Razor code-behind
@@ -54,11 +139,26 @@ glob: "*ToCSharpViewModel*"
 - Date format: `'yyyyMMdd'` unless otherwise specified in `*ViewModel.cs`
 - `R_DatePicker` binds to `D*_DATE` in `*.razor`
 
+## Common Build Errors
+**See common_error_compilations.mdc for:**
+- CS0246 R_ContextFrontEnd not found
+- CS0103 R_FrontUtility does not exist
+- CS0019 Operator '??' type mismatch
+- CS0246 FrontResources not found
+- CS1061 DTO property not found
+- Complete fixes and solutions for all ViewModel build errors
+
 ## Violations
 - ❌ Using R_FrontGlobalVar in ViewModels
 - ❌ Returning collections instead of populating properties
 - ❌ Data state in Razor.cs instead of ViewModel
 - ❌ Business logic in Front project
+- ❌ **FORBIDDEN**: Using `R_BackGlobalVar.COMPANY_ID` in ViewModels (Controller responsibility)
+- ❌ **FORBIDDEN**: Using `R_BackGlobalVar.USER_ID` in ViewModels (Controller responsibility)
+- ❌ **FORBIDDEN**: Using `R_BackGlobalVar.CULTURE_UI` in ViewModels (Controller responsibility)
+- ❌ **FORBIDDEN**: Assigning COMPANY_ID, USER_ID, or audit fields in ViewModel methods
+- ❌ **FORBIDDEN**: Adding lookup description properties (CurrencyRateDescription, DepartmentDescription, etc.)
+- ❌ **FORBIDDEN**: Implementing lookup description methods (GetLookupCurrencyRateDescription, etc.)
 - ❌ **CRITICAL**: Not inheriting from R_ViewModel<T>
 - ❌ **CRITICAL**: Declaring Data property manually (it's inherited)
 - ❌ **CRITICAL**: Wrong resource file naming convention
@@ -70,3 +170,8 @@ glob: "*ToCSharpViewModel*"
 - ❌ **CRITICAL**: Validation methods returning void instead of R_Exception
 - ❌ **CRITICAL**: Hardcoded error messages instead of resource-based messages
 - ❌ **CRITICAL**: Missing validation methods for CRUD operations
+- ❌ **CRITICAL**: Missing `using R_BlazorFrontEnd.Helpers;` for R_FrontUtility
+- ❌ **CRITICAL**: ObservableCollection type mismatch with ResultDTO
+- ❌ **CRITICAL**: Setting streaming context for IClientHelper parameters (COMPANY_ID, USER_ID)
+- ❌ **CRITICAL**: NOT setting streaming context for custom parameters
+- ❌ **CRITICAL**: Creating single ViewModel for multiple CRUD entities on same page

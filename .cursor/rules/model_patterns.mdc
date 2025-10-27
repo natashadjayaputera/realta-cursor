@@ -36,6 +36,11 @@ glob: "*ToCSharpModel*"
 ```
 
 ## Model Pattern
+
+### HTTP Client Name Convention
+- **Most modules**: `"R_DefaultServiceUrl{ModuleName}"` (e.g., `"R_DefaultServiceUrlFA"` for FA module)
+- **GS and SA modules ONLY**: `"R_DefaultServiceUrl"` (no suffix)
+
 ```csharp
 public class {ProgramName}Model : R_BusinessObjectServiceClientBase<{ProgramName}DTO>, I{ProgramName}
 {
@@ -135,3 +140,23 @@ public class {ProgramName}Model : R_BusinessObjectServiceClientBase<{ProgramName
     }
 }
 ```
+
+## 🎯 CRITICAL API PATTERN DIFFERENCES
+
+### Non-Streaming vs Streaming Methods
+- **Non-streaming**: `R_APIRequestObject<TResult, TParameter>()` returns the **full ResultDTO directly**
+  - Assignment: `loRtn = await R_HTTPClientWrapper.R_APIRequestObject<...>()`
+  - **NOT** `loRtn.Data = await ...`
+
+- **Streaming**: `R_APIRequestStreamingObject<T>()` returns **just the data**
+  - Assignment: `loRtn.Data = await R_HTTPClientWrapper.R_APIRequestStreamingObject<...>()`
+
+### Generic Type Parameters
+- **TResult**: Must be the **complete ResultDTO type** (e.g., `FAM00100ResultDTO<int>`)
+- **TParameter**: Must be the **ParameterDTO type** (e.g., `FAM00100CheckDataParameterDTO`)
+- **NOT** just the inner data type (e.g., `int` or `FAM00100DTO`)
+
+### Common Pitfalls to Avoid
+1. **Wrong Assignment Pattern**: Using `.Data` for non-streaming methods
+2. **Incorrect Generic Types**: Using inner types instead of full ResultDTO types
+3. **Missing Parameters**: Forgetting the 6th parameter to disambiguate method overloads

@@ -14,9 +14,18 @@ glob: "*ToCSharpCommon*"
 ## Interface Requirements
 - Must inherit: `R_IServiceCRUDAsyncBase<{ProgramName}DTO>`
 
+## Context Constants Rules
+- **ONLY include custom parameters** in ContextConstants.cs
+- **DO NOT include IClientHelper parameters** (CCOMPANY_ID, CLANG_ID, CUSER_ID) - these are set via R_BackGlobalVar
+- Use `{ProgramName}_` prefix in constant **VALUES** (e.g., `"FAM00100_ISTART_YEAR"`)
+- Keep constant **NAMES** simple and descriptive (e.g., `ISTART_YEAR`, not `FAM00100_ISTART_YEAR`)
+
 ## DTO Design Rules
 - All methods that return `List` use streaming patterns (NON-NEGOTIABLE) 
 - Each method in `{ProgramName}*Cls.vb` will have its ParameterDTO and ResultDTO, except `R_*` methods 
+- **Each streaming method MUST have its own specific ResultDTO** - No shared StreamDTO across multiple methods
+- **Parameter DTOs MUST NOT inherit from Entity DTOs** - All parameter DTOs must be standalone classes with explicit properties
+- **Custom Methods Result Rule**: All custom methods (not part of R_IServiceCRUDAsyncBase) MUST have their own specific ResultDTO and CANNOT use EntityDTO directly
 - Add `//NOTE: Global Variable` for properties that get value from R_BackGlobalVar.
 - Property naming matches VB.NET exactly (`CTRANS_DEPT_CODE`)
 - Use `string.Empty` for string defaults
@@ -36,6 +45,10 @@ glob: "*ToCSharpCommon*"
 - ❌ Business logic in Common
 - ❌ Logger/Activity in Common
 - ❌ Generic DTOs for all parameters
+- ❌ **Shared StreamDTO across multiple streaming methods** (each method needs its own specific ResultDTO)
+- ❌ **Parameter DTOs inheriting from Entity DTOs** (must be standalone classes)
+- ❌ **Custom methods returning EntityDTO directly** (must use specific ResultDTO)
+- ❌ **Including IClientHelper parameters in ContextConstants** (only custom parameters like ISTART_YEAR, LFLAGPERIOD)
 - ❌ Missing properties that VB.NET accesses
 - ❌ Using `short` for variables with "I" prefix
 - ❌ Using `R_IServiceCRUDBase` for interface (use `R_IServiceCRUDAsyncBase`)
