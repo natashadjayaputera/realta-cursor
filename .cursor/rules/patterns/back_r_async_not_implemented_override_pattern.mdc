@@ -1,0 +1,30 @@
+---
+description: "Override unused methods implementation for R_BusinessObjectAsync in Back projects"
+alwaysApply: false
+globs: "*ToCSharpBack*"
+---
+# R_*Async Override Pattern
+
+```csharp
+protected override async Task R_DeletingAsync(EntityDTO poEntity)
+{
+    throw new NotImplementedException();
+}
+
+protected override async Task<EntityDTO> R_DisplayAsync(EntityDTO poEntity)
+{
+    throw new NotImplementedException();
+}
+
+protected override async Task R_SavingAsync(EntityDTO poNewEntity, eCRUDMode poCRUDMode)
+{
+    throw new NotImplementedException();
+}
+
+```
+
+Rules:
+
+* Must throw `NotImplementedException`
+* Do NOT return `Task.CompletedTask`
+* Indicates unsupported operation

@@ -1,0 +1,13 @@
+---
+description: "Define correct pattern for streaming API methods"
+alwaysApply: false
+globs: "*ToCSharpModel*"
+---
+
+# Streaming API Pattern
+
+- MUST follow @streaming_pattern.mdc
+- MUST use `R_APIRequestStreamingObject<T>()`
+- MUST assign to `loRtn.Data` (NOT `loRtn`)
+- MUST use data type as generic parameter
+- MUST have interface method throw `NotImplementedException`

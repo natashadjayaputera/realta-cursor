@@ -1,0 +1,21 @@
+---
+description: "Defines UI architecture rules for {ProgramName}Front projects"
+alwaysApply: false
+globs: "*ToCSharpFront*"
+---
+
+# UI Architecture Rules
+
+- **Data Validation:** All validation logic MUST be in the ViewModel, not in Razor code-behind.
+- **Separation of Concerns:**
+  - **ViewModel:** Handles business logic, validation, and data state.
+  - **Code-behind:** Handles UI events and component references only.
+- **Component References:** Keep only UI components (`R_Grid`, `R_Conductor`, etc.) in code-behind.
+- **Data State:** Business data must reside in ViewModel properties — never in Razor.cs fields.
+
+## Violations
+- ❌ Data validation in Razor.cs
+- ❌ Storing DTOs in code-behind
+- ❌ Using R_Button for navigation
+- ❌ Hardcoded strings (must use Localizer)
+- ❌ R_Conductor in inquiry pages

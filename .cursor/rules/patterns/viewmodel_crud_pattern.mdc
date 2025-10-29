@@ -1,0 +1,47 @@
+---
+description: "Standard CRUD pattern for ViewModel methods"
+alwaysApply: false
+globs: "*ToCSharpViewModel*"
+---
+# CRUD Pattern
+
+Each CRUD method follows this template:
+
+```csharp
+public FAM00100DTO CurrentRecord { get; set; } = new FAM00100DTO();
+
+public async Task GetRecordAsync(FAM00100DTO poEntity)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loResult = await _model.R_ServiceGetRecordAsync(poEntity);
+        CurrentRecord = loResult; // Store in separate property, NOT Data
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+
+public async Task SaveRecordAsync(FAM00100DTO poEntity, eCRUDMode peCRUDMode)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loResult = await _model.R_ServiceSaveAsync(poEntity, peCRUDMode);
+        CurrentRecord = loResult; // Store in separate property, NOT Data
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+
+public async Task DeleteRecordAsync(FAM00100DTO poEntity)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        await _model.R_ServiceDeleteAsync(poEntity);
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+```

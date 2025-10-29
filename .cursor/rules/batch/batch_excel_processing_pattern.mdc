@@ -1,0 +1,43 @@
+---
+description: "ToCSharpViewModel: Excel batch processing ViewModel implementation pattern in Model Project"
+alwaysApply: false
+---
+
+# EXCEL BATCH PROCESSING PATTERN
+
+Implement `R_IProcessProgressStatus` in `{ProgramName}BatchViewModel.cs`:
+
+```csharp
+public class {ProgramName}BatchViewModel : R_IProcessProgressStatus
+{
+    public Action<DataSet> ShowErrorAction { get; set; }
+    public Action StateChangeAction { get; set; }
+    public Action ShowSuccessAction { get; set; }
+    public string Message { get; set; }
+    public int Percentage { get; set; }
+    public bool IsFileSelected { get; set; }
+    public long MaximumFileSize => 5 * 1024 * 1024; // 5MB
+
+    public async Task SaveBatchDataAsync(DataSet poExcelDataSet)
+    {
+        var loDataList = R_FrontUtility.R_ConvertTo<DataDTO>(poExcelDataSet.Tables[0]).ToList();
+
+        var loCls = new R_ProcessAndUploadClient(
+            plSendWithContext: true,
+            plSendWithToken: true,
+            poProcessProgressStatus: this);
+
+        var loBatchPar = new R_BatchParameter
+        {
+            COMPANY_ID = R_FrontGlobalVar.COMPANY_ID,
+            USER_ID = R_FrontGlobalVar.USER_ID,
+            ClassName = "{ProgramName}Back.{ProgramName}BatchCls",
+            BigObject = loDataList
+        };
+
+        var lcGuid = await loCls.R_BatchProcess<List<DataDTO>>(loBatchPar, 10);
+    }
+
+    // Implement R_IProcessProgressStatus interface members...
+}
+````

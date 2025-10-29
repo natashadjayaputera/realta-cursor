@@ -1,0 +1,11 @@
+---
+description: "List violations and forbidden actions for validation and build process"
+alwaysApply: false
+---
+
+# Violations
+
+- ❌ Claiming “code is ready” without building  
+- ❌ Ignoring warnings without classification  
+- ❌ Building projects out of order  
+- ❌ Not rebuilding Common after DTO changes

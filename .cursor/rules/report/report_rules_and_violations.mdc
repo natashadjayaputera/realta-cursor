@@ -1,0 +1,20 @@
+---
+description: "Defines all enforcement and violation rules for report-related files"
+alwaysApply: false
+---
+# Report Rules
+
+✅ Required:
+- Report methods must be implemented only in the **Back project**
+- Each Report operation must have its own **ReportCls** class
+- Constructor includes Logger and ActivitySource setup
+- Report methods are **synchronous**
+- Separate result DTOs (non-streaming)
+
+❌ Violations:
+- ❌ Adding Report methods to Common or Service interfaces
+- ❌ Modifying stored procedure names or parameters
+- ❌ Using async/await for Report operations
+- ❌ Using StreamDTO for Report results
+- ❌ Placing Report methods inside the main business class
+- ❌ Missing Logger or ActivitySource initialization

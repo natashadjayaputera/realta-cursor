@@ -1,0 +1,35 @@
+---
+description: "Rules for DTOs in Common layer"
+alwaysApply: false
+globs: "*ToCSharpCommon*"
+---
+# DTO Design Rules
+
+- All methods returning `List` must use streaming patterns. See @streaming_pattern.mdc
+- NEVER inherit from EntityDTO
+- Property names must match VB.NET exactly
+- Use `string.Empty` for string defaults
+- Nullable annotations applied correctly
+
+# DTO Design Pattern
+
+```csharp
+// ✅ CORRECT - Specific parameter DTO
+public class FAI00130GetSystemVariablesParameterDTO
+{
+    public string CCOMPANY_ID { get; set; } = string.Empty;
+    public string CUSER_ID { get; set; } = string.Empty;
+    public string CTRANS_DEPT_CODE { get; set; } = string.Empty;
+}
+
+// ✅ CORRECT - Specific result DTO
+public class FAI00130GetSystemVariablesResultDTO
+{
+    public string CCOMPANY_ID { get; set; } = string.Empty;
+    public string CUSER_ID { get; set; } = string.Empty;
+    // example: other System Variable Properties
+}
+
+// ❌ WRONG - Generic DTO for everything
+public class FAI00130DTO {}
+```

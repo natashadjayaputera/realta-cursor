@@ -1,0 +1,63 @@
+---
+description: "ToCSharpBack: R_IBatchProcessAsync Interface implementation pattern for batch processing class in Back Project"
+alwaysApply: false
+---
+
+# R_IBatchProcess IMPLEMENTATION PATTERN
+
+## Interface Methods
+Implement both synchronous and asynchronous methods for batch processing.
+
+```csharp
+using R_OpenTelemetry;
+
+public class {ProgramName}BatchCls : R_IBatchProcessAsync
+{
+    private readonly ActivitySource _activitySource;
+    private Logger{ProgramName} _logger;
+
+    public {ProgramName}BatchCls()
+    {
+        _logger = Logger{ProgramName}.R_GetInstanceLogger();
+        _activitySource = R_LibraryActivity.R_GetInstanceActivitySource();
+    }
+
+    public async Task R_BatchProcessAsync(R_BatchProcessPar poBatchProcessPar)
+    {
+        using Activity activity = _activitySource.StartActivity("R_BatchProcess");
+        R_Exception loException = new R_Exception();
+        var loDb = new R_Db();
+
+        try
+        {
+            _logger.LogInfo("Test Connection");
+            if (loDb.R_TestConnection() == false)
+            {
+                loException.Add("01", "Database Connection Failed");
+                goto EndBlock;
+            }
+            _logger.LogInfo("Start Batch");
+            _ = _BatchProcessAsync(poBatchProcessPar); // Fire and forget
+            _logger.LogInfo("End Batch");
+        }
+        catch (Exception ex)
+        {
+            loException.Add(ex);
+        }
+        finally
+        {
+            if (loDb != null)
+            {
+                loDb = null;
+            }
+        }
+
+        loException.ThrowExceptionIfErrors();
+    }
+
+    private async Task _BatchProcessAsync(R_BatchProcessPar poBatchProcessPar) // Use the same method signature
+    {
+        // Actual implementation logic
+    }
+}
+```

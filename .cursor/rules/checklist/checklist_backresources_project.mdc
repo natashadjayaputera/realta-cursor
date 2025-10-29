@@ -1,0 +1,14 @@
+---
+description: "Checklist for {ProgramName}BackResources project migration"
+alwaysApply: false
+globs: "*BackMigrationChecklist*"
+---
+# {ProgramName}BackResources
+
+- [ ] Created in root: `BACK/{module}/{ProgramName}BackResources/`
+- [ ] All error message keys defined (e.g., `ERR_INVALID_COMPANY_ID`)
+- [ ] All success messages defined
+- [ ] Default `.resx` file (English)
+- [ ] Indonesian `.id.resx` file
+- [ ] `Resources_Dummy_Class.cs` created
+- [ ] No code logic in this project

@@ -1,0 +1,16 @@
+---
+description: "Common layer violation list"
+alwaysApply: false
+globs: "*ToCSharpCommon*"
+---
+# Violations
+- ❌ Business logic in Common
+- ❌ Logger/Activity in Common
+- ❌ Reuse EntityDTO for all parameters
+- ❌ Reuse StreamDTO across multiple streaming methods
+- ❌ Not creating Parameter DTOs and Result DTOs for each methods in back project
+- ❌ Parameter DTOs and Result DTOs inheriting from Entity DTOs
+- ❌ Including IClientHelper parameters in ContextConstants
+- ❌ Missing properties that VB.NET accesses
+- ❌ Using `short` for variables with "I" prefix
+- ❌ Using R_IServiceCRUDBase for interface

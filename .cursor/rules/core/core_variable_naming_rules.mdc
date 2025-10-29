@@ -1,0 +1,27 @@
+---
+alwaysApply: true
+priority: CRITICAL
+nonNegotiable: true
+---
+
+# RULE 5: VARIABLE NAMING STANDARD
+
+## Property Rules
+- `[Inject]`: `private IType PropertyName { get; set; } = default!;`
+- Private: `private Type _propertyName;`
+- Public: `public Type PropertyName { get; set; }`
+- Local variables: `Type l{typePrefix}VariableName;`
+- Method parameters: `Type p{typePrefix}ParameterName;`
+
+## Type Prefixes
+| Type | Prefix | Example |
+|------|---------|----------|
+| string | c | lcName |
+| bool | l | llIsActive |
+| int | i | liCount |
+| decimal | n | lnAmount |
+| DateTime | d | ldCreated |
+| enum | e | leType |
+| object | o | loResult |
+
+Violations: must be corrected immediately or the process halts.

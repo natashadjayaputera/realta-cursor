@@ -1,0 +1,21 @@
+---
+description: "Defines constructor pattern for report-related / {ProgramName}ReportCls in Back Project"
+alwaysApply: false
+---
+# Constructor Pattern
+
+```csharp
+private readonly Logger{ProgramName} _logger;
+private readonly ActivitySource _activitySource;
+
+public {ProgramName}ReportCls()
+{
+    _logger = Logger{ProgramName}.R_GetInstanceLogger();
+    _activitySource = {ProgramName}Activity.R_GetInstanceActivitySource();
+}
+```
+
+Rules:
+
+* Both `_logger` and `_activitySource` must be initialized
+* No additional constructor logic

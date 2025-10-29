@@ -1,0 +1,76 @@
+---
+description: "R_Conductor and R_ConductorGrid usage rules for {ProgramName}Front"
+alwaysApply: false
+---
+# R_Conductor and R_ConductorGrid Usage
+
+## Conductor Source DEPENDS on Control
+- Grid CRUD operations: `R_ConductorGridSource="@_conductorGridRef"`
+- Form CRUD operations: `R_ConductorSource="@_conductorRef"`
+- Component Enabled/Disabled based on Access Control
+- No source: Component always enabled (independent functionality)
+
+## R_Conductor vs R_ConductorGrid
+**CRITICAL:** R_Conductor is ONLY for CRUD operations, NOT for inquiry programs
+
+### When to Use R_Conductor
+- **GridType.Navigator:** For grids with form based CRUD
+
+### When to Use R_ConductorGrid
+- **GridType.Original:** For grids with grid based CRUD
+
+### When to not Use any Conductor
+- **Inquiry Programs:** Read-only data display (like FAI00120)
+- **GridType.Original:** For inquiry-only grids
+- **Simple Forms:** Just displaying and filtering data
+
+## Patterns
+
+### R_Conductor Pattern
+```csharp
+// ONLY for CRUD programs
+<R_Conductor @ref="@_conductorRef"
+             R_ViewModel="@viewModel" // `R_ViewModel` parameter MUST be filled
+             R_Display="Conductor_DisplayMethod"
+             R_IsHeader="true"
+             R_ServiceGetRecord="@Conductor_ServiceGetRecord">
+</R_Conductor>
+```
+
+### R_ConductorGrid Pattern
+```csharp
+// ONLY for CRUD programs
+<R_ConductorGrid @ref="@_conductorGridRef"
+             R_IsHeader="true"
+             >
+</R_ConductorGrid>
+```
+
+### Parent-Child Conductor Relationship
+Note: You can use any conductor as parent and as child
+```csharp
+// ONLY for CRUD programs
+<R_ConductorGrid @ref="@_conductorGridRef"
+             R_IsHeader="true"
+             >
+</R_ConductorGrid>
+
+```csharp
+// ONLY for CRUD programs
+<R_Conductor @ref="@_conductorGridRef"
+             R_ViewModel="@_viewmodel"
+             R_ConductorParent="true"
+             >
+</R_Conductor>
+```
+
+
+### Inquiry Program Pattern (No Conductor)
+```csharp
+// For inquiry programs - NO R_Conductor needed
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_GridType="@R_eGridType.Original"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+</R_Grid>
+```

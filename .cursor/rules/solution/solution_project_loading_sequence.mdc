@@ -1,0 +1,23 @@
+---
+description: "Define strict dependency-based project loading sequence"
+alwaysApply: false
+globs: "*SolutionManager*"
+---
+
+# Project Loading Sequence
+
+### Backend Sequence
+1. Common projects first  
+2. BackResources projects  
+3. Back projects  
+4. Service projects last  
+
+### Frontend Sequence
+1. Common projects first  
+2. FrontResources projects  
+3. Model projects  
+4. Front projects last  
+
+- **MUST** verify build of each project before loading next  
+- **NEVER** skip dependency validation  
+- **NEVER** load projects out of order

@@ -1,0 +1,32 @@
+---
+description: "Define ObservableCollection and grid data-binding pattern"
+alwaysApply: false
+globs: "*ToCSharpViewModel*"
+---
+# Grid Data Pattern
+
+```csharp
+public ObservableCollection<DTO> DataList { get; set; } = new();
+
+public async Task GetListAsync(GetListParameterDTO poParameter)
+{
+    var loResult = await _model.GetListAsync(poParameter);
+    DataList = new ObservableCollection<DTO>(loResult.Data);
+}
+```
+
+Bind in grid event:
+
+```csharp
+public async Task R_ServiceGetListRecord(R_ServiceGetListRecordEventArgs eventArgs)
+{
+    var loParam = new GetListParameterDTO { /* parameters */ };
+    await _viewModel.GetListAsync(loParam); // Populates ViewModel property
+    eventArgs.ListEntityResult = _viewModel.DataList; // Assign to grid
+}
+```
+
+Rules:
+- Do not return the list from ViewModel method; populate `DataList`.
+- Ensure `DataList` uses the ResultDTO type.
+

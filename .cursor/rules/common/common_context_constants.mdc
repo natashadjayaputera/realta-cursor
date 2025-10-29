@@ -1,0 +1,21 @@
+---
+description: "Enforce context constant rules in Common layer"
+alwaysApply: false
+globs: "*ToCSharpCommon*"
+---
+# Context Constants Rules
+
+- Only include custom parameters (e.g., ISTART_YEAR, LFLAGPERIOD)
+- **Do NOT include IClientHelper parameters** (CCOMPANY_ID, CLANG_ID, CUSER_ID)
+- Use `{ProgramName}_` prefix in **values** (e.g., `"FAM00100_ISTART_YEAR"`)
+- Keep **names** simple and descriptive (e.g., `ISTART_YEAR`)
+
+# Context Constants Pattern
+
+```csharp
+public static class ContextConstants
+{
+    public const string SOFT_PERIOD = "{ProgramName}_CSOFT_PERIOD";
+    public const string DEPT_CODE = "{ProgramName}_CDEPT_CODE";
+}
+```

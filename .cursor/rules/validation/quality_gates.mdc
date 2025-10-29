@@ -1,0 +1,12 @@
+---
+description: "Define quality gates and validation checklist for code readiness"
+alwaysApply: false
+---
+
+# Quality Gates
+
+- [ ] All `.csproj` files validated  
+- [ ] All DLL references use `HintPath`  
+- [ ] All projects build successfully  
+- [ ] All code warnings fixed  
+- [ ] No modified SQL/SP  

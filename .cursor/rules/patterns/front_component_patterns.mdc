@@ -1,0 +1,70 @@
+---
+description: "Reusable component minimal parameters patterns for {ProgramName}Front (R_Grid, R_ComboBox, R_Button, etc.)"
+alwaysApply: false
+globs: "*ToCSharpFront*"
+---
+
+# Component Patterns
+
+This is reusable component minimal parameters patterns, add parameters as needed by referring the documentation. See @.cursor/docs/net6/RealtaNetCoreLibrary folder under R_BlazorFrontEnd.Controls namespace.
+
+## R_ComboBox
+```razor
+<R_ComboBox Data="@viewModel.DataList"
+            @bind-Value="@viewModel.SelectedValue"
+            ValueField="@nameof(DTO.Code)"
+            TextField="@nameof(DTO.Name)" />
+```
+
+## R_Grid (Inquiry)
+
+```razor
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_GridType="@R_eGridType.Original"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+</R_Grid>
+```
+
+### R_Grid CRUD in From with Conductor
+```razor
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_ConductorSource="@_conductorRef"
+        R_GridType="@R_eGridType.Navigator"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+    <R_GridColumns>
+        <R_GridTextColumn FieldName="@nameof(DTO.Property)" HeaderText="Header"></R_GridTextColumn>
+    </R_GridColumns>
+</R_Grid>
+```
+
+## R_Grid CRUD in Grid with ConductorGrid
+```razor
+<R_Grid @ref="@_gridRef"
+        DataSource="@viewModel.DataList"
+        R_ConductorGridSource="@_conductorGridRef"
+        R_GridType="@R_eGridType.Original"
+        R_ServiceGetListRecord="@Grid_ServiceGetListRecord">
+    <R_GridColumns>
+        <R_GridTextColumn FieldName="@nameof(DTO.Property)" HeaderText="Header"></R_GridTextColumn>
+    </R_GridColumns>
+</R_Grid>
+```
+
+## R_Button
+
+```razor
+<R_Button OnClick="OnClicked">@Localizer["btn"]</R_Button>
+```
+
+## R_Lookup
+
+```razor
+<R_ItemLayout auto="true">
+  <R_Lookup R_Before_Open_Lookup="R_Before_Open_Lookup"
+            R_After_Open_Lookup="R_After_Open_Lookup">
+        ...
+  </R_Lookup>
+</R_ItemLayout>
+```

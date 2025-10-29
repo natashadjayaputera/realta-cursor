@@ -1,0 +1,35 @@
+---
+description: "Using and imports management rules for {ProgramName}Front Blazor components"
+alwaysApply: false
+globs: "*ToCSharpFront*"
+---
+
+# Imports and Using Rules
+
+- All `@using` statements belong in `_Imports.razor`
+- **Never** put `@using` inside `.razor` files
+
+## Example (_Imports.razor)
+```razor
+@using System
+@using System.Threading.Tasks
+@using Microsoft.AspNetCore.Components
+
+@using R_BlazorFrontEnd
+@using R_BlazorFrontEnd.Controls
+@using R_BlazorFrontEnd.Controls.Attributes
+@using R_BlazorFrontEnd.Controls.DataControls
+@using R_BlazorFrontEnd.Controls.Events
+@using R_BlazorFrontEnd.Controls.Enums
+@using R_BlazorFrontEnd.Enums
+@using R_BlazorFrontEnd.Exceptions
+@using R_BlazorFrontEnd.Helpers
+@using R_BlazorFrontEnd.Interfaces
+
+@using BlazorClientHelper
+@using R_CommonFrontBackAPI
+
+@using {ProgramName}Model.VMs
+@using {ProgramName}Common.DTOs
+@using {ProgramName}FrontResources
+```

@@ -1,0 +1,261 @@
+---
+description: "Navigation component usage rules for {ProgramName}Front (R_PredefinedDock, R_Detail, R_Popup, R_Lookup, R_Find, R_TabPage, Service-Based Navigation)"
+alwaysApply: false
+---
+# Navigation Components
+
+## Allowed Components
+- `R_PredefinedDock` – permanent tab
+- `R_Detail` – openable/closable detail tabs
+- `R_Popup` – modal pages
+- `R_Lookup` – record selection
+- `R_Find` – record searching
+- `R_TabPage` – tab navigation
+
+## Rules
+- Use **PageNamespace** for cross-project pages
+- Use **TargetPageType** for local pages
+- Never use `R_Button` for navigation
+- Always handle `BeforeOpen` and `AfterOpen` events
+
+## Event Arguments Properties (CRITICAL)
+**Available Properties in BeforeOpen Events:**
+
+**For R_InstantiateDockEventArgs and R_BeforeOpenTabPageEventArgs:**
+- `TargetPageType` - Type of the page to open (use when referencing pages in same project)
+- `Parameter` - Object to pass to R_Page.R_Init_From_Master(object? poParameter) (optional)
+- `FormAccess` - Override form access (rarely used)
+- `Cancel` - Cancel the operation (R_InstantiateDockEventArgs only)
+
+**For R_BeforeOpenModalEventArgsBase (Detail, Popup, Lookup, Find):**
+- `TargetPageType` - Type of the page to open (use when referencing pages in same project)
+- `PageNamespace` - Namespace of the page to open (PREFERRED - use when referencing .razor in other front projects)
+- `Parameter` - Object to pass to R_Page.R_Init_From_Master(object? poParameter) (optional)
+- `PageTitle` - Override page title (rarely used)
+- `FormAccess` - Override form access (rarely used)
+
+**Available Properties in AfterOpen Events:**
+- `Result` - Return value from the navigation component (can be any logic, not just conductor data)
+- `Success` - Success status (R_AfterOpenPopupEventArgs only)
+
+### 1. R_PredefinedDock - For tabs shown on page load, cannot be closed
+```razor
+<R_PredefinedDock R_InstantiateDock="@R_InstantiateDock"
+                  Title="Predefined Dock Title"
+                  R_AfterOpenPredefinedDock="R_AfterOpenPredefinedDock" />
+```
+
+```csharp
+private void R_InstantiateDock(R_InstantiateDockEventArgs eventArgs)
+{
+    // R_InstantiateDockEventArgs does NOT have PageNamespace - only TargetPageType
+    eventArgs.TargetPageType = typeof(SubProgramPage);
+    
+    // Optional: Pass parameter to R_Page.R_Init_From_Master()
+    eventArgs.Parameter = _conductorRef.R_GetCurrentData();
+}
+
+private async Task R_AfterOpenPredefinedDock(R_AfterOpenPredefinedDockEventArgs eventArgs)
+{
+    if (eventArgs.Result is null) return;
+    // You can do any logic here, not just conductor data
+    await _conductorRef.R_SetCurrentData(eventArgs.Result);
+}
+```
+
+### 2. R_Detail - For tabs shown on click, can be closed
+```razor
+<R_Detail R_Before_Open_Detail="@R_Before_Open_Detail"
+          R_After_Open_Detail="@R_After_Open_Detail">
+    Detail Text
+</R_Detail>
+```
+
+```csharp
+private void R_Before_Open_Detail(R_BeforeOpenDetailEventArgs eventArgs)
+{
+    // PREFERRED: Use PageNamespace for referencing .razor in other front projects
+    eventArgs.PageNamespace = "OtherProject.Pages.DetailPage";
+    // OR use TargetPageType for pages in same project
+    // eventArgs.TargetPageType = typeof(DetailPage);
+    
+    // Optional: Pass parameter to R_Page.R_Init_From_Master()
+    eventArgs.Parameter = _conductorRef.R_GetCurrentData();
+}
+
+private async Task R_After_Open_Detail(R_AfterOpenDetailEventArgs eventArgs)
+{
+    if (eventArgs.Result is null) return;
+    // You can do any logic here, not just conductor data
+    await _conductorRef.R_SetCurrentData(eventArgs.Result);
+}
+```
+
+### 3. R_Popup - For showing R_Page components in modal windows
+
+```razor
+<R_Popup R_Before_Open_Popup="@R_Before_Open_Popup"
+         R_After_Open_Popup="@R_After_Open_Popup"
+         >Popup Text</R_Popup>
+```
+
+```csharp
+public void R_Before_Open_Popup(R_BeforeOpenPopupEventArgs eventArgs)
+{
+    // PREFERRED: Use PageNamespace for referencing .razor in other front projects
+    eventArgs.PageNamespace = "OtherProject.Pages.PopupPage";
+    // OR use TargetPageType for pages in same project
+    // eventArgs.TargetPageType = typeof(PopupPage);
+    
+    // Optional: Pass parameter to R_Page.R_Init_From_Master()
+    eventArgs.Parameter = _conductorRef?.R_GetCurrentData();
+}
+
+public async Task R_After_Open_Popup(R_AfterOpenPopupEventArgs eventArgs)
+{
+    if (!eventArgs.Success || eventArgs.Result is null) return;
+    // You can do any logic here, not just conductor data
+    if (_conductorRef is not null)
+        await _conductorRef.R_SetCurrentData(eventArgs.Result);
+    // For grid refresh after upload operations
+    if (_gridRef is not null)
+        await _gridRef.R_RefreshGrid(null);
+}
+```
+
+### 4. R_Lookup - For lookup pattern (selecting records)
+```razor
+<R_Lookup R_Before_Open_Lookup="@R_Before_Open_Lookup"
+          R_After_Open_Lookup="@R_After_Open_Lookup"
+          >Lookup Text</R_Lookup>
+```
+
+```csharp
+private void R_Before_Open_Lookup(R_BeforeOpenLookupEventArgs eventArgs)
+{
+    // PREFERRED: Use PageNamespace for referencing .razor in other front projects
+    eventArgs.PageNamespace = "OtherProject.Pages.LookupPage";
+    // OR use TargetPageType for pages in same project
+    // eventArgs.TargetPageType = typeof(LookupPage);
+    
+    // Optional: Pass parameter to R_Page.R_Init_From_Master()
+    eventArgs.Parameter = "Dari Lookup";
+    
+    // Rarely used: Override page title
+    // eventArgs.PageTitle = "Title dari event argument";
+}
+
+public async Task R_After_Open_Lookup(R_AfterOpenLookupEventArgs eventArgs)
+{
+    if (eventArgs.Result is null) return;
+    // You can do any logic here, not just conductor data
+    await _conductorRef.R_SetCurrentData(eventArgs.Result);
+}
+```
+
+### 5. R_Find - For finding/selecting records
+```razor
+<R_Find R_FindModel="@R_FindModel" // This is to change caller R_Page Access (OPTIONAL)
+        R_Before_Open_Find="@R_Before_Open_Find"
+        R_After_Open_Find="@R_After_Open_Find"
+        >Find Text</R_Find>
+```
+
+```csharp
+private void R_Before_Open_Find(R_BeforeOpenFindEventArgs eventArgs)
+{
+    // PREFERRED: Use PageNamespace for referencing .razor in other front projects
+    eventArgs.PageNamespace = "OtherProject.Pages.FindPage";
+    // OR use TargetPageType for pages in same project
+    // eventArgs.TargetPageType = typeof(FindPage);
+    
+    // Optional: Pass parameter to R_Page.R_Init_From_Master()
+    eventArgs.Parameter = "Dari Find";
+    
+    // Rarely used: Override page title
+    // eventArgs.PageTitle = "Title dari event argument";
+}
+
+private void R_FindModel(R_FindModelEventArgs eventArgs)
+{
+    eventArgs.FindModel = R_eFindModel.Normal; // or NoDisplay, ViewOnly
+}
+
+public async Task R_After_Open_Find(R_AfterOpenFindEventArgs eventArgs)
+{
+    if (eventArgs.Result == null) return;
+    // You can do any logic here, not just conductor data
+    var loData = (ProductDTO)eventArgs.Result;
+    await _conductorRef.R_SetCurrentData(loData);
+}
+```
+
+### 6. R_TabPage - For tab navigation within same page
+```razor
+<R_TabStrip>
+    <R_TabStripTab Title="Tab 1">
+        <R_TabPage R_After_Open_TabPage="R_After_Open_TabPage1" 
+                   R_Before_Open_TabPage="R_Before_Open_TabPage1"></R_TabPage>
+    </R_TabStripTab>
+    <R_TabStripTab Title="Tab 2">
+        <R_TabPage R_After_Open_TabPage="R_After_Open_TabPage2" 
+                   R_Before_Open_TabPage="R_Before_Open_TabPage2"></R_TabPage>
+    </R_TabStripTab>
+</R_TabStrip>
+```
+
+```csharp
+private void R_Before_Open_TabPage(R_BeforeOpenTabPageEventArgs eventArgs)
+{
+    // R_BeforeOpenTabPageEventArgs does NOT have PageNamespace - only TargetPageType
+    eventArgs.TargetPageType = typeof(TabPage);
+    
+    // Optional: Pass parameter to R_Page.R_Init_From_Master()
+    var loParam = _conductorRef.R_GetCurrentData();
+    eventArgs.Parameter = loParam;
+}
+
+private async Task R_After_Open_TabPage(R_AfterOpenTabPageEventArgs eventArgs)
+{
+    if (eventArgs.Result is null) return;
+    // You can do any logic here, not just conductor data
+    await _conductorRef.R_SetCurrentData(eventArgs.Result);
+}
+```
+
+#### 7. Service-Based Navigation (Alternative to R_Button)
+```csharp
+[Inject] public R_PopupService PopupService { get; set; }
+[Inject] public R_LookupService LookupService { get; set; }
+
+// Popup from service
+private async Task popupButtonOnClick()
+{
+    var loPopupSettings = new R_PopupSettings
+    {
+        PageTitle = "Custom Title Override Only",
+        Page = this,
+    };
+
+    var loResult = await PopupService.Show(typeof(PopupPage), 
+                                          _conductorRef.R_GetCurrentData(), 
+                                          poPopupSettings: loPopupSettings);
+    
+    var loData = (ProductDTO)loResult.Result;
+    await _conductorRef.R_SetCurrentData(loData);
+}
+
+// Lookup from service
+private async Task lookupButtonOnClick()
+{
+    var loLookupSettings = new R_LookupSettings
+    {
+        PageTitle = "Custom Title Override Only",
+        Page = this,
+    };
+
+    var loResult = await LookupService.Show(typeof(LookupPage), 
+                                           "Dari LookupService", 
+                                           loLookupSettings);
+}
+```

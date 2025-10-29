@@ -1,0 +1,17 @@
+---
+description: "Checklist for {ProgramName}Back project migration"
+alwaysApply: false
+globs: "*BackMigrationChecklist*"
+---
+# {ProgramName}Back
+
+- [ ] Read `{ProgramName}Common` project as reference
+- [ ] `Logger{ProgramName}` class inheriting `R_NetCoreLoggerBase`
+- [ ] `{ProgramName}Activity` class inheriting `R_ActivitySourceBase`
+- [ ] `{ProgramName}Cls` class inheriting `R_BusinessObjectAsync`
+- [ ] All methods using correct database pattern with `using var`
+- [ ] All methods logging start/end with method name
+- [ ] All exception messages from resources (via `GetError()`)
+- [ ] No SQL text modified
+- [ ] No SP names changed
+- [ ] All parameters passed using `loDb.R_AddCommandParameter()`

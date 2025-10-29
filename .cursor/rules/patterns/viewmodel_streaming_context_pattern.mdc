@@ -1,0 +1,30 @@
+---
+description: "Pattern for R_FrontContext streaming parameter usage"
+alwaysApply: false
+globs: "*ToCSharpViewModel*"
+---
+# Streaming Context Pattern
+
+- MUST follow @streaming_pattern.mdc
+- MUST be used on collection-assigning methods.
+- MUST be used only for **custom parameters**.  
+- MUST use `R_FrontContext.R_SetStreamingContext()` before calling Model methods.
+- NEVER include IClientHelper parameters.
+
+```csharp
+R_FrontContext.R_SetStreamingContext("OTHER_PARAM_KEY", poParam.OTHER_PARAM_KEY);
+var loResult = await _model.GetStreamingListAsync();
+StreamingList = new ObservableCollection<ResultDTO>(loResult.Data ?? []);
+```
+
+### Examples of Custom vs IClientHelper Parameters
+**Custom Parameters (SET streaming context in ViewModel):**
+- `ISTART_YEAR` - Start year for period
+- `LFLAGPERIOD` - Period flag filter
+- `LDEPT_MODE` - Department mode filter
+- `CTRANSACTION_CODE` - Transaction code filter
+
+**IClientHelper Parameters (DO NOT set streaming context):**
+- `CCOMPANY_ID` - Set automatically in Controller
+- `CUSER_ID` - Set automatically in Controller
+- `CCULTURE` - Set automatically in Controller

@@ -1,0 +1,10 @@
+---
+description: "Separate main, report, and batch classes in Back project"
+alwaysApply: false
+globs: "*ToCSharpBack*"
+---
+# Class Separation
+
+- `{ProgramName}Cls.cs` → Main business logic (inherits `R_BusinessObjectAsync`)
+- `{ProgramName}ReportCls.cs` → Report operations only (standalone)
+- `{ProgramName}BatchCls.cs` → Batch operations only (standalone)

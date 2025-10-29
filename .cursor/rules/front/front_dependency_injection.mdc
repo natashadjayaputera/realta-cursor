@@ -1,0 +1,33 @@
+---
+description: "Dependency injection and service integration patterns for {ProgramName}Front"
+alwaysApply: false
+globs: "*ToCSharpFront*"
+---
+
+# Dependency Injection Patterns
+
+## Global Variable (IClientHelper)
+```csharp
+using BlazorClientHelper;
+[Inject] private IClientHelper ClientHelper { get; set; } = default!;
+````
+
+## Localizer Integration
+
+```csharp
+using R_BlazorFrontEnd.Interfaces;
+[Inject] private R_ILocalizer<{ProgramName}FrontResources.Resources_Dummy_Class> Localizer { get; set; } = default!;
+```
+
+## MessageBoxService
+
+```csharp
+using R_BlazorFrontEnd.Controls.MessageBox;
+[Inject] private R_MessageBoxService MessageBoxService { get; set; } = default!;
+await MessageBoxService.Show("Error", Localizer["PS003"], R_eMessageBoxButtonType.OK);
+```
+
+### MessageBox Options
+
+* Button types: `OK`, `OKCancel`, `YesNo`, `YesNoCancel`
+* Results: `OK`, `Yes`, `No`, `Cancel`

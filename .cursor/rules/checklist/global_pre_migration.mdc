@@ -1,0 +1,10 @@
+---
+description: "Pre-migration steps applicable to all projects"
+alwaysApply: true
+globs: "*MigrationChecklist*"
+---
+# Pre-Migration
+
+- [ ] Read `.cursor/docs/net6/` for all target libraries
+- [ ] Review `.cursor/docs/net4/` for original patterns (reference only)
+- [ ] Save accepted plan in `/plan/` folder. See @plan_generation.mdc

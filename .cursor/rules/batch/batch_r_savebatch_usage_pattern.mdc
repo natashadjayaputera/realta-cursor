@@ -1,0 +1,37 @@
+---
+description: "ToCSharpFront: Usage pattern for R_SaveBatch method in Razor components in Front Project"
+alwaysApply: false
+---
+
+# R_SAVEBATCH USAGE PATTERN
+
+`R_SaveBatch` is a method of the **R_Grid** component, not `R_ConductorGrid`.
+
+✅ Correct:
+```csharp
+private async Task OnProcess()
+{
+    R_Exception loException = new R_Exception();
+    try
+    {
+        await _gridUploadCurrencyRef.R_SaveBatch(); // R_Grid supports R_SaveBatch
+    }
+    catch (Exception ex)
+    {
+        loException.Add(ex);
+    }
+    loException.ThrowExceptionIfErrors();
+}
+````
+
+❌ Wrong:
+
+```csharp
+await _conductorGridRef.R_SaveBatch(); // Compilation error — not supported
+```
+
+### Key Points
+
+* Use only `R_Grid` reference for batch save ope\rations.
+* `R_ConductorGrid` does not expose batch methods.
+* Always wrap calls with `R_Exception` for proper error handling.

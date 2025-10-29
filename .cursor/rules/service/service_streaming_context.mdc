@@ -1,0 +1,16 @@
+---
+description: "Streaming context usage and restrictions for Service layer"
+alwaysApply: false
+globs: "*ToCSharpService*"
+---
+
+# Streaming Context Rules
+
+- **Global Variables** must come from:
+  - `R_BackGlobalVar.COMPANY_ID`
+  - `R_BackGlobalVar.USER_ID`
+
+- **Custom Parameters** retrieved via:
+  - `R_Utility.R_GetStreamingContext<string>(ContextConstants.KEY)`
+
+- **NO Parameters** allowed for `IAsyncEnumerable` streaming methods in interface or controller

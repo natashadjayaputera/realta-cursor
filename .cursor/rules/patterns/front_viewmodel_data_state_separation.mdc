@@ -1,0 +1,24 @@
+---
+description: "Enforce separation of data state: ViewModel vs Razor.cs for Front/VM layers"
+alwaysApply: false
+globs: ["net6/**/*.razor.cs", "net6/**/*.razor", "net6/**/*ViewModel.cs"]
+---
+
+# FRONT & VIEWMODEL DATA STATE SEPARATION
+
+## Rule
+All **data state** belongs in the ViewModel — **never** in Razor.cs.
+
+### Razor.cs (UI-only)
+```csharp
+private R_Grid<DTO>? _gridRef;
+private R_TextBox? _txtField;
+````
+
+### ViewModel (data state)
+
+```csharp
+public string FieldValue { get; set; }
+public bool MustRefresh { get; set; }
+public string LastValue { get; set; }
+```

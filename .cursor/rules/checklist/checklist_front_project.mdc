@@ -1,0 +1,14 @@
+---
+description: "Checklist for {ProgramName}Front project migration"
+alwaysApply: false
+globs: "*FrontMigrationChecklist*"
+---
+# {ProgramName}Front
+
+- [ ] Read `{ProgramName}Common` and `{ProgramName}Model` project as reference
+- [ ] `{ProgramName}.razor` main page created
+- [ ] `{ProgramName}.razor.cs` code-behind created
+- [ ] All components using correct navigation patterns
+- [ ] Conductor source correctly assigned (Grid/Form/None)
+- [ ] IClientHelper injected in code-behind (not in ViewModel)
+- [ ] All resource strings using `@_localizer["key"]`

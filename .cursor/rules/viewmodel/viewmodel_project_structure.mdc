@@ -1,0 +1,16 @@
+---
+description: "Define ViewModel and FrontResources project structure and purpose"
+alwaysApply: false
+globs: "*ToCSharpViewModel*"
+---
+# Project Structure
+
+## ViewModel Project
+- Location: `FRONT/{ProgramName}Model/VMs`
+- Target: `netstandard2.1`
+- Purpose: Contains only ViewModels and related helpers
+
+## Front Resource Project
+- Location: `FRONT/{ProgramName}FrontResources/`
+- Target: `netstandard2.1`
+- Purpose: Contains `.resx` message files, designer class, and dummy resource class 

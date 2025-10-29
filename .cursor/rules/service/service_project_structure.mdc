@@ -1,0 +1,12 @@
+---
+description: "Project structure and purpose for Service layer projects"
+alwaysApply: false
+globs: "*ToCSharpService*"
+---
+
+# Project Structure
+
+- Location: `SERVICE/{module}/{ProgramName}Service/`
+- Target: `net6.0`
+- Purpose: Controllers and API endpoints only
+- Business logic must reside in the **Back** layer

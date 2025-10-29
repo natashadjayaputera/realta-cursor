@@ -1,0 +1,19 @@
+---
+description: "Checklist for {ProgramName}Service project migration"
+alwaysApply: false
+globs: "*ServiceMigrationChecklist*"
+---
+# {ProgramName}Service
+
+- [ ] Read `{ProgramName}Common` and `{ProgramName}Back` project as reference
+- [ ] `{ProgramName}Controller` inheriting `ControllerBase, I{ProgramName}`
+- [ ] Logger initialized in constructor
+- [ ] Activity source initialized in constructor
+- [ ] All methods decorated with `[HttpPost]`
+- [ ] Route pattern: `[Route("api/[controller]/[action]")]`
+- [ ] List methods returning `async IAsyncEnumerable<>`
+- [ ] Other methods returning `async Task<{ProgramName}ResultDTO<>>`
+- [ ] Using `R_BackGlobalVar.COMPANY_ID` for IClientHelper data
+- [ ] Using `R_Utility.R_GetStreamingContext()` for custom parameters
+- [ ] R_APIBackEnd reference added to .csproj
+- [ ] Using correct Microsoft.NET.Sdk + FrameworkReference (not Web SDK)

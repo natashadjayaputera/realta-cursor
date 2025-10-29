@@ -1,0 +1,17 @@
+---
+description: "Required using directives for ViewModel source files"
+alwaysApply: false
+globs: "*ToCSharpViewModel*"
+---
+# Using Statements
+
+```csharp
+using R_BlazorFrontEnd;
+using R_BlazorFrontEnd.Exceptions;
+using R_BlazorFrontEnd.Helpers;
+using R_CommonFrontBackAPI;
+using R_ContextFrontEnd;
+using {ProgramName}Common;
+using {ProgramName}Common.DTOs;
+using System.Collections.ObjectModel;
+```

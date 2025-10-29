@@ -1,0 +1,20 @@
+---
+description: "R_ItemLayout and R_StackLayout column validation rules for {ProgramName}Front"
+alwaysApply: false
+---
+# Layout Rules
+
+- Each `R_StackLayout Row` must have column sum ≤ 12
+- Use nested `R_StackLayout Row="true"` per row
+- Last `R_ItemLayout` must have `auto="false"`
+
+## Correct Pattern
+```razor
+<R_StackLayout>
+  <R_StackLayout Row="true">
+    <R_ItemLayout col="2">Label</R_ItemLayout>
+    <R_ItemLayout col="1">TextBox</R_ItemLayout>
+    <R_ItemLayout col="4">Description</R_ItemLayout>
+  </R_StackLayout>
+</R_StackLayout>
+````

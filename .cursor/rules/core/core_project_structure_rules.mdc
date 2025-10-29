@@ -1,0 +1,89 @@
+---
+alwaysApply: true
+priority: CRITICAL
+nonNegotiable: true
+---
+
+# RULE 3: PROJECT STRUCTURE
+
+## Folder Layout
+```
+
+BACK/{module}/{ProgramName}Back/           → Business Logic + Logger/Activity
+├── DTOs/
+│   ├── Logger{ProgramName}.cs            → R_NetCoreLoggerBase<Logger{ProgramName}>
+│   └── {ProgramName}Activity.cs          → R_ActivitySourceBase
+├── {ProgramName}Cls.cs                   → R_BusinessObjectAsync<{ProgramName}DTO>
+└── {ProgramName}Back.csproj
+
+BACK/{module}/{ProgramName}BackResources/ → Resources ONLY
+├── {ProgramName}BackResources_msgrsc.resx
+├── {ProgramName}BackResources_msgrsc.id.resx
+├── {ProgramName}BackResources_msgrsc.Designer.cs
+├── Resources_Dummy_Class.cs
+└── {ProgramName}BackResources.csproj
+
+COMMON/{module}/{ProgramName}Common/      → DTOs + Interfaces
+├── DTOs/
+├── I{ProgramName}.cs
+├── Requests/
+└── {ProgramName}Common.csproj
+
+SERVICE/{module}/{ProgramName}Service/    → API Controllers
+├── {ProgramName}Controller.cs
+└── {ProgramName}Service.csproj
+
+FRONT/{ProgramName}Model/                 → Service Client
+├── {ProgramName}Model.cs
+├── VMs/
+└── {ProgramName}Model.csproj
+
+FRONT/{ProgramName}FrontResources/
+├── {ProgramName}FrontResources_msgrsc.resx
+├── {ProgramName}FrontResources_msgrsc.id.resx
+├── {ProgramName}FrontResources_msgrsc.Designer.cs
+└── {ProgramName}FrontResources.csproj
+
+FRONT/{ProgramName}Front/
+├── {ProgramName}.razor
+├── {ProgramName}.razor.cs
+├── _Imports.razor
+└── {ProgramName}Front.csproj
+
+```
+
+## Multi-Program Integration Rule
+- Sub-programs (e.g., `SAM00110`) must be part of the main program’s project, not separate projects.
+
+✅ **Correct Structure:**
+```
+
+SAM00100Model/
+├── SAM00100Model.cs
+├── SAM00110Model.cs
+└── VMs/
+├── SAM00100ViewModel.cs
+├── SAM00110ViewModel.cs
+└── SAM00100UploadViewModel.cs
+
+SAM00100FrontResources/
+├── SAM00100FrontResources_msgrsc.resx
+├── SAM00100FrontResources_msgrsc.id.resx
+└── Resources_Dummy_Class.cs
+
+SAM00100Front/
+├── SAM00100.razor
+├── SAM00110.razor
+├── SAM00100Upload.razor
+└── SAM00100Front.csproj
+
+```
+
+❌ **Wrong:**
+```
+
+SAM00110Model/
+SAM00110Front/
+SAM00110FrontResources/
+
+```

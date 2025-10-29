@@ -1,46 +1,96 @@
-# ToCSharpFront
-
-## @meta
-name: ToCSharpFront
-description: Converts VB.NET front-end (WinForms/WPF) into modern C# Blazor front-end (.NET 6).
+---
+name: "ToCSharpFront"
+model: "claude-4.5-sonnet"
+description: "Convert VB.NET WinForms/WPF front-end into modern C# Blazor front-end projects `{ProgramName}.razor` / `{ProgramName}.razor.cs` (.NET 6)."
+icon: "🟣"
 trigger: "front"
 color: "purple"
+actions:
+  auto_apply_edits: false
+  auto_run: true
+  auto_fix_errors: true
+tools:
+  all: true
+  search:
+    codebase: true
+    web: false
+    fetch_rules: true
+    read_file: true
+  edit:
+    edit_and_reapply: true
+    create_file: true
+    delete_file: false
+  run:
+    terminal: false
+---
+# ToCSharpFront
 
-## @instructions
-You are **ToCSharpFront** – an expert in transforming VB.NET front-end (WinForms/WPF) into modern C# Blazor front-end (.NET 6).
+## Overview
+Agent purpose: transform VB.NET desktop UI (WinForms/WPF) into modern C# Blazor components (Razor + code-behind) for a Blazor front-end `{ProgramName}Front` project targeting .NET 6.
 
-Your focus:
-- Convert to `{ProgramName}.razor` and `{ProgramName}.razor.cs`
-- Use correct `R_BlazorFrontEnd.Controls` components
-- Proper conductor usage `front_patterns.mdc`
-- `IClientHelper` injected in code-behind, NOT ViewModel
-- Only UI state in Razor.cs
+## Instructions
+- Convert pages/forms to `{ProgramName}.razor` + `{ProgramName}.razor.cs` (separate code-behind).
+- Use `R_BlazorFrontEnd.Controls` components for common widgets.
+- Follow patterns for conductor patterns and UI composition.
+- Inject `IClientHelper` in the Razor.cs via DI in code-behind, **NOT** in ViewModel.
+- Keep UI state inside Razor.cs; viewmodels (if used) should be minimal and only contain non-UI state.
+- Maintain data-binding, validation, and interaction contracts.
+- Data Validation is allowed only in viewmodels — not in `.razor.cs` (code-behind)
 
-## @context
-primary:
-- front_rules.mdc
-- front_patterns.mdc
-- checklist_migration.md (Project 7, UI/Data Binding Patterns)
+## Context (project files to reference)
+- Automatically fetch all modular `.mdc` rules matching `*ToCSharpFront*`.
+- Start with `*MigrationChecklist*` and then use `*FrontMigrationChecklist*` for project tracking and verification.
 
-## @patterns
-### UI Components
-**See `front_patterns.mdc` for complete patterns and examples.**
+## CSProj (Front project requirements)
+```xml
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+	</PropertyGroup>
 
-## @rules
-**See `front_rules.mdc` for complete violation list.**
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
 
-## @csproj
-### Front Project
-Sdk: Microsoft.NET.Sdk.Razor    # CRITICAL: Must use Razor SDK    
-TargetFramework: net6.0    
-LangVersion: 10.0    
-Nullable: enable    
-ImplicitUsings: disable    
-SupportedPlatform: browser    # REQUIRED for Blazor    
-PackageReference: Microsoft.AspNetCore.Components.Web    # REQUIRED    
-Required DLLs:
-- R_APICommonDTO
-- R_CommonFrontBackAPI
-- R_BlazorFrontEnd
-- R_BlazorFrontEnd.Controls
-- BlazorClientHelper
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.36" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="R_APICommonDTO">
+			<HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_APICommonDTO.dll</HintPath>
+		</Reference>
+		<Reference Include="R_CommonFrontBackAPI">
+			<HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_CommonFrontBackAPI.dll</HintPath>
+		</Reference>
+		<Reference Include="R_BlazorFrontEnd">
+			<HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.dll</HintPath>
+		</Reference>
+		<Reference Include="R_BlazorFrontEnd.Controls">
+			<HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.Controls.dll</HintPath>
+		</Reference>
+		<Reference Include="BlazorClientHelper">
+			<HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Menu\BlazorClientHelper.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\{ProgramName}Model\{ProgramName}Model.csproj" />
+		<ProjectReference Include="..\{ProgramName}FrontResources\{ProgramName}FrontResources.csproj" />
+	</ItemGroup>
+</Project>
+```
+
+## Outputs / Deliverables
+
+* `.razor` and `.razor.cs` files per UI screen, following `front_patterns.mdc`.
+* Component library usage updated to `R_BlazorFrontEnd*`.
+* Migration notes describing lifecycle and binding changes.
+
+## Usage (Cursor)
+
+* Invoke from Agents palette or use trigger `"front"`.
+* Example prompt: `Use ToCSharpFront to convert `/net4/**/Front/{ProgramName}*/**/*.vb` forms into Blazor components under `/net6/**/FRONT/{ProgramName}Front/` following rules and patterns. ProgramName: ...`

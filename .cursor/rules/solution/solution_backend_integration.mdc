@@ -1,0 +1,15 @@
+---
+description: "Backend API project integration pattern"
+alwaysApply: false
+globs: "*SolutionManager*"
+---
+
+# Backend API Integration
+
+- **MUST** add Service project reference to corresponding API project  
+- **MUST** use relative path format:  
+  `../../../SERVICE/{Module}/{ProgramName}Service/{ProgramName}Service.csproj`  
+- **MUST** maintain alphabetical order in `<ItemGroup>`  
+- **MUST** verify successful API build after adding  
+- **NEVER** reference wrong API projects  
+- **NEVER** use absolute paths

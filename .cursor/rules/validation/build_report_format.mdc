@@ -1,0 +1,22 @@
+---
+description: "Provide standardized build report output format for validation"
+alwaysApply: false
+---
+
+# Build Report Format
+
+```
+BUILD SUMMARY - Project: {ProjectName}
+✓ Compilation: SUCCESS
+⚠ Warnings: {Count} found
+
+* Code Warnings: {Count} (FIXED/NEEDS FIXING)
+* External Warnings: {Count} (DOCUMENTED)
+* Infrastructure Warnings: {Count} (ACCEPTABLE)
+
+DETAILED WARNING ANALYSIS:
+
+* CS####: {Description} - FIXED/NEEDS FIXING
+* NU####: {Description} - External dependency issue, cannot fix
+* MSB####: {Description} - SDK version conflict, acceptable
+```

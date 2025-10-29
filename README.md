@@ -59,6 +59,26 @@ There are 4 folders inside:
 To migrate, use this prompt with mode **PLAN**
 Read ['Agents'](.cursor/agents/) - contains **ALL Agents** used to migrate
 
-```cmd
-/agents <AgentName> FAM00300 by default add todo to save the plan you generate to /plan/ folder as 1st item.
-```
+## Common
+* Example prompt: `Use ToCSharpCommon to convert VB DTOs in `/net4/**/Back/{ProgramName}*/**/*.vb` into DTOs under `/net6/**/COMMON/{ModuleName}/{ProgramName}Common/` following rules and patterns defined in `.cursor/rules`. ProgramName: ...`
+
+## Back
+* Example prompt: `Use ToCSharpBack to convert `/net4/**/Back/{ProgramName}*/**/*.vb` into DTOs under `/net6/**/BACK/{ModuleName}/{ProgramName}Back/` following rules and patterns defined in `.cursor/rules`. ProgramName: ...`
+
+## Service
+* Example prompt: `Use ToCSharpService to implement Common interfaces as controllers in `/net6/**/SERVICE/{ModuleName}/{ProgramName}Service/` following rules and patterns defined in `.cursor/rules`, calling the Back project for business logic. ProgramName: ...`
+
+## Model
+* Example prompt: `Use ToCSharpModel to create service-layer clients for `/net6/**/SERVICE/{ModuleName}/{ProgramName}Service/*Controller.cs` signatures into `/net6/**/FRONT/{ProgramName}Model/*Model.cs` following rules and patterns defined in `.cursor/rules`. ProgramName: ...`
+
+## ViewModel
+* Example prompt: `Use ToCSharpViewModel to convert each CRUD mode inside each pages in `/net4/**/Front/{ProgramName}*/**/*.vb` into each respective `/net6/**/FRONT/{ProgramName}Model/VMs/{PageName}ViewModel.cs` that use `/net6/**/FRONT/{ProgramName}Model/*Model.cs` to get the data needed for Front layer. ProgramName: ...`
+
+## Front
+* Example prompt: `Use ToCSharpFront to convert `/net4/**/Front/{ProgramName}*/**/*.vb` forms into Blazor components under `/net6/**/FRONT/{ProgramName}Front/` following rules and patterns defined in `.cursor/rules`. ProgramName: ...`
+
+## ValidationAndBuild
+- Example prompt: `Use ValidationAndBuild to validate and build `/net6/**/{ProgramName}*.csproj` following `*MigrationChecklist*`. Run builds and return BUILD SUMMARY reports for All projects. ProgramName: ...`
+
+## SolutionManager
+* Example prompt: `Use SolutionManager to add {ProgramName}. ProgramName: ...`

@@ -1,0 +1,52 @@
+---
+description: "ViewModel-Front validation method rules and pattern"
+alwaysApply: false
+globs: "*ToCSharpViewModel*", "*ToCSharpFront*"
+---
+# Validation Rules
+
+- All validation occurs in ViewModel.  
+- Code-behind `*.razor.cs` method call the ViewModel validation method
+- No inline validation in Razor event handlers
+- Return `R_Exception`.  
+- Use `R_FrontUtility.R_GetError()` for messages.  
+
+## ViewModel Validation Patterns
+```csharp
+public R_Exception ValidateTaxCategory(FAM00300DTO poEntity)
+{
+    var loEx = new R_Exception();
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_CATEGORY_CODE))
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS001"));
+    // if multiple validations
+    if (string.IsNullOrWhiteSpace(poEntity.CTAX_TYPE))
+    {
+        loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00300FrontResources.Resources_Dummy_Class), "PS002"));
+    }
+    return loEx;
+}
+```
+
+## Front Validation Patterns
+```csharp
+private void R_Validation(R_ValidationEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+
+    try
+    {
+        var loData = R_FrontUtility.ConvertObjectToObject<FAM00300DTO>(eventArgs.Data) ?? new();
+
+        // Use ViewModel validation
+        var loValidationEx = _fam00300ViewModel.ValidateTaxCategory(loData);
+        loEx.Add(loValidationEx);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+}
+
+```

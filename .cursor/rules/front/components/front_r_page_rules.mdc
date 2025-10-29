@@ -1,0 +1,28 @@
+---
+description: "R_Page rules"
+alwaysApply: false
+---
+# Layout Rules
+
+- Must override `R_Init_From_Master`
+
+## R_Init_From_Master Template
+```csharp
+protected override async Task R_Init_From_Master(object? poParameter)
+{
+  var loEx = new R_Exception();
+
+  try
+  {
+    // Capture Parameters
+    // Initialization data logic (run once on initialization)
+    // Refresh grid or get entity for form
+  }
+  catch (Exception ex)
+  {
+      loEx.Add(ex);
+  }
+
+  loEx.ThrowExceptionIfErrors();
+}
+```

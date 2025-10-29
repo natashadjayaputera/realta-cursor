@@ -1,0 +1,12 @@
+---
+description: "Classify warnings for tracking, documentation, and quality control"
+alwaysApply: false
+---
+
+# Warning Classification
+
+| Type | Description | Action |
+|------|--------------|--------|
+| **CODE WARNINGS** | Compiler, nullable, unused variables | Must be fixed |
+| **EXTERNAL WARNINGS** | External dependencies or libraries | Document and explain |
+| **INFRASTRUCTURE WARNINGS** | NuGet, SDK conflicts | Document as acceptable |

@@ -1,0 +1,42 @@
+---
+description: "Non-streaming controller pattern without parameters"
+alwaysApply: false
+globs: "*ToCSharpService*"
+---
+
+# Non-Streaming Controller Pattern (Without Parameters)
+
+```csharp
+[HttpPost]
+public async Task<{ProgramName}ResultDTO<GetNonStreamingResultDTO>> GetNonStreaming()
+{
+    var lcMethod = nameof(GetNonStreaming);
+    using var activity = _activitySource.StartActivity(lcMethod);
+    var loEx = new R_Exception();
+    var loCls = new {ProgramName}Cls();
+    var loRtn = new {ProgramName}ResultDTO<GetNonStreamingResultDTO>();
+
+    try
+    {
+        _logger.LogInfo("Start method GetNonStreaming in {0}", lcMethod);
+        var loParam = new GetNonStreamingParameterDTO
+        {
+            CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID
+        };
+        loRtn.Data = await loCls.GetNonStreaming(loParam);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        _logger.LogError(loEx);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+    return loRtn;
+}
+```
+
+Rules:
+* Used when all parameters are global variables
+* Create DTO internally
+* Assign global variables directly using `R_BackGlobalVar` before calling logic

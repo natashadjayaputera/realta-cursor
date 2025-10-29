@@ -1,0 +1,25 @@
+---
+description: "ToCSharpFront & ToCSharpViewModel: Required project references for batch related files"
+alwaysApply: false
+---
+
+# Required .csproj References
+
+## Front Project
+Add these references in `{ProgramName}Front.csproj` for batch operations:
+```xml
+<Reference Include="R_ProcessAndUploadFront">
+  <HintPath>..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_ProcessAndUploadFront.dll</HintPath>
+</Reference>
+```
+## ViewModel Project
+Add these references in `{ProgramName}FrModelont.csproj` for batch operations:
+```xml
+<Reference Include="R_ProcessAndUploadFront">
+  <HintPath>..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_ProcessAndUploadFront.dll</HintPath>
+</Reference>
+<!--This is for Excel-Based Related Process-->
+<Reference Include="R_BlazorFrontEnd.Excel">
+  <HintPath>..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_BlazorFrontEnd.Excel.dll</HintPath>
+</Reference>
+```

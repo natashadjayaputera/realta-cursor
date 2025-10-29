@@ -1,0 +1,17 @@
+---
+description: "All ViewModels must inherit R_ViewModel<T> and avoid redefining Data"
+alwaysApply: false
+globs: "*ToCSharpViewModel*"
+---
+# Inheritance Rule
+
+- Every ViewModel inherits from `R_ViewModel<T>`  
+- Never redeclare `Data` property manually  
+- Define separate property like `CurrentRecord`  
+
+```csharp
+public class FAM00100ViewModel : R_ViewModel<FAM00100DTO>
+{
+    private readonly FAM00100Model _model = new();
+}
+```

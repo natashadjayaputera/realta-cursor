@@ -1,0 +1,15 @@
+---
+description: "Defines allowed access patterns for controller-to-business interactions"
+alwaysApply: false
+globs: "*ToCSharpService*"
+---
+
+# Access Level Patterns
+
+- Controllers call **public** methods from `R_BusinessObjectAsync` base class:
+  - `R_GetRecordAsync()`
+  - `R_SaveAsync()`
+  - `R_DeleteAsync()`
+
+- **Protected override methods** (`R_DisplayAsync`, `R_SavingAsync`, `R_DeletingAsync`)  
+  are **internal** to business logic classes — never called from controllers

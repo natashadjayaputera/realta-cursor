@@ -1,0 +1,11 @@
+---
+description: "Streaming controller pattern with no parameters"
+alwaysApply: false
+globs: "*ToCSharpService*"
+---
+
+# Streaming Controller Pattern
+
+- MUST follow @streaming_pattern.mdc
+- MUST use `R_Utility.R_GetStreamingContext` to retrieve parameters 
+- NEVER use parameters in streaming methods

@@ -1,0 +1,28 @@
+---
+description: "Constructor pattern for Back business logic classes"
+alwaysApply: false
+globs: "*ToCSharpBack*"
+---
+# Business Logic Class Constructor Pattern (NOT FOR BATCH OR REPORT RELATED)
+
+```csharp
+public class {ProgramName}Cls : R_BusinessObjectAsync<{ProgramName}DTO>
+{
+    private readonly {ProgramName}BackResources.Resources_Dummy_Class loRsp = new();
+    private readonly Logger{ProgramName} _logger;
+    private readonly ActivitySource _activitySource;
+
+    public {ProgramName}Cls()
+    {
+        _logger = Logger{ProgramName}.R_GetInstanceLogger();
+        _activitySource = {ProgramName}Activity.R_GetInstanceActivitySource();
+    }
+}
+```
+
+Rules:
+
+* Always instantiate logger and activity source
+* Resource objects (loRsp) per resource file used
+* Base class must always be `R_BusinessObjectAsync<DTO>`
+* NOT for Batch or Report

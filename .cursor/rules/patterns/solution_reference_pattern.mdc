@@ -1,0 +1,24 @@
+---
+description: "Project reference insertion pattern for API and BlazorMenu"
+alwaysApply: false
+globs: "*SolutionManager*"
+---
+
+# Project Reference Patterns
+
+### Backend API Project
+```xml
+<ProjectReference Include="..\..\..\SERVICE\FA\{ProgramName}Service\{ProgramName}Service.csproj" />
+````
+
+### BlazorMenu Frontend
+
+```xml
+<ProjectReference Include="..\..\..\..\BS Program\SOURCE\FRONT\{ProgramName}Front\{ProgramName}Front.csproj" />
+```
+
+### Assembly Registration
+
+```csharp
+typeof({ProgramName}Front.{ProgramName}).Assembly
+```

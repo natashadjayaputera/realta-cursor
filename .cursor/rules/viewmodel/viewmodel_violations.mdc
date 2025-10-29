@@ -1,0 +1,24 @@
+---
+description: "Comprehensive list of forbidden practices and critical violations in ViewModels"
+alwaysApply: false
+globs: "*ToCSharpViewModel*"
+---
+# Violations (Comprehensive)
+
+- ❌ Using `R_FrontGlobalVar` or `R_BackGlobalVar` in ViewModels  
+- ❌ Returning collections from ViewModel methods instead of populating properties  
+- ❌ Keeping data state in Razor.cs instead of ViewModel  
+- ❌ Putting business logic in Front project (ViewModel only)  
+- ❌ Adding lookup description properties or methods in ViewModel (CurrencyRateDescription, etc.)  
+- ❌ Not inheriting from `R_ViewModel<T>`  
+- ❌ Declaring or assigning the inherited `Data` property manually  
+- ❌ Wrong resource file naming / missing FrontResources project  
+- ❌ Missing `using R_BlazorFrontEnd.Helpers;` (R_FrontUtility)  
+- ❌ ObservableCollection type mismatch with ResultDTO  
+- ❌ Setting streaming context for IClientHelper parameters (COMPANY_ID, USER_ID)  
+- ❌ NOT setting streaming context for custom parameters required by streaming methods  
+- ❌ Creating single ViewModel for multiple CRUD entities on same page  
+- ❌ Validation logic in Razor code-behind instead of ViewModel  
+- ❌ Validation methods returning `void` instead of `R_Exception`  
+- ❌ Hardcoded error messages instead of resource-based messages  
+- ❌ Missing CRUD methods for ViewModels that require them (conductors/grids)

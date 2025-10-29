@@ -1,0 +1,21 @@
+---
+description: "Verify and copy VB.NET resource keys for Back projects"
+alwaysApply: false
+globs: "*ToCSharpBack*"
+---
+# Resource Key Verification Pattern
+
+Steps:
+
+1. Read VB.NET source for resource keys
+2. Locate VB.NET `.resx` file: `{ProgramName}BackResources_msgrsc.resx`
+3. Copy exact key and message to C# `.resx`
+4. Use in C# with `GetError("KEY_NAME")`
+
+Rules:
+
+- ✅ Use EXACT VB.NET keys (PS001, ERR_001)
+- ✅ Copy exact messages
+- ❌ Never invent new keys
+- ❌ Never change key names
+- ❌ Never change messages

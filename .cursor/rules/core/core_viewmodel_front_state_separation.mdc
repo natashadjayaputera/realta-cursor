@@ -1,0 +1,24 @@
+---
+description: "Enforce UI vs Data state separation between Razor.cs and ViewModel"
+alwaysApply: false
+globs: "*ToCSharpViewModel*","*ToCSharpFront*"
+---
+# Front & ViewModel Data State Separation
+
+## Rule
+- UI state (component refs, UI-only elements) → Razor.cs only
+- Business/data state → ViewModel only
+
+### Razor.cs (UI-only)
+```csharp
+private R_Grid<FooDTO>? _gridRef;
+private R_TextBox? _txtSearch;
+````
+
+### ViewModel (Data state)
+
+```csharp
+public ObservableCollection<FooResultDTO> DataList { get; set; } = new();
+public FooDTO CurrentRecord { get; set; } = new();
+public bool MustRefresh { get; set; }
+```

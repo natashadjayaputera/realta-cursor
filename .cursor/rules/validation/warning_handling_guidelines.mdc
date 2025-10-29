@@ -1,0 +1,26 @@
+---
+description: "Establish critical rules for handling compiler warnings after build"
+alwaysApply: false
+---
+
+# Warning Handling Guidelines (CRITICAL)
+
+## Rule Summary
+After a successful build, when asked to fix compiler warnings:
+
+1. **Fix clear warnings** — address straightforward issues  
+2. **Ask for ambiguous fixes** — if multiple valid solutions exist  
+3. **Never suppress warnings** — avoid `#pragma warning disable`  
+4. **Maintain code quality** — ensure fixes improve quality
+
+## Examples of Clear Warnings
+- Unused variables or parameters  
+- Missing null checks  
+- Obsolete method usage  
+- Unreachable code  
+
+## Examples of Ambiguous Warnings
+- Multiple valid fix approaches  
+- Warnings needing business logic decisions  
+- Performance trade-off warnings  
+- Warnings that affect functionality

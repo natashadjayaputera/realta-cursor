@@ -1,0 +1,19 @@
+---
+description: "ToCSharpBack: Deserialization pattern for batch data handlin in Back Project"
+alwaysApply: false
+---
+
+# BATCH DATA DESERIALIZATION PATTERN
+
+Use **R_NetCoreUtility** for safe and consistent deserialization of byte objects.
+
+✅ Correct:
+```csharp
+var loObject = R_NetCoreUtility.R_DeserializeObjectFromByte<List<{ProgramName}ExcelDTO>>(poBatchProcessPar.BigObject);
+````
+
+❌ Wrong:
+
+```csharp
+var loObject = R_Utility.Deserialize<List<{ProgramName}ExcelDTO>>(poBatchProcessPar.BigObject);
+```

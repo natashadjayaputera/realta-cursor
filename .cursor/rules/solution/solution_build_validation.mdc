@@ -1,0 +1,15 @@
+---
+description: "Solution build and compilation validation rules"
+alwaysApply: false
+globs: "*SolutionManager*"
+---
+
+# Build Validation
+
+- **MUST** build solution after loading projects  
+- **MUST** ensure 0 compilation errors  
+- **MUST** classify and document warnings  
+- **MUST** verify:  
+  - API builds successfully (Backend)  
+  - BlazorMenu builds successfully (Frontend)  
+- **NEVER** skip validation or ignore errors
