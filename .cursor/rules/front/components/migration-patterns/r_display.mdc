@@ -1,0 +1,72 @@
+---
+description: "Migration pattern for R_Display (NET4) → R_Conductor/R_Grid R_Display (NET6)"
+alwaysApply: false
+---
+
+# R_Display (NET4) → R_Display (NET6)
+
+- NET4: `R_Display` on Conductor/Grid
+- NET6: `R_Display` on `R_Conductor` / `R_Grid<T>` with `R_DisplayEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Populate dependent fields, refresh related data, set focus, or perform validation when an entity is displayed or mode changes.
+
+## Bindings
+- Conductor: add `R_Display="Conductor_R_Display"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_Display="Grid_R_Display"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_Display(R_DisplayEventArgs eventArgs)` or `private Task Grid_R_Display(R_DisplayEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task Conductor_R_Display(R_DisplayEventArgs eventArgs)`.
+- Data object: `var loData = (MyDto)eventArgs.Data;`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `peMode` → NET6 `eventArgs.ConductorMode`
+### Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `poGridCellCollection` → no direct args, see WorkAround
+- NET4 `peGridMode` → use NET6 _gridRef.R_GridMode
+
+## Workaround 
+### (NET4 `poGridCellCollection`)
+- Pattern: NET4 `poGridCellCollection.Item("PROPERTY_NAME").Value` → NET6 `((MyDto)eventArgs.Data).PROPERTY_NAME`
+- Non-Value usages (format/state/metadata): `// TODO: Implement {things to do} for "PROPERTY_NAME"`
+
+## Example
+```csharp
+private Task Conductor_R_Display(R_DisplayEventArgs eventArgs) // OR Grid_R_Display
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loData = (MyDto)eventArgs.Data;
+        // assign field that is not part of ViewModel.Data
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_Display(poEntity As Object, peMode As R_FrontEnd.R_Conductor.e_Mode) Handles conMain.R_Display`
+  - `Private Sub gvMain_R_Display(poEntity As Object, poGridCellCollection As Telerik.WinControls.UI.GridViewCellInfoCollection, peGridMode As R_FrontEnd.R_eGridMode) Handles gvMain.R_Display`
+- NET6 Razor usage:
+  - Grid: `R_Display="Grid_R_Display"`
+  - Conductor: `R_Display="Conductor_R_Display"`
+
+## Notes
+- `R_Display` fires when data is displayed or mode changes, typically after data loads or when switching between Normal/Edit/Add modes.
+- Common use cases: setting audit fields (created/updated by/date), refreshing related lists, initializing dependent controls, setting focus in Edit mode.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_DisplayEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_Display)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_Display)

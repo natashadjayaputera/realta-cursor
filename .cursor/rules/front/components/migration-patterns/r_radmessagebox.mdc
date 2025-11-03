@@ -1,0 +1,42 @@
+---
+description: "Migration pattern for R_RadMessageBox (NET4) → R_MessageBox (NET6)"
+alwaysApply: false
+---
+
+# R_RadMessageBox → R_MessageBox
+
+- NET4: `R_FrontEnd.R_RadMessageBox.Show()` or `R_RadMessageBox.Show()`
+- NET6: `R_BlazorFrontEnd.Controls.R_MessageBox.Show()` or `R_MessageBox.Show()`
+
+## When to use
+- Display modal dialog messages with confirmation prompts
+- Show informational, warning, or error messages to users
+- Request user confirmation before executing actions (Yes/No, OK/Cancel)
+- Display process completion or validation messages
+
+## Method signature mapping (NET4 → NET6)
+
+- `R_RadMessageBox.Show(message, caption, buttons)` → `await R_MessageBox.Show(title, message, buttonType)`
+- Parameter order reversed: NET4 (message, caption) → NET6 (title, message)
+- Return: `Windows.Forms.DialogResult` → `R_eMessageBoxResult` (async Task<T>)
+
+## Value mappings
+
+- Return: `DialogResult.Yes/No/OK/Cancel` → `R_eMessageBoxResult.Yes/No/OK/Cancel`
+- Buttons: `Windows.Forms.MessageBoxButtons.YesNo` → `R_eMessageBoxButtonType.YesNo`
+- Buttons: `Windows.Forms.MessageBoxButtons.OKCancel` → `R_eMessageBoxButtonType.OKCancel`
+- Buttons: `MsgBoxStyle.OkOnly` → `R_eMessageBoxButtonType.OK`
+
+## Resource access pattern
+
+- `R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "ResourceId")` → `Localizer["ResourceId"]`
+- `R_Utility.R_GetError(GetType(Resources_Dummy_Class), "ErrorId").ErrDescp` → `Localizer["ErrorId"]`
+- Empty caption → use empty string `""` for title
+
+## Anti-patterns
+
+- Calling synchronously without `await` (NET6 requires async/await)
+- Wrong parameter order (title comes before message in NET6)
+- Using `Windows.Forms.MessageBoxButtons` or `MsgBoxStyle` (use `R_eMessageBoxButtonType`)
+- Using `DialogResult` (use `R_eMessageBoxResult`)
+- Using `R_Utility.R_GetMessage()` (use `Localizer["ResourceId"]`)

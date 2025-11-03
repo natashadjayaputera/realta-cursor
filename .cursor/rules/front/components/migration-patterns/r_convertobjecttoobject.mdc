@@ -1,0 +1,52 @@
+---
+description: "Migration pattern for R_Utility.R_ConvertObjectToObject (NET4) → R_FrontUtility.ConvertObjectToObject (NET6)"
+alwaysApply: false
+---
+
+# R_ConvertObjectToObject (NET4) → ConvertObjectToObject (NET6)
+
+- NET4: `R_Utility.R_ConvertObjectToObject(Of TSource, TTarget)(poSource)` or `R_Utility.R_ConvertObjectToObject(Of TTarget)(poSource)` converts an object to another type.
+- NET6: call `R_FrontUtility.ConvertObjectToObject<TFrom, TResult>(poSource)` or `R_FrontUtility.ConvertObjectToObject<TResult>(poSource)`.
+
+## Use
+- Convert objects between different DTO types, e.g., when mapping between form DTOs and grid/list DTOs.
+- Common in Before_Open_Form handlers, service response mappings, and data transformation scenarios.
+
+## Bindings
+- No UI bindings required; used in code-behind (`.razor.cs`) or ViewModel.
+- Requires `using R_BlazorFrontEnd.Helpers;` for NET6.
+
+## Handler
+- Prefer: `var loResult = R_FrontUtility.ConvertObjectToObject<TargetDTO>(loSource);` or `var loResult = R_FrontUtility.ConvertObjectToObject<SourceDTO, TargetDTO>(loSource);`
+- Works in any method context; no specific handler signature required.
+
+## Parameter mapping
+- NET4 `(Of TSource, TTarget)` → NET6 `<TFrom, TResult>` (two type parameters) or NET4 `(Of TTarget)` → NET6 `<TResult>` (single type parameter).
+- NET4 `poSource` → NET6 `poSource` (same).
+
+## Example
+```csharp
+// NET4 VB.NET - two type parameters
+loRtn = R_Utility.R_ConvertObjectToObject(Of FAT00100DTO, FAT00100GridDTO)(loEntity)
+
+// NET6 C# - two type parameters
+var loRtn = R_FrontUtility.ConvertObjectToObject<FAT00100DTO, FAT00100GridDTO>(loEntity);
+
+// NET4 VB.NET - single type parameter
+loFinish.Add(R_Utility.R_ConvertObjectToObject(Of FAT00100StreamDTO)(locust))
+
+// NET6 C# - single type parameter
+loFinish.Add(R_FrontUtility.ConvertObjectToObject<FAT00100StreamDTO>(locust));
+```
+
+## NET4 → NET6 mapping
+- NET4 VB usage: `(Of TSource, TTarget)` or `(Of TTarget)` specifies source and/or target types.
+- NET6 Razor usage: `<TFrom, TResult>` or `<TResult>` with C# generic syntax; source type can be inferred.
+
+## Notes
+- NET6 supports both two-parameter and single-parameter generic overloads.
+- Use two-parameter overload when explicit source type specification is needed.
+- Single-parameter overload infers source type from input object.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Helpers.R_FrontUtility.yml` (ConvertObjectToObject methods)

@@ -1,0 +1,57 @@
+---
+description: "Migration pattern for R_Init_From_Master (NET4) → R_Init_From_Master (NET6)"
+alwaysApply: false
+---
+
+# R_Init_From_Master (NET4) → R_Init_From_Master (NET6)
+
+- NET4: Event handler `R_Init_From_Master` on `R_FormBase`
+- NET6: Override method `R_Init_From_Master` on `R_Page`
+
+## Use
+- Pages that require initialization when opened from master page.
+- Initialize default values, combo boxes, button titles, or load initial data.
+
+## Handler
+- Override: `protected override async Task R_Init_From_Master(object? poParameter)`.
+- Parameter: Cast `poParameter` to DTO if needed: `var loParam = (MyDto)poParameter;`.
+- Initialize: Set button titles, load combo boxes, call initialization methods.
+- Return: `Task` (void return, no value needed).
+
+## Parameter mapping
+- NET4 `poParameter` (Object) → NET6 `poParameter` (object?)
+- NET4 cast: `Dim loParam As MyDto = poParameter` → NET6 cast: `var loParam = (MyDto)poParameter;`
+
+## Example
+```csharp
+protected override async Task R_Init_From_Master(object? poParameter)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loParam = (MyDto?)poParameter;
+        // Initialize button titles or combo boxes
+        _viewModel.InitializeComboBoxes();
+        // Load initial data if needed
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub ProgramName_R_Init_From_Master(poParameter As Object) Handles Me.R_Init_From_Master`
+- NET6 Razor usage:
+  - Override: `protected override async Task R_Init_From_Master(object? poParameter)`
+
+## Notes
+- Called automatically when page is opened from master page.
+- Parameter may be null, always check before casting.
+- Use R_Exception pattern for error handling.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.yml` (R_Init_From_Master)

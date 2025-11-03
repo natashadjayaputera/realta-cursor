@@ -1,0 +1,46 @@
+---
+description: "Migration pattern for R_Utility.R_ConvertCollectionToCollection (NET4) → R_FrontUtility.ConvertCollectionToCollection (NET6)"
+alwaysApply: false
+---
+
+# R_ConvertCollectionToCollection (NET4) → ConvertCollectionToCollection (NET6)
+
+- NET4: `R_Utility.R_ConvertCollectionToCollection(Of TFrom, TResult)(collection)` converts a collection to another collection type.
+- NET6: call `R_FrontUtility.ConvertCollectionToCollection<TResult>(collection)` or `R_FrontUtility.ConvertCollectionToCollection(collection, typeof(TResult))`.
+
+## Use
+- Convert collections between different DTO types, e.g., when mapping between form DTOs and grid/list DTOs.
+- Common in Before_Open_Form handlers, service response mappings, and data transformation scenarios.
+
+## Bindings
+- No UI bindings required; used in code-behind (`.razor.cs`) or ViewModel.
+- Requires `using R_BlazorFrontEnd.Helpers;` for NET6.
+
+## Handler
+- Prefer: `var loResult = R_FrontUtility.ConvertCollectionToCollection<TargetDTO>(loSourceCollection);`
+- Works in any method context; no specific handler signature required.
+- Use generic overload when target type is known at compile time.
+
+## Parameter mapping
+- NET4 `(Of TFrom, TResult)` → NET6 `<TResult>` (source type inferred from input collection).
+- NET4 `collection` → NET6 `IList collection` (same).
+
+## Example
+```csharp
+// NET4 VB.NET
+oCP = R_Utility.R_ConvertCollectionToCollection(Of APT00010GridCPDTO, FAT00100CPDTO)(loRslt._oSupplierContact)
+
+// NET6 C#
+var loCP = R_FrontUtility.ConvertCollectionToCollection<FAT00100CPDTO>(loRslt._oSupplierContact);
+```
+
+## NET4 → NET6 mapping
+- NET4 VB usage: two generic type parameters specify source and target.
+- NET6 Razor usage: single generic type parameter (target only); source inferred from input.
+
+## Notes
+- NET6 infers source type from the input collection, so `TFrom` parameter is not needed.
+- Use non-generic overload `ConvertCollectionToCollection(IList, Type)` only when target type is determined at runtime.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Helpers.R_FrontUtility.yml` (ConvertCollectionToCollection methods)

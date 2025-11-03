@@ -1,0 +1,58 @@
+---
+description: "Migration pattern for R_SetStreamingContext (NET4) → R_FrontContext.R_SetStreamingContext (NET6)"
+alwaysApply: false
+---
+
+# R_SetStreamingContext (NET4) → R_SetStreamingContext (NET6)
+
+- NET4: `R_Utility.R_SetStreamingContext(string pcKey, object poObject)` sets streaming context parameters.
+- NET6: call `R_FrontContext.R_SetStreamingContext(string pcKey, object poObject)`.
+
+## Use
+- Pass custom parameters to streaming API methods in ViewModels before calling Model streaming methods.
+- Common in streaming list operations where parameters need to be passed via context rather than method parameters.
+- Parameters are retrieved in Back layer via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)`.
+
+## Bindings
+- No UI bindings required; used in code-behind (`.razor.cs`), ViewModel, or Front layer classes before calling streaming methods.
+- NET4: uses `R_Utility` class (no namespace change).
+- NET6: requires `using R_BlazorFrontEnd;` for ViewModel/Front usage.
+
+## Handler
+- Prefer: `R_FrontContext.R_SetStreamingContext(ContextConstants.KEY, value);` before streaming method call.
+- Alternative: `R_FrontContext.R_SetStreamingContext("KEY_STRING", value);` for custom keys.
+- Works in any ViewModel method context; commonly used before `await _model.GetStreamingListAsync();`.
+
+## Parameter mapping
+- NET4 `R_Utility.R_SetStreamingContext(string pcKey, object poObject)` → NET6 `R_FrontContext.R_SetStreamingContext(string pcKey, object poObject)` (utility class changed from `R_Utility` to `R_FrontContext`).
+- NET4 `pcKey` → NET6 `pcKey` (same parameter type).
+- NET4 `poObject` → NET6 `poObject` (same parameter type).
+
+## Example
+```csharp
+// NET4 VB.NET Front
+R_Utility.R_SetStreamingContext("CCOMPANY_ID", U_GlobalVar.CompId)
+R_Utility.R_SetStreamingContext("CFOREIGN_LANGUAGE", U_GlobalVar.CultureUI.TwoLetterISOLanguageName)
+
+// NET6 C# ViewModel
+R_FrontContext.R_SetStreamingContext("ISTART_YEAR", piStartYear);
+var loResult = await _model.GetPeriodMonthAsync();
+
+// NET6 C# ViewModel with ContextConstants
+R_FrontContext.R_SetStreamingContext(ContextConstants.SOFT_PERIOD, SoftPeriod);
+var loDepreciationMonths = await _model.GetDepreciationMonthListAsync();
+```
+
+## NET4 → NET6 mapping
+- NET4 Front: `R_Utility.R_SetStreamingContext(string pcKey, object poObject)` → NET6 ViewModel/Front: `R_FrontContext.R_SetStreamingContext(string pcKey, object poObject)`.
+- Utility class changed from `R_Utility` to `R_FrontContext` for Front/ViewModel layer.
+
+## Notes
+- Front/ViewModel layer uses `R_FrontContext` in NET6; Back layer continues using `R_Utility` (no change).
+- Use `ContextConstants` class for standardized key names when available.
+- Parameters set via streaming context are retrieved in Back layer via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)`.
+
+## References
+- `.cursor/rules/patterns/streaming_pattern.mdc` (Complete streaming pattern for Controller/Model/ViewModel)
+- `.cursor/rules/patterns/viewmodel_streaming_context_pattern.mdc` (Streaming context usage pattern in ViewModel)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.R_FrontContext.yml` (R_SetStreamingContext methods)

@@ -1,0 +1,96 @@
+---
+description: "Migration pattern for R_FormBase (NET4) → R_Page (NET6)"
+alwaysApply: false
+---
+
+# R_FormBase (NET4) → R_Page (NET6)
+
+## Overview
+- NET4: Forms inherit from `R_FrontEnd.R_FormBase` (WinForms base class)
+- NET6: Pages inherit from `R_BlazorFrontEnd.Controls.R_Page` (Blazor component base class)
+- NET4 event handlers with `Handles` clause → NET6 override methods (async)
+
+## Base Class Inheritance
+
+### NET4
+```vb
+Public Class FAT03200
+    Inherits R_FrontEnd.R_FormBase
+```
+
+### NET6
+```csharp
+public partial class FAT03200 : R_Page
+```
+
+## Lifecycle Methods
+
+### R_Init_From_Master
+
+#### NET4 (Event Handler)
+```vb
+Private Sub FAT03200_R_Init_From_Master(poParameter As Object) Handles Me.R_Init_From_Master
+    Dim loEx As New R_Exception()
+    Try
+        GetInitProcess()
+    Catch ex As Exception
+        loEx.Add(ex)
+    End Try
+    loEx.ThrowExceptionIfErrors()
+End Sub
+```
+
+#### NET6 (Override Method)
+```csharp
+protected override async Task R_Init_From_Master(object? poParameter)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        await _viewModel.GetInitProcess();
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## Property Mappings
+- **Form Access**: NET4 `Me.R_Access` (string) → NET6 `FormAccess` (R_eFormAccess[]). See `r_access.mdc`
+- **Form Model**: NET4 `Me._Form_Model` → NET6 `FormModel` (R_eFormModel)
+- **Parameter**: Both pass to `R_Init_From_Master`
+
+## Common Mistakes
+
+```csharp
+// Wrong: Missing partial keyword
+public class FAT03200 : R_Page // ❌
+
+// Correct: Use partial class
+public partial class FAT03200 : R_Page // ✅
+
+// Wrong: Missing async/await
+protected override Task R_Init_From_Master(object? poParameter)
+{
+    _viewModel.CheckDataAsync(); // ❌ Not awaited
+    return Task.CompletedTask;
+}
+
+// Correct: Use async/await
+protected override async Task R_Init_From_Master(object? poParameter)
+{
+    await _viewModel.CheckDataAsync(); // ✅
+}
+```
+
+## Notes
+- NET6 page classes must be `partial` (separate `.razor` and `.razor.cs` files)
+- Lifecycle methods are async: use `async Task` and `await`
+- Error handling: use `R_Exception` pattern in both NET4 and NET6
+- NET6 uses event args objects instead of ByRef parameters
+
+## References
+- `.cursor/docs/net4/Realta-Library/R_FrontEnd.R_FormBase.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.yml`

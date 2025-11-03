@@ -1,0 +1,106 @@
+---
+description: "Migration pattern for R_ErrorProvider (NET4) → Field-level validation (NET6)"
+alwaysApply: false
+---
+
+# R_ErrorProvider (NET4) → Field-Level Validation (NET6)
+
+- NET4: `R_ErrorProvider.SetError(Control, String)` for field-level validation
+- NET6: Follow `@core_viewmodel_front_validation_rule.mdc` pattern - ViewModel validation methods called from Front
+
+## Pattern
+
+**Follow `@core_viewmodel_front_validation_rule.mdc` exactly:**
+
+1. **ViewModel**: Create field-specific validation methods returning `R_Exception`
+2. **Front (.razor.cs)**: Call ViewModel validation methods in event handlers (LostFocus, Lookup return, etc.)
+
+## ViewModel Validation Methods
+
+### Field-Level Validation (OnLostFocus)
+
+```csharp
+// ViewModel: Validate single field on change
+public R_Exception ValidateFieldNameOnLostFocus(string pcFieldValue)
+{
+    var loEx = new R_Exception();
+    if (string.IsNullOrWhiteSpace(pcFieldValue))
+        loEx.Add(R_FrontUtility.R_GetError(typeof({ProgramName}FrontResources.Resources_Dummy_Class), "PS001"));
+    return loEx;
+}
+```
+
+```csharp
+// Front .razor.cs: Call in OnLostFocus event
+private Task txtFieldName_OnLostFocus()
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loValidationEx = _viewModel.ValidateFieldNameOnLostFocus(FieldName);
+        loEx.Add(loValidationEx);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task.CompletedTask;
+}
+```
+
+### Form-Level Validation (R_Validation)
+
+```csharp
+// ViewModel: Validate entire entity before save
+public R_Exception ValidateEntity({ProgramName}DTO poEntity)
+{
+    var loEx = new R_Exception();
+    if (string.IsNullOrWhiteSpace(poEntity.CFIELD_CODE))
+        loEx.Add(R_FrontUtility.R_GetError(typeof({ProgramName}FrontResources.Resources_Dummy_Class), "PS001"));
+    if (string.IsNullOrWhiteSpace(poEntity.CFIELD_DESC))
+        loEx.Add(R_FrontUtility.R_GetError(typeof({ProgramName}FrontResources.Resources_Dummy_Class), "PS002"));
+    return loEx;
+}
+```
+
+```csharp
+// Front .razor.cs: Call in R_Validation event
+private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loData = R_FrontUtility.ConvertObjectToObject<{ProgramName}DTO>(eventArgs.Data) ?? new();
+        var loValidationEx = _viewModel.ValidateEntity(loData);
+        loEx.Add(loValidationEx);
+        eventArgs.Cancel = loEx.HasError;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task.CompletedTask;
+}
+```
+
+## NET4 → NET6 Mapping
+
+**NET4:**
+```vb
+R_ErrorProvider1.SetError(txtFieldDesc, R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "PS001"))
+```
+
+**NET6:**
+```csharp
+var loValidationEx = _viewModel.ValidateFieldNameOnLostFocus(FieldName);
+loEx.Add(loValidationEx);
+```
+
+## Notes
+
+- Follow `@core_viewmodel_front_validation_rule.mdc` pattern exactly
+- No UI error display - validation via `R_Exception` pattern
+- Use `R_FrontUtility.R_GetError()` for error messages
+- All validation logic in ViewModel, Front only calls ViewModel methods

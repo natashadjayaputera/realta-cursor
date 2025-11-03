@@ -1,0 +1,50 @@
+---
+description: "Migration pattern for R_RadTextBox (NET4) → R_TextBox (NET6)"
+alwaysApply: false
+---
+
+# R_RadTextBox → R_TextBox
+
+- NET4: `R_FrontEnd.R_RadTextBox`
+- NET6: `R_BlazorFrontEnd.Controls.R_TextBox`
+
+## When to use
+- Single-line text input fields
+- Data-bound text fields with ViewModel properties
+- Read-only display fields (use Enabled="false")
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+- `Value` - **EditorRequired** - The bound value property - See @r_inputcomponentbase.mdc
+
+### Component-Specific Properties
+- `MaxLength` - Maximum length of text input (`int`)
+
+### Inherited Properties
+- Properties from `R_InputComponentBase<TValue>` - See @r_inputcomponentbase.mdc
+  - `ValueChanged` - Event callback when value changes
+  - `OnLostFocused` - Event callback when component loses focus
+  - `ReadOnly` - Read-only state
+  - `R_ConductorSource` / `R_ConductorGridSource` / `R_Enable*` - See @r_ienablecontrol.mdc
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+  - `Enabled` - Enable/disable component
+  - `TabIndex` - Tab order
+  - `Tooltip` - Tooltip text
+
+## Parameter mapping (NET4 → NET6)
+- R_RadTextBox.Text → R_TextBox.@bind-Value - See @r_inputcomponentbase.mdc
+- R_RadTextBox.Enabled → R_TextBox.Enabled - See @r_controlbase.mdc
+- R_RadTextBox.MaxLength → R_TextBox.MaxLength
+- R_RadTextBox.ReadOnly → R_TextBox.Enabled="false"
+- R_RadTextBox.Multiline → Use R_TextArea instead
+- R_RadTextBox.R_ConductorSource / R_ConductorGridSource / R_Enable* → See @r_ienablecontrol.mdc (R_ConductorSource also see @r_inputcomponentbase.mdc)
+- R_RadTextBox.Name → Not applicable
+- R_RadTextBox.Location/Size → Not applicable; use `Class`/`Style`/CSS
+- R_RadTextBox.TabIndex → R_TextBox.TabIndex - See @r_controlbase.mdc
+- LostFocus event → OnLostFocused event handler - See @r_inputcomponentbase.mdc
+
+## Anti-patterns
+- Using R_TextBox for multiline input (use R_TextArea)
+- Setting Text attribute instead of @bind-Value
+- Using Location/Size properties (not applicable in Blazor)

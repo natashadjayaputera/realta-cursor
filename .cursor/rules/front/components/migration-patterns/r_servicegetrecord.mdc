@@ -1,0 +1,63 @@
+---
+description: "Migration pattern for R_ServiceGetRecord (NET4) → R_Conductor/R_Grid R_ServiceGetRecord (NET6)"
+alwaysApply: false
+---
+
+# R_ServiceGetRecord (NET4) → R_ServiceGetRecord (NET6)
+
+- NET4: `R_ServiceGetRecord` on Conductor/Grid
+- NET6: `R_ServiceGetRecord` on `R_Conductor` / `R_Grid<T>` with `R_ServiceGetRecordEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Fetch a single record from viewmodel when component needs to load record data before displaying or editing.
+
+## Bindings
+- Conductor: add `R_ServiceGetRecord="Conductor_R_ServiceGetRecord"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_ServiceGetRecord="Grid_R_ServiceGetRecord"` (+ usual services).
+
+## Handler
+- Prefer: `private async Task Conductor_R_ServiceGetRecord(R_ServiceGetRecordEventArgs eventArgs)` or `private async Task Grid_R_ServiceGetRecord(R_ServiceGetRecordEventArgs eventArgs)`.
+- Data object: `var loParam = (MyDto)eventArgs.Data;`.
+- Call ViewModel: `await _viewModel.GetRecordAsync(loParam);` or similar ViewModel method to fetch list data.
+- Set result: `eventArgs.Result = _viewModel.CurrentRecord;`.
+
+## Parameter mapping
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `poEntityResult` → NET6 `eventArgs.Result`
+
+## Example
+```csharp
+private async Task Conductor_R_ServiceGetRecord(R_ServiceGetRecordEventArgs eventArgs) // OR Grid_R_ServiceGetRecord
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loParam = (MyDto)eventArgs.Data;
+        await _viewModel.GetRecordAsync(loParam);
+        eventArgs.Result = _viewModel.CurrentRecord;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_ServiceGetRecord(poEntity As Object, ByRef poEntityResult As Object) Handles conMain.R_ServiceGetRecord`
+  - `Private Sub gvMain_R_ServiceGetRecord(poEntity As Object, ByRef poEntityResult As Object) Handles gvMain.R_ServiceGetRecord`
+- NET6 Razor usage:
+  - Grid: `R_ServiceGetRecord="Grid_R_ServiceGetRecord"`
+  - Conductor: `R_ServiceGetRecord="Conductor_R_ServiceGetRecord"`
+
+## Notes
+- Always set `eventArgs.Result` with the fetched record data; this is what the component will use to populate its current entity.
+- Delegate service calls to ViewModel methods to maintain proper separation of concerns.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_ServiceGetRecordEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_ServiceGetRecord)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_ServiceGetRecord)

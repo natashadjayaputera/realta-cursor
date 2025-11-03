@@ -1,0 +1,51 @@
+---
+description: "Migration pattern for R_Title (NET4) → PageTitle (NET6)"
+alwaysApply: false
+---
+
+# R_Title (NET4) → PageTitle (NET6)
+
+- NET4: `R_Title` property overrides navigation/popup page titles for modal components
+- NET6: `PageTitle` property in event args (`R_BeforeOpen*EventArgs`) or settings objects
+
+## Property mapping
+- NET4: `R_Detail.R_Title`, `R_Find.R_Title`, `R_Inquiry.R_Title`, `R_View.R_Title` → NET6: `R_BeforeOpen*EventArgs.PageTitle` (in event handler)
+- NET4: `R_PopUp.R_Title`, `R_LookUp.R_Title` → NET6: `R_BeforeOpen*EventArgs.PageTitle` (component) or `R_*Settings.PageTitle` (service-based)
+- NET4: `R_GridViewLookUpColumn.R_Title` → NET6: `R_BeforeOpenGridLookupColumnEventArgs.PageTitle` (in event handler)
+
+## Usage examples
+### NET4 VB.NET
+```vb
+rDetail.R_Title = R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "DetailTitle")
+rLookup.R_Title = R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "_rlookupAsset")
+```
+
+### NET6 C# - Component Event Handlers
+```csharp
+private void R_Before_Open_Detail(R_BeforeOpenDetailEventArgs eventArgs)
+{
+    eventArgs.PageTitle = Localizer["DetailTitle"];
+}
+
+private void R_Before_Open_Lookup(R_BeforeOpenLookupEventArgs eventArgs)
+{
+    eventArgs.PageTitle = Localizer["_rlookupAsset"];
+}
+```
+
+### NET6 C# - Service-Based (PopupService/LookupService)
+```csharp
+[Inject] public R_PopupService PopupService { get; set; }
+var loSettings = new R_PopupSettings { PageTitle = Localizer["PopupTitle"] };
+await PopupService.Show(typeof(PopupPage), parameter, poPopupSettings: loSettings);
+```
+
+## Notes
+- Component-based: Set `PageTitle` in `R_BeforeOpen*EventArgs` event handlers (`R_Before_Open_Detail`, `R_Before_Open_Lookup`, etc.)
+- Service-based: Use `R_PopupSettings.PageTitle` or `R_LookupSettings.PageTitle` when calling `PopupService.Show()` or `LookupService.Show()`
+- All titles sourced from resource files using `@Localizer["ResourceId"]`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeOpenModalEventArgsBase.yml` (PageTitle property)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Lookup.R_LookupSettings.yml` (PageTitle property)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Popup.R_PopupSettings.yml` (PageTitle property)

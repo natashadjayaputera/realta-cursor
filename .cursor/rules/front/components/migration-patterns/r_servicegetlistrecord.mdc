@@ -1,0 +1,121 @@
+---
+description: "Migration pattern for R_ServiceGetListRecord (NET4) → R_Grid/R_ConductorGrid R_ServiceGetListRecord (NET6)"
+alwaysApply: false
+---
+
+# R_ServiceGetListRecord (NET4) → R_ServiceGetListRecord (NET6)
+
+- NET4: `R_ServiceGetListRecord` on Grid with `ByRef poListEntityResult`
+- NET6: `R_ServiceGetListRecord` on `R_Grid<T>` with `R_ServiceGetListRecordEventArgs`
+
+## Use
+- Grids that need to fetch list data from service layer.
+- Typically used for loading grid data, often with streaming patterns.
+
+## Bindings
+- Grid: add `R_ServiceGetListRecord="Grid_R_ServiceGetListRecord"` (+ usual services).
+
+## Handler
+- Prefer: `private async Task Grid_R_ServiceGetListRecord(R_ServiceGetListRecordEventArgs eventArgs)`.
+- Paramater: There are 2 options, option 1 created before calling `R_RefreshGrid` and option 2 created inside `R_ServiceGetListRecord`. (ALWAYS PREFER OPTION 2 IF POSSIBLE)
+- Call ViewModel: `await _viewModel.GetListAsync(loParam);` or similar ViewModel method to fetch list data.
+- Set result: `eventArgs.ListEntityResult = _viewModel.ListData;`.
+
+## Parameter mapping
+- NET4 `poEntity` → NET6 `eventArgs.Parameter`
+- NET4 `poListEntityResult` → NET6 `eventArgs.ListEntityResult`
+
+## Example
+### Option 1
+```csharp
+protected override async Task R_Init_From_Master (object? poParameter) 
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // OPTION 1: Create parameter before calling R_RefreshGrid
+        var loRefreshGridParam = new MyDto()
+        {
+           CCOMPANY_ID = ClientHelper.CompanyId;
+        }
+        await _gridRef.R_RefreshGrid(loRefreshGridParam);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+
+private async Task Grid_R_ServiceGetListRecord(R_ServiceGetListRecordEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // OPTION 1: Create parameter before calling R_RefreshGrid
+        var loParam = (MyDto)eventArgs.Parameter;
+
+        await _viewModel.GetListAsync(loParam);
+        eventArgs.ListEntityResult = _viewModel.ListData;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+### Option 2
+```csharp
+protected override async Task R_Init_From_Master (object? poParameter) 
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // OPTION 2: Create parameter inside R_ServiceGetListRecord
+        await _gridRef.R_RefreshGrid(null);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+
+private async Task Grid_R_ServiceGetListRecord(R_ServiceGetListRecordEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // OPTION 2: Create parameter inside R_ServiceGetListRecord
+        var loParam = new MyDto() 
+        {
+            CCOMPANY_ID = ClientHelper.CompanyId;
+        }
+
+        await _viewModel.GetListAsync(loParam);
+        eventArgs.ListEntityResult = _viewModel.ListData;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub gvMain_R_ServiceGetListRecord(poEntity As Object, ByRef poListEntityResult As Object) Handles gvMain.R_ServiceGetListRecord`
+- NET6 Razor usage:
+  - Grid: `R_ServiceGetListRecord="Grid_R_ServiceGetListRecord"`
+
+## Notes
+- Always set `eventArgs.ListEntityResult` with the fetched list data; this is what the grid will display.
+- Delegate service calls to ViewModel methods to maintain proper separation of concerns.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_ServiceGetListRecord)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_GridBase-1.yml` (R_ServiceGetListRecord)

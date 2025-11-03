@@ -1,0 +1,55 @@
+---
+description: "Migration pattern for R_Utility.R_GetError (NET4) → R_FrontUtility.R_GetError (NET6 Front/ViewModel) or R_Utility.R_GetError (NET6 Back)"
+alwaysApply: false
+---
+
+# R_GetError (NET4) → R_GetError (NET6)
+
+- NET4: `R_Utility.R_GetError(GetType(Resources_Dummy_Class), "ERROR_ID")` retrieves error messages from resource files.
+- NET6 Front/ViewModel: call `R_FrontUtility.R_GetError(typeof(Resources_Dummy_Class), "ERROR_ID")`.
+- NET6 Back: call `R_Utility.R_GetError(typeof(Resources_Dummy_Class), "ERROR_ID")`.
+
+## Use
+- Retrieve error messages from resource files for validation and exception handling.
+- Common in validation methods, error aggregation, and business logic error reporting.
+- Returns `R_Error` object that can be added to `R_Exception` via `loEx.Add()`.
+
+## Bindings
+- No UI bindings required; used in code-behind (`.razor.cs`), ViewModel, or Back classes.
+- Requires `using R_BlazorFrontEnd.Helpers;` for NET6 Front/ViewModel.
+- Back layer uses `R_Utility` directly (no namespace change).
+
+## Handler
+- Prefer: `loEx.Add(R_FrontUtility.R_GetError(typeof(Resources_Dummy_Class), "ERROR_ID"));`.
+- Works in any method context; commonly used within validation and error handling blocks.
+
+## Parameter mapping
+- NET4 `GetType(Resources_Dummy_Class)` → NET6 `typeof(Resources_Dummy_Class)` (same concept, C# syntax).
+- NET4 `"ERROR_ID"` → NET6 `"ERROR_ID"` (same).
+- NET4 Front/Back: `R_Utility` → NET6 Front/ViewModel: `R_FrontUtility` (utility class changed for Front layer only).
+- NET6 Back: `R_Utility` remains unchanged (only syntax conversion from `GetType()` to `typeof()`).
+
+## Example
+```csharp
+// NET4 VB.NET Front
+loEx.Add(R_Utility.R_GetError(GetType(Resources_Dummy_Class), "PS016"))
+
+// NET6 C# Front/ViewModel
+loEx.Add(R_FrontUtility.R_GetError(typeof(FAM00100FrontResources.Resources_Dummy_Class), "PS026"));
+
+// NET6 C# Back
+return R_Utility.R_GetError(typeof(Resources_Dummy_Class), pcErrorId);
+```
+
+## NET4 → NET6 mapping
+- NET4 Front: `R_Utility.R_GetError(GetType(...), ...)` → NET6 Front/ViewModel: `R_FrontUtility.R_GetError(typeof(...), ...)`.
+- NET4 Back: `R_Utility.R_GetError(GetType(...), ...)` → NET6 Back: `R_Utility.R_GetError(typeof(...), ...)`.
+- `GetType()` VB.NET syntax → `typeof()` C# syntax (same functionality).
+
+## Notes
+- Front/ViewModel layer uses `R_FrontUtility` in NET6; Back layer continues using `R_Utility`.
+- Resource class namespace may change: `Resources_Dummy_Class` → `{ProgramName}FrontResources.Resources_Dummy_Class` in Front/ViewModel.
+- Always returns `R_Error` object; typically added to `R_Exception` collection for aggregation.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Helpers.R_FrontUtility.yml` (R_GetError method)

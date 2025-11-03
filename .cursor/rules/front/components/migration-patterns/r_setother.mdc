@@ -1,0 +1,61 @@
+---
+description: "Migration pattern for R_SetOther (NET4) → R_Conductor/R_ConductorGrid R_SetOther (NET6)"
+alwaysApply: false
+---
+
+# R_SetOther (NET4) → R_SetOther (NET6)
+
+- NET4: `R_SetOther` on Conductor/Grid
+- NET6: `R_SetOther` on `R_Conductor` / `R_ConductorGrid` with `R_SetEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or `R_ConductorGrid`.
+- Enable/disable additional controls (filters, panels, other UI elements) based on conductor/grid state.
+- Separate from `R_SetHasData` for controlling supplementary controls.
+
+## Bindings
+- Conductor: add `R_SetOther="Conductor_R_SetOther"` (+ usual services, `R_ViewModel`).
+- ConductorGrid: add `R_SetOther="ConductorGrid_R_SetOther"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_SetOther(R_SetEventArgs eventArgs)` or `private Task ConductorGrid_R_SetOther(R_SetEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task Conductor_R_SetOther(R_SetEventArgs eventArgs)`.
+- Enable status: `bool llEnable = eventArgs.Enable;`.
+
+## Parameter mapping
+- NET4 `plEnable` → NET6 `eventArgs.Enable`
+
+## Example
+```csharp
+private async Task Conductor_R_SetOther(R_SetEventArgs eventArgs) // OR ConductorGrid_R_SetOther
+{
+    var loEx = new R_Exception();
+    try
+    {
+        SetOther = eventArgs.Enable; // assign to property class
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_SetOther(plEnable As Boolean) Handles conMain.R_SetOther`
+  - `Private Sub conGridMain_R_SetOther(plEnable As Boolean) Handles conGridMain.R_SetOther`
+- NET6 Razor usage:
+  - Conductor: `R_SetOther="Conductor_R_SetOther"`
+  - ConductorGrid: `R_SetOther="ConductorGrid_R_SetOther"`
+
+## Notes
+- The `eventArgs.Enable` property indicates enable state (equivalent to NET4 `plEnable`).
+- Use this event to synchronize additional UI controls with conductor/grid state changes.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_SetEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_SetOther)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid.yml` (R_SetOther)

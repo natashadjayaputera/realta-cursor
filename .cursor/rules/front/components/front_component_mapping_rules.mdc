@@ -1,0 +1,742 @@
+---
+description: "Mapping rules from R_FrontEnd (NET4) to R_BlazorFrontEnd.Controls (NET6)"
+alwaysApply: false
+---
+
+# Front Component Mapping Rules: NET4 to NET6
+
+This document provides mapping rules from `.NET 4 Realta-Library R_FrontEnd.*` components to `.NET 6 RealtaNetCoreLibrary R_BlazorFrontEnd.Controls.*` components.
+
+## General Mapping Patterns
+
+### Namespace Changes
+- **NET4:** `R_FrontEnd.{ComponentName}`
+- **NET6:** `R_BlazorFrontEnd.Controls.{ComponentName}` or `R_BlazorFrontEnd.Controls.{Category}.{ComponentName}`
+
+### Prefix Changes
+- Components with `R_Rad*` prefix in NET4 → Remove `Rad` prefix in NET6
+- Example: `R_FrontEnd.R_RadButton` → `R_BlazorFrontEnd.Controls.R_Button`
+
+## Component Mappings
+
+### Button Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadButton` | `R_BlazorFrontEnd.Controls.R_Button` | General purpose button |
+| `R_FrontEnd.R_Add` | `R_BlazorFrontEnd.Controls.DataControls.R_AddButton` | Add button for CRUD |
+| `R_FrontEnd.R_Edit` | `R_BlazorFrontEnd.Controls.DataControls.R_EditButton` | Edit button for CRUD |
+| `R_FrontEnd.R_Delete` | `R_BlazorFrontEnd.Controls.DataControls.R_DeleteButton` | Delete button for CRUD |
+| `R_FrontEnd.R_Cancel` | `R_BlazorFrontEnd.Controls.DataControls.R_CancelButton` | Cancel button |
+| `R_FrontEnd.R_Save` | `R_BlazorFrontEnd.Controls.DataControls.R_SaveButton` | Save button |
+| `R_FrontEnd.R_SaveBatch` | `R_BlazorFrontEnd.Controls.DataControls.R_SaveButton` with `R_SaveBatch` event | Batch save functionality |
+| `R_FrontEnd.R_Detail` | `R_BlazorFrontEnd.Controls.R_Detail` | Detail button/modal |
+| `R_FrontEnd.R_Find` | `R_BlazorFrontEnd.Controls.R_Find` | Find/search button |
+| `R_FrontEnd.R_LookUp` | `R_BlazorFrontEnd.Controls.R_Lookup` | Lookup button |
+| `R_FrontEnd.R_PopUp` | `R_BlazorFrontEnd.Controls.R_Popup` | Popup button |
+| `R_FrontEnd.R_Print` | `R_BlazorFrontEnd.Controls.DataControls.R_PrintButton` | Print button |
+| `R_FrontEnd.R_CrystalButton` | WILL NOT BE IMPLEMENTED (see @.cursor/rules/report) | Report generation |
+| `R_FrontEnd.R_CrystalOptionButton` | WILL NOT BE IMPLEMENTED (see @.cursor/rules/report) | Crystal option button |
+| `R_FrontEnd.R_EmailTemplateButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Email template |
+| `R_FrontEnd.R_MailMergeButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Mail merge button |
+| `R_FrontEnd.R_PivotButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Pivot button |
+| `R_FrontEnd.R_ScanButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Scan button |
+| `R_FrontEnd.R_TakingPictureButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Camera button |
+| `R_FrontEnd.R_RadDropDownButton` | `R_BlazorFrontEnd.Controls.R_SplitButton` | Dropdown button |
+| `R_FrontEnd.R_RadToggleButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Toggle button |
+| `R_FrontEnd.R_RadButtonElement` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Button element |
+| `R_FrontEnd.R_CropImageButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Image crop button |
+| `R_FrontEnd.R_MoveResizeRoomButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Room move/resize button |
+
+### Data Control Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_Conductor` | `R_BlazorFrontEnd.Controls.DataControls.R_Conductor` | Form-based CRUD conductor |
+| `R_FrontEnd.R_ConductorGrid` | `R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid` | Grid-based CRUD conductor |
+| `R_FrontEnd.R_IConductor` | `R_BlazorFrontEnd.Controls.DataControls.R_IConductor` | Conductor interface |
+| `R_FrontEnd.R_IEnableConductorControl` | `R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl` | Enable conductor control interface |
+
+**IMPORTANT:** 
+- Use `R_Conductor` for `GridType.Navigator` (form-based CRUD)
+- Use `R_ConductorGrid` for `GridType.Original` (grid-based CRUD)
+- Do NOT use conductors for inquiry-only programs
+
+### Grid Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadGridView` | `R_BlazorFrontEnd.Controls.R_Grid<TModel>` | Generic typed grid |
+| `R_FrontEnd.R_RadGridViewBase` | `R_BlazorFrontEnd.Controls.R_GridBase<TModel>` | Base grid class |
+| `R_FrontEnd.R_RadGridUnbound` | `R_BlazorFrontEnd.Controls.R_BatchEditGrid<TModel>` | Unbound/batch edit grid |
+
+### Grid Column Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_GridViewTextBoxColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridTextColumn` | Text column |
+| `R_FrontEnd.R_GridViewDecimalColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridNumericColumn<TModel>` | Numeric/decimal column |
+| `R_FrontEnd.R_GridViewCheckBoxColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxColumn` | Checkbox column |
+| `R_FrontEnd.R_GridViewCheckBoxSelectColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxSelectColumn` | Checkbox select column |
+| `R_FrontEnd.R_GridViewComboBoxColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridComboBoxColumn` | ComboBox column |
+| `R_FrontEnd.R_GridViewDropDownListColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDropDownListColumn` | DropDownList column |
+| `R_FrontEnd.R_GridViewDateTimeColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDateTimePickerColumn` or `R_GridDatePickerColumn` | Date/DateTime column |
+| `R_FrontEnd.R_GridViewLookUpColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridLookupColumn` | Lookup column |
+| `R_FrontEnd.R_GridViewCommandColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Command/action column |
+| `R_FrontEnd.R_GridViewAutoCompleteColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Autocomplete column |
+| `R_FrontEnd.R_GridViewHyperlinkColumn` | Use `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridTextColumn` with hyperlink template | Hyperlink column |
+| `R_FrontEnd.R_GridViewColorColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Color column |
+| `R_FrontEnd.R_GridViewImageColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Image column |
+| `R_FrontEnd.R_GridViewMaskBoxColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Masked text column |
+| `R_FrontEnd.R_GridViewMultiColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Multi-column display |
+| `R_FrontEnd.R_GridViewMultiComboBoxColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridMultiHeaderColumn` | Multi-combobox column |
+| `R_FrontEnd.R_GridViewPopUpColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Popup column |
+| `R_FrontEnd.R_GridViewTextBoxMultilineColumn` | `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridTextColumn` with multiline | Multiline text column |
+| `R_FrontEnd.R_GridViewBrowseColumn` | Use `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridLookupColumn` | Browse column |
+| `R_FrontEnd.R_GridViewCalculatorColumn` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Calculator column |
+| `R_FrontEnd.R_GridViewCheckedComboBoxColumn` |NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Checked combobox column |
+
+### Grid Behavior Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_BaseGridBehavior` | Built into `R_BlazorFrontEnd.Controls.R_Grid<TModel>` | Base grid behavior |
+| `R_FrontEnd.R_GridDataRowBehavior` | Built into `R_BlazorFrontEnd.Controls.R_Grid<TModel>` | Grid data row behavior |
+| `R_FrontEnd.R_GridNewRowBehavior` | Built into `R_BlazorFrontEnd.Controls.R_Grid<TModel>` | Grid new row behavior |
+| `R_FrontEnd.R_DragDropGridDataRowBehavior` | Use `R_BlazorFrontEnd.Controls.R_Grid<TModel>` drag drop events | Drag drop behavior |
+| `R_FrontEnd.R_RowSelectionGridBehavior` | Built into `R_BlazorFrontEnd.Controls.R_Grid<TModel>` | Row selection behavior |
+
+### Input Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadTextBox` | `R_BlazorFrontEnd.Controls.R_TextBox` | Text input |
+| `R_FrontEnd.R_RadMaskedEditBox` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Masked text input |
+| `R_FrontEnd.R_RadPasswordBox` | `R_BlazorFrontEnd.Controls.R_TextBox` with password type | Password input |
+| `R_FrontEnd.R_RadSpinEditor` | `R_BlazorFrontEnd.Controls.R_NumericTextBox<T>` | Numeric spin editor |
+| `R_FrontEnd.R_RadDateTimePicker` | `R_BlazorFrontEnd.Controls.R_DateTimePicker<T>` | DateTime picker |
+| `R_FrontEnd.R_RadTimePicker` | `R_BlazorFrontEnd.Controls.R_TimePicker<T>` | Time picker |
+| `R_FrontEnd.R_RadDatePicker` | `R_BlazorFrontEnd.Controls.R_DatePicker<T>` | Date picker |
+| `R_FrontEnd.R_RadAutoCompleteBox` | `R_BlazorFrontEnd.Controls.R_AutoComplete<T>` | Autocomplete input |
+| `R_FrontEnd.R_RadCheckedDropDownList` | `R_BlazorFrontEnd.Controls.R_ComboBoxMultiSelect<T>` | Multi-select combobox |
+| `R_FrontEnd.R_RadDropDownList` | `R_BlazorFrontEnd.Controls.R_DropDownList<T>` | Dropdown list |
+| `R_FrontEnd.R_RadComboBox` | `R_BlazorFrontEnd.Controls.R_ComboBox<T>` | ComboBox |
+| `R_FrontEnd.R_RadMultiColumnComboBox` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Multi-column combobox |
+| `R_FrontEnd.R_RadCheckBox` | `R_BlazorFrontEnd.Controls.R_CheckBox` | Checkbox |
+| `R_FrontEnd.R_RadRadioButton` | `R_BlazorFrontEnd.Controls.R_RadioGroup<T>` | Radio button group |
+| `R_FrontEnd.R_RadColorBox` | `R_BlazorFrontEnd.Controls.R_ColorPicker` | Color picker |
+| `R_FrontEnd.R_RadRichTextEditor` | `R_BlazorFrontEnd.Controls.R_TextEditor` | Rich text editor |
+| `R_FrontEnd.R_RadLabel` | `R_BlazorFrontEnd.Controls.R_Label` | Label |
+| `R_FrontEnd.R_RadTextBoxMultiline` | `R_BlazorFrontEnd.Controls.R_TextArea` | Multiline text input |
+| `R_FrontEnd.R_NumericCharacterTextBoxProvider` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Numeric provider |
+| `R_FrontEnd.R_NumericMaskTextBoxProvider` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Numeric mask provider |
+
+### List Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadListControl` | `R_BlazorFrontEnd.Controls.R_ListBox<T>` | List box |
+| `R_FrontEnd.R_RadListView` | `R_BlazorFrontEnd.Controls.R_ListBox<T>` | List view (use Grid) |
+| `R_FrontEnd.R_RadTreeView` | `R_BlazorFrontEnd.Controls.R_TreeView<T>` | Tree view |
+| `R_FrontEnd.R_RadListItem` | `R_BlazorFrontEnd.Controls.R_ListBox<T>` | List item |
+| `R_FrontEnd.R_DropDownListFreezePane` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Freeze pane |
+
+### Layout Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadGroupBox` | `R_BlazorFrontEnd.Controls.R_GroupBox` | Group box container |
+| `R_FrontEnd.R_RadPanel` | `R_BlazorFrontEnd.Controls.Layouts.R_StackLayout` | Panel/layout container |
+| `R_FrontEnd.R_RadSplitContainer` | `R_BlazorFrontEnd.Controls.Layouts.R_ItemLayout` with col | Split container |
+| `R_FrontEnd.R_RadPageView` | `R_BlazorFrontEnd.Controls.R_TabStrip` | Tab strip/page view |
+| `R_FrontEnd.R_RadScrollablePanel` | NOT IMPLEMENTED YET, if used, use `R_BlazorFrontEnd.Controls.Layouts.R_StackLayout` instead | Scrollable panel |
+| `R_FrontEnd.R_NonFlickerFlowLayOutPanel` | `R_BlazorFrontEnd.Controls.Layouts.R_StackLayout` | Flow layout panel |
+| `R_FrontEnd.R_DragDropPanel` | NOT IMPLEMENTED YET, if used, use `R_BlazorFrontEnd.Controls.Layouts.R_StackLayout` instead | Drag drop panel |
+| `R_FrontEnd.R_SelectedPanel` | NOT IMPLEMENTED YET, if used, use `R_BlazorFrontEnd.Controls.Layouts.R_StackLayout` instead | Selected panel |
+| `R_FrontEnd.R_TransparentPanel` | NOT IMPLEMENTED YET, if used, use `R_BlazorFrontEnd.Controls.Layouts.R_StackLayout` instead | Transparent panel |
+
+### File and Image Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_ImageFrame` | `R_BlazorFrontEnd.Controls.R_ImageBox` | Image display |
+| `R_FrontEnd.R_CropImageButton` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Image crop button |
+| `R_FrontEnd.R_InputFile` | `R_BlazorFrontEnd.Controls.R_InputFile` | File input |
+| `R_FrontEnd.R_Dropzone` | `R_BlazorFrontEnd.Controls.R_Dropzone` | File drop zone |
+| `R_FrontEnd.R_OpenFileDialogButton` | `R_BlazorFrontEnd.Controls.R_OpenFileDialogButton` | Open file dialog |
+| `R_FrontEnd.R_CropImageForm` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Image crop form |
+| `R_FrontEnd.R_TakingPictureForm` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Camera form |
+| `R_FrontEnd.R_ScanForm` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Scanner form |
+
+### Navigation Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_PredefinedDock` | `R_BlazorFrontEnd.Controls.R_PredefinedDock` | Predefined dock container |
+| `R_FrontEnd.R_TabPage` | `R_BlazorFrontEnd.Controls.Tab.R_TabPage` | Tab page |
+| `R_FrontEnd.R_Detail` | `R_BlazorFrontEnd.Controls.R_Detail` | Detail modal/page |
+| `R_FrontEnd.R_View` | `R_BlazorFrontEnd.Controls.R_Page` | View component |
+| `R_FrontEnd.R_DocumentWindow` | `R_BlazorFrontEnd.Controls.R_Page` | Document window |
+| `R_FrontEnd.R_RunForm` | `R_BlazorFrontEnd.Controls.R_Page` | Run form |
+
+### Dialog and Message Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadMessageBox` | `R_BlazorFrontEnd.Controls.MessageBox.R_MessageBox` | Message box |
+| `R_FrontEnd.R_ErrorForm` | `R_BlazorFrontEnd.Controls.Forms.R_ErrorForm` | Error form |
+| `R_FrontEnd.R_ModalDialog` | `R_BlazorFrontEnd.Controls.Dialogs.R_ModalDialog` | Modal dialog |
+| `R_FrontEnd.R_ConfirmDialog` | `R_BlazorFrontEnd.Controls.Dialogs.R_ConfirmDialog` | Confirm dialog |
+| `R_FrontEnd.R_WaitForm` | `R_BlazorFrontEnd.Controls.R_Preload` or `R_PreloadService` | Wait/loading form |
+| `R_FrontEnd.R_ChangePasswordForm` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Change password form |
+| `R_FrontEnd.R_ErrorProvider` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Error provider |
+| `R_FrontEnd.R_PDPPolicyForm` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | PDP policy form |
+
+### Utility Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadProgressBar` | `R_BlazorFrontEnd.Controls.R_ProgressBar` | Progress bar |
+| `R_FrontEnd.R_RadToolTip` | `R_BlazorFrontEnd.Controls.R_Tooltip` | Tooltip |
+| `R_FrontEnd.R_RadMenuButtonItem` | Use `R_BlazorFrontEnd.Controls.R_SplitButton` | Menu button item |
+| `R_FrontEnd.R_RadMenuItem` | Built into `R_BlazorFrontEnd.Controls.R_SplitButton` | Menu item |
+| `R_FrontEnd.R_RadMenuHeaderItem` | Built into `R_BlazorFrontEnd.Controls.R_SplitButton` | Menu header item |
+| `R_FrontEnd.R_RadMenuPopupItem` | Built into `R_BlazorFrontEnd.Controls.R_SplitButton` | Menu popup item |
+| `R_FrontEnd.R_RadMenuDetailItem` | Built into `R_BlazorFrontEnd.Controls.R_SplitButton` | Menu detail item |
+| `R_FrontEnd.R_RadMenuComboItem` | Built into `R_BlazorFrontEnd.Controls.R_SplitButton` | Menu combo item |
+| `R_FrontEnd.R_ContextMenuItem` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Context menu item |
+| `R_FrontEnd.R_ContextMenuItemCollection` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Context menu collection |
+| `R_FrontEnd.R_Step` | `R_BlazorFrontEnd.Controls.R_Step` and `R_Stepper` | Step/wizard component |
+| `R_FrontEnd.R_MiniToolBarBase` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Mini toolbar |
+| `R_FrontEnd.R_SelectionMiniToolBar` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Selection toolbar |
+
+### Specialized Components
+
+| NET4 Component | NET6 Component | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_RadChartView` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Chart view |
+| `R_FrontEnd.R_RadPivotGrid` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Pivot grid |
+| `R_FrontEnd.R_RadScheduler` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Scheduler |
+| `R_FrontEnd.R_RadCalendar` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Calendar |
+| `R_FrontEnd.R_RadBulletGraph` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Bullet graph |
+| `R_FrontEnd.R_RadLinearGauge` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Linear gauge |
+| `R_FrontEnd.R_RadRadialGauge` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Radial gauge |
+| `R_FrontEnd.R_RadSchedulerNavigator` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Scheduler navigator |
+| `R_FrontEnd.R_RadPivotFieldList` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Pivot field list |
+| `R_FrontEnd.R_Barcode` | `R_BlazorFrontEnd.Controls.R_Barcode` | Barcode display |
+| `R_FrontEnd.R_QRCode` | `R_BlazorFrontEnd.Controls.R_QRCode` | QR code display |
+| `R_FrontEnd.R_Mover` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Mover component |
+| `R_FrontEnd.R_MoverUnbound` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Unbound mover |
+| `R_FrontEnd.R_MoverUpDown` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Up/down mover |
+| `R_FrontEnd.R_RoomButton` | Use `R_BlazorFrontEnd.Controls.R_Button` with room state logic | Room button |
+| `R_FrontEnd.R_Golf2Course` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf 2 course |
+| `R_FrontEnd.R_GolfCalendar` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf calendar |
+| `R_FrontEnd.R_GolfFlight` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf flight |
+| `R_FrontEnd.R_GolfReservation` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf reservation |
+| `R_FrontEnd.R_GolfSlot` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf slot |
+| `R_FrontEnd.R_GolfChooseSlotTarget` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf slot target |
+| `R_FrontEnd.R_Inquiry` | `R_BlazorFrontEnd.Controls.R_Find` | Inquiry component |
+| `R_FrontEnd.R_Process` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Process component |
+| `R_FrontEnd.R_XpertDoc` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | XpertDoc viewer |
+
+### Enums Mapping
+
+| NET4 Enum | NET6 Enum | Notes |
+|-----------|-----------|-------|
+| `R_FrontEnd.R_Conductor.e_Mode` | `R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus` | Conductor mode/status |
+| `R_FrontEnd.R_eFormModel` | `R_BlazorFrontEnd.Controls.Enums.R_eFormModel` | Form model |
+| `R_FrontEnd.R_eFindModel` | `R_BlazorFrontEnd.Controls.Enums.R_eFindModel` | Find model |
+| `R_FrontEnd.R_eGridType` | `R_BlazorFrontEnd.Controls.Enums.R_eGridType` | Grid type |
+| `R_FrontEnd.R_eGridMode` | `R_BlazorFrontEnd.Enums.R_eGridMode` | Grid mode |
+| `R_FrontEnd.R_eGridFilter` | `R_BlazorFrontEnd.Controls.Enums.R_eGridFilterMode` | Grid filter mode |
+| `R_FrontEnd.R_eLockUnlock` | `R_BlazorFrontEnd.Controls.Enums.R_eLockUnlock` | Lock/unlock enum |
+| `R_FrontEnd.R_eFormAccess` | `R_BlazorFrontEnd.Controls.Enums.R_eFormAccess` | Form access enum |
+| `R_FrontEnd.R_eGridStatus` | Use `R_BlazorFrontEnd.Controls.Enums.R_eConductorStatus` | Grid status |
+| `R_FrontEnd.R_eUnboundMode` | Built into `R_BlazorFrontEnd.Controls.R_BatchEditGrid<TModel>` | Unbound mode |
+| `R_FrontEnd.R_eBorderStyle` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Border style |
+| `R_FrontEnd.R_eBrowseDialogType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Browse dialog type |
+| `R_FrontEnd.R_eCrystalOutputOption` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Crystal output option |
+| `R_FrontEnd.R_eEmailTemplateAction` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Email template action |
+| `R_FrontEnd.R_eFormatProvider` | Use `R_BlazorFrontEnd.Enums.R_eDocumentType` to get `IFormatProvider<RadFlowDocument>` | Format provider |
+| `R_FrontEnd.R_eMailMergeOutputOption` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Mail merge output option |
+| `R_FrontEnd.R_eMoveAction` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Move action |
+| `R_FrontEnd.R_eMoverGridType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Mover grid type |
+| `R_FrontEnd.R_eMoverStatus` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Mover status |
+| `R_FrontEnd.R_ePivotDataType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Pivot data type |
+| `R_FrontEnd.R_eReportMode` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Report mode |
+| `R_FrontEnd.R_eRoundingMethod` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Rounding method |
+| `R_FrontEnd.R_eTreeViewType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Tree view type |
+| `R_FrontEnd.R_eListViewDragDropMode` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | List view drag drop mode |
+| `R_FrontEnd.R_DateTimeFormat.R_eDateOrder` | WILL NOT BE IMPLEMENTED | Date order |
+| `R_FrontEnd.R_DateTimeFormat.R_eDateSeparator` | WILL NOT BE IMPLEMENTED | Date separator |
+| `R_FrontEnd.R_DateTimeFormat.R_eDayFormat` | WILL NOT BE IMPLEMENTED | Day format |
+| `R_FrontEnd.R_DateTimeFormat.R_eHourFormat` | WILL NOT BE IMPLEMENTED | Hour format |
+| `R_FrontEnd.R_DateTimeFormat.R_eMinuteFormat` | WILL NOT BE IMPLEMENTED | Minute format |
+| `R_FrontEnd.R_DateTimeFormat.R_eMonthFormat` | WILL NOT BE IMPLEMENTED | Month format |
+| `R_FrontEnd.R_DateTimeFormat.R_eSecondFormat` | WILL NOT BE IMPLEMENTED | Second format |
+| `R_FrontEnd.R_DateTimeFormat.R_eTimeBaseFormat` | WILL NOT BE IMPLEMENTED | Time base format |
+| `R_FrontEnd.R_DateTimeFormat.R_eYearFormat` | WILL NOT BE IMPLEMENTED | Year format |
+| `R_FrontEnd.R_FontTypeEnumeration.eFontType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Font type |
+| `R_FrontEnd.R_RoomButton.eDirtyStatus` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Dirty status |
+| `R_FrontEnd.R_RoomButton.eInspectedStatus` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Inspected status |
+| `R_FrontEnd.R_RoomButton.eRoomStatus` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Room status |
+| `R_FrontEnd.R_RoomButton.eRoomStatusDirection` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Room status direction |
+| `R_FrontEnd.R_RoomButton.eSmokingStatus` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Smoking status |
+| `R_FrontEnd.R_RoomButton.eWarningStatus` |NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Warning status |
+| `R_FrontEnd.R_Golf2Course.eWhichFlight` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf flight |
+| `R_FrontEnd.R_GolfFlight.eSelectionType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf selection type |
+| `R_FrontEnd.R_GolfFlight.eTimeZone` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf time zone |
+| `R_FrontEnd.R_GolfReservation.eDisplayMode` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf display mode |
+| `R_FrontEnd.R_GolfReservation.eMenuId` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md`| Golf menu ID |
+| `R_FrontEnd.R_GolfSlot.eNumberOfHoles` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf holes |
+| `R_FrontEnd.R_GolfSlot.ePlayerStatus` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf player status |
+| `R_FrontEnd.R_GolfSlot.ePlayerType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf player type |
+| `R_FrontEnd.R_GolfSlot.eRateType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf rate type |
+| `R_FrontEnd.R_GolfSlot.eReservationStatus` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf reservation status |
+| `R_FrontEnd.R_GolfSlot.eReservationType` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Golf reservation type |
+| `R_FrontEnd.R_MoveResizeRoomButton.MoveOrResize` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Move or resize |
+| `R_FrontEnd.R_eText.R_TextCancel` | Use resource localization | Text for cancel |
+| `R_FrontEnd.R_eText.R_TextCrystalButton` | Use resource localization | Text for crystal button |
+| `R_FrontEnd.R_eText.R_TextDelete` | Use resource localization | Text for delete |
+| `R_FrontEnd.R_eText.R_TextSave` | Use resource localization | Text for save |
+| `R_FrontEnd.R_eText.R_TextSaveBatch` | Use resource localization | Text for save batch |
+| `R_FrontEnd.e_ServiceClientType` | Use HTTP client configuration | Service client type |
+
+### Event Args Mapping
+
+| NET4 Event Args | NET6 Event Args | Notes |
+|----------------|-----------------|-------|
+| `R_FrontEnd.R_AfterAddEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterAddEventArgs` | After add event |
+| `R_FrontEnd.R_BeforeAddEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeAddEventArgs` | Before add event |
+| `R_FrontEnd.R_AfterSaveEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterSaveEventArgs` | After save event |
+| `R_FrontEnd.R_BeforeSaveEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_SavingEventArgs` | Before save event |
+| `R_FrontEnd.R_AfterDeleteEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterDeleteEventArgs` | After delete event |
+| `R_FrontEnd.R_BeforeDeleteEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeDeleteEventArgs` | Before delete event |
+| `R_FrontEnd.R_BeforeCancelEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeCancelEventArgs` | Before cancel event |
+| `R_FrontEnd.R_BeforeEditEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeEditEventArgs` | Before edit event |
+| `R_FrontEnd.R_AfterOpenLookupEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs` | After open lookup |
+| `R_FrontEnd.R_AfterOpenDetailEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterOpenDetailEventArgs` | After open detail |
+| `R_FrontEnd.R_AfterOpenPopupEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterOpenPopupEventArgs` | After open popup |
+| `R_FrontEnd.R_AfterOpenFindEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterOpenFindEventArgs` | After open find |
+| `R_FrontEnd.R_AfterOpenPredefinedDockEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterOpenPredefinedDockEventArgs` | After open predefined dock |
+| `R_FrontEnd.R_AfterOpenTabPageEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterOpenTabPageEventArgs` | After open tab page |
+| `R_FrontEnd.R_AfterOpenGridLookupColumnEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterOpenGridLookupColumnEventArgs` | After open grid lookup column |
+| `R_FrontEnd.R_BeforeOpenLookupEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs` | Before open lookup |
+| `R_FrontEnd.R_BeforeOpenDetailEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeOpenDetailEventArgs` | Before open detail |
+| `R_FrontEnd.R_BeforeOpenPopupEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeOpenPopupEventArgs` | Before open popup |
+| `R_FrontEnd.R_BeforeOpenFindEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeOpenFindEventArgs` | Before open find |
+| `R_FrontEnd.R_BeforeOpenTabPageEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeOpenTabPageEventArgs` | Before open tab page |
+| `R_FrontEnd.R_BeforeOpenGridLookupColumnEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeOpenGridLookupColumnEventArgs` | Before open grid lookup column |
+| `R_FrontEnd.R_BeforeOpenStepPageEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeOpenStepPageEventArgs` | Before open step page |
+| `R_FrontEnd.R_BeforeEditCellEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeEditCellEventArgs` | Before edit cell |
+| `R_FrontEnd.R_CellValueChangedEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CellValueChangedEventArgs` | Cell value changed |
+| `R_FrontEnd.R_CellLostFocusedEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CellLostFocusedEventArgs` | Cell lost focus |
+| `R_FrontEnd.R_CheckAddEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CheckAddEventArgs` | Check add |
+| `R_FrontEnd.R_CheckEditEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CheckEditEventArgs` | Check edit |
+| `R_FrontEnd.R_CheckDeleteEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CheckDeleteEventArgs` | Check delete |
+| `R_FrontEnd.R_CheckGridEventArgs` |  `R_BlazorFrontEnd.Controls.Events.R_CheckGridAddEventArgs`, `R_CheckGridEditEventArgs`, or `R_CheckGridDeleteEventArgs` | Check grid |
+| `R_FrontEnd.R_CheckPrintEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CheckPrintEventArgs` | Check print |
+| `R_FrontEnd.R_AfterSaveBatchEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_AfterSaveBatchEventArgs` | After save batch |
+| `R_FrontEnd.R_BeforeSaveBatchEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BeforeSaveBatchEventArgs` | Before save batch |
+| `R_FrontEnd.R_SaveBatchEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_SaveBatchEventArgs` | Save batch |
+| `R_FrontEnd.R_CheckBoxSelectValueChangedEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectValueChangedEventArgs` | Checkbox select value changed |
+| `R_FrontEnd.R_CheckBoxSelectValueChangingEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectValueChangingEventArgs` | Checkbox select value changing |
+| `R_FrontEnd.R_CheckBoxValueChangingEventArgs` | Built into checkbox component | Checkbox value changing |
+| `R_FrontEnd.R_CheckBoxSelectRenderEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectRenderEventArgs` | Checkbox select render |
+| `R_FrontEnd.R_AfterSwapItemEventArgs` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | After swap item |
+| `R_FrontEnd.R_SwapItemEventArgs` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Swap item |
+| `R_FrontEnd.R_PreviewMoverEventArgs` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Preview mover |
+| `R_FrontEnd.R_KeyEventArgs` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Key event |
+| `R_FrontEnd.R_BrowseDialogClosedEventArgs` | Built into `R_BlazorFrontEnd.Controls.R_Lookup` | Browse dialog closed |
+| `R_FrontEnd.R_GridDragDropAfterDropEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_GridDragDropAfterDropEventArgs<TModel>` | Grid drag drop after drop |
+| `R_FrontEnd.R_GridDragDropBeforeDropEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_GridDragDropBeforeDropEventArgs<TModel>` | Grid drag drop before drop |
+| `R_FrontEnd.R_GridRowDroppedEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_GridRowDroppedEventArgs` | Grid row dropped |
+| `R_FrontEnd.R_GridRowDroppingEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_GridRowDroppingEventArgs` | Grid row dropping |
+| `R_FrontEnd.R_GridCellRenderEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_GridCellRenderEventArgs` | Grid cell render |
+| `R_FrontEnd.R_GridRowRenderEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_GridRowRenderEventArgs` | Grid row render |
+| `R_FrontEnd.R_ConvertToGridEntityEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ConvertToGridEntityEventArgs` | Convert to grid entity |
+| `R_FrontEnd.R_SetAddGridColumnEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_SetAddGridColumnEventArgs` | Set add grid column |
+| `R_FrontEnd.R_SetEditGridColumnEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_SetEditGridColumnEventArgs` | Set edit grid column |
+| `R_FrontEnd.R_ValidationEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ValidationEventArgs` | Validation event |
+| `R_FrontEnd.R_ColorPickerOpenEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ColorPickerOpenEventArgs` | Color picker open |
+| `R_FrontEnd.R_ColorPickerCloseEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ColorPickerCloseEventArgs` | Color picker close |
+| `R_FrontEnd.R_LockingUnlockingEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_LockingUnlockingEventArgs` | Locking/unlocking |
+| `R_FrontEnd.R_LockUnlockEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_LockUnlockEventArgs` | Lock/unlock |
+| `R_FrontEnd.R_ToastEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ToastEventArgs` | Toast event |
+| `R_FrontEnd.R_CommandEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_CommandEventArgs` | Command event |
+| `R_FrontEnd.R_DisplayEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_DisplayEventArgs` | Display event |
+| `R_FrontEnd.R_FindModelEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_FindModelEventArgs` | Find model event |
+| `R_FrontEnd.R_StepChangeEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_StepChangeEventArgs` | Step change |
+| `R_FrontEnd.R_TabStripActiveTabIndexChangingEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_TabStripActiveTabIndexChangingEventArgs` | Tab strip active tab changing |
+| `R_FrontEnd.R_WaitFormEventArgs` | Use loading state management | Wait form event |
+| `R_FrontEnd.R_ExcelPivotCellExportingArgs` | NOT IMPLEMENTED YET, if used add it in `@./feature-request.md` | Excel pivot cell exporting |
+| `R_FrontEnd.R_SetEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_SetEventArgs` | Set event |
+| `R_FrontEnd.R_InstantiateDockEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_InstantiateDockEventArgs` | Instantiate dock |
+| `R_FrontEnd.R_PageClosingEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_PageClosingEventArgs` | Page closing |
+| `R_FrontEnd.R_RefreshTreeViewStateEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_RefreshTreeViewStateEventArgs` | Refresh tree view state |
+| `R_FrontEnd.R_ServiceDeleteEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ServiceDeleteEventArgs` | Service delete event |
+| `R_FrontEnd.R_ServiceGetListRecordEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ServiceGetListRecordEventArgs` | Service get list record event |
+| `R_FrontEnd.R_ServiceGetRecordEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ServiceGetRecordEventArgs` | Service get record event |
+| `R_FrontEnd.R_ServiceSaveEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ServiceSaveEventArgs` | Service save event |
+| `R_FrontEnd.R_ServiceSaveBatchEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_ServiceSaveBatchEventArgs` | Service save batch event |
+| `R_FrontEnd.R_BulkDeleteEventArgs` | `R_BlazorFrontEnd.Controls.Events.R_BulkDeleteEventArgs` | Bulk delete event |
+
+### Interfaces Mapping
+
+| NET4 Interface | NET6 Interface | Notes |
+|---------------|----------------|-------|
+| `R_FrontEnd.R_IConductor` | `R_BlazorFrontEnd.Controls.DataControls.R_IConductor` | Conductor interface |
+| `R_FrontEnd.R_IEnableConductor` | `R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl` | Enable conductor interface |
+| `R_FrontEnd.R_IEnableConductorControl` | `R_BlazorFrontEnd.Controls.DataControls.R_IEnableConductorControl` | Enable conductor control interface |
+| `R_FrontEnd.R_IEnableGridViewColumn` | Built into grid column components | Enable grid view column |
+| `R_FrontEnd.R_IEnableGroup` | Use form access control | Enable group |
+| `R_FrontEnd.R_IFontType` | Use CSS or Blazor styling | Font type interface |
+| `R_FrontEnd.R_IFormAccess` | `R_BlazorFrontEnd.Controls.Interfaces.R_IFormAccess` | Form access interface |
+| `R_FrontEnd.R_IFormBase` | Use Blazor component base | Form base interface |
+| `R_FrontEnd.R_IResourceLanguage` | Built into components | Resource language interface |
+| `R_FrontEnd.R_IResourceLanguageMenu` | Built into menu components | Resource language menu |
+| `R_FrontEnd.R_IPopup` | `R_BlazorFrontEnd.Controls.Interfaces.R_IPopup` | Popup interface |
+| `R_FrontEnd.R_ILookUpAndFindButton` | Built into `R_BlazorFrontEnd.Controls.R_Lookup` and `R_Find` | Lookup and find button |
+| `R_FrontEnd.R_ICropImage` | Use image manipulation logic | Crop image interface |
+| `R_FrontEnd.R_IEmailForm` | Use email service integration | Email form interface |
+| `R_FrontEnd.R_IRadItem` | Built into Rad controls migration | Rad item interface |
+| `R_FrontEnd.R_IUserDefineType` | Use standard .NET types | User define type interface |
+| `R_FrontEnd.R_IGlobalVarInitiator` | Use dependency injection | Global var initiator |
+| `R_FrontEnd.R_IGlobalGolfVariable` | Use custom golf state management | Global golf variable |
+| `R_FrontEnd.AsynchSpace.IR_ProcessAndUploadService` | Use async service pattern | Process and upload service |
+
+### DTOs and Data Classes
+
+| NET4 DTO/Class | NET6 Equivalent | Notes |
+|---------------|-----------------|-------|
+| `R_FrontEnd.R_AgentDTO` | Use custom DTO | Agent DTO |
+| `R_FrontEnd.R_PredefinedDTO` | Use custom DTO | Predefined DTO |
+| `R_FrontEnd.R_InquiryPredefinedDTO` | Use custom DTO | Inquiry predefined DTO |
+| `R_FrontEnd.R_ReturnLookUpAndFind` | Use return DTO pattern | Return lookup and find |
+| `R_FrontEnd.R_ReturnPopUp` | Use return DTO pattern | Return popup |
+| `R_FrontEnd.R_GolfDTO2Course` | Use custom DTO | Golf 2 course DTO |
+| `R_FrontEnd.R_GolfDTOFlight` | Use custom DTO | Golf flight DTO |
+| `R_FrontEnd.R_GolfDTOSlot` | Use custom DTO | Golf slot DTO |
+| `R_FrontEnd.R_ImageFrame.PosSizableRect` | Use CSS positioning | Image frame position |
+| `R_FrontEnd.R_FormatValue` | Use .NET formatting | Format value |
+| `R_FrontEnd.R_DateTimeFormat` | Use standard .NET DateTime formatting | DateTime format |
+| `R_FrontEnd.R_FooterGridViewElement` | Built into grid footer | Footer grid view element |
+
+### Utility and Helper Classes
+
+| NET4 Utility | NET6 Equivalent | Notes |
+|-------------|------------------|-------|
+| `R_FrontEnd.R_FrontUtility` | Use BlazorFrontEnd utility methods | Front utility |
+| `R_FrontEnd.R_FrontConfig` | Use `R_BlazorFrontEnd.Configurations.R_FrontConfig` | Front configuration |
+| `R_FrontEnd.R_GlobalVar` | Use `BlazorClientHelper.U_GlobalVar` | Global variables |
+| `R_FrontEnd.R_GlobalGolfVariable` | Use custom state management | Global golf variable |
+| `R_FrontEnd.R_FormBase` | Use Blazor component base classes | Form base |
+| `R_FrontEnd.R_DeployUtility` | Use deployment utilities | Deploy utility |
+| `R_FrontEnd.R_UpdSavBase` | Built into conductor components | Update/Save base |
+| `R_FrontEnd.R_ServiceClientWrapper` | Use HTTP client wrapper | Service client wrapper |
+| `R_FrontEnd.R_ServiceUrlMap` | Use configuration mapping | Service URL map |
+| `R_FrontEnd.R_ServiceUrlMapCollection` | Use configuration collections | Service URL map collection |
+| `R_FrontEnd.R_ServiceUrlSection` | Use `R_BlazorFrontEnd.Configurations.R_ServiceUrlSection` | Service URL section |
+| `R_FrontEnd.R_ServiceUrlException` | Use standard exception handling | Service URL exception |
+| `R_FrontEnd.R_ServiceUrlExceptionCollection` | Use exception collections | Service URL exception collection |
+| `R_FrontEnd.R_ExternalException` | Use standard exception handling | External exception |
+| `R_FrontEnd.R_StringEnum` | Use standard .NET enums | String enum |
+| `R_FrontEnd.R_StringValue` | Use standard .NET string | String value |
+| `R_FrontEnd.R_UserDefineTypeEnumeration` | Use standard .NET enums | User define type enumeration |
+| `R_FrontEnd.R_UserDefineTypeConverter` | Use standard .NET type converters | User define type converter |
+| `R_FrontEnd.R_ResourceLanguangeEnumeration` | Use localization providers | Resource language enumeration |
+| `R_FrontEnd.R_ResourceLanguangeTypeConverter` | Use localization converters | Resource language type converter |
+| `R_FrontEnd.R_Pdf` | Use PDF libraries | PDF utility |
+| `R_FrontEnd.R_ExcelPivotCellExportingArgs` | Use Excel export libraries | Excel pivot export |
+
+### Crystal Reports Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|-------------------|-------|
+| `R_FrontEnd.R_CrystalForm` | Use report viewer or PDF generation | Crystal form |
+| `R_FrontEnd.R_CrystalClass` | Use report service | Crystal class |
+| `R_FrontEnd.R_CrystalAssemblyBase` | Use report assembly loading | Crystal assembly base |
+| `R_FrontEnd.R_CrystalOption` | Use report options DTO | Crystal option |
+| `R_FrontEnd.CrystalClass` | Use report service integration | Crystal class (namespace) |
+
+### Email Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_EmailForm` | Use `R_BlazorFrontEnd.Controls.R_ModalDialog` with email logic | Email form |
+| `R_FrontEnd.R_EmailEngineClient` | Use email service client | Email engine client |
+| `R_FrontEnd.R_EmailEngineServiceClient` | Use email service integration | Email engine service client |
+| `R_FrontEnd.R_EmailTemplateForm` | Use modal dialog with template logic | Email template form |
+| `R_FrontEnd.R_EmailTemplateFormImage` | Use image component with email | Email template form image |
+| `R_FrontEnd.R_EmailTemplateFormPar` | Use DTO for email template params | Email template form parameter |
+
+### Mail Merge Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_MailMergeForm` | Use modal dialog with mail merge logic | Mail merge form |
+| `R_FrontEnd.R_MailMergeClass` | Use mail merge service | Mail merge class |
+| `R_FrontEnd.R_MailMergeServiceClient` | Use mail merge service client | Mail merge service client |
+| `R_FrontEnd.R_MailMergeTemplateDropDownListUC` | Use dropdown with templates | Mail merge template dropdown |
+| `R_FrontEnd.R_MailMergeOutputOption` | Use enum for output options | Mail merge output option |
+| `R_FrontEnd.R_MailMergeFormPar` | Use DTO for mail merge params | Mail merge form parameter |
+
+### Pivot Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_PivotForm` | Use Telerik Blazor PivotGrid | Pivot form |
+| `R_FrontEnd.R_PivotFormPar` | Use DTO for pivot parameters | Pivot form parameter |
+| `R_FrontEnd.R_PivotFormSave` | Use pivot save logic | Pivot form save |
+| `R_FrontEnd.R_PivotServiceClient` | Use pivot service client | Pivot service client |
+| `R_FrontEnd.R_PivotTemplateDropDownListUC` | Use dropdown with templates | Pivot template dropdown |
+| `R_FrontEnd.R_PivotStringCollection` | Use collection for pivot strings | Pivot string collection |
+
+### Process and Upload Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_ProcessAndUploadClient` | Use process and upload service | Process and upload client |
+| `R_FrontEnd.R_ProcessAndUploadServiceClient` | Use service client integration | Process and upload service client |
+
+### License Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_License` | Use license service | License component |
+| `R_FrontEnd.R_LicenseActivationClient` | Use license activation service | License activation client |
+| `R_FrontEnd.R_LicenseActivationServiceClient` | Use service client integration | License activation service client |
+| `R_FrontEnd.R_LicenseProvider` | Use license provider service | License provider |
+
+### Security Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_SecurityPolicyClient` | Use security policy service | Security policy client |
+| `R_FrontEnd.R_SecurityPolicyServiceClient` | Use service client integration | Security policy service client |
+| `R_FrontEnd.R_SecurityPolicyResult` | Use result DTO | Security policy result |
+
+### Locking Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_LockingClient` | Use locking service | Locking client |
+| `R_FrontEnd.R_LockingServiceClient` | Use service client integration | Locking service client |
+| `R_FrontEnd.R_LockingResult` | Use result DTO | Locking result |
+
+### Grid Editor Components (Internal)
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_GridViewAutoCompleteEditor` | Built into `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridComboBoxColumn` | Autocomplete editor |
+| `R_FrontEnd.R_GridViewDateTimeEditor` | Built into date column components | DateTime editor |
+| `R_FrontEnd.R_GridViewLookUpEditor` | Built into `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridLookupColumn` | Lookup editor |
+| `R_FrontEnd.R_GridViewLookUpEditorElement` | Built into lookup column | Lookup editor element |
+| `R_FrontEnd.R_GridViewPopUpEditor` | Built into grid column with popup | Popup editor |
+| `R_FrontEnd.R_GridViewPopUpEditorElement` | Built into popup column | Popup editor element |
+| `R_FrontEnd.R_GridViewCheckedComboBoxEditor` | Built into combobox column | Checked combobox editor |
+| `R_FrontEnd.R_GridViewCheckedComboBoxEditorElement` | Built into checked combobox column | Checked combobox editor element |
+| `R_FrontEnd.R_GridViewCheckedComboBoxCellElement` | Built into checked combobox column | Checked combobox cell element |
+| `R_FrontEnd.R_GridViewCheckedComboBoxVisualItem` | Built into checked combobox column | Checked combobox visual item |
+| `R_FrontEnd.R_GridViewCheckedComboBoxDataItem` | Built into checked combobox column | Checked combobox data item |
+| `R_FrontEnd.R_GridViewTextBoxMultilineEditor` | Built into text column | Multiline editor |
+| `R_FrontEnd.R_GridViewTextBoxMultilineElement` | Built into multiline column | Multiline element |
+
+### Grid Extensions
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_RadGridViewBase` | `R_BlazorFrontEnd.Controls.R_GridBase<TModel>` | Grid view base |
+| `R_FrontEnd.R_RadGridViewDataColumnExt` | Built into grid columns | Grid view data column extension |
+| `R_FrontEnd.R_RadGridViewDragDrop` | Built into `R_BlazorFrontEnd.Controls.R_Grid<TModel>` | Grid view drag drop |
+| `R_FrontEnd.R_RadGridViewLocalization` | Use localization | Grid view localization |
+| `R_FrontEnd.R_RadControlExt` | Built into control base | Rad control extension |
+| `R_FrontEnd.R_RadItemExt` | Built into item base | Rad item extension |
+
+### Menu Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_RadMessageBoxLocalization` | Use localization | Message box localization |
+| `R_FrontEnd.R_RadPivotLocalization` | Use localization | Pivot localization |
+
+### Golf Calendar Components (Specialized)
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_GolfCalendar.CalendarEvent` | Use Telerik Blazor Scheduler event | Golf calendar event |
+| `R_FrontEnd.R_GolfCalendar.IEvent` | Use event interface | Golf calendar event interface |
+| `R_FrontEnd.R_GolfCalendar.EventComparer` | Use event comparer | Golf calendar event comparer |
+| `R_FrontEnd.R_GolfCalendar.EventToolTip` | Use tooltip component | Golf calendar event tooltip |
+| `R_FrontEnd.R_GolfCalendar.Margin` | Use margin styling | Golf calendar margin |
+| `R_FrontEnd.R_GolfCalendar.NoteEvent` | Use note event DTO | Golf calendar note event |
+| `R_FrontEnd.R_GolfCalendar.StatusEvent` | Use status event DTO | Golf calendar status event |
+| `R_FrontEnd.R_GolfCalendar.RoundedRectangle` | Use CSS or SVG | Golf calendar rounded rectangle |
+| `R_FrontEnd.R_GolfCalendar.RoundedRectangle.RectangleCorners` | Use CSS border radius | Rectangle corners |
+
+### Golf DTOs (Specialized)
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_GolfCalendar.R_AvailableColorDTO` | Use custom DTO | Golf available color DTO |
+| `R_FrontEnd.R_GolfCalendar.R_AvailableDTO` | Use custom DTO | Golf available DTO |
+| `R_FrontEnd.R_GolfCalendar.R_CalendarStatus` | Use enum or DTO | Golf calendar status |
+| `R_FrontEnd.R_GolfCalendar.R_EventDetail` | Use custom DTO | Golf event detail |
+| `R_FrontEnd.R_GolfCalendar.R_FlagDTO` | Use custom DTO | Golf flag DTO |
+| `R_FrontEnd.R_GolfCalendar.R_HolidayDTO` | Use custom DTO | Golf holiday DTO |
+| `R_FrontEnd.R_GolfCalendar.R_NoteDTO` | Use custom DTO | Golf note DTO |
+| `R_FrontEnd.R_GolfFlight.C_CaddyAssigmentInfo` | Use custom DTO | Golf caddy assignment info |
+| `R_FrontEnd.R_GolfFlight.C_DragFromInfo` | Use custom DTO | Golf drag from info |
+| `R_FrontEnd.R_GolfFlight.C_DropToInfo` | Use custom DTO | Golf drop to info |
+| `R_FrontEnd.R_GolfFlight.C_FlightInfo` | Use custom DTO | Golf flight info |
+| `R_FrontEnd.R_GolfFlight.C_SwapFromInfo` | Use custom DTO | Golf swap from info |
+| `R_FrontEnd.R_GolfFlight.C_SwapToInfo` | Use custom DTO | Golf swap to info |
+| `R_FrontEnd.R_GolfReservation.R_BlockingParameter` | Use custom DTO | Golf blocking parameter |
+| `R_FrontEnd.R_GolfReservation.R_CaddyAssignmentParameter` | Use custom DTO | Golf caddy assignment parameter |
+| `R_FrontEnd.R_GolfReservation.R_CellParameter` | Use custom DTO | Golf cell parameter |
+| `R_FrontEnd.R_GolfReservation.R_DragDropFlight` | Use custom DTO | Golf drag drop flight |
+| `R_FrontEnd.R_GolfReservation.R_DragDropSlot` | Use custom DTO | Golf drag drop slot |
+| `R_FrontEnd.R_GolfReservation.R_DragFromInfo` | Use custom DTO | Golf drag from info |
+| `R_FrontEnd.R_GolfReservation.R_DropToInfo` | Use custom DTO | Golf drop to info |
+| `R_FrontEnd.R_GolfReservation.R_PrintParameter` | Use custom DTO | Golf print parameter |
+| `R_FrontEnd.R_GolfReservation.R_RefreshParameter` | Use custom DTO | Golf refresh parameter |
+| `R_FrontEnd.R_GolfReservation.R_SlotParameter` | Use custom DTO | Golf slot parameter |
+| `R_FrontEnd.R_GolfReservation.R_SwapFlight` | Use custom DTO | Golf swap flight |
+| `R_FrontEnd.R_GolfReservation.R_SwapFromInfo` | Use custom DTO | Golf swap from info |
+| `R_FrontEnd.R_GolfReservation.R_SwapSlot` | Use custom DTO | Golf swap slot |
+| `R_FrontEnd.R_GolfReservation.R_SwapToInfo` | Use custom DTO | Golf swap to info |
+| `R_FrontEnd.R_GolfSlot.C_SlotInfo` | Use custom DTO | Golf slot info |
+| `R_FrontEnd.R_GolfChooseSlotTarget.InnerPlayer` | Use custom DTO | Golf choose slot target inner player |
+| `R_FrontEnd.R_RoomButton.R_RoomProperties` | Use custom DTO | Room button properties |
+
+### Chart Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_AxisLabelDrawPart` | Use Telerik Blazor Chart | Axis label draw part |
+| `R_FrontEnd.R_BarSeriesDrawPart` | Use Telerik Blazor Chart | Bar series draw part |
+| `R_FrontEnd.R_CartesianRenderer` | Use Telerik Blazor Chart | Cartesian renderer |
+
+### Other Components
+
+| NET4 Component | NET6 Equivalent | Notes |
+|-------------|----------------|-------|
+| `R_FrontEnd.R_RunProg` | Use navigation/routing | Run program |
+| `R_FrontEnd.R_RunProgMenuProgramAccessDTO` | Use custom DTO | Run program menu access DTO |
+| `R_FrontEnd.R_TemplateProgram` | Use template pattern | Template program |
+| `R_FrontEnd.R_TwainDialog` | Use scanner integration | Twain dialog |
+| `R_FrontEnd.REL_FrontEndLogger` | Use logging service | Front end logger |
+
+## Migration Guidelines
+
+### 1. Component Declaration Changes
+
+**NET4 (VB.NET):**
+```vb
+Private WithEvents RadButton1 As R_RadButton
+```
+
+**NET6 (C# Blazor):**
+```csharp
+<R_Button>@Localizer["ADD"]</R_Button>
+```
+
+### 2. Property Mapping
+
+**NET4:**
+```vb
+RadButton1.R_Access = "ADD"
+RadButton1.R_EnableADD = True
+RadButton1.R_EnableEDIT = False
+```
+
+**NET6:**
+```razor
+<R_Button R_ConductorSource="@_conductorRef" R_EnableAdd R_EnableEdit="false" />
+```
+
+### 3. Event Handling Changes
+
+**NET4:**
+```vb
+Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+    ' Handle click
+End Sub
+```
+
+**NET6:**
+```razor
+<R_Button OnClick="@HandleButtonClick" />
+```
+
+```csharp
+private async Task HandleButtonClick()
+{
+    // Handle click
+}
+```
+
+### 4. Grid Column Mapping
+
+**NET4:**
+```vb
+Dim loCol As New R_GridViewTextBoxColumn
+loCol.FieldName = "FIELD_NAME"
+RadGridView1.Columns.Add(loCol)
+```
+
+**NET6:**
+```razor
+<R_Grid>
+    <R_GridTextColumn FieldName="@nameof(EntityDTO.FIELD_NAME)" HeaderText="@Localizer["FIELD_NAME"]" />
+</R_Grid>
+```
+
+### 5. Conductor Pattern Changes
+
+**NET4:**
+```vb
+Dim loConductor As New R_Conductor
+loConductor.R_Display = AddressOf Conductor_Display
+```
+
+**NET6:**
+```razor
+<R_Conductor @ref="@_conductorRef"
+             R_ViewModel="@viewModel"
+             R_Display="@Conductor_Display"
+             R_ServiceGetRecord="@Conductor_ServiceGetRecord">
+</R_Conductor>
+```
+
+## Common Migration Patterns
+
+### Button Text Changes
+- **NET4:** `RadButton1.Text = "Save"`
+- **NET6:** Use child content: `<R_Button>@Localizer["SAVE"]</R_Button>`
+- **Never** use `Text` parameter on `R_Button`
+
+### Grid DataSource Changes
+- **NET4:** BindingSource or DataTable
+- **NET6:** `ObservableCollection<T>`
+- Use `DataSource` parameter: `<R_Grid DataSource="@_viewModel.DataList">`
+
+### Form Access Control
+- **NET4:** `R_Access` property on controls
+- **NET6:** `R_ConductorSource` or `R_ConductorGridSource` parameters
+- Access is controlled through conductor status
+
+## Notes
+
+1. **Blazor Components:** All NET6 components are Blazor components, not WinForms controls
+2. **Type Safety:** NET6 uses generics (`R_Grid<TModel>`) for type safety
+3. **Binding:** NET6 uses Blazor two-way binding with `@bind-Value`
+4. **Async Operations:** Most operations in NET6 are async (`Task`/`async`/`await`)
+5. **Resource Localization:** Use `@Localizer["KEY"]` pattern instead of resource files directly
+6. **Razor Syntax:** Component parameters use PascalCase in Razor markup
+
+## Reference Files
+
+- NET4 Documentation: `.cursor/docs/net4/Realta-Library/R_FrontEnd.*`
+- NET6 Documentation: `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.*`
+- Component Rules: `.cursor/rules/front/components/*.mdc`

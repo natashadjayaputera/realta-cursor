@@ -1,0 +1,10 @@
+---
+description: "Event handler rules for {ProgramName}Front Blazor components"
+alwaysApply: false
+globs: "*ToCSharpFront*"
+---
+# Event Handler Rules (Front)
+- Never use `void` for event handlers; always return `Task`.
+- Reason: `void` is not awaited, so exceptions won't be caught or propagated.
+- Prefer: `private async Task Handler(...)` (or with args) and use the `R_Exception` pattern inside.
+

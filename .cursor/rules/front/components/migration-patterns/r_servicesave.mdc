@@ -1,0 +1,69 @@
+---
+description: "Migration pattern for R_ServiceSave (NET4) → R_Conductor/R_Grid R_ServiceSave (NET6)"
+alwaysApply: false
+---
+
+# R_ServiceSave (NET4) → R_ServiceSave (NET6)
+
+- NET4: `R_ServiceSave` on Conductor/Grid
+- NET6: `R_ServiceSave` on `R_Conductor` / `R_Grid<T>` with `R_ServiceSaveEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Perform save operation via service call, return saved entity with any server-generated values back to control.
+
+## Bindings
+- Conductor: add `R_ServiceSave="Conductor_R_ServiceSave"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_ServiceSave="Grid_R_ServiceSave"` (+ usual services).
+
+## Handler
+- Prefer: `private async Task Conductor_R_ServiceSave(R_ServiceSaveEventArgs eventArgs)` or `private async Task Grid_R_ServiceSave(R_ServiceSaveEventArgs eventArgs)`.
+- Data object: `var loEntity = (MyDto)eventArgs.Data;`.
+- Call ViewModel: `await _viewModel.SaveRecordAsync(loEntity, (eCRUDMode)eventArgs.ConductorMode);`.
+- Set result: `eventArgs.Result = _viewModel.CurrentRecord;`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `peMode` → NET6 `eventArgs.ConductorMode` cast to eCRUDMode
+- NET4 `poEntityResult` (ByRef) → NET6 `eventArgs.Result`
+### Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `peGridMode` → NET6 `eventArgs.ConductorMode` cast to eCRUDMode
+- NET4 `poEntityResult` (ByRef) → NET6 `eventArgs.Result`
+
+## Example
+```csharp
+private async Task Conductor_R_ServiceSave(R_ServiceSaveEventArgs eventArgs) // OR Grid_R_ServiceSave
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loEntity = (MyDto)eventArgs.Data;
+        await _viewModel.SaveRecordAsync(loEntity, (eCRUDMode)eventArgs.ConductorMode);
+        eventArgs.Result = _viewModel.CurrentRecord;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_ServiceSave(poEntity As Object, peMode As R_FrontEnd.R_Conductor.e_Mode, ByRef poEntityResult As Object) Handles conMain.R_ServiceSave`
+  - `Private Sub gvMain_R_ServiceSave(poEntity As Object, peGridMode As R_FrontEnd.R_eGridMode, ByRef poEntityResult As Object) Handles gvMain.R_ServiceSave`
+- NET6 Razor usage:
+  - Grid: `R_ServiceSave="Grid_R_ServiceSave"`
+  - Conductor: `R_ServiceSave="Conductor_R_ServiceSave"`
+
+## Notes
+- NET4 directly calls service client's `Svc_R_Save` method; NET6 delegates to ViewModel method which calls Model's `R_ServiceSaveAsync`.
+- Always set `eventArgs.Result` with the saved entity so the control receives server-generated values (e.g., generated IDs, timestamps).
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_ServiceSaveEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_ServiceSave)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_ServiceSave)

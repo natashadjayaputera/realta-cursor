@@ -1,0 +1,48 @@
+---
+description: "Migration pattern for R_GridMode (NET4) → R_GridMode (NET6)"
+alwaysApply: false
+---
+
+# R_GridMode (NET4) → R_GridMode (NET6)
+
+- NET4: `R_RadGridView.R_GridMode` property returns `R_FrontEnd.R_eGridMode` enum
+- NET6: `R_GridBase<TModel>.R_GridMode` property returns `R_eGridMode` enum
+
+## Property mapping
+- NET4: `gvMain.R_GridMode` → NET6: `_gridRef?.R_GridMode`
+- NET4 enum: `R_FrontEnd.R_eGridMode` → NET6 enum: `R_eGridMode`
+
+## Enum value mapping
+- `R_eGridMode.Normal` → `R_eGridMode.Normal`
+- `R_eGridMode.Add` → `R_eGridMode.Add`
+- `R_eGridMode.Edit` → `R_eGridMode.Edit`
+- `R_eGridMode.None` → Removed in NET6 (use `Normal` instead)
+
+## Usage examples
+### NET4 VB.NET
+```vb
+If gvMain.R_GridMode = R_eGridMode.Add Then
+If gvMain.R_GridMode = R_eGridMode.Edit Or gvMain.R_GridMode = R_eGridMode.Add Then
+Dim peGridMode = gvMain.R_GridMode
+If peGridMode = R_eGridMode.None Or peGridMode = R_eGridMode.Normal Then
+```
+
+### NET6 C#
+```csharp
+if (_gridRef?.R_GridMode == R_eGridMode.Add)
+if (_gridRef?.R_GridMode == R_eGridMode.Edit || 
+    _gridRef?.R_GridMode == R_eGridMode.Add)
+var peGridMode = _gridRef?.R_GridMode;
+```
+
+## Notes
+- Always use null-conditional operator (`?.`) when accessing `_gridRef` in NET6
+- Enum values remain the same; only namespace changed
+- `R_eGridMode.None` removed in NET6; use `R_eGridMode.Normal` for default state
+- Works with both `R_Grid` and `R_BatchEditGrid` components
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_GridBase-1.yml` (R_GridMode property)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Enums.R_eGridMode.yml`
+- `.cursor/docs/net4/Realta-Library/R_FrontEnd.R_RadGridView.yml` (R_GridMode property)
+- `.cursor/docs/net4/Realta-Library/R_FrontEnd.R_eGridMode.yml`

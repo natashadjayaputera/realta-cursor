@@ -4,4 +4,6 @@ alwaysApply: false
 ---
 # R_Lookup Rules
 
-- Must be wrapped inside `R_ItemLayout auto="false"`
+- Must be wrapped inside `R_ItemLayout auto="true"`
+- R_Before_Open_Lookup implementation filled with: `//TODO: Open {ProgramName}, with Parameters: {List of Parameters}`
+- R_After_Open_Lookup implementation filled with: `//TODO: {What to do after opening lookup}`

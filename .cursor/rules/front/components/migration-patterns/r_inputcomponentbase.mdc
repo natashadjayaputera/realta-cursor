@@ -1,0 +1,96 @@
+---
+description: "Direct public API of R_InputComponentBase<TValue> for input components in NET6"
+alwaysApply: false
+---
+
+# R_InputComponentBase<TValue> Direct Public API
+
+- NET6: `R_BlazorFrontEnd.Controls.Base.R_InputComponentBase<TValue>`
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+
+Properties marked with `[EditorRequired]` must be provided when using the component. The compiler and IDE will warn if these properties are missing.
+
+- `Value` - **EditorRequired** - The bound value property (required for all input components) (`TValue`)
+
+### Component-Specific Properties
+
+#### Value Binding Properties
+- `Value` - Bound value property for two-way data binding (`TValue`)
+- `ValueChanged` - Event callback when value changes (`EventCallback<TValue>`)
+- `ValueExpression` - Expression representing the bound value (`Expression<Func<TValue>>?`)
+- `OnChanged` - Generic event callback (`EventCallback<object>`)
+
+#### Event Handlers
+- `OnLostFocused` - Event callback when component loses focus (`EventCallback<object>`)
+
+#### State Properties
+- `ReadOnly` - Read-only state (prevents user editing) (`bool`)
+- `AutoComplete` - Auto-complete behavior (`string`)
+- `Id` - Component identifier (overrides `R_ControlBase.Id`) (`string`)
+
+### Inherited Properties
+
+#### From R_ControlBase
+- Properties from `R_BlazorFrontEnd.Controls.Base.R_ControlBase` - See @r_controlbase.mdc
+  - `Id` - Component identifier (`string`)
+  - `Enabled` - Enable/disable state of the control (`bool`, virtual)
+  - `TabIndex` - Tab order for keyboard navigation (`int`)
+  - `Tooltip` - Tooltip text displayed on hover (`string`)
+
+#### From R_IConductorControl
+- Properties from `R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl` - See @r_ienablecontrol.mdc
+  - `R_ConductorSource` - Conductor binding for single-record forms (`R_Conductor?`)
+  - `R_ConductorGridSource` - Conductor grid binding for grid-based forms (`R_ConductorGrid?`)
+  - `R_EnableAdd` - Enable component in Add mode (`bool`)
+  - `R_EnableEdit` - Enable component in Edit mode (`bool`)
+  - `R_EnableHasData` - Enable component when conductor has data (`bool`)
+  - `R_EnableOther` - Enable component in Normal mode (`bool`)
+
+### Direct Methods
+
+None - This base class provides property-based functionality only.
+
+## Value Binding
+
+Two data binding options are available for input components:
+
+### Option 1: @bind-Value only (Simple Two-Way Binding)
+
+**Use when:** Standard two-way binding without custom logic or side effects.
+
+```razor
+<R_TextBox @bind-Value="@ViewModel.PropertyName" />
+```
+
+**When to use:**
+- Simple data binding
+- No validation needed on change
+- No calculations or side effects required
+- No conditional enabling/disabling of other controls
+
+### Option 2: Value with ValueChanged (Custom Logic on Change)
+
+**Use when:** Need to execute custom logic, calculations, validations, or trigger UI updates when value changes.
+
+**⚠️ CRITICAL:** When using `Value` with `ValueChanged`, you MUST manually update the ViewModel property in the handler. The `@bind-Value` directive automatically handles this, but `ValueChanged` does not.
+
+```razor
+<R_InputComponent Value="@ViewModel.Data.PropertyName"
+                  ValueChanged="@((TValue value) => OnPropertyChanged(value))" />
+```
+
+```csharp
+private void OnPropertyChanged(TValue newValue)
+{
+    ViewModel.PropertyName = newValue; // MANDATORY: Update property or changes won't be saved
+    // Add custom logic (validation, calculations, side effects)
+}
+```
+
+## References
+
+- Base class: `R_BlazorFrontEnd.Controls.Base.R_ControlBase` - See @r_controlbase.mdc
+- Interface: `R_BlazorFrontEnd.Controls.Interfaces.R_IConductorControl` - See @r_ienablecontrol.mdc

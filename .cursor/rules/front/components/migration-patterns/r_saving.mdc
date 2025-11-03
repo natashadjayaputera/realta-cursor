@@ -1,0 +1,70 @@
+---
+description: "Migration pattern for R_Saving (NET4) → R_Conductor/R_Grid R_Saving (NET6)"
+alwaysApply: false
+---
+
+# R_Saving (NET4) → R_Saving (NET6)
+
+- NET4: `R_Saving` on Conductor/Grid
+- NET6: `R_Saving` on `R_Conductor` / `R_Grid<T>` with `R_SavingEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Prepare entity data before save (set CompanyId, UserId, dates, flags, computed values).
+
+## Bindings
+- Conductor: add `R_Saving="Conductor_R_Saving"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_Saving="Grid_R_Saving"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_Saving(R_SavingEventArgs eventArgs)` or `private Task Grid_R_Saving(R_SavingEventArgs eventArgs)`.
+- Data object: `var loData = (MyDto)eventArgs.Data;`.
+- Modify `eventArgs.Data` directly (it's mutable). Use `R_Exception` pattern for error handling.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `peMode` → NET6 `eventArgs.ConductorMode`
+### Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `poGridCellCollection` → NET6 `eventArgs.Data` (cast to DTO)
+- NET4 `peGridMode` → NET6 `eventArgs.ConductorMode`
+## Workaround 
+### (NET4 `poGridCellCollection`)
+- Pattern: NET4 `poGridCellCollection.Item("PROPERTY_NAME").Value` → NET6 `((MyDto)eventArgs.Data).PROPERTY_NAME`
+- Non-Value usages (format/state/metadata): `// TODO: Implement {things to do} for "PROPERTY_NAME"`
+
+## Example
+```csharp
+private Task Conductor_R_Saving(R_SavingEventArgs eventArgs) // OR Grid_R_Saving
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loData = (MyDto)eventArgs.Data;
+        loData.CCOMPANY_ID = R_FrontGlobalVar.COMPANY_ID;
+        loData.CUSER_ID = R_FrontGlobalVar.USER_ID;
+        loData.DUPDATE_DATE = DateTime.Now;
+        if (eventArgs.ConductorMode == R_eConductorMode.AddMode)
+            loData.CMODE = "ADD";
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4: `Private Sub conMain_R_Saving(ByRef poEntity As Object, peMode As R_Conductor.e_Mode) Handles conMain.R_Saving`
+- NET6: `R_Saving="Conductor_R_Saving"` or `R_Saving="Grid_R_Saving"` on Razor component
+
+## Notes
+- Unlike `R_Validation`, `R_Saving` is used to prepare/modify data before save, not to cancel. Modify `eventArgs.Data` directly as needed.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_SavingEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_Saving)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_Saving)

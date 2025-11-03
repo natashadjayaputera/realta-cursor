@@ -1,0 +1,52 @@
+---
+description: "Migration pattern for R_DisplayException (NET4) → R_DisplayException/R_DisplayExceptionAsync (NET6)"
+alwaysApply: false
+---
+
+# R_DisplayException (NET4) → R_DisplayException/R_DisplayExceptionAsync (NET6)
+
+- NET4: `R_DisplayException` method on `R_FormBase` for displaying exception messages
+- NET6: `R_DisplayException` (sync) or `R_DisplayExceptionAsync` (async) methods on `R_Page`
+
+## Pattern
+
+**NET4 VB.NET:**
+```vb
+If loEx.Haserror Then
+    Me.R_DisplayException(loEx)
+End If
+```
+
+**NET6 C# (Synchronous):**
+```csharp
+R_DisplayException(loEx);
+// OR
+this.R_DisplayException(loEx);
+```
+
+**NET6 C# (Asynchronous):**
+```csharp
+await R_DisplayExceptionAsync(loEx);
+```
+
+## NET4 → NET6 Mapping
+
+- NET4: `Me.R_DisplayException(loEx)` → NET6: `R_DisplayException(loEx)` (sync) or `await R_DisplayExceptionAsync(loEx)` (async)
+- NET4: `R_DisplayException(loEx)` → NET6: `R_DisplayException(loEx)` (sync) or `await R_DisplayExceptionAsync(loEx)` (async)
+- NET4 conditional check `If loEx.Haserror Then` → NET6: Direct call (method handles error checking internally)
+
+## Usage Guidelines
+
+- Use **synchronous** `R_DisplayException(loEx)` in synchronous methods
+- Use **asynchronous** `await R_DisplayExceptionAsync(loEx)` in async methods or lifecycle overrides
+- Both methods display exception messages to the user via UI dialog/notification
+
+## Notes
+
+- `R_DisplayException` replaces NET4 WinForms error display with Blazor UI error display
+- Available on all `R_Page` derived classes (.razor.cs files)
+- Works with `R_Exception` objects populated via standard error handling pattern
+
+## References
+
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.yml`

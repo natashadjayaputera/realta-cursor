@@ -1,0 +1,60 @@
+---
+description: "Migration pattern for R_BeforeAdd (NET4) → R_Conductor/R_Grid R_BeforeAdd (NET6)"
+alwaysApply: false
+---
+
+# R_BeforeAdd (NET4) → R_BeforeAdd (NET6)
+
+- NET4: `R_BeforeAdd` on Conductor/Grid
+- NET6: `R_BeforeAdd` on `R_Conductor` / `R_Grid<T>` with `R_BeforeAddEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Pre-initialize defaults, set focus, perform quick pre-checks; optionally cancel add.
+
+## Bindings
+- Conductor: add `R_BeforeAdd="Conductor_R_BeforeAdd"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_BeforeAdd="Grid_R_BeforeAdd"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_BeforeAdd(R_BeforeAddEventArgs eventArgs)` or `private Task Grid_R_BeforeAdd(R_BeforeAddEventArgs eventArgs)`.
+- To cancel add set `eventArgs.Cancel = true`.
+
+## Parameter mapping
+### Conductor
+- NET4 `plCancel` → NET6 `eventArgs.Cancel`
+### Grid
+- NET4 `plAllowAdd` → NET6 `eventArgs.Cancel`
+
+## Example
+```csharp
+private Task Grid_R_BeforeAdd(R_BeforeAddEventArgs eventArgs) // OR Conductor_R_BeforeAdd
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // initialize defaults, set focus
+        // if validation fails: eventArgs.Cancel = true;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_BeforeAdd(ByRef plCancel As Boolean) Handles conMain.R_BeforeAdd`
+  - `Private Sub gvMain_R_BeforeAdd(ByRef plAllowAdd As Boolean) Handles gvMain.R_BeforeAdd`
+- NET6 Razor usage:
+  - Grid: `R_BeforeAdd="Grid_R_BeforeAdd"`
+  - Conductor: `R_BeforeAdd="Conductor_R_BeforeAdd"`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeAddEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_BeforeAdd)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_BeforeAdd)
+

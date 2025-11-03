@@ -1,0 +1,95 @@
+---
+description: "Migration pattern for R_LockUnlock (NET4) → R_LockUnlock (NET6)"
+alwaysApply: false
+---
+
+# R_LockUnlock (NET4) → R_LockUnlock (NET6)
+
+- NET4: Event handler `R_LockUnlock` on `R_FormBase`
+- NET6: Override method `R_LockUnlock` on `R_Page` with `R_LockUnlockEventArgs`
+
+## Use
+- Pages that require record locking/unlocking to prevent concurrent edits.
+- Lock records when entering CRUD mode, unlock when canceling or saving.
+
+## Handler
+- Override: `protected async override Task<bool> R_LockUnlock(R_LockUnlockEventArgs eventArgs)`.
+- Data object: `var loData = (MyDto)eventArgs.Data;`.
+- Create client: `var loCls = new R_LockingServiceClient(pcModuleName: DEFAULT_MODULE_NAME, plSendWithContext: true, plSendWithToken: true, pcHttpClientName: DEFAULT_HTTP_NAME);`.
+- Lock: `eventArgs.Mode == R_eLockUnlock.Lock` → call `await loCls.R_Lock(loLockPar)`.
+- Unlock: `eventArgs.Mode == R_eLockUnlock.Unlock` → call `await loCls.R_UnLock(loUnlockPar)`.
+- Return `loLockResult.IsSuccess`.
+- Using: `using R_LockingFront; using R_CommonFrontBackAPI;`
+
+## Parameter mapping
+- NET4 `peLockUnlock` → NET6 `eventArgs.Mode` (R_eLockUnlock)
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `plSuccessLockUnlock` (ByRef) → NET6 return value `Task<bool>`
+- NET4 `R_LockPar` → NET6 `R_ServiceLockingLockParameterDTO`
+- NET4 `R_UnlockPar` → NET6 `R_ServiceLockingUnLockParameterDTO`
+- NET4 `R_LockingResult` → NET6 `R_LockingFrontResult`
+- NET4 `U_GlobalVar.CompId/UserId` → NET6 `ClientHelper.CompanyId/UserId`
+
+## Example
+```csharp
+protected async override Task<bool> R_LockUnlock(R_LockUnlockEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    var llRtn = false;
+    R_LockingFrontResult loLockResult = null;
+    try
+    {
+        var loData = (MyDto)eventArgs.Data;
+        var loCls = new R_LockingServiceClient(pcModuleName: DEFAULT_MODULE_NAME,
+            plSendWithContext: true, plSendWithToken: true, pcHttpClientName: DEFAULT_HTTP_NAME);
+        if (eventArgs.Mode == R_eLockUnlock.Lock)
+        {
+            var loLockPar = new R_ServiceLockingLockParameterDTO
+            {
+                Company_Id = ClientHelper.CompanyId,
+                User_Id = ClientHelper.UserId,
+                Program_Id = "PROGRAM_ID",
+                Table_Name = "TABLE_NAME",
+                Key_Value = string.Join("|", ClientHelper.CompanyId, loData.KEY_FIELD)
+            };
+            loLockResult = await loCls.R_Lock(loLockPar);
+        }
+        else
+        {
+            var loUnlockPar = new R_ServiceLockingUnLockParameterDTO
+            {
+                Company_Id = ClientHelper.CompanyId,
+                User_Id = ClientHelper.UserId,
+                Program_Id = "PROGRAM_ID",
+                Table_Name = "TABLE_NAME",
+                Key_Value = string.Join("|", ClientHelper.CompanyId, loData.KEY_FIELD)
+            };
+            loLockResult = await loCls.R_UnLock(loUnlockPar);
+        }
+        llRtn = loLockResult.IsSuccess;
+        if (!loLockResult.IsSuccess && loLockResult.Exception != null)
+            throw loLockResult.Exception;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return llRtn;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub ProgramName_R_LockUnlock(peLockUnlock As R_eLockUnlock, poEntity As Object, ByRef plSuccessLockUnlock As Boolean) Handles Me.R_LockUnlock`
+- NET6 Razor usage:
+  - Override: `protected async override Task<bool> R_LockUnlock(R_LockUnlockEventArgs eventArgs)`
+
+## Notes
+- Requires `using R_LockingFront;` and `[Inject] IClientHelper ClientHelper { get; set; }`.
+- Client must be instantiated per call with module name and HTTP client name constants.
+- Key_Value typically combines CompanyId with entity key fields joined by `|`.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_LockUnlockEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Pages.R_Page.yml` (R_LockUnlock)

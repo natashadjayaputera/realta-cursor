@@ -1,0 +1,64 @@
+---
+description: "Migration pattern for R_ConvertToGridEntity (NET4) → R_Conductor/R_Grid R_ConvertToGridEntity (NET6)"
+alwaysApply: false
+---
+
+# R_ConvertToGridEntity (NET4) → R_ConvertToGridEntity (NET6)
+
+- NET4: `R_ConvertToGridEntity` on Conductor
+- NET6: `R_ConvertToGridEntity` on `R_Conductor` with `R_ConvertToGridEntityEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` and `R_Grid` with `R_ConductorSource="@_conductorRef" R_GridType="@R_eGridType.Navigator"` when conductor entity needs conversion to grid entity format.
+- Transform conductor DTO to grid DTO with additional computed or formatted fields before displaying in grid.
+
+## Bindings
+- Conductor: add `R_ConvertToGridEntity="Conductor_ConvertToGridEntity"` (+ usual services, `R_ViewModel`).
+
+## Handler
+- Prefer: `private Task Conductor_ConvertToGridEntity(R_ConvertToGridEntityEventArgs eventArgs)`.
+- Data object: `var loEntity = (MyDto)eventArgs.Data;`.
+- Convert to grid entity: `var loGridEntity = R_FrontUtility.ConvertObjectToObject<MyDto, MyGridDto>(loEntity);`.
+- Set result: `eventArgs.GridData = loGridEntity;`.
+
+## Parameter mapping
+### Conductor/Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `poGridEntity` (ByRef) → NET6 `eventArgs.GridData`
+
+## Example
+```csharp
+private Task Conductor_ConvertToGridEntity(R_ConvertToGridEntityEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loEntity = (MyDto)eventArgs.Data;
+        var loGridEntity = R_FrontUtility.ConvertObjectToObject<MyDto, MyGridDto>(loEntity);
+        // Optional: modify grid entity properties
+        loGridEntity.CDISPLAY_FIELD = loGridEntity.CNAME + '(' + loGridEntity.CID + ')';
+        eventArgs.GridData = loGridEntity;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_ConvertToGridEntity(poEntity As Object, ByRef poGridEntity As Object) Handles conMain.R_ConvertToGridEntity`
+- NET6 Razor usage:
+  - Conductor: `R_ConvertToGridEntity="Conductor_ConvertToGridEntity"`
+
+## Notes
+- NET4 uses `R_Utility.R_ConvertObjectToObject`; NET6 uses `R_FrontUtility.ConvertObjectToObject`.
+- Always set `eventArgs.GridData` with the converted grid entity so the control receives the transformed data.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_ConvertToGridEntityEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_ConvertToGridEntity)

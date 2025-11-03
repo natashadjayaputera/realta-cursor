@@ -1,0 +1,47 @@
+---
+description: "Migration pattern for R_Utility.R_GetMessage (NET4) → R_FrontUtility.R_GetMessage (NET6 Front/ViewModel) or R_Utility.R_GetMessage (NET6 Back)"
+alwaysApply: false
+---
+
+# R_GetMessage (NET4) → R_GetMessage (NET6)
+
+- NET4: `R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "ResourceKey")` retrieves localized strings from resource files.
+- NET6 Front: inject `[Inject] R_ILocalizer<{ProgramName}FrontResources.Resources_Dummy_Class> Localizer { get; set; } = default!;` in `.razor.cs` and use `Localizer["ResourceKey"]` (accessible in `.razor` as `@Localizer["ResourceKey"]`).
+- NET6 ViewModel: call `R_FrontUtility.R_GetMessage(typeof(Resources_Dummy_Class), "ResourceKey")`.
+- NET6 Back: call `R_Utility.R_GetMessage(typeof(Resources_Dummy_Class), "ResourceKey")`.
+- Requires `using R_BlazorFrontEnd.Helpers;` for NET6 ViewModel usage.
+
+## Example
+```csharp
+// NET4 VB.NET
+Private ReadOnly Property ButtonSubmitText As String
+    Get
+        Return R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "ButtonSubmitText")
+    End Get
+End Property
+Dim lcErrorMsg = R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "ErrorMessageKey")
+
+// NET6 C# - Front .razor.cs
+[Inject] R_ILocalizer<FAM00100FrontResources.Resources_Dummy_Class> Localizer { get; set; } = default!;
+
+// NET6 C# - Front .razor
+<R_Label>@Localizer["ButtonSubmitText"]</R_Label>
+
+// NET6 C# - ViewModel
+var lcMessage = R_FrontUtility.R_GetMessage(typeof(Resources_Dummy_Class), "ErrorMessageKey");
+
+// NET6 C# - Back
+var lcMessage = R_Utility.R_GetMessage(typeof(Resources_Dummy_Class), "ResourceKey");
+```
+
+## NET4 → NET6 mapping
+- NET4 Front/Back: `R_Utility.R_GetMessage(GetType(...), ...)` → NET6 Front/ViewModel: `R_FrontUtility.R_GetMessage(typeof(...), ...)`.
+- NET4 Back: `R_Utility.R_GetMessage(GetType(...), ...)` → NET6 Back: `R_Utility.R_GetMessage(typeof(...), ...)`.
+- `GetType()` VB.NET syntax → `typeof()` C# syntax (same functionality).
+
+## Notes
+- Front layer (`.razor` and `.razor.cs`) uses Localizer injection; ViewModel layer uses `R_FrontUtility.R_GetMessage()`.
+- Back layer continues using `R_Utility.R_GetMessage()` (only syntax conversion from `GetType()` to `typeof()`).
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Helpers.R_FrontUtility.yml` (R_GetMessage method)

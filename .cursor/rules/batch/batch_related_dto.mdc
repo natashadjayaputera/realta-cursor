@@ -1,0 +1,43 @@
+---
+description: "ToCSharpCommon, ToCSharpViewModel, & ToCSharpFront: Batch related DTOs needed for batch data display in .razor.cs and .razor, batch data manipulation in BatchViewModel, and batch data processing in Back Project"
+alwaysApply: false
+---
+
+# DTO that must be created
+MUST CREATE THIS DTO:
+- {ProgramName}BatchPageParameterDTO -> OPTIONAL: ParameterDTO for Batch Page passed in `R_Init_From_Master`.
+- {BatchListDTO} -> Main DTO used in `_BatchProcessAsync` in `{ProgramName}BatchCls`
+- {BatchListDisplayDTO} -> DTO used to show data in R_Grid Component in `*.razor`
+- {BatchListExcelDTO} -> DTO to get excel rows data, property names are based on Excel File Headers, usually in PascalCase. MUST have "Notes" (string) property
+- R_SaveBatchUserParameterDTO -> DTO containing ALL custom user parameters needed by `_BatchProcessAsync` (excluding CCOMPANY_ID and CUSER_ID)
+- R_SaveBatchParameterDTO -> DTO used as parameter of `R_SaveBatchAsync` in BatchViewModel
+
+## R_SaveBatchParameterDTO Structure
+```csharp
+public class R_SaveBatchParameterDTO
+{
+    public string CCOMPANY_ID { get; set; } = string.Empty;
+    public string CUSER_ID { get; set; } = string.Empty;
+    public R_SaveBatchUserParameterDTO UserParameters { get; set; } = new R_SaveBatchUserParameterDTO();
+    public List<{BatchListDisplayDTO}>? Data { get; set; }
+}
+```
+
+## R_SaveBatchUserParameterDTO Structure
+```csharp
+public class R_SaveBatchUserParameterDTO
+{
+    // Add ALL custom parameters needed by backend _BatchProcessAsync
+    // Example: VAR_CRECID, LJRNGRP_MODE, LDEPT_MODE, etc.
+    // DO NOT include CCOMPANY_ID or CUSER_ID (already in R_SaveBatchParameterDTO)
+}
+```
+
+# Checklist:
+- [ ] If `_BatchProcessAsync` uses SP and Temp Table, {BatchListDTO} MUST match to Table Columns Name.
+- [ ] If batch is not excel based, {BatchListDisplayDTO} can just use the same DTO as {BatchListDTO} as long as all the properties are the same. 
+- [ ] If using R_GridCheckBoxSelectColumn, then add "LSELECTED" (bool) property in {BatchListDisplayDTO}.
+- [ ] If batch is excel based, {BatchListDisplayDTO} MUST inherit {BatchListExcelDTO} with 3 additional properties, "No" (int), "Valid" (string)
+- [ ] R_SaveBatchParameterDTO must include: string CCOMPANY_ID, string CUSER_ID, R_SaveBatchUserParameterDTO UserParameters, List<{BatchListDisplayDTO}> Data properties.
+- [ ] R_SaveBatchUserParameterDTO must include ALL custom user parameters needed in `_BatchProcessAsync` in `{ProgramName}BatchCls` (do NOT include CCOMPANY_ID or CUSER_ID)
+- [ ] CCOMPANY_ID and CUSER_ID are set in R_BatchParameter.COMPANY_ID and R_BatchParameter.USER_ID, NOT in UserParameters list

@@ -1,0 +1,52 @@
+---
+description: "Migration pattern for R_AfterDelete (NET4) → R_Conductor/R_Grid R_AfterDelete (NET6)"
+alwaysApply: false
+---
+
+# R_AfterDelete (NET4) → R_AfterDelete (NET6)
+
+- NET4: `R_AfterDelete` on Conductor/Grid
+- NET6: `R_AfterDelete` on `R_Conductor` / `R_Grid<T>` (no args `EventCallback`)
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Typical: clear UI fields, reset selection/state, toggle buttons when list becomes empty.
+
+## Bindings
+- Conductor: add `R_AfterDelete="Conductor_AfterDelete"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_AfterDelete="Grid_AfterDelete"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_AfterDelete()` or `private Task Grid_AfterDelete()`.
+- Async allowed if needed: `private async Task Conductor_AfterDelete()`.
+
+## Parameter mapping
+- NET4: no parameters → NET6: no parameters
+
+## Example
+```csharp
+private Task Grid_AfterDelete() // OR Conductor_AfterDelete
+{
+    // Example pattern seen across solutions: disable/toggle when list becomes empty
+    if (loViewModel.loItemList.Count == 0)
+    {
+        IsActionEnabled = false;
+        // clear dependent fields, reset selection, etc.
+    }
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_AfterDelete() Handles conMain.R_AfterDelete`
+  - `Private Sub gvMain_R_AfterDelete() Handles gvMain.R_AfterDelete`
+- NET6 Razor usage:
+  - Grid: `R_AfterDelete="Grid_AfterDelete"`
+  - Conductor: `R_AfterDelete="Conductor_AfterDelete"`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_AfterDelete: EventCallback)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_AfterDelete: EventCallback)
+- NET4 examples: `net4/FA Smart Client/Development/Front/*/*.vb` (e.g., `FAT00100.vb`, `FAT01100.vb`, `FAM00500.vb`)
+

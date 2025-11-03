@@ -1,0 +1,32 @@
+---
+description: "Migration pattern for R_ConductorSource, R_ConductorGridSource, and R_Enable* properties (NET4 → NET6), these properties are part of R_IEnableControl (NET6)"
+alwaysApply: false
+---
+
+# R_ConductorSource / R_ConductorGridSource / R_Enable* Properties
+
+- NET4: `R_ConductorSource`, `R_ConductorGridSource`, `R_EnableADD`, `R_EnableEDIT`, `R_EnableHASDATA`, `R_EnableOTHER`
+- NET6: `R_ConductorSource`, `R_ConductorGridSource`, `R_EnableAdd`, `R_EnableEdit`, `R_EnableHasData`, `R_EnableOther`
+
+## When to use
+- Buttons/components that need to be enabled/disabled based on conductor/grid state
+- Custom buttons integrated with conductor (use R_ConductorSource with R_EnableOther)
+- Components that respond to conductor mode changes
+
+## Parameter mapping (NET4 → NET6)
+- R_ConductorSource → R_ConductorSource (bind to R_Conductor reference)
+- R_ConductorGridSource → R_ConductorGridSource (bind to R_ConductorGrid reference)
+- R_EnableADD → R_EnableAdd (enables in Add mode)
+- R_EnableEDIT → R_EnableEdit (enables in Edit mode)
+- R_EnableHASDATA → R_EnableHasData (enables when has data)
+- R_EnableOTHER → R_EnableOther (enables via Normal mode)
+
+## Notes
+- NET4 uses UPPERCASE (R_EnableADD, R_EnableEDIT, R_EnableHASDATA, R_EnableOTHER). NET6 uses PascalCase (R_EnableAdd, R_EnableEdit, R_EnableHasData, R_EnableOther).
+- All R_Enable* properties require `R_ConductorSource` or `R_ConductorGridSource` to be set.
+- **R_EnableAdd/R_EnableEdit cannot be used with R_EnableOther** (mutually exclusive).
+- R_EnableHasData can be combined with others.
+
+## Anti-patterns
+- Combining R_EnableAdd/R_EnableEdit with R_EnableOther (mutually exclusive)
+- Using R_Enable* properties without setting R_ConductorSource or R_ConductorGridSource

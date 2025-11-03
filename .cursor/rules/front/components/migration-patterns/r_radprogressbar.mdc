@@ -1,0 +1,63 @@
+---
+description: "Migration pattern for R_RadProgressBar (NET4) → R_ProgressBar (NET6)"
+alwaysApply: false
+---
+
+# R_RadProgressBar → R_ProgressBar
+
+- NET4: `R_FrontEnd.R_RadProgressBar`
+- NET6: `R_BlazorFrontEnd.Controls.R_ProgressBar`
+
+## When to use
+- Display progress during batch processing operations
+- Upload/process operations showing completion percentage
+- Long-running operations requiring progress feedback
+
+## Bindings
+- Typically bound to ViewModel properties or component state
+- Progress values updated via callbacks from service operations
+
+## NET6 Direct Public API
+
+### Component-Specific Properties
+- `MaxValue` - Maximum value for progress bar (`int`)
+- `Value` - Current progress value (`int`)
+- `Label` - Label text displayed with progress bar (`string`)
+- `Class` - CSS class names - See @r_basecomponent.mdc
+- `Style` - Inline CSS styles - See @r_basecomponent.mdc
+- `AdditionalAttributes` - Additional HTML attributes
+
+### Inherited Properties
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+
+## Parameter mapping (NET4 → NET6)
+- R_RadProgressBar.Maximum → R_ProgressBar.MaxValue
+- R_RadProgressBar.Value → R_ProgressBar.Value
+- R_RadProgressBar.Text → R_ProgressBar.Label
+- R_RadProgressBar.Name → Not applicable
+- R_RadProgressBar.Location/Size → Not applicable; use `Class`/`Style`/CSS
+- Styling/extra attrs → R_ProgressBar.Class, Style, AdditionalAttributes
+
+## Examples
+
+### NET4 (VB.NET)
+```vb
+' Designer: R_RadProgressBar1 with Maximum=100, Value=0, Text=""
+Private Sub R_ProcessAndUploadClient_ProgressChanged(sender As Object, e As EventArgs)
+    R_RadProgressBar1.Value = pnProgress
+    R_RadProgressBar1.Text = String.Format("Processing {0}%", pnProgress)
+End Sub
+```
+
+### NET6 (C# Blazor)
+```razor
+<R_ProgressBar Label="@_viewModel.Message" 
+              MaxValue="100" 
+              Value="@_viewModel.Percentage">
+</R_ProgressBar>
+```
+
+## Anti-patterns
+- Using Location/Size properties (not applicable in Blazor; use Class/Style instead)
+- Setting Maximum attribute instead of MaxValue
+- Setting Text attribute instead of Label

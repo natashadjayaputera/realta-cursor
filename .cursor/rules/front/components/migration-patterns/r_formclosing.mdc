@@ -1,0 +1,63 @@
+---
+description: "Migration pattern for R_FormClosing (NET4) → R_PageClosing (NET6)"
+alwaysApply: false
+---
+
+# R_FormClosing (NET4) → R_PageClosing (NET6)
+
+- NET4: `Private Sub ClassName_R_FormClosing(ByRef e As Object) Handles Me.R_FormClosing` event handler.
+- NET6: override `protected override Task R_PageClosing(R_PageClosingEventArgs eventArgs)` in `.razor.cs`.
+
+## Use
+- Cleanup logic and set popup results when page/form closes. Common in popup pages returning data to parent.
+
+## Bindings
+- Override in `.razor.cs` that inherits `R_Page`; no UI bindings required.
+
+## Handler
+- Override: `protected override async Task R_PageClosing(R_PageClosingEventArgs eventArgs)`. Prevent closing: `eventArgs.Cancel = true`. Set result: `await Close(bool plSuccess, object? poResult)`.
+
+## Parameter mapping
+- NET4 `e` → NET6 `R_PageClosingEventArgs eventArgs`. NET4 `R_SetPopUpResult(OK)` → NET6 `await Close(true, poResult)`. NET4 `R_SetPopUpEntityResult(object)` → NET6 `await Close(true, poEntity)`.
+
+## Example
+```csharp
+// NET4 VB.NET
+Private Sub FAT02100_R_FormClosing(ByRef e As Object) Handles Me.R_FormClosing
+    Dim loex As New R_Exception
+    Try
+        If lProses = True Then
+            CType(Me.Owner, R_FormBase).R_SetPopUpResult(Windows.Forms.DialogResult.OK)
+            CType(Me.Owner, R_FormBase).R_SetPopUpEntityResult(txtCdReason.Text)
+        Else
+            CType(Me.Owner, R_FormBase).R_SetPopUpResult(Windows.Forms.DialogResult.Cancel)
+        End If
+    Catch ex As Exception
+        loex.Add(ex)
+    End Try
+    If loex.Haserror Then Me.R_DisplayException(loex)
+End Sub
+
+// NET6 C# - Page Code-Behind (.razor.cs)
+protected override async Task R_PageClosing(R_PageClosingEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (lProses == true) await Close(true, txtCdReason.Text);
+        else await Close(false, null);
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping
+- NET4 `Handles Me.R_FormClosing` → NET6 override `R_PageClosing`. NET4 `R_SetPopUpResult`/`R_SetPopUpEntityResult` → NET6 `Close(bool plSuccess, object? poResult)`. NET4 parameter unused → NET6 `eventArgs.Cancel = true`.
+
+## Notes
+- `R_PageClosing` called before page closes; use `eventArgs.Cancel = true` to prevent. NET6 `Close(plSuccess, poResult)` replaces both: `plSuccess = true` (OK), `false` (Cancel). `poResult` returns data via `R_AfterOpenPopupEventArgs.Result`.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.yml` (R_PageClosing, Close)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_PageClosingEventArgs.yml`

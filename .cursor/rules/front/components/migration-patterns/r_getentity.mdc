@@ -1,0 +1,54 @@
+---
+description: "Migration pattern for R_GetEntity (NET4) → R_Conductor/R_ConductorGrid R_GetEntity (NET6)"
+alwaysApply: false
+---
+
+# R_GetEntity (NET4) → R_GetEntity (NET6)
+
+- NET4: `conMain.R_GetEntity(poEntity)` called synchronously on conductor control.
+- NET6: `await _conductorRef.R_GetEntity(poEntity)` called asynchronously on conductor reference.
+
+## Use
+- Load entity data into `R_Conductor` from parameter DTO or current entity.
+- Common in form initialization, navigation events, and detail form return scenarios.
+- Used to refresh conductor with specific entity data.
+
+## Bindings
+- Conductor reference: `@ref="_conductorRef"` in Razor markup.
+- Requires `R_Conductor` component in markup.
+
+## Handler
+- NET4: `conMain.R_GetEntity(loParam)` (synchronous, direct call).
+- NET6: `await _conductorRef.R_GetEntity(loParam);` with null check: `if (_conductorRef is not null) { await _conductorRef.R_GetEntity(loParam); }`.
+- Works in async methods; commonly used in initialization, event handlers, and navigation callbacks.
+
+## Parameter mapping
+- NET4 `poEntity` → NET6 `poEntity` (object/DTO parameter, same).
+- NET4 synchronous call → NET6 async call with `await`.
+
+## Example
+```csharp
+// NET4 VB.NET
+ConMain.R_GetEntity(loParam)
+conForm.R_GetEntity(bsForm.Current)
+
+// NET6 C# 
+if (_conductorRef is not null)
+{
+    await _conductorRef.R_GetEntity(loParam);
+}
+```
+
+## NET4 → NET6 mapping
+- NET4: direct synchronous call on conductor control instance (`conMain`, `conForm`).
+- NET6: async method call via conductor reference (`_conductorRef`) with await pattern.
+
+## Notes
+- NET6 method returns `Task` and must be awaited.
+- Always check conductor reference for null before calling in NET6.
+- Works identically for `R_Conductor` and `R_ConductorGrid` components.
+- Parameter can be DTO object or null for initial load.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_GetEntity method)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid.yml` (R_GetEntity method)

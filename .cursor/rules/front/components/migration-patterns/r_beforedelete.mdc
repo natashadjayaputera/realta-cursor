@@ -1,0 +1,59 @@
+---
+description: "Migration pattern for R_BeforeDelete (NET4) → R_Conductor/R_Grid R_BeforeDelete (NET6)"
+alwaysApply: false
+---
+
+# R_BeforeDelete (NET4) → R_BeforeDelete (NET6)
+
+- NET4: `R_BeforeDelete` on Conductor/Grid
+- NET6: `R_BeforeDelete` on `R_Conductor` / `R_Grid<T>` with `R_BeforeDeleteEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Validate delete constraints, ask confirmations, block delete when prerequisites fail.
+
+## Bindings
+- Conductor: add `R_BeforeDelete="Conductor_R_BeforeDelete"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_BeforeDelete="Grid_R_BeforeDelete"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs)` or `private Task Grid_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs)`.
+- To cancel delete (NET4 `plCancel=True` or `plAllowDelete=False`): set `eventArgs.Cancel = true`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data` (typed to grid row/entity type)
+- NET4 `plCancel` → NET6 `eventArgs.Cancel`
+### Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data` (typed to grid row/entity type)
+- NET4 `plAllowDelete` → NET6 `eventArgs.Cancel`
+
+## Example
+```csharp
+private Task Grid_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs) // OR Conductor_R_BeforeDelete
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // inspect eventArgs.Data; if rule fails:
+        // eventArgs.Cancel = true;
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_BeforeDelete(poEntity As Object, ByRef plCancel As Boolean) Handles conMain.R_BeforeDelete`
+  - `Private Sub gvMain_R_BeforeDelete(poEntity As Object, ByRef plAllowDelete As Boolean) Handles gvMain.R_BeforeDelete`
+- NET6 Razor usage:
+  - Grid: `R_BeforeDelete="Grid_R_BeforeDelete"`
+  - Conductor: `R_BeforeDelete="Conductor_R_BeforeDelete"`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeDeleteEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_BeforeDelete)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_BeforeDelete)
+

@@ -1,0 +1,49 @@
+---
+description: "Migration pattern for R_CloseProgram (NET4) → R_Page.CloseProgramAsync (NET6)"
+alwaysApply: false
+---
+
+# R_CloseProgram (NET4) → CloseProgramAsync (NET6)
+
+- NET4: `Me.R_CloseProgram()` closes the current form after cancel, validation stop, or end-of-flow.
+- NET6: call `await CloseProgramAsync()` from the page (`R_Page`) code-behind (`.razor.cs`).
+
+## Use
+- Typical triggers: Cancel button, post-validation failure, finish/exit actions.
+- Should be invoked from the Razor page class (not from ViewModel).
+
+## Bindings
+- Wire a UI element (e.g., `R_Button`) to a handler in `.razor.cs` that calls `CloseProgramAsync()`.
+
+## Handler
+- Prefer async handler: `private async Task OnCancel()` (or similar UI event handler).
+- Follow solution error handling with `R_Exception`.
+
+## Example
+```csharp
+private async Task OnCancel()
+{
+    var loEx = new R_Exception();
+    try
+    {
+        await CloseProgramAsync();
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping
+- NET4 VB usage: calls appear in Cancel-click handlers or after certain condition checks.
+- NET6 Razor usage: replace with `await CloseProgramAsync()` inside the page code-behind handler.
+
+## Notes
+- Keep business logic unchanged; only migrate the UI-close call site.
+- Do not place close logic in ViewModel; keep it in the page.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.yml` (CloseProgramAsync)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.html` (method documentation)

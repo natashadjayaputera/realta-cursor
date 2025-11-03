@@ -5,9 +5,17 @@ globs: "*ToCSharpViewModel*"
 ---
 # CRUD Pattern
 
+## ⚠️ CRITICAL RULES:
+1. **DO NOT return values** from CRUD methods - Store results in properties
+2. **Method names**: `GetRecordAsync()`, `SaveRecordAsync()`, `DeleteRecordAsync()`
+3. **Always use `CurrentRecord` property** to store single entity results
+4. **Use C# 8.0 compatible syntax** - Explicit types, not `new()`
+
 Each CRUD method follows this template:
 
 ```csharp
+// C# 8.0 Compatible - Use explicit type names
+private readonly FAM00100Model _model = new FAM00100Model();  // NOT new()
 public FAM00100DTO CurrentRecord { get; set; } = new FAM00100DTO();
 
 public async Task GetRecordAsync(FAM00100DTO poEntity)

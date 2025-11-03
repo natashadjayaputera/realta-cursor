@@ -1,0 +1,44 @@
+---
+description: "Migration pattern for R_Utility static class (NET4) → R_FrontUtility/R_Utility/R_NetCoreUtility/R_FrontContext (NET6)"
+alwaysApply: false
+---
+
+# R_Utility (NET4) → Migration Overview (NET6)
+
+- NET4: `R_Utility` static class provides utility methods for resources, conversions, streaming context, file I/O, and serialization.
+- NET6: Methods split across `R_FrontUtility` (Front/ViewModel), `R_Utility` (Back), `R_NetCoreUtility` (Back/FrontBack), and `R_FrontContext` (streaming).
+
+## Method Mapping
+
+| NET4 Method | NET6 Front/ViewModel | NET6 Back | Notes |
+|------------|---------------------|-----------|-------|
+| `R_GetError` | `R_FrontUtility.R_GetError` | `R_Utility.R_GetError` | Error resource retrieval |
+| `R_GetMessage` | `Localizer["key"]` (razor) / `R_FrontUtility.R_GetMessage` (code) | `R_Utility.R_GetMessage` | Message resource retrieval |
+| `R_ConvertTo` | `R_FrontUtility.R_ConvertTo` | `R_Utility.R_ConvertTo` | DataTable to DTO conversion |
+| `R_ConvertObjectToObject` | `R_FrontUtility.ConvertObjectToObject` | `R_Utility.R_ConvertObjectToObject` | Object type conversion |
+| `R_ConvertCollectionToCollection` | `R_FrontUtility.ConvertCollectionToCollection` | `R_Utility.R_ConvertCollectionToCollection` | Collection type conversion |
+| `R_SetStreamingContext` | `R_FrontContext.R_SetStreamingContext` | N/A | Streaming context setter (Front only) |
+| `R_GetStreamingContext` | N/A | `R_Utility.R_GetStreamingContext` | Streaming context getter (Back only) |
+| `R_CombineData` | Use streaming pattern | Use streaming pattern | Deprecated, replaced by streaming API |
+| `GetByteFromFile` | `R_NetCoreUtility.R_SerializeFileToByte` | `R_NetCoreUtility.R_SerializeFileToByte` | File to byte array |
+| `ConvertByteToFile` | `R_NetCoreUtility.R_DeserializeFileFromByte` | `R_NetCoreUtility.R_DeserializeFileFromByte` | Byte array to file |
+| `Deserialize` | `R_FrontUtility.DeserializeObjectFromByte<T>` | `R_NetCoreUtility.R_DeserializeObjectFromByte<T>` | Byte array to object |
+| `R_CloneObject` | `R_NetCoreUtility.R_CloneObject` | `R_NetCoreUtility.R_CloneObject` | Object cloning |
+| `R_ChunkByteArray` | `R_NetCoreUtility.R_ChunkByteArray` | `R_NetCoreUtility.R_ChunkByteArray` | Byte array chunking |
+
+## Layer Separation Rules
+
+- **Front/ViewModel**: Use `R_FrontUtility` for conversion and resource methods. Use `R_FrontContext` for streaming context. Use `R_NetCoreUtility` for file I/O and serialization.
+- **Back**: Use `R_Utility` for resources and conversions. Use `R_NetCoreUtility` for file I/O, serialization, cloning, and chunking.
+- **Razor Pages**: Use `Localizer` injection instead of `R_GetMessage` for better Blazor integration.
+
+## Syntax Changes
+
+- NET4 `GetType(Class)` → NET6 `typeof(Class)` (C# syntax).
+- NET4 `(Of T)` → NET6 `<T>` (generic syntax).
+- Method names unchanged except `R_ConvertObjectToObject` → `ConvertObjectToObject` (no `R_` prefix in Front).
+
+## References
+
+- Detailed patterns: `r_geterror.mdc`, `r_getmessage.mdc`, `r_convertto.mdc`, `r_convertobjecttoobject.mdc`, `r_convertcollectiontocollection.mdc`, `r_setstreamingcontext.mdc`, `r_combinedata.mdc`
+- Documentation: `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Helpers.R_FrontUtility.yml`, `.cursor/docs/net6/RealtaLibrary/R_CommonFrontBackAPI.R_NetCoreUtility.yml`

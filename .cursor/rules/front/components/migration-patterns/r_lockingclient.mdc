@@ -1,0 +1,100 @@
+---
+description: "Migration pattern for R_LockingClient (NET4) → R_LockingServiceClient (NET6)"
+alwaysApply: false
+---
+
+# R_LockingClient (NET4) → R_LockingServiceClient (NET6)
+
+- NET4: Static class `R_LockingClient` with methods `R_Lock()` and `R_Unlock()` for direct locking operations
+- NET6: Instance-based `R_LockingServiceClient` with async methods `R_Lock()` and `R_UnLock()` requiring instantiation
+
+## Use
+
+- Direct locking/unlocking operations outside of the `R_LockUnlock` event handler
+- Manual lock management when you need explicit control over lock/unlock timing
+- For automatic locking via `R_Conductor`/`R_Grid`, prefer overriding `R_LockUnlock` method (see `@r_lockunlock.mdc`)
+
+## Migration Pattern
+
+- **NET4**: Static calls: `R_LockingClient.R_Lock(loParLock)` / `R_LockingClient.R_Unlock(loParUnlock)`
+- **NET6**: Instantiate client, then async calls: `await loCls.R_Lock(loLockPar)` / `await loCls.R_UnLock(loUnlockPar)`
+
+## Parameter mapping
+
+- NET4 `R_LockPar` → NET6 `R_ServiceLockingLockParameterDTO`
+- NET4 `R_UnlockPar` → NET6 `R_ServiceLockingUnLockParameterDTO`
+- NET4 `R_LockingResult` → NET6 `R_LockingFrontResult`
+- NET4 `U_GlobalVar.CompId/UserId` → NET6 `ClientHelper.CompanyId/UserId`
+
+## Example
+
+### NET4 VB.NET
+
+```vb
+Dim loParLock As R_LockPar
+Dim loRtn As New R_LockingResult
+With loParLock
+    .Company_Id = U_GlobalVar.CompId
+    .User_Id = U_GlobalVar.UserId
+    .Program_Id = "FAB00200"
+    .Table_Name = "FAT_PHYSICAL_COUNT_HD"
+    .Key_Value = U_GlobalVar.CompId + " " + loEntity._CDEPT_CODE + " " + loEntity._CTRANSACTION_CODE
+End With
+loRtn = R_LockingClient.R_Lock(loParLock)
+If Not loRtn.IsSuccess AndAlso loRtn.Exception IsNot Nothing Then
+    loRtn.Exception.ThrowExceptionIfErrors()
+End If
+```
+
+### NET6 C#
+
+```csharp
+var loEx = new R_Exception();
+try
+{
+    var loCls = new R_LockingServiceClient(pcHttpClientName: DEFAULT_HTTP_NAME,
+        pcRequestServiceEndPoint: null, pcModuleName: DEFAULT_MODULE_NAME,
+        plSendWithContext: true, plSendWithToken: true);
+    var loLockPar = new R_ServiceLockingLockParameterDTO
+    {
+        Company_Id = ClientHelper.CompanyId,
+        User_Id = ClientHelper.UserId,
+        Program_Id = "FAB00200",
+        Table_Name = "FAT_PHYSICAL_COUNT_HD",
+        Key_Value = string.Join("|", ClientHelper.CompanyId, loEntity.CDEPT_CODE, loEntity.CTRANSACTION_CODE)
+    };
+    var loLockResult = await loCls.R_Lock(loLockPar);
+    if (!loLockResult.IsSuccess && loLockResult.Exception != null)
+        throw loLockResult.Exception;
+}
+catch (Exception ex)
+{
+    loEx.Add(ex);
+}
+loEx.ThrowExceptionIfErrors();
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `loRtn = R_LockingClient.R_Lock(loParLock)`
+  - `loRtn = R_LockingClient.R_Unlock(loParUnlock)`
+- NET6 C# usage:
+  - `var loCls = new R_LockingServiceClient(...);`
+  - `var loLockResult = await loCls.R_Lock(loLockPar);`
+  - `var loLockResult = await loCls.R_UnLock(loUnlockPar);`
+
+## Notes
+
+- Requires `using R_LockingFront;` and `using R_CommonFrontBackAPI;`
+- Requires `[Inject] IClientHelper ClientHelper { get; set; }`
+- Client instantiated per call/method scope (not as class field)
+- All methods are async (`Task<R_LockingFrontResult>`)
+- `Key_Value`: Use `string.Join("|", ...)` in NET6 instead of space-concatenation
+- For `R_LockUnlock` override pattern, see `@r_lockunlock.mdc`
+
+## References
+
+- `.cursor/docs/net6/RealtaLibrary/R_LockingFront.R_LockingServiceClient.yml`
+- `.cursor/docs/net6/RealtaLibrary/R_CommonFrontBackAPI.R_ServiceLockingLockParameterDTO.yml`
+- `.cursor/docs/net6/RealtaLibrary/R_CommonFrontBackAPI.R_ServiceLockingUnLockParameterDTO.yml`
+- `.cursor/docs/net6/RealtaLibrary/R_LockingFront.R_LockingFrontResult.yml`

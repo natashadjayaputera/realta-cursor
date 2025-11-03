@@ -1,0 +1,53 @@
+---
+description: "Migration pattern for R_Edit* (NET4) → R_EditButton (NET6)"
+alwaysApply: false
+---
+
+# R_Edit* → R_EditButton
+
+- NET4: `R_FrontEnd.R_Edit` (often named `R_Edit*`)
+- NET6: `R_BlazorFrontEnd.Controls.DataControls.R_EditButton`
+
+## When to use
+- CRUD pages only, with a conductor
+- Not for inquiry-only pages
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+- `R_Conductor` - **EditorRequired** - Conductor reference for button state management (`R_Conductor`)
+
+### Inherited Properties
+- Properties from `R_ButtonBase` - See @r_buttonbase.mdc
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+  - `Enabled` - Enable/disable component (managed by conductor)
+  - `TabIndex` - Tab order
+  - `Tooltip` - Tooltip text
+- Properties from `R_BaseComponent` - See @r_basecomponent.mdc
+  - `Class` - CSS class names
+  - `Style` - Inline CSS styles
+  - `AdditionalAttributes` - Additional HTML attributes
+
+## Bindings
+- Use `R_Conductor="@_conductorRef"` (required) — accepts only `R_Conductor`
+- Not supported with `R_ConductorGrid` (no grid source parameter)
+
+## Parameter mapping (NET4 → NET6)
+- R_Edit.R_ConductorSource → R_EditButton.R_Conductor (EditorRequired)
+- R_Edit.Enabled → Avoid manual set; conductor/access controls state (R_EditButton.Enabled exists)
+- R_Edit.Text → Handled by library; do not set Text/child content
+- R_Edit.Tooltip → R_EditButton.Tooltip
+- R_Edit.TabIndex → R_EditButton.TabIndex
+- R_Edit.Name → Not applicable
+- R_Edit.Location/Size → Not applicable; use `Class`/`Style`/CSS
+- Styling/extra attrs → R_EditButton.Class, Style, AdditionalAttributes
+
+## Label/text
+- Do not set `Text`
+- No child content; library handles label/tooltip
+
+## Anti-patterns
+- Setting `Text` or child content on `R_EditButton`
+- Toggling `Enabled` on the button
+- Using without a conductor
+

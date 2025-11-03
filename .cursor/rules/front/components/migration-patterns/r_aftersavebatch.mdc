@@ -1,0 +1,59 @@
+---
+description: "Migration pattern for R_AfterSaveBatch (NET4) → R_AfterSaveBatch (NET6)"
+alwaysApply: false
+---
+
+# R_AfterSaveBatch (NET4) → R_AfterSaveBatch (NET6)
+
+- NET4: Batch save completion hooks typically inside upload/batch forms after commit
+- NET6: `R_AfterSaveBatch` handler on batch/upload pages uses `R_AfterSaveBatchEventArgs`
+
+## Use
+- Batch upload pages and batch-edit grids.
+- Batch `R_Grid` with `R_GridType="R_eGridType.Batch"` and `R_ConductorGridSource="@_conductorGridRef"`.
+- Reset staging, refresh summaries, toggle UI, optional notification.
+
+## Bindings
+- Upload/Batch: set `R_AfterSaveBatch="R_AfterSaveBatch"` (or category-specific handler).
+
+## Handler
+- Prefer: `private Task R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)`.
+
+## Parameter mapping
+- NET4: varies by form (often none) → NET6 `eventArgs.Data` (from `R_SaveBatchEventArgs`) holds batch payload/context
+
+## Example
+```csharp
+private Task R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // clear staging, refresh summary/result, toggle UI
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - Batch completion logic placed after commit in upload/batch forms
+- NET6 Razor usage:
+  - Upload/Batch: `R_AfterSaveBatch="R_AfterSaveBatch"`
+  - Category-specific variants allowed (e.g., `R_AfterSaveFloorBatch`)
+
+## Notes
+- Follow standardized error handling per solution rules (resource-based messages, aggregated via `R_Exception`).
+- Keep batch post-save work idempotent; avoid re-posting data.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterSaveBatchEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_AfterSave)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_AfterSave)
+

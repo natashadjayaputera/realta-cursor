@@ -1,0 +1,63 @@
+---
+description: "Migration pattern for R_RunForm (NET4) → Placeholder method (NET6)"
+alwaysApply: false
+---
+
+# R_RunForm (NET4) → Placeholder Method (NET6)
+
+## Overview
+- NET4: `R_FrontEnd.R_RunForm` component programmatically opens/runs another form with access control and parameters
+- NET6: No equivalent exists. Use placeholder method in `.razor.cs` with TODO comment
+
+## NET4 Usage
+
+Component with two event handlers:
+
+```vb
+Friend WithEvents R_RunForm1 As R_FrontEnd.R_RunForm
+
+Private Sub R_RunForm1_R_Access_Run_Form(ByRef pcAccessDetail As String) Handles R_RunForm1.R_Access_Run_Form
+    pcAccessDetail = "A,U,D,P,V"
+End Sub
+
+Private Sub R_RunForm1_R_Before_Open_Form(ByRef poTargetForm As R_FrontEnd.R_FormBase, ByRef poParameter As Object) Handles R_RunForm1.R_Before_Open_Form
+    poTargetForm = New GSM05000
+    Dim loParam As New GSM05000DTO
+    loParam._cClassApplication = "RHAPSODY"
+    loParam._cClassId = "_FA_TAX_TYPE"
+    poParameter = loParam
+End Sub
+```
+
+## NET6 Placeholder
+
+```csharp
+private async Task RunFormAsync()
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // TODO: {Which program to run, the name of the program, and the parameter for the program}
+        // Program: {ProgramName} - Run {TargetForm} page/form
+        // Parameters: {DTOType} with {PropertyName}={value source}, {PropertyName}={value source}
+        // Access: "{AccessString}"
+        // Example: Program: FAM00200 - Run GSM05000, Parameters: GSM05000DTO(_cClassApplication=constant "RHAPSODY", _cClassId=constant "_FA_TAX_TYPE"), Access: "A,U,D,P,V"
+        throw new NotImplementedException("R_RunForm equivalent not yet implemented in NET6");
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## Mapping
+- NET4 `R_RunForm` component → NET6 placeholder method
+- NET4 `R_Access_Run_Form` → NET6 TODO comment with access string
+- NET4 `R_Before_Open_Form` → NET6 TODO comment with target form/page and parameters
+
+## Notes
+- Access format: "A,U,D,P,V" (Add, Update, Delete, Print, View)
+- TODO must specify: program name, target form/page, parameter DTO with property names and value sources (e.g., constant, current entity property, form field), and access details
+- Use `R_Exception` error handling pattern

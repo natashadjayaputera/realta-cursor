@@ -1,0 +1,48 @@
+---
+description: "Migration pattern for R_ConductorGrid (NET4) → R_ConductorGrid (NET6)"
+alwaysApply: false
+---
+
+# R_ConductorGrid (NET4) → R_ConductorGrid (NET6)
+
+- NET4: `R_FrontEnd.R_ConductorGrid`
+- NET6: `R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid`
+
+## When to use
+- CRUD pages with grid-based editing (row add/edit/delete) managed by a conductor
+- Use this instead of `R_Conductor` when the primary editor is an `R_Grid`
+
+## Bindings
+- Razor (NET6):
+  - Grid binds to the conductor grid: `<R_Grid R_ConductorGridSource="@_conductorGridRef" ... />`
+  - ConductorGrid declaration: `<R_ConductorGrid @ref="_conductorGridRef" R_IsHeader />`
+- At least 1 `R_Conductor` with `R_IsHeader` is REQUIRED (not inquiry-only); used it on the main/parent R_Conductor
+- If there is multiple `R_Conductor` or `R_ConductorGrid`, `R_ConductorParent="@_conductorParentRef"` is REQUIRED on the children
+
+## Event Parameter mapping (NET4 → NET6)
+- Use events on `R_Grid`, not from `R_ConductorGrid` directly.
+
+## Property Parameters (NET6)
+- `@ref="@_conductorGridRef`: required
+- `R_IsHeader`: mark main/parent conductor; at least one required in CRUD page
+- `R_ConductorParent`: reference to parent conductor for child conductors
+
+## Public properties mapping (NET4 → NET6)
+- `R_ConductorParent` → `R_ConductorParent="@_conductorParentRef"` on children
+- `R_IsHeader` → `R_IsHeader="true|false"` on main/parent conductor
+- `R_RadGroupBox` → Not applicable (instead of referencing `R_RadGroupBox` (NET4) in `R_ConductorGrid`, we reference `R_GroupBox` (NET6) to `R_ConductorGrid` Instead, example: `<R_GroupBox R_ConductorGridSource="@_conductorGridRef">`)
+
+## Required code-behind members (NET6) (examples)
+- Fields:
+  - `private R_ConductorGrid? _conductorGridRef;`
+  - `private R_Grid<TGridDTO>? _gridRef;`
+- Methods (examples by purpose):
+  - `Grid_R_ServiceGetListRecord(R_ServiceGetListRecordEventArgs eventArgs)`
+  - `Grid_R_ServiceGetRecord(R_ServiceGetRecordEventArgs eventArgs)`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.yml`
+- See also: `.cursor/rules/front/components/migration-patterns/r_conductor.mdc`
+

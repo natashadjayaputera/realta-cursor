@@ -1,0 +1,115 @@
+---
+description: "Migration pattern for R_RadPageView (NET4) → R_TabStrip (NET6)"
+alwaysApply: false
+---
+
+# R_RadPageView → R_TabStrip
+
+- NET4: `R_FrontEnd.R_RadPageView`
+- NET6: `R_BlazorFrontEnd.Controls.R_TabStrip`
+
+## When to use
+- Tabbed page views for organizing related content
+- Use child `R_TabStripTab` components for each tab page
+
+## Tab content
+Tab content in `R_TabStripTab` can be:
+- **Direct Razor markup**: Normal Razor components and markup directly inside `R_TabStripTab`
+- **R_TabPage component**: Use `<R_TabPage>` to call another `.razor` component that inherits `R_Page`. Can set `TargetPageType` dynamically via `R_Before_Open_TabPage` event
+
+## Bindings
+- R_RadPageView.R_ConductorSource → Not directly supported; manage state in code-behind
+- R_RadPageView.R_ConductorGridSource → Not directly supported; manage state in code-behind
+
+## NET6 Direct Public API
+
+### Component-Specific Properties
+- `ActiveTab` - Currently active tab (`R_TabStripTab`)
+- `ActiveTabIndex` - Index of currently active tab (`int`)
+- `Class` - CSS class names - See @r_basecomponent.mdc
+- `Style` - Inline CSS styles - See @r_basecomponent.mdc
+- `AdditionalAttributes` - Additional HTML attributes
+
+### Inherited Properties
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+
+## Parameter mapping (NET4 → NET6)
+- R_RadPageView.SelectedPage → R_TabStrip.ActiveTab or R_TabStrip.ActiveTabIndex
+- R_RadPageView.DefaultPage → Set ActiveTabIndex in OnInitialized
+- R_RadPageView.SelectedPageChanged → R_TabStrip.OnActiveTabIndexChanged
+- R_RadPageView.Controls.Add(page) → R_TabStripTab as child content
+- R_RadPageView.Name → Not applicable
+- R_RadPageView.Text → R_TabStripTab.Title (on each tab)
+- R_RadPageView.Location/Size → Not applicable; use `Class`/`Style`/CSS
+- R_RadPageView.TabIndex → Not applicable; tab order not needed in Blazor - See @r_controlbase.mdc
+- R_RadPageView.SuspendLayout/ResumeLayout → Not applicable; Blazor handles layout automatically
+- Styling/extra attrs → R_TabStrip.Class, Style, AdditionalAttributes
+
+## Event handlers
+
+### NET4 (VB.NET)
+```vb
+Private Sub R_RadPageView1_SelectedPageChanged(sender As Object, e As EventArgs) Handles R_RadPageView1.SelectedPageChanged
+    If R_RadPageView1.SelectedPage.Name = "RadPageViewPage2" Then
+        ' Handle page change
+    End If
+End Sub
+```
+
+### NET6 (C# Blazor)
+```razor
+<R_TabStrip OnActiveTabIndexChanged="OnActiveTabIndexChanged" @ref="_tabStripRef">
+    <!-- Direct Razor markup -->
+    <R_TabStripTab Title="@_localizer["_Floor"]" Id="Floor">
+        <R_StackLayout>
+            <R_Label>Floor content here</R_Label>
+        </R_StackLayout>
+    </R_TabStripTab>
+    
+    <!-- Using R_TabPage to load another page -->
+    <R_TabStripTab Title="@_localizer["_UnitType"]" Id="UnitType">
+        <R_TabPage R_Before_Open_TabPage="Before_Open_UnitType_TabPage">
+        </R_TabPage>
+    </R_TabStripTab>
+</R_TabStrip>
+```
+
+```csharp
+private R_TabStrip _tabStripRef;
+
+private async Task OnActiveTabIndexChanged(R_TabStripTab eventArgs)
+{
+    if (eventArgs.Id == "Floor")
+    {
+        // Handle Floor tab
+    }
+    else if (eventArgs.Id == "Unit")
+    {
+        // Handle Unit tab
+    }
+}
+
+// Handler for R_TabPage to set target page type dynamically
+private void Before_Open_UnitType_TabPage(R_BeforeOpenTabPageEventArgs eventArgs)
+{
+    eventArgs.Parameter = selectedPropertyId;
+    eventArgs.TargetPageType = typeof(GSM02502); // Another .razor page that inherits R_Page
+}
+```
+
+### Preventing tab change
+```csharp
+private void OnActiveTabIndexChanging(R_TabStripActiveTabIndexChangingEventArgs eventArgs)
+{
+    if (_conductorRef.R_ConductorMode == R_eConductorMode.Add || 
+        _conductorRef.R_ConductorMode == R_eConductorMode.Edit)
+    {
+        eventArgs.Cancel = true; // Prevent tab change during edit
+    }
+}
+```
+
+## Anti-patterns
+- Directly setting ActiveTab without checking conductor state
+- Not using async methods for tab change handlers
+- Using SelectedPage.Name instead of tab Id/index

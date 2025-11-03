@@ -6,8 +6,8 @@ globs: "*FrontMigrationChecklist*"
 # {ProgramName}Front
 
 - [ ] Read `{ProgramName}Common` and `{ProgramName}Model` project as reference
-- [ ] `{ProgramName}.razor` main page created
-- [ ] `{ProgramName}.razor.cs` code-behind created
+- [ ] Create `{ProgramName}.razor` by following the layout from the image attached, if it's not provided, please ask before proceeding
+- [ ] Create `{ProgramName}.razor.cs` pair for each viewmodels one by one.
 - [ ] All components using correct navigation patterns
 - [ ] Conductor source correctly assigned (Grid/Form/None)
 - [ ] IClientHelper injected in code-behind (not in ViewModel)

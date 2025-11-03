@@ -1,0 +1,19 @@
+---
+description: "Migration pattern for R_CombineData (NET4) → Streaming Pattern (NET6)"
+alwaysApply: false
+---
+
+# R_CombineData (NET4) → Streaming Pattern (NET6)
+
+## Purpose
+- Migrate NET4 usages of `R_Utility.R_CombineData<T>(IEnumerable<byte[]>)` used after `R_StreamUtility.ReadFromMessage` when consuming streaming responses.
+
+## Rules
+- Do not re-implement `R_CombineData` in NET6.
+- Use the shared streaming pattern for Controller, Model, and ViewModel.
+  - Controller streams `IAsyncEnumerable<T>`.
+  - Model consumes via `R_HTTPClientWrapper.R_APIRequestStreamingObject<T>()`.
+  - ViewModel assigns to collection; set streaming context via `R_FrontContext.R_SetStreamingContext` as needed.
+
+## References
+- See `@streaming_pattern.mdc` for complete Controller/Model/ViewModel patterns, context handling, and result assignment.

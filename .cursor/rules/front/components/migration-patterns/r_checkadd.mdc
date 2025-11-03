@@ -1,0 +1,55 @@
+---
+description: "Migration pattern for R_CheckAdd (NET4) → R_Conductor/R_Grid R_CheckAdd (NET6)"
+alwaysApply: false
+---
+
+# R_CheckAdd (NET4) → R_CheckAdd (NET6)
+
+- NET4: `R_CheckAdd` on Conductor/Grid
+- NET6: `R_CheckAdd` on `R_Conductor` / `R_Grid<T>` with `R_CheckAddEventArgs`
+
+## Use
+- Gate Add based on mode, access, and page state; centralize allow-add logic.
+
+## Bindings
+- Conductor: add `R_CheckAdd="Conductor_R_CheckAdd"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_CheckAdd="Grid_R_CheckAdd"` (+ usual services).
+
+## Mapping
+### Conductor
+- NET4 `plValid` → NET6 `eventArgs.Allow`.
+### Grid
+- NET4 `plAllowAdd` → NET6 `eventArgs.Allow`.
+
+## Example
+```csharp
+private Task Conductor_R_CheckAdd(R_CheckAddEventArgs eventArgs) // OR Grid_R_CheckAdd
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // mirror VB condition
+        eventArgs.Allow = FormAccess.Contains("A") && PCMODE == "T" && PCSTATUS == "00";
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task.CompletedTask;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB:
+  - `Private Sub conMain_R_CheckAdd(ByRef plValid As Boolean) Handles conMain.R_CheckAdd`
+  - `Private Sub gvMain_R_CheckAdd(ByRef plAllowAdd As Boolean) Handles gvMain.R_CheckAdd`
+- NET6 Razor/Razor.cs:
+  - Conductor: `R_CheckAdd="Conductor_R_CheckAdd"`
+  - Grid: `R_CheckAdd="Grid_R_CheckAdd"`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_CheckAddEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_CheckAdd)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_CheckAdd)
+- `@r_access.mdc`

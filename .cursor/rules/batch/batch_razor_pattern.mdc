@@ -1,0 +1,87 @@
+---
+description: "ToCSharpFront: BatchViewModel Properties assignment and batch related methods in code-behind *.razor.cs files in Front Project"
+alwaysApply: false
+---
+
+# BATCH RAZOR PATTERN
+
+## WITH PROGRESS BAR
+```csharp
+<R_ProgressBar Label="@_batchViewModel.Message"
+                MaxValue="100"
+                Value="@_batchViewModel.Percentage"/>
+```
+
+## EXCEL BASED
+```csharp
+<R_StackLayout>
+    <R_InputFile OnChange="OnChangeInputFile" Accepts="@accepts"></R_InputFile>
+
+...
+
+    <R_ItemLayout col="12">
+        <R_Grid @ref="@_gridRef"
+                DataSource="@_batchViewModel.DisplayList"
+                Pageable="true"
+                R_ConductorGridSource="@_conductorGridRef"
+                R_GridType="@R_eGridType.Batch"
+                R_RowRender="@((R_GridRowRenderEventArgs args) => R_RowRender(args))"
+                R_BeforeSaveBatch="@R_BeforeSaveBatch"
+                R_ServiceSaveBatch="@R_ServiceSaveBatch"
+                R_AfterSaveBatch="@R_AfterSaveBatch"
+                R_ServiceGetListRecord="@Grid_R_ServiceGetListRecord">
+            <R_GridColumns>
+                ... //populate with columns needed
+            </R_GridColumns>
+        </R_Grid>
+    </R_ItemLayout>
+</R_StackLayout>
+
+<R_ConductorGrid @ref="@_conductorGridRef"
+                 R_IsHeader>
+</R_ConductorGrid>
+
+<style>
+    .k-grid .k-master-row.CustomRowIsInvalid:hover {
+        //OPTIONAL: custom styling for invalid row on hover
+    }
+
+    .k-grid .k-master-row.CustomRowIsInvalid {
+        //OPTIONAL: custom styling for invalid row
+    }
+
+    .k-grid .k-table-row.k-selected.CustomRowIsInvalid > .k-table-td {
+        //OPTIONAL: custom styling for invalid row on selected
+    }
+</style>
+```
+
+## DIRECT GRID BATCH PROCESSING
+```csharp
+<R_StackLayout>
+    <R_ItemLayout col="12">
+        <R_Grid @ref="@_gridRef"
+                DataSource="@_batchViewModel.DisplayList"
+                Pageable="true"
+                R_ConductorGridSource="@_conductorGridRef"
+                R_GridType="@R_eGridType.Batch"
+                R_RowRender="@((R_GridRowRenderEventArgs args) => R_RowRender(args))"
+                R_BeforeSaveBatch="@R_BeforeSaveBatch"
+                R_ServiceSaveBatch="@R_ServiceSaveBatch"
+                R_AfterSaveBatch="@R_AfterSaveBatch"
+                R_CheckBoxSelectRender="R_CheckBoxSelectRender" // If {BatchListDisplayDTO} has LSELECTED
+                R_CheckBoxSelectValueChanged="R_CheckBoxSelectValueChanged" // If {BatchListDisplayDTO} has LSELECTED
+                R_ServiceGetListRecord="@Grid_R_ServiceGetListRecord">
+            <R_GridColumns>
+                <R_GridCheckBoxSelectColumn Width="60px" FieldName="@nameof({BatchListDisplayDTO}.LSELECTED)" R_EnableAdd R_EnableEdit ShowSelectAllHeader Filterable="false" />  // If {BatchListDisplayDTO} has LSELECTED
+                ... //populate with columns needed
+            </R_GridColumns>
+        </R_Grid>
+    </R_ItemLayout>
+</R_StackLayout>
+
+<R_ConductorGrid @ref="@_conductorGridRef"
+                 R_IsHeader>
+</R_ConductorGrid>
+```
+

@@ -1,0 +1,87 @@
+---
+description: "Migration pattern for R_ServiceClientWrapper (NET4) → ViewModel + Model pattern (NET6)"
+alwaysApply: false
+---
+
+# R_ServiceClientWrapper (NET4) → ViewModel + Model (NET6)
+
+- NET4: `R_ServiceClientWrapper.R_GetServiceClient(Of TService, TServiceClient)(e_ServiceClientType, cServiceName)` creates WCF service client proxy in code-behind.
+- NET6: Replaced by ViewModel + Model pattern; `.razor.cs` instantiates ViewModel (maps one-to-one with NET4 service client), ViewModel creates Model internally, and calls async methods on Model instance.
+
+## Use
+
+- Create service client proxies to call backend API methods in NET4 Front layer (VB.NET code-behind).
+- Supports two service types:
+  - **RegularService**: For standard synchronous API calls
+  - **StreamingService**: For streaming/list operations that return large datasets
+- Common pattern across all service method calls from Front layer to Back layer API.
+- NET6: ViewModel + Model pattern replaces service client wrapper; ViewModel instantiated in `.razor.cs`, Model instantiated in ViewModel.
+
+## Service Client Types
+
+### RegularService
+- Used for standard CRUD operations, initial data loading, and non-streaming operations
+- NET4: `e_ServiceClientType.RegularService` with service name constant
+- NET6: Same Model class used for both types; HTTP client configuration handles service type internally
+
+### StreamingService
+- Used for large dataset retrieval operations that use message-based streaming
+- NET4: `e_ServiceClientType.StreamingService` with streaming service name constant
+- NET6: Model methods return `IAsyncEnumerable<T>` for streaming operations
+
+## Handler
+
+See related patterns for detailed handler implementations:
+- **RegularService**: See `@r_getserviceclient.mdc` for complete NET4 → NET6 handler pattern
+- **StreamingService**: See `@streaming_pattern.mdc` and `@viewmodel_streaming_method_pattern.mdc` for streaming implementation
+
+## Parameter Mapping
+
+| NET4 Component | NET6 Component | Notes |
+|---|---|---|
+| `R_ServiceClientWrapper` class | Removed | Not needed in NET6 |
+| `R_GetServiceClient` method | ViewModel instantiation in `.razor.cs` | One-to-one mapping |
+| `TService` interface (e.g., `IFAT00100Service`) | `I{ProgramName}` interface | Same interface pattern |
+| `TServiceClient` class (e.g., `FAT00100ServiceClient`) | `{ProgramName}Model` class | Model replaces client wrapper |
+| `e_ServiceClientType.RegularService` | Removed | Model handles service type internally |
+| `e_ServiceClientType.StreamingService` | Removed | Model methods return `IAsyncEnumerable<T>` |
+| `cServiceName` string constant | Removed | Model constructor sets HTTP client name via base class |
+| Service client `.Close()` method | Removed | HTTP client handles lifecycle automatically |
+| `CommunicationState` check | Removed | Not needed with HTTP client |
+
+## Examples
+
+See related patterns for complete examples:
+- **RegularService**: See `@r_getserviceclient.mdc` for detailed NET4 → NET6 examples
+- **StreamingService**: See `@streaming_pattern.mdc` for complete streaming implementation examples
+
+## NET4 → NET6 Mapping
+
+See related patterns for detailed mapping:
+- **RegularService mapping**: See `@r_getserviceclient.mdc` for complete parameter and component mapping
+- **StreamingService mapping**: See `@streaming_pattern.mdc` for streaming-specific mappings
+
+## Notes
+
+### Key Lifecycle Differences (Unique to R_ServiceClientWrapper)
+
+- **Service Client Cleanup**: NET4 requires explicit `.Close()` in `Finally` block with `CommunicationState` check. This is unique to `R_ServiceClientWrapper` pattern and not needed in NET6 HTTP client pattern.
+- **Service Client Instantiation**: NET4 creates service clients per method call via `R_ServiceClientWrapper.R_GetServiceClient(...)`. NET6 instantiates ViewModel once per component. See `@r_getserviceclient.mdc` for details.
+
+### Related Migration Patterns
+
+- **Exception Handling**: See `@r_serviceexceptions.mdc` for exception handling migration pattern (multiple catch blocks → single catch).
+- **ViewModel + Model Pattern**: See `@r_getserviceclient.mdc` for ViewModel + Model implementation details.
+- **Streaming Pattern**: See `@streaming_pattern.mdc` and `@viewmodel_streaming_method_pattern.mdc` for streaming-specific implementation.
+
+## Related Patterns
+
+- `@r_getserviceclient.mdc` - Detailed migration pattern for `R_GetServiceClient` method
+- `@streaming_pattern.mdc` - Complete streaming pattern documentation
+- `@viewmodel_streaming_method_pattern.mdc` - ViewModel streaming method implementation pattern
+
+## References
+
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BusinessObjectFront.R_BusinessObjectServiceClientBase.yml` (Model base class)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Helpers.R_FrontContext.yml` (Streaming context helper)
+- `.cursor/docs/net6/RealtaLibrary/R_APIClient.R_HTTPClientWrapper.yml` (HTTP client wrapper)

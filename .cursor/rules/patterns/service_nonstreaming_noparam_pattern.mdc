@@ -21,7 +21,9 @@ public async Task<{ProgramName}ResultDTO<GetNonStreamingResultDTO>> GetNonStream
         _logger.LogInfo("Start method GetNonStreaming in {0}", lcMethod);
         var loParam = new GetNonStreamingParameterDTO
         {
-            CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID
+            CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID,
+            CLANG_ID = R_BackGlobalVar.CULTURE,
+            CUSER_ID = R_BackGlobalVar.USER_ID
         };
         loRtn.Data = await loCls.GetNonStreaming(loParam);
     }
@@ -39,4 +41,7 @@ public async Task<{ProgramName}ResultDTO<GetNonStreamingResultDTO>> GetNonStream
 Rules:
 * Used when all parameters are global variables
 * Create DTO internally
-* Assign global variables directly using `R_BackGlobalVar` before calling logic
+* **MUST assign all three global variables:**
+  - `CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID`
+  - `CLANG_ID = R_BackGlobalVar.CULTURE`
+  - `CUSER_ID = R_BackGlobalVar.USER_ID`

@@ -1,0 +1,58 @@
+---
+description: "Migration pattern for R_SetPopUpResult + R_SetPopUpEntityResult (NET4) → Close method result parameter (NET6)"
+alwaysApply: false
+---
+# R_SetPopUpResult + R_SetPopUpEntityResult (NET4) → Close Result (NET6)
+
+- NET4: `R_SetPopUpEntityResult(object)` called on owner form to return entity data from popup
+- NET6: `await Close(bool plSuccess, object? poResult)` replaces both `R_SetPopUpResult` and `R_SetPopUpEntityResult`
+
+## Use
+
+- Popup pages returning entity data (string, DTO, or any object) to parent. Always paired with `R_SetPopUpResult(DialogResult.OK/Cancel)` in NET4. Result accessible via `R_AfterOpenPopupEventArgs.Result` in parent `R_After_Open_Popup` handler.
+## Migration Pattern
+
+- **NET4**: `CType(Me.Owner, R_FormBase).R_SetPopUpEntityResult(poEntity)` in `R_FormClosing`
+- **NET6**: `await Close(true, poEntity)` in `R_PageClosing` override
+
+## Example
+
+### NET4 VB.NET
+```vb
+Private Sub FAT02100_R_FormClosing(ByRef e As Object) Handles Me.R_FormClosing
+    If lProses = True Then
+        CType(Me.Owner, R_FormBase).R_SetPopUpResult(Windows.Forms.DialogResult.OK)
+        CType(Me.Owner, R_FormBase).R_SetPopUpEntityResult(txtCdReason.Text)
+    Else
+        CType(Me.Owner, R_FormBase).R_SetPopUpResult(Windows.Forms.DialogResult.Cancel)
+    End If
+End Sub
+```
+
+### NET6 C#
+```csharp
+protected override async Task R_PageClosing(R_PageClosingEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (lProses == true) await Close(true, txtCdReason.Text);
+        else await Close(false, null);
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping
+
+- NET4 `R_SetPopUpResult(OK)` + `R_SetPopUpEntityResult` → NET6 single `await Close(true, poResult)`
+- NET4 `R_SetPopUpResult(Cancel)` → NET6 `await Close(false, null)`
+
+## Notes
+
+- `Close(plSuccess, poResult)` combines both NET4 methods: `plSuccess` replaces `R_SetPopUpResult`, `poResult` replaces `R_SetPopUpEntityResult`. Result can be any object type (string, DTO, collection, etc.)
+## References
+
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.yml` (Close method)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterOpenPopupEventArgs.yml` (Result property)

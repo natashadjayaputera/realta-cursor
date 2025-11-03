@@ -1,0 +1,15 @@
+---
+description: "Migration pattern for R_ProcessAndUploadClient.R_BatchProcess (NET4) → R_ProcessAndUploadClient.R_ProcessAndUploadClient (NET6)"
+alwaysApply: false
+---
+
+# R_BatchProcess (NET4) → R_ProcessAndUploadClient (NET6)
+
+- R_BatchProcess is a method of `R_ProcessAndUploadClient` instance.
+- NET4: typically invoked directly from the Front form after preparing `R_BatchParameter`.
+- NET6: must be invoked from the ViewModel (not directly in Razor). Razor triggers `R_SaveBatch`, the ViewModel calls `{R_ProcessAndUploadClientInstance}.R_BatchProcess<T>`.
+
+See @batch_viewmodel_pattern.mdc for more info.
+
+## Parameter mapping
+See @r_batchparameter.mdc for R_BatchParameter definition and mapping.

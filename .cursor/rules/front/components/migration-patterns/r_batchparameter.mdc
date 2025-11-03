@@ -1,0 +1,24 @@
+---
+description: "R_BatchParameter definition and NET4 → NET6 mapping"
+alwaysApply: false
+---
+
+# R_BatchParameter
+
+- Used by `R_ProcessAndUploadClient.R_BatchProcess<T>` for batch/upload operations.
+- Shape remains identical from NET4 to NET6.
+
+## Fields
+- `COMPANY_ID`: string
+- `USER_ID`: string
+- `ClassName`: string
+- `BigObject`: object (typically the list/object to process)
+- `UserParameters`: List of key/value pairs
+
+## Notes
+- `liStep As Integer` is NOT part of `R_BatchParameter`; it is a separate argument to `R_ProcessAndUploadClient.R_BatchProcess` in both NET4 and NET6.
+
+## References
+- See @r_batchprocess.mdc for invocation pattern.
+- See @batch_viewmodel_pattern.mdc for ViewModel usage and `R_SaveBatch` integration.
+

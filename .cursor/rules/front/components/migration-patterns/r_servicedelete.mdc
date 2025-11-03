@@ -1,0 +1,63 @@
+---
+description: "Migration pattern for R_ServiceDelete (NET4) → R_Conductor/R_Grid R_ServiceDelete (NET6)"
+alwaysApply: false
+---
+
+# R_ServiceDelete (NET4) → R_ServiceDelete (NET6)
+
+- NET4: `R_ServiceDelete` on Conductor/Grid
+- NET6: `R_ServiceDelete` on `R_Conductor` / `R_Grid<T>` with `R_ServiceDeleteEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Perform delete operation via service call.
+
+## Bindings
+- Conductor: add `R_ServiceDelete="Conductor_R_ServiceDelete"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_ServiceDelete="Grid_R_ServiceDelete"` (+ usual services).
+
+## Handler
+- Prefer: `private async Task Conductor_R_ServiceDelete(R_ServiceDeleteEventArgs eventArgs)` or `private async Task Grid_R_ServiceDelete(R_ServiceDeleteEventArgs eventArgs)`.
+- Data object: `var loEntity = (MyDto)eventArgs.Data;`.
+- Call ViewModel: `await _viewModel.DeleteRecordAsync(loEntity);`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+
+### Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+
+## Example
+```csharp
+private async Task Conductor_R_ServiceDelete(R_ServiceDeleteEventArgs eventArgs) // OR Grid_R_ServiceDelete
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loEntity = (MyDto)eventArgs.Data;
+        await _viewModel.DeleteRecordAsync(loEntity);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_ServiceDelete(poEntity As Object) Handles conMain.R_ServiceDelete`
+  - `Private Sub gvMain_R_ServiceDelete(poEntity As Object) Handles gvMain.R_ServiceDelete`
+- NET6 Razor usage:
+  - Grid: `R_ServiceDelete="Grid_R_ServiceDelete"`
+  - Conductor: `R_ServiceDelete="Conductor_R_ServiceDelete"`
+
+## Notes
+- NET4 directly calls service client's `Svc_R_Delete` method; NET6 delegates to ViewModel method which calls Model's `R_ServiceDeleteAsync`.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_ServiceDeleteEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_ServiceDelete)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_ServiceDelete)

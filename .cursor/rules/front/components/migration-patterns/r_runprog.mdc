@@ -1,0 +1,68 @@
+---
+description: "Migration pattern for R_RunProg (NET4) → Placeholder (NET6)"
+alwaysApply: false
+---
+
+# R_RunProg (NET4) → Placeholder (NET6)
+
+## Overview
+- NET4: `R_RunProg` button control opens other programs/forms with access control and parameter passing
+- NET6: No equivalent exists. Use `R_Button` with placeholder pattern and TODO comments
+
+## NET4 Usage
+
+Button control with two event handlers:
+
+```vb
+Friend WithEvents btnManualDepr As R_FrontEnd.R_RunProg
+
+Private Sub btnManualDepr_R_AccessAndProgram_RunProg_Form(ByRef pcAccessRunProg As String, ByRef pcProgramId As String, ByRef pcProgramName As String) Handles btnManualDepr.R_AccessAndProgram_RunProg_Form
+    pcAccessRunProg = Me.R_Access
+End Sub
+
+Private Sub btnManualDepr_R_Before_Open_Form(ByRef poTargetForm As R_FrontEnd.R_FormBase, ByRef poParameter As Object) Handles btnManualDepr.R_Before_Open_Form
+    Dim loEntity As FAT00200StreamingDTO = bsListData.Current
+    poTargetForm = New FAT00300Front.FAT00300
+    poParameter = New FAT00300DTO With {._CMODE = PCMODE,
+                                       ._CASSET_CODE = CType(bsListData.Current, FAT00200StreamingDTO).cAssetCode,
+                                       ._CDEPT_CODE = "",
+                                       ._CREFERENCE_NO = ""}
+End Sub
+```
+
+## NET6 Placeholder
+
+```razor
+<R_Button Text="Manual Depreciation" OnClick="OnRunProgramAsync" />
+```
+
+```csharp
+private async Task OnRunProgramAsync()
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // TODO: {Which program to run, the name of the program, and the parameter for the program}
+        // Example: Program ID: FAT00300, Program Name: Manual Depreciation
+        // Parameter: FAT00300DTO with CMODE, CASSET_CODE, CDEPT_CODE, CREFERENCE_NO
+        // Parameter values come from:
+        //   - CMODE: from form property/variable (e.g., PCMODE)
+        //   - CASSET_CODE: from current grid row (e.g., GridData.Current.CASSET_CODE)
+        //   - CDEPT_CODE: from current grid row (e.g., GridData.Current.CDEPT_CODE) or empty string
+        //   - CREFERENCE_NO: from current grid row (e.g., GridData.Current.CREFERENCE_NO) or empty string
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## Mapping
+- NET4 `R_RunProg` → NET6 `R_Button` (placeholder)
+- NET4 `R_AccessAndProgram_RunProg_Form` → NET6 `FormAccess` property
+- NET4 `R_Before_Open_Form` → NET6 Navigation with parameter DTO (to be implemented)
+
+## Notes
+Access control via `FormAccess` property (see `r_access.mdc`). TODO must specify: program ID, program name, and parameter DTO.

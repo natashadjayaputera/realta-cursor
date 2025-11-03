@@ -1,0 +1,62 @@
+---
+description: "Migration pattern for R_ValidationOpenForm (NET4) → R_ValidationOpenPage placeholder (NET6)"
+alwaysApply: false
+---
+
+# R_ValidationOpenForm (NET4) → R_ValidationOpenPage (NET6)
+
+- NET4: Event handler `R_ValidationOpenForm` on `R_FormBase`
+- NET6: Placeholder method `R_ValidationOpenPage` on `R_Page` with `R_ValidationOpenPageEventArgs`
+
+## Use
+- Pages that require pre-opening validation (user permissions, system settings, data existence checks).
+
+## Handler
+- Placeholder: `private Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`.
+- Call ViewModel or Model methods to perform validation checks (user activity rights, transaction settings, system validation, data existence).
+- To cancel page opening set `eventArgs.Cancel = true`.
+
+## Parameter mapping
+- NET4 `plValid` → NET6 `eventArgs.Cancel` (inverted: `plValid = False` → `eventArgs.Cancel = true`)
+- NET4 `poError` → NET6 `eventArgs.Error` (R_Exception)
+
+## Example
+```csharp
+private Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // TODO: {What is the validation, and set eventArgs.Cancel = true if it's cancelled}
+        // Examples: Check user activity rights, transaction settings, system validation, data existence
+        if (loEx.HasError)
+        {
+            eventArgs.Error = loEx;
+            eventArgs.Cancel = true;
+        }
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        eventArgs.Error = loEx;
+        eventArgs.Cancel = true;
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task.CompletedTask;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub ProgramName_R_ValidationOpenForm(ByRef plValid As Boolean, ByRef poError As R_Common.R_Exception) Handles Me.R_ValidationOpenForm`
+- NET6 Razor usage:
+  - Placeholder: `private Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`
+
+## Notes
+- This is a placeholder pattern; no equivalent exists in NET6 R_Page currently.
+- Validation should be performed before page initialization completes.
+
+## References
+- `.cursor/docs/net4/Realta-Library/R_FrontEnd.R_FormBase.yml` (R_ValidationOpenForm)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Page.yml`

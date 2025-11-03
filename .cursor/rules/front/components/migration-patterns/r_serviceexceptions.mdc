@@ -1,0 +1,53 @@
+---
+description: "Migration pattern for R_ServiceExceptions (NET4) → R_Exception (NET6)"
+alwaysApply: false
+---
+
+# R_ServiceExceptions (NET4) → R_Exception (NET6)
+
+- NET4: `FaultException(Of R_Common.R_ServiceExceptions)` for service fault exceptions
+- NET6: Standard `Exception` handling - HTTP client wrapper automatically converts to `R_Exception`
+
+## Pattern
+
+**NET6 HTTP client wrapper handles service exceptions automatically:**
+
+1. **NET4**: Multiple catch blocks for `FaultException(Of R_ServiceExceptions)`, `FaultException`, and `Exception`
+2. **NET6**: Single `catch (Exception ex)` - wrapper converts service exceptions to `R_Exception`
+
+## NET4 → NET6 Mapping
+
+**NET4:**
+```vb
+Catch ex As FaultException(Of R_Common.R_ServiceExceptions)
+    loEx.ErrorList.AddRange(ex.Detail.Exceptions)
+Catch ex As FaultException
+    loEx.Add(ex)
+Catch ex As Exception
+    loEx.Add(ex)
+```
+
+**NET6:**
+```csharp
+catch (Exception ex)
+{
+    loEx.Add(ex);
+}
+```
+
+## Service Contracts
+
+**NET4:**
+```vb
+<FaultContract(GetType(R_ServiceExceptions))>
+```
+
+**NET6:**
+- No `FaultContract` attributes needed - HTTP client handles exceptions automatically
+
+## Notes
+
+- NET6 HTTP client wrapper automatically converts service exceptions to `R_Exception`
+- Multiple catch blocks in NET4 simplify to single catch in NET6
+- Service exceptions are automatically extracted and added to `R_Exception.ErrorList`
+- Follow standard `@RULE 7: ERROR HANDLING` pattern for all exception handling

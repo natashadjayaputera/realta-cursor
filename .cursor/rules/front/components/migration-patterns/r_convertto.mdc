@@ -1,0 +1,54 @@
+---
+description: "Migration pattern for R_Utility.R_ConvertTo (NET4) → R_Utility.R_ConvertTo (NET6 Back) / R_FrontUtility.R_ConvertTo (NET6 Front)"
+alwaysApply: false
+---
+
+# R_ConvertTo (NET4) → R_ConvertTo (NET6)
+
+- NET4: `R_Utility.R_ConvertTo(Of TDTO)(dataTable)` converts DataTable to IEnumerable of DTOs.
+- NET6 Back: call `R_Utility.R_ConvertTo<TDTO>(dataTable)` (same utility class).
+- NET6 Front: call `R_FrontUtility.R_ConvertTo<TDTO>(dataTable)`.
+
+## Use
+- Convert DataTable results from database queries to DTOs in Back layer business logic.
+- Convert DataTable/DataSet to DTOs in Front layer (e.g., Excel import scenarios).
+- Common in database result processing, Excel upload handlers, and data transformation.
+
+## Bindings
+- No UI bindings required; used in code-behind (`.razor.cs`), ViewModel, or Back layer classes.
+- Requires `using R_BlazorFrontEnd.Helpers;` for NET6 Front layer.
+
+## Handler
+- Back: `var loResult = R_Utility.R_ConvertTo<TDTO>(loDataTable).FirstOrDefault();`
+- Front: `var loResult = R_FrontUtility.R_ConvertTo<TDTO>(loDataTable);`
+- Works in any method context; commonly used with `.FirstOrDefault()`, `.ToList()`, or direct assignment.
+
+## Parameter mapping
+- NET4 `(Of TDTO)` → NET6 `<TDTO>` (same generic type parameter).
+- NET4 `dataTable` → NET6 `dataTable` (DataTable parameter, same).
+
+## Example
+```csharp
+// NET4 VB.NET Back
+loRtn = R_Utility.R_ConvertTo(Of FAT00300DTO)(loRtnDataTable).FirstOrDefault
+
+// NET6 C# Back
+loRtn = R_Utility.R_ConvertTo<FAM00100DTO>(loDataTable).FirstOrDefault() ?? new FAM00100DTO();
+
+// NET6 C# Front
+var loResult = R_FrontUtility.R_ConvertTo<SAM00100ExcelDTO>(loDataSet.Tables[0]);
+```
+
+## NET4 → NET6 mapping
+- NET4 Back: uses `R_Utility` for DataTable to DTO conversion.
+- NET6 Back: same `R_Utility.R_ConvertTo` pattern (utility class unchanged).
+- NET6 Front: uses `R_FrontUtility.R_ConvertTo` instead of `R_Utility` for Front layer scenarios.
+
+## Notes
+- Back layer utility remains `R_Utility` in both NET4 and NET6.
+- Front layer uses `R_FrontUtility` in NET6 (layer separation).
+- NET6 Back returns `IEnumerable<T>`; NET6 Front returns `IList<T>`.
+- Use `.FirstOrDefault() ?? new TDTO()` pattern in NET6 Back for null safety.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Helpers.R_FrontUtility.yml` (R_ConvertTo methods)

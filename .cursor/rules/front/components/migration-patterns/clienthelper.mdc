@@ -1,0 +1,43 @@
+---
+description: "Migration pattern for ClientHelper / U_GlobalVar static class (NET4) → IClientHelper dependency injection (NET6)"
+alwaysApply: false
+---
+
+# ClientHelper (NET4) → Migration Overview (NET6)
+
+- NET4: `U_GlobalVar` static class provides global variables for company ID, user information, and culture settings.
+- NET6: `IClientHelper` interface injected via dependency injection provides same properties with improved testability and lifecycle management.
+
+## Property Mapping
+
+| NET4 Property | NET6 Property | Type | Notes |
+|--------------|--------------|------|-------|
+| `U_GlobalVar.CompId` | `ClientHelper.CompanyId` | `string` | Company identifier |
+| `U_GlobalVar.UserId` | `ClientHelper.UserId` | `string` | User identifier |
+| `U_GlobalVar.CultureUI` | `ClientHelper.CultureUI` | `CultureInfo` | UI culture information |
+| `U_GlobalVar.CultureUI.TwoLetterISOLanguageName` | `ClientHelper.Culture.TwoLetterISOLanguageName` | `string` | Language code |
+| N/A | `ClientHelper.UserName` | `string` | User name (NET6 only) |
+| N/A | `ClientHelper.UserRole` | `string` | User role (NET6 only) |
+| N/A | `ClientHelper.Culture` | `CultureInfo` | Data culture (NET6 only) |
+| N/A | `ClientHelper.ReportCulture` | `string` | Report culture (NET6 only) |
+| N/A | `ClientHelper.ProgramId` | `string` | Current program ID (NET6 only) |
+| N/A | `ClientHelper.ComputerId` | `string` | Computer identifier (NET6 only) |
+
+## Usage Pattern
+
+- **NET4**: Static class access `U_GlobalVar.CompId`, `U_GlobalVar.UserId`, `U_GlobalVar.CultureUI.TwoLetterISOLanguageName`
+- **NET6**: Dependency injection `[Inject] private IClientHelper ClientHelper { get; set; } = default!;` then access via `ClientHelper.CompanyId`, `ClientHelper.UserId`, `ClientHelper.Culture.TwoLetterISOLanguageName`
+
+## Tips
+
+- To get 2-letter language code, use `ClientHelper.Culture.TwoLetterISOLanguageName` (preferred) or `ClientHelper.CultureUI.TwoLetterISOLanguageName`.
+
+## Syntax Changes
+
+- NET4 `U_GlobalVar.CompId` → NET6 `ClientHelper.CompanyId` (property renamed).
+- NET4 `U_GlobalVar.CultureUI.TwoLetterISOLanguageName` → NET6 `ClientHelper.Culture.TwoLetterISOLanguageName` or `ClientHelper.CultureUI.TwoLetterISOLanguageName` (both available).
+- All properties accessed through injected `IClientHelper` instance instead of static class.
+
+## References
+
+- Documentation: `.cursor/docs/net6/RealtaNetCoreLibrary/BlazorClientHelper.IClientHelper.yml`, `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Interfaces.R_IGlobalVarInitiator.yml`

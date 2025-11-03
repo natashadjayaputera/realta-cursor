@@ -16,6 +16,9 @@ alwaysApply: false
 | **7** | **CS0246:** The type or namespace name 'FAM00100FrontResources' could not be found | `FrontResources` project not created or not referenced | 1️⃣ Create `FrontResources` project<br>2️⃣ Add `<ProjectReference>` in Model `.csproj`<br>3️⃣ Build `FrontResources` first |
 | **8** | **CS1061:** DTO property not found | Referencing a non-existent DTO property | Cross-check with legacy implementation:<br>- If old version uses the property → **Add it** to DTO.<br>- If not used → **Remove** invalid reference. |
 | **9** | **MSB9008:** Referenced project does not exist | `ProjectReference` added before project creation | Expected during setup. Create `FrontResources` project before build. |
+| **10** | **CS0246:** The type or namespace name 'R_ProcessAndUploadFront' could not be found | Missing DLL reference for batch processing with progress tracking | Add to Model `.csproj`:<br>```xml<br><Reference Include="R_ProcessAndUploadFront"><br>  <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_ProcessAndUploadFront.dll</HintPath><br></Reference><br>```<br>Add using statements:<br>```csharp<br>using R_ProcessAndUploadFront;<br>using R_APICommonDTO;  // For R_APIException<br>``` |
+| **11** | **CS8400:** Feature 'target-typed object creation' is not available in C# 8.0 | Using `new()` syntax in netstandard2.1 projects (C# 8.0) | Use explicit type names:<br>❌ **Wrong:**<br>```csharp<br>private readonly FAM00100Model _model = new();<br>public ObservableCollection<DTO> List { get; set; } = new();<br>```<br>✅ **Correct:**<br>```csharp<br>private readonly FAM00100Model _model = new FAM00100Model();<br>public ObservableCollection<DTO> List { get; set; } = new ObservableCollection<DTO>();<br>``` |
+| **12** | **CS0246:** The type or namespace name 'R_APIException' could not be found | Missing using statement when implementing `R_IProcessProgressStatus.ProcessError` | Add to batch ViewModel:<br>```csharp<br>using R_APICommonDTO;  // For R_APIException<br>using R_ProcessAndUploadFront;  // For R_IProcessProgressStatus<br>```<br>**Note:** R_APIException is in R_APICommonDTO, not R_ProcessAndUploadFront |
 
 ---
 
@@ -28,3 +31,6 @@ alwaysApply: false
 | 3 | **CS0019:** Type mismatch | Fix `ObservableCollection` DTO type |
 | 4 | **CS0246:** FrontResources missing | Create project & add reference |
 | 5 | **CS1061:** Property not found | Verify DTO properties |
+| 6 | **CS0246:** R_ProcessAndUploadFront missing | Add DLL reference for batch processing |
+| 7 | **CS8400:** C# version incompatibility | Replace `new()` with explicit type names |
+| 8 | **CS0246:** R_APIException not found | Add `using R_APICommonDTO;` |

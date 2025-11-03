@@ -19,7 +19,12 @@ public async Task<{ProgramName}ResultDTO<GetNonStreamingResultDTO>> GetNonStream
     try
     {
         _logger.LogInfo("Start method GetNonStreaming in {0}", lcMethod);
+        
+        // MUST assign all three global variables
         poParameter.CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID;
+        poParameter.CLANG_ID = R_BackGlobalVar.CULTURE;
+        poParameter.CUSER_ID = R_BackGlobalVar.USER_ID;
+        
         loRtn.Data = await loCls.GetNonStreaming(poParameter);
     }
     catch (Exception ex)
@@ -35,5 +40,8 @@ public async Task<{ProgramName}ResultDTO<GetNonStreamingResultDTO>> GetNonStream
 
 Rules:
 * Accepts parameter DTO from frontend
-* Must assign global variables using `R_BackGlobalVar` before calling business logic
+* **MUST assign all three global variables using `R_BackGlobalVar` before calling business logic:**
+  - `CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID`
+  - `CLANG_ID = R_BackGlobalVar.CULTURE`
+  - `CUSER_ID = R_BackGlobalVar.USER_ID`
 * Handle exceptions via `R_Exception`

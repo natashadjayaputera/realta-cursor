@@ -1,0 +1,45 @@
+---
+description: "Migration pattern for R_Mode (NET4) → R_ConductorMode (NET6)"
+alwaysApply: false
+---
+
+# R_Mode (NET4) → R_ConductorMode (NET6)
+
+- NET4: `R_Conductor.R_Mode` property returns `R_Conductor.e_Mode` enum
+- NET6: `R_Conductor.R_ConductorMode` property returns `R_eConductorMode` enum
+
+## Property mapping
+- NET4: `conMain.R_Mode` → NET6: `_conductorRef.R_ConductorMode`
+- NET4 enum: `R_Conductor.e_Mode` → NET6 enum: `R_eConductorMode`
+
+## Enum value mapping
+- `R_Conductor.e_Mode.AddMode` → `R_eConductorMode.AddMode`
+- `R_Conductor.e_Mode.EditMode` → `R_eConductorMode.EditMode`
+- `R_Conductor.e_Mode.NormalMode` → `R_eConductorMode.NormalMode`
+- `R_Conductor.e_Mode.None` → `R_eConductorMode.None`
+
+## Usage examples
+### NET4 VB.NET
+```vb
+If conMain.R_Mode = R_Conductor.e_Mode.AddMode Then
+If conMain.R_Mode = R_Conductor.e_Mode.EditMode Or conMain.R_Mode = R_Conductor.e_Mode.AddMode Then
+Dim peMode = conMain.R_Mode
+```
+
+### NET6 C#
+```csharp
+if (_conductorRef?.R_ConductorMode == R_eConductorMode.AddMode)
+if (_conductorRef?.R_ConductorMode == R_eConductorMode.EditMode || 
+    _conductorRef?.R_ConductorMode == R_eConductorMode.AddMode)
+var peMode = _conductorRef?.R_ConductorMode;
+```
+
+## Notes
+- Always use null-conditional operator (`?.`) when accessing `_conductorRef` in NET6
+- Enum values remain the same; only namespace changed
+- Works with both `R_Conductor` and `R_ConductorGrid` components
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_ConductorMode property)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid.yml` (R_ConductorMode property)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Enums.R_eConductorMode.yml`

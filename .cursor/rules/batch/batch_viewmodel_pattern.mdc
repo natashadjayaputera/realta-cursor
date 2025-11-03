@@ -1,0 +1,220 @@
+---
+description: "ToCSharpViewModel: Batch data manipulation ViewModel implementation pattern in Model Project"
+alwaysApply: false
+---
+
+# BATCH DATA MANIPULATION PATTERN
+
+- MUST Implement `R_IProcessProgressStatus` in `{ProgramName}BatchViewModel.cs`.
+- {BatchListDTO} MUST match `{ProgramName}BatchCls` deserialized object DTO. See @batch_deserilization_pattern.mdc
+
+## ⚠️ CRITICAL: DTO Type Verification
+
+**BEFORE creating BatchViewModel, verify the DTO type:**
+
+1. Read VB.NET Backend `{ProgramName}Cls.vb` → check `R_Utility.Deserialize(poBatchProcessPar.BigObject)` type
+2. Read C# Backend `{ProgramName}BatchCls.cs` → check deserialization type (line ~96)
+3. Ensure `R_SaveBatchParameterDTO.Data` property uses **EXACT SAME DTO TYPE** as backend
+
+**Example Verification:**
+- VB.NET deserializes to: `List(Of FAM00100StreamDTO)`
+- C# deserializes to: `List<GetGridDepartmentResultDTO>`
+- R_SaveBatchParameterDTO must use: `List<GetGridDepartmentResultDTO>?` ✅ NOT `List<FAM001000202DTO>?` ❌
+
+## Implementation Template
+
+```csharp
+using R_BlazorFrontEnd.Exceptions;
+using R_ProcessAndUploadFront;
+using R_CommonFrontBackAPI;
+using R_APICommonDTO;  // Required for R_APIException
+using {ProgramName}Common.DTOs;
+using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace {ProgramName}Model.VMs
+{
+    public class {ProgramName}BatchViewModel : R_IProcessProgressStatus
+    {
+    public Action<DataSet>? ShowErrorAction { get; set; }
+    public Action? StateChangeAction { get; set; }
+    public Action? ShowSuccessAction { get; set; }
+    public string Message { get; set; } = string.Empty;
+    public int Percentage { get; set; }
+    public ObservableCollection<{BatchListDisplayDTO}> DisplayList { get; set; } = new ObservableCollection<{BatchListDisplayDTO}>();
+    
+    public int SumValid { get; set; }
+    public int SumInvalid { get; set; }
+    public int SumList { get; set; }
+
+    // DO NOT add UserParameter properties here
+    // UserParameters should be passed via R_SaveBatchParameterDTO.UserParameters
+    // add other properties related to batch process (e.g., display lists, file upload properties)
+    
+    #region EXCEL BASED (OPTIONAL)
+    // add this properties if LIST comes from uploading an excel file
+    public bool IsFileSelected { get; set; }
+    public long MaximumFileSize => 5 * 1024 * 1024; // 5MB
+    public byte[] FileByte { get; set;}
+    public bool IsErrorEmptyFile { get; set; }
+    public List<{BatchListExcelDTO}> UploadList { get; set; } = new List<{BatchListExcelDTO}>();
+    #endregion
+
+    // add additional data manipulation methods if needed
+
+    private List<{BatchListDisplayDTO}> GetSelectedData({BatchListDisplayDTO} poList)
+    {
+        R_Exception loEx = new R_Exception();
+        List<{BatchListDisplayDTO}> loTemp = new List<{BatchListDisplayDTO}>();
+
+        try
+        {
+            // NOTE: ADD THIS if {BatchListDisplayDTO} has bool LSELECTED
+            // int no = 1;
+            // foreach (var item in poList)
+            // {
+            //     if (item.LSELECTED == true)
+            //     {
+            //         item.INO = no;
+            //         no++;
+            //         loTemp.Add(item);
+            //     }
+            // }
+
+            // if (loTemp.Count == 0) 
+            // {
+            //     loEx.Add(R_FrontUtility.R_GetError(typeof(Resources_Dummy_Class), "{EmptySelectedListErrorResourceKeys}"))
+            // }
+
+            // NOTE: Immediately Return List if {BatchListDisplayDTO} does not have bool LSELECTED
+            //loTemp.AddRange(poList)
+        }
+        catch (Exception ex)
+        {
+            loEx.Add(ex);
+        }
+        loEx.ThrowExceptionIfErrors();
+
+        return loTemp;
+    }
+
+    public async Task R_SaveBatchAsync(R_SaveBatchParameterDTO poParameter)
+    {
+        R_Exception loEx = new R_Exception();
+        R_BatchParameter loBatchPar;
+        R_ProcessAndUploadClient loCls;
+        string lcGuid = "";
+        List<{BatchListDTO}> loBigObject;
+        var loUserParam = new List<R_KeyValue>();
+        int liStep = 10; 
+
+        try
+        {
+            // Validate and filter data
+            if (poParameter.Data == null)
+            {
+                loEx.Add(new Exception("Data cannot be null"));
+                loEx.ThrowExceptionIfErrors();
+                return;
+            }
+
+            poParameter.Data = GetSelectedData(poParameter.Data);
+
+            SumList = poParameter.Data.Count;
+
+            // Set custom UserParameters from poParameter.UserParameters
+            // DO NOT add CCOMPANY_ID or CUSER_ID here (they are set in R_BatchParameter)
+            // Example:
+            loUserParam.Add(new R_KeyValue { Key = "ContextConstant.UserParam1", Value = poParameter.UserParameters.UserParam1 });
+            loUserParam.Add(new R_KeyValue { Key = "ContextConstant.UserParam2", Value = poParameter.UserParameters.UserParam2 });
+            loUserParam.Add(new R_KeyValue { Key = "ContextConstant.UserParam3", Value = poParameter.UserParameters.UserParam3 });
+            // ... add all other custom parameters from poParameter.UserParameters
+
+            loCls = new R_ProcessAndUploadClient(
+                pcModuleName: "{ModuleName}",
+                plSendWithContext: true,
+                plSendWithToken: true,
+                pcHttpClientName: "R_DefaultServiceUrl{ModuleName}", // see @model_http_client_convention.mdc
+                poProcessProgressStatus: this);
+
+            //Check Data
+            if (poParameter.Data.Count == 0)
+                return;
+
+            loBigObject = poParameter.Data.ToList();
+
+            //prepare Batch Parameter
+            loBatchPar = new R_BatchParameter();
+
+            loBatchPar.COMPANY_ID = poParameter.CCOMPANY_ID;  // Set from DTO
+            loBatchPar.USER_ID = poParameter.CUSER_ID;        // Set from DTO
+            loBatchPar.ClassName = "{ProgramName}Back.{ProgramName}BatchCls";
+            loBatchPar.UserParameters = loUserParam;          // Custom parameters only
+            loBatchPar.BigObject = loBigObject;
+
+            lcGuid = await loCls.R_BatchProcess<List<{BatchListDTO}>>(loBatchPar, liStep);
+        }
+        catch (Exception ex)
+        {
+            loEx.Add(ex);
+        }
+
+        loEx.ThrowExceptionIfErrors();
+    }
+
+        /// <summary>
+        /// Called when batch process completes
+        /// </summary>
+        public Task ProcessComplete(string pcKeyGuid, eProcessResultMode poProcessResultMode)
+        {
+            ShowSuccessAction?.Invoke();
+            StateChangeAction?.Invoke();
+            return Task.CompletedTask;
+        }
+
+        /// <summary>
+        /// Called when batch process encounters an error
+        /// </summary>
+        public Task ProcessError(string pcKeyGuid, R_APIException poException)
+        {
+            if (poException?.ErrorList != null)
+            {
+                var loDataSet = new DataSet();
+                var loDataTable = loDataSet.Tables.Add("ErrorTable");
+                loDataTable.Columns.Add("ErrorMessage", typeof(string));
+
+                foreach (var loError in poException.ErrorList)
+                {
+                    loDataTable.Rows.Add(loError.ErrDescp);
+                }
+
+                ShowErrorAction?.Invoke(loDataSet);
+            }
+            StateChangeAction?.Invoke();
+            return Task.CompletedTask;
+        }
+
+        /// <summary>
+        /// Called to report progress during batch processing
+        /// </summary>
+        public Task ReportProgress(int pnProgress, string pcStatus)
+        {
+            Percentage = pnProgress;
+            Message = pcStatus;
+            StateChangeAction?.Invoke();
+            return Task.CompletedTask;
+        }
+    }
+}
+```
+
+## Checklist
+- [ ] `liStep` cannot be 0, should follow the implementation in VB.NET (.NET Framework 4) implementation in Front Project
+- [ ] If `liStep` is not specified, `_BatchProcessAsync` in `{ProgramName}BatchCls` uses SP and Temp Table, `liStep` must match SP step counts
+- [ ] If `liStep` is not specified, `_BatchProcessAsync` in `{ProgramName}BatchCls` uses foreach loop with each data Insertion, `liStep` is the total count of Data
+- [ ] DO NOT add UserParameter properties to BatchViewModel - use R_SaveBatchParameterDTO.UserParameters instead
+- [ ] DO NOT add CCOMPANY_ID or CUSER_ID to loUserParam list - they are set in R_BatchParameter.COMPANY_ID and R_BatchParameter.USER_ID
+- [ ] Custom parameters are accessed via `poParameter.UserParameters.{PropertyName}` in R_SaveBatchAsync

@@ -1,0 +1,58 @@
+---
+description: "Migration pattern for R_BeforeCancel (NET4) → R_Conductor/R_Grid R_BeforeCancel (NET6)"
+alwaysApply: false
+---
+
+# R_BeforeCancel (NET4) → R_BeforeCancel (NET6)
+
+- NET4: `R_BeforeCancel` on Conductor
+- NET6: `R_BeforeCancel` on `R_Conductor` / `R_Grid<T>` with `R_BeforeCancelEventArgs`
+
+## Use
+- CRUD forms with `R_Conductor` or editable `R_Grid`.
+- Clear temp state, revert UI values, and optionally cancel the cancel action.
+
+## Bindings
+- Conductor: add `R_BeforeCancel="Conductor_R_BeforeCancel"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_BeforeCancel="Grid_R_BeforeCancel"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_BeforeCancel(R_BeforeCancelEventArgs eventArgs)` or `private Task Grid_R_BeforeCancel(R_BeforeCancelEventArgs eventArgs)`.
+- To cancel add set `eventArgs.Cancel = true`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `peMode` → NET6 `eventArgs.ConductorMode`
+- NET4 `plCancel` → NET6 `eventArgs.Cancel`
+
+## Example
+```csharp
+private Task Grid_R_BeforeCancel(R_BeforeCancelEventArgs eventArgs) // OR Conductor_R_BeforeCancel
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // revert UI or transient values if needed
+        // to prevent cancel: eventArgs.Cancel = true;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_BeforeCancel(ByRef poEntity As Object, peMode As R_Conductor.e_Mode, ByRef plCancel As Boolean) Handles conMain.R_BeforeCancel`
+- NET6 Razor usage:
+  - Conductor: `R_BeforeCancel="Conductor_BeforeCancel"` 
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeCancelEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_BeforeCancel)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_BeforeCancel)
+

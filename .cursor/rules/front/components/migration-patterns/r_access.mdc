@@ -1,0 +1,45 @@
+---
+description: "Migration pattern for Me.R_Access (NET4) → this.FormAccess (NET6)"
+alwaysApply: false
+---
+
+# R_Access Mapping (NET4 → NET6)
+
+## Overview
+- NET4 `Me.R_Access`: string of codes (e.g., "A,D,U,P")
+- NET6 `this.FormAccess`: `R_eFormAccess[]` on `R_Page`
+- When navigating, pass access as a comma-separated string via event args
+
+## Code Mapping
+- A → `R_eFormAccess.Add`
+- D → `R_eFormAccess.Delete`
+- U → `R_eFormAccess.Update`
+- P → `R_eFormAccess.Print`
+- V → `R_eFormAccess.View`
+
+## Page Checks (NET6)
+```csharp
+private bool HasAccess(R_eFormAccess peAccess) => FormAccess?.Contains(peAccess) ?? false;
+
+private bool CanAdd => HasAccess(R_eFormAccess.Add);
+private bool CanUpdate => HasAccess(R_eFormAccess.Update);
+private bool CanDelete => HasAccess(R_eFormAccess.Delete);
+```
+
+## Passing Access When Navigating
+```csharp
+// In R_Before_Open_* event on the current page
+eventArgs.FormAccess = string.Join(",", FormAccess?.Select(x => x.ToDescription()));
+```
+
+## Common Mistakes
+```csharp
+// Wrong: string comparison
+if (FormAccess?.Contains("A")) { /* ... */ }
+
+// Correct: enum comparison
+if (FormAccess?.Contains(R_eFormAccess.Add) ?? false) { /* ... */ }
+
+// Wrong: trying to set page FormAccess (read-only)
+FormAccess = new[] { R_eFormAccess.Add }; // ❌
+```

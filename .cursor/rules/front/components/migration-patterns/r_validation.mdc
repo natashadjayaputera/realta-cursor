@@ -1,0 +1,81 @@
+---
+description: "Migration pattern for R_Validation (NET4) → R_Conductor/R_Grid R_Validation (NET6)"
+alwaysApply: false
+---
+
+# R_Validation (NET4) → R_Validation (NET6)
+
+- NET4: `R_Validation` on Conductor/Grid
+- NET6: `R_Validation` on `R_Conductor` / `R_Grid<T>` with `R_ValidationEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Validate entity data before save, check business rules, and block save when validation fails.
+
+## Bindings
+- Conductor: add `R_Validation="Conductor_R_Validation"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_Validation="Grid_R_Validation"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs)` or `private Task Grid_R_Validation(R_ValidationEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task Conductor_R_Validation(R_ValidationEventArgs eventArgs)`.
+- Data object: `var loData = (MyDto)eventArgs.Data;`.
+- Call ViewModel: `await _viewModel.ValidateAsync();` or similar ViewModel method to fetch list data.
+- To cancel save set `eventArgs.Cancel = true`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `peMode` → NET6 `eventArgs.ConductorMode`
+- NET4 `plCancel` → NET6 `eventArgs.Cancel`
+### Grid
+- NET4 `poGridCellCollection` → NET6 `eventArgs.Data`
+- NET4 `peGridMode` → NET6 `eventArgs.ConductorMode`
+- NET4 `plCancel` → NET6 `eventArgs.Cancel`
+- NET4 `pcError` → NET6 `eventArgs.ErrorMessages`
+## Workaround 
+### (NET4 `poGridCellCollection`)
+- Pattern: NET4 `poGridCellCollection.Item("PROPERTY_NAME").Value` → NET6 `((MyDto)eventArgs.Data).PROPERTY_NAME`
+- Non-Value usages (format/state/metadata): `// TODO: Implement {things to do} for "PROPERTY_NAME"`
+
+## Example
+```csharp
+private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs) // OR Grid_R_Validation
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loData = (MyDto)eventArgs.Data;
+        // Call ViewModel validation
+        var loValidationEx = _viewModel.ValidateAsync();
+        if (loValidationEx.HasError)
+        {
+            loEx.Add(loValidationEx);
+        }
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    eventArgs.Cancel = loEx.HasError;
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_Validation(poEntity As Object, peMode As R_Conductor.e_Mode, ByRef plCancel As Boolean) Handles conMain.R_Validation`
+  - `Private Sub gvMain_R_Validation(poGridCellCollection As GridViewCellInfoCollection, peGridMode As R_eGridMode, ByRef plCancel As Boolean, ByRef pcError As String) Handles gvMain.R_Validation`
+- NET6 Razor usage:
+  - Grid: `R_Validation="Grid_R_Validation"`
+  - Conductor: `R_Validation="Conductor_R_Validation"`
+
+## Notes
+- For complex validation flows (cross-field checks, async service calls), delegate to the ViewModel to keep UI code thin.
+- Keep error handling minimal here; errors should set `eventArgs.Cancel = true` and throw via `R_Exception`.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_ValidationEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_Validation)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_Validation)

@@ -11,13 +11,44 @@ globs: "*ToCSharpCommon*"
 - Use `string.Empty` for string defaults
 - Nullable annotations applied correctly
 
+## Standard Properties for Entity DTOs
+
+**ALL Entity DTOs MUST include these three properties at the top:**
+
+```csharp
+public string CCOMPANY_ID { get; set; } = string.Empty;
+public string CLANG_ID { get; set; } = string.Empty;
+public string CUSER_ID { get; set; } = string.Empty;
+```
+
+### Example: Entity DTO with standard properties
+
+```csharp
+public class FAM0010002DTO
+{
+    // Required standard properties (ALWAYS include)
+    public string CCOMPANY_ID { get; set; } = string.Empty;
+    public string CLANG_ID { get; set; } = string.Empty;
+    public string CUSER_ID { get; set; } = string.Empty;
+    
+    // Business properties
+    public int ISTART_YEAR { get; set; }
+    public string CJRNGRP_CODE { get; set; } = string.Empty;
+    public string CJRNGRP_ASSET_CODE { get; set; } = string.Empty;
+    // ... other properties
+}
+```
+
+## Parameter and Result DTOs
+
 # DTO Design Pattern
 
 ```csharp
-// ✅ CORRECT - Specific parameter DTO
+// ✅ CORRECT - Specific parameter DTO with standard properties
 public class FAI00130GetSystemVariablesParameterDTO
 {
     public string CCOMPANY_ID { get; set; } = string.Empty;
+    public string CLANG_ID { get; set; } = string.Empty;
     public string CUSER_ID { get; set; } = string.Empty;
     public string CTRANS_DEPT_CODE { get; set; } = string.Empty;
 }
@@ -25,11 +56,18 @@ public class FAI00130GetSystemVariablesParameterDTO
 // ✅ CORRECT - Specific result DTO
 public class FAI00130GetSystemVariablesResultDTO
 {
-    public string CCOMPANY_ID { get; set; } = string.Empty;
-    public string CUSER_ID { get; set; } = string.Empty;
-    // example: other System Variable Properties
+    // all returns value from query or SP
 }
 
 // ❌ WRONG - Generic DTO for everything
 public class FAI00130DTO {}
 ```
+
+## Verification Checklist for Entity DTOs
+
+Before completing any Entity DTO:
+- [ ] CCOMPANY_ID property defined
+- [ ] CLANG_ID property defined
+- [ ] CUSER_ID property defined
+- [ ] All three are at the top of the class
+- [ ] All use `string.Empty` as default value

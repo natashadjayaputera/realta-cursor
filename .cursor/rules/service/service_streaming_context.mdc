@@ -6,11 +6,39 @@ globs: "*ToCSharpService*"
 
 # Streaming Context Rules
 
-- **Global Variables** must come from:
-  - `R_BackGlobalVar.COMPANY_ID`
-  - `R_BackGlobalVar.USER_ID`
+## Global Variables - ALWAYS Include These Three
+
+**CRITICAL: ALL streaming methods MUST populate these three properties from R_BackGlobalVar:**
+
+```csharp
+CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID
+CLANG_ID = R_BackGlobalVar.CULTURE
+CUSER_ID = R_BackGlobalVar.USER_ID
+```
+
+## Custom Parameters
 
 - **Custom Parameters** retrieved via:
   - `R_Utility.R_GetStreamingContext<string>(ContextConstants.KEY)`
+  - `R_Utility.R_GetStreamingContext<int>(ContextConstants.KEY)`
+  - `R_Utility.R_GetStreamingContext<bool>(ContextConstants.KEY)`
+
+### Example with Custom Parameters:
+```csharp
+var loParam = new GetPeriodParameterDTO
+{
+    // Global variables (required)
+    CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID,
+    CLANG_ID = R_BackGlobalVar.CULTURE,
+    CUSER_ID = R_BackGlobalVar.USER_ID,
+    
+    // Custom parameters from streaming context
+    CYEAR = R_Utility.R_GetStreamingContext<string>(ContextConstants.CYEAR) ?? string.Empty,
+    LFLAGPERIOD = R_Utility.R_GetStreamingContext<bool>(ContextConstants.LFLAGPERIOD)
+};
+```
+
+## Restrictions
 
 - **NO Parameters** allowed for `IAsyncEnumerable` streaming methods in interface or controller
+- **NO Empty Parameters** - MUST follow the pattern for Parameter DTO properties assignment based on `net4/**/Service/**/{ProgramName}Service/`. All parameter properties must come from either R_BackGlobalVar, R_Utility.R_GetStreamingContext, or Hardcoded value.

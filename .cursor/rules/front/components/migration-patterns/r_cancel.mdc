@@ -1,0 +1,53 @@
+---
+description: "Migration pattern for R_Cancel* (NET4) → R_CancelButton (NET6)"
+alwaysApply: false
+---
+
+# R_Cancel* → R_CancelButton
+
+- NET4: `R_FrontEnd.R_Cancel` (often named `R_Cancel*`)
+- NET6: `R_BlazorFrontEnd.Controls.DataControls.R_CancelButton`
+
+## When to use
+- CRUD pages only, with a conductor
+- Not for inquiry-only pages
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+- `R_Conductor` - **EditorRequired** - Conductor reference for button state management (`R_Conductor`)
+
+### Inherited Properties
+- Properties from `R_ButtonBase` - See @r_buttonbase.mdc
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+  - `Enabled` - Enable/disable component (managed by conductor)
+  - `TabIndex` - Tab order
+  - `Tooltip` - Tooltip text
+- Properties from `R_BaseComponent` - See @r_basecomponent.mdc
+  - `Class` - CSS class names
+  - `Style` - Inline CSS styles
+  - `AdditionalAttributes` - Additional HTML attributes
+
+## Bindings
+- Use `R_Conductor="@_conductorRef"` (required) — accepts only `R_Conductor`
+- Not supported with `R_ConductorGrid` (no grid source parameter)
+
+## Parameter mapping (NET4 → NET6)
+- R_Cancel.R_ConductorSource → R_CancelButton.R_Conductor (EditorRequired)
+- R_Cancel.Enabled → Avoid manual set; conductor/access controls state (R_CancelButton.Enabled exists)
+- R_Cancel.Text → Handled by library; do not set Text/child content
+- R_Cancel.Tooltip → R_CancelButton.Tooltip
+- R_Cancel.TabIndex → R_CancelButton.TabIndex
+- R_Cancel.Name → Not applicable
+- R_Cancel.Location/Size → Not applicable; use `Class`/`Style`/CSS
+- Styling/extra attrs → R_CancelButton.Class, Style, AdditionalAttributes
+
+## Label/text
+- Do not set `Text`
+- No child content; library handles label/tooltip
+
+## Anti-patterns
+- Setting `Text` or child content on `R_CancelButton`
+- Toggling `Enabled` on the button
+- Using without a conductor
+

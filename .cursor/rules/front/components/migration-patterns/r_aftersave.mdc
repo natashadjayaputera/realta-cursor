@@ -1,0 +1,77 @@
+---
+description: "Migration pattern for R_AfterSave (NET4) → R_Conductor/R_Grid R_AfterSave (NET6)"
+alwaysApply: false
+---
+
+# R_AfterSave (NET4) → R_AfterSave (NET6)
+
+- NET4: `R_AfterSave` on Conductor/Grid
+- NET6: `R_AfterSave` on `R_Conductor` / `R_Grid<T>` with `R_AfterSaveEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Re-enable buttons, clear temp flags/fields, refresh lists, optionally normalize mode.
+
+## Bindings
+- Conductor: add `R_AfterSave="Conductor_R_AfterSave"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_AfterSave="Grid_R_AfterSave"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs)` or `private Task Grid_R_AfterSave(R_AfterSaveEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs)`.
+- Data object: `var loData = (MyDto)eventArgs.Data;`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `peMode` → NET6 `eventArgs.ConductorMode`
+### Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+- NET4 `poGridCellCollection` → no direct args, see WorkAround
+- NET4 `peGridMode` → use NET6 _gridRef.R_GridMode
+## Workaround 
+### (NET4 `poGridCellCollection`)
+- Pattern: NET4 `poGridCellCollection.Item("PROPERTY_NAME").Value` → NET6 `((MyDto)eventArgs.Data).PROPERTY_NAME`
+- Non-Value usages (format/state/metadata): `// TODO: Implement {things to do} for "PROPERTY_NAME"`
+
+## Example
+```csharp
+private Task Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs) // OR Grid_R_AfterSave
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loData = (MyDto)eventArgs.Data;
+        if (eventArgs.ConductorMode == R_eConductorMode.Add)
+        {
+            IsActionEnabled = true;
+            TemporaryCode = string.Empty;
+        }
+        // optionally refresh/rebind
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_AfterSave(poEntity As Object, peMode As R_FrontEnd.R_Conductor.e_Mode) Handles conMain.R_AfterSave`
+  - `Private Sub gvMain_R_AfterSave(poEntity As Object, poGridCellCollection As Telerik.WinControls.UI.GridViewCellInfoCollection, peGridMode As R_FrontEnd.R_eGridMode) Handles gvMain.R_AfterSave`
+- NET6 Razor usage:
+  - Grid: `R_AfterSave="Grid_R_AfterSave"`
+  - Conductor: `R_AfterSave="Conductor_R_AfterSave"`
+
+## Notes
+- For complex post-save flows (refreshing master-detail, re-query, etc.), delegate to the ViewModel to keep UI code thin.
+- Keep error handling minimal here; this event is raised after a successful save.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterSaveEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_AfterSave)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_AfterSave)
+

@@ -1,0 +1,62 @@
+---
+description: "Properties and methods inherited from R_BaseComponent for all components in NET6"
+alwaysApply: false
+---
+
+# R_BaseComponent Properties and Methods
+
+- NET6: `R_BlazorFrontEnd.Controls.Base.R_BaseComponent`
+
+All components that inherit from `R_BaseComponent` (including `R_ControlBase`, `R_Page`, `R_Conductor`, `R_ConductorGrid`, `R_Label`, `R_GroupBox`, etc.) have access to the following public members:
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+
+None
+
+### Component-Specific Properties
+
+#### Public Parameters
+- `Id` - Component identifier (can be overridden by derived classes like R_ControlBase) (`string`, virtual)
+- `Class` - CSS class names for styling (`string`)
+- `Style` - Inline CSS styles (`string`)
+- `Tag` - Tag for component identification/tracking (`string`)
+- `OnDisposed` - Event callback invoked when the component is disposed (`EventCallback<EventArgs>`)
+
+#### Cascading Parameters
+- `Parent` - Cascading parameter that provides reference to the parent component in the component hierarchy (`R_BaseComponent?`)
+
+#### Public Properties
+- `AdditionalAttributes` - Parameter with `CaptureUnmatchedValues = true`; captures unmatched HTML attributes for pass-through rendering (`Dictionary<string, object>`)
+- `Controls` - Collection of child components (`List<R_BaseComponent>`, read-only)
+
+### Inherited Properties
+
+#### From ComponentBase
+- Properties from `Microsoft.AspNetCore.Components.ComponentBase` - Standard Blazor component base class
+  - Standard Blazor component lifecycle and state management properties
+
+### Direct Methods
+
+#### Lifecycle Methods (Protected Overridable)
+These methods can be overridden in derived classes to hook into component lifecycle:
+
+- `OnInitializedAsync()` - Method invoked when component is ready to start, having received initial parameters (`Task`)
+- `OnAfterRender(bool firstRender)` - Method invoked after each render (synchronous) (`void`)
+- `OnAfterRenderAsync(bool firstRender)` - Method invoked after each render (asynchronous) (`Task`)
+- `OnFirstAfterRender()` - Method invoked only on the first render (synchronous) (`void`)
+- `OnFirstAfterRenderAsync()` - Method invoked only on the first render (asynchronous) (`Task`)
+- `OnParametersSet()` - Method invoked when component parameters are set or updated (`void`)
+
+#### Protected Methods
+- `CallAfterRender(Func<Task> action)` - Schedule work to be executed after render completes (`void`)
+
+#### Inherited Methods from ComponentBase
+- `StateHasChanged()` - Notify that component state has changed (`void`)
+- `InvokeAsync(Action)` / `InvokeAsync(Func<Task>)` - Invoke code on the renderer's synchronization context (`Task`)
+- `OnInitialized()` - Synchronous initialization lifecycle method (`void`)
+
+## References
+
+- Base class: `Microsoft.AspNetCore.Components.ComponentBase` - Standard Blazor component base class

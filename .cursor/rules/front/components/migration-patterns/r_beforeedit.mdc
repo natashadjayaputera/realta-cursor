@@ -1,0 +1,60 @@
+---
+description: "Migration pattern for R_BeforeEdit (NET4) → R_Conductor/R_Grid R_BeforeEdit (NET6)"
+alwaysApply: false
+---
+
+# R_BeforeEdit (NET4) → R_BeforeEdit (NET6)
+
+- NET4: `R_BeforeEdit` on Conductor/Grid
+- NET6: `R_BeforeEdit` on `R_Conductor` / `R_Grid<T>` with `R_BeforeEditEventArgs`
+
+## Use
+- Trigger before entering edit mode for an entity or grid row.
+- Disable/prepare UI, validate preconditions, block edit when needed.
+
+## Bindings
+- Conductor: add `R_BeforeEdit="Conductor_R_BeforeEdit"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_BeforeEdit="Grid_R_BeforeEdit"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_BeforeEdit(R_BeforeEditEventArgs eventArgs)` or `private Task Grid_R_BeforeEdit(R_BeforeEditEventArgs eventArgs)`.
+- To cancel edit (NET4 `plCancel=True` or `plAllowEdit=False`): set `eventArgs.Cancel = true`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data` (typed to grid row/entity type)
+- NET4 `plCancel` → NET6 `eventArgs.Cancel`
+### Grid
+- NET4 `poEntity` → NET6 `eventArgs.Data` (typed to grid row/entity type)
+- NET4 `plAllowEdit` → NET6 `eventArgs.Cancel`
+
+## Example
+```csharp
+private Task Grid_R_BeforeEdit(R_BeforeEditEventArgs eventArgs) // OR Conductor_R_BeforeEdit
+{
+    var loEx = new R_Exception();
+    try
+    {
+        // inspect eventArgs.Data; if rule fails:
+        // eventArgs.Cancel = true;
+        // toggle UI flags if needed
+    }
+    catch (Exception ex) { loEx.Add(ex); }
+    loEx.ThrowExceptionIfErrors();
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_BeforeEdit(poEntity As Object, ByRef plCancel As Boolean) Handles conMain.R_BeforeEdit`
+  - `Private Sub gvMain_R_BeforeEdit(poEntity As Object, ByRef plAllowEdit As Boolean) Handles gvMain.R_BeforeEdit`
+- NET6 Razor usage:
+  - Grid: `R_BeforeEdit="Grid_R_BeforeEdit"`
+  - Conductor: `R_BeforeEdit="Conductor_R_BeforeEdit"`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeEditEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_BeforeEdit)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_BeforeEdit)
+

@@ -35,8 +35,51 @@ alwaysApply: false
 - `FormAccess` - Override form access (rarely used)
 
 **Available Properties in AfterOpen Events:**
-- `Result` - Return value from the navigation component (can be any logic, not just conductor data)
-- `Success` - Success status (R_AfterOpenPopupEventArgs only)
+- `Result` (object?) - Return value from the navigation component (can be any logic, not just conductor data: DTO, string, collection, etc.)
+- `Success` (bool) - Success status (**R_AfterOpenPopupEventArgs only**)
+
+## Critical Migration Pattern - Checking Success vs Result
+
+**For components with Success property (R_AfterOpenPopupEventArgs):**
+In NET6, use `eventArgs.Success` to check if navigation completed successfully. This replaces the NET4 pattern of checking `eventArgs.Result == R_eDialogResult.OK`.
+
+**Migration Anti-patterns (WRONG):**
+```csharp
+// ❌ NET4 pattern (DO NOT USE in NET6)
+if (eventArgs.Result == R_eDialogResult.OK) { ... }
+
+// ❌ NET6 anti-pattern (WRONG - Result is object?, not bool)
+if ((bool)eventArgs.Result == true) { ... }
+if (eventArgs.Result != null) { ... } // Wrong - Result can be non-null even if failed
+```
+
+**Correct NET6 Pattern for Popup:**
+```csharp
+// ✅ Always check Success first, then Result
+public async Task R_After_Open_Popup(R_AfterOpenPopupEventArgs eventArgs)
+{
+    if (!eventArgs.Success || eventArgs.Result is null) return;
+    
+    // Process eventArgs.Result only if Success is true
+    var loData = (MyDTO)eventArgs.Result;
+    // ... your logic here
+}
+```
+
+**For components without Success property (Detail, Lookup, Find, TabPage, PredefinedDock):**
+Simply check if `Result` is not null before processing.
+
+```csharp
+// ✅ Correct pattern for Detail, Lookup, Find, etc.
+public async Task R_After_Open_Detail(R_AfterOpenDetailEventArgs eventArgs)
+{
+    if (eventArgs.Result is null) return;
+    // Process eventArgs.Result
+    await _conductorRef.R_SetCurrentData(eventArgs.Result);
+}
+```
+
+**Key Point:** The `Result` property contains the data returned from the navigation component, not the dialog result status. For popup components, always check `Success` property first to determine if the operation completed successfully.
 
 ### 1. R_PredefinedDock - For tabs shown on page load, cannot be closed
 ```razor

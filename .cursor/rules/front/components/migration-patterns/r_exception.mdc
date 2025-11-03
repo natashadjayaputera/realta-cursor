@@ -1,0 +1,57 @@
+---
+description: "Migration pattern for R_Exception (NET4) → R_Exception (NET6)"
+alwaysApply: false
+---
+
+# R_Exception (NET4) → R_Exception (NET6)
+
+- NET4: `R_Exception` error handling in VB.NET
+- NET6: `R_Exception` error handling in C#
+
+## Pattern
+
+`R_Exception` follows the same pattern in both NET4 and NET6, with only syntax differences.
+
+**NET4 VB.NET:**
+```vb
+Dim loEx As New R_Exception()
+Try
+    ' Code here
+Catch ex As Exception
+    loEx.Add(ex)
+End Try
+loEx.ThrowExceptionIfErrors()
+```
+
+**NET6 C#:**
+```csharp
+var loEx = new R_Exception();
+try
+{
+    // Code here
+}
+catch (Exception ex)
+{
+    loEx.Add(ex);
+}
+loEx.ThrowExceptionIfErrors();
+```
+
+## NET4 → NET6 Mapping
+
+- NET4: `Dim loEx As New R_Exception()` → NET6: `var loEx = new R_Exception();`
+- NET4: `loEx.Add(ex)` → NET6: `loEx.Add(ex);`
+- NET4: `loEx.ThrowExceptionIfErrors()` → NET6: `loEx.ThrowExceptionIfErrors();`
+
+## Use Cases
+
+Event handlers in Front (.razor.cs), ViewModel methods, service wrappers. Used for error aggregation and centralized handling.
+
+## Notes
+
+- Pattern remains identical; only VB.NET to C# syntax conversion needed
+- Always use this pattern for consistent error handling across all layers
+
+## References
+
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Exceptions.R_Exception.yml`

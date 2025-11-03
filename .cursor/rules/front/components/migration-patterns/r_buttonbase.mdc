@@ -1,0 +1,47 @@
+---
+description: "Direct public API of R_ButtonBase for all button components in NET6"
+alwaysApply: false
+---
+
+# R_ButtonBase Direct Public API
+
+- NET6: `R_BlazorFrontEnd.Controls.Base.R_ButtonBase`
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+
+None
+
+### Component-Specific Properties
+
+#### Identity & State Properties
+- `Id` - Component identifier (overrides R_ControlBase.Id) (`string`, Parameter, override)
+
+#### Interaction Properties
+- `EnableLoaderContainer` - Enable loader container during async operations (`bool`, Parameter)
+- `OnClick` - Event callback when button is clicked (`EventCallback<MouseEventArgs>`, Parameter)
+- `ChildContent` - Child content rendered inside the button (use for button text instead of Text property) (`RenderFragment?`, Parameter)
+
+### Inherited Properties
+
+#### From R_ControlBase
+- Properties from `R_BlazorFrontEnd.Controls.Base.R_ControlBase` - See @r_controlbase.mdc
+  - `Id` - Component identifier (`string`)
+  - `Enabled` - Enable/disable state of the control (`bool`, virtual)
+  - `TabIndex` - Tab order for keyboard navigation (`int`)
+  - `Tooltip` - Tooltip text displayed on hover (`string`)
+
+#### From R_IEnableControl
+- Properties from `R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl` - See @r_ienablecontrol.mdc
+  - `Enabled` - Enable/disable state of the control (`bool`)
+
+### Direct Methods
+
+- `OnClickAsync()` - Public method to trigger click handler asynchronously (`Task`, public)
+- `OnClickHandlerAsync()` - Protected virtual method for custom click handling logic (`Task`, protected virtual)
+
+## References
+
+- Base class: `R_BlazorFrontEnd.Controls.Base.R_ControlBase` - See @r_controlbase.mdc
+- Interface: `R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl` - See @r_ienablecontrol.mdc

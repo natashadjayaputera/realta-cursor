@@ -1,0 +1,59 @@
+---
+description: "Migration pattern for R_RefreshGrid (NET4) → R_Grid R_RefreshGrid (NET6)"
+alwaysApply: false
+---
+
+# R_RefreshGrid (NET4) → R_RefreshGrid (NET6)
+
+- NET4: `gvMain.R_RefreshGrid(poParameter)` called synchronously on grid control.
+- NET6: `await _gridRef.R_RefreshGrid(poParameter)` called asynchronously on grid reference.
+
+## Use
+- Refresh grid data after data modifications, deletions, or filter changes.
+- Trigger `R_ServiceGetListRecord` event handler to reload grid data.
+- Common after save operations, delete operations, and parameter changes.
+
+## Bindings
+- Grid reference: `@ref="_gridRef"` in Razor markup.
+- Requires `R_Grid<T>` component in markup.
+
+## Handler
+- NET4: `gvMain.R_RefreshGrid(loParam)` (synchronous, direct call).
+- NET6: `await _gridRef.R_RefreshGrid(loParam);` with null check: `if (_gridRef is not null) { await _gridRef.R_RefreshGrid(loParam); }`.
+- Works in async methods; commonly used after data operations to refresh grid display.
+
+## Parameter mapping
+- NET4 `poParameter` → NET6 `poParameter` (object/DTO parameter, same).
+- NET4 `New Object` → NET6 `null`.
+- NET4 synchronous call → NET6 async call with `await`.
+
+## Example
+```csharp
+// NET4 VB.NET
+gvMain.R_RefreshGrid(loParam)
+gvAssetList.R_RefreshGrid(New Object)
+
+// NET6 C# 
+if (_gridRef is not null)
+{
+    await _gridRef.R_RefreshGrid(loParam);
+}
+// Or with null parameter
+if (_gridRef is not null)
+{
+    await _gridRef.R_RefreshGrid(null);
+}
+```
+
+## NET4 → NET6 mapping
+- NET4: direct synchronous call on grid control instance (`gvMain`, `gvAssetList`).
+- NET6: async method call via grid reference (`_gridRef`) with await pattern.
+
+## Notes
+- NET6 method returns `Task` and must be awaited.
+- Always check grid reference for null before calling in NET6.
+- Parameter can be DTO object or null; null triggers reload with existing parameters.
+- Calling `R_RefreshGrid` triggers the `R_ServiceGetListRecord` event handler.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_GridBase-1.yml` (R_RefreshGrid method)

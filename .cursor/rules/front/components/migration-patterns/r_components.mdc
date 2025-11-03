@@ -1,0 +1,17 @@
+---
+description: "Migration pattern for R_Components (NET4) → DEPRECATED (NET6)"
+alwaysApply: false
+---
+
+# R_Components (NET4) → Not Used in NET6
+
+## Purpose
+- In NET4, `R_Components` was a prerequisite helper to host forms and enable `R_PredefinedDock` layouts.
+- In NET6, `R_Components` is removed; `R_PredefinedDock` and related containers handle layout directly.
+
+## Rules
+- Do NOT port or recreate `R_Components` in NET6.
+- Use `R_PredefinedDock` directly per `.razor` page.
+
+## References
+- `R_BlazorFrontEnd.Controls.R_PredefinedDock`

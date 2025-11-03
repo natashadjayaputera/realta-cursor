@@ -9,3 +9,78 @@ globs: "*ToCSharpService*"
 - MUST follow @streaming_pattern.mdc
 - MUST use `R_Utility.R_GetStreamingContext` to retrieve parameters 
 - NEVER use parameters in streaming methods
+
+## Critical Rules for Parameter DTO Population
+
+### ✅ MUST populate ALL properties in Parameter DTO:
+
+1. **Global Variables (ALWAYS include these three):**
+   ```csharp
+   CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID,
+   CLANG_ID = R_BackGlobalVar.CULTURE,
+   CUSER_ID = R_BackGlobalVar.USER_ID
+   ```
+
+2. **Custom Parameters (retrieve from streaming context):**
+   ```csharp
+   ISTART_YEAR = R_Utility.R_GetStreamingContext<int>(ContextConstants.ISTART_YEAR),
+   CYEAR = R_Utility.R_GetStreamingContext<string>(ContextConstants.CYEAR) ?? string.Empty,
+   LFLAGPERIOD = R_Utility.R_GetStreamingContext<bool>(ContextConstants.LFLAGPERIOD)
+   ```
+
+### ❌ FORBIDDEN:
+- Hardcoding any values (e.g., `LDEPT_MODE = true`)
+- Omitting CLANG_ID or CUSER_ID
+- Not retrieving custom parameters from streaming context
+
+## Example: Complete Streaming Method
+
+```csharp
+[HttpPost]
+public async IAsyncEnumerable<GetPeriodResultDTO> GetPeriod()
+{
+    var lcMethod = nameof(GetPeriod);
+    using var activity = _activitySource.StartActivity(lcMethod);
+    var loEx = new R_Exception();
+    List<GetPeriodResultDTO> loResult = new();
+
+    try
+    {
+        var loCls = new FAM001000202Cls();
+        
+        // ✅ CORRECT: ALL properties populated from either global vars or streaming context
+        var loParam = new GetPeriodParameterDTO
+        {
+            CCOMPANY_ID = R_BackGlobalVar.COMPANY_ID,
+            CLANG_ID = R_BackGlobalVar.CULTURE,
+            CUSER_ID = R_BackGlobalVar.USER_ID,
+            CYEAR = R_Utility.R_GetStreamingContext<string>(ContextConstants.CYEAR) ?? string.Empty,
+            LFLAGPERIOD = R_Utility.R_GetStreamingContext<bool>(ContextConstants.LFLAGPERIOD)
+        };
+
+        _logger.LogInfo("Start method GetPeriod in {0}", lcMethod);
+        loResult = await loCls.GetPeriodAsync(loParam);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+        _logger.LogError(loEx);
+    }
+
+    loEx.ThrowExceptionIfErrors();
+    foreach (var loItem in loResult)
+    {
+        yield return loItem;
+    }
+}
+```
+
+## Verification Checklist
+
+Before completing any streaming controller method:
+- [ ] CCOMPANY_ID from R_BackGlobalVar.COMPANY_ID
+- [ ] CLANG_ID from R_BackGlobalVar.CULTURE  
+- [ ] CUSER_ID from R_BackGlobalVar.USER_ID
+- [ ] All other ParameterDTO properties from R_Utility.R_GetStreamingContext
+- [ ] No hardcoded values
+- [ ] Corresponding ContextConstants defined for custom parameters

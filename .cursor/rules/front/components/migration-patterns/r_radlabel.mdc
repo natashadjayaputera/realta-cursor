@@ -1,0 +1,71 @@
+---
+description: "Migration pattern for R_RadLabel (NET4) → R_Label (NET6)"
+alwaysApply: false
+---
+
+# R_RadLabel → R_Label
+
+- NET4: `R_FrontEnd.R_RadLabel`
+- NET6: `R_BlazorFrontEnd.Controls.R_Label`
+
+## When to use
+- Display static text labels in forms
+- Resource-based text labels using localizer
+- Labels with custom font styling (bold, italic, color, size)
+
+## Layout Requirements
+- **R_Label MUST be wrapped by `<R_ItemLayout>`**
+- All size styling (Width, Height, Size) and alignment must be applied to R_ItemLayout, not R_Label
+- Example: `<R_ItemLayout col="2" Style="display: flex; justify-content: flex-end;"><R_Label>Text</R_Label></R_ItemLayout>`
+
+## NET6 Direct Public API
+
+### Component-Specific Properties
+- `FontSize` - Font size for label text (`string`)
+- `FontStyle` - Font style (R_eFontStyle enum)
+- `FontColor` - Font color (R_eFontColor enum)
+
+### Inherited Properties
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+- Properties from `R_BaseComponent` - See @r_basecomponent.mdc
+  - `Class` - CSS class names
+  - `Style` - Inline CSS styles
+
+## Parameter mapping (NET4 → NET6)
+- R_RadLabel.R_ResourceId → `@Localizer["ResourceId"]` in ChildContent
+- R_RadLabel.Text → R_Label.ChildContent (RenderFragment) or direct text content
+- R_RadLabel.R_FontType (eFontType.Reguler, etc.) → R_Label.FontStyle (R_eFontStyle enum) or FontSize
+- R_RadLabel.Font → R_Label.FontSize (string) + R_Label.FontStyle (R_eFontStyle)
+- R_RadLabel.ForeColor → R_Label.FontColor (R_eFontColor enum) or Style (CSS color)
+- R_RadLabel.BackColor → R_Label.Style (CSS background-color)
+- R_RadLabel.Location/Size → Use R_ItemLayout.col (column width) or R_ItemLayout.Style for container sizing
+- R_RadLabel.TextAlignment (ContentAlignment.MiddleCenter/TopCenter/MiddleLeft/etc.) → R_ItemLayout.Style with CSS flexbox (e.g., `Style="display: flex; justify-content: center; align-items: center;"` for MiddleCenter)
+- R_RadLabel.DataBindings.Add(Binding("Text", BindingSource, "Property")) → Use ViewModel property: `@_viewModel.Data.PropertyName` in ChildContent
+- R_RadLabel.Visible → `@if` rendering in .razor (e.g., `@if (isVisible) { <R_ItemLayout><R_Label>...</R_Label></R_ItemLayout> }`)
+- R_RadLabel.Click → R_Label.@onclick (EventCallback)
+- R_RadLabel.MouseEnter/MouseLeave → R_Label.@onmouseenter/@onmouseleave
+- R_RadLabel.Name, TabIndex, Dock/Anchor, AutoSize, Focus(), Show()/Hide() → Not applicable
+
+## Alignment mappings
+- `ContentAlignment.MiddleCenter` → `Style="display: flex; justify-content: center; align-items: center;"`
+- `ContentAlignment.TopCenter` → `Style="display: flex; justify-content: center; align-items: flex-start;"`
+- `ContentAlignment.MiddleLeft` → `Style="display: flex; justify-content: flex-start; align-items: center;"` or omit Style (default)
+- `ContentAlignment.MiddleRight` → `Style="display: flex; justify-content: flex-end; align-items: center;"`
+- `ContentAlignment.BottomCenter` → `Style="display: flex; justify-content: center; align-items: flex-end;"`
+
+## Styling
+- **R_Label**: FontSize, FontStyle (R_eFontStyle), FontColor (R_eFontColor), Class, Style (for text/content appearance only)
+- **R_ItemLayout**: col (1-12), Class, Style (for container sizing and alignment via CSS flexbox: `display: flex; justify-content: ...; align-items: ...;`)
+
+## Examples
+- Basic: `<R_ItemLayout><R_Label>@Localizer["ResourceId"]</R_Label></R_ItemLayout>`
+- With alignment: `<R_ItemLayout Style="display: flex; justify-content: flex-end;"><R_Label>@Localizer["ResourceId"]</R_Label></R_ItemLayout>`
+- With column width: `<R_ItemLayout col="3" Style="display: flex; justify-content: center;"><R_Label>@Localizer["ResourceId"]</R_Label></R_ItemLayout>`
+- Data-bound: `<R_ItemLayout><R_Label>@_viewModel.Data._CSTATUS_DESC</R_Label></R_ItemLayout>`
+
+## Anti-patterns
+- Setting `Text` attribute (does not exist; use ChildContent)
+- Using R_Label without R_ItemLayout wrapper (required)
+- Setting TextAlignment, size, or alignment on R_Label (apply to R_ItemLayout.Style instead)
+- Using DataBindings.Add() (use ViewModel property access in ChildContent)
+- Using Location/Size/AutoSize properties (not applicable; use R_ItemLayout)

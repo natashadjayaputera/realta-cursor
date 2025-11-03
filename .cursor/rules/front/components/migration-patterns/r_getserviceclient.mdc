@@ -1,0 +1,59 @@
+---
+description: "Migration pattern for R_ServiceClientWrapper.R_GetServiceClient (NET4) → Model class instantiation (NET6)"
+alwaysApply: false
+---
+
+# R_GetServiceClient (NET4) → ViewModel + Model (NET6)
+
+- NET4: `R_ServiceClientWrapper.R_GetServiceClient(Of TService, TServiceClient)(e_ServiceClientType.RegularService, cServiceName)` creates service client proxy in code-behind.
+- NET6: Instantiate ViewModel in `.razor.cs` (one-to-one with NET4 service client), ViewModel instantiates Model, and calls methods on Model instance.
+
+## Use
+- Get service client to call backend API methods in NET4 Front layer (VB.NET code-behind).
+- Replaced by ViewModel + Model pattern in NET6; `.razor.cs` instantiates ViewModel (maps to NET4 service client), ViewModel creates Model and calls async methods.
+- Common in all service method calls from Front layer to Back layer API.
+
+## Bindings
+- No UI bindings; NET4 used in code-behind (`.vb`), NET6 ViewModel instantiated in `.razor.cs`, Model in ViewModel (`.cs`).
+- NET6 requires: ViewModel in `.razor.cs`, Model class inheriting `R_BusinessObjectServiceClientBase<TDTO>` implementing service interface.
+
+## Handler
+- NET4 (`.vb`): `Dim loService As TServiceClient = R_ServiceClientWrapper.R_GetServiceClient(Of TService, TServiceClient)(e_ServiceClientType.RegularService, cServiceName)`
+- NET6 (`.razor.cs`): `private {ProgramName}ViewModel _{programName}ViewModel = new {ProgramName}ViewModel();` (one-to-one mapping with NET4 service client).
+- NET6 (ViewModel): `private readonly {ProgramName}Model _{programName}Model = new {ProgramName}Model();`
+- NET6 calls: `.razor.cs` calls `await _{programName}ViewModel.MethodAsync(poParameter);`, which internally calls Model.
+
+## Parameter mapping
+- NET4 `TService` interface → NET6 `I{ProgramName}` interface (same interface pattern).
+- NET4 `TServiceClient` class → NET6 `{ProgramName}Model` class (Model replaces client wrapper).
+- NET4 `e_ServiceClientType.RegularService` enum → NET6 removed (Model handles service type internally).
+- NET4 `cServiceName` string → NET6 removed (Model constructor sets HTTP client name).
+
+## Example
+```csharp
+// NET4 VB.NET Front (.vb code-behind)
+Dim loService As FAT00100ServiceClient = R_ServiceClientWrapper.R_GetServiceClient(Of IFAT00100Service, FAT00100ServiceClient)(e_ServiceClientType.RegularService, cServiceName)
+loRtn = loService.GetInitialProcess(poParam)
+
+// NET6 C# Front (.razor.cs code-behind - one-to-one with NET4 service client)
+private FAT00100ViewModel _ViewModel = new FAT00100ViewModel();
+var loResult = await _ViewModel.GetInitialProcess(poEntity);
+
+// NET6 C# ViewModel (internal Model instantiation)
+private readonly FAT00100Model _model = new FAM00100Model();
+var loResult = await _model.GetInitialProcessAsync(poEntity);
+```
+
+## NET4 → NET6 mapping
+- NET4 (`.vb` code-behind): Service client instantiated → NET6 (`.razor.cs` code-behind): ViewModel instantiated (one-to-one mapping).
+- NET4 service client → NET6 ViewModel (in code-behind), then ViewModel instantiates Model internally.
+- NET6 Model handles HTTP client configuration via base class; ViewModel creates Model once as private readonly field.
+
+## Notes
+- `.razor.cs` instantiates ViewModel (one-to-one with NET4 service client in `.vb`); ViewModel instantiates Model internally.
+- NET6 Model classes inherit `R_BusinessObjectServiceClientBase<TDTO>` and implement service interface.
+- Model uses `R_HTTPClientWrapper` internally for HTTP communication (handled by base class).
+- ViewModel + Model pattern replaces service client wrapper pattern in NET6.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BusinessObjectFront.R_BusinessObjectServiceClientBase.yml` (Model base class)

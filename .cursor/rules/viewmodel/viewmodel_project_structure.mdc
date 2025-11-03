@@ -10,7 +10,22 @@ globs: "*ToCSharpViewModel*"
 - Target: `netstandard2.1`
 - Purpose: Contains only ViewModels and related helpers
 
-## Front Resource Project
+## ⚠️ Front Resource Project (MUST CREATE)
+- **MANDATORY**: Must be created BEFORE Model project can build
 - Location: `FRONT/{ProgramName}FrontResources/`
 - Target: `netstandard2.1`
-- Purpose: Contains `.resx` message files, designer class, and dummy resource class 
+- Purpose: Contains `.resx` message files, designer class, and dummy resource class
+
+### Required Files:
+1. `{ProgramName}FrontResources.csproj`
+2. `Resources_Dummy_Class.cs`
+3. `{ProgramName}FrontResources_msgrsc.resx` (English)
+4. `{ProgramName}FrontResources_msgrsc.id.resx` (Indonesian)
+5. `{ProgramName}FrontResources_msgrsc.Designer.cs`
+
+### Model Project Dependency:
+```xml
+<ProjectReference Include="..\{ProgramName}FrontResources\{ProgramName}FrontResources.csproj" />
+```
+
+**If FrontResources doesn't exist, Model build will fail with MSB9008.**

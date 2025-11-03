@@ -1,0 +1,131 @@
+---
+description: "Migration pattern for R_LookUp (NET4) → R_Lookup (NET6)"
+alwaysApply: false
+---
+
+# R_LookUp → R_Lookup
+
+- NET4: `R_FrontEnd.R_LookUp` (capital U)
+- NET6: `R_BlazorFrontEnd.Controls.R_Lookup` (lowercase u)
+
+## When to use
+- Open lookup/search forms/pages to select values
+- Validate user-entered lookup codes
+- Populate description/name fields based on lookup codes
+
+## Parameter mapping (NET4 → NET6)
+- R_LookUp.R_Before_Open_Form → R_Lookup.R_Before_Open_Lookup (with R_BeforeOpenLookupEventArgs)
+- R_LookUp.R_Return_LookUp → R_Lookup.R_After_Open_Lookup (with R_AfterOpenLookupEventArgs)
+- R_LookUp.Text → R_Lookup child content (e.g., `...`)
+- R_LookUp.Enabled → R_Lookup.Enabled - See @r_controlbase.mdc
+- R_LookUp.Tooltip → R_Lookup.Tooltip - See @r_controlbase.mdc
+- R_LookUp.Visible → `@if` rendering in .razor (e.g., `@if (isVisible) { <R_Lookup>...</R_Lookup> }`)
+- R_LookUp.R_ConductorSource / R_ConductorGridSource / R_Enable* → See @r_ienablecontrol.mdc
+- NET6 requirement: Must be wrapped in `R_ItemLayout auto="true"`
+
+### Inherited Properties
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+
+## Event handlers
+- NET4: `Private Sub btnName_R_Before_Open_Form(ByRef poTargetForm As R_FormBase, ByRef poParameter As Object)` with `poTargetForm = New TargetForm` and `poParameter = loParam`
+- NET6: `private void btnName_R_Before_Open_Lookup(R_BeforeOpenLookupEventArgs eventArgs)` — use `eventArgs.TargetPageType = typeof(TargetPage)` and `eventArgs.Parameter = loParam`
+- NET4: `Private Sub btnName_R_Return_LookUp(poReturnObject As Object)` — cast `poReturnObject` to DTO type
+- NET6: `private void btnName_R_After_Open_Lookup(R_AfterOpenLookupEventArgs eventArgs)` — cast `eventArgs.Result` to DTO type, always check for null
+
+## OnLostFocus validation pattern
+- NET6 supports `OnLostFocused` on `R_TextBox` before `R_Lookup` for validating typed codes
+- Pattern: Create _viewModel instance, prepare parameter DTO, call lookup method
+- Error handling: Clear fields and show error if lookup fails (use `R_DisplayException`), populate description/name if succeeds
+- Handler naming: `textName_OnLostFocused()`
+
+## Complete implementation example
+
+```razor
+<R_StackLayout Row>
+    <R_ItemLayout col="4">
+        <R_StackLayout Row>
+            <R_ItemLayout col="3">
+                <R_TextBox @bind-value="@_viewModel.Data.CCODE"
+                          OnLostFocused="@textName_OnLostFocused"></R_TextBox>
+            </R_ItemLayout>
+            <R_ItemLayout auto="true">
+                <R_Lookup R_Before_Open_Lookup="@btnName_R_Before_Open_Lookup"
+                          R_After_Open_Lookup="@btnName_R_After_Open_Lookup">...</R_Lookup>
+            </R_ItemLayout>
+            <R_ItemLayout auto="false">
+                <R_TextBox @bind-value="@_viewModel.Data.CNAME" Enabled="false"></R_TextBox>
+            </R_ItemLayout>
+        </R_StackLayout>
+    </R_ItemLayout>
+<R_StackLayout>
+```
+
+```csharp
+private void btnName_R_Before_Open_Lookup(R_BeforeOpenLookupEventArgs eventArgs)
+{
+    {LookupProgramName}ParameterDTO loParam = new {LookupProgramName}ParameterDTO()
+    {
+        CCOMPANY_ID = clientHelper.CompanyId,
+        CSEARCH_TEXT = ""
+    };
+    eventArgs.Parameter = loParam;
+    eventArgs.TargetPageType = typeof({LookupProgramName}Page);
+}
+
+private void btnName_R_After_Open_Lookup(R_AfterOpenLookupEventArgs eventArgs)
+{
+    {LookupProgramName}DTO loResult = ({LookupProgramName}DTO)eventArgs.Result;
+    if (loResult == null) return;
+    _viewModel.Data.CCODE = loResult.CCODE;
+    _viewModel.Data.CNAME = loResult.CNAME;
+}
+
+private async Task textName_OnLostFocused()
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (string.IsNullOrEmpty(_viewModel.Data.CCODE))
+        {
+            _viewModel.Data.CNAME = "";
+            return;
+        }
+        {LookupProgramName}_viewModel _viewModel = new {LookupProgramName}_viewModel();
+        var loParam = new {LookupProgramName}ParameterDTO()
+        {
+            CCOMPANY_ID = clientHelper.CompanyId,
+            CSEARCH_TEXT = _viewModel.Data.CCODE
+        };
+        var loResult = await _viewModel.Get{EntityName}(loParam);
+        if (loResult == null)
+        {
+            loEx.Add(R_FrontUtility.R_GetError(typeof({LookupProgramName}FrontResources.Resources_Dummy_Class), "_ErrLookup01"));
+            _viewModel.Data.CCODE = "";
+            _viewModel.Data.CNAME = "";
+        }
+        else
+        {
+            _viewModel.Data.CCODE = loResult.CCODE;
+            _viewModel.Data.CNAME = loResult.CNAME;
+        }
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    R_DisplayException(loEx);
+}
+```
+
+## Bindings
+- NET6 `R_Lookup` must be wrapped inside `R_ItemLayout auto="true"`
+- Description field should be part of the DTO (e.g., `CNAME` property), not a separate property class (like in NET4 implementation)
+- Bind description to `R_TextBox` with `Enabled="false"` (e.g., `@bind-value="@_viewModel.Data.CNAME" Enabled="false"`)
+
+## Anti-patterns
+- Using `R_Before_Open_Form` or `R_After_Open_Form` (correct names are `R_Before_Open_Lookup` and `R_After_Open_Lookup`)
+- Not wrapping `R_Lookup` in `R_ItemLayout auto="true"` in NET6
+- Not checking for null result in `R_After_Open_Lookup` handler
+- Using `OnLostFocus` without proper error handling and field clearing
+- Hardcoding lookup form/page types instead of using `typeof()` in NET6
+- Creating separate property class for description instead of adding description property to the DTO

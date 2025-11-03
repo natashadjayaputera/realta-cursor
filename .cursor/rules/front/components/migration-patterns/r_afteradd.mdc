@@ -1,0 +1,67 @@
+---
+description: "Migration pattern for R_AfterAdd (NET4) → R_Conductor/R_Grid R_AfterAdd (NET6)"
+alwaysApply: false
+---
+
+# R_AfterAdd (NET4) → R_AfterAdd (NET6)
+
+- NET4: `R_AfterAdd` on Conductor/Grid
+- NET6: `R_AfterAdd` on `R_Conductor` / `R_Grid<T>` with `R_AfterAddEventArgs`
+
+## Use
+- CRUD pages with `R_Conductor` or editable `R_Grid`.
+- Initialize defaults, set focus, toggle auxiliary UI.
+
+## Bindings
+- Conductor: add `R_AfterAdd="Conductor_R_AfterAdd"` (+ usual services, `R_ViewModel`).
+- Grid: add `R_AfterAdd="Grid_R_AfterAdd"` (+ usual services).
+
+## Handler
+- Prefer: `private Task Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs)` or `private Task Grid_R_AfterAdd(R_AfterAddEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs)`.
+- Data object: `var loData = (MyDto)eventArgs.Data;`.
+
+## Parameter mapping
+### Conductor
+- NET4 `poEntity` → NET6 `eventArgs.Data`
+### Grid
+- NET4 `poGridCellCollection` → no direct args, see WorkAround
+
+## Workaround 
+### (NET4 `poGridCellCollection`)
+- Pattern: NET4 `poGridCellCollection.Item("PROPERTY_NAME").Value` → NET6 `((MyDto)eventArgs.Data).PROPERTY_NAME`
+- Non-Value usages (format/state/metadata): `// TODO: Implement {things to do} for "PROPERTY_NAME"`
+
+## Example
+```csharp
+private Task Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs) // OR Grid_R_AfterAdd
+{
+    var loEx = new R_Exception();
+    try
+    {
+        var loData = (MyDto)eventArgs.Data;
+        // initialize defaults, set focus, toggle UI
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+
+    return Task Completed.Task;
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub conMain_R_AfterAdd(ByRef poEntity As Object) Handles conMain.R_AfterAdd`
+  - `Private Sub gvMain_R_AfterAdd(ByRef poGridCellCollection As Telerik.WinControls.UI.GridViewCellInfoCollection) Handles gvMain.R_AfterAdd`
+- NET6 Razor usage:
+  - Grid: `R_AfterAdd="Grid_R_AfterAdd"`
+  - Conductor: `R_AfterAdd="Conductor_R_AfterAdd"`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterAddEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml` (R_AfterAdd)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml` (R_AfterAdd)
+

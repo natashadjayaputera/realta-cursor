@@ -1,0 +1,51 @@
+---
+description: "Direct public API of R_ControlBase for all controls in NET6"
+alwaysApply: false
+---
+
+# R_ControlBase Direct Public API
+
+- NET6: `R_BlazorFrontEnd.Controls.Base.R_ControlBase`
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+
+None
+
+### Component-Specific Properties
+
+#### Identity & State Properties
+- `Id` - Component identifier (overrides R_BaseComponent.Id) (`string`)
+- `Enabled` - Enable/disable state of the control (implements R_IEnableControl.Enabled) (`bool`, virtual)
+
+#### Interaction Properties
+- `TabIndex` - Tab order for keyboard navigation (`int`)
+- `Tooltip` - Tooltip text displayed on hover (`string`)
+
+### Inherited Properties
+
+#### From R_BaseComponent
+- Properties from `R_BlazorFrontEnd.Controls.Base.R_BaseComponent` - See @r_basecomponent.mdc
+  - `Id` - Component identifier (`string`, virtual)
+  - `Class` - CSS class names for styling (`string`)
+  - `Style` - Inline CSS styles (`string`)
+  - `Tag` - Tag for component identification/tracking (`string`)
+  - `OnDisposed` - Event callback invoked when the component is disposed (`EventCallback<EventArgs>`)
+  - `Parent` - Cascading parameter that provides reference to the parent component (`R_BaseComponent?`)
+  - `AdditionalAttributes` - Captures unmatched HTML attributes for pass-through rendering (`Dictionary<string, object>`)
+  - `Controls` - Collection of child components (`List<R_BaseComponent>`, read-only)
+
+#### From R_IEnableControl
+- Properties from `R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl` - See @r_ienablecontrol.mdc
+  - `Enabled` - Enable/disable state of the control (`bool`)
+
+### Direct Methods
+
+- `FocusAsync()` - Abstract method that must be implemented by derived classes to focus the control (`Task`)
+- `R_FindPage()` - Finds the containing R_Page component in the component hierarchy (`R_Page?`)
+
+## References
+
+- Base class: `R_BlazorFrontEnd.Controls.Base.R_BaseComponent` - See @r_basecomponent.mdc
+- Interface: `R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl` - See @r_ienablecontrol.mdc

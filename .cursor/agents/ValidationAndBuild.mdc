@@ -51,7 +51,7 @@ Agent purpose: validate project structure against the migration checklist, run b
 - Code Warnings (CS####): mark as FIXED/NEEDS FIXING.
 - External Warnings (NU####, MSB####): document with reason and mitigation.
 - Infrastructure Warnings: document acceptable reason if applicable.
-- Use TEMPLATE #13 (see below) to format outputs.
+- See @build_report_format.mdc to format outputs.
 
 ### Error Handling Flow
 - 1st failure: attempt a safe fix (csproj setting, missing HintPath) and rebuild.
@@ -64,7 +64,7 @@ Agent purpose: validate project structure against the migration checklist, run b
 - See @common_error_compilations.mdc for common error compilations.
 
 ## Outputs / Deliverables
-- Per-project BUILD SUMMARY report (Template #13).
+- Per-project BUILD SUMMARY report (@build_report_format.mdc).
 - Consolidated validation report for the solution.
 - Optional fixes applied (if safe) with explanation in the report.
 - Raw build logs (stdout/stderr) collected for each build step.

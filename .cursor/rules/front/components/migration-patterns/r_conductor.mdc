@@ -1,0 +1,74 @@
+---
+description: "Migration pattern for R_Conductor (NET4) → R_Conductor (NET6)"
+alwaysApply: false
+---
+
+# R_Conductor (NET4) → R_Conductor (NET6)
+
+- NET4: `R_FrontEnd.R_Conductor`
+- NET6: `R_BlazorFrontEnd.Controls.DataControls.R_Conductor`
+
+## When to use
+- CRUD pages only (not inquiry-only)
+- With form-based editing; for grid-based CRUD use `R_ConductorGrid`
+
+## Bindings
+- Razor: `<R_Conductor @ref="@_conductorRef" R_ViewModel="@_viewModel" ... />`
+- `R_ViewModel` is REQUIRED; points to the page ViewModel instance
+- At least 1 `R_Conductor` with `R_IsHeader` is REQUIRED (not inquiry-only); used it on the main/parent R_Conductor
+- If there is multiple `R_Conductor` or `R_ConductorGrid`, `R_ConductorParent="@_conductorParentRef"` is REQUIRED on the children
+
+## Event Parameter mapping (NET4 -> NET6)
+- `R_AfterAdd(...)` → `R_AfterAdd="@Conductor_R_AfterAdd"`
+- `R_AfterDelete(...)` → `R_AfterDelete="@Conductor_R_AfterDelete"`
+- `R_AfterSave(...)` → `R_AfterSave="@Conductor_AfterSave"`
+- `R_BeforeAdd(...)` → `R_BeforeAdd="@Conductor_R_BeforeAdd"`
+- `R_BeforeCancel(...)` → `R_BeforeCancel="@Conductor_R_BeforeCancel"`
+- `R_BeforeDelete(...)` → `R_BeforeDelete="@Conductor_R_BeforeDelete"`
+- `R_BeforeEdit(...)` → `R_BeforeEdit="@Conductor_R_BeforeEdit"`
+- `R_BeforeSave(...)` → `R_BeforeSave="@Conductor_R_BeforeSave"`
+- `R_CheckAdd(...)` → `R_CheckAdd="@Conductor_CheckAdd"`
+- `R_CheckDelete(...)` → `R_CheckDelete="@Conductor_CheckDelete"`
+- `R_CheckEdit(...)` → `R_CheckEdit="@Conductor_CheckEdit"`
+- `R_CheckFind(...)` → `R_CheckFind="@Conductor_CheckFind"`
+- `R_ConvertToGridEntity(...)` → `R_ConvertToGridEntity="@Conductor_ConvertToGridEntity"`
+- `R_Display(...)` → `R_Display="Conductor_R_Display"`
+- `R_Saving(...)` → `R_Saving="@Conductor_R_Saving"`
+- `R_ServiceDelete(...)` → `R_ServiceDelete="@Conductor_R_ServiceDelete"`
+- `R_ServiceGetRecord(...)` → `R_ServiceGetRecord="@Conductor_R_ServiceGetRecord"`
+- `R_ServiceSave(...)` → `R_ServiceSave="@Conductor_R_ServiceSave"`
+- `R_SetAdd(...)` → `R_SetAdd="@Conductor_R_SetAdd"`
+- `R_SetEdit(...)` → `R_SetEdit="@Conductor_R_SetEdit"`
+- `R_SetOther(...)` → `R_SetOther="@Conductor_R_SetOther"`
+- `R_SetHasData(...)` → `R_SetHasData="@Conductor_R_SetHasData"`
+- `R_Validation(...)` → `R_Validation="@Conductor_R_Validation"`
+
+## Property Parameter (NET6)
+- `@ref="@_conductorRef`: required
+- `R_ViewModel`: required; page ViewModel instance
+- `R_IsHeader`: mark main/parent conductor; at least one required in CRUD page
+- `R_ConductorParent`: reference to parent conductor for child conductors
+
+## Public properties mapping (NET4 → NET6)
+- `R_ViewModel` (N/A NET4) → `R_ViewModel="@_viewModel"` (required)
+- `R_ConductorParent` → `R_ConductorParent="@_conductorParentRef"` on children
+- `R_IsHeader` → `R_IsHeader="true|false"` on main/parent conductor
+- `R_BindingSource` → Not applicable in NET6 (already included in `R_ViewModel` Properties, source that is assigned here equivalent to `_viewModel.Data`)
+- `R_RadGroupBox` → Not applicable (instead of referencing R_RadGroupBox (NET4) in R_Conductor, we reference R_GroupBox (NET6) to R_Conductor Instead, example: `<R_GroupBox R_ConductorSource="@_conductorRef">`)
+- `R_Mode (e_Mode)` → `R_ConductorMode (R_eConductorMode)`
+- `R_DisableDeleteConfirmation` → `R_DisableDeleteConfirmation="true|false"`
+- `R_DisableCancelConfirmation` → `R_DisableDeleteConfirmation="true|false"`
+- `R_IsAutoIncrementIdentity` → Not available; handle identity in Model/Backend
+- `R_DisableDataNotFound` → Not available; by default it's following "TRUE" behavior
+
+## Required code-behind members (NET6) (examples)
+- Field: `private R_Conductor? _conductorRef;`
+- Methods: `Conductor_R_ServiceGetRecord()`
+
+## Public methods mapping (NET4 → NET6)
+- `R_GetEntity(Object poEntity)` → `R_GetEntity(Object poEntity)`
+- `R_GetEntity(Object poEntity, Object poSender)` → `R_GetEntity(Object poEntity)`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_Conductor.yml`
