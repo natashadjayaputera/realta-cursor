@@ -72,7 +72,5 @@ Agent purpose: create `{ProgramName}ViewModel` classes converted from VB.NET UI 
 
 ## Usage (Cursor)
 
-* Invoke from Agents palette or use trigger `"viewmodel"`.
-* Example prompt: `Convert WinForm OrderForm.vb to OrderViewModel.cs under /src/{ProgramName}Model/VMs/, inherit from R_ViewModel<OrderDTO>, and wire calls to OrderModel client. Follow viewmodel_rules.mdc.`
-
-* Example prompt: `Use ToCSharpViewModel to convert each CRUD mode inside each pages in `/net4/**/Front/{ProgramName}*/**/*.vb` into each respective `/net6/**/FRONT/{ProgramName}Model/VMs/{PageName}ViewModel.cs` that use `/net6/**/FRONT/{ProgramName}Model/*Model.cs` to get the data needed for Front layer. ProgramName: ...`
+* Type `/ToCSharpViewModel` (custom commands)
+* Copy: `convert each CRUD mode inside each pages in `/net4/**/Front/{ProgramName}*/**/*.vb` into each respective `/net6/**/FRONT/{ProgramName}Model/VMs/{PageName}ViewModel.cs` that use `/net6/**/FRONT/{ProgramName}Model/*Model.cs` to get the data needed for Front layer. ProgramName: ...`

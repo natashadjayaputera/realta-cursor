@@ -86,5 +86,5 @@ Agent purpose: produce  C# (.NET 6) `{ProgramName}Service` project (controllers 
 
 ## Usage (Cursor)
 
-* Invoke from Agents palette or use trigger `"service"`.
-* Example prompt: `Use ToCSharpService to implement Common interfaces as controllers in `/net6/**/SERVICE/{ModuleName}/{ProgramName}Service/` following rules and patterns, calling the Back project for business logic. ProgramName: ...`
+* Type `/ToCSharpService` (custom commands)
+* Copy: `implement Common interfaces as controllers in `/net6/**/SERVICE/{ModuleName}/{ProgramName}Service/` following rules and patterns defined in `.cursor/rules`, calling the Back project for business logic. ProgramName: ...`

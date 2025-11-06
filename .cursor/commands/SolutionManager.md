@@ -90,5 +90,6 @@ Agent purpose: orchestrate Visual Studio solution structure, add project referen
 - Will not run builds automatically; use ValidationAndBuild agent for builds.
 
 ## Usage (Cursor)
-- Invoke with trigger `"solution"` and specify ProgramName.
-- Example prompt: `Use SolutionManager to add {ProgramName}. ProgramName: ...`
+
+* Type `/SolutionManager` (custom commands)
+* Copy: `add {ProgramName}. ProgramName: ...`

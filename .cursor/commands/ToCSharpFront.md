@@ -197,5 +197,5 @@ For each referenced program name found:
 
 ## Usage (Cursor)
 
-* Invoke from Agents palette or use trigger `"front"`
-* **Example prompt**: `Use ToCSharpFront to convert {ProgramName} NET4 VB forms to {ProgramName} Blazor components. Follow the layout in the image provided. ProgramName: ...`
+* Type `/ToCSharpFront` (custom commands)
+* Copy: `convert {ProgramName} .NET4 VB Forms to {ProgramName} Blazor components. Before starting the conversion, load and apply the migration-patterns. While analyzing the .NET4 source files, detect any conflicts or deviations from the migration-patterns. If conflicts are found, dynamically update and adjust the migration plan to fully comply with the migration-patterns before proceeding with code generation. ProgramName: ... and start with page: ...`

@@ -80,5 +80,5 @@ Agent purpose: generate C# (.NET 6) `{ProgramName}Model` project, which provides
 
 ## Usage (Cursor)
 
-* Invoke from Agents palette or use trigger `"model"`.
-* Example prompt: `Use ToCSharpModel to create service-layer clients for `/net6/**/SERVICE/{ModuleName}/{ProgramName}Service/*Controller.cs` signatures into `/net6/**/FRONT/{ProgramName}Model/*Model.cs` following rules and patterns. ProgramName: ...`
+* Type `/ToCSharpModel` (custom commands)
+* Copy: `create service-layer clients for `/net6/**/SERVICE/{ModuleName}/{ProgramName}Service/*Controller.cs` signatures into `/net6/**/FRONT/{ProgramName}Model/*Model.cs` following rules and patterns defined in `.cursor/rules`. ProgramName: ...`

@@ -128,5 +128,5 @@ Here’s a **chronologically corrected and clarified version** of your Cursor cu
 
 ## Usage (Cursor)
 
-* Invoke from Agents palette or use trigger `"back"`.
-* Example prompt: `Use ToCSharpBack to convert `/net4/**/Back/{ProgramName}*/**/*.vb` into Back and Back Resources Project under `/net6/**/BACK/{ModuleName}/{ProgramName}Back/` following rules and patterns. ProgramName: ...`
+* Type `/ToCSharpBack` (custom commands)
+* Copy: `convert `/net4/**/Back/{ProgramName}*/**/*.vb` into Back and Back Resources Project under `/net6/**/BACK/{ModuleName}/{ProgramName}Back/` following rules and patterns defined in `.cursor/rules`. ProgramName: ...`

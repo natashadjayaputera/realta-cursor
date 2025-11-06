@@ -85,6 +85,5 @@ Here’s a **chronologically and logically ordered** version of your instruction
 
 ## Usage (Cursor)
 
-* Invoke from Agents palette or use trigger `"common"`.
-* Example prompt:
-  `Use ToCSharpCommon to convert VB DTOs in `/net4/**/Back/{ProgramName}*/**/*.vb` into DTOs under `/net6/**/COMMON/{ModuleName}/{ProgramName}Common/` following rules and patterns. ProgramName: ...`
+* Type `/ToCSharpCommon` (custom commands)
+* Copy: `convert VB DTOs in `/net4/**/Back/{ProgramName}*/**/*.vb` into DTOs under `/net6/**/COMMON/{ModuleName}/{ProgramName}Common/` following rules and patterns defined in `.cursor/rules`. ProgramName: ...`

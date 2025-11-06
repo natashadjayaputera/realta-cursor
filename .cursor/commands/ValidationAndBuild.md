@@ -75,5 +75,6 @@ Agent purpose: validate project structure against the migration checklist, run b
 - Never take destructive automated fixes without confirmation.
 
 ## Usage (Cursor)
-* Invoke from Agents palette or use trigger `"validate"` and include the projects/solutions to validate.
-- Example prompt: `Use ValidationAndBuild to validate and build `/net6/**/{ProgramName}*.csproj` following `*MigrationChecklist*`. Run builds and return BUILD SUMMARY reports for All projects. ProgramName: ...`
+
+* Type `/ValidationAndBuild` (custom commands)
+* Copy: `validate and build `/net6/**/{ProgramName}*.csproj` following `*MigrationChecklist*`. Run builds and return BUILD SUMMARY reports for All projects. ProgramName: ...`
