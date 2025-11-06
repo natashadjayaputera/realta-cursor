@@ -29,7 +29,7 @@ public R_Exception ValidateTaxCategory(FAM00300DTO poEntity)
 
 ## Front Validation Patterns
 ```csharp
-private Task R_Validation(R_ValidationEventArgs eventArgs)
+private void R_Validation(R_ValidationEventArgs eventArgs)
 {
     var loEx = new R_Exception();
 

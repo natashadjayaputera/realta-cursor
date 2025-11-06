@@ -6,7 +6,7 @@ alwaysApply: false
 # R_RadMessageBox → R_MessageBox
 
 - NET4: `R_FrontEnd.R_RadMessageBox.Show()` or `R_RadMessageBox.Show()`
-- NET6: `R_BlazorFrontEnd.Controls.R_MessageBox.Show()` or `R_MessageBox.Show()`
+- NET6: Dependency injection using `R_MessageBoxService` via `[Inject]` attribute
 
 ## When to use
 - Display modal dialog messages with confirmation prompts
@@ -16,9 +16,16 @@ alwaysApply: false
 
 ## Method signature mapping (NET4 → NET6)
 
-- `R_RadMessageBox.Show(message, caption, buttons)` → `await R_MessageBox.Show(title, message, buttonType)`
+- `R_RadMessageBox.Show(message, caption, buttons)` → `await MessageBoxService.Show(title, message, buttonType)`
 - Parameter order reversed: NET4 (message, caption) → NET6 (title, message)
 - Return: `Windows.Forms.DialogResult` → `R_eMessageBoxResult` (async Task<T>)
+
+## Dependency injection pattern
+
+- Required using: `using R_BlazorFrontEnd.Controls.MessageBox;`
+- Injection declaration: `[Inject] private R_MessageBoxService MessageBoxService { get; set; } = default!;`
+- Usage example: `await MessageBoxService.Show("Error", Localizer["PS003"], R_eMessageBoxButtonType.OK);`
+- See @front_dependency_injection.mdc for comprehensive dependency injection patterns
 
 ## Value mappings
 
@@ -32,9 +39,12 @@ alwaysApply: false
 - `R_Utility.R_GetMessage(GetType(Resources_Dummy_Class), "ResourceId")` → `Localizer["ResourceId"]`
 - `R_Utility.R_GetError(GetType(Resources_Dummy_Class), "ErrorId").ErrDescp` → `Localizer["ErrorId"]`
 - Empty caption → use empty string `""` for title
+- Use `Localizer` with `MessageBoxService.Show()`: `await MessageBoxService.Show("Error", Localizer["ErrorId"], R_eMessageBoxButtonType.OK);`
 
 ## Anti-patterns
 
+- Using static `R_MessageBox.Show()` directly instead of dependency injection (must use `MessageBoxService` via `[Inject]`)
+- Not using `[Inject]` attribute for `MessageBoxService` (dependency injection is required)
 - Calling synchronously without `await` (NET6 requires async/await)
 - Wrong parameter order (title comes before message in NET6)
 - Using `Windows.Forms.MessageBoxButtons` or `MsgBoxStyle` (use `R_eMessageBoxButtonType`)

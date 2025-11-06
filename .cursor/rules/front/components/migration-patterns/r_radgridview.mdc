@@ -1,0 +1,413 @@
+---
+description: "Migration pattern for R_RadGridView (NET4) → R_Grid (NET6)"
+alwaysApply: false
+---
+
+# R_RadGridView (NET4) → R_Grid (NET6)
+
+- NET4: `R_FrontEnd.R_RadGridView`
+- NET6: `R_BlazorFrontEnd.Controls.R_Grid<TModel>`
+
+## When to use
+- Displaying and editing tabular data in grid format
+- CRUD operations with grid-based editing (row add/edit/delete)
+- Data display with sorting, filtering, and paging capabilities
+- Use with `R_ConductorGrid` for grid-based CRUD pages (GridType.Original with CRUD)
+- Use standalone for inquiry-only grids (no conductor needed)
+- See @front_r_conductor_rules.mdc for detailed conductor usage rules
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+
+None
+
+### Component-Specific Properties
+
+- `DataSource` - Collection of data items to display in the grid (`ObservableCollection<TModel>?`)
+- `Pageable` - Enable pagination (`bool`)
+- `PageSize` - Number of items per page (`int`)
+- `Sortable` - Enable column sorting (`bool`)
+- `AllowAddNewRow` - Allow adding new rows (`bool`)
+- `AllowEditRow` - Allow editing rows (`bool`)
+- `AllowDeleteRow` - Allow deleting rows (`bool`)
+- `R_GridType` - Grid type configuration (`R_eGridType`)
+- `Height` - Grid height (`string`)
+- `Width` - Grid width (`string`)
+- `DragDrop` - Enable drag-and-drop functionality (`bool`)
+- `DragClueField` - Field name used for drag clue during drag-and-drop operations (`string`)
+- `TargetGridDrop` - Target grid for drag-and-drop operations (`R_IGrid?`)
+- `RowHeight` - Row height configuration (`decimal`)
+- `PageSizeChanged` - Event when page size changes (`EventCallback<int>`, only use if PageSize is not `@bind-`)
+- `R_GridFilterMode` - Grid filter mode configuration (`R_eGridFilterMode`, see @r_egridfiltermode.mdc)
+- `Columns` - Grid columns collection (`List<R_GridColumnInfo>`, public get, protected set`)
+- `CurrentSelectedData` - Currently selected row data (`TModel?`, public get, protected set`)
+- `SelectedItems` - Collection of selected items (`ObservableCollection<TModel>`)
+- `CurrentSelectedRowIndex` - Index of currently selected row (`int`)
+- `HasData` - Whether grid has data (`bool`)
+- `IsAllDataSelected` - Whether all data is selected (`bool`)
+- `IsAnyDataSelected` - Whether any data is selected (`bool`)
+- `SelectAllCheckBoxValue` - Select all checkbox value (`bool?`)
+
+### Inherited Properties
+
+#### From R_GridBase<TModel>
+- Properties from `R_BlazorFrontEnd.Controls.R_GridBase<TModel>` - See @r_gridbase.mdc
+  - `R_GridMode` - Current grid mode (`R_eGridMode`, see @r_egridmode.mdc)
+  - `R_ServiceGetListRecord` - Event handler for loading list data
+  - `R_ServiceGetRecord` - Event handler for loading single record
+  - `R_ServiceSave` - Event handler for saving data
+  - `R_ServiceDelete` - Event handler for deleting data
+  - `R_Validation` - Event handler for validation
+  - `R_Saving` - Event handler before save
+  - `R_Display` - Event handler when displaying data
+  - `R_AfterAdd` - Event handler after adding new row
+  - `R_AfterSave` - Event handler after saving
+  - `R_AfterDelete` - Event handler after deleting
+  - `R_RefreshGrid` - Method to refresh grid data
+
+#### From R_ControlBase
+- Properties from `R_BlazorFrontEnd.Controls.Base.R_ControlBase` - See @r_controlbase.mdc
+  - `Enabled` - Enable/disable state of the control (`bool`)
+  - `Id` - Component identifier (`string`)
+  - `TabIndex` - Tab order for keyboard navigation (`int`)
+  - `Tooltip` - Tooltip text displayed on hover (`string`)
+
+#### From R_IEnableControl
+- Properties from `R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl` - See @r_ienablecontrol.mdc
+  - `R_ConductorSource` / `R_ConductorGridSource` / `R_Enable*` - Conductor source and enable control properties
+
+#### From R_BaseComponent
+- Properties from `R_BlazorFrontEnd.Controls.Base.R_BaseComponent` - See @r_basecomponent.mdc
+  - `Class` - CSS class names for styling (`string`)
+  - `Style` - Inline CSS styles (`string`)
+  - `Tag` - Tag for component identification/tracking (`string`)
+
+### Direct Methods
+
+- `R_GetRecordAsync(object data)` - Get record from service asynchronously (`Task`)
+- `RemoveDataAsync()` - Remove current row data asynchronously (`Task`)
+- `AddDataAsync(object poData)` - Add new row data asynchronously (`Task`)
+- `ModifyDataAsync(object poData)` - Modify current row data asynchronously (`Task`)
+- `GetCurrentData()` - Get current selected row data (`object?`)
+- `R_GroupBy(List<R_GridGroupDescriptor> poGridGroupDescriptors)` - Group grid data by specified descriptors (`Task`)
+- `R_MoveToNextRow()` - Move selection to next row (`Task`)
+- `R_MoveToPreviousRow()` - Move selection to previous row (`Task`)
+- `R_MoveToFirstRow()` - Move selection to first row (`Task`)
+- `R_MoveToLastRow()` - Move selection to last row (`Task`)
+- `R_MoveToTargetGrid()` - Move selected row to target grid (`Task`)
+- `R_MoveAllToTargetGrid()` - Move all rows to target grid (`Task`)
+- `R_SaveBatch()` - Save batch data asynchronously (`Task`)
+- `R_SelectCurrentDataAsync(object poEntity)` - Select row by entity object (`Task`)
+- `R_SelectCurrentDataAsync(int piRowIndex)` - Select row by index (`Task`)
+- `AddAsync()` - Add new row asynchronously (`Task`)
+- `EditAsync()` - Edit current row asynchronously (`Task`)
+- `DeleteAsync()` - Delete current row asynchronously (`Task`)
+- `CancelAsync()` - Cancel current operation asynchronously (`Task`)
+- `SaveAsync()` - Save current changes asynchronously (`Task`)
+
+### Inherited Methods from R_GridBase<TModel>
+
+- `R_RefreshGrid(object? poParameter, bool plWithLoader = false)` - Refresh grid data with optional loader (`Task`)
+- `R_RefreshGrid(object? poParameter)` - Refresh grid data (`Task`, virtual)
+- `GetFilteredGridData()` - Get filtered grid data as list (`List<TModel>`)
+
+## Parameter mapping (NET4 → NET6)
+
+### Basic Control Properties
+- `Name` → Not applicable (component reference via `@ref` instead)
+- `Text` → Not applicable (no text property in NET6)
+- `Location` → Not applicable (handled by layout components)
+- `Size` → `Height` and `Width` (string properties)
+- `TabIndex` → `TabIndex` (int)
+- `Enabled` → `Enabled` (bool)
+- `ThemeClassName` → Not applicable (handled by CSS classes)
+
+### Grid Configuration Properties
+- `DataSource` → `DataSource` (REQUIRED, bind to ObservableCollection in ViewModel)
+- `AutoGenerateColumns` → Not applicable (must define columns in Razor markup)
+- `AutoSizeColumnsMode` / `R_AutoSizeColumnsMode` → Not applicable (use column Width properties)
+- `EnableFastScrolling` → Not applicable (handled internally)
+- `ShowHeaderCellButtons` → Not applicable (sorting via `Sortable` property)
+- `AllowAddNewRow` → `AllowAddNewRow` (bool)
+- `AllowEditRow` → `AllowEditRow` (bool)
+- `AllowDeleteRow` → `AllowDeleteRow` (bool)
+- `EnableFiltering` / `R_EnableFiltering` → `Filterable` (bool)
+- `EnableGrouping` / `R_EnableGrouping` → Not applicable, enabled by default, define grouping using `R_GroupBy()`
+- `ShowFilteringRow` → Not applicable
+- `ShowGroupedColumns` → Not applicable
+- `EnableAlternatingRowColor` → Not applicable (handled by CSS)
+
+### R_* Specific Properties
+- `R_GridMode` → `R_GridMode` (property on grid reference, accessed via `_gridRef?.R_GridMode`, read-only)
+- `R_GridType` → `R_GridType` (enum: `R_eGridType`, see @r_egridtype.mdc)
+- `R_ConductorGridSource` / `R_ConductorSource` / `R_Enable*` (R_EnableADD, R_EnableEDIT, R_EnableOTHER, R_EnableHASDATA) → See @r_ienablecontrol.mdc
+- `R_DataAdded` → Not applicable (handled internally)
+- `R_NewRowText` → Not applicable (handled internally)
+- `R_DisableDeleteConfirmation` → `R_DisableDeleteConfirmation` (bool)
+- `R_DisableCancelConfirmation` → `R_DisableCancelConfirmation` (bool)
+- `R_FontType` → Not applicable (use CSS classes or R_Label R_FontType for headers)
+- `R_IsFromNavigator` → Not applicable (handled internally)
+- `R_IsAutoIncrementIdentity` → Not applicable (handled internally)
+- `R_FilteringMode` → Not applicable
+- `R_DirectBinding` → Not applicable (obsolete in NET4, not available in NET6)
+- `R_FocusedColumn` → Not applicable (use grid reference methods to access current cell)
+- `R_ShowProgressBar` → Not applicable
+- `R_ShowRefreshButton` → Not applicable (handled internally)
+- `R_ShowStatusBar` → Not applicable
+- `R_ContextMenuItem` → Not applicable (handled internally)
+- `R_UseHybridIndex` → Not applicable (handled internally)
+
+### Data Access
+- `CurrentRow` → `GetCurrentData()` (method to get current selected row) and `R_SelectCurrentDataAsync()` (method to select current row programmatically)
+- `CurrentRow.Cells("COLUMN_NAME").Value` → `_gridRef?.GetCurrentData()?.PropertyName` or access via event args or ViewModel data binding
+- `Columns.AddRange()` → Define columns in Razor markup using `<R_GridColumns>` and column components
+
+### Methods
+- `R_RefreshGrid(poParameter)` → `R_RefreshGrid(object? poParameter)` (async, use `await`)
+- `R_SetCellFocus(GridViewCellInfo)` → Not applicable (use `R_SelectCurrentDataAsync()` or grid reference methods)
+- `R_SetProgressBarValue(int, int)` → Not applicable (handled internally)
+- `R_SaveBatchClick()` → `R_SaveBatch()` (async method)
+- `R_SetTextLanguageBaseGrid(R_RadGridView)` → Not applicable (handled by resource files)
+
+### Events
+- All events use `Handles` keyword → Event bindings in Razor markup (e.g., `R_ServiceGetListRecord="@Grid_R_ServiceGetListRecord"`)
+
+## Bindings
+
+### Razor Markup (NET6)
+
+```razor
+<R_Grid @ref="_gridRef"
+        DataSource="@_viewModel.ListData"
+        Pageable
+        PageSize="20"
+        AllowAddNewRow
+        AllowEditRow
+        AllowDeleteRow
+        R_ConductorGridSource="@_conductorGridRef"
+        R_GridType="@R_eGridType.Original"
+        R_ServiceGetListRecord="@Grid_R_ServiceGetListRecord"
+        R_ServiceGetRecord="@Grid_R_ServiceGetRecord"
+        R_ServiceSave="@Grid_R_ServiceSave"
+        R_ServiceDelete="@Grid_R_ServiceDelete"
+        R_Validation="@Grid_R_Validation"
+        R_Saving="@Grid_R_Saving"
+        R_Display="@Grid_R_Display"
+        R_AfterAdd="@Grid_R_AfterAdd"
+        R_AfterSave="@Grid_R_AfterSave"
+        R_AfterDelete="@Grid_R_AfterDelete"
+        Height="600px">
+    <R_GridColumns>
+        <R_GridTextBoxColumn FieldName="@nameof(MyDTO.PropertyName)"
+                              HeaderText="@_localizer["HeaderText"]"
+                              Width="150px" />
+    </R_GridColumns>
+</R_Grid>
+
+<R_ConductorGrid @ref="_conductorGridRef"
+                 R_IsHeader />
+```
+
+### Code-Behind (NET6)
+
+```csharp
+private R_Grid<MyDTO>? _gridRef;
+private R_ConductorGrid? _conductorGridRef;
+```
+
+## Grid Column Types (NET4 → NET6)
+
+NET4 gridview columns and their NET6 equivalents:
+
+- `R_GridViewTextBoxColumn` → `R_GridTextColumn` - See @r_gridviewtextboxcolumn.mdc
+- `R_GridViewDecimalColumn` → `R_GridNumericColumn` - See @r_gridviewdecimalcolumn.mdc and @front_r_grid_numeric_column_rules.mdc
+- `R_GridViewDateTimeColumn` → `R_GridDatePickerColumn` - See @r_gridviewdatetimecolumn.mdc
+- `R_GridViewCheckBoxColumn` → `R_GridCheckBoxColumn` - See @r_gridviewcheckboxcolumn.mdc
+- `R_GridViewCheckBoxSelectColumn` → `R_GridCheckBoxSelectColumn` - See @r_gridviewcheckboxselectcolumn.mdc
+- `R_GridViewLookUpColumn` → `R_GridLookupColumn` - See @r_gridviewlookupcolumn.mdc
+
+## Event handlers
+
+### R_ServiceGetListRecord
+- NET4: `Private Sub gvMain_R_ServiceGetListRecord(poEntity As Object, ByRef poListEntityResult As Object) Handles gvMain.R_ServiceGetListRecord`
+- NET6: `R_ServiceGetListRecord="Grid_R_ServiceGetListRecord"` - See @r_servicegetlistrecord.mdc
+
+### R_ServiceGetRecord
+- NET4: `Private Sub gvMain_R_ServiceGetRecord(poEntity As Object, ByRef poEntityResult As Object) Handles gvMain.R_ServiceGetRecord`
+- NET6: `R_ServiceGetRecord="Grid_R_ServiceGetRecord"` - See @r_servicegetrecord.mdc
+
+### R_ServiceSave
+- NET4: `Private Sub gvMain_R_ServiceSave(poEntity As Object, peGridMode As R_eGridMode, ByRef poEntityResult As Object) Handles gvMain.R_ServiceSave`
+- NET6: `R_ServiceSave="Grid_R_ServiceSave"` - See @r_servicesave.mdc
+
+### R_ServiceDelete
+- NET4: `Private Sub gvMain_R_ServiceDelete(poEntity As Object) Handles gvMain.R_ServiceDelete`
+- NET6: `R_ServiceDelete="Grid_R_ServiceDelete"` - See @r_servicedelete.mdc
+
+### R_Validation
+- NET4: `Private Sub gvMain_R_Validation(poGridCellCollection As GridViewCellInfoCollection, peGridMode As R_eGridMode, ByRef plCancel As Boolean, ByRef pcError As String) Handles gvMain.R_Validation`
+- NET6: `R_Validation="Grid_R_Validation"` - See @r_validation.mdc
+
+### R_Saving
+- NET4: `Private Sub gvMain_R_Saving(ByRef poEntity As Object, poGridCellCollection As GridViewCellInfoCollection, peGridMode As R_eGridMode) Handles gvMain.R_Saving`
+- NET6: `R_Saving="Grid_R_Saving"` - See @r_saving.mdc
+
+### R_Display
+- NET4: `Private Sub gvMain_R_Display(poEntity As Object, poGridCellCollection As GridViewCellInfoCollection, peGridMode As R_eGridMode) Handles gvMain.R_Display`
+- NET6: `R_Display="Grid_R_Display"` - See @r_display.mdc
+
+### R_AfterAdd
+- NET4: `Private Sub gvMain_R_AfterAdd(ByRef poGridCellCollection As GridViewCellInfoCollection) Handles gvMain.R_AfterAdd`
+- NET6: `R_AfterAdd="Grid_R_AfterAdd"` - See @r_afteradd.mdc
+
+### R_AfterSave
+- NET4: `Private Sub gvMain_R_AfterSave(poEntity As Object, poGridCellCollection As GridViewCellInfoCollection, peGridMode As R_eGridMode) Handles gvMain.R_AfterSave`
+- NET6: `R_AfterSave="Grid_R_AfterSave"` - See @r_aftersave.mdc
+
+### R_AfterDelete
+- NET4: `Private Sub gvMain_R_AfterDelete() Handles gvMain.R_AfterDelete`
+- NET6: `R_AfterDelete="Grid_R_AfterDelete"` - See @r_afterdelete.mdc
+
+### R_CheckAdd
+- NET4: `Private Sub gvMain_R_CheckAdd(poEntity As Object, ByRef plCancel As Boolean) Handles gvMain.R_CheckAdd`
+- NET6: `R_CheckAdd="Grid_R_CheckAdd"` - See @r_checkadd.mdc
+
+### R_CheckEdit
+- NET4: `Private Sub gvMain_R_CheckEdit(poEntity As Object, ByRef plCancel As Boolean) Handles gvMain.R_CheckEdit`
+- NET6: `R_CheckEdit="Grid_R_CheckEdit"` - See @r_checkedit.mdc
+
+### R_CheckDelete
+- NET4: `Private Sub gvMain_R_CheckDelete(poEntity As Object, ByRef plCancel As Boolean) Handles gvMain.R_CheckDelete`
+- NET6: `R_CheckDelete="Grid_R_CheckDelete"` - See @r_checkdelete.mdc
+
+### R_BeforeAdd
+- NET4: `Private Sub gvMain_R_BeforeAdd(ByRef poGridCellCollection As GridViewCellInfoCollection) Handles gvMain.R_BeforeAdd`
+- NET6: `R_BeforeAdd="Grid_R_BeforeAdd"` - See @r_beforeadd.mdc
+
+### R_BeforeEdit
+- NET4: `Private Sub gvMain_R_BeforeEdit(poEntity As Object, ByRef poGridCellCollection As GridViewCellInfoCollection) Handles gvMain.R_BeforeEdit`
+- NET6: `R_BeforeEdit="Grid_R_BeforeEdit"` - See @r_beforeedit.mdc
+
+### R_BeforeDelete
+- NET4: `Private Sub gvMain_R_BeforeDelete(poEntity As Object) Handles gvMain.R_BeforeDelete`
+- NET6: `R_BeforeDelete="Grid_R_BeforeDelete"` - See @r_beforedelete.mdc
+
+### R_BeforeCancel
+- NET4: `Private Sub gvMain_R_BeforeCancel(ByRef plCancel As Boolean) Handles gvMain.R_BeforeCancel`
+- NET6: `R_BeforeCancel="Grid_R_BeforeCancel"` - See @r_beforecancel.mdc
+
+### R_ServiceSaveBatch
+- NET4: `Private Sub gvMain_R_ServiceSaveBatch(poEntity As Object) Handles gvMain.R_ServiceSaveBatch`
+- NET6: `R_ServiceSaveBatch="Grid_R_ServiceSaveBatch"` - Event handler for saving batch data
+
+### R_BeforeSaveBatch
+- NET4: `Private Sub gvMain_R_BeforeSaveBatch(poEntity As Object) Handles gvMain.R_BeforeSaveBatch`
+- NET6: `R_BeforeSaveBatch="Grid_R_BeforeSaveBatch"` - Event handler before saving batch data
+
+### R_AfterSaveBatch
+- NET4: `Private Sub gvMain_R_AfterSaveBatch(poEntity As Object) Handles gvMain.R_AfterSaveBatch`
+- NET6: `R_AfterSaveBatch="Grid_R_AfterSaveBatch"` - See @r_aftersavebatch.mdc
+
+### R_SetAddGridColumn
+- NET4: `Private Sub gvMain_R_SetAddGridColumn(poEntity As Object, ByRef poGridCellCollection As GridViewCellInfoCollection) Handles gvMain.R_SetAddGridColumn`
+- NET6: `R_SetAddGridColumn="Grid_R_SetAddGridColumn"` - Event handler for setting grid columns in add mode
+
+### R_SetEditGridColumn
+- NET4: `Private Sub gvMain_R_SetEditGridColumn(poEntity As Object, ByRef poGridCellCollection As GridViewCellInfoCollection) Handles gvMain.R_SetEditGridColumn`
+- NET6: `R_SetEditGridColumn="Grid_R_SetEditGridColumn"` - Event handler for setting grid columns in edit mode
+
+### R_Before_Open_Grid_Lookup
+- NET4: `Private Sub gvMain_R_Before_Open_Grid_Lookup(poEntity As Object, pcColumnName As String, ByRef poLookUpForm As Object) Handles gvMain.R_Before_Open_Grid_Lookup`
+- NET6: `R_Before_Open_Grid_Lookup="Grid_R_Before_Open_Grid_Lookup"` - See @r_before_open_lookupform.mdc
+
+### R_After_Open_Grid_Lookup
+- NET4: `Private Sub gvMain_R_After_Open_Grid_Lookup(poEntity As Object, pcColumnName As String, poSelectedEntity As Object) Handles gvMain.R_After_Open_Grid_Lookup`
+- NET6: `R_After_Open_Grid_Lookup="Grid_R_After_Open_Grid_Lookup"` - See @r_return_lookup.mdc
+
+### R_GridRowDropping
+- NET4: Not available
+- NET6: `R_GridRowDropping="Grid_R_GridRowDropping"` - Event handler when grid row is being dropped (before drop completes)
+
+### R_GridRowDropped
+- NET4: Not available
+- NET6: `R_GridRowDropped="Grid_R_GridRowDropped"` - Event handler when grid row has been dropped (after drop completes)
+
+### R_CellValueChanged
+- NET4: `Private Sub gvMain_R_CellValueChanged(poEntity As Object, pcColumnName As String, poValue As Object) Handles gvMain.R_CellValueChanged`
+- NET6: `R_CellValueChanged="Grid_R_CellValueChanged"` - Event handler when cell value changes (inherited from R_GridBase)
+
+### R_CellLostFocused
+- NET4: `Private Sub gvMain_R_CellLostFocused(poEntity As Object, pcColumnName As String, poValue As Object) Handles gvMain.R_CellLostFocused`
+- NET6: `R_CellLostFocused="Grid_R_CellLostFocused"` - Event handler when cell loses focus (inherited from R_GridBase)
+
+### R_RowRender
+- NET4: Not available
+- NET6: `R_RowRender="Grid_R_RowRender"` - Event handler for custom row rendering (inherited from R_GridBase)
+
+### R_CheckGridAdd
+- NET4: Not available
+- NET6: `R_CheckGridAdd="Grid_R_CheckGridAdd"` - Event handler for checking if grid add operation is allowed (inherited from R_GridBase)
+
+### R_CheckGridEdit
+- NET4: Not available
+- NET6: `R_CheckGridEdit="Grid_R_CheckGridEdit"` - Event handler for checking if grid edit operation is allowed (inherited from R_GridBase)
+
+### R_CheckGridDelete
+- NET4: Not available
+- NET6: `R_CheckGridDelete="Grid_R_CheckGridDelete"` - Event handler for checking if grid delete operation is allowed (inherited from R_GridBase)
+
+### R_CheckBoxSelectValueChanged
+- NET4: Not available
+- NET6: `R_CheckBoxSelectValueChanged="Grid_R_CheckBoxSelectValueChanged"` - Event handler when checkbox selection changes (inherited from R_GridBase). **REQUIRED (cannot be null) when using `R_CheckBoxSelectColumn` in `R_GridColumns`. Must set `eventArgs.Enabled = true` for default behavior, can be set conditionally.**
+
+### R_CheckBoxSelectValueChanging
+- NET4: Not available
+- NET6: `R_CheckBoxSelectValueChanging="Grid_R_CheckBoxSelectValueChanging"` - Event handler when checkbox selection is changing (inherited from R_GridBase)
+
+### R_CheckBoxSelectRender
+- NET4: Not available
+- NET6: `R_CheckBoxSelectRender="Grid_R_CheckBoxSelectRender"` - Event handler for custom checkbox selection rendering (inherited from R_GridBase)
+
+## Anti-patterns
+
+- **Do NOT** use `CurrentRow` to access grid data - use `GetCurrentData()` method, event args, or ViewModel data binding instead
+- **Do NOT** directly access `MasterTemplate` properties - use NET6 component properties
+- **Do NOT** use synchronous `R_RefreshGrid` calls - always use async `await _gridRef.R_RefreshGrid()`
+- **Do NOT** forget to check for null when accessing `_gridRef` - always use null-conditional operator (`?.`)
+- **Do NOT** bind `DataSource` directly to service results - bind to ViewModel's ObservableCollection
+- **Do NOT** use `BindingSource` - NET6 uses `DataSource` property with ObservableCollection
+- **Do NOT** access `CurrentRow.Cells("COLUMN_NAME").Value` - access via event args or ViewModel
+- **Do NOT** define columns in code-behind - define columns in Razor markup using `R_GridColumns`
+- **Do NOT** use `Handles` keyword - use event bindings in Razor markup
+- **Do NOT** use `ByRef` parameters - NET6 uses event args objects with properties
+- **Do NOT** omit `R_CheckBoxSelectValueChanged` event handler when using `R_CheckBoxSelectColumn` - it is REQUIRED (cannot be null) and must be bound with `eventArgs.Enabled = true` at minimum for default behavior
+
+## References
+
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Grid-1.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_GridBase-1.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Enums.R_eGridMode.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Enums.R_eGridType.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid.yml`
+- `.cursor/rules/front/components/front_r_conductor_rules.mdc`
+- `.cursor/rules/front/components/front_r_grid_numeric_column_rules.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_servicegetlistrecord.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_servicegetrecord.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_servicesave.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_servicedelete.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_validation.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_saving.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_display.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_afteradd.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_aftersave.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_afterdelete.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_refreshgrid.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_gridmode.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_conductorgrid.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_gridviewtextboxcolumn.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_gridviewdecimalcolumn.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_gridviewdatetimecolumn.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_gridviewcheckboxcolumn.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_gridviewcheckboxselectcolumn.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_gridviewlookupcolumn.mdc`

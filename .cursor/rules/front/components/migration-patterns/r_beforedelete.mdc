@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_BeforeDelete="Grid_R_BeforeDelete"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs)` or `private Task Grid_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs)` or `private void Grid_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs)`.
 - To cancel delete (NET4 `plCancel=True` or `plAllowDelete=False`): set `eventArgs.Cancel = true`.
 
 ## Parameter mapping
@@ -30,7 +30,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Grid_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs) // OR Conductor_R_BeforeDelete
+private void Grid_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs) // OR Conductor_R_BeforeDelete
 {
     var loEx = new R_Exception();
     try
@@ -40,7 +40,6 @@ private Task Grid_R_BeforeDelete(R_BeforeDeleteEventArgs eventArgs) // OR Conduc
     }
     catch (Exception ex) { loEx.Add(ex); }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

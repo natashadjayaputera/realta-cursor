@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_Saving="Grid_R_Saving"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_Saving(R_SavingEventArgs eventArgs)` or `private Task Grid_R_Saving(R_SavingEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_Saving(R_SavingEventArgs eventArgs)` or `private void Grid_R_Saving(R_SavingEventArgs eventArgs)`.
 - Data object: `var loData = (MyDto)eventArgs.Data;`.
 - Modify `eventArgs.Data` directly (it's mutable). Use `R_Exception` pattern for error handling.
 
@@ -29,6 +29,7 @@ alwaysApply: false
 - NET4 `poEntity` → NET6 `eventArgs.Data`
 - NET4 `poGridCellCollection` → NET6 `eventArgs.Data` (cast to DTO)
 - NET4 `peGridMode` → NET6 `eventArgs.ConductorMode`
+
 ## Workaround 
 ### (NET4 `poGridCellCollection`)
 - Pattern: NET4 `poGridCellCollection.Item("PROPERTY_NAME").Value` → NET6 `((MyDto)eventArgs.Data).PROPERTY_NAME`
@@ -36,7 +37,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_R_Saving(R_SavingEventArgs eventArgs) // OR Grid_R_Saving
+private void Conductor_R_Saving(R_SavingEventArgs eventArgs) // OR Grid_R_Saving
 {
     var loEx = new R_Exception();
     try
@@ -53,7 +54,6 @@ private Task Conductor_R_Saving(R_SavingEventArgs eventArgs) // OR Grid_R_Saving
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

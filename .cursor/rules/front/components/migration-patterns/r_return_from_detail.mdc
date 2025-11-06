@@ -1,0 +1,63 @@
+---
+description: "Migration pattern for R_Return_From_Detail (NET4) → R_After_Open_Detail (NET6)"
+alwaysApply: false
+---
+
+# R_Return_From_Detail (NET4) → R_After_Open_Detail (NET6)
+
+- NET4: Event handler `R_Return_From_Detail` on `R_FormBase`
+- NET6: Event handler `R_After_Open_Detail` on `R_Detail` component with `R_AfterOpenDetailEventArgs`
+
+## Use
+- Refresh conductor data when returning from detail page.
+- Update grid selection or reload entity data after detail page operations.
+
+## Bindings
+- `R_Detail` component: `R_After_Open_Detail="@R_After_Open_Detail"`.
+
+## Handler
+- Prefer: `private void R_After_Open_Detail(R_AfterOpenDetailEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task R_After_Open_Detail(R_AfterOpenDetailEventArgs eventArgs)`.
+- Check `eventArgs.Result` before processing: `if (eventArgs.Result is null) return;`.
+- Refresh conductor: `await _conductorRef.R_SetCurrentData(eventArgs.Result);`.
+
+## Parameter mapping
+- NET4 `poOwnedForm` (R_FormBase) → NET6: Not needed (component reference via @ref).
+- NET4 `pcButtonName` (String) → NET6: Not needed (check eventArgs properties if required).
+
+## Workaround
+### (NET4 `poOwnedForm` and `pcButtonName`)
+- Pattern: NET4 parameters not available in NET6 `R_AfterOpenDetailEventArgs`.
+- Use component reference: `// TODO: Access detail page via @ref if required for "poOwnedForm"`.
+- Button tracking: `// TODO: Implement button name tracking if needed for "pcButtonName"`.
+
+## Example
+```csharp
+private async Task R_After_Open_Detail(R_AfterOpenDetailEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (eventArgs.Result is null) return;
+        await _conductorRef.R_SetCurrentData(eventArgs.Result);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+Note: This example uses `async Task` because it calls `await _conductorRef.R_SetCurrentData()`. If no async operations are needed, use `void`.
+
+## NET4 → NET6 mapping examples
+- NET4 VB: `Private Sub ProgramName_R_Return_From_Detail(poOwnedForm As R_FrontEnd.R_FormBase, pcButtonName As String) Handles Me.R_Return_From_Detail`
+- NET6: `R_After_Open_Detail="@R_After_Open_Detail"` on `R_Detail` → `private void R_After_Open_Detail(R_AfterOpenDetailEventArgs eventArgs)`
+
+## Notes
+- Called automatically when detail page closes. Always check `eventArgs.Result` for null before processing.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Detail.yml`
+- `.cursor/rules/patterns/front_navigation_patterns.mdc`

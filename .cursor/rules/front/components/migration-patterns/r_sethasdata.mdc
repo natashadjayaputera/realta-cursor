@@ -17,7 +17,7 @@ alwaysApply: false
 - ConductorGrid: add `R_SetHasData="ConductorGrid_R_SetHasData"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_SetHasData(R_SetEventArgs eventArgs)` or `private Task ConductorGrid_R_SetHasData(R_SetEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_SetHasData(R_SetEventArgs eventArgs)` or `private void ConductorGrid_R_SetHasData(R_SetEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task Conductor_R_SetHasData(R_SetEventArgs eventArgs)`.
 - Enable status: `bool llHasData = eventArgs.Enable;`.
 
@@ -26,7 +26,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_R_SetHasData(R_SetEventArgs eventArgs) // OR ConductorGrid_R_SetHasData
+private void Conductor_R_SetHasData(R_SetEventArgs eventArgs) // OR ConductorGrid_R_SetHasData
 {
     var loEx = new R_Exception();
     try
@@ -52,7 +52,6 @@ private Task Conductor_R_SetHasData(R_SetEventArgs eventArgs) // OR ConductorGri
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 
@@ -67,6 +66,7 @@ private Task Conductor_R_SetHasData(R_SetEventArgs eventArgs) // OR ConductorGri
 ## Notes
 - The `eventArgs.Enable` property indicates whether the conductor has data (equivalent to NET4 `plEnable`).
 - Use this event to synchronize UI controls with conductor state when data existence changes.
+- All `R_Set*` events in `R_Conductor` and `R_ConductorGrid` uses `R_SetEventArgs` for their parameter (CRITICAL).
 
 ## References
 - `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_SetEventArgs.yml`

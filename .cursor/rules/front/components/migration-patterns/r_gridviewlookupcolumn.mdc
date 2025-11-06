@@ -1,0 +1,50 @@
+---
+description: "Migration pattern for R_GridViewLookUpColumn (NET4) → R_GridLookupColumn (NET6)"
+alwaysApply: false
+---
+
+# R_GridViewLookUpColumn (NET4) → R_GridLookupColumn (NET6)
+
+- NET4: `R_FrontEnd.R_GridViewLookUpColumn`
+- NET6: `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridLookupColumn`
+
+## When to use
+- Lookup columns in grid for selecting values from lookup pages
+- Display and edit lookup fields within grid rows
+
+## Bindings
+- `R_GridLookupColumn` must be bound to the **code/ID field** (e.g., `CCODE`, `CID`) for lookup functionality
+- For the **description field** (e.g., `CNAME`, `CDESC`), use `R_GridTextColumn` - See @r_gridviewtextboxcolumn.mdc
+- Pattern: Code/ID field uses `R_GridLookupColumn`, description field uses `R_GridTextColumn` (typically without R_EnableAdd or R_EnableEdit)
+
+## Parameter mapping (NET4 → NET6)
+- `FieldName` → `FieldName` (use `@nameof(MyDTO.PropertyName)` pattern)
+- `HeaderText` → `HeaderText` (string)
+- `Width` → `Width` (string, e.g., "235px")
+- `R_EnableADD` → `R_EnableAdd` (bool)
+- `R_EnableEDIT` → `R_EnableEdit` (bool)
+- `R_ResourceId` → `R_ResourceId` (string)
+- `R_Title` → handled via `R_Before_Open_Grid_Lookup` event (`eventArgs.PageTitle`)
+
+## Inherited Properties
+- Properties from `R_GridColumnBase` - See @r_gridcolumnbase.mdc
+
+## Component-Specific Properties (NET6)
+- `MaxLength` - Maximum input length (int?)
+- `TextAlignment` - Text alignment (R_eTextAlignment)
+- `TextboxEnabled` - Enable/disable textbox (bool)
+
+## Event handlers
+- NET4: `gvGrid.R_Return_LookUp` event with column name detection
+- NET6: `R_Before_Open_Grid_Lookup` and `R_After_Open_Grid_Lookup` on `R_Grid` - See @r_before_open_lookupform.mdc and @r_return_lookup.mdc
+
+## Anti-patterns
+- **Do NOT** use `Name` property in NET4 - use `FieldName` for data binding
+- **Do NOT** define columns in code-behind - define in Razor markup within `<R_GridColumns>`
+- **Do NOT** forget to set `FieldName` - it's required for data binding
+- **Do NOT** handle lookup events on column - handle on `R_Grid` level
+- **Do NOT** bind `R_GridLookupColumn` to description fields - bind to code/ID field only
+- **Do NOT** use `R_GridLookupColumn` for description - use `R_GridTextColumn` for description fields
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Grid.Columns.R_GridLookupColumn.yml`

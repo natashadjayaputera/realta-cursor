@@ -75,6 +75,8 @@ Two data binding options are available for input components:
 
 **Use when:** Need to execute custom logic, calculations, validations, or trigger UI updates when value changes.
 
+**⚠️ CRITICAL RULE:** If you need to use `ValueChanged`, you **CANNOT** use `@bind-Value`. You **MUST** use `Value` instead.
+
 **⚠️ CRITICAL:** When using `Value` with `ValueChanged`, you MUST manually update the ViewModel property in the handler. The `@bind-Value` directive automatically handles this, but `ValueChanged` does not.
 
 ```razor
@@ -88,6 +90,22 @@ private void OnPropertyChanged(TValue newValue)
     ViewModel.PropertyName = newValue; // MANDATORY: Update property or changes won't be saved
     // Add custom logic (validation, calculations, side effects)
 }
+```
+
+## Anti-patterns
+
+### ❌ Wrong: Using @bind-Value with ValueChanged
+```razor
+<!-- ❌ Wrong: Cannot use @bind-Value with ValueChanged -->
+<R_TextBox @bind-Value="@ViewModel.Data.PropertyName"
+           ValueChanged="@OnPropertyChanged" />
+```
+
+### ✅ Correct: Use Value with ValueChanged
+```razor
+<!-- ✅ Correct: Use Value (not @bind-Value) with ValueChanged -->
+<R_TextBox Value="@ViewModel.Data.PropertyName"
+           ValueChanged="@OnPropertyChanged" />
 ```
 
 ## References

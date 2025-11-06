@@ -32,7 +32,7 @@ public R_Exception ValidateFieldNameOnLostFocus(string pcFieldValue)
 
 ```csharp
 // Front .razor.cs: Call in OnLostFocus event
-private Task txtFieldName_OnLostFocus()
+private void txtFieldName_OnLostFocus()
 {
     var loEx = new R_Exception();
     try
@@ -45,7 +45,6 @@ private Task txtFieldName_OnLostFocus()
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task.CompletedTask;
 }
 ```
 
@@ -66,7 +65,7 @@ public R_Exception ValidateEntity({ProgramName}DTO poEntity)
 
 ```csharp
 // Front .razor.cs: Call in R_Validation event
-private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs)
+private void Conductor_R_Validation(R_ValidationEventArgs eventArgs)
 {
     var loEx = new R_Exception();
     try
@@ -81,7 +80,6 @@ private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs)
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task.CompletedTask;
 }
 ```
 

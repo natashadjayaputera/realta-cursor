@@ -12,6 +12,9 @@ alwaysApply: false
 - Pages that require initialization when opened from master page.
 - Initialize default values, combo boxes, button titles, or load initial data.
 
+## Bindings
+- Override method on `R_Page` - no binding required (automatically called by framework).
+
 ## Handler
 - Override: `protected override async Task R_Init_From_Master(object? poParameter)`.
 - Parameter: Cast `poParameter` to DTO if needed: `var loParam = (MyDto)poParameter;`.

@@ -1,0 +1,96 @@
+---
+description: "Migration pattern for R_Return_LookUp (NET4) → R_After_Open_Lookup (NET6)"
+alwaysApply: false
+---
+
+# R_Return_LookUp (NET4) → R_After_Open_Lookup (NET6)
+
+- NET4: Event handler `R_Return_LookUp` on `R_LookUp` component or `RadGridView` column lookup
+- NET6: Event handler `R_After_Open_Lookup` on `R_Lookup` component with `R_AfterOpenLookupEventArgs`, or `R_After_Open_Grid_Lookup` on `R_Grid` with `R_AfterOpenGridLookupColumnEventArgs`
+
+## Use
+- Handle result when lookup page closes and returns selected value.
+- Populate fields based on selected lookup result.
+- Validate selected lookup value and perform business logic.
+
+## Bindings
+- `R_Lookup` component: `R_After_Open_Lookup="@HandlerName"`.
+- `R_Grid`: `R_After_Open_Grid_Lookup="@GridName_R_After_Open_Grid_Lookup"` on `R_Grid`.
+
+## Handler
+- Prefer: `private void HandlerName(R_AfterOpenLookupEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task HandlerName(R_AfterOpenLookupEventArgs eventArgs)`.
+- Always check for null: `if (eventArgs.Result is null) return;`.
+- Cast result: `var loResult = (MyDto)eventArgs.Result;`.
+- Grid: `private void GridName_R_After_Open_Grid_Lookup(R_AfterOpenGridLookupColumnEventArgs eventArgs)` — use `eventArgs.ColumnName` to identify column, access `eventArgs.Result`.
+
+## Parameter mapping
+### R_LookUp
+- NET4 `poReturnObject As Object` → NET6 `eventArgs.Result` (object?, check for null before casting)
+### RadGridView
+- NET4 `sender As Object, e As EditorRequiredEventArgs, poReturnObject As Object` → NET6 `R_AfterOpenGridLookupColumnEventArgs` with `eventArgs.Result` and `eventArgs.ColumnName`
+- NET4 `gvGrid.CurrentColumn.Name` → NET6 `eventArgs.ColumnName`
+- NET4 `gvGrid.CurrentRow.Cells("COLUMN_NAME").Value` → NET6 `eventArgs.ColumnData.COLUMN_NAME`
+
+## Example
+```csharp
+private void btnName_R_After_Open_Lookup(R_AfterOpenLookupEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (eventArgs.Result is null) return;
+        var loResult = (GSL00500DTO)eventArgs.Result;
+        _viewModel.Data.CCODE = loResult.cDeptCode;
+        _viewModel.Data.CNAME = loResult.cDeptDesc;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## Grid Example
+```csharp
+private void Grid_R_After_Open_Grid_Lookup(R_AfterOpenGridLookupColumnEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (eventArgs.Result is null) return;
+
+        var loCurrentRow = (FAM00500StreamDTO)eventArgs.ColumnData;
+        
+        switch (eventArgs.ColumnName)
+        {
+            case nameof(MyDTO.CDEPT_NAME):
+                var loResult = (GSL00500DTO)eventArgs.Result;
+                // Update grid entity via ViewModel or eventArgs.ColumnData
+                break;
+        }
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub btnName_R_Return_LookUp(poReturnObject As Object) Handles btnName.R_Return_LookUp` with `CType(poReturnObject, GSL00500DTO)`
+  - `Private Sub gvGrid_R_Return_LookUp(sender, e, poReturnObject As Object) Handles gvGrid.R_Return_LookUp` with `Select Case gvGrid.CurrentColumn.Name`
+- NET6:
+  - `R_After_Open_Lookup="@btnName_R_After_Open_Lookup"` on `R_Lookup` → `private void btnName_R_After_Open_Lookup(R_AfterOpenLookupEventArgs eventArgs)`
+  - `R_After_Open_Grid_Lookup="@Grid_R_After_Open_Grid_Lookup"` on `R_Grid` → `private void Grid_R_After_Open_Grid_Lookup(R_AfterOpenGridLookupColumnEventArgs eventArgs)`
+
+## Notes
+- Called automatically when lookup page closes. Always check `eventArgs.Result` for null before processing.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterOpenLookupEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterOpenGridLookupColumnEventArgs.yml`
+- `.cursor/rules/front/components/migration-patterns/r_lookup.mdc`

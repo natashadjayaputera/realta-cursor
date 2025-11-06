@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_AfterSave="Grid_R_AfterSave"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs)` or `private Task Grid_R_AfterSave(R_AfterSaveEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs)` or `private void Grid_R_AfterSave(R_AfterSaveEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs)`.
 - Data object: `var loData = (MyDto)eventArgs.Data;`.
 
@@ -36,7 +36,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs) // OR Grid_R_AfterSave
+private void Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs) // OR Grid_R_AfterSave
 {
     var loEx = new R_Exception();
     try
@@ -54,7 +54,6 @@ private Task Conductor_R_AfterSave(R_AfterSaveEventArgs eventArgs) // OR Grid_R_
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

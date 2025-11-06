@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_AfterAdd="Grid_R_AfterAdd"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs)` or `private Task Grid_R_AfterAdd(R_AfterAddEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs)` or `private void Grid_R_AfterAdd(R_AfterAddEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs)`.
 - Data object: `var loData = (MyDto)eventArgs.Data;`.
 
@@ -34,7 +34,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs) // OR Grid_R_AfterAdd
+private void Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs) // OR Grid_R_AfterAdd
 {
     var loEx = new R_Exception();
     try
@@ -47,8 +47,6 @@ private Task Conductor_R_AfterAdd(R_AfterAddEventArgs eventArgs) // OR Grid_R_Af
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-
-    return Task Completed.Task;
 }
 ```
 

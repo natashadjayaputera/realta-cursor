@@ -16,7 +16,7 @@ alwaysApply: false
 - Conductor: add `R_ConvertToGridEntity="Conductor_ConvertToGridEntity"` (+ usual services, `R_ViewModel`).
 
 ## Handler
-- Prefer: `private Task Conductor_ConvertToGridEntity(R_ConvertToGridEntityEventArgs eventArgs)`.
+- Prefer: `private void Conductor_ConvertToGridEntity(R_ConvertToGridEntityEventArgs eventArgs)`.
 - Data object: `var loEntity = (MyDto)eventArgs.Data;`.
 - Convert to grid entity: `var loGridEntity = R_FrontUtility.ConvertObjectToObject<MyDto, MyGridDto>(loEntity);`.
 - Set result: `eventArgs.GridData = loGridEntity;`.
@@ -28,7 +28,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_ConvertToGridEntity(R_ConvertToGridEntityEventArgs eventArgs)
+private void Conductor_ConvertToGridEntity(R_ConvertToGridEntityEventArgs eventArgs)
 {
     var loEx = new R_Exception();
     try
@@ -44,8 +44,6 @@ private Task Conductor_ConvertToGridEntity(R_ConvertToGridEntityEventArgs eventA
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-
-    return Task Completed.Task;
 }
 ```
 

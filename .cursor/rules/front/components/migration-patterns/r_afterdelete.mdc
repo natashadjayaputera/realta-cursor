@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_AfterDelete="Grid_AfterDelete"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_AfterDelete()` or `private Task Grid_AfterDelete()`.
+- Prefer: `private void Conductor_AfterDelete()` or `private void Grid_AfterDelete()`.
 - Async allowed if needed: `private async Task Conductor_AfterDelete()`.
 
 ## Parameter mapping
@@ -25,7 +25,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Grid_AfterDelete() // OR Conductor_AfterDelete
+private void Grid_AfterDelete() // OR Conductor_AfterDelete
 {
     // Example pattern seen across solutions: disable/toggle when list becomes empty
     if (loViewModel.loItemList.Count == 0)
@@ -33,7 +33,6 @@ private Task Grid_AfterDelete() // OR Conductor_AfterDelete
         IsActionEnabled = false;
         // clear dependent fields, reset selection, etc.
     }
-    return Task Completed.Task;
 }
 ```
 

@@ -15,7 +15,13 @@ alwaysApply: false
 - Conductor: add `R_CheckDelete="Conductor_R_CheckDelete"` (+ usual services, `R_ViewModel`).
 - Grid: add `R_CheckDelete="Grid_R_CheckDelete"` (+ usual services).
 
-## Mapping
+## Handler
+- Prefer: `private void Conductor_R_CheckDelete(R_CheckDeleteEventArgs eventArgs)` or `private void Grid_R_CheckDelete(R_CheckDeleteEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task Conductor_R_CheckDelete(R_CheckDeleteEventArgs eventArgs)`.
+- Data object: `var loData = (MyDto)eventArgs.Data;` (if applicable).
+- To allow delete: set `eventArgs.Allow = true;` (default is `false`).
+
+## Parameter mapping
 ### Conductor
 - NET4 `poEntity` → NET6 `eventArgs.Data`.
 - NET4 `plValid` → NET6 `eventArgs.Allow`.
@@ -25,7 +31,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Grid_R_CheckDelete(R_CheckDeleteEventArgs eventArgs) // OR Conductor_R_CheckDelete
+private void Grid_R_CheckDelete(R_CheckDeleteEventArgs eventArgs) // OR Conductor_R_CheckDelete
 {
     var loEx = new R_Exception();
     try
@@ -38,7 +44,6 @@ private Task Grid_R_CheckDelete(R_CheckDeleteEventArgs eventArgs) // OR Conducto
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task.CompletedTask;
 }
 ```
 

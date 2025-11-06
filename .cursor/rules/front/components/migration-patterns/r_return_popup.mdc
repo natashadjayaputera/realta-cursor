@@ -1,0 +1,60 @@
+---
+description: "Migration pattern for R_Return_Popup (NET4) → R_After_Open_Grid_Popup (NET6)"
+alwaysApply: false
+---
+
+# R_Return_Popup (NET4) → R_After_Open_Grid_Popup (NET6)
+
+- NET4: Event handler `R_Return_Popup` on `RadGridView` column popup
+- NET6: Event handler `R_After_Open_Grid_Popup` on `R_Grid` with `R_AfterOpenGridPopupColumnEventArgs` (when `R_GridPopupColumn` is implemented)
+
+## Use
+- Handle result when grid column popup page closes and returns selected value.
+- Populate grid cells based on selected popup result.
+- Validate selected popup value and perform business logic.
+
+## Bindings
+- `R_Grid`: `R_After_Open_Grid_Popup="@GridName_R_After_Open_Grid_Popup"` on `R_Grid` (TODO: `R_GridPopupColumn` not implemented yet).
+
+## Handler
+- TODO: `R_GridPopupColumn` is not implemented yet. When available, use: `private void GridName_R_After_Open_Grid_Popup(R_AfterOpenGridPopupColumnEventArgs eventArgs)`.
+- Always check for null: `if (eventArgs.Result is null) return;`.
+- Use `eventArgs.ColumnName` to identify triggering column, access `eventArgs.Result`.
+
+## Parameter mapping
+- NET4 `sender As Object, e As EditorRequiredEventArgs, poReturnObject As Object` → NET6 `R_AfterOpenGridPopupColumnEventArgs` with `eventArgs.Result` and `eventArgs.ColumnName` (TODO: not implemented yet)
+- NET4 `gvGrid.CurrentColumn.Name` → NET6 `eventArgs.ColumnName`
+- NET4 `gvGrid.CurrentRow.Cells("COLUMN_NAME").Value` → NET6 Update grid entity via ViewModel or grid data binding
+
+## Example
+```csharp
+//TODO: R_GridPopupColumn is not implemented yet. When available, use this pattern:
+//private void Grid_R_After_Open_Grid_Popup(R_AfterOpenGridPopupColumnEventArgs eventArgs)
+//{
+//    var loEx = new R_Exception();
+//    try
+//    {
+//        if (eventArgs.Result is null) return;
+//        switch (eventArgs.ColumnName)
+//        {
+//            case nameof(MyDTO.CColumnName):
+//                var loResult = (MyDTO)eventArgs.Result;
+//                // Update grid entity via ViewModel or eventArgs.ColumnData
+//                break;
+//        }
+//    }
+//    catch (Exception ex)
+//    {
+//        loEx.Add(ex);
+//    }
+//    loEx.ThrowExceptionIfErrors();
+//}
+```
+
+## NET4 → NET6 mapping examples
+- NET4: `Private Sub gvGrid_R_Return_Popup(sender, e, poReturnObject As Object) Handles gvGrid.R_Return_Popup` with `Select Case gvGrid.CurrentColumn.Name`
+- NET6: `R_After_Open_Grid_Popup="@Grid_R_After_Open_Grid_Popup"` on `R_Grid` → `private void Grid_R_After_Open_Grid_Popup(R_AfterOpenGridPopupColumnEventArgs eventArgs)` (TODO: not implemented yet)
+
+## References
+- `.cursor/rules/front/components/migration-patterns/r_return_lookup.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_before_open_popupform.mdc`

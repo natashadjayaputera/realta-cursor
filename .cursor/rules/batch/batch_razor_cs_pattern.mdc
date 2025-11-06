@@ -271,7 +271,7 @@ public partial class {ProgramName}Batch : R_Page
         loEx.ThrowExceptionIfErrors();
     }
 
-    private Task R_RowRender(R_GridRowRenderEventArgs eventArgs)
+    private void R_RowRender(R_GridRowRenderEventArgs eventArgs)
     {
         var loData = (BatchListDisplayDTO)eventArgs.Data;
 

@@ -1,0 +1,53 @@
+---
+description: "Migration pattern for R_GridViewDateTimeColumn (NET4) → R_GridDatePickerColumn (NET6)"
+alwaysApply: false
+---
+
+# R_GridViewDateTimeColumn (NET4) → R_GridDatePickerColumn (NET6)
+
+- NET4: `R_FrontEnd.R_GridViewDateTimeColumn`
+- NET6: `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDatePickerColumn`
+
+## When to use
+- Date input columns in grid for DateTime data entry
+- Editable date fields within grid rows
+- Display and edit date properties in grid format
+
+## Parameter mapping (NET4 → NET6)
+- `FieldName` → `FieldName` (use `@nameof(MyDTO.PropertyName)` pattern)
+- `HeaderText` → `HeaderText` (string)
+- `Width` → `Width` (string, e.g., "110px")
+- `R_MinDate` → `Min` (DateTime)
+- `Format` → `DatePickerFormat` (R_eDatePickerFormat enum)
+- `FormatString` → `Format` (string)
+- `R_ResourceId` → `R_ResourceId` (string)
+- `R_EnableAdd` → `R_EnableAdd` (bool)
+- `R_EnableEdit` → `R_EnableEdit` (bool)
+- `Enabled` → `Enabled` (bool, inherited from R_GridColumnBase)
+- `Visible` → `Visible` (bool, inherited from R_GridColumnBase)
+
+## Inherited Properties
+- Properties from `R_GridColumnBase` - See @r_gridcolumnbase.mdc
+  - `FieldName` - Field name binding (REQUIRED)
+  - `Width` - Column width
+  - `HeaderText` - Column header text
+  - `R_EnableAdd` - Enable add operation
+  - `R_EnableEdit` - Enable edit operation
+- Properties from `R_GridDateTimeColumnBase`
+  - `Min` - Minimum date value (DateTime)
+  - `Max` - Maximum date value (DateTime)
+  - `Format` - Date format string (string)
+  - `Placeholder` - Placeholder text (string)
+  - `TextAlignment` - Text alignment (R_eTextAlignment)
+
+## Component-Specific Properties (NET6)
+- `DatePickerFormat` - Date picker format (R_eDatePickerFormat enum)
+
+## Anti-patterns
+- **Do NOT** use `Name` property in NET4 - use `FieldName` for data binding
+- **Do NOT** define columns in code-behind - define in Razor markup within `<R_GridColumns>`
+- **Do NOT** forget to set `FieldName` - it's required for data binding
+- **Do NOT** use `FilteringMode` or `ExcelExportType` - these properties are deprecated in NET6
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Grid.Columns.R_GridDatePickerColumn.yml`

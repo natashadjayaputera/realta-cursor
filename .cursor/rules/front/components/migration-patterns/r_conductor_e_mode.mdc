@@ -1,0 +1,48 @@
+---
+description: "Migration pattern for R_Conductor.e_Mode (NET4) → R_eConductorMode (NET6)"
+alwaysApply: false
+---
+
+# R_Conductor.e_Mode (NET4) → R_eConductorMode (NET6)
+
+- NET4: `R_Conductor.e_Mode`
+- NET6: `R_BlazorFrontEnd.Enums.R_eConductorMode`
+
+## Enum type mapping
+- NET4: `R_Conductor.e_Mode` → NET6: `R_eConductorMode`
+- Full namespace: `R_BlazorFrontEnd.Enums.R_eConductorMode`
+
+## Enum value mapping
+- `R_Conductor.e_Mode.AddMode` → `R_eConductorMode.Add`
+- `R_Conductor.e_Mode.EditMode` → `R_eConductorMode.Edit`
+- `R_Conductor.e_Mode.NormalMode` → `R_eConductorMode.Normal`
+- Note: `R_Conductor.e_Mode.None` has no equivalent in NET6 (does not exist)
+
+## Event handler parameter migration
+- NET4 event handlers receive `peMode As R_Conductor.e_Mode` parameter
+- NET6 event handlers use `eventArgs.Mode` property (type: `R_eConductorMode`)
+
+## Usage examples
+### NET4 VB.NET
+```vb
+Private Sub conMain_R_Validation(poEntity As Object, peMode As R_Conductor.e_Mode, ByRef plCancel As Boolean)
+    If peMode = R_Conductor.e_Mode.AddMode Then
+    If peMode = R_Conductor.e_Mode.EditMode Or peMode = R_Conductor.e_Mode.AddMode Then
+End Sub
+```
+
+### NET6 C#
+```csharp
+private void Conductor_R_Validation(R_ValidationEventArgs eventArgs)
+{
+    if (eventArgs.Mode == R_eConductorMode.Add)
+    if (eventArgs.Mode == R_eConductorMode.Edit || eventArgs.Mode == R_eConductorMode.Add)
+}
+```
+
+## Notes
+- Enum values lost "Mode" suffix in NET6 (AddMode → Add, EditMode → Edit, NormalMode → Normal)
+- Property access pattern covered in @r_mode.mdc
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Enums.R_eConductorMode.yml`

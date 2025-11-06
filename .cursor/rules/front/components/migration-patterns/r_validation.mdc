@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_Validation="Grid_R_Validation"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs)` or `private Task Grid_R_Validation(R_ValidationEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_Validation(R_ValidationEventArgs eventArgs)` or `private void Grid_R_Validation(R_ValidationEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task Conductor_R_Validation(R_ValidationEventArgs eventArgs)`.
 - Data object: `var loData = (MyDto)eventArgs.Data;`.
 - Call ViewModel: `await _viewModel.ValidateAsync();` or similar ViewModel method to fetch list data.
@@ -40,7 +40,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs) // OR Grid_R_Validation
+private void Conductor_R_Validation(R_ValidationEventArgs eventArgs) // OR Grid_R_Validation
 {
     var loEx = new R_Exception();
     try
@@ -59,7 +59,6 @@ private Task Conductor_R_Validation(R_ValidationEventArgs eventArgs) // OR Grid_
     }
     eventArgs.Cancel = loEx.HasError;
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

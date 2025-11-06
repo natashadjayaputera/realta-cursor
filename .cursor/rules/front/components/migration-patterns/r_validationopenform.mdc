@@ -11,8 +11,11 @@ alwaysApply: false
 ## Use
 - Pages that require pre-opening validation (user permissions, system settings, data existence checks).
 
+## Bindings
+- Override method on `R_Page` - no binding required (automatically called by framework).
+
 ## Handler
-- Placeholder: `private Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`.
+- Placeholder: `private void R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`.
 - Call ViewModel or Model methods to perform validation checks (user activity rights, transaction settings, system validation, data existence).
 - To cancel page opening set `eventArgs.Cancel = true`.
@@ -23,7 +26,8 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)
+/*
+private void R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)
 {
     var loEx = new R_Exception();
     try
@@ -43,15 +47,15 @@ private Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)
         eventArgs.Cancel = true;
     }
     loEx.ThrowExceptionIfErrors();
-    return Task.CompletedTask;
 }
+*/
 ```
 
 ## NET4 → NET6 mapping examples
 - NET4 VB usage:
   - `Private Sub ProgramName_R_ValidationOpenForm(ByRef plValid As Boolean, ByRef poError As R_Common.R_Exception) Handles Me.R_ValidationOpenForm`
 - NET6 Razor usage:
-  - Placeholder: `private Task R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`
+  - Placeholder: `private void R_ValidationOpenPage(R_ValidationOpenPageEventArgs eventArgs)`
 
 ## Notes
 - This is a placeholder pattern; no equivalent exists in NET6 R_Page currently.

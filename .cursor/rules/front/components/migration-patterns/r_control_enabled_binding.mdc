@@ -1,0 +1,63 @@
+---
+description: "Migration pattern for control Enabled property from direct assignment (NET4) → property binding (NET6)"
+alwaysApply: false
+---
+
+# Control Enabled Property Binding (NET4 → NET6)
+
+- NET4: `_componentRef.Enabled = false;`
+- NET6: `private bool IsComponentEnabled { get; set; } = true;` and `<R_Component Enabled="@IsComponentEnabled" ... />`
+
+## Migration Pattern
+
+### NET4 (VB.NET)
+```vb
+_componentRef.Enabled = False
+```
+
+### NET6 (.razor.cs)
+```csharp
+private bool IsSeparatorJournalEnabled { get; set; } = false;
+
+private void UpdateControlStates()
+{
+    IsSeparatorJournalEnabled = _viewModel.Data.LJRNGRP_MODE;
+    StateHasChanged(); // Required after property updates
+}
+```
+
+### NET6 (.razor)
+```razor
+<R_ComboBox Enabled="@IsSeparatorJournalEnabled"
+            @bind-Value="@_viewModel.Data.CDELIMITER01" ... />
+```
+
+## Property Naming
+- Pattern: `Is{ComponentDescription}Enabled` (e.g., `IsSeparatorJournalEnabled`, `IsCodeLength1Enabled`)
+- Type: `bool`
+- Default: `true` if enabled by default, `false` if disabled by default
+
+## StateHasChanged()
+- **Required**: Call after updating Enabled property in methods
+- **Not Required**: When updated in Blazor component event handlers (auto re-render)
+
+## Anti-patterns
+```csharp
+// ❌ Wrong: Direct component reference assignment
+_cmbSeparatorJournalRef.Enabled = false;
+
+// ❌ Wrong: Missing StateHasChanged()
+IsSeparatorJournalEnabled = false; // UI won't update
+```
+
+## Notes
+- Remove component references if only used for Enabled assignment. Keep only for other operations (e.g., `FocusAsync()`).
+- For conductor/grid components, prefer `R_EnableAdd`, `R_EnableEdit`, `R_EnableHasData`, `R_EnableOther` (see @r_ienablecontrol.mdc).
+
+## Warning
+`Severity	Code	Description	Project	File	Line	Suppression State
+Warning (active)	BL0005	Component parameters should not be set outside of their declared component. Doing so may result in unexpected behavior at runtime.`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Base.R_ControlBase.yml` (Enabled property)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Interfaces.R_IEnableControl.yml`

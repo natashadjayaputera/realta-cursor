@@ -1,0 +1,51 @@
+---
+description: "Migration pattern for R_eLockUnlock (NET4) → R_eLockUnlock (NET6)"
+alwaysApply: false
+---
+
+# R_eLockUnlock (NET4) → R_eLockUnlock (NET6)
+
+- NET4: `R_FrontEnd.R_eLockUnlock`
+- NET6: `R_BlazorFrontEnd.Controls.Enums.R_eLockUnlock`
+
+## Enum type mapping
+- NET4: `R_FrontEnd.R_eLockUnlock` → NET6: `R_BlazorFrontEnd.Controls.Enums.R_eLockUnlock`
+
+## Enum value mapping
+- `R_eLockUnlock.Lock` → `R_eLockUnlock.Lock`
+- `R_eLockUnlock.Unlock` → `R_eLockUnlock.Unlock`
+
+## Event handler parameter migration
+- NET4 event handlers receive `peLockUnlock As R_FrontEnd.R_eLockUnlock` parameter
+- NET6 override method uses `eventArgs.Mode` property (type: `R_eLockUnlock`)
+
+## Usage examples
+### NET4 VB.NET
+```vb
+Private Sub FAM00500_R_LockUnlock(peLockUnlock As R_FrontEnd.R_eLockUnlock, poEntity As Object, ByRef plSuccessLockUnlock As Boolean) Handles Me.R_LockUnlock
+    If peLockUnlock = R_eLockUnlock.Lock Then
+    ElseIf peLockUnlock = R_eLockUnlock.Unlock Then
+```
+
+### NET6 C#
+```csharp
+protected async override Task<bool> R_LockUnlock(R_LockUnlockEventArgs eventArgs)
+{
+    if (eventArgs.Mode == R_eLockUnlock.Lock)
+    {
+    }
+    else if (eventArgs.Mode == R_eLockUnlock.Unlock)
+    {
+    }
+}
+```
+
+## Notes
+- Enum values are identical in both versions (Lock = 0, Unlock = 1)
+- NET6 method signature changed from event handler to async override method returning `Task<bool>`
+- Entity data is accessed via `eventArgs.Data` in NET6 (instead of `poEntity` parameter in NET4)
+- Success result is returned as `Task<bool>` in NET6 (instead of `ByRef plSuccessLockUnlock` parameter in NET4)
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Enums.R_eLockUnlock.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_LockUnlockEventArgs.yml`

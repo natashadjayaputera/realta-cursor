@@ -4,6 +4,10 @@ alwaysApply: false
 ---
 # R_Conductor and R_ConductorGrid Usage
 
+- NET6: `R_BlazorFrontEnd.Controls.R_Conductor` / `R_BlazorFrontEnd.Controls.R_ConductorGrid`
+
+See @r_conductor.mdc and @r_conductorgrid.mdc for complete usage patterns, API documentation, and migration details.
+
 ## Conductor Source DEPENDS on Control
 - Grid CRUD operations: `R_ConductorGridSource="@_conductorGridRef"`
 - Form CRUD operations: `R_ConductorSource="@_conductorRef"`
@@ -49,18 +53,15 @@ alwaysApply: false
 ### Parent-Child Conductor Relationship
 Note: You can use any conductor as parent and as child
 ```csharp
-// ONLY for CRUD programs
+// ONLY for CRUD programs - Parent Conductor
 <R_ConductorGrid @ref="@_conductorGridRef"
-             R_IsHeader="true"
-             >
+             R_IsHeader="true">
 </R_ConductorGrid>
 
-```csharp
-// ONLY for CRUD programs
-<R_Conductor @ref="@_conductorGridRef"
+// Child Conductor (example with R_Conductor as child)
+<R_Conductor @ref="@_conductorRef"
              R_ViewModel="@_viewmodel"
-             R_ConductorParent="true"
-             >
+             R_ConductorParent="@_conductorGridRef">
 </R_Conductor>
 ```
 

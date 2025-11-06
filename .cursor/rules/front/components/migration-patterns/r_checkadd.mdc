@@ -15,7 +15,12 @@ alwaysApply: false
 - Conductor: add `R_CheckAdd="Conductor_R_CheckAdd"` (+ usual services, `R_ViewModel`).
 - Grid: add `R_CheckAdd="Grid_R_CheckAdd"` (+ usual services).
 
-## Mapping
+## Handler
+- Prefer: `private void Conductor_R_CheckAdd(R_CheckAddEventArgs eventArgs)` or `private void Grid_R_CheckAdd(R_CheckAddEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task Conductor_R_CheckAdd(R_CheckAddEventArgs eventArgs)`.
+- To allow add: set `eventArgs.Allow = true;` (default is `false`).
+
+## Parameter mapping
 ### Conductor
 - NET4 `plValid` → NET6 `eventArgs.Allow`.
 ### Grid
@@ -23,7 +28,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_R_CheckAdd(R_CheckAddEventArgs eventArgs) // OR Grid_R_CheckAdd
+private void Conductor_R_CheckAdd(R_CheckAddEventArgs eventArgs) // OR Grid_R_CheckAdd
 {
     var loEx = new R_Exception();
     try
@@ -36,7 +41,6 @@ private Task Conductor_R_CheckAdd(R_CheckAddEventArgs eventArgs) // OR Grid_R_Ch
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task.CompletedTask;
 }
 ```
 

@@ -1,0 +1,57 @@
+---
+description: "Migration pattern for R_GridViewDecimalColumn (NET4) → R_GridNumericColumn (NET6)"
+alwaysApply: false
+---
+
+# R_GridViewDecimalColumn (NET4) → R_GridNumericColumn (NET6)
+
+- NET4: `R_FrontEnd.R_GridViewDecimalColumn`
+- NET6: `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridNumericColumn<TValue>`
+
+## When to use
+- Decimal/numeric input columns in grid for numeric data entry
+- Editable numeric fields within grid rows (decimal, int, short, etc.)
+- Display and edit numeric properties in grid format
+
+## Parameter mapping (NET4 → NET6)
+- `FieldName` → `FieldName` (use `@nameof(MyDTO.PropertyName)` pattern)
+- `HeaderText` → `HeaderText` (string)
+- `Width` → `Width` (string, e.g., "150px")
+- `FormatString` → `Format` (string)
+- `ThousandsSeparator` → `ThousandSeparator` (bool, note spelling difference)
+- `R_OverrideDecimalPlaces` → `Decimals` (int)
+- `DataType` → `TValue` generic parameter (required, e.g., `TValue="decimal"`)
+- `R_EnableADD` → `R_EnableAdd` (bool)
+- `R_EnableEDIT` → `R_EnableEdit` (bool)
+- `Enabled` → `Enabled` (bool, inherited from R_GridColumnBase)
+- `Visible` → `Visible` (bool, inherited from R_GridColumnBase)
+
+## Inherited Properties
+- Properties from `R_GridColumnBase` - See @r_gridcolumnbase.mdc
+  - `FieldName` - Field name binding (REQUIRED)
+  - `Width` - Column width
+  - `HeaderText` - Column header text
+  - `R_EnableAdd` - Enable add operation
+  - `R_EnableEdit` - Enable edit operation
+
+## Component-Specific Properties (NET6)
+- `Decimals` - Number of decimal places (int)
+- `Format` - Format string for display (string)
+- `ThousandSeparator` - Enable thousand separator (bool)
+- `Min` - Minimum value (TValue)
+- `Max` - Maximum value (TValue)
+- `Step` - Increment step value (TValue)
+- `Arrows` - Show increment/decrement arrows (bool)
+- `PrefixText` - Text displayed before the value (string)
+- `SuffixText` - Text displayed after the value (string)
+- `TextAlignment` - Text alignment (R_eTextAlignment enum)
+
+## Anti-patterns
+- **Do NOT** use `Name` property in NET4 - use `FieldName` for data binding
+- **Do NOT** define columns in code-behind - define in Razor markup within `<R_GridColumns>`
+- **Do NOT** forget to set `TValue` - it's required (e.g., `TValue="decimal"` or `TValue="int"`)
+- **Do NOT** use string literals for `FieldName` - always use `@nameof(MyDTO.PropertyName)`
+- **Do NOT** use `ThousandsSeparator` spelling - use `ThousandSeparator` in NET6 (note spelling difference)
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Grid.Columns.R_GridNumericColumn-1.yml`

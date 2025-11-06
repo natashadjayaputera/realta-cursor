@@ -1,0 +1,162 @@
+---
+description: "Migration pattern for R_GridViewCheckBoxSelectColumn (NET4) → R_GridCheckBoxSelectColumn (NET6)"
+alwaysApply: false
+---
+
+# R_GridViewCheckBoxSelectColumn (NET4) → R_GridCheckBoxSelectColumn (NET6)
+
+- NET4: `R_FrontEnd.R_GridViewCheckBoxSelectColumn`
+- NET6: `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxSelectColumn`
+
+## When to use
+- Checkbox selection columns for grid row selection
+- Boolean/checkbox data display and editing in grid format
+- Selection indicators for bulk operations
+
+## Parameter mapping (NET4 → NET6)
+- `FieldName` → `FieldName` (use `@nameof(MyDTO.PropertyName)` pattern)
+- `HeaderText` → `HeaderText` (string)
+- `Width` → `Width` (string, e.g., "77px")
+- `R_EnableADD` → `R_EnableAdd` (bool)
+- `R_EnableEDIT` → `R_EnableEdit` (bool)
+- `R_ResourceId` → `R_ResourceId` (string)
+- `TextAlignment` → `TextAlignment` (R_eTextAlignment enum)
+- `EnableHeaderCheckBox` → `ShowSelectAllHeader` (bool)
+- `EditMode` → Not applicable (not needed, handled by grid)
+- `DataType` → Not applicable (inferred from DTO property type)
+
+## Inherited Properties
+- Properties from `R_GridColumnBase` - See @r_gridcolumnbase.mdc
+  - `FieldName` - Field name binding (REQUIRED)
+  - `Width` - Column width
+  - `HeaderText` - Column header text
+  - `R_EnableAdd` - Enable add operation
+  - `R_EnableEdit` - Enable edit operation
+  - `Enabled` - Enable/disable state
+  - `TextAlignment` - Text alignment for column content
+
+## Event Handlers
+
+Checkbox select column events are inherited from `R_GridBase` and must be bound on the `R_Grid` component, not on the column component itself. See @r_radgridview.mdc for complete grid event documentation.
+
+### R_CheckBoxSelectValueChanged
+- **NET4**: Not available
+- **NET6**: `R_CheckBoxSelectValueChanged="Grid_R_CheckBoxSelectValueChanged"` - Event handler when checkbox selection changes
+- **REQUIRED**: This event handler **MUST** be bound (cannot be null) when using `R_CheckBoxSelectColumn` in `R_GridColumns`
+- **Event Args**: `R_CheckBoxSelectValueChangedEventArgs`
+  - `Value` (bool, read-only) - The new checkbox value
+  - `ColumnName` (string, read-only) - The column name
+  - `ConductorMode` (R_eConductorMode, read-only) - Current conductor mode
+  - `CurrentRow` (object, read-only) - The current row data
+  - `Columns` (List<R_GridColumnInfo>, read-only) - Grid column information
+  - `Enabled` (bool, get/set) - **CRITICAL: Must set `eventArgs.Enabled = true` for default behavior. Can be set conditionally based on your logic.**
+- **Usage**: 
+  - **Required** when using `R_CheckBoxSelectColumn` in `R_GridColumns` - the event handler cannot be null
+  - For default behavior (no conditional logic), bind the event and set `eventArgs.Enabled = true`
+  - For conditional enable/disable, set `eventArgs.Enabled` based on your business logic
+
+### R_CheckBoxSelectValueChanging
+- **NET4**: Not available
+- **NET6**: `R_CheckBoxSelectValueChanging="Grid_R_CheckBoxSelectValueChanging"` - Event handler when checkbox selection is changing (before change completes)
+- **Event Args**: `R_CheckBoxSelectValueChangingEventArgs`
+  - `Value` (bool, read-only) - The new checkbox value
+  - `ColumnName` (string, read-only) - The column name
+  - `ConductorMode` (R_eConductorMode, read-only) - Current conductor mode
+  - `CurrentRow` (object, read-only) - The current row data
+  - `Cancel` (bool, get/set) - Set to `true` to cancel the change
+- **Usage**: Bind on `R_Grid` component for validation/cancellation logic
+
+### R_CheckBoxSelectRender
+- **NET4**: Not available
+- **NET6**: `R_CheckBoxSelectRender="Grid_R_CheckBoxSelectRender"` - Event handler for custom checkbox selection rendering
+- **Event Args**: `R_CheckBoxSelectRenderEventArgs`
+  - `Data` (object, read-only) - The row data
+  - `Enabled` (bool, get/set) - Control checkbox enabled state for rendering
+- **Usage**: Bind on `R_Grid` component for custom rendering logic
+
+## Usage Examples
+
+### Razor Markup
+```razor
+<R_Grid @ref="_gridRef"
+        DataSource="@_viewModel.ListData"
+        R_CheckBoxSelectValueChanged="Grid_R_CheckBoxSelectValueChanged"
+        R_CheckBoxSelectValueChanging="Grid_R_CheckBoxSelectValueChanging"
+        R_CheckBoxSelectRender="Grid_R_CheckBoxSelectRender">
+    <R_GridColumns>
+        <R_GridCheckBoxSelectColumn FieldName="@nameof(MyDTO.LSelected)"
+                                     ShowSelectAllHeader="true"
+                                     Width="77px" />
+    </R_GridColumns>
+</R_Grid>
+```
+
+### Code-Behind Event Handlers
+
+#### Default Behavior (Required)
+```csharp
+// REQUIRED: This event handler must be bound even if you have no conditional logic
+private void Grid_R_CheckBoxSelectValueChanged(R_CheckBoxSelectValueChangedEventArgs eventArgs)
+{
+    // For default behavior, simply set Enabled to true
+    eventArgs.Enabled = true;
+    
+    // Optional: Access row data for logging or other operations
+    var loRow = (MyDTO)eventArgs.CurrentRow;
+    bool llIsSelected = eventArgs.Value;
+}
+```
+
+#### Conditional Enable/Disable
+```csharp
+// You can conditionally enable/disable the checkbox based on your logic
+private void Grid_R_CheckBoxSelectValueChanged(R_CheckBoxSelectValueChangedEventArgs eventArgs)
+{
+    var loRow = (MyDTO)eventArgs.CurrentRow;
+    bool llIsSelected = eventArgs.Value;
+    
+    // Conditional logic: enable checkbox only for certain conditions
+    eventArgs.Enabled = loRow.Status == "Active" && !loRow.IsLocked;
+    
+    // Custom logic here
+}
+
+private void Grid_R_CheckBoxSelectValueChanging(R_CheckBoxSelectValueChangingEventArgs eventArgs)
+{
+    // Validation logic
+    var loRow = (MyDTO)eventArgs.CurrentRow;
+    
+    // Cancel change if needed
+    if (/* some condition */)
+    {
+        eventArgs.Cancel = true;
+    }
+}
+
+private void Grid_R_CheckBoxSelectRender(R_CheckBoxSelectRenderEventArgs eventArgs)
+{
+    // Custom rendering logic
+    var loRow = (MyDTO)eventArgs.Data;
+    
+    // Control checkbox enabled state
+    eventArgs.Enabled = /* some condition */;
+}
+```
+
+## Anti-patterns
+- **Do NOT** use `Name` property in NET4 - use `FieldName` for data binding
+- **Do NOT** define columns in code-behind - define in Razor markup within `<R_GridColumns>`
+- **Do NOT** use `EditMode` - it doesn't exist in NET6 (use `ShowSelectAllHeader` instead of `EnableHeaderCheckBox`)
+- **Do NOT** set `DataType` - it's inferred from the DTO property type
+- **Do NOT** forget to set `FieldName` - it's required for data binding
+- **Do NOT** bind events on the column component - events are bound on `R_Grid` component, not on `R_GridCheckBoxSelectColumn`
+- **Do NOT** omit `R_CheckBoxSelectValueChanged` event handler - it is REQUIRED (cannot be null) when using `R_CheckBoxSelectColumn`
+- **Do NOT** forget to set `eventArgs.Enabled = true` for default behavior - even if you have no conditional logic, you must bind the event and set `Enabled = true`
+- **Do NOT** use events for column configuration - use column properties instead (e.g., `ShowSelectAllHeader`, `Width`, `HeaderText`)
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxSelectColumn.yml`
+- `.cursor/rules/front/components/migration-patterns/r_radgridview.mdc` - Complete grid event documentation including checkbox select events
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectValueChangedEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectValueChangingEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_CheckBoxSelectRenderEventArgs.yml`

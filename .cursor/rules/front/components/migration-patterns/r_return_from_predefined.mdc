@@ -1,0 +1,58 @@
+---
+description: "Migration pattern for R_Return_From_Predefined (NET4) → R_AfterOpenPredefinedDock (NET6)"
+alwaysApply: false
+---
+
+# R_Return_From_Predefined (NET4) → R_AfterOpenPredefinedDock (NET6)
+
+- NET4: Event handler `R_Return_From_Predefined` on `R_FormBase`
+- NET6: Event handler `R_AfterOpenPredefinedDock` on `R_PredefinedDock` component with `R_AfterOpenPredefinedDockEventArgs`
+
+## Use
+- Handle result when predefined dock page closes and returns data.
+- Refresh parent page data based on predefined dock operations.
+- Update conductor or grid data after predefined dock interactions.
+
+## Bindings
+- `R_PredefinedDock` component: `R_AfterOpenPredefinedDock="@HandlerName"`.
+
+## Handler
+- Prefer: `private void HandlerName(R_AfterOpenPredefinedDockEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task HandlerName(R_AfterOpenPredefinedDockEventArgs eventArgs)`.
+- Always check for null: `if (eventArgs.Result is null) return;`.
+- Cast result: `var loResult = (MyDto)eventArgs.Result;`.
+
+## Parameter mapping
+- NET4 `poReturnObject As Object` → NET6 `eventArgs.Result` (object?, check for null before casting)
+
+## Example
+```csharp
+private void R_AfterOpenPredefinedDock(R_AfterOpenPredefinedDockEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (eventArgs.Result is null) return;
+        var loResult = (MyDto)eventArgs.Result;
+        // Process result data
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB: `Private Sub ProgramName_R_Return_From_Predefined(poReturnObject As Object) Handles Me.R_Return_From_Predefined` with `CType(poReturnObject, MyDto)`
+- NET6: `R_AfterOpenPredefinedDock="@R_AfterOpenPredefinedDock"` on `R_PredefinedDock` → `private void R_AfterOpenPredefinedDock(R_AfterOpenPredefinedDockEventArgs eventArgs)`
+
+## Notes
+- Called automatically when predefined dock page closes. Always check `eventArgs.Result` for null before processing.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterOpenPredefinedDockEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Forms.R_PredefinedDock.yml`
+- `.cursor/docs/net4/Realta-Library/R_FrontEnd.R_PredefinedDock.yml`
+- `.cursor/rules/patterns/front_navigation_patterns.mdc`

@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_Display="Grid_R_Display"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_Display(R_DisplayEventArgs eventArgs)` or `private Task Grid_R_Display(R_DisplayEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_Display(R_DisplayEventArgs eventArgs)` or `private void Grid_R_Display(R_DisplayEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task Conductor_R_Display(R_DisplayEventArgs eventArgs)`.
 - Data object: `var loData = (MyDto)eventArgs.Data;`.
 
@@ -37,7 +37,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Conductor_R_Display(R_DisplayEventArgs eventArgs) // OR Grid_R_Display
+private void Conductor_R_Display(R_DisplayEventArgs eventArgs) // OR Grid_R_Display
 {
     var loEx = new R_Exception();
     try
@@ -50,7 +50,6 @@ private Task Conductor_R_Display(R_DisplayEventArgs eventArgs) // OR Grid_R_Disp
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

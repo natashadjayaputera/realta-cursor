@@ -1,0 +1,35 @@
+---
+description: "R_GroupBox rules"
+alwaysApply: false
+---
+# R_GroupBox Rules
+
+- NET6: `R_BlazorFrontEnd.Controls.R_GroupBox`
+
+See @r_radgroupbox.mdc for complete usage patterns, API documentation, and migration details.
+
+- Must add `{ProgramName}_r_groupbox` inside `<style>` in `.razor` if R_GroupBox is used.
+- The content of the CSS should be `padding-left: 4px` and `padding-right: 5px`.
+- Must add `Class={ProgramName}_r_groupbox` to the first `<R_StackLayout>` (not `Row` or `Row="true"`) in `<R_GroupBox>`
+
+## Title Property
+
+- **Never use** `HeaderTemplate` and `ChildContent` for R_GroupBox title text.
+- **Always use** `Title` property instead.
+
+### ❌ Wrong
+```razor
+<R_GroupBox>
+    <HeaderTemplate>@Localizer["lblPeriod"]</HeaderTemplate>
+    <ChildContent>
+        ...
+    </ChildContent>
+</R_GroupBox>
+```
+
+### ✅ Correct
+```razor
+<R_GroupBox Title="@Localizer["lblPeriod"]">
+    ...
+</R_GroupBox>
+```

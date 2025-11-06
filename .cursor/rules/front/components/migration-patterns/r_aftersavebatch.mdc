@@ -17,7 +17,7 @@ alwaysApply: false
 - Upload/Batch: set `R_AfterSaveBatch="R_AfterSaveBatch"` (or category-specific handler).
 
 ## Handler
-- Prefer: `private Task R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)`.
+- Prefer: `private void R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)`.
 
 ## Parameter mapping
@@ -25,7 +25,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)
+private void R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)
 {
     var loEx = new R_Exception();
     try
@@ -37,7 +37,6 @@ private Task R_AfterSaveBatch(R_AfterSaveBatchEventArgs eventArgs)
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

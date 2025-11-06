@@ -1,0 +1,59 @@
+---
+description: "Migration pattern for R_After_Open_Form (NET4) → R_After_Open_Popup (NET6)"
+alwaysApply: false
+---
+
+# R_After_Open_Form (NET4) → R_After_Open_Popup (NET6)
+
+- NET4: Event handler `R_After_Open_Form` on button/popup component with `DialogResult` and `Object` parameters
+- NET6: Event handler `R_After_Open_Popup` on `R_Popup` component with `R_AfterOpenPopupEventArgs`
+
+## Use
+- Handle result when popup page closes and returns selected value or entity.
+- Populate fields based on returned popup result or refresh data after popup operations.
+
+## Bindings
+- `R_Popup` component: `R_After_Open_Popup="@HandlerName"`.
+
+## Handler
+- Prefer: `private void HandlerName(R_AfterOpenPopupEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task HandlerName(R_AfterOpenPopupEventArgs eventArgs)`.
+- Always check `Success` first, then `Result` for null: `if (!eventArgs.Success || eventArgs.Result is null) return;`.
+- Cast result: `var loResult = (MyDto)eventArgs.Result;`.
+
+## Parameter mapping
+- NET4 `poPopUpResult As DialogResult` → NET6 `eventArgs.Success` (bool, check first)
+- NET4 `poPopUpEntityResult As Object` → NET6 `eventArgs.Result` (object?, check for null after Success)
+- NET4 `If poPopUpResult = DialogResult.OK Then` → NET6 `if (!eventArgs.Success || eventArgs.Result is null) return;`
+
+## Example
+```csharp
+private void btnName_R_After_Open_Popup(R_AfterOpenPopupEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (!eventArgs.Success || eventArgs.Result is null) return;
+        var loResult = (APT00010DTO)eventArgs.Result;
+        _viewModel.Data.CSUPPLIER_ID = loResult._CSUPPLIER_ID;
+        _viewModel.Data.CSUPPLIER_NAME = loResult._CSUPPLIER_NAME;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4: `Private Sub btnName_R_After_Open_Form(poPopUpResult As DialogResult, poPopUpEntityResult As Object) Handles btnName.R_After_Open_Form` with `If poPopUpResult = DialogResult.OK Then` and `CType(poPopUpEntityResult, MyDto)`
+- NET6: `R_After_Open_Popup="@btnName_R_After_Open_Popup"` on `R_Popup` → `private void btnName_R_After_Open_Popup(R_AfterOpenPopupEventArgs eventArgs)`
+
+## Notes
+- Called automatically when popup page closes. Always check `eventArgs.Success` first, then `eventArgs.Result` for null. Do not check `eventArgs.Result == R_eDialogResult.OK` (use `Success` property).
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_AfterOpenPopupEventArgs.yml`
+- `.cursor/rules/front/components/migration-patterns/r_before_open_popupform.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_setpopupentityresult.mdc`

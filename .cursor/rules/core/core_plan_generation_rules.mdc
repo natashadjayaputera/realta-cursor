@@ -4,7 +4,15 @@ priority: CRITICAL
 nonNegotiable: true
 ---
 
-# RULE 1: PLAN GENERATION
+# PLAN GENERATION
 
-- Create a to-do in plan generation to save the plan according to the format and procedure defined in `plan_generation.mdc`.
+- Create a to-do in plan generation to save the plan according to the format and procedure defined here.
 - No code generation is allowed before the plan is accepted and saved.
+
+MANDATORY: Must add a checklist in plan generation to save accepted plan to the `/plan/` directory.
+
+# Plan Generation Rules
+
+- Location: `./plan/`  
+- Format: Markdown  
+- Filename Pattern: `{yyyyMMdd}_{HHmmss}_{agent}_plan.md`

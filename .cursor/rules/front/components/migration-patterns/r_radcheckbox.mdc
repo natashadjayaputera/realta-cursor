@@ -1,0 +1,56 @@
+---
+description: "Migration pattern for R_RadCheckBox (NET4) → R_CheckBox (NET6)"
+alwaysApply: false
+---
+
+# R_RadCheckBox → R_CheckBox
+
+- NET4: `R_FrontEnd.R_RadCheckBox`
+- NET6: `R_BlazorFrontEnd.Controls.R_CheckBox`
+
+## When to use
+- Boolean input fields (checked/unchecked state)
+- Data-bound checkbox fields with ViewModel properties
+- Read-only display checkboxes (use Enabled="false")
+
+## NET6 Direct Public API
+
+### Component-Specific Properties
+- `Indeterminate` - Three-state checkbox support (`bool`)
+
+### Inherited Properties
+- Properties from `R_InputComponentBase<bool>` - See @r_inputcomponentbase.mdc
+  - `Value` - **EditorRequired** - The bound boolean value
+  - `ValueChanged` - Event callback when value changes
+  - `ReadOnly` - Read-only state
+  - `R_ConductorSource` / `R_ConductorGridSource` / `R_Enable*` - See @r_ienablecontrol.mdc
+- Properties from `R_ControlBase` - See @r_controlbase.mdc
+  - `Enabled` - Enable/disable component
+  - `TabIndex` - Tab order
+
+## Parameter mapping (NET4 → NET6)
+- `R_RadCheckBox.IsChecked` → `R_CheckBox.@bind-Value` - See @r_inputcomponentbase.mdc
+- `R_RadCheckBox.CheckStateChanged` → `R_CheckBox.ValueChanged` - See @r_inputcomponentbase.mdc
+- `R_RadCheckBox.Enabled` → `R_CheckBox.Enabled` - See @r_controlbase.mdc
+- `R_RadCheckBox.ReadOnly` → `R_CheckBox.Enabled="false"` or `R_CheckBox.ReadOnly` - See @r_inputcomponentbase.mdc
+- `R_RadCheckBox.Text` → Use `R_Label` as direct sibling - See @r_radlabel.mdc
+- `R_RadCheckBox.R_ResourceId` → Use `@Localizer["ResourceId"]` in `R_Label` - See @r_radlabel.mdc
+- `R_RadCheckBox.R_ConductorSource` / `R_ConductorGridSource` / `R_Enable*` → See @r_ienablecontrol.mdc
+- `R_RadCheckBox.Name` / `Location` / `Size` → Not applicable; use `Class`/`Style`/CSS
+
+## Examples
+### Checkbox with Label
+```razor
+<R_StackLayout Row>
+    <R_CheckBox ... />
+    <R_ItemLayout auto="false">
+      <R_Label>Localizer["CheckBox1"]</R_Label>
+    </R_ItemLayout>
+</R_StackLayout>
+```
+
+## Anti-patterns
+- Using child content for label text (use R_Label as direct sibling instead) - See @r_radlabel.mdc
+- Using IsChecked binding instead of @bind-Value
+- Using Location/Size properties (not applicable in Blazor)
+- Not using @bind-Value for two-way data binding

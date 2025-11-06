@@ -1,0 +1,45 @@
+---
+description: "Migration pattern for R_GridViewCheckBoxColumn (NET4) → R_GridCheckBoxColumn (NET6)"
+alwaysApply: false
+---
+
+# R_GridViewCheckBoxColumn (NET4) → R_GridCheckBoxColumn (NET6)
+
+- NET4: `R_FrontEnd.R_GridViewCheckBoxColumn`
+- NET6: `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxColumn`
+
+## When to use
+- Boolean/checkbox data display and editing in grid format
+- Checkbox columns for boolean properties in grid rows
+- Editable checkbox fields within grid cells
+
+## Parameter mapping (NET4 → NET6)
+- `FieldName` → `FieldName` (use `@nameof(MyDTO.PropertyName)` pattern)
+- `HeaderText` → `HeaderText` (string)
+- `Width` → `Width` (string, e.g., "75px")
+- `R_EnableADD` → `R_EnableAdd` (bool)
+- `R_EnableEDIT` → `R_EnableEdit` (bool)
+- `R_ResourceId` → Not applicable (use resource in HeaderText)
+- `EnableHeaderCheckBox` → Not applicable (use R_GridCheckBoxSelectColumn for selection)
+- `DataType` → Not applicable (inferred from DTO property type)
+- `EditMode` → Not applicable (handled by grid)
+
+## Inherited Properties
+- Properties from `R_GridColumnBase` - See @r_gridcolumnbase.mdc
+  - `FieldName` - Field name binding (REQUIRED)
+  - `Width` - Column width
+  - `HeaderText` - Column header text
+  - `R_EnableAdd` - Enable add operation
+  - `R_EnableEdit` - Enable edit operation
+  - `Enabled` - Enable/disable state
+
+## Anti-patterns
+- **Do NOT** use `Name` property in NET4 - use `FieldName` for data binding
+- **Do NOT** define columns in code-behind - define in Razor markup within `<R_GridColumns>`
+- **Do NOT** use `EnableHeaderCheckBox` for this component - use `R_GridCheckBoxSelectColumn` for row selection
+- **Do NOT** set `DataType` - it's inferred from the DTO property type
+- **Do NOT** forget to set `FieldName` - it's required for data binding
+- **Do NOT** use string literals for `FieldName` - always use `@nameof(MyDTO.PropertyName)`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Grid.Columns.R_GridCheckBoxColumn.yml`

@@ -1,0 +1,46 @@
+---
+description: "Migration pattern for R_InstantiateDock (NET4) → R_InstantiateDock (NET6)"
+alwaysApply: false
+---
+
+# R_InstantiateDock (NET4) → R_InstantiateDock (NET6)
+
+- NET4: Event handler `R_InstantiateDock` on `R_PredefinedDock` component with `ByRef R_FormBase` parameter
+- NET6: Event handler `R_InstantiateDock` on `R_PredefinedDock` component with `R_InstantiateDockEventArgs`
+
+## Use
+- Initialize target form/page instance when predefined dock is instantiated.
+- Set target page type and optionally pass parameters for dockable pages.
+
+## Bindings
+- `R_PredefinedDock` component: `R_InstantiateDock="@HandlerName"`.
+
+## Handler
+- Prefer: `private void HandlerName(R_InstantiateDockEventArgs eventArgs)`.
+- Set target page: `eventArgs.TargetPageType = typeof(PageType);`.
+- Optional: Set parameter: `eventArgs.Parameter = loData;`.
+
+## Parameter mapping
+- NET4 `ByRef poTargetForm As R_FormBase` → NET6 `eventArgs.TargetPageType` (Type, set to typeof(PageType))
+- NET4 `poTargetForm = New MyForm()` → NET6 `eventArgs.TargetPageType = typeof(MyPage)`
+- NET4 parameter passing via form initialization → NET6 `eventArgs.Parameter` (object?)
+
+## Example
+```csharp
+private void R_InstantiateDock(R_InstantiateDockEventArgs eventArgs)
+{
+    eventArgs.TargetPageType = typeof(SAM00110);
+    // Optional: eventArgs.Parameter = _conductorGridRef?.R_GetCurrentData();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4: `Private Sub PreDock_R_InstantiateDock(ByRef poTargetForm As R_FormBase) Handles PreDock.R_InstantiateDock` with `poTargetForm = New SAM00110()`
+- NET6: `R_InstantiateDock="@R_InstantiateDock"` on `R_PredefinedDock` → `private void R_InstantiateDock(R_InstantiateDockEventArgs eventArgs)` with `eventArgs.TargetPageType = typeof(SAM00110)`
+
+## Notes
+- Called when predefined dock needs to instantiate target page. Set `TargetPageType` to the page type to instantiate. Use `Parameter` to pass data to `R_Init_From_Master()`.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_InstantiateDockEventArgs.yml`
+- `.cursor/docs/net4/Realta-Library/R_FrontEnd.R_PredefinedDock.yml`

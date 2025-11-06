@@ -1,0 +1,64 @@
+---
+description: "Migration pattern for R_Before_Open_Form (NET4) → R_Before_Open_* (NET6)"
+alwaysApply: false
+---
+
+# R_Before_Open_Form (NET4) → R_Before_Open_* (NET6)
+
+- NET4: `R_Before_Open_Form` on buttons/lookups/popups
+- NET6: Component-specific handlers: `R_Before_Open_Popup`, `R_Before_Open_Lookup`, `R_Before_Open_Detail`, `R_Before_Open_TabPage`, `R_Before_Open_Find`
+
+## Use
+- Navigation components opening forms/pages with parameters.
+- Set target page and pass parameters before navigation.
+
+## Bindings
+- Popup: `R_Before_Open_Popup="BtnName_R_Before_Open_Popup"` on `R_Popup`.
+- Lookup: `R_Before_Open_Lookup="BtnName_R_Before_Open_Lookup"` on `R_Lookup`.
+- Detail: `R_Before_Open_Detail="BtnName_R_Before_Open_Detail"` on `R_Detail`.
+- TabPage: `R_Before_Open_TabPage="TabPage_R_Before_Open_TabPage"` on `R_TabPage`.
+- Find: `R_Before_Open_Find="BtnName_R_Before_Open_Find"` on `R_Find`.
+
+## Handler
+- Prefer: `private void BtnName_R_Before_Open_Popup(R_BeforeOpenPopupEventArgs eventArgs)` (or corresponding event args type).
+- Async allowed if needed: `private async Task BtnName_R_Before_Open_Popup(R_BeforeOpenPopupEventArgs eventArgs)`.
+- Use `eventArgs.TargetPageType = typeof(TargetPage)` for same-project pages, or `eventArgs.PageNamespace = "Namespace.Path"` for cross-project pages.
+- Set `eventArgs.Parameter` to pass data to `R_Page.R_Init_From_Master()`.
+
+## Parameter mapping
+- NET4 `poTargetForm = New TargetForm` → NET6 `eventArgs.TargetPageType = typeof(TargetPage)` OR `eventArgs.PageNamespace = "Namespace.Path"`
+- NET4 `poParameter = loParameter` → NET6 `eventArgs.Parameter = loParameter`
+
+## Example
+```csharp
+private void BtnName_R_Before_Open_Popup(R_BeforeOpenPopupEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        eventArgs.PageNamespace = "OtherProject.Pages.TargetPage";
+        // OR: eventArgs.TargetPageType = typeof(TargetPage);
+        var loParameter = new ParameterDTO { Property = value };
+        eventArgs.Parameter = loParameter;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub btnName_R_Before_Open_Form(ByRef poTargetForm As R_FormBase, ByRef poParameter As Object) Handles btnName.R_Before_Open_Form` with `poTargetForm = New TargetForm`
+- NET6:
+  - Popup: `R_Before_Open_Popup="BtnName_R_Before_Open_Popup"` on `R_Popup`
+  - Lookup: `R_Before_Open_Lookup="BtnName_R_Before_Open_Lookup"` on `R_Lookup`
+  - Detail: `R_Before_Open_Detail="BtnName_R_Before_Open_Detail"` on `R_Detail`
+
+## References
+- `.cursor/rules/patterns/front_navigation_patterns.mdc` (component-specific patterns and event args properties)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeOpenPopupEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeOpenLookupEventArgs.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeOpenDetailEventArgs.yml`

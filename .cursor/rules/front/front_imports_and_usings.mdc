@@ -1,15 +1,15 @@
 ---
-description: "Using and imports management rules for {ProgramName}Front Blazor components"
+description: "Using and imports management rules for {ProgramName}Front Blazor components in .razor files"
 alwaysApply: false
 globs: "*ToCSharpFront*"
 ---
 
-# Imports and Using Rules
+# Imports and Using Rules 
 
 - All `@using` statements belong in `_Imports.razor`
 - **Never** put `@using` inside `.razor` files
 
-## Example (_Imports.razor)
+## Minimal Required Using Statements in _Imports.razor
 ```razor
 @using System
 @using System.Threading.Tasks
@@ -21,6 +21,8 @@ globs: "*ToCSharpFront*"
 @using R_BlazorFrontEnd.Controls.DataControls
 @using R_BlazorFrontEnd.Controls.Events
 @using R_BlazorFrontEnd.Controls.Enums
+@using R_BlazorFrontEnd.Controls.Grid.Columns
+@using R_BlazorFrontEnd.Controls.Layouts
 @using R_BlazorFrontEnd.Enums
 @using R_BlazorFrontEnd.Exceptions
 @using R_BlazorFrontEnd.Helpers

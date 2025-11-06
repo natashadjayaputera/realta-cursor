@@ -1,0 +1,50 @@
+---
+description: "Migration pattern for R_eGridMode (NET4) → R_eGridMode (NET6)"
+alwaysApply: false
+---
+
+# R_eGridMode (NET4) → R_eGridMode (NET6)
+
+- NET4: `R_FrontEnd.R_eGridMode`
+- NET6: `R_BlazorFrontEnd.Enums.R_eGridMode`
+
+## Enum type mapping
+- NET4: `R_FrontEnd.R_eGridMode` → NET6: `R_BlazorFrontEnd.Enums.R_eGridMode`
+
+## Enum value mapping
+- `R_eGridMode.Add` → `R_eGridMode.Add`
+- `R_eGridMode.Edit` → `R_eGridMode.Edit`
+- `R_eGridMode.Normal` → `R_eGridMode.Normal`
+- `R_eGridMode.None` → `R_eGridMode.Normal` (NET6 does not have `None` value)
+
+## Property mapping
+- NET4: `gvGrid.R_GridMode` → NET6: `_gridRef.R_GridMode`
+
+## Event handler parameter migration
+- NET4 event handlers receive `peGridMode As R_FrontEnd.R_eGridMode` parameter
+- NET6 event handlers use `eventArgs.ConductorMode` (type: `R_eConductorMode`) or `_gridRef.R_GridMode` property
+
+## Usage examples
+### NET4 VB.NET
+```vb
+If gvFileList.R_GridMode = R_eGridMode.Add Or gvFileList.R_GridMode = R_eGridMode.Edit Then
+If peGridMode = R_eGridMode.Add Then
+loService.Svc_R_Save(loEntity, peGridMode)
+```
+
+### NET6 C#
+```csharp
+if (_gridRef?.R_GridMode == R_eGridMode.Add || _gridRef?.R_GridMode == R_eGridMode.Edit)
+if (eventArgs.ConductorMode == R_eConductorMode.Add)
+await _viewModel.SaveAsync(loData, eventArgs.ConductorMode);
+```
+
+## Notes
+- Always use null-conditional operator (`?.`) when accessing `_gridRef` in NET6
+- For event handlers, use `eventArgs.ConductorMode` (maps to `R_eConductorMode`) instead of `peGridMode`
+- `R_eGridMode.None` from NET4 should be replaced with `R_eGridMode.Normal` in NET6
+- `R_GridMode` property is read-only in NET6 (protected set)
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_GridBase-1.yml` (R_GridMode property)
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Enums.R_eGridMode.yml`

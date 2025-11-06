@@ -1,20 +1,16 @@
 ---
 description: "R_ItemLayout and R_StackLayout column validation rules for {ProgramName}Front"
 alwaysApply: false
+globs: "*ToCSharpFront*"
 ---
 # Layout Rules
 
 - Each `R_StackLayout Row` must have column sum ≤ 12
-- Use nested `R_StackLayout Row="true"` per row
-- Last `R_ItemLayout` must have `auto="false"`
+- When column sum equals 12: The last `R_ItemLayout` **MUST** use `auto="false"` instead of `col=...`
+- Do NOT use both `col` and `auto` on the same `R_ItemLayout`
 
-## Correct Pattern
-```razor
-<R_StackLayout>
-  <R_StackLayout Row="true">
-    <R_ItemLayout col="2">Label</R_ItemLayout>
-    <R_ItemLayout col="1">TextBox</R_ItemLayout>
-    <R_ItemLayout col="4">Description</R_ItemLayout>
-  </R_StackLayout>
-</R_StackLayout>
-````
+## Example
+
+**❌ WRONG:** `<R_ItemLayout col="3">` + `<R_ItemLayout col="5">` + `<R_ItemLayout col="4">` (sum=12, last uses col)
+
+**✅ CORRECT:** `<R_ItemLayout col="3">` + `<R_ItemLayout col="5">` + `<R_ItemLayout auto="false">` (last changed to auto="false")

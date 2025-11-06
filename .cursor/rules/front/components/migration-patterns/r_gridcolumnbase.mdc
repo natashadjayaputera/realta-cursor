@@ -1,0 +1,69 @@
+---
+description: "Direct public API of R_GridColumnBase for all grid columns in NET6"
+alwaysApply: false
+---
+
+# R_GridColumnBase Direct Public API
+
+- NET6: `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridColumnBase`
+
+## NET6 Direct Public API
+
+### Editor Required Properties
+
+- `FieldName` - **EditorRequired** - Field name binding for data property (`string`)
+
+### Component-Specific Properties
+
+#### Grid & Identity Properties
+- `Grid` - Cascading parameter that provides reference to the parent grid (`R_IGrid?`, CascadingParameter)
+- `Name` - Column identifier (`string`)
+- `FieldName` - Field name binding for data property (REQUIRED) (`string`)
+
+#### Layout & Display Properties
+- `Width` - Column width (`string?`)
+- `HeaderText` - Column header text (`string`)
+- `TextAlignment` - Text alignment for column content (`R_eTextAlignment`, virtual)
+- `Visible` - Visibility state of the column (`bool`)
+
+#### Filtering & Resizing Properties
+- `Filterable` - Enable filtering for the column (`bool`)
+- `Resizable` - Enable column resizing (`bool`)
+- `MinResizableWidth` - Minimum width when resizing (`decimal`)
+- `MaxResizableWidth` - Maximum width when resizing (`decimal`)
+
+#### Enable Control Properties
+- `Enabled` - Enable/disable state of the column (`bool`)
+- `R_EnableAdd` - Enable add operation for the column (`bool`)
+- `R_EnableEdit` - Enable edit operation for the column (`bool`)
+
+#### Resource & Rendering Properties
+- `R_ResourceId` - Resource identifier for localization (`string`)
+- `R_CellRender` - Custom cell rendering action (`Action<R_GridCellRenderEventArgs>?`)
+
+### Inherited Properties
+
+#### From ComponentBase
+- Properties from `Microsoft.AspNetCore.Components.ComponentBase` - Standard Blazor component lifecycle properties
+  - `OnInitializedAsync` - Component initialization lifecycle method
+  - `OnParametersSet` - Component parameter set lifecycle method
+  - `OnParametersSetAsync` - Component parameter set async lifecycle method
+  - `StateHasChanged` - Method to trigger component re-render
+  - `ShouldRender` - Method to determine if component should render
+  - `OnAfterRender` - Component after render lifecycle method
+  - `OnAfterRenderAsync` - Component after render async lifecycle method
+
+#### From R_IResourceLanguage
+- Properties from `R_BlazorFrontEnd.Interfaces.R_IResourceLanguage` - Resource language interface
+  - `R_ResourceId` - Resource identifier for localization
+
+### Direct Methods
+
+- `OnInitialized()` - Method invoked when the component is ready to start, having received its initial parameters from its parent in the render tree (protected override)
+- `BuildRenderTree(RenderTreeBuilder)` - Renders the component to the supplied RenderTreeBuilder (protected override)
+
+## References
+
+- Base class: `Microsoft.AspNetCore.Components.ComponentBase` - Standard Blazor component base class
+- Interface: `R_BlazorFrontEnd.Interfaces.R_IResourceLanguage` - Resource language interface for localization
+- Grid interface: `R_BlazorFrontEnd.Controls.Grid.R_IGrid` - Grid interface for cascading parameter

@@ -1,0 +1,62 @@
+---
+description: "Migration pattern for R_Before_Open_PopUpForm (NET4) → R_Before_Open_Grid_Popup (NET6)"
+alwaysApply: false
+---
+
+# R_Before_Open_PopUpForm (NET4) → R_Before_Open_Grid_Popup (NET6)
+
+- NET4: `R_Before_Open_PopUpForm` on RadGridView column popup
+- NET6: `R_Before_Open_Grid_Popup` on `R_Grid` with `R_BeforeOpenGridPopupColumnEventArgs`
+
+## Use
+- Grid column popup opening popup forms/pages with parameters.
+- Set target page and pass parameters before navigation.
+- Handle different popup columns using ColumnName.
+
+## Bindings
+- Grid: `R_Before_Open_Grid_Popup="@GridName_R_Before_Open_Grid_Popup"` on `R_Grid`.
+
+## Handler
+- Prefer: `private void GridName_R_Before_Open_Grid_Popup(R_BeforeOpenGridPopupColumnEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task GridName_R_Before_Open_Grid_Popup(R_BeforeOpenGridPopupColumnEventArgs eventArgs)`.
+- Use `eventArgs.ColumnName` to identify triggering column. Use `eventArgs.TargetPageType` or `eventArgs.PageNamespace` for target page. Set `eventArgs.Parameter` and `eventArgs.PageTitle`.
+
+## Parameter mapping
+- NET4 `poTargetForm = New PopUpForm` → NET6 `eventArgs.PageNamespace` or `eventArgs.TargetPageType`
+- NET4 `poParameter = loParameter` → NET6 `eventArgs.Parameter = loParameter`
+- NET4 `sender.activeEditor.ownerElement.columnInfo.R_Title = ...` → NET6 `eventArgs.PageTitle = ...`
+- NET6 `eventArgs.ColumnName` identifies triggering column (use switch/if for different columns)
+
+## Example
+```csharp
+//TODO: R_GridPopupColumn is not implemented yet. When available, use this pattern:
+//private void Grid_R_Before_Open_Grid_Popup(R_BeforeOpenGridPopupColumnEventArgs eventArgs)
+//{
+//    var loEx = new R_Exception();
+//    try
+//    {
+//        switch (eventArgs.ColumnName)
+//        {
+//            case nameof(MyDTO.CColumnName):
+//                eventArgs.PageNamespace = "OtherProject.Pages.PopupPage";
+//                var loParam = new GENERAL_PUB_DTO { _cCompanyId = CompId };
+//                eventArgs.Parameter = loParam;
+//                eventArgs.PageTitle = _localizer["_PopupTitle"];
+//                break;
+//        }
+//    }
+//    catch (Exception ex)
+//    {
+//        loEx.Add(ex);
+//    }
+//    loEx.ThrowExceptionIfErrors();
+//}
+```
+
+## NET4 → NET6 mapping examples
+- NET4: `Private Sub gvGrid_R_Before_Open_PopUpForm(sender, e, ByRef poTargetForm As R_FormBase, ByRef poParameter As Object) Handles gvGrid.R_Before_Open_PopUpForm` with `poTargetForm = New PopUpForm`
+- NET6: `R_Before_Open_Grid_Popup="@Grid_R_Before_Open_Grid_Popup"` on `R_Grid`
+
+## References
+- `.cursor/rules/patterns/front_navigation_patterns.mdc`
+- `.cursor/rules/front/components/migration-patterns/r_before_open_lookupform.mdc`

@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_BeforeEdit="Grid_R_BeforeEdit"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_BeforeEdit(R_BeforeEditEventArgs eventArgs)` or `private Task Grid_R_BeforeEdit(R_BeforeEditEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_BeforeEdit(R_BeforeEditEventArgs eventArgs)` or `private void Grid_R_BeforeEdit(R_BeforeEditEventArgs eventArgs)`.
 - To cancel edit (NET4 `plCancel=True` or `plAllowEdit=False`): set `eventArgs.Cancel = true`.
 
 ## Parameter mapping
@@ -30,7 +30,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Grid_R_BeforeEdit(R_BeforeEditEventArgs eventArgs) // OR Conductor_R_BeforeEdit
+private void Grid_R_BeforeEdit(R_BeforeEditEventArgs eventArgs) // OR Conductor_R_BeforeEdit
 {
     var loEx = new R_Exception();
     try
@@ -41,7 +41,6 @@ private Task Grid_R_BeforeEdit(R_BeforeEditEventArgs eventArgs) // OR Conductor_
     }
     catch (Exception ex) { loEx.Add(ex); }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

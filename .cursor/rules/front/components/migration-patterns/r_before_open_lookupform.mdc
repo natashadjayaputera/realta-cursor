@@ -1,0 +1,61 @@
+---
+description: "Migration pattern for R_Before_Open_LookUpForm (NET4) → R_Before_Open_Grid_Lookup (NET6)"
+alwaysApply: false
+---
+
+# R_Before_Open_LookUpForm (NET4) → R_Before_Open_Grid_Lookup (NET6)
+
+- NET4: `R_Before_Open_LookUpForm` on RadGridView column lookup
+- NET6: `R_Before_Open_Grid_Lookup` on `R_Grid` with `R_BeforeOpenGridLookupColumnEventArgs`
+
+## Use
+- Grid column lookup opening lookup forms/pages with parameters.
+- Set target page and pass parameters before navigation.
+- Handle different lookup columns using ColumnName.
+
+## Bindings
+- Grid: `R_Before_Open_Grid_Lookup="@GridName_R_Before_Open_Grid_Lookup"` on `R_Grid`.
+
+## Handler
+- Prefer: `private void GridName_R_Before_Open_Grid_Lookup(R_BeforeOpenGridLookupColumnEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task GridName_R_Before_Open_Grid_Lookup(R_BeforeOpenGridLookupColumnEventArgs eventArgs)`.
+- Use `eventArgs.ColumnName` to identify triggering column. Use `eventArgs.TargetPageType` or `eventArgs.PageNamespace` for target page. Set `eventArgs.Parameter` and `eventArgs.PageTitle`.
+
+## Parameter mapping
+- NET4 `poTargetForm = New LookUpForm` → NET6 `eventArgs.PageNamespace` or `eventArgs.TargetPageType`
+- NET4 `poParameter = loParameter` → NET6 `eventArgs.Parameter = loParameter`
+- NET4 `sender.activeEditor.ownerElement.columnInfo.R_Title = ...` → NET6 `eventArgs.PageTitle = ...`
+- NET6 `eventArgs.ColumnName` identifies triggering column (use switch/if for different columns)
+
+## Example
+```csharp
+private void Grid_R_Before_Open_Grid_Lookup(R_BeforeOpenGridLookupColumnEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        switch (eventArgs.ColumnName)
+        {
+            case nameof(MyDTO.CColumnName):
+                eventArgs.PageNamespace = "OtherProject.Pages.LookupPage";
+                var loParam = new GENERAL_PUB_DTO { _cCompanyId = CompId };
+                eventArgs.Parameter = loParam;
+                eventArgs.PageTitle = _localizer["_LookupTitle"];
+                break;
+        }
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4: `Private Sub gvGrid_R_Before_Open_LookUpForm(sender, e, ByRef poTargetForm As R_FormBase, ByRef poParameter As Object) Handles gvGrid.R_Before_Open_LookUpForm` with `poTargetForm = New LookUpForm`
+- NET6: `R_Before_Open_Grid_Lookup="@Grid_R_Before_Open_Grid_Lookup"` on `R_Grid`
+
+## References
+- `.cursor/rules/patterns/front_navigation_patterns.mdc`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_BeforeOpenGridLookupColumnEventArgs.yml`

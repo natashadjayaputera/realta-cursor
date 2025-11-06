@@ -12,6 +12,9 @@ alwaysApply: false
 - Pages that require record locking/unlocking to prevent concurrent edits.
 - Lock records when entering CRUD mode, unlock when canceling or saving.
 
+## Bindings
+- Override method on `R_Page` - no binding required (automatically called by framework).
+
 ## Handler
 - Override: `protected async override Task<bool> R_LockUnlock(R_LockUnlockEventArgs eventArgs)`.
 - Data object: `var loData = (MyDto)eventArgs.Data;`.

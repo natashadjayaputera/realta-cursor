@@ -62,6 +62,7 @@ private async Task Conductor_R_ServiceSave(R_ServiceSaveEventArgs eventArgs) // 
 ## Notes
 - NET4 directly calls service client's `Svc_R_Save` method; NET6 delegates to ViewModel method which calls Model's `R_ServiceSaveAsync`.
 - Always set `eventArgs.Result` with the saved entity so the control receives server-generated values (e.g., generated IDs, timestamps).
+- Always cast eventArgs.ConductorMode to `eCRUDMode`, `(eCRUDMode)eventArgs.ConductorMode`
 
 ## References
 - `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Events.R_ServiceSaveEventArgs.yml`

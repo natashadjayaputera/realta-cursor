@@ -17,7 +17,7 @@ alwaysApply: false
 - Grid: add `R_BeforeAdd="Grid_R_BeforeAdd"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_BeforeAdd(R_BeforeAddEventArgs eventArgs)` or `private Task Grid_R_BeforeAdd(R_BeforeAddEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_BeforeAdd(R_BeforeAddEventArgs eventArgs)` or `private void Grid_R_BeforeAdd(R_BeforeAddEventArgs eventArgs)`.
 - To cancel add set `eventArgs.Cancel = true`.
 
 ## Parameter mapping
@@ -28,7 +28,7 @@ alwaysApply: false
 
 ## Example
 ```csharp
-private Task Grid_R_BeforeAdd(R_BeforeAddEventArgs eventArgs) // OR Conductor_R_BeforeAdd
+private void Grid_R_BeforeAdd(R_BeforeAddEventArgs eventArgs) // OR Conductor_R_BeforeAdd
 {
     var loEx = new R_Exception();
     try
@@ -41,7 +41,6 @@ private Task Grid_R_BeforeAdd(R_BeforeAddEventArgs eventArgs) // OR Conductor_R_
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

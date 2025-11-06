@@ -1,0 +1,48 @@
+---
+description: "Migration pattern for R_GridViewTextBoxColumn (NET4) → R_GridTextColumn (NET6)"
+alwaysApply: false
+---
+
+# R_GridViewTextBoxColumn (NET4) → R_GridTextColumn (NET6)
+
+- NET4: `R_FrontEnd.R_GridViewTextBoxColumn`
+- NET6: `R_BlazorFrontEnd.Controls.Grid.Columns.R_GridTextColumn`
+
+## When to use
+- Text input columns in grid for string data entry
+- Editable text fields within grid rows
+- Display and edit string properties in grid format
+
+## Parameter mapping (NET4 → NET6)
+- `FieldName` → `FieldName` (use `@nameof(MyDTO.PropertyName)` pattern)
+- `HeaderText` → `HeaderText` (string)
+- `Width` → `Width` (string, e.g., "150px")
+- `MaxLength` → `MaxLength` (int?)
+- `CharacterCasing` → `CharacterCasing` (R_eCharacterCasing enum)
+- `TextAlignment` → `TextAlignment` (R_eTextAlignment enum)
+- `R_EnableAdd` → `R_EnableAdd` (bool)
+- `R_EnableEdit` → `R_EnableEdit` (bool)
+- `Enabled` → `Enabled` (bool, inherited from R_GridColumnBase)
+- `Visible` → `Visible` (bool, inherited from R_GridColumnBase)
+
+## Inherited Properties
+- Properties from `R_GridColumnBase` - See @r_gridcolumnbase.mdc
+  - `FieldName` - Field name binding (REQUIRED)
+  - `Width` - Column width
+  - `HeaderText` - Column header text
+  - `R_EnableAdd` - Enable add operation
+  - `R_EnableEdit` - Enable edit operation
+
+## Component-Specific Properties (NET6)
+- `PrefixText` - Text displayed before the cell value (string)
+- `SuffixText` - Text displayed after the cell value (string)
+- `Ellipsis` - Enable ellipsis for long text (bool)
+
+## Anti-patterns
+- **Do NOT** use `Name` property in NET4 - use `FieldName` for data binding
+- **Do NOT** define columns in code-behind - define in Razor markup within `<R_GridColumns>`
+- **Do NOT** forget to set `FieldName` - it's required for data binding
+- **Do NOT** use string literals for `FieldName` - always use `@nameof(MyDTO.PropertyName)`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Grid.Columns.R_GridTextColumn.yml`

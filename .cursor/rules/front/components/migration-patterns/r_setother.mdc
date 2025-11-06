@@ -18,7 +18,7 @@ alwaysApply: false
 - ConductorGrid: add `R_SetOther="ConductorGrid_R_SetOther"` (+ usual services).
 
 ## Handler
-- Prefer: `private Task Conductor_R_SetOther(R_SetEventArgs eventArgs)` or `private Task ConductorGrid_R_SetOther(R_SetEventArgs eventArgs)`.
+- Prefer: `private void Conductor_R_SetOther(R_SetEventArgs eventArgs)` or `private void ConductorGrid_R_SetOther(R_SetEventArgs eventArgs)`.
 - Async allowed if needed: `private async Task Conductor_R_SetOther(R_SetEventArgs eventArgs)`.
 - Enable status: `bool llEnable = eventArgs.Enable;`.
 
@@ -39,7 +39,6 @@ private async Task Conductor_R_SetOther(R_SetEventArgs eventArgs) // OR Conducto
         loEx.Add(ex);
     }
     loEx.ThrowExceptionIfErrors();
-    return Task Completed.Task;
 }
 ```
 

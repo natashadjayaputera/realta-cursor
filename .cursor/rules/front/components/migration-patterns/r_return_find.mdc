@@ -1,0 +1,59 @@
+---
+description: "Migration pattern for R_Return_Find (NET4) → R_After_Open_Find (NET6)"
+alwaysApply: false
+---
+
+# R_Return_Find (NET4) → R_After_Open_Find (NET6)
+
+- NET4: Event handler `R_Return_Find` on `R_Find` component
+- NET6: Event handler `R_After_Open_Find` on `R_Find` component with `R_AfterOpenFindEventArgs`
+
+## Use
+- Handle result when find page closes and returns selected value.
+- Populate fields based on selected find result.
+- Validate selected find value and perform business logic.
+
+## Bindings
+- `R_Find` component: `R_After_Open_Find="@HandlerName"`.
+
+## Handler
+- Prefer: `private void HandlerName(R_AfterOpenFindEventArgs eventArgs)`.
+- Async allowed if needed: `private async Task HandlerName(R_AfterOpenFindEventArgs eventArgs)`.
+- Always check for null: `if (eventArgs.Result is null) return;`.
+- Cast result: `var loResult = (MyDto)eventArgs.Result;`.
+
+## Parameter mapping
+- NET4 `poReturnObject As Object` → NET6 `eventArgs.Result` (object?, check for null before casting)
+
+## Example
+```csharp
+private void btnName_R_After_Open_Find(R_AfterOpenFindEventArgs eventArgs)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        if (eventArgs.Result is null) return;
+        var loResult = (MyDto)eventArgs.Result;
+        _viewModel.Data.CCODE = loResult.cCode;
+        _viewModel.Data.CNAME = loResult.cName;
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+## NET4 → NET6 mapping examples
+- NET4 VB usage:
+  - `Private Sub btnName_R_Return_Find(poReturnObject As Object) Handles btnName.R_Return_Find` with `CType(poReturnObject, MyDto)`
+- NET6:
+  - `R_After_Open_Find="@btnName_R_After_Open_Find"` on `R_Find` → `private void btnName_R_After_Open_Find(R_AfterOpenFindEventArgs eventArgs)`
+
+## Notes
+- Called automatically when find page closes. Always check `eventArgs.Result` for null before processing.
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.R_Find.yml`
+- `.cursor/rules/front/components/migration-patterns/r_before_open_form.mdc`

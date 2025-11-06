@@ -1,0 +1,44 @@
+---
+description: "Migration pattern for R_eGridType (NET4) → R_eGridType (NET6)"
+alwaysApply: false
+---
+
+# R_eGridType (NET4) → R_eGridType (NET6)
+
+- NET4: `R_FrontEnd.R_eGridType`
+- NET6: `R_BlazorFrontEnd.Controls.Enums.R_eGridType`
+
+## Enum type mapping
+- NET4: `R_FrontEnd.R_eGridType` → NET6: `R_BlazorFrontEnd.Controls.Enums.R_eGridType`
+
+## Enum value mapping
+- `R_eGridType.BatchUpdating` → `R_eGridType.Batch` (renamed)
+- `R_eGridType.Navigator` → `R_eGridType.Navigator` (unchanged)
+- `R_eGridType.Original` → New in NET6 (default value = 0, not present in NET4)
+
+## Property mapping
+- NET4: `gvMain.R_GridType = R_FrontEnd.R_eGridType.Navigator`
+- NET6: `R_GridType="@R_eGridType.Original"` (in Razor) or `_gridRef.R_GridType = R_eGridType.Original` (in code-behind)
+
+## Usage examples
+### NET4 VB.NET
+```vb
+Me.gvMain.R_GridType = R_FrontEnd.R_eGridType.Navigator
+Me.gvAssetList.R_GridType = R_FrontEnd.R_eGridType.BatchUpdating
+```
+
+### NET6 C#
+```csharp
+R_GridType="@R_eGridType.Original"
+_gridRef.R_GridType = R_eGridType.Navigator
+```
+
+## Notes
+- `BatchUpdating` renamed to `Batch` in NET6
+- `Original` is new default value in NET6 (value = 0)
+- Property accessed via `R_GridType` parameter in Razor markup
+- In code-behind, use null-conditional operator (`?.`) when accessing `_gridRef`
+
+## References
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Enums.R_eGridType.yml`
+- `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Grid.R_IGrid.yml` (R_GridType property)
