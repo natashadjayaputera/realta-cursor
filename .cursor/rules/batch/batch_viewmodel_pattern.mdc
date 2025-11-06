@@ -6,7 +6,7 @@ alwaysApply: false
 # BATCH DATA MANIPULATION PATTERN
 
 - MUST Implement `R_IProcessProgressStatus` in `{ProgramName}BatchViewModel.cs`.
-- {BatchListDTO} MUST match `{ProgramName}BatchCls` deserialized object DTO. See @batch_deserilization_pattern.mdc
+- {BatchListDTO} MUST match `{ProgramName}BatchCls` deserialized object DTO. See @batch_deserialization_pattern.mdc
 
 ## ⚠️ CRITICAL: DTO Type Verification
 

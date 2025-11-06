@@ -39,7 +39,7 @@ Agent purpose: validate project structure against the migration checklist, run b
 ### Pre-Build
 - Verify `.csproj` PropertyGroup settings match checklist (TargetFramework, LangVersion, Nullable, ImplicitUsings).
 - Verify all R_* DLL references use `HintPath` (not PackageReference).
-- Validate project structure against `checklist_migration.md`.
+- Validate project structure against migration checklist matching `*MigrationChecklist*`.
 - Verify no Logger/Activity in Common, no `R_FrontGlobalVar` in ViewModels, and no data state in Razor.cs.
 
 ### Build Execution

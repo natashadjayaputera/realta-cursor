@@ -82,7 +82,6 @@ Here’s a **chronologically and logically ordered** version of your instruction
   * DTO files contains Entity DTO, Parameter DTO, Result DTO.
   * Enums and interfaces.
   * ContextConstant if using Streaming Patterns.
-* A short migration checklist (files added/changed) referencing @checklist_common_project.md`
 
 ## Usage (Cursor)
 

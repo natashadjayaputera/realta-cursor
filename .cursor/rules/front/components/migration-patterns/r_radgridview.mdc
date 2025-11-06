@@ -14,7 +14,7 @@ alwaysApply: false
 - Data display with sorting, filtering, and paging capabilities
 - Use with `R_ConductorGrid` for grid-based CRUD pages (GridType.Original with CRUD)
 - Use standalone for inquiry-only grids (no conductor needed)
-- See @front_r_conductor_rules.mdc for detailed conductor usage rules
+- See @r_conductor.mdc for detailed conductor usage rules
 
 ## NET6 Direct Public API
 
@@ -39,7 +39,7 @@ None
 - `TargetGridDrop` - Target grid for drag-and-drop operations (`R_IGrid?`)
 - `RowHeight` - Row height configuration (`decimal`)
 - `PageSizeChanged` - Event when page size changes (`EventCallback<int>`, only use if PageSize is not `@bind-`)
-- `R_GridFilterMode` - Grid filter mode configuration (`R_eGridFilterMode`, see @r_egridfiltermode.mdc)
+- `R_GridFilterMode` - Grid filter mode configuration (`R_eGridFilterMode`)
 - `Columns` - Grid columns collection (`List<R_GridColumnInfo>`, public get, protected set`)
 - `CurrentSelectedData` - Currently selected row data (`TModel?`, public get, protected set`)
 - `SelectedItems` - Collection of selected items (`ObservableCollection<TModel>`)
@@ -52,7 +52,7 @@ None
 ### Inherited Properties
 
 #### From R_GridBase<TModel>
-- Properties from `R_BlazorFrontEnd.Controls.R_GridBase<TModel>` - See @r_gridbase.mdc
+- Properties from `R_BlazorFrontEnd.Controls.R_GridBase<TModel>`
   - `R_GridMode` - Current grid mode (`R_eGridMode`, see @r_egridmode.mdc)
   - `R_ServiceGetListRecord` - Event handler for loading list data
   - `R_ServiceGetRecord` - Event handler for loading single record
@@ -221,7 +221,7 @@ private R_ConductorGrid? _conductorGridRef;
 NET4 gridview columns and their NET6 equivalents:
 
 - `R_GridViewTextBoxColumn` → `R_GridTextColumn` - See @r_gridviewtextboxcolumn.mdc
-- `R_GridViewDecimalColumn` → `R_GridNumericColumn` - See @r_gridviewdecimalcolumn.mdc and @front_r_grid_numeric_column_rules.mdc
+- `R_GridViewDecimalColumn` → `R_GridNumericColumn` - See @r_gridviewdecimalcolumn.mdc and @r_gridnumericcolumn.mdc
 - `R_GridViewDateTimeColumn` → `R_GridDatePickerColumn` - See @r_gridviewdatetimecolumn.mdc
 - `R_GridViewCheckBoxColumn` → `R_GridCheckBoxColumn` - See @r_gridviewcheckboxcolumn.mdc
 - `R_GridViewCheckBoxSelectColumn` → `R_GridCheckBoxSelectColumn` - See @r_gridviewcheckboxselectcolumn.mdc
@@ -390,8 +390,8 @@ NET4 gridview columns and their NET6 equivalents:
 - `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Enums.R_eGridMode.yml`
 - `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.Enums.R_eGridType.yml`
 - `.cursor/docs/net6/RealtaNetCoreLibrary/R_BlazorFrontEnd.Controls.DataControls.R_ConductorGrid.yml`
-- `.cursor/rules/front/components/front_r_conductor_rules.mdc`
-- `.cursor/rules/front/components/front_r_grid_numeric_column_rules.mdc`
+- `.cursor/rules/front/components/r_conductor.mdc`
+- `.cursor/rules/front/components/net6/r_gridnumericcolumn.mdc`
 - `.cursor/rules/front/components/migration-patterns/r_servicegetlistrecord.mdc`
 - `.cursor/rules/front/components/migration-patterns/r_servicegetrecord.mdc`
 - `.cursor/rules/front/components/migration-patterns/r_servicesave.mdc`
