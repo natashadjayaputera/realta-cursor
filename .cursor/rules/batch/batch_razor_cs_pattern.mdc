@@ -29,7 +29,7 @@ public partial class {ProgramName}Batch : R_Page
 
     public async Task ShowSuccessInvoke()
     {
-        var loValidate = await R_MessageBox.Show("", _localizer["{ValidationMessageResourceKey}"], R_eMessageBoxButtonType.OK);
+        var loValidate = await R_MessageBox.Show("", Localizer["{ValidationMessageResourceKey}"], R_eMessageBoxButtonType.OK);
         if (loValidate == R_eMessageBoxResult.OK)
         {
             await this.Close(true, true);
@@ -88,7 +88,7 @@ public partial class {ProgramName}Batch : R_Page
         {
             // OPTIONAL: add data front validation logic if needed
 
-            var loTemp = await R_MessageBox.Show("", _localizer["M005"], R_eMessageBoxButtonType.YesNo);
+            var loTemp = await R_MessageBox.Show("", Localizer["M005"], R_eMessageBoxButtonType.YesNo);
 
             if (loTemp == R_eMessageBoxResult.No)
             {
@@ -221,7 +221,7 @@ public partial class {ProgramName}Batch : R_Page
 
             if (eventArgs.File.Name.Contains(".xlsx") == false)
             {
-                await R_MessageBox.Show("", _localizer["{WrongFileTypeErrorResourceKey}"], R_eMessageBoxButtonType.OK);
+                await R_MessageBox.Show("", Localizer["{WrongFileTypeErrorResourceKey}"], R_eMessageBoxButtonType.OK);
             }
             await _gridRef.R_RefreshGrid(null);
         }
@@ -229,7 +229,7 @@ public partial class {ProgramName}Batch : R_Page
         {
             if (_batchViewModel.IsErrorEmptyFile)
             {
-                await R_MessageBox.Show("", _localizer["{EmptyFileErrorResourceKey}"], R_eMessageBoxButtonType.OK);
+                await R_MessageBox.Show("", Localizer["{EmptyFileErrorResourceKey}"], R_eMessageBoxButtonType.OK);
             }
             else
             {

@@ -28,15 +28,38 @@ tools:
 ## Overview
 Agent purpose: convert VB.NET (.NET Framework 4) Back Projects into C# (.NET 6) `{ProgramName}Back` project preserving DB and stored procedure names, implementing logger/activity patterns in Back, and following the database access and error/resource patterns, and still adhering to `{ProgramName}Common` project. 
 
+Here’s a **chronologically corrected and clarified version** of your Cursor custom command instructions — keeping all your rules intact but ordering them logically for workflow and clarity:
+
+---
+
 ## Instructions
-- Read `{ProgramName}Common` assembly/project to understand the DTO needed as ResultDTO and ParameterDTO for specific method following @common_dto_design.mdc. (NON-NEGOTIABLE)
-- Migrate VB.NET business classes and services to C# `.NET 6` project structure.
-- Implement business logic classes in `{ProgramName}Back`.
-- Create a `{ProgramName}BackResources` assembly/project for error messages/resources only.
-- Logger and Activity concerns belong only in Back — do **not** move them into Common or Front, must follow Logger Pattern and Activity Pattern.
-- Follow database patterns; **never** rename or change SQL / SP names — call them as-is.
-- Convert into async patterns (`async Task`) methods, preserve transactions and error handling semantics.
-- Make sure classes are created with class seperation rule. See @back_class_separation.mdc
+
+1. Follow the plan generation from @plan_generation.mdc
+2. **Understand Common DTOs**
+   * Read the `{ProgramName}Common` project to understand the required `ResultDTO` and `ParameterDTO` for each method.
+   * Follow the design standard in **@common_dto_design.mdc**.
+   * ⚠️ *This is non-negotiable.*
+3. **Plan the Migration**
+   * Migrate existing VB.NET business classes and services into a **C# .NET 6** project structure.
+   * Ensure the new structure aligns with the `{ProgramName}` solution layout (`Common`, `Back`, `Service`, etc.).
+4. **Implement Business Logic**
+   * Implement all business logic classes inside the `{ProgramName}Back` project.
+   * Follow the **class separation rule** strictly (see **@back_class_separation.mdc**).
+   * This is the **most important rule**.
+5. **Project Responsibilities**
+   * Create a `{ProgramName}BackResources` project dedicated **only** for error messages and resource strings.
+   * Keep **Logger** and **Activity** handling **only** within the Back project — never move them into Common or Front.
+   * Must follow the **Logger Pattern** and **Activity Pattern**.
+6. **Database Rules**
+   * Follow existing database access patterns.
+   * **Never rename or modify SQL or stored procedure names** — always call them *as-is*.
+7. **Asynchronous Implementation**
+   * Convert all methods into `async Task` patterns where applicable.
+   * Preserve existing **transaction** handling and **error semantics** during migration.
+8. **Interface and Context Handling**
+   * Interfaces defined in `{ProgramName}Common` are **not** to be implemented in Back classes — they are meant for the Service project.
+   * Do **not** directly access `R_BackGlobalVar` or `R_GetStreamingContext` inside Back classes.
+   * These values must be **passed from the Controller** in the Service project to the Back class.
 
 ## Context (project files to reference)
 - Automatically fetch all modular `.mdc` rules matching `*ToCSharpBack*`.
@@ -106,4 +129,4 @@ Agent purpose: convert VB.NET (.NET Framework 4) Back Projects into C# (.NET 6) 
 ## Usage (Cursor)
 
 * Invoke from Agents palette or use trigger `"back"`.
-* Example prompt: `Use ToCSharpBack to convert `/net4/**/Back/{ProgramName}*/**/*.vb` into DTOs under `/net6/**/BACK/{ModuleName}/{ProgramName}Back/` following rules and patterns. ProgramName: ...`
+* Example prompt: `Use ToCSharpBack to convert `/net4/**/Back/{ProgramName}*/**/*.vb` into Back and Back Resources Project under `/net6/**/BACK/{ModuleName}/{ProgramName}Back/` following rules and patterns. ProgramName: ...`

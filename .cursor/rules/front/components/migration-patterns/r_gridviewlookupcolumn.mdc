@@ -17,6 +17,12 @@ alwaysApply: false
 - For the **description field** (e.g., `CNAME`, `CDESC`), use `R_GridTextColumn` - See @r_gridviewtextboxcolumn.mdc
 - Pattern: Code/ID field uses `R_GridLookupColumn`, description field uses `R_GridTextColumn` (typically without R_EnableAdd or R_EnableEdit)
 
+### Migration Note: Column Type Switching
+- If a **description column** (e.g., `CNAME`, `CDESC`) uses `R_GridViewLookUpColumn` in NET4, **switch the column types** during migration:
+  - Move the lookup functionality to the corresponding **code/ID field** (e.g., `CCODE`, `CID`) using `R_GridLookupColumn`
+  - Convert the description field to `R_GridTextColumn` (typically read-only or with limited edit capabilities)
+- This ensures proper separation: code/ID fields handle lookup selection, description fields display the selected value
+
 ## Parameter mapping (NET4 → NET6)
 - `FieldName` → `FieldName` (use `@nameof(MyDTO.PropertyName)` pattern)
 - `HeaderText` → `HeaderText` (string)

@@ -25,58 +25,124 @@ tools:
 ---
 # ToCSharpFront
 
-## Instructions
-1. List all program names from NET4 VB files in `/net4/**/Front/{ProgramName}*/**/*.vb` (extract program names from file paths/filenames, e.g., `FAB00200` from `FAB00200.vb`).
-2. Ask user to select which program name to convert.
-3. Read the chosen `{ProgramName}.vb` file and analyze it to find all referenced program names (e.g., from `R_RunForm`, `R_PopUp`, etc.).
-4. For each referenced program name found in step 3:
-   - Extract the first 6 characters of the chosen program name (e.g., `FAM00100` → `FAM001`).
-   - Check if the referenced program name starts with the same 6-character prefix.
-   - **If matches** (e.g., `FAM0010001` or `FAM00110` start with `FAM001`): Create an empty partial class `public partial class {ReferencedProgramName} : R_Page { }` in the appropriate location so it can be referenced.
-   - **If doesn't match** (e.g., `GSL00100` doesn't start with `FAM001`): Add a `// TODO: implement navigation to {ReferencedProgramName} manually` comment instead.
-5. Read the chosen `{ProgramName}.vb` file and analyze it to determine which ViewModel is needed (e.g., find corresponding `{ProgramName}ViewModel.cs` in `/net6/**/FRONT/{ProgramName}Model/VMs/`).
-6. Read the identified ViewModel file if it exists (if not, inform user that ViewModel needs to be created first).
-7. Scan the VB file to identify which NET4 components/patterns are used (e.g., R_LookUp, R_Conductor, R_FormBase, etc.).
-8. Fetch migration-patterns from `.cursor/rules/front/components/migration-patterns/` only for components found (see Context section for fetch strategy).
-9. Fetch specific component rules `.cursor/rules/front/components/net6/` when net6 component is used without migration.
-10. Fetch documentation from `.cursor/docs/net6` only when needed for specific component API details.
-11. Convert the VB file to `{ProgramName}.razor` and `{ProgramName}.razor.cs` following the migration-patterns exactly.
+## Overview
+Agent purpose: Convert VB.NET (.NET Framework 4) WinForms/WPF front-end code into C# (.NET 6) Blazor components (`{ProgramName}.razor` and `{ProgramName}.razor.cs`). Preserve UI layout and behavior, migrate component patterns, and follow strict dependency injection and using statement rules.
 
-**Rules:**
-- Follow migration-pattern files exactly - always fetch pattern file first, never guess.
-- Create layout based on provided image.
-- Use `R_BlazorFrontEnd.Controls` components (fetch docs from `.cursor/docs/net6` only when needed).
-- **Dependency Injection (MANDATORY - Follow EXACTLY)**: 
-  - ALL `[Inject]` attributes MUST be in `.razor.cs` code-behind files, NEVER in `.razor` files.
-  - NEVER use `@inject` directives in `.razor` files.
-  - Inject `IClientHelper ClientHelper` in `.razor.cs` code-behind only, **NOT** in ViewModel.
-  - Inject `R_ILocalizer Localizer` in `.razor.cs` code-behind only, **NOT** in `.razor` file.
-  - Inject `R_MessageBoxService MessageBoxService` in `.razor.cs` code-behind only, **NOT** in `.razor` file.
-  - All injected services follow the pattern: `[Inject] private IType PropertyName { get; set; } = default!;`
-  - This is a strict rule - see `@front_dependency_injection.mdc` for examples.
-- UI state in `.razor.cs`; ViewModel contains only non-UI state.
-- Data validation only in ViewModel, not in `.razor.cs`.
-- Work one program at a time - ask user before proceeding to next.
-- If ViewModel doesn't exist for the chosen program, inform user it needs to be created first via ToCSharpViewModel agent.
-- **Program Reference Handling**: For referenced program names found in VB file (from `R_RunForm`, `R_PopUp`, etc.):
-  - Extract first 6 characters of chosen program name (e.g., `FAM00100` → `FAM001`).
-  - If referenced program starts with same 6-character prefix (e.g., `FAM0010001`, `FAM00110`): Create empty partial class `public partial class {ReferencedProgramName} : R_Page { }` so it can be referenced.
-  - If referenced program doesn't match prefix (e.g., `GSL00100`): Add `// TODO: implement navigation to {ReferencedProgramName} manually` comment instead.
-- **Using Statements (MANDATORY - Follow EXACTLY)**: 
-  - ALL `@using` statements MUST be in `_Imports.razor` file, NEVER in `.razor` files. This is a strict rule - see `@front_imports_and_usings.mdc`.
-  - Use the EXACT minimal required using statements list for `_Imports.razor` (see _Imports.razor section below).
-  - Use the EXACT minimal required using statements list for `.razor.cs` files (see .razor.cs Using Statements section below).
-  - These rules must be followed EXACTLY as specified in `@front_imports_and_usings.mdc` and `@front_razor_cs_using_statements.mdc`.
-- Do **NOT** fix error, just build and give warnings and errors reports. See @build_report_format.mdc.
+## Prerequisites
+- `{ProgramName}ViewModel.cs` must exist in `/net6/**/FRONT/{ProgramName}Model/VMs/` before conversion
+- If ViewModel doesn't exist, inform user to create it first via `ToCSharpViewModel` agent
+
+## Instructions (Step-by-Step)
+
+### Step 1: Discover Programs
+- List all program names from NET4 VB files in `/net4/**/Front/{ProgramName}*/**/*.vb`
+- Extract program names from file paths/filenames (e.g., `FAB00200` from `FAB00200.vb`)
+- **Action**: Ask user to select which program name to convert
+
+### Step 2: Analyze VB File
+- Read the chosen `{ProgramName}.vb` file
+- Identify all referenced program names from:
+  - `R_RunForm()` calls
+  - `R_PopUp()` calls
+  - `R_Before_Open_Form()` calls
+  - Other navigation methods
+
+### Step 3: Handle Program References
+For each referenced program name found:
+- Extract first 6 characters of chosen program name (e.g., `FAM00100` → `FAM001`)
+- Check if referenced program starts with same 6-character prefix
+- **If matches** (e.g., `FAM0010001`, `FAM00110` start with `FAM001`):
+  - Create empty partial class: `public partial class {ReferencedProgramName} : R_Page { }`
+  - Place in appropriate location so it can be referenced
+- **If doesn't match** (e.g., `GSL00100` doesn't start with `FAM001`):
+  - Add comment: `// TODO: implement navigation to {ReferencedProgramName} manually`
+
+### Step 4: Identify ViewModel
+- Analyze VB file to determine required ViewModel
+- Look for corresponding `{ProgramName}ViewModel.cs` in `/net6/**/FRONT/{ProgramName}Model/VMs/`
+- **If exists**: Read the ViewModel file to understand data structure
+- **If missing**: Inform user that ViewModel must be created first via `ToCSharpViewModel` agent
+
+### Step 5: Identify Components and Patterns
+- Scan VB file to identify NET4 components/patterns used:
+  - `R_LookUp`, `R_Conductor`, `R_FormBase`, `R_Grid`, etc.
+  - Create list of all components found
+
+### Step 6: Fetch Migration Patterns
+- Fetch migration-patterns from `.cursor/rules/front/components/migration-patterns/`
+- **Fetch ONLY** patterns for components found in Step 5
+- Pattern naming: `{componentname}.mdc` (e.g., `R_LookUp` → `r_lookup.mdc`)
+- **Rule**: Always fetch pattern file first, never guess
+
+### Step 7: Fetch Component Rules (if needed)
+- Fetch specific component rules from `.cursor/rules/front/components/net6/`
+- **Fetch ONLY** when NET6 component is used without migration
+- Pattern naming: `{componentname}.mdc` (e.g., `R_Page` → `r_page.mdc`)
+
+### Step 8: Fetch Documentation (if needed)
+- Fetch documentation from `.cursor/docs/net6`
+- **Fetch ONLY** when specific component API details are needed
+
+### Step 9: Convert to Blazor
+- Convert VB file to `{ProgramName}.razor` and `{ProgramName}.razor.cs`
+- Follow migration-patterns exactly as fetched
+- Create layout based on provided image (if available)
+- Use `R_BlazorFrontEnd.Controls` components
+
+### Step 10: Build and Report
+- Build the project
+- **Do NOT** fix errors automatically
+- Generate warnings and errors report following `@build_report_format.mdc`
+
+## Critical Rules
+
+### Dependency Injection (MANDATORY)
+- **ALL** `[Inject]` attributes MUST be in `.razor.cs` code-behind files, **NEVER** in `.razor` files
+- **NEVER** use `@inject` directives in `.razor` files
+- **Pattern**: `[Inject] private IType PropertyName { get; set; } = default!;`
+- **Required injections** (in `.razor.cs` only):
+  - `IClientHelper ClientHelper` (NOT in ViewModel)
+  - `R_ILocalizer Localizer` (NOT in `.razor` file)
+  - `R_MessageBoxService MessageBoxService` (NOT in `.razor` file)
+- **Reference**: See `@front_dependency_injection.mdc` for examples
+
+### Using Statements (MANDATORY)
+- **ALL** `@using` statements MUST be in `_Imports.razor` file, **NEVER** in `.razor` files
+- Use EXACT minimal required using statements. See `@front_imports_and_usings.mdc` and `@front_razor_cs_using_statements.mdc`
+
+### State Management
+- **UI state**: Must be in `.razor.cs` code-behind
+- **Data state**: Must be in ViewModel (non-UI state only)
+- **Data validation**: Only in ViewModel, NOT in `.razor.cs`
+
+### Workflow
+- Work one program at a time
+- Ask user before proceeding to next program
 
 ## Context (Fetch On-Demand Only)
-- **Migration-Patterns**: `.cursor/rules/front/components/migration-patterns/` - Fetch only patterns for components found in VB file (e.g., `R_LookUp` → `r_lookup.mdc`, `R_FormBase` → `r_formbase.mdc`). Pattern naming: `{componentname}.mdc`.
-- **Specific Component Rules**: `.cursor/rules/front/components/net6/` - Fetch only rules for components used in plan but is used without migration (e.g., `R_Page` → `r_page.mdc`, `R_Label` → `r_label.mdc`). Pattern naming: `{componentname}.mdc`.
-- **Documentation**: `.cursor/docs/net6` - Fetch only when you need specific component API details.
-- **Rules**: Fetch `.mdc` rules matching `*ToCSharpFront*` only when needed.
-- **Checklists**: Fetch `*MigrationChecklist*` / `*FrontMigrationChecklist*` only at the end for verification.
 
-## CSProj (Front project requirements)
+### Migration-Patterns
+- **Location**: `.cursor/rules/front/components/migration-patterns/`
+- **Fetch Strategy**: Fetch ONLY patterns for components found in VB file
+- **Pattern Naming**: `{componentname}.mdc` (e.g., `R_LookUp` → `r_lookup.mdc`, `R_FormBase` → `r_formbase.mdc`)
+- **Rule**: Always fetch pattern file first, never guess
+
+### Specific Component Rules
+- **Location**: `.cursor/rules/front/components/net6/`
+- **Fetch Strategy**: Fetch ONLY when NET6 component is used without migration
+- **Pattern Naming**: `{componentname}.mdc` (e.g., `R_Page` → `r_page.mdc`, `R_Label` → `r_label.mdc`)
+
+### Documentation
+- **Location**: `.cursor/docs/net6`
+- **Fetch Strategy**: Fetch ONLY when specific component API details are needed
+
+### Rules
+- **Fetch Strategy**: Fetch `.mdc` rules matching `*ToCSharpFront*` only when needed
+
+### Checklists
+- **Fetch Strategy**: Fetch `*MigrationChecklist*` / `*FrontMigrationChecklist*` only at the end for verification
+
+## CSProj (Front Project Requirements)
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 	<PropertyGroup>
@@ -111,8 +177,8 @@ tools:
 			<HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Menu\BlazorClientHelper.dll</HintPath>
 		</Reference>
 		<Reference Include="R_LockingFront">
-      <HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_LockingFront.dll</HintPath>
-    </Reference>
+			<HintPath>..\..\..\..\SYSTEM\SOURCE\LIBRARY\Front\R_LockingFront.dll</HintPath>
+		</Reference>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -124,11 +190,12 @@ tools:
 
 ## Outputs / Deliverables
 
-* `.razor` and `.razor.cs` files per UI screen, following `front_patterns.mdc`.
-* Component library usage updated to `R_BlazorFrontEnd*`.
-* Migration notes describing lifecycle and binding changes.
+* `.razor` and `.razor.cs` files per UI screen, following migration patterns
+* Component library usage updated to `R_BlazorFrontEnd*`
+* Migration notes describing lifecycle and binding changes
+* Build report with warnings and errors (following `@build_report_format.mdc`)
 
 ## Usage (Cursor)
 
-* Invoke from Agents palette or use trigger `"front"`.
+* Invoke from Agents palette or use trigger `"front"`
 * **Example prompt**: `Use ToCSharpFront to convert {ProgramName} NET4 VB forms to {ProgramName} Blazor components. Follow the layout in the image provided. ProgramName: ...`

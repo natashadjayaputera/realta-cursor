@@ -40,7 +40,7 @@ private void Grid_R_Before_Open_Grid_Lookup(R_BeforeOpenGridLookupColumnEventArg
                 eventArgs.PageNamespace = "OtherProject.Pages.LookupPage";
                 var loParam = new GENERAL_PUB_DTO { _cCompanyId = CompId };
                 eventArgs.Parameter = loParam;
-                eventArgs.PageTitle = _localizer["_LookupTitle"];
+                eventArgs.PageTitle = Localizer["_LookupTitle"];
                 break;
         }
     }

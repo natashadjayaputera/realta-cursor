@@ -200,7 +200,7 @@ None
         Height="600px">
     <R_GridColumns>
         <R_GridTextBoxColumn FieldName="@nameof(MyDTO.PropertyName)"
-                              HeaderText="@_localizer["HeaderText"]"
+                              HeaderText="@Localizer["HeaderText"]"
                               Width="150px" />
     </R_GridColumns>
 </R_Grid>

@@ -60,14 +60,14 @@ End Sub
 ```razor
 <R_TabStrip OnActiveTabIndexChanged="OnActiveTabIndexChanged" @ref="_tabStripRef">
     <!-- Direct Razor markup -->
-    <R_TabStripTab Title="@_localizer["_Floor"]" Id="Floor">
+    <R_TabStripTab Title="@Localizer["_Floor"]" Id="Floor">
         <R_StackLayout>
             <R_Label>Floor content here</R_Label>
         </R_StackLayout>
     </R_TabStripTab>
     
     <!-- Using R_TabPage to load another page -->
-    <R_TabStripTab Title="@_localizer["_UnitType"]" Id="UnitType">
+    <R_TabStripTab Title="@Localizer["_UnitType"]" Id="UnitType">
         <R_TabPage R_Before_Open_TabPage="Before_Open_UnitType_TabPage">
         </R_TabPage>
     </R_TabStripTab>

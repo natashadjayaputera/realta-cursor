@@ -16,15 +16,17 @@ public class {ProgramName}BatchCls : R_IBatchProcessAsync
     private readonly ActivitySource _activitySource;
     private Logger{ProgramName} _logger;
 
+    // MUST FOLLOW THIS EXACTLY FOR CONSTRUCTOR
     public {ProgramName}BatchCls()
     {
         _logger = Logger{ProgramName}.R_GetInstanceLogger();
         _activitySource = R_LibraryActivity.R_GetInstanceActivitySource();
     }
 
+    // MUST FOLLOW THIS EXACTLY FOR R_BATCHPROCESSASYNC
     public async Task R_BatchProcessAsync(R_BatchProcessPar poBatchProcessPar)
     {
-        using Activity activity = _activitySource.StartActivity("R_BatchProcess");
+        using Activity activity = _activitySource.StartActivity("R_BatchProcessAsync");
         R_Exception loException = new R_Exception();
         var loDb = new R_Db();
 

@@ -29,6 +29,7 @@ tools:
 Agent purpose: produce  C# (.NET 6) `{ProgramName}Service` project (controllers / API layer) that implements Common interfaces and delegates to Back business logic. 
 
 ## Instructions
+- Follow the plan generation from @plan_generation.mdc
 - Implement controller and service layer classes that correspond to Common interfaces.
 - Implement method bodies to call business logic in `{ProgramName}Back`.
 - Use `R_BackGlobalVar` to obtain `IClientHelper` where needed.

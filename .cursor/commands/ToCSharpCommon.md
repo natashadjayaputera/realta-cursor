@@ -29,20 +29,36 @@ tools:
 Agent purpose: convert VB.NET (.NET Framework 4) Back and Common Projects into C# (.NET 6) `{ProgramName}Common` project. Produce clean, idiomatic C# targeting the csproj rules below. **No business logic** in Common — only DTOs, enums, interfaces, and constants.
 
 ## Instructions
-- Convert VB.NET DTOs & related types to modern C# (C# 10 / nullable enabled).
-- Create a `{ProgramName}Common` library/project (follow csproj block below).
-- Place **all DTOs, enums, interfaces** here.
-- Interfaces must inherit/implement `R_IServiceCRUDAsyncBase` where applicable for service contracts.
-- Each CRUD patterns in Back Project must have each own Interface inheriting `R_IServiceCRUDAsyncBase<{ProgramName}DTO>` with each own EntityDTO (`{ProgramName}DTO`)
-- Each methods gets its own ResultDTO and ParameterDTO (NEVER reuse EntityDTO)
-- **Do not** move business logic into Common.
-- Keep naming consistent with project conventions.
+Here’s a **chronologically and logically ordered** version of your instructions, keeping your original intent intact but improving flow and clarity:
+
+---
+
+## Instructions
+1. Follow the plan generation from @plan_generation.mdc
+2. **Create the `{ProgramName}Common` project**
+   * Follow the `.csproj` structure provided below.
+   * Maintain consistent naming according to project conventions (see `@core_variable_naming_rules.mdc`).
+3. **Extract all methods from the `{ProgramName}Back` project**
+   * For each method, create both a **ParameterDTO** and a **ResultDTO**.
+   * **Do not use Stream DTOs** under any circumstances.
+   * **Do not reuse EntityDTOs** — every method must have its own dedicated DTOs.
+4. **Place all DTOs, enums, and interfaces** inside the `{ProgramName}Common` project.
+   * Keep this project strictly for shared contracts and types.
+   * **Do not** include or move any business logic here.
+5. **Define interfaces for service contracts**
+   * Interfaces must inherit or implement `R_IServiceCRUDAsyncBase` where applicable.
+   * For each CRUD pattern in the `{ProgramName}Back` project, create a corresponding interface that inherits
+     `R_IServiceCRUDAsyncBase<{ProgramName}DTO>` and uses its own dedicated `EntityDTO` (`{ProgramName}DTO`).
+6. **Convert existing VB.NET DTOs and related types**
+   * Rewrite them into modern C# (C# 10, nullable enabled).
+   * Ensure code style and syntax follow C# best practices and project conventions.
 
 ## Context (project files to reference)
 - Automatically fetch all modular `.mdc` rules matching `*ToCSharpCommon*`.
 - Start with `*MigrationChecklist*` and then use `*CommonMigrationChecklist*` for project tracking and verification.
+- Follow the plan generation from @plan_generation.mdc
 
-## CSProj (library settings — keep as project template)
+## CSProj (project settings — keep as project template)
 ```xml
 <PropertyGroup>
   <TargetFramework>netstandard2.1</TargetFramework>
