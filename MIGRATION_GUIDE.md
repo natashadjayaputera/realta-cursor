@@ -81,6 +81,10 @@ Ensure you have the following directory structure:
 
 ```
 _Cursor/
+├── .cursor/                 # Cursor configuration
+│   ├── commands/            # Agent definitions
+│   ├── rules/               # Migration rules and patterns
+│   └── docs/                # Documentation references
 ├── net4/                    # Source VB.NET code (.NET Framework 4)
 │   └── {Module}/            # Module folders (FA, GS, SA, etc.)
 │       └── Development/
@@ -92,10 +96,6 @@ _Cursor/
 │       ├── BACK/            # Back projects
 │       ├── SERVICE/         # Service projects
 │       └── FRONT/           # Front projects
-├── .cursor/                 # Cursor configuration
-│   ├── commands/            # Agent definitions
-│   ├── rules/               # Migration rules and patterns
-│   └── docs/                # Documentation references
 └── plan/                    # Migration plans (auto-generated)
 ```
 
