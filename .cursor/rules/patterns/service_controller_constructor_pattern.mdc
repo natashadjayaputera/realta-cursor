@@ -14,7 +14,7 @@ public class {ProgramName}Controller : ControllerBase, I{ProgramName}
     private readonly Logger{ProgramName} _logger;
     private readonly ActivitySource _activitySource;
 
-    public {ProgramName}Controller(ILogger<Logger{ProgramName}> logger)
+    public {ProgramName}Controller(ILogger<{ProgramName}Controller> logger)
     {
         Logger{ProgramName}.R_InitializeLogger(logger);
         _logger = Logger{ProgramName}.R_GetInstanceLogger();
