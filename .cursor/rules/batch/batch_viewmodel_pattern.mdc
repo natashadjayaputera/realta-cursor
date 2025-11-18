@@ -25,13 +25,16 @@ alwaysApply: false
 
 ```csharp
 using R_BlazorFrontEnd.Exceptions;
+using R_BlazorFrontEnd.Helpers;
 using R_ProcessAndUploadFront;
 using R_CommonFrontBackAPI;
 using R_APICommonDTO;  // Required for R_APIException
 using {ProgramName}Common.DTOs;
+using {ProgramName}FrontResources;  // Required for multi-language messages
 using System;
 using System.Data;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -49,6 +52,11 @@ namespace {ProgramName}Model.VMs
     public int SumValid { get; set; }
     public int SumInvalid { get; set; }
     public int SumList { get; set; }
+    public bool VisibleError { get; set; }
+
+    // Private fields to store COMPANY_ID and USER_ID for multi-language error retrieval
+    private string _companyId = string.Empty;
+    private string _userId = string.Empty;
 
     // DO NOT add UserParameter properties here
     // UserParameters should be passed via R_SaveBatchParameterDTO.UserParameters
@@ -125,6 +133,10 @@ namespace {ProgramName}Model.VMs
 
             SumList = poParameter.Data.Count;
 
+            // Store company and user ID for error retrieval with multi-language support
+            _companyId = poParameter.CCOMPANY_ID;
+            _userId = poParameter.CUSER_ID;
+
             // Set custom UserParameters from poParameter.UserParameters
             // DO NOT add CCOMPANY_ID or CUSER_ID here (they are set in R_BatchParameter)
             // Example:
@@ -168,11 +180,32 @@ namespace {ProgramName}Model.VMs
         /// <summary>
         /// Called when batch process completes
         /// </summary>
-        public Task ProcessComplete(string pcKeyGuid, eProcessResultMode poProcessResultMode)
+        public async Task ProcessComplete(string pcKeyGuid, eProcessResultMode poProcessResultMode)
         {
-            ShowSuccessAction?.Invoke();
+            R_APIException loException = new R_APIException();
+
+            try
+            {
+                if (poProcessResultMode == eProcessResultMode.Success)
+                {
+                    Message = string.Format(R_FrontUtility.R_GetMessage(typeof({ProgramName}FrontResources.Resources_Dummy_Class), "M006"), pcKeyGuid);
+                    VisibleError = false;
+                    ShowSuccessAction?.Invoke();
+                }
+                else if (poProcessResultMode == eProcessResultMode.Fail)
+                {
+                    Message = string.Format(R_FrontUtility.R_GetMessage(typeof({ProgramName}FrontResources.Resources_Dummy_Class), "M007"), pcKeyGuid);
+                    await ServiceGetError(pcKeyGuid);
+                    VisibleError = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                loException.add(ex);
+            }
+
             StateChangeAction?.Invoke();
-            return Task.CompletedTask;
+            loException.ThrowExceptionIfErrors();
         }
 
         /// <summary>
@@ -180,6 +213,8 @@ namespace {ProgramName}Model.VMs
         /// </summary>
         public Task ProcessError(string pcKeyGuid, R_APIException poException)
         {
+            Message = string.Format(R_FrontUtility.R_GetMessage(typeof({ProgramName}FrontResources.Resources_Dummy_Class), "M008"), pcKeyGuid);
+            VisibleError = true;
             if (poException?.ErrorList != null)
             {
                 var loDataSet = new DataSet();
@@ -203,13 +238,90 @@ namespace {ProgramName}Model.VMs
         public Task ReportProgress(int pnProgress, string pcStatus)
         {
             Percentage = pnProgress;
-            Message = pcStatus;
+            Message = string.Format(R_FrontUtility.R_GetMessage(typeof({ProgramName}FrontResources.Resources_Dummy_Class), "M009"), pnProgress, pcStatus);
             StateChangeAction?.Invoke();
             return Task.CompletedTask;
+        }
+
+        /// <summary>
+        /// Get error details from batch process with multi-language support
+        /// </summary>
+        private async Task ServiceGetError(string pcKeyGuid)
+        {
+            R_APIException loException = new R_APIException();
+
+            List<R_ErrorStatusReturn>? loResultData = null;
+            R_GetErrorWithMultiLanguageParameter loParameterData;
+            R_ProcessAndUploadClient loCls;
+
+            try
+            {
+                // Add Parameter
+                loParameterData = new R_GetErrorWithMultiLanguageParameter()
+                {
+                    COMPANY_ID = _companyId,
+                    USER_ID = _userId,
+                    KEY_GUID = pcKeyGuid,
+                    RESOURCE_NAME = "{ProgramName}BackResources"
+                };
+
+                loCls = new R_ProcessAndUploadClient(pcModuleName: "{ModuleName}",
+                    plSendWithContext: true,
+                    plSendWithToken: true,
+                    pcHttpClientName: "R_DefaultServiceUrl");
+
+                // Get error result
+                loResultData = await loCls.R_GetStreamErrorProcess(loParameterData);
+
+                // Reset counters
+                SumValid = 0;
+                SumInvalid = 0;
+
+                // Update display list with error messages
+                DisplayList.ToList().ForEach(x =>
+                {
+                    if (loResultData.Any(y => y.SeqNo == x.SeqNo))  // Use x.SeqNo or x.No depending on DTO property name
+                    {
+                        x.Notes = loResultData.Where(y => y.SeqNo == x.SeqNo).FirstOrDefault()?.ErrorMessage ?? string.Empty;
+                        x.Valid = "N";
+                        SumInvalid++;
+                    }
+                    else
+                    {
+                        x.Valid = "Y";
+                        SumValid++;
+                    }
+                });
+
+                // Handle unhandled errors (SeqNo < 0)
+                if (loResultData.Any(x => x.SeqNo < 0))
+                {
+                    var loUnhandleEx = loResultData.Where(x => x.SeqNo < 0).Select(x => new R_BlazorFrontEnd.Exceptions.R_Error(x.SeqNo.ToString(), x.ErrorMessage)).ToList();
+                    var loEx = new R_Exception();
+                    loUnhandleEx.ForEach(x => loEx.Add(x));
+
+                    loException = R_FrontUtility.R_ConvertToAPIException(loEx);
+                }
+            }
+            catch (Exception ex)
+            {
+                loException.add(ex);
+            }
+
+            loException.ThrowExceptionIfErrors();
         }
     }
 }
 ```
+
+## Resource Keys Required in FrontResources
+
+Add the following resource keys to `{ProgramName}FrontResources_msgrsc.resx` and `{ProgramName}FrontResources_msgrsc.id.resx`:
+
+- **M006**: "Process Complete and success with GUID {0}"
+- **M007**: "Process Complete but fail with GUID {0}"
+- **M008**: "Process Error with GUID {0}"
+- **M009**: "Process Progress {0} with status {1}"
 
 ## Checklist
 - [ ] `liStep` cannot be 0, should follow the implementation in VB.NET (.NET Framework 4) implementation in Front Project
@@ -218,3 +330,8 @@ namespace {ProgramName}Model.VMs
 - [ ] DO NOT add UserParameter properties to BatchViewModel - use R_SaveBatchParameterDTO.UserParameters instead
 - [ ] DO NOT add CCOMPANY_ID or CUSER_ID to loUserParam list - they are set in R_BatchParameter.COMPANY_ID and R_BatchParameter.USER_ID
 - [ ] Custom parameters are accessed via `poParameter.UserParameters.{PropertyName}` in R_SaveBatchAsync
+- [ ] Store `CCOMPANY_ID` and `CUSER_ID` from `poParameter` as private fields `_companyId` and `_userId` for multi-language error retrieval
+- [ ] `ServiceGetError` MUST return `Task` (not `Task<List<R_ErrorStatusReturn>>`) - return value is never used
+- [ ] Use `R_FrontUtility.R_GetMessage` for all user-facing messages in `ProcessComplete`, `ProcessError`, and `ReportProgress`
+- [ ] Update `DisplayList` property name in `ServiceGetError` to match your actual display list property (e.g., `UploadCurrencyDisplayList`)
+- [ ] Use correct property name for sequence matching in `ServiceGetError` (e.g., `x.SeqNo` or `x.No` depending on DTO)

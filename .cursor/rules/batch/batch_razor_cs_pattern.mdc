@@ -21,10 +21,26 @@ public partial class {ProgramName}Batch : R_Page
         StateHasChanged();
     }
 
-    public void ShowErrorInvoke(R_APIException poException)
+    public void ShowErrorInvoke(DataSet poDataSet)
     {
-        var loEx = R_FrontUtility.R_ConvertFromAPIException(poException);
-        this.R_DisplayException(loEx);
+        var loEx = new R_Exception();
+        try
+        {
+            var loErrorTable = poDataSet?.Tables["ErrorTable"];
+            if (loErrorTable != null)
+            {
+                foreach (System.Data.DataRow loRow in loErrorTable.Rows)
+                {
+                    loEx.Add("", loRow["ErrorMessage"]?.ToString() ?? "");
+                }
+            }
+            this.R_DisplayException(loEx);
+        }
+        catch (Exception ex)
+        {
+            loEx.Add(ex);
+        }
+        loEx.ThrowExceptionIfErrors();
     }
 
     public async Task ShowSuccessInvoke()
@@ -185,7 +201,7 @@ public partial class {ProgramName}Batch : R_Page
 
             var loResult = R_FrontUtility.R_ConvertTo<{BatchListExcelDTO}>(loDataSet.Tables[0]);
 
-            loExtract = new List<{BatchListExcelDTO}>(loResult);
+            loExtract = new List<{BatchListExcelDTO}>(loResult ?? new List<{BatchListExcelDTO}>());
 
             _batchViewModel.UploadList = loExtract.Select((x, i) => new {BatchListDisplayDTO}
             {
