@@ -1,0 +1,233 @@
+---
+description: "Generic Report Controller pattern for Service Project report endpoints"
+alwaysApply: false
+---
+# Report Controller Pattern
+
+## Purpose
+Generic pattern for implementing report controllers in the Service layer. Controllers must inherit `R_ReportControllerBase` and handle report generation via FastReport.
+
+## Pattern Structure
+
+```csharp
+using System.Collections;
+using System.Diagnostics;
+using System.Globalization;
+using BaseHeaderReportCOMMON;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using {ProgramName}Back;
+using {ProgramName}Common;
+using {ProgramName}Common.DTOs.Print;
+using {ProgramName}Common.Params;
+using {ProgramName}Service.DTOs;
+using R_BackEnd;
+using R_Cache;
+using R_Common;
+using R_CommonFrontBackAPI;
+using R_CommonFrontBackAPI.Log;
+using R_ReportFastReportBack;
+
+namespace {ProgramName}Service;
+
+public class {ProgramName}ReportController : R_ReportControllerBase
+{
+    private Logger{ProgramName} _logger;
+    private R_ReportFastReportBackClass _ReportCls;
+    private {ProgramName}ReportParam _Parameter;
+    private readonly ActivitySource _activitySource;
+
+    public {ProgramName}ReportController(ILogger<{ProgramName}ReportController> logger)
+    {
+        Logger{ProgramName}.R_InitializeLogger(logger);
+        _logger = Logger{ProgramName}.R_GetInstanceLogger();
+        _activitySource = {ProgramName}Activity.R_InitializeAndGetActivitySource(nameof({ProgramName}ReportController));
+
+        _ReportCls = new R_ReportFastReportBackClass();
+        _ReportCls.R_InstantiateMainReportWithFileName += _ReportCls_R_InstantiateMainReportWithFileName;
+        _ReportCls.R_GetMainDataAndName += _ReportCls_R_GetMainDataAndName;
+        _ReportCls.R_SetNumberAndDateFormat += _ReportCls_R_SetNumberAndDateFormat;
+    }
+
+    // Event handler: Specify the .frx report template file path
+    private void _ReportCls_R_InstantiateMainReportWithFileName(ref string pcfiletemplate)
+    {
+        // TODO: Set your report template path
+        pcfiletemplate = Path.Combine("Reports", "{ProgramName}Report.frx");
+    }
+
+    // Event handler: Provide report data and data source name
+    private void _ReportCls_R_GetMainDataAndName(ref ArrayList poData, ref string pcDataSourceName)
+    {
+        poData.Add(GenerateData(_Parameter));
+        pcDataSourceName = "ResponseDataModel";
+    }
+
+    // Event handler: Set report number and date formatting
+    private void _ReportCls_R_SetNumberAndDateFormat(ref R_ReportFormatDTO poReportFormat)
+    {
+        poReportFormat.DecimalSeparator = R_BackGlobalVar.REPORT_FORMAT_DECIMAL_SEPARATOR;
+        poReportFormat.GroupSeparator = R_BackGlobalVar.REPORT_FORMAT_GROUP_SEPARATOR;
+        poReportFormat.DecimalPlaces = R_BackGlobalVar.REPORT_FORMAT_DECIMAL_PLACES;
+        poReportFormat.ShortDate = R_BackGlobalVar.REPORT_FORMAT_SHORT_DATE;
+        poReportFormat.ShortTime = R_BackGlobalVar.REPORT_FORMAT_SHORT_TIME;
+    }
+
+    // POST endpoint: Cache parameters and return GUID
+    [HttpPost]
+    public R_DownloadFileResultDTO {ProgramName}Post({ProgramName}ReportParam poParam)
+    {
+        using var loActivity = _activitySource.StartActivity(nameof({ProgramName}Post));
+        _logger.LogInfo("Start - Post {ProgramName} Report");
+        R_Exception loException = new();
+        {ProgramName}ReportLogKeyDTO loCache = null;
+        R_DownloadFileResultDTO loRtn = null;
+        try
+        {
+            loRtn = new R_DownloadFileResultDTO();
+            loCache = new {ProgramName}ReportLogKeyDTO
+            {
+                poParam = poParam,
+                poLogKey = (R_NetCoreLogKeyDTO)R_NetCoreLogAsyncStorage.GetData(R_NetCoreLogConstant.LOG_KEY),
+                poGlobalVar = R_ReportGlobalVar.R_GetReportDTO()
+            };
+
+            _logger.LogInfo("Set GUID Param - Post {ProgramName} Report");
+            R_DistributedCache.R_Set(loRtn.GuidResult, R_NetCoreUtility.R_SerializeObjectToByte(loCache));
+        }
+        catch (Exception ex)
+        {
+            loException.Add(ex);
+            _logger.LogError(loException);
+        }
+
+        loException.ThrowExceptionIfErrors();
+        _logger.LogInfo("End - Post {ProgramName} Report");
+        return loRtn;
+    }
+
+    // GET endpoint: Retrieve cached parameters and generate report stream
+    [HttpGet, AllowAnonymous]
+    public FileStreamResult {ProgramName}Get(string pcGuid)
+    {
+        using var loActivity = _activitySource.StartActivity(nameof({ProgramName}Get));
+        _logger.LogInfo("Start - Get {ProgramName} Report");
+        R_Exception loException = new();
+        FileStreamResult loRtn = null;
+        {ProgramName}ReportLogKeyDTO loResultGUID = null;
+        try
+        {
+            // Get cached parameter
+            loResultGUID = R_NetCoreUtility.R_DeserializeObjectFromByte<{ProgramName}ReportLogKeyDTO>(
+                R_DistributedCache.Cache.Get(pcGuid));
+
+            // Set log key and global vars
+            R_NetCoreLogUtility.R_SetNetCoreLogKey(loResultGUID.poLogKey);
+            R_ReportGlobalVar.R_SetFromReportDTO(loResultGUID.poGlobalVar);
+
+            _Parameter = loResultGUID.poParam;
+
+            // Generate report based on print mode
+            if (_Parameter.LIS_PRINT)
+            {
+                loRtn = new FileStreamResult(_ReportCls.R_GetStreamReport(peExport: R_FileType.PDF), 
+                    R_ReportUtility.GetMimeType(R_FileType.PDF));
+            }
+            else
+            {
+                var loFileType = (R_FileType)Enum.Parse(typeof(R_FileType), _Parameter.CREPORT_FILETYPE);
+                loRtn = File(_ReportCls.R_GetStreamReport(peExport: loFileType), 
+                    R_ReportUtility.GetMimeType(loFileType), 
+                    $"{_Parameter.CREPORT_FILENAME}.{_Parameter.CREPORT_FILETYPE}");
+            }
+        }
+        catch (Exception ex)
+        {
+            loException.Add(ex);
+            _logger.LogError(loException);
+        }
+
+        loException.ThrowExceptionIfErrors();
+        _logger.LogInfo("End - Get {ProgramName} Report");
+        return loRtn;
+    }
+
+    // TODO: Implement this method to generate report data
+    // This method should:
+    // 1. Get base header data (company logo, print info, etc.)
+    // 2. Set report parameters from poParam
+    // 3. Call Back layer GetReportData method
+    // 4. Build and return the complete report DTO structure
+    private {ProgramName}ReportWithBaseHeaderDTO GenerateData({ProgramName}ReportParam poParam)
+    {
+        using var loActivity = _activitySource.StartActivity(nameof(GenerateData));
+        var loEx = new R_Exception();
+        var loRtn = new {ProgramName}ReportWithBaseHeaderDTO();
+        var loCultureInfo = new CultureInfo(R_BackGlobalVar.REPORT_CULTURE);
+
+        try
+        {
+            // TODO: Implement report data generation logic
+            // Example structure:
+            // - Get base header columns (Page, Of, Print_Date, Print_By)
+            // - Get report labels from resources
+            // - Get company header data
+            // - Call Back layer: new {ProgramName}Cls().GetReportData(params)
+            // - Build result DTO with Title, Label, Header, Data
+        }
+        catch (Exception ex)
+        {
+            loEx.Add(ex);
+            _logger.LogError(loEx);
+        }
+
+        loEx.ThrowExceptionIfErrors();
+        return loRtn;
+    }
+}
+```
+
+# {ProgramName}ReportLogKeyDTO Pattern
+```csharp
+using R_BackEnd;
+using R_CommonFrontBackAPI.Log;
+using {ProgramName}Common.DTOs;
+
+public class {ProgramName}ReportLogKeyDTO
+{
+    public {ProgramName}ReportParam poParam { get; set; } = new();
+    public R_NetCoreLogKeyDTO poLogKey { get; set; } = new();
+    public R_ReportGlobalDTO poGlobalVar { get; set; } = new();
+}
+```
+
+# {ProgramName}ReportWithBaseHeaderDTO
+```csharp
+using BaseHeaderReportCOMMON;
+using System.Collections.Generic;
+
+public class {ProgramName}ReportWithBaseHeaderDTO : BaseHeaderResult
+{
+    public List<GetReportDataResultDTO> Data { get; set; } = new();
+}
+```
+
+## Key Requirements
+
+1. **Inheritance**: Must inherit `R_ReportControllerBase`
+2. **Constructor**: Initialize logger, activity source, and wire up 3 event handlers
+3. **Event Handlers**: 
+   - `R_InstantiateMainReportWithFileName`: Set .frx template path
+   - `R_GetMainDataAndName`: Provide data via GenerateData()
+   - `R_SetNumberAndDateFormat`: Set formatting from global vars
+4. **Endpoints**:
+   - `[HttpPost] {ProgramName}Post`: Cache params, return GUID
+   - `[HttpGet, AllowAnonymous] {ProgramName}Get`: Generate and stream report
+5. **GenerateData**: Implement report-specific data retrieval and DTO building
+
+## DTOs Required
+
+- `{ProgramName}ReportParam` - Report parameters (placed in Common Project)
+- `{ProgramName}ReportLogKeyDTO` - Cache structure with param, log key, global vars (placed in Service Project)
+- `{ProgramName}ReportWithBaseHeaderDTO` - Complete report data structure, must inherit `BaseHeaderResult` (placed in Common Project)

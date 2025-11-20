@@ -15,3 +15,5 @@ globs: "*BackMigrationChecklist*"
 - [ ] No SQL text modified
 - [ ] No SP names changed
 - [ ] All parameters passed using `loDb.R_AddCommandParameter()`
+- [ ] No `R_BackGlobalVar`
+- [ ] No `R_Utility.R_GetStreamingContext`

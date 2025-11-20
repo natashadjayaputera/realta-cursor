@@ -56,10 +56,12 @@ Here’s a **chronologically corrected and clarified version** of your Cursor cu
 7. **Asynchronous Implementation**
    * Convert all methods into `async Task` patterns where applicable.
    * Preserve existing **transaction** handling and **error semantics** during migration.
-8. **Interface and Context Handling**
+8. **Interface**
    * Interfaces defined in `{ProgramName}Common` are **not** to be implemented in Back classes — they are meant for the Service project.
-   * Do **not** directly access `R_BackGlobalVar` or `R_GetStreamingContext` inside Back classes.
-   * These values must be **passed from the Controller** in the Service project to the Back class.
+9. **{ProgramName}Cls.cs**
+   * Do **not** directly access `R_BackGlobalVar` or `R_Utility.R_GetStreamingContext` inside methods in Back classes. 
+   * These values must be **passed from the Controller** in the Service project to the Back class using **{MethodName}ParameterDTO**.
+   * **This is non-negotiable**
 
 ## Context (project files to reference)
 - Automatically fetch all modular `.mdc` rules matching `*ToCSharpBack*`.

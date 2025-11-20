@@ -1,12 +1,18 @@
 ---
-description: "Database query execution pattern for Back projects"
+description: "Streaming method pattern for Back Project"
 alwaysApply: false
 globs: "*ToCSharpBack*"
 ---
-# Database Method Pattern
+
+# Streaming Method Pattern
+
+- MUST follow @streaming_pattern.mdc
+
+## Example: Complete Streaming Method
 
 ```csharp
-public async Task<MethodNameResultDTO> MethodName(MethodNameParameterDTO poParam)
+[HttpPost]
+public async Task<List<GetStreamingListResultDTO>> GetStreamingList(GetStreamingListParameterDTO poParam)
 {
     string lcMethod = nameof(MethodNameAsync);
     using var activity = _activitySource.StartActivity(lcMethod);
@@ -14,7 +20,7 @@ public async Task<MethodNameResultDTO> MethodName(MethodNameParameterDTO poParam
 
     var loEx = new R_Exception();
     var loDb = new R_Db();
-    MethodNameResultDTO loResult = new();
+    List<GetStreamingListResultDTO> loResult = new();
 
     try
     {
@@ -32,7 +38,7 @@ public async Task<MethodNameResultDTO> MethodName(MethodNameParameterDTO poParam
         _logger.LogDebug("{@ObjectQuery} {@Parameter}", loCmd.CommandText, loDbParams);
 
         var loDataTable = await loDb.SqlExecQueryAsync(loConn, loCmd, false);
-        loResult = R_Utility.R_ConvertTo<MethodNameResultDTO>(loDataTable).FirstOrDefault();
+        loResult = R_Utility.R_ConvertTo<GetStreamingListResultDTO>(loDataTable).ToList();
     }
     catch (Exception ex)
     {
@@ -50,10 +56,9 @@ public async Task<MethodNameResultDTO> MethodName(MethodNameParameterDTO poParam
 }
 ```
 
-Rules:
+## Verification Checklist
 
-* Log query and parameters before execution
-* Always clear command parameters
-* Use `R_Utility.R_ConvertTo` for result conversion
-* Catch exceptions in `R_Exception` and throw
-* Return should never be wrapped by Generic Result DTO (ex, `FAI00130ResultDTO` that inherit `R_APIResultBaseDTO`)
+Before completing any streaming controller method:
+- [ ] Must always create ParameterDTO
+- [ ] Never use `R_BackGlobalVar` in Back Project
+- [ ] Never retrieve via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)` in Back Project

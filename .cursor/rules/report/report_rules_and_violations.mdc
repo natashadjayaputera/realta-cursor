@@ -5,7 +5,7 @@ alwaysApply: false
 # Report Rules
 
 ✅ Required:
-- Report methods must be implemented only in the **Back project**
+- Report methods must not be part of any interface
 - Each Report operation must have its own **ReportCls** class
 - Constructor includes Logger and ActivitySource setup
 - Report methods are **synchronous**

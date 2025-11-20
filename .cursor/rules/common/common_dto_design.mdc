@@ -63,6 +63,15 @@ public class FAI00130GetSystemVariablesResultDTO
 public class FAI00130DTO {}
 ```
 
+## Generic Result DTO used in Interface, Service Project and Model Project
+
+```csharp
+public class FAI00130ResultDTO<T> : R_APIResultBaseDTO
+{
+    public T? Data { get; set; }
+}
+```
+
 ## Verification Checklist for Entity DTOs
 
 Before completing any Entity DTO:

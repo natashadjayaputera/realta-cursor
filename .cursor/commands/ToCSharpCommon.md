@@ -42,14 +42,16 @@ Here’s a **chronologically and logically ordered** version of your instruction
    * For each method, create both a **ParameterDTO** and a **ResultDTO**.
    * **Do not use Stream DTOs** under any circumstances.
    * **Do not reuse EntityDTOs** — every method must have its own dedicated DTOs.
-4. **Place all DTOs, enums, and interfaces** inside the `{ProgramName}Common` project.
+4. **Create Generic Result DTO** 
+   * {ProgramName}ResultDTO — Must inherit `R_APIResultBaseDTO` (see `@common_generic_result_dto_pattern.mdc`).
+5. **Place all DTOs, enums, and interfaces** inside the `{ProgramName}Common` project.
    * Keep this project strictly for shared contracts and types.
    * **Do not** include or move any business logic here.
-5. **Define interfaces for service contracts**
+6. **Define interfaces for service contracts**
    * Interfaces must inherit or implement `R_IServiceCRUDAsyncBase` where applicable.
    * For each CRUD pattern in the `{ProgramName}Back` project, create a corresponding interface that inherits
      `R_IServiceCRUDAsyncBase<{ProgramName}DTO>` and uses its own dedicated `EntityDTO` (`{ProgramName}DTO`).
-6. **Convert existing VB.NET DTOs and related types**
+7. **Convert existing VB.NET DTOs and related types**
    * Rewrite them into modern C# (C# 10, nullable enabled).
    * Ensure code style and syntax follow C# best practices and project conventions.
 

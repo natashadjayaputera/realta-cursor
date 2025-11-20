@@ -1,23 +1,106 @@
 ---
 description: "Streaming pattern in ViewModel, Model, and Back Project (MUST FOLLOW EXACTLY)"
 alwaysApply: false
-globs: "*ToCSharpViewModel*","*ToCSharpModel*","*ToCSharpService*"
+globs: "*ToCSharpBack*", "*ToCSharpViewModel*","*ToCSharpModel*","*ToCSharpService*"
 priority: CRITICAL
 nonNegotiable: true
 ---
 
 # STREAMING PATTERN
 
-## Method Naming
-- Interface: `GetStreamingList()`
-- Implementation: `GetStreamingListAsync()`
+## Overview
 
-## Parameter Handling
-- Use `R_BackGlobalVar` for CompanyId/UserId
-- Use `R_FrontContext.R_SetStreamingContext()` for custom parameters
-- Retrieve via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)`
+This document defines the streaming pattern flow across all layers. Data flows from **ViewModel → Model → Service/Controller → Back**. Each layer has specific responsibilities and rules that MUST be followed exactly.
 
-### ✅ Correct Controller
+---
+
+## 1. ViewModel Layer (Model Project for ViewModel)
+
+### Rules
+- Use `R_FrontContext.R_SetStreamingContext(ContextConstants.Key, value)` for custom parameters
+- **Only** set streaming context for parameters that are **NOT** available in `R_BackGlobalVar`
+- Call Model's `GetStreamingListAsync()` method
+
+### ✅ Correct Implementation
+
+```csharp
+public ObservableCollection<GetStreamingListResultDTO> StreamingList = new();
+
+public async Task GetStreamingListAsync(GetStreamingListParameterDTO poParameter)
+{
+    var loEx = new R_Exception();
+    try
+    {
+        R_FrontContext.R_SetStreamingContext(ContextConstants.DEPT_CODE, poParameter.CDEPT_CODE);
+        R_FrontContext.R_SetStreamingContext(ContextConstants.TRANSACTION_CODE, poParameter.CTRANSACTION_CODE);
+        var loResult = await _model.GetStreamingListAsync();
+        StreamingList = new ObservableCollection<GetStreamingListResultDTO>(loResult.Data ?? new());
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+}
+```
+
+---
+
+## 2. Model Layer (Model Project for Model)
+
+### Rules
+- **Interface method**: `GetStreamingList()` (returns `IAsyncEnumerable<T>`)
+- **Implementation method**: `GetStreamingListAsync()` (returns `Task<ResultDTO<List<T>>>`)
+- Use `R_HTTPClientWrapper.R_APIRequestStreamingObject<T>()` for API calls
+- Interface method should throw `NotImplementedException()`
+
+### ✅ Correct Implementation
+
+```csharp
+// Interface
+public IAsyncEnumerable<GetStreamingListResultDTO> GetStreamingList()
+{
+    throw new NotImplementedException();
+}
+
+// Implementation
+public async Task<{ProgramName}ResultDTO<List<GetStreamingListResultDTO>>> GetStreamingListAsync()
+{
+    var loEx = new R_Exception();
+    var loRtn = new {ProgramName}ResultDTO<List<GetStreamingListResultDTO>>();
+    try
+    {
+        R_HTTPClientWrapper.httpClientName = _HttpClientName;
+        loRtn.Data = await R_HTTPClientWrapper.R_APIRequestStreamingObject<GetStreamingListResultDTO>(
+            _RequestServiceEndPoint,
+            nameof(I{ProgramName}.GetStreamingList),
+            _ModuleName,
+            true,
+            true);
+    }
+    catch (Exception ex)
+    {
+        loEx.Add(ex);
+    }
+    loEx.ThrowExceptionIfErrors();
+    return loRtn;
+}
+```
+
+---
+
+## 3. Service/Controller Layer (Service Project)
+
+### Rules
+- **DO NOT CONFUSE THIS WITH BACK PROJECT** - This is the Controller in Service Project
+- Use `R_BackGlobalVar` for `CompanyId`/`UserId`
+- Retrieve streaming context via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)`
+- **Only** get streaming context for parameters that are **NOT** available in `R_BackGlobalVar`
+- Return `IAsyncEnumerable<T>` and use `yield return` for each item
+- All parameters are assembled here and passed to Back Project
+
+### ✅ Correct Implementation
+
 ```csharp
 [HttpPost]
 public async IAsyncEnumerable<GetStreamingListResultDTO> GetStreamingList()
@@ -49,64 +132,71 @@ public async IAsyncEnumerable<GetStreamingListResultDTO> GetStreamingList()
     foreach (var loItem in loResult)
         yield return loItem;
 }
-````
+```
 
-### ✅ Correct ViewModel
+---
+
+## 4. Back Layer (`*Cls.cs` in Back Project)
+
+### Rules
+- **Never** use `R_BackGlobalVar` for CompanyId/UserId
+- **Never** retrieve via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)`
+- **All parameters are already assigned in Controller** - receive them via method parameter
+- Execute database query and return `List<T>`
+
+### ✅ Correct Implementation
 
 ```csharp
-public ObservableCollection<GetStreamingListResultDTO> StreamingList = new();
-
-public async Task GetStreamingListAsync(GetStreamingListParameterDTO poParameter)
+[HttpPost]
+public async Task<List<GetStreamingListResultDTO>> GetStreamingList(GetStreamingListParameterDTO poParam)
 {
+    string lcMethod = nameof(MethodNameAsync);
+    using var activity = _activitySource.StartActivity(lcMethod);
+    _logger.LogInfo("START method {MethodName}", lcMethod);
+
     var loEx = new R_Exception();
+    var loDb = new R_Db();
+    List<GetStreamingListResultDTO> loResult = new();
+
     try
     {
-        R_FrontContext.R_SetStreamingContext("OTHER_PARAM_KEY", poParameter.OTHER_PARAM_KEY);
-        var loResult = await _model.GetStreamingListAsync();
-        StreamingList = new ObservableCollection<GetStreamingListResultDTO>(loResult.Data ?? new());
+        using DbConnection loConn = await loDb.GetConnectionAsync();
+        using DbCommand loCmd = loDb.GetCommand();
+        loCmd.Parameters.Clear();
+
+        loCmd.CommandText = "SELECT ... FROM ... WHERE ... = @Param";
+        loDb.R_AddCommandParameter(loCmd, "@Param", DbType.String, 50, poParam.Value);
+
+        var loDbParams = loCmd.Parameters.Cast<DbParameter>()
+            .Where(x => x != null && x.ParameterName.StartsWith("@"))
+            .ToDictionary(x => x.ParameterName, x => x.Value);
+
+        _logger.LogDebug("{@ObjectQuery} {@Parameter}", loCmd.CommandText, loDbParams);
+
+        var loDataTable = await loDb.SqlExecQueryAsync(loConn, loCmd, false);
+        loResult = R_Utility.R_ConvertTo<GetStreamingListResultDTO>(loDataTable).ToList();
     }
     catch (Exception ex)
     {
         loEx.Add(ex);
+        _logger.LogError(loEx);
     }
+    finally
+    {
+        if (loDb != null) loDb = null;
+    }
+
     loEx.ThrowExceptionIfErrors();
+    _logger.LogInfo("END method {MethodName}", lcMethod);
+    return loResult;
 }
 ```
 
-### ✅ Correct Model
+---
 
-```csharp
-public IAsyncEnumerable<GetStreamingListResultDTO> GetStreamingList()
-{
-    throw new NotImplementedException();
-}
+## Benefits
 
-public async Task<{ProgramName}ResultDTO<List<GetStreamingListResultDTO>>> GetStreamingListAsync()
-{
-    var loEx = new R_Exception();
-    var loRtn = new {ProgramName}ResultDTO<List<GetStreamingListResultDTO>>();
-    try
-    {
-        R_HTTPClientWrapper.httpClientName = _HttpClientName;
-        loRtn.Data = await R_HTTPClientWrapper.R_APIRequestStreamingObject<GetStreamingListResultDTO>(
-            _RequestServiceEndPoint,
-            nameof(I{ProgramName}.GetStreamingList),
-            _ModuleName,
-            true,
-            true);
-    }
-    catch (Exception ex)
-    {
-        loEx.Add(ex);
-    }
-    loEx.ThrowExceptionIfErrors();
-    return loRtn;
-}
-```
-
-#### Benefits
-
-* Consistent
-* Scalable
-* Maintainable
-* Memory-efficient
+* **Consistent** - Same pattern across all layers
+* **Scalable** - Handles large datasets efficiently
+* **Maintainable** - Clear separation of concerns
+* **Memory-efficient** - Streaming reduces memory footprint
