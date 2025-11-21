@@ -24,4 +24,6 @@ public interface I{ProgramName} : R_IServiceCRUDAsyncBase<{ProgramName}DTO>
 }
 ```
 
-**CRITICAL:** Must use `R_IServiceCRUDAsyncBase`, not `R_IServiceCRUDBase`
+**CRITICAL:** 
+* Must use `R_IServiceCRUDAsyncBase`, not `R_IServiceCRUDBase`
+* Methods in interface MUST NOT have `Async` as suffix

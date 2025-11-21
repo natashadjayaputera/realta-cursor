@@ -49,6 +49,7 @@ Here’s a **chronologically and logically ordered** version of your instruction
    * **Do not** include or move any business logic here.
 6. **Define interfaces for service contracts**
    * Interfaces must inherit or implement `R_IServiceCRUDAsyncBase` where applicable.
+   * Methods in interface MUST NOT have `Async` as suffix
    * For each CRUD pattern in the `{ProgramName}Back` project, create a corresponding interface that inherits
      `R_IServiceCRUDAsyncBase<{ProgramName}DTO>` and uses its own dedicated `EntityDTO` (`{ProgramName}DTO`).
 7. **Convert existing VB.NET DTOs and related types**
