@@ -56,6 +56,7 @@ Here’s a **chronologically corrected and clarified version** of your Cursor cu
 7. **Asynchronous Implementation**
    * Convert all methods into `async Task` patterns where applicable.
    * Preserve existing **transaction** handling and **error semantics** during migration.
+   * Streaming method must follow this rule **@back_streaming_method_pattern.mdc**
 8. **Interface**
    * Interfaces defined in `{ProgramName}Common` are **not** to be implemented in Back classes — they are meant for the Service project.
 9. **{ProgramName}Cls.cs**

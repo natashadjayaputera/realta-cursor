@@ -5,6 +5,21 @@
 **/bin/
 **/obj/
 **/packages/
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+
+**/*.zip
+**/*.rar
+**/*.7z
+**/*.tar
+**/*.gz
+**/*.bz2
+**/*.xz
+**/*.iso
+**/*.img
+**/*.dmg
+**/*.bak
 
 # Ignore Nuget Config
 NuGet.Config
@@ -13,3 +28,7 @@ Nuget.Config
 **/Nuget.Config
 
 **/.vs/
+
+net4/
+net6/
+plan/

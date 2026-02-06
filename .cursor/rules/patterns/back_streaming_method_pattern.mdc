@@ -4,11 +4,7 @@ alwaysApply: false
 globs: "*ToCSharpBack*"
 ---
 
-# Streaming Method Pattern
-
-- MUST follow @streaming_pattern.mdc
-
-## Example: Complete Streaming Method
+# Streaming Method Pattern (Must Follow Exactly, see @streaming_pattern.mdc)
 
 ```csharp
 [HttpPost]
@@ -29,7 +25,7 @@ public async Task<List<GetStreamingListResultDTO>> GetStreamingList(GetStreaming
         loCmd.Parameters.Clear();
 
         loCmd.CommandText = "SELECT ... FROM ... WHERE ... = @Param";
-        loDb.R_AddCommandParameter(loCmd, "@Param", DbType.String, 50, poParam.Value);
+        loDb.R_AddCommandParameter(loCmd, "@Param", DbType.String, 500, poParam.Value);
 
         var loDbParams = loCmd.Parameters.Cast<DbParameter>()
             .Where(x => x != null && x.ParameterName.StartsWith("@"))
@@ -60,5 +56,6 @@ public async Task<List<GetStreamingListResultDTO>> GetStreamingList(GetStreaming
 
 Before completing any streaming controller method:
 - [ ] Must always create ParameterDTO
-- [ ] Never use `R_BackGlobalVar` in Back Project
-- [ ] Never retrieve via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)` in Back Project
+- [ ] Always return `Task<List<GetStreamingListResultDTO>>`, never use `IAsyncEnumerable<GetStreamingListResultDTO>`
+- [ ] Never use `R_BackGlobalVar`
+- [ ] Never retrieve via `R_Utility.R_GetStreamingContext<Type>(ContextConstant.Key)`
